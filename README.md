@@ -34,6 +34,13 @@ All synthetic benchmark genomes were generated from real NCBI reference genomes 
 
 Dominant genomes for the motivating sets (A--C) and finished-genome benchmark sets (A, B, E) were restricted to NCBI-finished references (assembly level "Complete Genome" or "Chromosome") from the MAGICC test split, providing clean ground truth. Benchmark Sets C and D used all available Patescibacteria (1,608) and Archaea (1,976) reference genomes respectively, drawn from train+val+test splits due to limited availability. Contaminant genomes were drawn from all test reference genomes regardless of assembly level.
 
+### Quality metric definitions
+
+Ground truth quality metrics are sequence-based (not gene-based):
+
+- **Completeness** (%) = (total retained bp from the dominant genome / dominant genome full reference length) x 100. A genome retaining 4 Mb of a 5 Mb reference has 80% completeness.
+- **Contamination** (%) = (total contaminant bp / dominant genome full reference length) x 100. Contamination is measured relative to the dominant genome's full reference length, not the retained length after incompleteness. This ensures the two metrics are independent: a genome at 60% completeness with 20% contamination contains contaminant DNA equal to 20% of the original reference size, regardless of how much dominant sequence was retained.
+
 ### Fragmentation (incompleteness simulation)
 
 Genome incompleteness was simulated by fragmenting a reference genome into contigs and then dropping contigs to reach a target completeness level:
@@ -47,7 +54,7 @@ Genome incompleteness was simulated by fragmenting a reference genome into conti
 Contamination was simulated by mixing fragmented contaminant genome(s) into the dominant genome's contigs:
 
 1. **Contaminant selection**: 1--3 within-phylum or 1--5 cross-phylum contaminant genomes are selected randomly from the reference pool.
-2. **Target allocation**: The total contaminant base pairs are determined by the target contamination rate (defined as total contaminant bp / dominant genome full reference length). When multiple contaminants are used, the total is distributed among them via Dirichlet allocation.
+2. **Target allocation**: The total contaminant base pairs are determined by the target contamination rate (see definitions above). When multiple contaminants are used, the total is distributed among them via Dirichlet allocation.
 3. **Contaminant fragmentation**: Each contaminant genome is independently fragmented into contigs and trimmed to its allocated base pair target. If the target exceeds the contaminant genome size, multiple copies are used.
 4. **Merging**: Contaminant contigs are concatenated with dominant genome contigs to produce the final synthetic genome.
 
