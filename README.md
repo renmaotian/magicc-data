@@ -41,6 +41,8 @@ Ground truth quality metrics are sequence-based (not gene-based):
 - **Completeness** (%) = (total retained bp from the dominant genome / dominant genome full reference length) x 100. A genome retaining 4 Mb of a 5 Mb reference has 80% completeness.
 - **Contamination** (%) = (total contaminant bp / dominant genome full reference length) x 100. Contamination is measured relative to the dominant genome's full reference length, not the retained length after incompleteness. This ensures the two metrics are independent: a genome at 60% completeness with 20% contamination contains contaminant DNA equal to 20% of the original reference size, regardless of how much dominant sequence was retained.
 
+These sequence-based definitions are equivalent to CheckM2's protein-based definitions (completeness = annotated proteins / complete genome proteins; contamination = duplicated proteins / complete genome proteins), since protein density is approximately uniform across the genome.
+
 ### Fragmentation (incompleteness simulation)
 
 Genome incompleteness was simulated by fragmenting a reference genome into contigs and then dropping contigs to reach a target completeness level:
