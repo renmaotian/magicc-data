@@ -26,6 +26,39 @@ Full evaluation datasets. All use NCBI finished genomes as dominant references.
 | D | 1,000 | 50-100% | 0-100% | Archaea |
 | E | 1,000 | 50-100% | 0-100% | Realistic mixed |
 
+## Data Generation Methods
+
+All synthetic benchmark genomes were generated from real NCBI reference genomes using controlled fragmentation and contamination simulation. The generation scripts are in [`data_generating_scripts/`](data_generating_scripts/).
+
+### Reference genomes
+
+Dominant genomes for the motivating sets (A--C) and finished-genome benchmark sets (A, B, E) were restricted to NCBI-finished references (assembly level "Complete Genome" or "Chromosome") from the MAGICC test split, providing clean ground truth. Benchmark Sets C and D used all available Patescibacteria (1,608) and Archaea (1,976) reference genomes respectively, drawn from train+val+test splits due to limited availability. Contaminant genomes were drawn from all test reference genomes regardless of assembly level.
+
+### Fragmentation (incompleteness simulation)
+
+Genome incompleteness was simulated by fragmenting a reference genome into contigs and then dropping contigs to reach a target completeness level:
+
+1. **Contig generation**: The reference sequence is split into contigs with lengths drawn from a log-normal distribution (mu = log(N50), sigma = 0.8--1.2), where N50 is sampled uniformly within a quality tier. Quality tiers control assembly fragmentation: High (10--50 contigs, N50 100--500 kb), Medium (50--200 contigs, N50 20--100 kb), Low (200--500 contigs, N50 5--20 kb), and Highly Fragmented (500--2,000 contigs, N50 1--5 kb).
+2. **Assembly bias simulation**: Three biologically-motivated dropout mechanisms are applied sequentially before completeness targeting: (a) coverage dropout via log-normal coverage simulation, (b) GC-biased loss removing contigs with extreme GC content, and (c) repeat region exclusion removing low-complexity contigs.
+3. **Completeness targeting**: Contigs are randomly dropped until the remaining sequence reaches the target completeness (fraction of original genome length retained). For genomes requiring 100% completeness, the original reference contigs are used directly without fragmentation.
+
+### Contamination simulation
+
+Contamination was simulated by mixing fragmented contaminant genome(s) into the dominant genome's contigs:
+
+1. **Contaminant selection**: 1--3 within-phylum or 1--5 cross-phylum contaminant genomes are selected randomly from the reference pool.
+2. **Target allocation**: The total contaminant base pairs are determined by the target contamination rate (defined as total contaminant bp / dominant genome full reference length). When multiple contaminants are used, the total is distributed among them via Dirichlet allocation.
+3. **Contaminant fragmentation**: Each contaminant genome is independently fragmented into contigs and trimmed to its allocated base pair target. If the target exceeds the contaminant genome size, multiple copies are used.
+4. **Merging**: Contaminant contigs are concatenated with dominant genome contigs to produce the final synthetic genome.
+
+### Set-specific generation details
+
+- **Motivating Sets A / Benchmark Sets A, A_v2**: Pure genomes (0% contamination) at 6 completeness levels (50%, 60%, 70%, 80%, 90%, 100%), ~167 genomes per level.
+- **Motivating Sets B / Benchmark Sets B, B_v2**: Complete genomes (100% completeness, original contigs) with cross-phylum contamination at 5 levels (0%, 20%, 40%, 60%, 80%), 200 genomes per level.
+- **Motivating Set C / Benchmark Set E**: Realistic mixed composition -- 200 pure genomes (0% contamination, 50--100% completeness), 200 complete genomes (100% completeness, 0--100% contamination), and 600 mixed genomes (50--100% completeness, 0--100% contamination, 70% cross-phylum / 30% within-phylum). Motivating Set C and Benchmark Set E use identical generation logic with different random seeds (300 vs 500).
+- **Benchmark Set C (Patescibacteria)**: 1,000 genomes from all 1,608 Patescibacteriota references with uniform completeness (50--100%) and contamination (0--100%), testing performance on reduced-genome organisms.
+- **Benchmark Set D (Archaea)**: 1,000 genomes from 1,976 archaeal references with uniform completeness (50--100%) and contamination (0--100%), testing performance on underrepresented lineages.
+
 ## Download FASTA Files
 
 FASTA archives are available as GitHub Release assets (~6.3 GB total):
