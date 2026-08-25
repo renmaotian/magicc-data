@@ -1,0 +1,147 @@
+{
+  "generated_utc": "2026-07-26T22:59:37.336234+00:00",
+  "set_dir": "/path/to/magicc/data/benchmarks/set_F",
+  "n_samples": 1900,
+  "all_design_rows_generated": {
+    "pass": true,
+    "detail": "1900/1900"
+  },
+  "unique_genome_ids": {
+    "pass": true,
+    "detail": "1900"
+  },
+  "fasta_present": {
+    "pass": true,
+    "detail": "0 missing"
+  },
+  "fasta_contig_counts_match": {
+    "pass": true,
+    "detail": "0 mismatched"
+  },
+  "fasta_bp_match": {
+    "pass": true,
+    "detail": "0 mismatched"
+  },
+  "training_domain_contamination_le_completeness": {
+    "pass": true,
+    "detail": "0 out-of-domain samples"
+  },
+  "completeness_within_50_100": {
+    "pass": true,
+    "detail": "min 56.47, max 100.00"
+  },
+  "contamination_le_100": {
+    "pass": true,
+    "detail": "max 20.00"
+  },
+  "contamination_hits_target_within_5pct": {
+    "pass": true,
+    "detail": "p95 relative deviation 0.02%, max 97.71%"
+  },
+  "shortfall": {
+    "n_samples_with_shortfall": 109,
+    "by_type_distance": {
+      "redundant|class": 11,
+      "redundant|family": 1,
+      "redundant|genus": 5,
+      "redundant|order": 6,
+      "redundant|phylum": 7,
+      "redundant|species": 1,
+      "replaced|class": 8,
+      "replaced|family": 4,
+      "replaced|genus": 2,
+      "replaced|order": 5,
+      "replaced|phylum": 3,
+      "replaced|species": 2,
+      "single|class": 2,
+      "single|family": 5,
+      "single|genus": 2,
+      "single|order": 2,
+      "single|phylum": 4,
+      "single|species": 39
+    },
+    "median_shortfall_pct_of_target": 0.07746297035280861
+  },
+  "redundant_duplicates_markers": {
+    "pass": true,
+    "detail": "median 234 markers"
+  },
+  "redundant_excises_nothing": {
+    "pass": true,
+    "detail": ""
+  },
+  "single_excises_nothing": {
+    "pass": true,
+    "detail": ""
+  },
+  "single_transfers_no_shared_marker": {
+    "pass": true,
+    "detail": ""
+  },
+  "replaced_is_size_matched": {
+    "pass": true,
+    "detail": "0 not size-matched; 0 kept the full mandatory deletion instead (mandatory > donor bp)"
+  },
+  "replaced_deletes_every_acceptor_marker_copy": {
+    "pass": true,
+    "detail": "0 samples left an acceptor copy behind"
+  },
+  "replaced_removes_dominant_sequence": {
+    "pass": true,
+    "detail": ""
+  },
+  "all_accessions_from_test_split": {
+    "pass": true,
+    "detail": "0 outside test split"
+  },
+  "overall_pass": true,
+  "composition": {
+    "by_type": {
+      "redundant": 600,
+      "replaced": 600,
+      "single": 600,
+      "none": 100
+    },
+    "by_distance": {
+      "species": 300,
+      "genus": 300,
+      "family": 300,
+      "order": 300,
+      "class": 300,
+      "phylum": 300,
+      "none": 100
+    },
+    "by_type_distance": {
+      "none|none": 100,
+      "redundant|class": 100,
+      "redundant|family": 100,
+      "redundant|genus": 100,
+      "redundant|order": 100,
+      "redundant|phylum": 100,
+      "redundant|species": 100,
+      "replaced|class": 100,
+      "replaced|family": 100,
+      "replaced|genus": 100,
+      "replaced|order": 100,
+      "replaced|phylum": 100,
+      "replaced|species": 100,
+      "single|class": 100,
+      "single|family": 100,
+      "single|genus": 100,
+      "single|order": 100,
+      "single|phylum": 100,
+      "single|species": 100
+    },
+    "completeness": {
+      "mean": 82.9154156367072,
+      "min": 56.47414865299262,
+      "max": 100.0
+    },
+    "contamination": {
+      "mean": 8.761889221247115,
+      "min": 0.0,
+      "max": 20.000019227875804
+    },
+    "n_references": 100
+  }
+}

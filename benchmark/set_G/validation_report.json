@@ -1,0 +1,155 @@
+{
+  "generated_utc": "2026-07-27T23:35:22.156463+00:00",
+  "set_dir": "/path/to/magicc/data/benchmarks/set_G",
+  "n_samples": 1920,
+  "all_design_rows_generated": {
+    "pass": true,
+    "detail": "1920/1920"
+  },
+  "unique_genome_ids": {
+    "pass": true,
+    "detail": "1920"
+  },
+  "fasta_present": {
+    "pass": true,
+    "detail": "0 missing"
+  },
+  "fasta_contig_counts_match": {
+    "pass": true,
+    "detail": "0 mismatched"
+  },
+  "fasta_bp_match": {
+    "pass": true,
+    "detail": "0 mismatched"
+  },
+  "training_domain_contamination_le_completeness": {
+    "pass": true,
+    "detail": "0 out-of-domain samples"
+  },
+  "completeness_within_50_100": {
+    "pass": true,
+    "detail": "min 58.00, max 100.00"
+  },
+  "truth_identical_across_all_arms_of_a_reference": {
+    "pass": true,
+    "detail": "0 refs with varying completeness, 0 with varying contamination"
+  },
+  "substitutions_preserve_length_and_contig_count": {
+    "pass": true,
+    "detail": "0/800 altered"
+  },
+  "chimeras_preserve_total_bp_exactly": {
+    "pass": true,
+    "detail": "0/320 altered"
+  },
+  "chimera_dose_unbiased_per_arm": {
+    "pass": true,
+    "detail": "realised contig fraction per arm: 5%->5.12%, 10%->10.15%, 20%->20.14%, 40%->39.93%"
+  },
+  "chimeras_reduce_contig_count": {
+    "pass": true,
+    "detail": "1485 mis-joins total, median 1 per sample"
+  },
+  "uneven_coverage_hits_target_duplication": {
+    "pass": true,
+    "detail": "max deviation 0.00 pp"
+  },
+  "indel_net_length_change_below_1pct": {
+    "pass": true,
+    "detail": "max |net bp change| 0.063 % of assembly (median 0.0054 %)"
+  },
+  "indel_truth_sensitivity_pp": {
+    "max": 0.052201446742699886,
+    "median": 0.004147197867801822
+  },
+  "substitution_realised_rate_matches_binomial": {
+    "pass": true,
+    "detail": "max |z| 2.91 (binomial SD units), pooled realised/target = 1.00011, max relative deviation 11.44 %"
+  },
+  "substitution_pooled_rate_within_0p5pct_of_target": {
+    "pass": true,
+    "detail": "pooled realised/target = 1.00011"
+  },
+  "substitution_titv_realised_rate_matches_binomial": {
+    "pass": true,
+    "detail": "max |z| 3.05 (binomial SD units), pooled realised/target = 0.99985, max relative deviation 9.03 %"
+  },
+  "substitution_titv_pooled_rate_within_0p5pct_of_target": {
+    "pass": true,
+    "detail": "pooled realised/target = 0.99985"
+  },
+  "indel_realised_rate_matches_binomial": {
+    "pass": true,
+    "detail": "max |z| 2.87 (binomial SD units), pooled realised/target = 1.00027, max relative deviation 6.67 %"
+  },
+  "indel_pooled_rate_within_0p5pct_of_target": {
+    "pass": true,
+    "detail": "pooled realised/target = 1.00027"
+  },
+  "titv_model_reproduces_ratio_pooled": {
+    "pass": true,
+    "detail": "pooled realised Ti/Tv 1.9986 for target 2.0 (12,335,088 Ti / 6,171,755 Tv)"
+  },
+  "titv_per_sample_ratio_large_n": {
+    "pass": true,
+    "detail": "n=217 samples with >=20,000 substitutions, realised 1.938-2.129, max |z| 4.42 (multinomial SD units)"
+  },
+  "uniform_model_has_titv_half": {
+    "pass": true,
+    "detail": "pooled Ti/Tv 0.5003 for the uniform model (expected 0.5)"
+  },
+  "all_accessions_from_test_split": {
+    "pass": true,
+    "detail": "0 outside test split"
+  },
+  "overall_pass": true,
+  "composition": {
+    "by_error_type": {
+      "substitution": 400,
+      "substitution_titv": 400,
+      "indel": 400,
+      "chimera": 320,
+      "uneven_coverage": 320,
+      "none": 80
+    },
+    "by_error_type_rate": {
+      "chimera|5": 80,
+      "chimera|10": 80,
+      "chimera|20": 80,
+      "chimera|40": 80,
+      "indel|0.1": 80,
+      "indel|0.5": 80,
+      "indel|1": 80,
+      "indel|2": 80,
+      "indel|5": 80,
+      "none|0": 80,
+      "substitution|0.1": 80,
+      "substitution|0.5": 80,
+      "substitution|1": 80,
+      "substitution|2": 80,
+      "substitution|5": 80,
+      "substitution_titv|0.1": 80,
+      "substitution_titv|0.5": 80,
+      "substitution_titv|1": 80,
+      "substitution_titv|2": 80,
+      "substitution_titv|5": 80,
+      "uneven_coverage|5": 80,
+      "uneven_coverage|10": 80,
+      "uneven_coverage|20": 80,
+      "uneven_coverage|40": 80
+    },
+    "n_references": 80,
+    "n_phyla": 35,
+    "true_completeness": {
+      "mean": 79.35215611953419,
+      "min": 58.00343955911279,
+      "max": 100.0
+    },
+    "true_contamination": {
+      "mean": 6.9103385471450265,
+      "min": 0.0,
+      "max": 20.0
+    },
+    "assembly_bp_total": 5327523746
+  }
+}
