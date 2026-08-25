@@ -1,0 +1,39 @@
+{
+  "generated_utc": "2026-07-27T22:31:01.486417+00:00",
+  "set_dir": "/path/to/magicc/data/benchmarks/set_F",
+  "crossmap_stats": {
+    "filtered_genomes_rows": 277183,
+    "distinct_accession_strings_mapped": 503511,
+    "distinct_canonical_assemblies": 277183,
+    "rows_with_inconsistent_assembly_numbers": 0
+  },
+  "overlap_summary": [
+    {
+      "group": "dominants",
+      "n_accessions": 100,
+      "n_canonical": 100,
+      "n_unmapped": 0,
+      "in_train": 0,
+      "in_val": 0,
+      "in_test": 100,
+      "in_kmer_selection_set": 0
+    },
+    {
+      "group": "contaminants",
+      "n_accessions": 519,
+      "n_canonical": 519,
+      "n_unmapped": 0,
+      "in_train": 0,
+      "in_val": 0,
+      "in_test": 519,
+      "in_kmer_selection_set": 0
+    }
+  ],
+  "per_sample_dominant_split": {
+    "test": 1900
+  },
+  "n_files_hashed": 1907,
+  "kmer_selection_set_resolved": true,
+  "DISJOINTNESS_VERDICT": "PASS",
+  "note": "Dominants and contaminants are both restricted to data/splits/test_genomes.tsv. Accessions are compared after GCA<->GCF cross-mapping through data/gtdb/filtered_genomes.tsv (277,183 assemblies), the normalisation whose absence caused the Set C/D leakage undercount."
+}

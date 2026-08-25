@@ -1,0 +1,7 @@
+{
+  "filtered_genomes_rows": 277183,
+  "distinct_accession_strings_mapped": 503511,
+  "distinct_canonical_assemblies": 277183,
+  "rows_with_inconsistent_assembly_numbers": 0,
+  "mean_strings_per_assembly": 1.817
+}
