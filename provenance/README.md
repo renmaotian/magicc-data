@@ -173,3 +173,30 @@ python data_generating_scripts/73_generate_clean_cd_benchmarks.py C D  # WS1.2/1
 python data_generating_scripts/74_provenance_audit.py                # WS1.4  this audit
 python scripts/75_run_magicc_clean_cd.py             # WS1.5  MAGICC V5 inference
 ```
+
+---
+
+## SHA256 manifests in this repository
+
+| Manifest | Covers | Path convention |
+|---|---|---|
+| `sha256_manifest.txt` | `set_C_clean`, `set_D_clean` (+ the model and shared inputs) | analysis-workspace paths (`data/benchmarks/...`) |
+| `set_F_sha256_manifest.txt` | `set_F` | analysis-workspace paths |
+| `set_G_sha256_manifest.txt` | `set_G` | analysis-workspace paths |
+| `set_H_sha256_manifest.txt` | `set_H` | analysis-workspace paths |
+| `set_A_sha256_manifest.txt` | `set_A` | this repository's paths (`benchmark/set_A/...`) |
+| `set_B_sha256_manifest.txt` | `set_B` | this repository's paths |
+| `set_E_sha256_manifest.txt` | `set_E` | this repository's paths |
+
+Each manifest lists every generated assembly FASTA plus `metadata.tsv` and
+`labels.npy`. Verify a figshare download with, from the directory holding the
+`fasta/` tree:
+
+```bash
+sha256sum -c set_A_sha256_manifest.txt
+```
+
+The manifests for sets A, B and E were computed on 2026-08-25 from the same
+files that produced every reported number; the others were written by the
+provenance audit at generation time. The path prefixes differ for that
+historical reason and are stated per row above.

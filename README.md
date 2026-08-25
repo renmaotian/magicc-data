@@ -149,7 +149,7 @@ originally hid the set C/D leakage.
 | [`overlap_summary.tsv`](provenance/overlap_summary.tsv) | **the headline table** — for every set: unique dominants, how many samples fall in train / val / test, how many touched the k-mer feature-selection set, leakage %, and label-constraint violations |
 | `audit_summary.json`, `accession_crossmap_stats.json` | machine-readable form |
 | `set_*_dominants.txt`, `contaminants.txt` | the exact reference accessions used |
-| `sha256_manifest.txt`, `set_{F,G,H}_sha256_manifest.txt` | SHA256 of every generated assembly |
+| `sha256_manifest.txt`, `set_{A,B,E,F,G,H}_sha256_manifest.txt` | SHA256 of every generated assembly, for **every** benchmark set (verify a figshare download with `sha256sum -c`) |
 | [`seed_provenance.tsv`](provenance/seed_provenance.tsv) | RNG construction for every set |
 | [`benchmark_inventory.tsv`](provenance/benchmark_inventory.tsv) | per-set status, generator, base seed, seed tier, metadata SHA256 |
 | [`leakage_specificity_control.tsv`](provenance/leakage_specificity_control.tsv) | the control showing the effect is leakage, not lineage |
