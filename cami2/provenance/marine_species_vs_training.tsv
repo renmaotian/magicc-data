@@ -1,0 +1,475 @@
+dataset	species	n_cami_genomes	n_train_genomes_same_species	n_val_genomes_same_species	species_seen_in_training
+marine	unidentified	88	0	0	False
+marine	Aliivibrio wodanis	22	1	0	True
+marine	Aliivibrio salmonicida	19	1	0	True
+marine	Piscirickettsia salmonis	15	18	4	True
+marine	Vibrio anguillarum	14	18	2	True
+marine	Alteromonas mediterranea	13	8	0	True
+marine	Prochlorococcus marinus	13	12	1	True
+marine	Moritella viscosa	9	1	0	True
+marine	Shewanella baltica	9	16	5	True
+marine	Flavobacterium psychrophilum	9	45	3	True
+marine	Thermotoga maritima	6	7	2	True
+marine	Francisella noatunensis	5	0	0	False
+marine	Aeromonas salmonicida	5	12	2	True
+marine	Methanococcus maripaludis	4	23	1	True
+marine	Stutzerimonas stutzeri	4	49	7	True
+marine	Alteromonas macleodii	4	13	2	True
+marine	Psychrobacter sp. JCM 18900	4	0	0	False
+marine	Vibrio parahaemolyticus	4	304	42	True
+marine	Streptococcus agalactiae	3	392	45	True
+marine	Streptococcus iniae	3	22	1	True
+marine	Tenacibaculum dicentrarchi	3	9	3	True
+marine	Cellulophaga lytica	3	3	1	True
+marine	Vibrio coralliilyticus	3	4	1	True
+marine	Methanosarcina siciliae	3	3	0	True
+marine	Pseudoalteromonas haloplanktis	3	1	0	True
+marine	Weissella ceti	3	1	0	True
+marine	Thalassolituus oleivorans	3	1	0	True
+marine	Cellulophaga baltica	2	3	2	True
+marine	Moorena producens	2	1	0	True
+marine	Vibrio alginolyticus	2	74	8	True
+marine	Vibrio scophthalmi	2	1	0	True
+marine	Candidatus Pseudothioglobus singularis	2	0	0	False
+marine	Vibrio tasmaniensis	2	0	0	False
+marine	Staphylococcus warneri	2	41	5	True
+marine	Erythrobacter litoralis	2	1	0	True
+marine	Shewanella frigidimarina	2	1	0	True
+marine	Micrococcus luteus	2	62	6	True
+marine	Salmonella enterica	2	2804	345	True
+marine	Salinibacter ruber	2	88	5	True
+marine	Rhodothermus marinus	2	1	1	True
+marine	Haloquadratum walsbyi	2	2	0	True
+marine	Helicobacter cetorum	2	1	0	True
+marine	Psychrobacter sp. PAMC 21119	2	0	0	False
+marine	Pseudomonas fluorescens	2	0	0	False
+marine	Pseudoalteromonas sp. SM9913	2	0	0	False
+marine	Lactococcus garvieae	2	20	1	True
+marine	Marinobacter nauticus	2	5	1	True
+marine	Phaeobacter gallaeciensis	2	2	1	True
+marine	Thermosipho melanesiensis	2	5	2	True
+marine	Candidatus Endolissoclinum faulkneri	2	0	0	False
+marine	Archaeoglobus fulgidus	2	2	0	True
+marine	Alteromonas australica	2	0	1	False
+marine	Thermococcus barophilus	2	0	0	False
+marine	Brucella ceti	2	0	0	False
+marine	Flavobacterium frigidarium	2	1	0	True
+marine	Yersinia ruckeri	2	34	1	True
+marine	Aliivibrio fischeri	2	2	0	True
+marine	Pseudodesulfovibrio piezophilus	1	1	0	True
+marine	Campylobacter lari	1	0	0	False
+marine	Pseudoalteromonas rubra	1	0	0	False
+marine	Pseudoalteromonas piratica	1	0	0	False
+marine	Pseudoalteromonas phenolica	1	0	0	False
+marine	Campylobacter peloridis	1	0	0	False
+marine	Pseudoalteromonas luteoviolacea	1	1	0	True
+marine	Pseudomonas pohangensis	1	0	0	False
+marine	Candidatus Aciduliprofundum boonei	1	0	0	False
+marine	Pseudoalteromonas atlantica	1	10	0	True
+marine	Pseudanabaena sp. PCC 7367	1	0	0	False
+marine	Pseudalgibacter alginicilyticus	1	0	0	False
+marine	Prosthecochloris sp. CIB 2401	1	0	0	False
+marine	Prochlorococcus sp. MIT 0801	1	0	0	False
+marine	Prochlorococcus sp. MIT 0604	1	0	0	False
+marine	Candidatus Aquiluna sp. UB-MaderosW2red	1	0	0	False
+marine	Polaribacter vadi	1	1	0	True
+marine	Polaribacter sp. MED152	1	0	0	False
+marine	Planococcus plakortidis	1	0	0	False
+marine	Planococcus maritimus	1	0	0	False
+marine	Planococcus kocurii	1	0	0	False
+marine	Calyptogena okutanii thioautotrophic gill symbiont	1	0	0	False
+marine	Rhodococcus erythropolis	1	0	0	False
+marine	Rhodobacter xanthinilyticus	1	0	0	False
+marine	Brucella pinnipedialis	1	0	0	False
+marine	Renibacterium salmoninarum	1	1	0	True
+marine	Brucella sp. 141012304	1	0	0	False
+marine	Pyrolobus fumarii	1	1	0	True
+marine	Pyrodictium delaneyi	1	2	0	True
+marine	Pyrococcus yayanosii	1	0	0	False
+marine	Pyrococcus sp. ST04	1	0	0	False
+marine	Pyrococcus sp. NA2	1	0	0	False
+marine	Pyrococcus horikoshii	1	2	0	True
+marine	Pseudovibrio sp. FO-BEG1	1	0	0	False
+marine	Pyrococcus abyssi	1	0	1	False
+marine	Pyrobaculum aerophilum	1	3	0	True
+marine	Pusillimonas sp. T7-7	1	0	0	False
+marine	Psychromonas sp. CNPT3	1	0	0	False
+marine	Psychromonas ingrahamii	1	0	0	False
+marine	Psychroflexus torquis	1	1	0	True
+marine	Psychrobacter sp. PRwf-1	1	0	0	False
+marine	Brumicola nitratireducens	1	0	0	False
+marine	Caldithrix abyssi	1	2	0	True
+marine	Psychrobacter sp. AntiMn-1	1	0	0	False
+marine	Candidatus Atelocyanobacterium thalassae	1	0	0	False
+marine	Pseudomonas sp. P1.31	1	0	0	False
+marine	Pyrococcus furiosus	1	3	0	True
+marine	Octadecabacter temperatus	1	2	0	True
+marine	Candidatus Izimaplasma bacterium HR1	1	0	0	False
+marine	Octadecabacter arcticus	1	0	0	False
+marine	Octadecabacter antarcticus	1	0	0	False
+marine	Oceanobacillus iheyensis	1	0	0	False
+marine	Oceanithermus profundus	1	1	0	True
+marine	Novosphingobium sp. PP1Y	1	0	0	False
+marine	Novosphingobium pentaromativorans	1	0	0	False
+marine	Nonlabens sp. Hel1_33_55	1	0	0	False
+marine	Nonlabens marinus	1	0	1	False
+marine	Nonlabens dokdonensis	1	0	0	False
+marine	Planococcus antarcticus	1	0	0	False
+marine	Nocardiopsis dassonvillei	1	4	1	True
+marine	Candidatus Nitrosarchaeum limnium	1	0	0	False
+marine	Nocardia seriolae	1	5	0	True
+marine	Candidatus Nitrosopelagicus brevis	1	0	0	False
+marine	Nitrosopumilus piranensis	1	0	1	False
+marine	Nitrosopumilus maritimus	1	0	0	False
+marine	Nitrosopumilus adriaticus	1	2	0	True
+marine	Nitrosococcus oceani	1	0	0	False
+marine	Nitrosococcus halophilus	1	1	0	True
+marine	Nitratiruptor sp. SB155-2	1	0	0	False
+marine	Nitratifractor salsuginis	1	1	0	True
+marine	Nodularia spumigena	1	1	1	True
+marine	Planococcus donghaensis	1	1	0	True
+marine	Rhodococcus sp. 008	1	0	0	False
+marine	Planktomarina temperata	1	1	1	True
+marine	Candidatus Cenarchaeum symbiosum	1	0	0	False
+marine	Picosynechococcus sp. PCC 7002	1	0	0	False
+marine	Phycisphaera mikurensis	1	2	0	True
+marine	Photobacterium profundum	1	1	0	True
+marine	Photobacterium phosphoreum	1	6	0	True
+marine	Photobacterium gaetbulicola	1	1	0	True
+marine	Phaeobacter inhibens	1	8	1	True
+marine	Persephonella marina	1	0	2	False
+marine	Oleispira antarctica	1	0	0	False
+marine	Pelagerythrobacter marensis	1	0	0	False
+marine	Parvularcula bermudensis	1	0	0	False
+marine	Paraurantiacibacter namhicola	1	0	0	False
+marine	Parasynechococcus marenigrum	1	0	0	False
+marine	Paraoerskovia marina	1	0	0	False
+marine	Candidatus Filomicrobium marinum	1	0	0	False
+marine	Paraglaciecola psychrophila	1	0	0	False
+marine	Palaeococcus pacificus	1	1	0	True
+marine	Paenibacillus durus	1	0	0	False
+marine	Paenibacillus crassostreae	1	1	0	True
+marine	Owenweeksia hongkongensis	1	0	0	False
+marine	Oscillibacter valericigenes	1	1	0	True
+marine	Pelagibacterium halotolerans	1	0	0	False
+marine	Tistrella mobilis	1	5	0	True
+marine	Thiolapillus brandeum	1	0	0	False
+marine	Synechococcus sp. WH 8020	1	0	0	False
+marine	Synechococcus sp. WH 7803	1	0	0	False
+marine	Synechococcus sp. RCC307	1	0	0	False
+marine	Synechococcus sp. KORDI-52	1	0	0	False
+marine	Synechococcus sp. KORDI-49	1	0	0	False
+marine	Synechococcus sp. KORDI-100	1	0	0	False
+marine	Synechococcus sp. CC9902	1	0	0	False
+marine	Synechococcus sp. CC9605	1	0	0	False
+marine	Synechococcus sp. CC9311	1	0	0	False
+marine	Rhodoferax ferrireducens	1	0	0	False
+marine	Sulfurimonas denitrificans	1	2	0	True
+marine	Sulfurimonas autotrophica	1	1	0	True
+marine	Sulfobacillus acidophilus	1	0	0	False
+marine	Sulfitobacter alexandrii	1	1	0	True
+marine	Stutzerimonas xanthomarina	1	2	0	True
+marine	Streptomyces sp. CNQ-509	1	0	0	False
+marine	Streptomyces albus	1	6	0	True
+marine	Streptococcus parauberis	1	8	4	True
+marine	Aurantiacibacter atlanticus	1	1	0	True
+marine	Aurantiacibacter gangjinensis	1	1	0	True
+marine	Stappia sp. ES.058	1	0	0	False
+marine	Sulfurovum sp. NBC37-1	1	0	0	False
+marine	Woeseia oceani	1	0	0	False
+marine	Yersinia aldovae	1	1	0	True
+marine	Winogradskyella sp. PG-2	1	0	0	False
+marine	Wenzhouxiangella marina	1	0	0	False
+marine	Wenyingzhuangia fucanilytica	1	0	0	False
+marine	Zunongwangia profunda	1	1	0	True
+marine	Vibrio vulnificus	1	13	1	True
+marine	Vibrio tubiashii	1	0	0	False
+marine	alpha proteobacterium HIMB5	1	0	0	False
+marine	Vibrio sp. EJY3	1	0	0	False
+marine	alpha proteobacterium HIMB59	1	0	0	False
+marine	Trichodesmium erythraeum	1	1	0	True
+marine	endosymbiont of unidentified scaly snail isolate Monju	1	0	0	False
+marine	Vibrio nigripulchritudo	1	0	1	False
+marine	Vibrio harveyi	1	11	2	True
+marine	Vibrio furnissii	1	7	0	True
+marine	Alcanivorax borkumensis	1	0	0	False
+marine	Vibrio cholerae	1	208	30	True
+marine	Aeropyrum pernix	1	1	0	True
+marine	Archaeoglobus profundus	1	0	0	False
+marine	Vibrio breoganii	1	1	0	True
+marine	Archaeoglobus veneficus	1	0	0	False
+marine	Arthrobacter sp. PAMC 25486	1	0	0	False
+marine	Tsuneonella dongtanensis	1	0	0	False
+marine	bacterium AB1	1	0	0	False
+marine	Shewanella amazonensis	1	0	1	False
+marine	Serinicoccus hydrothermalis	1	1	0	True
+marine	Sediminicola sp. YIK13	1	0	0	False
+marine	Sedimenticola thiotaurini	1	1	0	True
+marine	Saprospira grandis	1	1	0	True
+marine	Bdellovibrio bacteriovorus	1	7	2	True
+marine	Belliella baltica	1	0	0	False
+marine	Salipiger sp. CCB-MM3	1	0	0	False
+marine	Salinispora tropica	1	0	0	False
+marine	Salinispora arenicola	1	0	0	False
+marine	Salinispira pacifica	1	1	0	True
+marine	Staphylothermus marinus	1	1	0	True
+marine	Saccharophagus degradans	1	0	0	False
+marine	Ruegeria sp. TM1040	1	0	0	False
+marine	Ruegeria pomeroyi	1	0	0	False
+marine	Roseobacter litoralis	1	1	0	True
+marine	Roseobacter denitrificans	1	0	0	False
+marine	Roseicyclus elongatus	1	0	0	False
+marine	Robiginitalea biformata	1	1	0	True
+marine	Rivularia sp. PCC 7116	1	0	0	False
+marine	Rhodovulum sulfidophilum	1	1	0	True
+marine	Rhodococcus sp. WMMA185	1	0	0	False
+marine	Rhodococcus sp. B7740	1	0	0	False
+marine	Bernardetia litoralis	1	1	0	True
+marine	Staphylothermus hellenicus	1	1	0	True
+marine	Staphylococcus equorum	1	18	1	True
+marine	Staphylococcus epidermidis	1	321	48	True
+marine	Sporosarcina psychrophila	1	2	0	True
+marine	Spongiibacter sp. IMCC21906	1	0	0	False
+marine	Spirochaeta thermophila	1	0	0	False
+marine	Spiribacter salinus	1	1	0	True
+marine	Spiribacter curvatus	1	0	0	False
+marine	Sphingopyxis alaskensis	1	1	0	True
+marine	Simiduia agarivorans	1	0	0	False
+marine	Siansivirga zeaxanthinifaciens	1	0	0	False
+marine	Bacillus weihaiensis	1	0	0	False
+marine	Bacillus infantis	1	0	0	False
+marine	Shewanella violacea	1	1	0	True
+marine	Shewanella sp. ANA-3	1	0	0	False
+marine	Shewanella sediminis	1	0	0	False
+marine	Shewanella piezotolerans	1	0	0	False
+marine	Shewanella pealeana	1	0	0	False
+marine	Shewanella loihica	1	3	0	True
+marine	Shewanella halifaxensis	1	1	0	True
+marine	Agrococcus jejuensis	1	1	0	True
+marine	Shewanella denitrificans	1	0	0	False
+marine	Bacillus velezensis	1	273	36	True
+marine	Neorickettsia helminthoeca	1	0	0	False
+marine	Shewanella woodyi	1	1	0	True
+marine	Denitrovibrio acetiphilus	1	1	0	True
+marine	Deferribacter desulfuricans	1	1	0	True
+marine	Cycloclasticus zancles	1	0	0	False
+marine	Cyclobacterium marinum	1	2	0	True
+marine	Cyclobacterium amurskyense	1	0	0	False
+marine	Crocosphaera subtropica	1	0	1	False
+marine	Croceicoccus naphthovorans	1	0	0	False
+marine	Croceibacterium atlanticum	1	0	0	False
+marine	Croceibacter atlanticus	1	6	0	True
+marine	Corynebacterium stationis	1	2	0	True
+marine	Corynebacterium sphenisci	1	1	0	True
+marine	Corynebacterium phocae	1	0	0	False
+marine	Candidatus Nitrosopumilus koreensis	1	0	0	False
+marine	Corynebacterium marinum	1	0	0	False
+marine	Coraliomargarita akajimensis	1	1	0	True
+marine	Colwellia sp. PAMC 20917	1	0	0	False
+marine	Colwellia sp. MT41	1	0	0	False
+marine	Colwellia psychrerythraea	1	0	0	False
+marine	Clostridium botulinum	1	0	0	False
+marine	Citromicrobium sp. JL477	1	0	0	False
+marine	Christiangramia salexigens	1	0	0	False
+marine	Christiangramia forsetii	1	1	1	True
+marine	Chloroherpeton thalassium	1	1	0	True
+marine	Chlorobium phaeovibrioides	1	3	1	True
+marine	Chlorobium phaeobacteroides	1	0	0	False
+marine	Cereibacter sphaeroides	1	0	0	False
+marine	Corynebacterium maris	1	0	1	False
+marine	Flexistipes sinusarabici	1	1	0	True
+marine	Flavobacterium crassostreae	1	1	0	True
+marine	Flavobacteriaceae bacterium UJ101	1	0	0	False
+marine	Flavobacteriaceae bacterium MAR_2010_188	1	0	0	False
+marine	Flammeovirga sp. MY04	1	0	0	False
+marine	Flagellimonas ruestringensis	1	0	0	False
+marine	Flagellimonas lutaonensis	1	0	0	False
+marine	Fibrella aestuarina	1	1	0	True
+marine	Fervidobacterium pennivorans	1	1	0	True
+marine	Ferroglobus placidus	1	1	0	True
+marine	Ferrimonas balearica	1	0	0	False
+marine	Edwardsiella tarda	1	12	2	True
+marine	Edwardsiella anguillarum	1	5	0	True
+marine	Desulfobacula toluolica	1	0	1	False
+marine	Draconibacterium orientale	1	0	0	False
+marine	Dokdonia sp. PRO95	1	0	0	False
+marine	Dokdonia sp. MED134	1	0	0	False
+marine	Dokdonia sp. 4H-3-7-5	1	0	0	False
+marine	Dinoroseobacter shibae	1	3	0	True
+marine	Desulfurobacterium thermolithotrophum	1	1	1	True
+marine	Desulfovibrio desulfuricans	1	2	0	True
+marine	Desulfotalea psychrophila	1	0	1	False
+marine	Desulforapulum autotrophicum	1	0	0	False
+marine	Desulforamulus reducens	1	0	0	False
+marine	Desulfocurvibacter africanus	1	3	0	True
+marine	Desulfococcus multivorans	1	2	1	True
+marine	Desulfocapsa sulfexigens	1	1	0	True
+marine	Echinicola vietnamensis	1	1	0	True
+marine	Thermoclostridium stercorarium	1	2	0	True
+marine	Thermaerobacter marianensis	1	0	0	False
+marine	Teredinibacter turnerae	1	1	0	True
+marine	Tenacibaculum todarodis	1	0	0	False
+marine	Syntrophotalea carbinolica	1	1	0	True
+marine	Syntrophotalea acetylenica	1	3	0	True
+marine	Synechococcus sp. WH 8109	1	0	0	False
+marine	Aeropyrum camini	1	1	0	True
+marine	Actinoalloteichus sp. GBA129-24	1	0	0	False
+marine	Actinoalloteichus hymeniacidonis	1	0	0	False
+marine	Actinoalloteichus fjordicus	1	1	0	True
+marine	Acinetobacter venetianus	1	1	0	True
+marine	Acinetobacter johnsonii	1	21	2	True
+marine	Cellulophaga algicola	1	1	0	True
+marine	Acidobacteria bacterium Mor1	1	0	0	False
+marine	Acetivibrio thermocellus	1	0	0	False
+marine	Bacillus pumilus	1	23	4	True
+marine	Thioflavicoccus mobilis	1	0	0	False
+marine	Vibrio campbellii	1	5	0	True
+marine	Candidatus Nitrosopumilus sediminis	1	0	0	False
+marine	Thalassotalea crassostreae	1	0	0	False
+marine	Arcanobacterium phocae	1	0	0	False
+marine	Aquibium oceanicum	1	0	0	False
+marine	Alteromonas naphthalenivorans	1	3	0	True
+marine	Altererythrobacter ishigakiensis	1	0	0	False
+marine	Altererythrobacter epoxidivorans	1	0	0	False
+marine	Alloalcanivorax dieselolei	1	1	0	True
+marine	Aciduliprofundum sp. MAR08-339	1	0	0	False
+marine	Celeribacter marinus	1	1	0	True
+marine	Celeribacter indicus	1	0	0	False
+marine	Carnobacterium sp. 17-4	1	0	0	False
+marine	Carnobacterium divergens	1	8	0	True
+marine	Candidatus Thioglobus autotrophicus	1	0	0	False
+marine	Candidatus Ruthturnera calyptogenae	1	0	0	False
+marine	Candidatus Puniceispirillum marinum	1	0	0	False
+marine	Candidatus Pelagibacter sp. IMCC9063	1	0	0	False
+marine	Candidatus Pelagibacter communis	1	0	0	False
+marine	Agarivorans gilvus	1	1	0	True
+marine	Thiocystis violascens	1	0	0	False
+marine	Thermovirga lienii	1	1	0	True
+marine	Thermovibrio ammonificans	1	1	0	True
+marine	Thermococcus cleftensis	1	1	0	True
+marine	Thermotoga neapolitana	1	2	0	True
+marine	Thermosediminibacter oceani	1	0	0	False
+marine	Thermoplasma volcanium	1	1	0	True
+marine	Thermodesulfatator indicus	1	1	0	True
+marine	Thermococcus sp. AM4	1	0	0	False
+marine	Thermococcus sp. 4557	1	0	0	False
+marine	Thermococcus piezophilus	1	1	0	True
+marine	Thermococcus paralvinellae	1	0	0	False
+marine	Thermococcus onnurineus	1	3	0	True
+marine	Thermococcus nautili	1	1	2	True
+marine	Thermococcus litoralis	1	0	0	False
+marine	Thermococcus gammatolerans	1	1	0	True
+marine	Thermococcus eurythermalis	1	1	0	True
+marine	Thermotoga sp. RQ2	1	0	0	False
+marine	Methanococcoides methylutens	1	2	0	True
+marine	Methanocaldococcus vulcanius	1	1	0	True
+marine	Methanocaldococcus sp. FS406-22	1	0	0	False
+marine	Methanocaldococcus jannaschii	1	1	0	True
+marine	Methanocaldococcus infernus	1	1	0	True
+marine	Methanocaldococcus fervens	1	1	0	True
+marine	Methanocaldococcus bathoardescens	1	1	0	True
+marine	Marivivens sp. JLT3646	1	0	0	False
+marine	Marivirga tractuosa	1	1	0	True
+marine	Marinovum algicola	1	0	1	False
+marine	Marinomonas sp. MWYL1	1	0	0	False
+marine	Marinomonas posidonica	1	0	0	False
+marine	Marinomonas mediterranea	1	0	1	False
+marine	Formosa agariphila	1	0	0	False
+marine	Marinobacter sp. BSs20148	1	0	0	False
+marine	Marinobacter similis	1	0	0	False
+marine	Marinobacter salinus	1	0	0	False
+marine	Marinobacter adhaerens	1	2	0	True
+marine	Marinitoga piezophila	1	4	0	True
+marine	Marinithermus hydrothermalis	1	1	0	True
+marine	Maridesulfovibrio salexigens	1	0	0	False
+marine	Maridesulfovibrio hydrothermalis	1	2	0	True
+marine	Maricaulis maris	1	0	0	False
+marine	Maribacter sp. MAR_2009_60	1	0	0	False
+marine	Maribacter sp. HTCC2170	1	0	0	False
+marine	Maribacter sp. 1_2014MBL_MicDiv	1	0	0	False
+marine	Magnetospira sp. QH-2	1	0	0	False
+marine	Marinobacterium aestuarii	1	0	0	False
+marine	Nautilia profundicola	1	0	0	False
+marine	Nanohaloarchaea archaeon SG9	1	0	0	False
+marine	Nanoarchaeum equitans	1	1	0	True
+marine	Myxococcus fulvus	1	6	0	True
+marine	Mycolicibacterium rhodesiae	1	0	0	False
+marine	Mycolicibacterium chubuense	1	0	0	False
+marine	Mycobacteroides chelonae	1	0	0	False
+marine	Moritella marina	1	1	0	True
+marine	Micromonospora maris	1	0	0	False
+marine	Micromonospora krabiensis	1	1	0	True
+marine	Microbacterium sp. LKL04	1	0	0	False
+marine	Methylophaga nitratireducenticrescens	1	2	0	True
+marine	Methylophaga frappieri	1	0	0	False
+marine	Methanococcus aeolicus	1	0	0	False
+marine	Methyloceanibacter caenitepidi	1	0	0	False
+marine	Methanotorris igneus	1	1	0	True
+marine	Methanothermococcus okinawensis	1	0	0	False
+marine	Methanosarcina sp. WH1	1	0	0	False
+marine	Methanosarcina sp. MTP4	1	0	0	False
+marine	Methanosarcina acetivorans	1	1	0	True
+marine	Methanopyrus kandleri	1	1	0	True
+marine	Methanolacinia petrolearia	1	0	1	False
+marine	Methanohalophilus halophilus	1	1	1	True
+marine	Methanohalobium evestigatum	1	1	0	True
+marine	Methanoculleus marisnigri	1	3	0	True
+marine	Methanococcus voltae	1	0	0	False
+marine	Methanococcus vannielii	1	1	0	True
+marine	Methylomonas methanica	1	0	1	False
+marine	Helicobacter enhydrae	1	0	0	False
+marine	Halorhabdus tiamatea	1	1	0	True
+marine	Halopseudomonas litoralis	1	1	0	True
+marine	Halomonas sp. 23_GOM-1509m	1	0	0	False
+marine	Halomonas elongata	1	2	0	True
+marine	Halomonas aestuarii	1	1	0	True
+marine	Halolamina sediminis	1	0	0	False
+marine	Halogeometricum borinquense	1	5	0	True
+marine	Haloferax mediterranei	1	4	0	True
+marine	Haloferax gibbonsii	1	3	0	True
+marine	Halodesulfurarchaeum formicicum	1	2	0	True
+marine	Halobacteriovorax marinus	1	2	0	True
+marine	Haloarcula sp. CBA1115	1	0	0	False
+marine	Magnetococcus marinus	1	0	0	False
+marine	Haliangium ochraceum	1	1	0	True
+marine	Halanaeroarchaeum sulfurireducens	1	1	0	True
+marine	Hahella chejuensis	1	0	0	False
+marine	Gramella sp. MAR_2010_147	1	0	0	False
+marine	Gloeomargarita lithophora	1	0	1	False
+marine	Glaciecola sp. 4H-3-7+YE-5	1	0	0	False
+marine	Geoglobus ahangari	1	1	0	True
+marine	Geoglobus acetivorans	1	1	0	True
+marine	Geobacillus kaustophilus	1	0	0	False
+marine	Francisella uliginis	1	1	0	True
+marine	Formosa sp. Hel3_A1_48	1	0	0	False
+marine	Formosa sp. Hel1_33_131	1	0	0	False
+marine	Formosa haliotis	1	0	0	False
+marine	Haloarcula hispanica	1	6	2	True
+marine	Luteimonas sp. JM171	1	0	0	False
+marine	Leuconostoc lactis	1	5	0	True
+marine	Leisingera methylohalidivorans	1	0	0	False
+marine	Lacinutrix sp. 5H-3-7-4	1	0	0	False
+marine	Lacimicrobium alkaliphilum	1	0	0	False
+marine	Kytococcus sedentarius	1	2	1	True
+marine	Kosmotoga pacifica	1	0	0	False
+marine	Kosmotoga olearia	1	2	0	True
+marine	Kiritimatiella glycovorans	1	0	1	False
+marine	Kangiella sediminilitoris	1	0	0	False
+marine	Kangiella koreensis	1	0	0	False
+marine	Kangiella geojedonensis	1	1	0	True
+marine	Jannaschia sp. CCS1	1	0	0	False
+marine	Hippea maritima	1	1	0	True
+marine	Ilyobacter polytropus	1	1	0	True
+marine	Ilumatobacter coccineus	1	0	0	False
+marine	Ignicoccus islandicus	1	1	0	True
+marine	Ignicoccus hospitalis	1	2	0	True
+marine	Idiomarina loihiensis	1	4	1	True
+marine	Hyphomonas sp. Mor2	1	0	0	False
+marine	Hyphomonas neptunium	1	0	0	False
+marine	Hyphomicrobium nitrativorans	1	0	0	False
+marine	Hyperthermus butylicus	1	1	0	True
+marine	Hydrogenovibrio crunogenus	1	0	0	False
+marine	Hydrogenophaga crassostreae	1	0	1	False
+marine	Hoeflea sp. IMCC20628	1	0	0	False
+marine	Hirschia baltica	1	0	0	False
+marine	Isoalcanivorax pacificus	1	1	0	True

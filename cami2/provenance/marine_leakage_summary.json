@@ -1,0 +1,29 @@
+{
+  "workstream": "WS3.8 CAMI II leakage audit (R1-M3)",
+  "dataset": "marine",
+  "generated_utc": "2026-08-02T16:31:05.811351+00:00",
+  "n_source_genomes": 864,
+  "L1_accession_in_cami_id": 0,
+  "L2_ncbi_name_matched": 554,
+  "n_unmatched_no_accession_recoverable": 310,
+  "overlap_train": 313,
+  "overlap_val": 107,
+  "overlap_test": 95,
+  "overlap_kmer_selection": 71,
+  "n_leaked_train_val_or_kmer": 340,
+  "n_leakage_free": 524,
+  "leakage_pct": 39.352,
+  "L3_species_level": {
+    "n_distinct_species": 474,
+    "n_species_present_in_train": 215,
+    "n_cami_genomes_whose_species_is_in_train": 389,
+    "pct_cami_genomes_species_in_train": 45.02
+  },
+  "crossmap_source": "data/gtdb/filtered_genomes.tsv (GCA<->GCF, 277,183 assemblies)",
+  "universes": {
+    "train": 79948,
+    "val": 10010,
+    "test": 9999,
+    "kmer_selection": 2000
+  }
+}

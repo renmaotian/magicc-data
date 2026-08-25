@@ -1,0 +1,73 @@
+{
+  "workstream": "WS3.8 CAMI II external benchmark (R1-M3)",
+  "dataset": "strain_madness",
+  "generated_utc": "2026-08-02T16:29:40.360899+00:00",
+  "design_seed": 38100,
+  "source_genome_dir": "data/real_data/cami2/genomes/strain_madness/short_read/source_genomes",
+  "n_source_genomes": 408,
+  "n_samples": 10,
+  "samples": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "truth_convention": {
+    "completeness_pct": "100 * retained_dominant_bp / full_reference_length(dominant)",
+    "contamination_pct": "100 * contaminant_bp / full_reference_length(dominant)",
+    "denominator": "FULL reference length of the dominant source genome (total bp of all sequences in source_genomes/<genome>.fasta)",
+    "bp_measure_primary": "span_bp = sum(end_position - start_position + 1) from gsa_mapping.tsv",
+    "bp_measure_sensitivity": "union_bp = bp of the union of source intervals",
+    "matches": "magicc/contamination.py::compute_contamination_rate and create_contaminated_genome"
+  },
+  "magicc_completeness_floor_pct": 50.0,
+  "grid": {
+    "completeness_targets": [
+      60.0,
+      75.0,
+      90.0
+    ],
+    "contamination_targets": [
+      2.0,
+      5.0,
+      10.0,
+      15.0,
+      20.0
+    ],
+    "distance_ranks": [
+      "species",
+      "genus",
+      "family",
+      "order",
+      "class",
+      "phylum"
+    ],
+    "max_dominants_per_cell": 25
+  },
+  "excluded_non_genome_labels": [
+    "plasmid",
+    "virus"
+  ],
+  "n_gold_bins": 4064,
+  "n_gold_bins_excluded_non_genome": 0,
+  "n_gold_bins_scoreable": 1107,
+  "n_gold_bins_censored_by_floor": 2957,
+  "n_mixed_bins": 2250,
+  "pairwise_distance_rank_counts": {
+    "species": 21218,
+    "genus": 1128,
+    "family": 8933,
+    "order": 4823,
+    "class": 4554,
+    "phylum": 229
+  },
+  "max_gold_completeness_pct": 99.99551579323499,
+  "n_gold_completeness_over_100": 0,
+  "n_gold_union_completeness_over_100": 0
+}

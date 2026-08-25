@@ -1,0 +1,801 @@
+bin_id	path	completeness_pct	scoreable	stratum	selection_reason	dataset	binset
+s0__Otu1016.0	bins/marine/gold/s0__Otu1016.0.fna	51.38197015638524	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1040	bins/marine/gold/s0__Otu1040.fna	51.65878205377758	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu106	bins/marine/gold/s0__Otu106.fna	51.3700056398996	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1182	bins/marine/gold/s0__Otu1182.fna	51.38772859798199	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1187	bins/marine/gold/s0__Otu1187.fna	51.614579582746096	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1209	bins/marine/gold/s0__Otu1209.fna	51.511310148704624	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu130.0	bins/marine/gold/s0__Otu130.0.fna	51.49768744666185	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1399	bins/marine/gold/s0__Otu1399.fna	51.80615027246576	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1433	bins/marine/gold/s0__Otu1433.fna	51.442204098404346	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu2117	bins/marine/gold/s0__Otu2117.fna	51.70737489027661	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu2119.0	bins/marine/gold/s0__Otu2119.0.fna	51.30475106210093	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu22	bins/marine/gold/s0__Otu22.fna	51.5300943316313	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu2411	bins/marine/gold/s0__Otu2411.fna	51.68273307892881	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu2487	bins/marine/gold/s0__Otu2487.fna	51.63553486311026	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu255	bins/marine/gold/s0__Otu255.fna	51.64791773809622	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu696	bins/marine/gold/s0__Otu696.fna	51.634963668032086	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu797	bins/marine/gold/s0__Otu797.fna	51.35309011421762	True	0.0	stratified_by_completeness_decile	marine	gold
+s0__Otu895.0	bins/marine/gold/s0__Otu895.0.fna	51.43687323519203	True	0.0	stratified_by_completeness_decile	marine	gold
+s1__Otu1469.1	bins/marine/gold/s1__Otu1469.1.fna	52.625670127839776	True	0.0	stratified_by_completeness_decile	marine	gold
+s2__Otu873.1	bins/marine/gold/s2__Otu873.1.fna	55.48590290847132	True	0.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_100_length_1999_cov_6.33080	bins/marine/gold/s4__RNODE_100_length_1999_cov_6.33080.fna	50.56145675265554	True	0.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_229_length_2135_cov_3.06673	bins/marine/gold/s4__RNODE_229_length_2135_cov_3.06673.fna	50.26975863700899	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__Otu1089	bins/marine/gold/s5__Otu1089.fna	52.21680442316803	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__Otu1129	bins/marine/gold/s5__Otu1129.fna	52.04513823049231	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__Otu1187	bins/marine/gold/s5__Otu1187.fna	51.85155775818614	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__Otu1238	bins/marine/gold/s5__Otu1238.fna	51.6901844016337	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__Otu1786	bins/marine/gold/s5__Otu1786.fna	51.97505149788557	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__Otu2362.0	bins/marine/gold/s5__Otu2362.0.fna	52.09558357366372	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__Otu2438	bins/marine/gold/s5__Otu2438.fna	52.01126016216433	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__Otu395	bins/marine/gold/s5__Otu395.fna	52.19029649023377	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__Otu783	bins/marine/gold/s5__Otu783.fna	52.19782435877632	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__Otu974	bins/marine/gold/s5__Otu974.fna	52.08580952859808	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__RNODE_540_length_1564_cov_3.03735	bins/marine/gold/s5__RNODE_540_length_1564_cov_3.03735.fna	53.44736842105263	True	0.0	stratified_by_completeness_decile	marine	gold
+s5__RNODE_78_length_5103_cov_8.24306	bins/marine/gold/s5__RNODE_78_length_5103_cov_8.24306.fna	54.07006494784491	True	0.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_341_length_3219_cov_3.63466	bins/marine/gold/s6__RNODE_341_length_3219_cov_3.63466.fna	54.01939318110729	True	0.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_364_length_1571_cov_3.81278	bins/marine/gold/s6__RNODE_364_length_1571_cov_3.81278.fna	54.25435765009684	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu1462.0	bins/marine/gold/s7__Otu1462.0.fna	52.60650747393978	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu1472	bins/marine/gold/s7__Otu1472.fna	52.40923124446482	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu179	bins/marine/gold/s7__Otu179.fna	52.95377753272149	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu279	bins/marine/gold/s7__Otu279.fna	52.38728054306053	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu316.0	bins/marine/gold/s7__Otu316.0.fna	53.14095575367216	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu351	bins/marine/gold/s7__Otu351.fna	53.03351148634237	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu365.0	bins/marine/gold/s7__Otu365.0.fna	52.940286201466975	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu368	bins/marine/gold/s7__Otu368.fna	52.75578419233409	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu457.0	bins/marine/gold/s7__Otu457.0.fna	53.00896153519837	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu536	bins/marine/gold/s7__Otu536.fna	52.84674807418872	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu594	bins/marine/gold/s7__Otu594.fna	52.9377431531356	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu683.0	bins/marine/gold/s7__Otu683.0.fna	52.94751361855655	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu797	bins/marine/gold/s7__Otu797.fna	52.54044039702016	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__Otu968.0	bins/marine/gold/s7__Otu968.0.fna	53.13255577229574	True	0.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_366_length_2053_cov_8.47415	bins/marine/gold/s7__RNODE_366_length_2053_cov_8.47415.fna	54.9532250123092	True	0.0	stratified_by_completeness_decile	marine	gold
+s8__Otu1267.0	bins/marine/gold/s8__Otu1267.0.fna	50.04730755390476	True	0.0	stratified_by_completeness_decile	marine	gold
+s8__Otu1930	bins/marine/gold/s8__Otu1930.fna	50.17416344053049	True	0.0	stratified_by_completeness_decile	marine	gold
+s8__Otu2052	bins/marine/gold/s8__Otu2052.fna	50.06976624507795	True	0.0	stratified_by_completeness_decile	marine	gold
+s8__Otu332	bins/marine/gold/s8__Otu332.fna	50.36457251194681	True	0.0	stratified_by_completeness_decile	marine	gold
+s8__Otu806.0	bins/marine/gold/s8__Otu806.0.fna	50.49409494321259	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1129	bins/marine/gold/s9__Otu1129.fna	51.802687912343	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1156	bins/marine/gold/s9__Otu1156.fna	51.82103616842309	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1283	bins/marine/gold/s9__Otu1283.fna	51.42515387034458	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1297	bins/marine/gold/s9__Otu1297.fna	51.83531602486265	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1334	bins/marine/gold/s9__Otu1334.fna	51.37492035331893	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1876	bins/marine/gold/s9__Otu1876.fna	51.58780108933408	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu198.0	bins/marine/gold/s9__Otu198.0.fna	51.56153433869768	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu2385	bins/marine/gold/s9__Otu2385.fna	51.70407409667135	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu327	bins/marine/gold/s9__Otu327.fna	51.66129705864805	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu457.0	bins/marine/gold/s9__Otu457.0.fna	51.856303133804666	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu605	bins/marine/gold/s9__Otu605.fna	51.89742594639287	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu612.0	bins/marine/gold/s9__Otu612.0.fna	51.883887564738224	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu889.0	bins/marine/gold/s9__Otu889.0.fna	51.707677041862524	True	0.0	stratified_by_completeness_decile	marine	gold
+s9__Otu987	bins/marine/gold/s9__Otu987.fna	50.89739613030185	True	0.0	stratified_by_completeness_decile	marine	gold
+s1__Otu1153	bins/marine/gold/s1__Otu1153.fna	57.59190902008553	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu1191	bins/marine/gold/s1__Otu1191.fna	58.07138765473885	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu1548.1	bins/marine/gold/s1__Otu1548.1.fna	57.27496389588075	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu1585	bins/marine/gold/s1__Otu1585.fna	57.89101581565304	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu2073	bins/marine/gold/s1__Otu2073.fna	58.09634237580144	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu2206	bins/marine/gold/s1__Otu2206.fna	58.15854140360754	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu2446	bins/marine/gold/s1__Otu2446.fna	57.80643345948802	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu2479	bins/marine/gold/s1__Otu2479.fna	58.29682058929919	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu315.0	bins/marine/gold/s1__Otu315.0.fna	58.14249951767779	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu395	bins/marine/gold/s1__Otu395.fna	58.11148558707614	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu433	bins/marine/gold/s1__Otu433.fna	57.82498455707742	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu525.0	bins/marine/gold/s1__Otu525.0.fna	58.34474618742285	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu894.0	bins/marine/gold/s1__Otu894.0.fna	57.54965598356673	True	1.0	stratified_by_completeness_decile	marine	gold
+s1__Otu931	bins/marine/gold/s1__Otu931.fna	58.01740363634633	True	1.0	stratified_by_completeness_decile	marine	gold
+s3__Otu1448	bins/marine/gold/s3__Otu1448.fna	56.87208687867624	True	1.0	stratified_by_completeness_decile	marine	gold
+s3__Otu2209	bins/marine/gold/s3__Otu2209.fna	57.42550553941888	True	1.0	stratified_by_completeness_decile	marine	gold
+s3__Otu336	bins/marine/gold/s3__Otu336.fna	57.28070544722843	True	1.0	stratified_by_completeness_decile	marine	gold
+s3__Otu438	bins/marine/gold/s3__Otu438.fna	57.11232957749375	True	1.0	stratified_by_completeness_decile	marine	gold
+s3__Otu473	bins/marine/gold/s3__Otu473.fna	57.220864774331616	True	1.0	stratified_by_completeness_decile	marine	gold
+s3__Otu856.0	bins/marine/gold/s3__Otu856.0.fna	57.35470443584391	True	1.0	stratified_by_completeness_decile	marine	gold
+s3__Otu930	bins/marine/gold/s3__Otu930.fna	57.58863987567027	True	1.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_456_length_1695_cov_36.79753	bins/marine/gold/s3__RNODE_456_length_1695_cov_36.79753.fna	56.639701306782825	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu1472	bins/marine/gold/s4__Otu1472.fna	61.27151840185867	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu1593	bins/marine/gold/s4__Otu1593.fna	61.4046026213276	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu169.1	bins/marine/gold/s4__Otu169.1.fna	59.21593053945193	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu183.0	bins/marine/gold/s4__Otu183.0.fna	59.145414838046726	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu1918	bins/marine/gold/s4__Otu1918.fna	61.497359186363205	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu252	bins/marine/gold/s4__Otu252.fna	62.02736854916799	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu254	bins/marine/gold/s4__Otu254.fna	61.43821902176658	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu304.0	bins/marine/gold/s4__Otu304.0.fna	61.54946226083084	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu360	bins/marine/gold/s4__Otu360.fna	61.66094425177588	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu388	bins/marine/gold/s4__Otu388.fna	61.962256568375416	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu596	bins/marine/gold/s4__Otu596.fna	61.42954132404472	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu612.0	bins/marine/gold/s4__Otu612.0.fna	61.187869363685415	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu64.0	bins/marine/gold/s4__Otu64.0.fna	61.21847748817469	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu67.0	bins/marine/gold/s4__Otu67.0.fna	61.16627215894104	True	1.0	stratified_by_completeness_decile	marine	gold
+s4__Otu843	bins/marine/gold/s4__Otu843.fna	61.224627218476165	True	1.0	stratified_by_completeness_decile	marine	gold
+s5__Otu108.1	bins/marine/gold/s5__Otu108.1.fna	57.83765411416167	True	1.0	stratified_by_completeness_decile	marine	gold
+s5__Otu203	bins/marine/gold/s5__Otu203.fna	62.324294852491626	True	1.0	stratified_by_completeness_decile	marine	gold
+s5__Otu2078	bins/marine/gold/s5__Otu2078.fna	62.198824409728765	True	1.0	stratified_by_completeness_decile	marine	gold
+s5__Otu2107	bins/marine/gold/s5__Otu2107.fna	62.32717620092051	True	1.0	stratified_by_completeness_decile	marine	gold
+s5__Otu332	bins/marine/gold/s5__Otu332.fna	62.44059058799086	True	1.0	stratified_by_completeness_decile	marine	gold
+s5__Otu447.1	bins/marine/gold/s5__Otu447.1.fna	59.56611322509207	True	1.0	stratified_by_completeness_decile	marine	gold
+s5__Otu450.0	bins/marine/gold/s5__Otu450.0.fna	62.05742794556173	True	1.0	stratified_by_completeness_decile	marine	gold
+s5__Otu457.0	bins/marine/gold/s5__Otu457.0.fna	62.46367525482625	True	1.0	stratified_by_completeness_decile	marine	gold
+s5__Otu931	bins/marine/gold/s5__Otu931.fna	62.47315333236567	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu1420.0	bins/marine/gold/s6__Otu1420.0.fna	59.333173194935696	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu1541	bins/marine/gold/s6__Otu1541.fna	59.48550099528571	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu1596	bins/marine/gold/s6__Otu1596.fna	59.60972833344279	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu1676.0	bins/marine/gold/s6__Otu1676.0.fna	59.24223641118528	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu1860	bins/marine/gold/s6__Otu1860.fna	59.49233462098187	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu2016.0	bins/marine/gold/s6__Otu2016.0.fna	59.60226366575925	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu2215	bins/marine/gold/s6__Otu2215.fna	59.34463198743872	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu496.0	bins/marine/gold/s6__Otu496.0.fna	59.48899434778112	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu511	bins/marine/gold/s6__Otu511.fna	59.22996093839231	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu927	bins/marine/gold/s6__Otu927.fna	59.36891700454709	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu928.0	bins/marine/gold/s6__Otu928.0.fna	59.50563938350822	True	1.0	stratified_by_completeness_decile	marine	gold
+s6__Otu980	bins/marine/gold/s6__Otu980.fna	59.46109993627962	True	1.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_142_length_2406_cov_5.09941	bins/marine/gold/s7__RNODE_142_length_2406_cov_5.09941.fna	58.00335570469799	True	1.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_266_length_6653_cov_7.97753	bins/marine/gold/s7__RNODE_266_length_6653_cov_7.97753.fna	56.95219423917961	True	1.0	stratified_by_completeness_decile	marine	gold
+s8__Otu115	bins/marine/gold/s8__Otu115.fna	59.75143181027298	True	1.0	stratified_by_completeness_decile	marine	gold
+s8__Otu1316	bins/marine/gold/s8__Otu1316.fna	60.27847085233659	True	1.0	stratified_by_completeness_decile	marine	gold
+s8__Otu1334	bins/marine/gold/s8__Otu1334.fna	60.72094301670394	True	1.0	stratified_by_completeness_decile	marine	gold
+s8__Otu1448	bins/marine/gold/s8__Otu1448.fna	60.741369449405546	True	1.0	stratified_by_completeness_decile	marine	gold
+s8__Otu1704	bins/marine/gold/s8__Otu1704.fna	60.62234637466895	True	1.0	stratified_by_completeness_decile	marine	gold
+s8__Otu1947	bins/marine/gold/s8__Otu1947.fna	60.42039085164164	True	1.0	stratified_by_completeness_decile	marine	gold
+s8__Otu203	bins/marine/gold/s8__Otu203.fna	60.68126237601175	True	1.0	stratified_by_completeness_decile	marine	gold
+s8__Otu323.0	bins/marine/gold/s8__Otu323.0.fna	60.21190455437959	True	1.0	stratified_by_completeness_decile	marine	gold
+s8__Otu491.0	bins/marine/gold/s8__Otu491.0.fna	60.076554307261816	True	1.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_67_length_1419_cov_2.86686	bins/marine/gold/s9__RNODE_67_length_1419_cov_2.86686.fna	56.47816750178955	True	1.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1027	bins/marine/gold/s0__Otu1027.fna	66.15112578698077	True	2.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1665	bins/marine/gold/s0__Otu1665.fna	66.70214527195456	True	2.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1737	bins/marine/gold/s0__Otu1737.fna	66.41804457521916	True	2.0	stratified_by_completeness_decile	marine	gold
+s0__Otu271	bins/marine/gold/s0__Otu271.fna	65.87168407438607	True	2.0	stratified_by_completeness_decile	marine	gold
+s0__Otu713	bins/marine/gold/s0__Otu713.fna	65.90855691076324	True	2.0	stratified_by_completeness_decile	marine	gold
+s0__Otu829.0	bins/marine/gold/s0__Otu829.0.fna	66.24739012643161	True	2.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_173_length_1764_cov_3.34845	bins/marine/gold/s1__RNODE_173_length_1764_cov_3.34845.fna	63.66819747416762	True	2.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_350_length_2314_cov_37.19546	bins/marine/gold/s1__RNODE_350_length_2314_cov_37.19546.fna	66.20418848167539	True	2.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_456_length_1695_cov_36.79753	bins/marine/gold/s1__RNODE_456_length_1695_cov_36.79753.fna	67.7286869943995	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1184	bins/marine/gold/s2__Otu1184.fna	65.09134695139636	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1391	bins/marine/gold/s2__Otu1391.fna	65.3479944683867	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1534	bins/marine/gold/s2__Otu1534.fna	65.075550515883	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu174	bins/marine/gold/s2__Otu174.fna	65.2074040043274	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1914.0	bins/marine/gold/s2__Otu1914.0.fna	65.58710467696545	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu2016.0	bins/marine/gold/s2__Otu2016.0.fna	65.58271731107045	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu222.0	bins/marine/gold/s2__Otu222.0.fna	64.97758334446132	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu279	bins/marine/gold/s2__Otu279.fna	65.30573956858314	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu351	bins/marine/gold/s2__Otu351.fna	65.23852708432115	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu37.0	bins/marine/gold/s2__Otu37.0.fna	65.52811051455494	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu405.0	bins/marine/gold/s2__Otu405.0.fna	65.41784464634725	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu467	bins/marine/gold/s2__Otu467.fna	65.321397293029	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu605	bins/marine/gold/s2__Otu605.fna	65.30560734785017	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu634.0	bins/marine/gold/s2__Otu634.0.fna	65.49734156077754	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__Otu638.0	bins/marine/gold/s2__Otu638.0.fna	65.27415777541951	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_126_length_3157_cov_3.75885	bins/marine/gold/s2__RNODE_126_length_3157_cov_3.75885.fna	67.97767145135566	True	2.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_68_length_2493_cov_6.03116	bins/marine/gold/s2__RNODE_68_length_2493_cov_6.03116.fna	69.48603804127883	True	2.0	stratified_by_completeness_decile	marine	gold
+s3__Otu1016.0	bins/marine/gold/s3__Otu1016.0.fna	69.60371044866339	True	2.0	stratified_by_completeness_decile	marine	gold
+s3__Otu625	bins/marine/gold/s3__Otu625.fna	69.77176020153571	True	2.0	stratified_by_completeness_decile	marine	gold
+s3__Otu692	bins/marine/gold/s3__Otu692.fna	64.15614132807443	True	2.0	stratified_by_completeness_decile	marine	gold
+s3__Otu778	bins/marine/gold/s3__Otu778.fna	63.93051583860334	True	2.0	stratified_by_completeness_decile	marine	gold
+s3__Otu839	bins/marine/gold/s3__Otu839.fna	69.35004708135857	True	2.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_126_length_3157_cov_3.75885	bins/marine/gold/s3__RNODE_126_length_3157_cov_3.75885.fna	63.2280701754386	True	2.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_18_length_1746_cov_2.65719	bins/marine/gold/s3__RNODE_18_length_1746_cov_2.65719.fna	65.47563805104409	True	2.0	stratified_by_completeness_decile	marine	gold
+s4__Otu85.0	bins/marine/gold/s4__Otu85.0.fna	69.39207605826223	True	2.0	stratified_by_completeness_decile	marine	gold
+s5__Otu1108.1	bins/marine/gold/s5__Otu1108.1.fna	69.14252356621807	True	2.0	stratified_by_completeness_decile	marine	gold
+s5__Otu810.0	bins/marine/gold/s5__Otu810.0.fna	62.62828905329225	True	2.0	stratified_by_completeness_decile	marine	gold
+s5__Otu87.0	bins/marine/gold/s5__Otu87.0.fna	62.57096368192259	True	2.0	stratified_by_completeness_decile	marine	gold
+s5__RNODE_68_length_2493_cov_6.03116	bins/marine/gold/s5__RNODE_68_length_2493_cov_6.03116.fna	65.5564548765682	True	2.0	stratified_by_completeness_decile	marine	gold
+s6__Otu1111	bins/marine/gold/s6__Otu1111.fna	69.91571738927662	True	2.0	stratified_by_completeness_decile	marine	gold
+s6__Otu315.0	bins/marine/gold/s6__Otu315.0.fna	69.9091772274997	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu1126	bins/marine/gold/s7__Otu1126.fna	67.89221017038147	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu1573	bins/marine/gold/s7__Otu1573.fna	68.12221136905247	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu1607	bins/marine/gold/s7__Otu1607.fna	67.42182608233551	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu2073	bins/marine/gold/s7__Otu2073.fna	67.5903675508434	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu323.0	bins/marine/gold/s7__Otu323.0.fna	67.2671719723196	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu360	bins/marine/gold/s7__Otu360.fna	67.50884589368096	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu523	bins/marine/gold/s7__Otu523.fna	67.69330211853107	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu648.0	bins/marine/gold/s7__Otu648.0.fna	67.49771410441936	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu687	bins/marine/gold/s7__Otu687.fna	67.0717393821122	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu87.0	bins/marine/gold/s7__Otu87.0.fna	67.84905441767589	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu941	bins/marine/gold/s7__Otu941.fna	67.28109974770567	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__Otu980	bins/marine/gold/s7__Otu980.fna	67.68478032932182	True	2.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_291_length_2033_cov_2.59025	bins/marine/gold/s7__RNODE_291_length_2033_cov_2.59025.fna	63.9234211834908	True	2.0	stratified_by_completeness_decile	marine	gold
+s8__Otu1358	bins/marine/gold/s8__Otu1358.fna	68.72806223026741	True	2.0	stratified_by_completeness_decile	marine	gold
+s8__Otu159	bins/marine/gold/s8__Otu159.fna	68.59614755018987	True	2.0	stratified_by_completeness_decile	marine	gold
+s8__Otu212.0	bins/marine/gold/s8__Otu212.0.fna	68.60995581876129	True	2.0	stratified_by_completeness_decile	marine	gold
+s8__Otu453	bins/marine/gold/s8__Otu453.fna	66.99914930793544	True	2.0	stratified_by_completeness_decile	marine	gold
+s8__Otu473	bins/marine/gold/s8__Otu473.fna	68.4606227778066	True	2.0	stratified_by_completeness_decile	marine	gold
+s8__Otu894.0	bins/marine/gold/s8__Otu894.0.fna	68.16000445435938	True	2.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_142_length_2406_cov_5.09941	bins/marine/gold/s8__RNODE_142_length_2406_cov_5.09941.fna	63.26761744966443	True	2.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_366_length_2053_cov_8.47415	bins/marine/gold/s8__RNODE_366_length_2053_cov_8.47415.fna	64.5150172328902	True	2.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1505.0	bins/marine/gold/s9__Otu1505.0.fna	66.1130447096599	True	2.0	stratified_by_completeness_decile	marine	gold
+s9__Otu157.0	bins/marine/gold/s9__Otu157.0.fna	66.29693181872693	True	2.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1607	bins/marine/gold/s9__Otu1607.fna	66.35073886010602	True	2.0	stratified_by_completeness_decile	marine	gold
+s9__Otu176.0	bins/marine/gold/s9__Otu176.0.fna	66.03238097110152	True	2.0	stratified_by_completeness_decile	marine	gold
+s9__Otu180	bins/marine/gold/s9__Otu180.fna	66.26579723980343	True	2.0	stratified_by_completeness_decile	marine	gold
+s9__Otu2322	bins/marine/gold/s9__Otu2322.fna	66.3318440550768	True	2.0	stratified_by_completeness_decile	marine	gold
+s9__Otu499	bins/marine/gold/s9__Otu499.fna	66.10304936488438	True	2.0	stratified_by_completeness_decile	marine	gold
+s9__Otu554	bins/marine/gold/s9__Otu554.fna	66.36485493940506	True	2.0	stratified_by_completeness_decile	marine	gold
+s9__Otu851.0	bins/marine/gold/s9__Otu851.0.fna	66.34274151644989	True	2.0	stratified_by_completeness_decile	marine	gold
+s0__Otu252	bins/marine/gold/s0__Otu252.fna	77.10481522515379	True	3.0	stratified_by_completeness_decile	marine	gold
+s0__Otu323.0	bins/marine/gold/s0__Otu323.0.fna	76.71594200691023	True	3.0	stratified_by_completeness_decile	marine	gold
+s0__Otu405.0	bins/marine/gold/s0__Otu405.0.fna	76.67536231142014	True	3.0	stratified_by_completeness_decile	marine	gold
+s1__Otu1136.0	bins/marine/gold/s1__Otu1136.0.fna	72.73540590248008	True	3.0	stratified_by_completeness_decile	marine	gold
+s1__Otu1278.0	bins/marine/gold/s1__Otu1278.0.fna	72.14833429818488	True	3.0	stratified_by_completeness_decile	marine	gold
+s1__Otu1399	bins/marine/gold/s1__Otu1399.fna	72.36528990112016	True	3.0	stratified_by_completeness_decile	marine	gold
+s1__Otu1958.0	bins/marine/gold/s1__Otu1958.0.fna	72.68093490623745	True	3.0	stratified_by_completeness_decile	marine	gold
+s1__Otu2177	bins/marine/gold/s1__Otu2177.fna	72.11785708210485	True	3.0	stratified_by_completeness_decile	marine	gold
+s1__Otu360	bins/marine/gold/s1__Otu360.fna	72.2573406434986	True	3.0	stratified_by_completeness_decile	marine	gold
+s1__Otu465	bins/marine/gold/s1__Otu465.fna	71.95509646032777	True	3.0	stratified_by_completeness_decile	marine	gold
+s1__Otu554	bins/marine/gold/s1__Otu554.fna	72.71795813441058	True	3.0	stratified_by_completeness_decile	marine	gold
+s1__Otu684	bins/marine/gold/s1__Otu684.fna	72.63900593463025	True	3.0	stratified_by_completeness_decile	marine	gold
+s1__Otu713	bins/marine/gold/s1__Otu713.fna	73.21330671735164	True	3.0	stratified_by_completeness_decile	marine	gold
+s1__Otu79.1	bins/marine/gold/s1__Otu79.1.fna	70.5099203054956	True	3.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_229_length_2135_cov_3.06673	bins/marine/gold/s2__RNODE_229_length_2135_cov_3.06673.fna	73.98958826313299	True	3.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_248_length_5318_cov_4.74604	bins/marine/gold/s2__RNODE_248_length_5318_cov_4.74604.fna	74.60347432024169	True	3.0	stratified_by_completeness_decile	marine	gold
+s3__Otu1204	bins/marine/gold/s3__Otu1204.fna	74.5411568657952	True	3.0	stratified_by_completeness_decile	marine	gold
+s3__Otu149	bins/marine/gold/s3__Otu149.fna	74.75188208901717	True	3.0	stratified_by_completeness_decile	marine	gold
+s3__Otu279	bins/marine/gold/s3__Otu279.fna	74.4596866294124	True	3.0	stratified_by_completeness_decile	marine	gold
+s3__Otu44.0	bins/marine/gold/s3__Otu44.0.fna	74.13240684369237	True	3.0	stratified_by_completeness_decile	marine	gold
+s3__Otu483	bins/marine/gold/s3__Otu483.fna	74.39847240326577	True	3.0	stratified_by_completeness_decile	marine	gold
+s3__Otu54	bins/marine/gold/s3__Otu54.fna	78.0350655450013	True	3.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_390_length_5825_cov_8.78167	bins/marine/gold/s3__RNODE_390_length_5825_cov_8.78167.fna	77.23246596587971	True	3.0	stratified_by_completeness_decile	marine	gold
+s4__Otu1038	bins/marine/gold/s4__Otu1038.fna	71.71880397475007	True	3.0	stratified_by_completeness_decile	marine	gold
+s4__Otu2189	bins/marine/gold/s4__Otu2189.fna	72.14505154301871	True	3.0	stratified_by_completeness_decile	marine	gold
+s4__Otu241.0	bins/marine/gold/s4__Otu241.0.fna	71.9156325293853	True	3.0	stratified_by_completeness_decile	marine	gold
+s4__Otu315.0	bins/marine/gold/s4__Otu315.0.fna	72.1161113369345	True	3.0	stratified_by_completeness_decile	marine	gold
+s4__Otu590	bins/marine/gold/s4__Otu590.fna	71.92247464644579	True	3.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_386_length_2437_cov_8.66377	bins/marine/gold/s4__RNODE_386_length_2437_cov_8.66377.fna	76.6128364389234	True	3.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_392_length_2136_cov_7.00284	bins/marine/gold/s4__RNODE_392_length_2136_cov_7.00284.fna	73.72280037842951	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu1200.0	bins/marine/gold/s5__Otu1200.0.fna	76.83620947920376	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu2052	bins/marine/gold/s5__Otu2052.fna	70.72105094574971	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu2202	bins/marine/gold/s5__Otu2202.fna	70.52262286288048	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu245.0	bins/marine/gold/s5__Otu245.0.fna	76.63347655871695	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu292.0	bins/marine/gold/s5__Otu292.0.fna	70.60112660733638	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu293.0	bins/marine/gold/s5__Otu293.0.fna	70.45596045967889	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu331.0	bins/marine/gold/s5__Otu331.0.fna	76.95825041701292	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu394.0	bins/marine/gold/s5__Otu394.0.fna	74.15245730312492	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu435.1	bins/marine/gold/s5__Otu435.1.fna	69.9990876173733	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu454.0	bins/marine/gold/s5__Otu454.0.fna	70.62686592393268	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu613	bins/marine/gold/s5__Otu613.fna	70.64745594629643	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__Otu85.1	bins/marine/gold/s5__Otu85.1.fna	71.09723176836036	True	3.0	stratified_by_completeness_decile	marine	gold
+s5__RNODE_476_length_1618_cov_4.36943	bins/marine/gold/s5__RNODE_476_length_1618_cov_4.36943.fna	70.29860228716646	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__Otu1142.0	bins/marine/gold/s6__Otu1142.0.fna	77.83599677852668	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__Otu1240.0	bins/marine/gold/s6__Otu1240.0.fna	70.241051528896	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__Otu1297	bins/marine/gold/s6__Otu1297.fna	77.75615730188808	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__Otu2078	bins/marine/gold/s6__Otu2078.fna	70.21475390408297	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__Otu2080.0	bins/marine/gold/s6__Otu2080.0.fna	70.08210107862361	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__Otu254	bins/marine/gold/s6__Otu254.fna	77.53002781280416	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__Otu383	bins/marine/gold/s6__Otu383.fna	70.14488068613295	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__Otu394.0	bins/marine/gold/s6__Otu394.0.fna	74.96948764609711	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__Otu521.0	bins/marine/gold/s6__Otu521.0.fna	70.04862558786128	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__Otu643.0	bins/marine/gold/s6__Otu643.0.fna	70.32309598528167	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_100_length_1999_cov_6.33080	bins/marine/gold/s6__RNODE_100_length_1999_cov_6.33080.fna	74.35002529084471	True	3.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_142_length_2406_cov_5.09941	bins/marine/gold/s6__RNODE_142_length_2406_cov_5.09941.fna	71.46812080536913	True	3.0	stratified_by_completeness_decile	marine	gold
+s7__Otu1200.0	bins/marine/gold/s7__Otu1200.0.fna	77.33068593020393	True	3.0	stratified_by_completeness_decile	marine	gold
+s7__Otu133.0	bins/marine/gold/s7__Otu133.0.fna	75.36906418390835	True	3.0	stratified_by_completeness_decile	marine	gold
+s7__Otu2019	bins/marine/gold/s7__Otu2019.fna	77.71198523861445	True	3.0	stratified_by_completeness_decile	marine	gold
+s7__Otu248.0	bins/marine/gold/s7__Otu248.0.fna	77.76377359084852	True	3.0	stratified_by_completeness_decile	marine	gold
+s7__Otu454.0	bins/marine/gold/s7__Otu454.0.fna	77.58343683367046	True	3.0	stratified_by_completeness_decile	marine	gold
+s7__Otu771	bins/marine/gold/s7__Otu771.fna	77.11991987884988	True	3.0	stratified_by_completeness_decile	marine	gold
+s8__Otu172.0	bins/marine/gold/s8__Otu172.0.fna	75.29053523503052	True	3.0	stratified_by_completeness_decile	marine	gold
+s8__Otu226	bins/marine/gold/s8__Otu226.fna	75.23384895762894	True	3.0	stratified_by_completeness_decile	marine	gold
+s8__Otu39.0	bins/marine/gold/s8__Otu39.0.fna	74.9058582627236	True	3.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_337_length_8771_cov_5.18162	bins/marine/gold/s8__RNODE_337_length_8771_cov_5.18162.fna	70.34175334323923	True	3.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_476_length_1618_cov_4.36943	bins/marine/gold/s8__RNODE_476_length_1618_cov_4.36943.fna	74.11054637865311	True	3.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1399	bins/marine/gold/s9__Otu1399.fna	76.48414011694429	True	3.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1448	bins/marine/gold/s9__Otu1448.fna	76.68277014017585	True	3.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1656	bins/marine/gold/s9__Otu1656.fna	76.34038275163664	True	3.0	stratified_by_completeness_decile	marine	gold
+s9__Otu479	bins/marine/gold/s9__Otu479.fna	76.11545865688804	True	3.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1057	bins/marine/gold/s0__Otu1057.fna	83.68172762053472	True	4.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1153	bins/marine/gold/s0__Otu1153.fna	83.71884687422852	True	4.0	stratified_by_completeness_decile	marine	gold
+s0__Otu2156	bins/marine/gold/s0__Otu2156.fna	83.66383391938432	True	4.0	stratified_by_completeness_decile	marine	gold
+s0__Otu71	bins/marine/gold/s0__Otu71.fna	83.93919086150817	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu1147	bins/marine/gold/s1__Otu1147.fna	82.20459126506994	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu179	bins/marine/gold/s1__Otu179.fna	82.11377758629035	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu40.1	bins/marine/gold/s1__Otu40.1.fna	84.4436566163308	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu42.0	bins/marine/gold/s1__Otu42.0.fna	82.53258635666134	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu492	bins/marine/gold/s1__Otu492.fna	81.96359171412753	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu523	bins/marine/gold/s1__Otu523.fna	82.26535333858821	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu536	bins/marine/gold/s1__Otu536.fna	82.22799448628743	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu634.0	bins/marine/gold/s1__Otu634.0.fna	82.02817225542377	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu79.0	bins/marine/gold/s1__Otu79.0.fna	83.9058233964522	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu80.0	bins/marine/gold/s1__Otu80.0.fna	82.31844307685476	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu854	bins/marine/gold/s1__Otu854.fna	82.18858609645105	True	4.0	stratified_by_completeness_decile	marine	gold
+s1__Otu924	bins/marine/gold/s1__Otu924.fna	82.17264837009692	True	4.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1089	bins/marine/gold/s2__Otu1089.fna	79.35906865800649	True	4.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1332.0	bins/marine/gold/s2__Otu1332.0.fna	79.43745071443908	True	4.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1474.0	bins/marine/gold/s2__Otu1474.0.fna	79.3370449082413	True	4.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1894	bins/marine/gold/s2__Otu1894.fna	78.67266399071733	True	4.0	stratified_by_completeness_decile	marine	gold
+s2__Otu2297	bins/marine/gold/s2__Otu2297.fna	79.65032455373861	True	4.0	stratified_by_completeness_decile	marine	gold
+s2__Otu2487	bins/marine/gold/s2__Otu2487.fna	78.80270250132841	True	4.0	stratified_by_completeness_decile	marine	gold
+s2__Otu399.0	bins/marine/gold/s2__Otu399.0.fna	79.46755872401137	True	4.0	stratified_by_completeness_decile	marine	gold
+s2__Otu435.1	bins/marine/gold/s2__Otu435.1.fna	78.79289121062544	True	4.0	stratified_by_completeness_decile	marine	gold
+s3__Otu203	bins/marine/gold/s3__Otu203.fna	78.28335021489775	True	4.0	stratified_by_completeness_decile	marine	gold
+s3__Otu274.0	bins/marine/gold/s3__Otu274.0.fna	84.25259136943204	True	4.0	stratified_by_completeness_decile	marine	gold
+s3__Otu301	bins/marine/gold/s3__Otu301.fna	81.7461802850601	True	4.0	stratified_by_completeness_decile	marine	gold
+s3__Otu318.0	bins/marine/gold/s3__Otu318.0.fna	81.71598476784762	True	4.0	stratified_by_completeness_decile	marine	gold
+s3__Otu323.0	bins/marine/gold/s3__Otu323.0.fna	78.2935201333867	True	4.0	stratified_by_completeness_decile	marine	gold
+s3__Otu368	bins/marine/gold/s3__Otu368.fna	78.59697013219338	True	4.0	stratified_by_completeness_decile	marine	gold
+s3__Otu395	bins/marine/gold/s3__Otu395.fna	81.89089084266075	True	4.0	stratified_by_completeness_decile	marine	gold
+s3__Otu576	bins/marine/gold/s3__Otu576.fna	78.33916007799326	True	4.0	stratified_by_completeness_decile	marine	gold
+s3__Otu581	bins/marine/gold/s3__Otu581.fna	81.41744690635944	True	4.0	stratified_by_completeness_decile	marine	gold
+s3__Otu634.0	bins/marine/gold/s3__Otu634.0.fna	78.66954358493277	True	4.0	stratified_by_completeness_decile	marine	gold
+s3__Otu754	bins/marine/gold/s3__Otu754.fna	81.99859174194556	True	4.0	stratified_by_completeness_decile	marine	gold
+s4__Otu211	bins/marine/gold/s4__Otu211.fna	79.56622414071272	True	4.0	stratified_by_completeness_decile	marine	gold
+s4__Otu256	bins/marine/gold/s4__Otu256.fna	85.14627187975185	True	4.0	stratified_by_completeness_decile	marine	gold
+s4__Otu395	bins/marine/gold/s4__Otu395.fna	79.41766855093317	True	4.0	stratified_by_completeness_decile	marine	gold
+s4__Otu613	bins/marine/gold/s4__Otu613.fna	84.88512980903705	True	4.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_147_length_1816_cov_3.48216	bins/marine/gold/s4__RNODE_147_length_1816_cov_3.48216.fna	82.20735785953177	True	4.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_470_length_2095_cov_7.42232	bins/marine/gold/s4__RNODE_470_length_2095_cov_7.42232.fna	84.5587518283764	True	4.0	stratified_by_completeness_decile	marine	gold
+s5__Otu169.1	bins/marine/gold/s5__Otu169.1.fna	79.52088170620307	True	4.0	stratified_by_completeness_decile	marine	gold
+s5__Otu2119.0	bins/marine/gold/s5__Otu2119.0.fna	82.0305854881192	True	4.0	stratified_by_completeness_decile	marine	gold
+s5__Otu283.0	bins/marine/gold/s5__Otu283.0.fna	82.0925625170514	True	4.0	stratified_by_completeness_decile	marine	gold
+s5__Otu303.0	bins/marine/gold/s5__Otu303.0.fna	82.19599869176844	True	4.0	stratified_by_completeness_decile	marine	gold
+s6__Otu1180.0	bins/marine/gold/s6__Otu1180.0.fna	83.73705449438863	True	4.0	stratified_by_completeness_decile	marine	gold
+s6__Otu265.0	bins/marine/gold/s6__Otu265.0.fna	83.28893031661426	True	4.0	stratified_by_completeness_decile	marine	gold
+s6__Otu36.0	bins/marine/gold/s6__Otu36.0.fna	83.53071803140092	True	4.0	stratified_by_completeness_decile	marine	gold
+s6__Otu597.0	bins/marine/gold/s6__Otu597.0.fna	78.16018724764051	True	4.0	stratified_by_completeness_decile	marine	gold
+s6__Otu79.1	bins/marine/gold/s6__Otu79.1.fna	81.58213283189633	True	4.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_17_length_1254_cov_4.43994	bins/marine/gold/s6__RNODE_17_length_1254_cov_4.43994.fna	84.31006493506493	True	4.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_390_length_5825_cov_8.78167	bins/marine/gold/s6__RNODE_390_length_5825_cov_8.78167.fna	79.07117008443909	True	4.0	stratified_by_completeness_decile	marine	gold
+s7__Otu104	bins/marine/gold/s7__Otu104.fna	84.50227115670945	True	4.0	stratified_by_completeness_decile	marine	gold
+s7__Otu1240.0	bins/marine/gold/s7__Otu1240.0.fna	84.67619296933752	True	4.0	stratified_by_completeness_decile	marine	gold
+s7__Otu2290.0	bins/marine/gold/s7__Otu2290.0.fna	84.92658403813256	True	4.0	stratified_by_completeness_decile	marine	gold
+s7__Otu232.0	bins/marine/gold/s7__Otu232.0.fna	84.6977237991072	True	4.0	stratified_by_completeness_decile	marine	gold
+s7__Otu304.0	bins/marine/gold/s7__Otu304.0.fna	84.67714275488677	True	4.0	stratified_by_completeness_decile	marine	gold
+s7__Otu370.1	bins/marine/gold/s7__Otu370.1.fna	83.82480456107533	True	4.0	stratified_by_completeness_decile	marine	gold
+s7__Otu592.0	bins/marine/gold/s7__Otu592.0.fna	84.72777317325058	True	4.0	stratified_by_completeness_decile	marine	gold
+s8__Otu234.0	bins/marine/gold/s8__Otu234.0.fna	80.15887502464169	True	4.0	stratified_by_completeness_decile	marine	gold
+s8__Otu315.0	bins/marine/gold/s8__Otu315.0.fna	80.17646596580485	True	4.0	stratified_by_completeness_decile	marine	gold
+s8__Otu470	bins/marine/gold/s8__Otu470.fna	80.2471688490057	True	4.0	stratified_by_completeness_decile	marine	gold
+s8__Otu53.0	bins/marine/gold/s8__Otu53.0.fna	80.47637872982023	True	4.0	stratified_by_completeness_decile	marine	gold
+s8__Otu554	bins/marine/gold/s8__Otu554.fna	83.76230260741829	True	4.0	stratified_by_completeness_decile	marine	gold
+s8__Otu590	bins/marine/gold/s8__Otu590.fna	84.15902955281024	True	4.0	stratified_by_completeness_decile	marine	gold
+s8__Otu833	bins/marine/gold/s8__Otu833.fna	84.38534394303642	True	4.0	stratified_by_completeness_decile	marine	gold
+s8__Otu90.0	bins/marine/gold/s8__Otu90.0.fna	80.21641442788044	True	4.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_248_length_5318_cov_4.74604	bins/marine/gold/s8__RNODE_248_length_5318_cov_4.74604.fna	82.90785498489426	True	4.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_456_length_1695_cov_36.79753	bins/marine/gold/s8__RNODE_456_length_1695_cov_36.79753.fna	82.57000622277536	True	4.0	stratified_by_completeness_decile	marine	gold
+s9__Otu249.0	bins/marine/gold/s9__Otu249.0.fna	83.76777099030441	True	4.0	stratified_by_completeness_decile	marine	gold
+s0__Otu108.1	bins/marine/gold/s0__Otu108.1.fna	89.27419925174225	True	5.0	stratified_by_completeness_decile	marine	gold
+s0__Otu2290.0	bins/marine/gold/s0__Otu2290.0.fna	91.84627437586695	True	5.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_173_length_1764_cov_3.34845	bins/marine/gold/s0__RNODE_173_length_1764_cov_3.34845.fna	87.98507462686567	True	5.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_476_length_1618_cov_4.36943	bins/marine/gold/s0__RNODE_476_length_1618_cov_4.36943.fna	91.96315120711564	True	5.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_90_length_1469_cov_9.25017	bins/marine/gold/s0__RNODE_90_length_1469_cov_9.25017.fna	87.04215618521079	True	5.0	stratified_by_completeness_decile	marine	gold
+s1__Otu229.0	bins/marine/gold/s1__Otu229.0.fna	88.75962120143804	True	5.0	stratified_by_completeness_decile	marine	gold
+s1__Otu438	bins/marine/gold/s1__Otu438.fna	88.74708070270343	True	5.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_17_length_1254_cov_4.43994	bins/marine/gold/s1__RNODE_17_length_1254_cov_4.43994.fna	88.21428571428571	True	5.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_392_length_2136_cov_7.00284	bins/marine/gold/s1__RNODE_392_length_2136_cov_7.00284.fna	87.67738883632923	True	5.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1270	bins/marine/gold/s2__Otu1270.fna	88.20314890584531	True	5.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1529	bins/marine/gold/s2__Otu1529.fna	87.54418591184348	True	5.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1540	bins/marine/gold/s2__Otu1540.fna	87.76556966361596	True	5.0	stratified_by_completeness_decile	marine	gold
+s2__Otu159	bins/marine/gold/s2__Otu159.fna	87.68851816537264	True	5.0	stratified_by_completeness_decile	marine	gold
+s2__Otu376	bins/marine/gold/s2__Otu376.fna	87.97702109455372	True	5.0	stratified_by_completeness_decile	marine	gold
+s2__Otu473	bins/marine/gold/s2__Otu473.fna	87.60456722811627	True	5.0	stratified_by_completeness_decile	marine	gold
+s2__Otu525.0	bins/marine/gold/s2__Otu525.0.fna	88.13970670444185	True	5.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_127_length_1885_cov_8.56361	bins/marine/gold/s2__RNODE_127_length_1885_cov_8.56361.fna	87.97638217928073	True	5.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_265_length_1287_cov_4.20553	bins/marine/gold/s2__RNODE_265_length_1287_cov_4.20553.fna	92.0	True	5.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_341_length_3219_cov_3.63466	bins/marine/gold/s2__RNODE_341_length_3219_cov_3.63466.fna	87.05348764466687	True	5.0	stratified_by_completeness_decile	marine	gold
+s3__Otu110.0	bins/marine/gold/s3__Otu110.0.fna	90.51875104228316	True	5.0	stratified_by_completeness_decile	marine	gold
+s3__Otu241.0	bins/marine/gold/s3__Otu241.0.fna	90.8658243155906	True	5.0	stratified_by_completeness_decile	marine	gold
+s3__Otu450.0	bins/marine/gold/s3__Otu450.0.fna	90.5578378964714	True	5.0	stratified_by_completeness_decile	marine	gold
+s3__Otu465	bins/marine/gold/s3__Otu465.fna	90.73185732709244	True	5.0	stratified_by_completeness_decile	marine	gold
+s3__Otu470	bins/marine/gold/s3__Otu470.fna	90.93975290633924	True	5.0	stratified_by_completeness_decile	marine	gold
+s4__Otu230.0	bins/marine/gold/s4__Otu230.0.fna	88.69974295888346	True	5.0	stratified_by_completeness_decile	marine	gold
+s4__Otu332	bins/marine/gold/s4__Otu332.fna	88.94132752441305	True	5.0	stratified_by_completeness_decile	marine	gold
+s4__Otu40.1	bins/marine/gold/s4__Otu40.1.fna	88.80038532267012	True	5.0	stratified_by_completeness_decile	marine	gold
+s4__Otu595.0	bins/marine/gold/s4__Otu595.0.fna	91.34742170071132	True	5.0	stratified_by_completeness_decile	marine	gold
+s4__Otu71	bins/marine/gold/s4__Otu71.fna	89.29066869922558	True	5.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_390_length_5825_cov_8.78167	bins/marine/gold/s4__RNODE_390_length_5825_cov_8.78167.fna	86.1588833362054	True	5.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_587_length_4088_cov_9.08425	bins/marine/gold/s4__RNODE_587_length_4088_cov_9.08425.fna	90.7825	True	5.0	stratified_by_completeness_decile	marine	gold
+s5__Otu116.0	bins/marine/gold/s5__Otu116.0.fna	88.43231551071798	True	5.0	stratified_by_completeness_decile	marine	gold
+s5__Otu150.0	bins/marine/gold/s5__Otu150.0.fna	85.56617089904057	True	5.0	stratified_by_completeness_decile	marine	gold
+s5__Otu183.0	bins/marine/gold/s5__Otu183.0.fna	85.36111499529619	True	5.0	stratified_by_completeness_decile	marine	gold
+s5__Otu254	bins/marine/gold/s5__Otu254.fna	88.48390683866262	True	5.0	stratified_by_completeness_decile	marine	gold
+s5__Otu289	bins/marine/gold/s5__Otu289.fna	90.94531311524082	True	5.0	stratified_by_completeness_decile	marine	gold
+s5__Otu316.0	bins/marine/gold/s5__Otu316.0.fna	91.37393778657533	True	5.0	stratified_by_completeness_decile	marine	gold
+s5__Otu318.0	bins/marine/gold/s5__Otu318.0.fna	91.3903371612716	True	5.0	stratified_by_completeness_decile	marine	gold
+s5__Otu365.0	bins/marine/gold/s5__Otu365.0.fna	89.0360675495446	True	5.0	stratified_by_completeness_decile	marine	gold
+s5__Otu79.1	bins/marine/gold/s5__Otu79.1.fna	90.58345624717651	True	5.0	stratified_by_completeness_decile	marine	gold
+s5__RNODE_521_length_36130_cov_13.94678	bins/marine/gold/s5__RNODE_521_length_36130_cov_13.94678.fna	88.44648894308042	True	5.0	stratified_by_completeness_decile	marine	gold
+s6__Otu219.0	bins/marine/gold/s6__Otu219.0.fna	91.13187754369034	True	5.0	stratified_by_completeness_decile	marine	gold
+s6__Otu230.0	bins/marine/gold/s6__Otu230.0.fna	91.23142664222348	True	5.0	stratified_by_completeness_decile	marine	gold
+s6__Otu316.0	bins/marine/gold/s6__Otu316.0.fna	88.47748580677776	True	5.0	stratified_by_completeness_decile	marine	gold
+s6__Otu338	bins/marine/gold/s6__Otu338.fna	87.76187833617092	True	5.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_147_length_1816_cov_3.48216	bins/marine/gold/s6__RNODE_147_length_1816_cov_3.48216.fna	90.42920847268674	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__Otu108.1	bins/marine/gold/s7__Otu108.1.fna	90.0745127455402	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__Otu119.1	bins/marine/gold/s7__Otu119.1.fna	87.21626815893826	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__Otu196	bins/marine/gold/s7__Otu196.fna	89.78926186608136	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__Otu230.0	bins/marine/gold/s7__Otu230.0.fna	88.33143387550655	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__Otu525.0	bins/marine/gold/s7__Otu525.0.fna	89.58027360881708	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__Otu595.0	bins/marine/gold/s7__Otu595.0.fna	88.60177813245086	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__Otu881.0	bins/marine/gold/s7__Otu881.0.fna	89.25191550780791	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_166_length_2298_cov_14.88049	bins/marine/gold/s7__RNODE_166_length_2298_cov_14.88049.fna	90.00439367311073	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_338_length_1509_cov_4.27236	bins/marine/gold/s7__RNODE_338_length_1509_cov_4.27236.fna	85.95158036314727	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_364_length_1571_cov_3.81278	bins/marine/gold/s7__RNODE_364_length_1571_cov_3.81278.fna	85.32601678502259	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_418_length_1505_cov_4.15172	bins/marine/gold/s7__RNODE_418_length_1505_cov_4.15172.fna	88.66486850977748	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_522_length_1263_cov_12.38809	bins/marine/gold/s7__RNODE_522_length_1263_cov_12.38809.fna	90.0656275635767	True	5.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_90_length_1469_cov_9.25017	bins/marine/gold/s7__RNODE_90_length_1469_cov_9.25017.fna	90.69108500345544	True	5.0	stratified_by_completeness_decile	marine	gold
+s8__Otu256	bins/marine/gold/s8__Otu256.fna	90.24526211979148	True	5.0	stratified_by_completeness_decile	marine	gold
+s8__Otu383	bins/marine/gold/s8__Otu383.fna	90.03866306637435	True	5.0	stratified_by_completeness_decile	marine	gold
+s8__Otu496.0	bins/marine/gold/s8__Otu496.0.fna	90.01802595975388	True	5.0	stratified_by_completeness_decile	marine	gold
+s8__Otu54	bins/marine/gold/s8__Otu54.fna	87.04861680716314	True	5.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_290_length_1262_cov_19.53548	bins/marine/gold/s8__RNODE_290_length_1262_cov_19.53548.fna	90.37903225806453	True	5.0	stratified_by_completeness_decile	marine	gold
+s9__Otu1000	bins/marine/gold/s9__Otu1000.fna	88.87946947957843	True	5.0	stratified_by_completeness_decile	marine	gold
+s9__Otu115	bins/marine/gold/s9__Otu115.fna	91.0946017195682	True	5.0	stratified_by_completeness_decile	marine	gold
+s9__Otu179	bins/marine/gold/s9__Otu179.fna	88.58388223880348	True	5.0	stratified_by_completeness_decile	marine	gold
+s9__Otu248.0	bins/marine/gold/s9__Otu248.0.fna	91.92539415689107	True	5.0	stratified_by_completeness_decile	marine	gold
+s9__Otu85.1	bins/marine/gold/s9__Otu85.1.fna	89.78461686051736	True	5.0	stratified_by_completeness_decile	marine	gold
+s9__Otu852.0	bins/marine/gold/s9__Otu852.0.fna	88.58509358129261	True	5.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1278.0	bins/marine/gold/s0__Otu1278.0.fna	95.78642837669368	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__Otu235.0	bins/marine/gold/s0__Otu235.0.fna	94.4898898133924	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__Otu453	bins/marine/gold/s0__Otu453.fna	95.43030129715784	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_266_length_6653_cov_7.97753	bins/marine/gold/s0__RNODE_266_length_6653_cov_7.97753.fna	95.4109485748756	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_339_length_1478_cov_5.31250	bins/marine/gold/s0__RNODE_339_length_1478_cov_5.31250.fna	95.50137362637362	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_341_length_3219_cov_3.63466	bins/marine/gold/s0__RNODE_341_length_3219_cov_3.63466.fna	92.49609008445418	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_386_length_2437_cov_8.66377	bins/marine/gold/s0__RNODE_386_length_2437_cov_8.66377.fna	96.10766045548654	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_390_length_5825_cov_8.78167	bins/marine/gold/s0__RNODE_390_length_5825_cov_8.78167.fna	93.72910563501635	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_470_length_2095_cov_7.42232	bins/marine/gold/s0__RNODE_470_length_2095_cov_7.42232.fna	92.12091662603608	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_539_length_1827_cov_6.73752	bins/marine/gold/s0__RNODE_539_length_1827_cov_6.73752.fna	94.6662927650028	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_564_length_8758_cov_6.46781	bins/marine/gold/s0__RNODE_564_length_8758_cov_6.46781.fna	93.407160890521	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_91_length_2298_cov_6.78822	bins/marine/gold/s0__RNODE_91_length_2298_cov_6.78822.fna	94.41564147627416	True	6.0	stratified_by_completeness_decile	marine	gold
+s1__Otu282.0	bins/marine/gold/s1__Otu282.0.fna	93.68498573326022	True	6.0	stratified_by_completeness_decile	marine	gold
+s1__Otu376	bins/marine/gold/s1__Otu376.fna	94.90389806166414	True	6.0	stratified_by_completeness_decile	marine	gold
+s1__Otu454.0	bins/marine/gold/s1__Otu454.0.fna	92.33847306750852	True	6.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_24_length_2639_cov_14.02331	bins/marine/gold/s1__RNODE_24_length_2639_cov_14.02331.fna	96.06801681314482	True	6.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_90_length_1469_cov_9.25017	bins/marine/gold/s1__RNODE_90_length_1469_cov_9.25017.fna	95.1071181755356	True	6.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1187	bins/marine/gold/s2__Otu1187.fna	92.87813313341633	True	6.0	stratified_by_completeness_decile	marine	gold
+s2__Otu136	bins/marine/gold/s2__Otu136.fna	95.32899680470857	True	6.0	stratified_by_completeness_decile	marine	gold
+s2__Otu168.0	bins/marine/gold/s2__Otu168.0.fna	95.99203972562952	True	6.0	stratified_by_completeness_decile	marine	gold
+s2__Otu304.0	bins/marine/gold/s2__Otu304.0.fna	92.92516090420509	True	6.0	stratified_by_completeness_decile	marine	gold
+s2__Otu364	bins/marine/gold/s2__Otu364.fna	92.59594040735097	True	6.0	stratified_by_completeness_decile	marine	gold
+s2__Otu87.0	bins/marine/gold/s2__Otu87.0.fna	92.88058992058744	True	6.0	stratified_by_completeness_decile	marine	gold
+s2__Otu90.0	bins/marine/gold/s2__Otu90.0.fna	95.93138608391152	True	6.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_137_length_1431_cov_4.57559	bins/marine/gold/s2__RNODE_137_length_1431_cov_4.57559.fna	93.75443577004968	True	6.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_17_length_1254_cov_4.43994	bins/marine/gold/s2__RNODE_17_length_1254_cov_4.43994.fna	94.6590909090909	True	6.0	stratified_by_completeness_decile	marine	gold
+s3__Otu1180.0	bins/marine/gold/s3__Otu1180.0.fna	96.04580647438388	True	6.0	stratified_by_completeness_decile	marine	gold
+s3__Otu185.0	bins/marine/gold/s3__Otu185.0.fna	94.3981962264432	True	6.0	stratified_by_completeness_decile	marine	gold
+s3__Otu219.0	bins/marine/gold/s3__Otu219.0.fna	95.55862374680366	True	6.0	stratified_by_completeness_decile	marine	gold
+s3__Otu298	bins/marine/gold/s3__Otu298.fna	92.16546906822032	True	6.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_180_length_2647_cov_2.76800	bins/marine/gold/s3__RNODE_180_length_2647_cov_2.76800.fna	95.68380952380951	True	6.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_338_length_1509_cov_4.27236	bins/marine/gold/s3__RNODE_338_length_1509_cov_4.27236.fna	92.77067921990584	True	6.0	stratified_by_completeness_decile	marine	gold
+s4__Otu128	bins/marine/gold/s4__Otu128.fna	94.11579287128752	True	6.0	stratified_by_completeness_decile	marine	gold
+s4__Otu180	bins/marine/gold/s4__Otu180.fna	94.30022913245186	True	6.0	stratified_by_completeness_decile	marine	gold
+s4__Otu220.0	bins/marine/gold/s4__Otu220.0.fna	94.26480149720403	True	6.0	stratified_by_completeness_decile	marine	gold
+s4__Otu99.0	bins/marine/gold/s4__Otu99.0.fna	95.9298191111618	True	6.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_90_length_1469_cov_9.25017	bins/marine/gold/s4__RNODE_90_length_1469_cov_9.25017.fna	94.1672425708362	True	6.0	stratified_by_completeness_decile	marine	gold
+s5__Otu241.0	bins/marine/gold/s5__Otu241.0.fna	94.64358490987864	True	6.0	stratified_by_completeness_decile	marine	gold
+s5__Otu80.0	bins/marine/gold/s5__Otu80.0.fna	94.65241029853664	True	6.0	stratified_by_completeness_decile	marine	gold
+s6__Otu303.0	bins/marine/gold/s6__Otu303.0.fna	94.86609129815976	True	6.0	stratified_by_completeness_decile	marine	gold
+s6__Otu388	bins/marine/gold/s6__Otu388.fna	93.63491826532564	True	6.0	stratified_by_completeness_decile	marine	gold
+s6__Otu497.1	bins/marine/gold/s6__Otu497.1.fna	92.32466098112	True	6.0	stratified_by_completeness_decile	marine	gold
+s6__Otu800.0	bins/marine/gold/s6__Otu800.0.fna	93.5329725082908	True	6.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_137_length_1431_cov_4.57559	bins/marine/gold/s6__RNODE_137_length_1431_cov_4.57559.fna	94.15897799858055	True	6.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_224_length_2083_cov_4.45463	bins/marine/gold/s6__RNODE_224_length_2083_cov_4.45463.fna	96.00679281901988	True	6.0	stratified_by_completeness_decile	marine	gold
+s7__Otu107	bins/marine/gold/s7__Otu107.fna	92.45783074302992	True	6.0	stratified_by_completeness_decile	marine	gold
+s7__Otu119.0	bins/marine/gold/s7__Otu119.0.fna	93.98702279037296	True	6.0	stratified_by_completeness_decile	marine	gold
+s7__Otu352.1	bins/marine/gold/s7__Otu352.1.fna	95.9035976938378	True	6.0	stratified_by_completeness_decile	marine	gold
+s7__Otu40.1	bins/marine/gold/s7__Otu40.1.fna	93.20532542461726	True	6.0	stratified_by_completeness_decile	marine	gold
+s7__Otu83	bins/marine/gold/s7__Otu83.fna	94.90707615480348	True	6.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_339_length_1478_cov_5.31250	bins/marine/gold/s7__RNODE_339_length_1478_cov_5.31250.fna	92.71978021978022	True	6.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_544_length_1578_cov_361.93923	bins/marine/gold/s7__RNODE_544_length_1578_cov_361.93923.fna	93.9484126984127	True	6.0	stratified_by_completeness_decile	marine	gold
+s8__Otu1995	bins/marine/gold/s8__Otu1995.fna	92.36961688963248	True	6.0	stratified_by_completeness_decile	marine	gold
+s8__Otu24.0	bins/marine/gold/s8__Otu24.0.fna	95.015279965699	True	6.0	stratified_by_completeness_decile	marine	gold
+s8__Otu87.0	bins/marine/gold/s8__Otu87.0.fna	95.06911660965032	True	6.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_127_length_1885_cov_8.56361	bins/marine/gold/s8__RNODE_127_length_1885_cov_8.56361.fna	93.83252818035427	True	6.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_159_length_3592_cov_2.43025	bins/marine/gold/s8__RNODE_159_length_3592_cov_2.43025.fna	95.68067226890756	True	6.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_166_length_2298_cov_14.88049	bins/marine/gold/s8__RNODE_166_length_2298_cov_14.88049.fna	92.59666080843586	True	6.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_364_length_1571_cov_3.81278	bins/marine/gold/s8__RNODE_364_length_1571_cov_3.81278.fna	94.68043899289864	True	6.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_417_length_2670_cov_14.84403	bins/marine/gold/s8__RNODE_417_length_2670_cov_14.84403.fna	95.80060422960725	True	6.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_557_length_1525_cov_6.72562	bins/marine/gold/s8__RNODE_557_length_1525_cov_6.72562.fna	95.0993831391364	True	6.0	stratified_by_completeness_decile	marine	gold
+s9__Otu122.0	bins/marine/gold/s9__Otu122.0.fna	95.67326908963972	True	6.0	stratified_by_completeness_decile	marine	gold
+s9__Otu250	bins/marine/gold/s9__Otu250.fna	94.45361518487005	True	6.0	stratified_by_completeness_decile	marine	gold
+s9__Otu68	bins/marine/gold/s9__Otu68.fna	95.45731716108608	True	6.0	stratified_by_completeness_decile	marine	gold
+s9__Otu78	bins/marine/gold/s9__Otu78.fna	92.24304480817749	True	6.0	stratified_by_completeness_decile	marine	gold
+s9__Otu833	bins/marine/gold/s9__Otu833.fna	92.0699861908268	True	6.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_150_length_1379_cov_3.97642	bins/marine/gold/s9__RNODE_150_length_1379_cov_3.97642.fna	96.07958732498156	True	6.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_248_length_5318_cov_4.74604	bins/marine/gold/s9__RNODE_248_length_5318_cov_4.74604.fna	95.23036253776436	True	6.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_294_length_6942_cov_7.24595	bins/marine/gold/s9__RNODE_294_length_6942_cov_7.24595.fna	93.14161849710985	True	6.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_350_length_2314_cov_37.19546	bins/marine/gold/s9__RNODE_350_length_2314_cov_37.19546.fna	93.27661431064573	True	6.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1093	bins/marine/gold/s0__Otu1093.fna	98.171075006894	True	7.0	stratified_by_completeness_decile	marine	gold
+s0__Otu222.0	bins/marine/gold/s0__Otu222.0.fna	97.51929178133204	True	7.0	stratified_by_completeness_decile	marine	gold
+s0__Otu351	bins/marine/gold/s0__Otu351.fna	97.32843374196509	True	7.0	stratified_by_completeness_decile	marine	gold
+s0__Otu352.1	bins/marine/gold/s0__Otu352.1.fna	98.6122972638047	True	7.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_218_length_1465_cov_7.29868	bins/marine/gold/s0__RNODE_218_length_1465_cov_7.29868.fna	96.28551628551628	True	7.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_291_length_2033_cov_2.59025	bins/marine/gold/s0__RNODE_291_length_2033_cov_2.59025.fna	97.43908503232224	True	7.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_515_length_1754_cov_11.73892	bins/marine/gold/s0__RNODE_515_length_1754_cov_11.73892.fna	98.36842105263158	True	7.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_532_length_1573_cov_5.21419	bins/marine/gold/s0__RNODE_532_length_1573_cov_5.21419.fna	98.10218978102188	True	7.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_60_length_1811_cov_3.41811	bins/marine/gold/s0__RNODE_60_length_1811_cov_3.41811.fna	98.60257126886528	True	7.0	stratified_by_completeness_decile	marine	gold
+s1__Otu39.0	bins/marine/gold/s1__Otu39.0.fna	98.02509422401702	True	7.0	stratified_by_completeness_decile	marine	gold
+s1__Otu73	bins/marine/gold/s1__Otu73.fna	98.02048142558836	True	7.0	stratified_by_completeness_decile	marine	gold
+s1__Otu78	bins/marine/gold/s1__Otu78.fna	97.92163029833738	True	7.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_134_length_2327_cov_32.11800	bins/marine/gold/s1__RNODE_134_length_2327_cov_32.11800.fna	97.34924078091106	True	7.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_404_length_3462_cov_2.92616	bins/marine/gold/s1__RNODE_404_length_3462_cov_2.92616.fna	97.85174418604652	True	7.0	stratified_by_completeness_decile	marine	gold
+s2__Otu157.0	bins/marine/gold/s2__Otu157.0.fna	97.361459480554	True	7.0	stratified_by_completeness_decile	marine	gold
+s2__Otu384.0	bins/marine/gold/s2__Otu384.0.fna	98.53041380364591	True	7.0	stratified_by_completeness_decile	marine	gold
+s2__Otu388	bins/marine/gold/s2__Otu388.fna	97.5371465774971	True	7.0	stratified_by_completeness_decile	marine	gold
+s2__Otu595.0	bins/marine/gold/s2__Otu595.0.fna	97.15981378698368	True	7.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_25_length_1750_cov_3.28993	bins/marine/gold/s2__RNODE_25_length_1750_cov_3.28993.fna	97.00810185185183	True	7.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_557_length_1525_cov_6.72562	bins/marine/gold/s2__RNODE_557_length_1525_cov_6.72562.fna	96.9294037011652	True	7.0	stratified_by_completeness_decile	marine	gold
+s3__Otu106	bins/marine/gold/s3__Otu106.fna	98.46258147631164	True	7.0	stratified_by_completeness_decile	marine	gold
+s3__Otu196	bins/marine/gold/s3__Otu196.fna	96.72069998234242	True	7.0	stratified_by_completeness_decile	marine	gold
+s3__Otu292.0	bins/marine/gold/s3__Otu292.0.fna	96.1615327179275	True	7.0	stratified_by_completeness_decile	marine	gold
+s3__Otu80.0	bins/marine/gold/s3__Otu80.0.fna	96.69343400402536	True	7.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_10_length_6468_cov_8.06035	bins/marine/gold/s3__RNODE_10_length_6468_cov_8.06035.fna	98.36332609370152	True	7.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_25_length_1750_cov_3.28993	bins/marine/gold/s3__RNODE_25_length_1750_cov_3.28993.fna	96.40046296296296	True	7.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_339_length_1478_cov_5.31250	bins/marine/gold/s3__RNODE_339_length_1478_cov_5.31250.fna	96.78571428571428	True	7.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_462_length_1528_cov_6.07822	bins/marine/gold/s3__RNODE_462_length_1528_cov_6.07822.fna	97.87735849056604	True	7.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_530_length_2571_cov_32.65278	bins/marine/gold/s3__RNODE_530_length_2571_cov_32.65278.fna	98.59081836327346	True	7.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_544_length_1578_cov_361.93923	bins/marine/gold/s3__RNODE_544_length_1578_cov_361.93923.fna	96.4021164021164	True	7.0	stratified_by_completeness_decile	marine	gold
+s4__Otu716.0	bins/marine/gold/s4__Otu716.0.fna	98.31101776272656	True	7.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_158_length_1640_cov_4.51607	bins/marine/gold/s4__RNODE_158_length_1640_cov_4.51607.fna	97.48454882571076	True	7.0	stratified_by_completeness_decile	marine	gold
+s5__Otu137.0	bins/marine/gold/s5__Otu137.0.fna	97.95994798676232	True	7.0	stratified_by_completeness_decile	marine	gold
+s5__Otu68	bins/marine/gold/s5__Otu68.fna	97.65439418732504	True	7.0	stratified_by_completeness_decile	marine	gold
+s5__Otu72.0	bins/marine/gold/s5__Otu72.0.fna	96.84123840226042	True	7.0	stratified_by_completeness_decile	marine	gold
+s5__Otu86.0	bins/marine/gold/s5__Otu86.0.fna	97.55386016084258	True	7.0	stratified_by_completeness_decile	marine	gold
+s5__RNODE_224_length_2083_cov_4.45463	bins/marine/gold/s5__RNODE_224_length_2083_cov_4.45463.fna	98.30179524502668	True	7.0	stratified_by_completeness_decile	marine	gold
+s5__RNODE_394_length_3642_cov_5.12873	bins/marine/gold/s5__RNODE_394_length_3642_cov_5.12873.fna	98.15193370165746	True	7.0	stratified_by_completeness_decile	marine	gold
+s5__RNODE_532_length_1573_cov_5.21419	bins/marine/gold/s5__RNODE_532_length_1573_cov_5.21419.fna	97.21300597213006	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__Otu214.0	bins/marine/gold/s6__Otu214.0.fna	97.22700856865887	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__Otu238.0	bins/marine/gold/s6__Otu238.0.fna	98.11582848772692	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__Otu3.0	bins/marine/gold/s6__Otu3.0.fna	97.39954221249776	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__Otu318.0	bins/marine/gold/s6__Otu318.0.fna	98.11815541816205	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__Otu46	bins/marine/gold/s6__Otu46.fna	98.19384696268668	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__Otu525.0	bins/marine/gold/s6__Otu525.0.fna	98.51093086703496	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__Otu76.0	bins/marine/gold/s6__Otu76.0.fna	97.2284702703824	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__Otu85.0	bins/marine/gold/s6__Otu85.0.fna	96.57405756601072	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__Otu89	bins/marine/gold/s6__Otu89.fna	98.42939419336815	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_367_length_2322_cov_4.57652	bins/marine/gold/s6__RNODE_367_length_2322_cov_4.57652.fna	98.0391304347826	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_462_length_1528_cov_6.07822	bins/marine/gold/s6__RNODE_462_length_1528_cov_6.07822.fna	98.1401617250674	True	7.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_528_length_4221_cov_4.74329	bins/marine/gold/s6__RNODE_528_length_4221_cov_4.74329.fna	97.98419918601869	True	7.0	stratified_by_completeness_decile	marine	gold
+s7__Otu116.0	bins/marine/gold/s7__Otu116.0.fna	96.18636334803836	True	7.0	stratified_by_completeness_decile	marine	gold
+s7__Otu235.0	bins/marine/gold/s7__Otu235.0.fna	97.68326094133	True	7.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_337_length_8771_cov_5.18162	bins/marine/gold/s7__RNODE_337_length_8771_cov_5.18162.fna	97.1779631957938	True	7.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_462_length_1528_cov_6.07822	bins/marine/gold/s7__RNODE_462_length_1528_cov_6.07822.fna	97.8234501347709	True	7.0	stratified_by_completeness_decile	marine	gold
+s8__Otu1337	bins/marine/gold/s8__Otu1337.fna	96.19997322845428	True	7.0	stratified_by_completeness_decile	marine	gold
+s8__Otu595.0	bins/marine/gold/s8__Otu595.0.fna	98.20236937216232	True	7.0	stratified_by_completeness_decile	marine	gold
+s8__Otu79.0	bins/marine/gold/s8__Otu79.0.fna	98.61569665630118	True	7.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_147_length_1816_cov_3.48216	bins/marine/gold/s8__RNODE_147_length_1816_cov_3.48216.fna	96.63322185061315	True	7.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_14_length_1961_cov_5.54358	bins/marine/gold/s8__RNODE_14_length_1961_cov_5.54358.fna	98.55595667870035	True	7.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_180_length_2647_cov_2.76800	bins/marine/gold/s8__RNODE_180_length_2647_cov_2.76800.fna	98.20571428571428	True	7.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_532_length_1573_cov_5.21419	bins/marine/gold/s8__RNODE_532_length_1573_cov_5.21419.fna	98.50696748506968	True	7.0	stratified_by_completeness_decile	marine	gold
+s9__Otu152	bins/marine/gold/s9__Otu152.fna	97.37236383138294	True	7.0	stratified_by_completeness_decile	marine	gold
+s9__Otu46	bins/marine/gold/s9__Otu46.fna	98.0621847355304	True	7.0	stratified_by_completeness_decile	marine	gold
+s9__Otu60.0	bins/marine/gold/s9__Otu60.0.fna	98.15391008492844	True	7.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_10_length_6468_cov_8.06035	bins/marine/gold/s9__RNODE_10_length_6468_cov_8.06035.fna	98.43003412969284	True	7.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_147_length_1816_cov_3.48216	bins/marine/gold/s9__RNODE_147_length_1816_cov_3.48216.fna	96.28205128205128	True	7.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_218_length_1465_cov_7.29868	bins/marine/gold/s9__RNODE_218_length_1465_cov_7.29868.fna	98.4060984060984	True	7.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_386_length_2437_cov_8.66377	bins/marine/gold/s9__RNODE_386_length_2437_cov_8.66377.fna	96.66252587991718	True	7.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_462_length_1528_cov_6.07822	bins/marine/gold/s9__RNODE_462_length_1528_cov_6.07822.fna	97.79649595687331	True	7.0	stratified_by_completeness_decile	marine	gold
+s0__Otu107	bins/marine/gold/s0__Otu107.fna	99.78039942468054	True	8.0	stratified_by_completeness_decile	marine	gold
+s0__Otu116.0	bins/marine/gold/s0__Otu116.0.fna	99.34045349669144	True	8.0	stratified_by_completeness_decile	marine	gold
+s0__Otu136	bins/marine/gold/s0__Otu136.fna	99.16426491930764	True	8.0	stratified_by_completeness_decile	marine	gold
+s0__Otu150.0	bins/marine/gold/s0__Otu150.0.fna	99.49146254068118	True	8.0	stratified_by_completeness_decile	marine	gold
+s0__Otu20	bins/marine/gold/s0__Otu20.fna	99.29169746946668	True	8.0	stratified_by_completeness_decile	marine	gold
+s0__Otu30.0	bins/marine/gold/s0__Otu30.0.fna	99.72156574835552	True	8.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_114_length_10406_cov_5.47746	bins/marine/gold/s0__RNODE_114_length_10406_cov_5.47746.fna	99.24017719568567	True	8.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_14_length_1961_cov_5.54358	bins/marine/gold/s0__RNODE_14_length_1961_cov_5.54358.fna	99.21609076843734	True	8.0	stratified_by_completeness_decile	marine	gold
+s0__RNODE_528_length_4221_cov_4.74329	bins/marine/gold/s0__RNODE_528_length_4221_cov_4.74329.fna	99.76059372755566	True	8.0	stratified_by_completeness_decile	marine	gold
+s1__Otu132	bins/marine/gold/s1__Otu132.fna	99.15515208544905	True	8.0	stratified_by_completeness_decile	marine	gold
+s1__Otu137.0	bins/marine/gold/s1__Otu137.0.fna	99.78430205902797	True	8.0	stratified_by_completeness_decile	marine	gold
+s1__Otu250	bins/marine/gold/s1__Otu250.fna	98.7984972328556	True	8.0	stratified_by_completeness_decile	marine	gold
+s1__Otu255	bins/marine/gold/s1__Otu255.fna	99.6419217135508	True	8.0	stratified_by_completeness_decile	marine	gold
+s1__Otu53.0	bins/marine/gold/s1__Otu53.0.fna	98.72188437601096	True	8.0	stratified_by_completeness_decile	marine	gold
+s1__Otu597.0	bins/marine/gold/s1__Otu597.0.fna	99.14922763520548	True	8.0	stratified_by_completeness_decile	marine	gold
+s1__Otu68	bins/marine/gold/s1__Otu68.fna	99.40814738953338	True	8.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_14_length_1961_cov_5.54358	bins/marine/gold/s1__RNODE_14_length_1961_cov_5.54358.fna	99.48427024239298	True	8.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_159_length_3592_cov_2.43025	bins/marine/gold/s1__RNODE_159_length_3592_cov_2.43025.fna	98.75350140056022	True	8.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_394_length_3642_cov_5.12873	bins/marine/gold/s1__RNODE_394_length_3642_cov_5.12873.fna	99.21270718232044	True	8.0	stratified_by_completeness_decile	marine	gold
+s2__Otu107	bins/marine/gold/s2__Otu107.fna	99.00241537519211	True	8.0	stratified_by_completeness_decile	marine	gold
+s2__Otu150.0	bins/marine/gold/s2__Otu150.0.fna	99.27045781664856	True	8.0	stratified_by_completeness_decile	marine	gold
+s2__Otu298	bins/marine/gold/s2__Otu298.fna	99.83092224452524	True	8.0	stratified_by_completeness_decile	marine	gold
+s2__Otu506.0	bins/marine/gold/s2__Otu506.0.fna	99.02842345137756	True	8.0	stratified_by_completeness_decile	marine	gold
+s2__RNODE_432_length_14865_cov_28.53268	bins/marine/gold/s2__RNODE_432_length_14865_cov_28.53268.fna	99.47794167629664	True	8.0	stratified_by_completeness_decile	marine	gold
+s3__Otu157.0	bins/marine/gold/s3__Otu157.0.fna	98.62512701434666	True	8.0	stratified_by_completeness_decile	marine	gold
+s3__Otu20	bins/marine/gold/s3__Otu20.fna	99.66927219315556	True	8.0	stratified_by_completeness_decile	marine	gold
+s3__Otu229.0	bins/marine/gold/s3__Otu229.0.fna	99.16010941822526	True	8.0	stratified_by_completeness_decile	marine	gold
+s3__Otu2290.0	bins/marine/gold/s3__Otu2290.0.fna	98.98991260789197	True	8.0	stratified_by_completeness_decile	marine	gold
+s3__Otu382.0	bins/marine/gold/s3__Otu382.0.fna	98.99679018646816	True	8.0	stratified_by_completeness_decile	marine	gold
+s3__Otu68	bins/marine/gold/s3__Otu68.fna	99.40493104036474	True	8.0	stratified_by_completeness_decile	marine	gold
+s3__Otu89	bins/marine/gold/s3__Otu89.fna	99.54908344615647	True	8.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_14_length_1961_cov_5.54358	bins/marine/gold/s3__RNODE_14_length_1961_cov_5.54358.fna	99.07684373388344	True	8.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_290_length_1262_cov_19.53548	bins/marine/gold/s3__RNODE_290_length_1262_cov_19.53548.fna	99.30645161290325	True	8.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_404_length_3462_cov_2.92616	bins/marine/gold/s3__RNODE_404_length_3462_cov_2.92616.fna	98.90406976744184	True	8.0	stratified_by_completeness_decile	marine	gold
+s3__RNODE_431_length_1803_cov_5.36772	bins/marine/gold/s3__RNODE_431_length_1803_cov_5.36772.fna	99.044911881751	True	8.0	stratified_by_completeness_decile	marine	gold
+s4__Otu123.0	bins/marine/gold/s4__Otu123.0.fna	99.67504186436167	True	8.0	stratified_by_completeness_decile	marine	gold
+s4__Otu152	bins/marine/gold/s4__Otu152.fna	98.85543020892943	True	8.0	stratified_by_completeness_decile	marine	gold
+s4__Otu352.1	bins/marine/gold/s4__Otu352.1.fna	99.64833609953094	True	8.0	stratified_by_completeness_decile	marine	gold
+s4__Otu79.0	bins/marine/gold/s4__Otu79.0.fna	99.7463935367637	True	8.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_114_length_10406_cov_5.47746	bins/marine/gold/s4__RNODE_114_length_10406_cov_5.47746.fna	99.44048536209552	True	8.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_224_length_2083_cov_4.45463	bins/marine/gold/s4__RNODE_224_length_2083_cov_4.45463.fna	98.83551673944687	True	8.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_394_length_3642_cov_5.12873	bins/marine/gold/s4__RNODE_394_length_3642_cov_5.12873.fna	98.76243093922652	True	8.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_431_length_1803_cov_5.36772	bins/marine/gold/s4__RNODE_431_length_1803_cov_5.36772.fna	99.4144400227402	True	8.0	stratified_by_completeness_decile	marine	gold
+s4__RNODE_462_length_1528_cov_6.07822	bins/marine/gold/s4__RNODE_462_length_1528_cov_6.07822.fna	99.35309973045824	True	8.0	stratified_by_completeness_decile	marine	gold
+s5__Otu44.0	bins/marine/gold/s5__Otu44.0.fna	99.72269584204447	True	8.0	stratified_by_completeness_decile	marine	gold
+s5__RNODE_462_length_1528_cov_6.07822	bins/marine/gold/s5__RNODE_462_length_1528_cov_6.07822.fna	99.01617250673854	True	8.0	stratified_by_completeness_decile	marine	gold
+s6__Otu44.0	bins/marine/gold/s6__Otu44.0.fna	98.6558639688488	True	8.0	stratified_by_completeness_decile	marine	gold
+s6__RNODE_368_length_1901_cov_5.06386	bins/marine/gold/s6__RNODE_368_length_1901_cov_5.06386.fna	99.43054816391698	True	8.0	stratified_by_completeness_decile	marine	gold
+s7__Otu149	bins/marine/gold/s7__Otu149.fna	98.96776148748783	True	8.0	stratified_by_completeness_decile	marine	gold
+s7__Otu89	bins/marine/gold/s7__Otu89.fna	99.7868716824619	True	8.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_14_length_1961_cov_5.54358	bins/marine/gold/s7__RNODE_14_length_1961_cov_5.54358.fna	99.48942753996906	True	8.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_25_length_1750_cov_3.28993	bins/marine/gold/s7__RNODE_25_length_1750_cov_3.28993.fna	99.3113425925926	True	8.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_394_length_3642_cov_5.12873	bins/marine/gold/s7__RNODE_394_length_3642_cov_5.12873.fna	98.6353591160221	True	8.0	stratified_by_completeness_decile	marine	gold
+s7__RNODE_60_length_1811_cov_3.41811	bins/marine/gold/s7__RNODE_60_length_1811_cov_3.41811.fna	99.69256567915036	True	8.0	stratified_by_completeness_decile	marine	gold
+s8__Otu130.0	bins/marine/gold/s8__Otu130.0.fna	99.54609103774564	True	8.0	stratified_by_completeness_decile	marine	gold
+s8__Otu139	bins/marine/gold/s8__Otu139.fna	99.21129419569664	True	8.0	stratified_by_completeness_decile	marine	gold
+s8__Otu36.0	bins/marine/gold/s8__Otu36.0.fna	99.62409858463558	True	8.0	stratified_by_completeness_decile	marine	gold
+s8__Otu78	bins/marine/gold/s8__Otu78.fna	98.87029599710672	True	8.0	stratified_by_completeness_decile	marine	gold
+s8__Otu83	bins/marine/gold/s8__Otu83.fna	98.73820959705436	True	8.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_25_length_1750_cov_3.28993	bins/marine/gold/s8__RNODE_25_length_1750_cov_3.28993.fna	98.9699074074074	True	8.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_528_length_4221_cov_4.74329	bins/marine/gold/s8__RNODE_528_length_4221_cov_4.74329.fna	99.27938711994254	True	8.0	stratified_by_completeness_decile	marine	gold
+s8__RNODE_60_length_1811_cov_3.41811	bins/marine/gold/s8__RNODE_60_length_1811_cov_3.41811.fna	99.43543879262158	True	8.0	stratified_by_completeness_decile	marine	gold
+s9__Otu108.1	bins/marine/gold/s9__Otu108.1.fna	99.05362513917278	True	8.0	stratified_by_completeness_decile	marine	gold
+s9__Otu136	bins/marine/gold/s9__Otu136.fna	99.1704581660313	True	8.0	stratified_by_completeness_decile	marine	gold
+s9__Otu150.0	bins/marine/gold/s9__Otu150.0.fna	99.83195785713336	True	8.0	stratified_by_completeness_decile	marine	gold
+s9__Otu35.0	bins/marine/gold/s9__Otu35.0.fna	99.08248363267592	True	8.0	stratified_by_completeness_decile	marine	gold
+s9__Otu40.0	bins/marine/gold/s9__Otu40.0.fna	99.2946892061861	True	8.0	stratified_by_completeness_decile	marine	gold
+s9__Otu73	bins/marine/gold/s9__Otu73.fna	99.3327662198166	True	8.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_431_length_1803_cov_5.36772	bins/marine/gold/s9__RNODE_431_length_1803_cov_5.36772.fna	99.45992040932347	True	8.0	stratified_by_completeness_decile	marine	gold
+s9__RNODE_60_length_1811_cov_3.41811	bins/marine/gold/s9__RNODE_60_length_1811_cov_3.41811.fna	98.95472330911124	True	8.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1337	bins/marine/gold/s0__Otu1337.fna	99.99328156819948	True	9.0	stratified_by_completeness_decile	marine	gold
+s0__Otu226	bins/marine/gold/s0__Otu226.fna	99.92047250902915	True	9.0	stratified_by_completeness_decile	marine	gold
+s0__Otu256	bins/marine/gold/s0__Otu256.fna	99.99192337775273	True	9.0	stratified_by_completeness_decile	marine	gold
+s0__Otu26.0	bins/marine/gold/s0__Otu26.0.fna	99.99915383313588	True	9.0	stratified_by_completeness_decile	marine	gold
+s0__Otu503	bins/marine/gold/s0__Otu503.fna	99.9559776592958	True	9.0	stratified_by_completeness_decile	marine	gold
+s0__Otu67.0	bins/marine/gold/s0__Otu67.0.fna	99.99965929523516	True	9.0	stratified_by_completeness_decile	marine	gold
+s0__Otu88.0	bins/marine/gold/s0__Otu88.0.fna	99.9238934944996	True	9.0	stratified_by_completeness_decile	marine	gold
+s1__Otu12.0	bins/marine/gold/s1__Otu12.0.fna	99.93611382996224	True	9.0	stratified_by_completeness_decile	marine	gold
+s1__Otu186.0	bins/marine/gold/s1__Otu186.0.fna	99.9575482447356	True	9.0	stratified_by_completeness_decile	marine	gold
+s1__Otu20	bins/marine/gold/s1__Otu20.fna	99.98567931647682	True	9.0	stratified_by_completeness_decile	marine	gold
+s1__Otu218	bins/marine/gold/s1__Otu218.fna	99.96311347795192	True	9.0	stratified_by_completeness_decile	marine	gold
+s1__Otu282.1	bins/marine/gold/s1__Otu282.1.fna	99.91863725855804	True	9.0	stratified_by_completeness_decile	marine	gold
+s1__Otu4.0	bins/marine/gold/s1__Otu4.0.fna	99.99989619184991	True	9.0	stratified_by_completeness_decile	marine	gold
+s1__Otu75.0	bins/marine/gold/s1__Otu75.0.fna	99.99976630922104	True	9.0	stratified_by_completeness_decile	marine	gold
+s1__Otu9	bins/marine/gold/s1__Otu9.fna	99.99964874992048	True	9.0	stratified_by_completeness_decile	marine	gold
+s1__RNODE_343_length_2376_cov_8.77188	bins/marine/gold/s1__RNODE_343_length_2376_cov_8.77188.fna	99.88105352591334	True	9.0	stratified_by_completeness_decile	marine	gold
+s2__Otu11	bins/marine/gold/s2__Otu11.fna	99.99958012503876	True	9.0	stratified_by_completeness_decile	marine	gold
+s2__Otu1337	bins/marine/gold/s2__Otu1337.fna	99.87804641286831	True	9.0	stratified_by_completeness_decile	marine	gold
+s2__Otu186.0	bins/marine/gold/s2__Otu186.0.fna	99.97274727183552	True	9.0	stratified_by_completeness_decile	marine	gold
+s2__Otu26.0	bins/marine/gold/s2__Otu26.0.fna	99.99289732662554	True	9.0	stratified_by_completeness_decile	marine	gold
+s2__Otu4.0	bins/marine/gold/s2__Otu4.0.fna	99.99963667147472	True	9.0	stratified_by_completeness_decile	marine	gold
+s3__Otu10	bins/marine/gold/s3__Otu10.fna	99.966251219411	True	9.0	stratified_by_completeness_decile	marine	gold
+s3__Otu24.0	bins/marine/gold/s3__Otu24.0.fna	99.91664908623508	True	9.0	stratified_by_completeness_decile	marine	gold
+s4__Otu1180.0	bins/marine/gold/s4__Otu1180.0.fna	99.98158243464812	True	9.0	stratified_by_completeness_decile	marine	gold
+s4__Otu13.0	bins/marine/gold/s4__Otu13.0.fna	99.99939745991696	True	9.0	stratified_by_completeness_decile	marine	gold
+s4__Otu281.0	bins/marine/gold/s4__Otu281.0.fna	99.91499764951526	True	9.0	stratified_by_completeness_decile	marine	gold
+s4__Otu36.0	bins/marine/gold/s4__Otu36.0.fna	99.97858621140531	True	9.0	stratified_by_completeness_decile	marine	gold
+s4__Otu37.0	bins/marine/gold/s4__Otu37.0.fna	99.99920847359044	True	9.0	stratified_by_completeness_decile	marine	gold
+s4__Otu44.0	bins/marine/gold/s4__Otu44.0.fna	99.8668111628671	True	9.0	stratified_by_completeness_decile	marine	gold
+s4__Otu47.0	bins/marine/gold/s4__Otu47.0.fna	99.99492966056384	True	9.0	stratified_by_completeness_decile	marine	gold
+s5__Otu163	bins/marine/gold/s5__Otu163.fna	99.945061751892	True	9.0	stratified_by_completeness_decile	marine	gold
+s5__Otu186.0	bins/marine/gold/s5__Otu186.0.fna	99.99387168733756	True	9.0	stratified_by_completeness_decile	marine	gold
+s5__Otu211	bins/marine/gold/s5__Otu211.fna	99.99131575741411	True	9.0	stratified_by_completeness_decile	marine	gold
+s5__Otu22	bins/marine/gold/s5__Otu22.fna	99.97364324507475	True	9.0	stratified_by_completeness_decile	marine	gold
+s5__Otu232.0	bins/marine/gold/s5__Otu232.0.fna	99.9162768493019	True	9.0	stratified_by_completeness_decile	marine	gold
+s5__Otu24.0	bins/marine/gold/s5__Otu24.0.fna	99.96631596207264	True	9.0	stratified_by_completeness_decile	marine	gold
+s5__Otu255	bins/marine/gold/s5__Otu255.fna	99.99679037650375	True	9.0	stratified_by_completeness_decile	marine	gold
+s5__Otu37.0	bins/marine/gold/s5__Otu37.0.fna	99.99845788820208	True	9.0	stratified_by_completeness_decile	marine	gold
+s5__Otu47.0	bins/marine/gold/s5__Otu47.0.fna	99.92980543066278	True	9.0	stratified_by_completeness_decile	marine	gold
+s5__Otu48.0	bins/marine/gold/s5__Otu48.0.fna	99.9994251178652	True	9.0	stratified_by_completeness_decile	marine	gold
+s5__Otu88.0	bins/marine/gold/s5__Otu88.0.fna	99.95577395866972	True	9.0	stratified_by_completeness_decile	marine	gold
+s6__Otu11	bins/marine/gold/s6__Otu11.fna	99.99946016076412	True	9.0	stratified_by_completeness_decile	marine	gold
+s6__Otu186.0	bins/marine/gold/s6__Otu186.0.fna	99.9991883029586	True	9.0	stratified_by_completeness_decile	marine	gold
+s6__Otu20	bins/marine/gold/s6__Otu20.fna	99.99786713224124	True	9.0	stratified_by_completeness_decile	marine	gold
+s6__Otu255	bins/marine/gold/s6__Otu255.fna	99.99624921905382	True	9.0	stratified_by_completeness_decile	marine	gold
+s6__Otu30.0	bins/marine/gold/s6__Otu30.0.fna	99.99906906481212	True	9.0	stratified_by_completeness_decile	marine	gold
+s6__Otu304.0	bins/marine/gold/s6__Otu304.0.fna	99.89163695796113	True	9.0	stratified_by_completeness_decile	marine	gold
+s6__Otu4.0	bins/marine/gold/s6__Otu4.0.fna	99.99989619184991	True	9.0	stratified_by_completeness_decile	marine	gold
+s6__Otu48.0	bins/marine/gold/s6__Otu48.0.fna	99.9994251178652	True	9.0	stratified_by_completeness_decile	marine	gold
+s6__Otu53.0	bins/marine/gold/s6__Otu53.0.fna	99.9080866251441	True	9.0	stratified_by_completeness_decile	marine	gold
+s7__Otu12.0	bins/marine/gold/s7__Otu12.0.fna	99.99445299721228	True	9.0	stratified_by_completeness_decile	marine	gold
+s7__Otu36.0	bins/marine/gold/s7__Otu36.0.fna	99.9149249031002	True	9.0	stratified_by_completeness_decile	marine	gold
+s7__Otu39.0	bins/marine/gold/s7__Otu39.0.fna	99.84808417107824	True	9.0	stratified_by_completeness_decile	marine	gold
+s7__Otu73	bins/marine/gold/s7__Otu73.fna	99.92146687105856	True	9.0	stratified_by_completeness_decile	marine	gold
+s7__Otu93	bins/marine/gold/s7__Otu93.fna	99.99929260218744	True	9.0	stratified_by_completeness_decile	marine	gold
+s8__Otu186.0	bins/marine/gold/s8__Otu186.0.fna	99.99864040745568	True	9.0	stratified_by_completeness_decile	marine	gold
+s8__Otu255	bins/marine/gold/s8__Otu255.fna	99.9119592810742	True	9.0	stratified_by_completeness_decile	marine	gold
+s8__Otu37.0	bins/marine/gold/s8__Otu37.0.fna	99.99833506513852	True	9.0	stratified_by_completeness_decile	marine	gold
+s8__Otu47.0	bins/marine/gold/s8__Otu47.0.fna	99.9968392689229	True	9.0	stratified_by_completeness_decile	marine	gold
+s8__Otu6	bins/marine/gold/s8__Otu6.fna	99.93274216166448	True	9.0	stratified_by_completeness_decile	marine	gold
+s8__Otu88.0	bins/marine/gold/s8__Otu88.0.fna	99.94584446104926	True	9.0	stratified_by_completeness_decile	marine	gold
+s8__Otu93	bins/marine/gold/s8__Otu93.fna	99.94700667691266	True	9.0	stratified_by_completeness_decile	marine	gold
+s9__Otu12.0	bins/marine/gold/s9__Otu12.0.fna	99.99874304370329	True	9.0	stratified_by_completeness_decile	marine	gold
+s9__Otu133.0	bins/marine/gold/s9__Otu133.0.fna	99.99592919513402	True	9.0	stratified_by_completeness_decile	marine	gold
+s9__Otu137.0	bins/marine/gold/s9__Otu137.0.fna	99.9959727283173	True	9.0	stratified_by_completeness_decile	marine	gold
+s9__Otu255	bins/marine/gold/s9__Otu255.fna	99.9985817942691	True	9.0	stratified_by_completeness_decile	marine	gold
+s9__Otu26.0	bins/marine/gold/s9__Otu26.0.fna	99.87276727334266	True	9.0	stratified_by_completeness_decile	marine	gold
+s9__Otu30.0	bins/marine/gold/s9__Otu30.0.fna	99.99974610858511	True	9.0	stratified_by_completeness_decile	marine	gold
+s9__Otu47.0	bins/marine/gold/s9__Otu47.0.fna	99.87956297624974	True	9.0	stratified_by_completeness_decile	marine	gold
+s9__Otu86.0	bins/marine/gold/s9__Otu86.0.fna	99.90074528706158	True	9.0	stratified_by_completeness_decile	marine	gold
+s0__Otu1184	bins/marine/gold/s0__Otu1184.fna	30.47043482480502	False		below_50pct_floor_probe	marine	gold
+s0__Otu1283	bins/marine/gold/s0__Otu1283.fna	30.25187564580619	False		below_50pct_floor_probe	marine	gold
+s0__Otu1302	bins/marine/gold/s0__Otu1302.fna	30.113204023003757	False		below_50pct_floor_probe	marine	gold
+s0__Otu1739	bins/marine/gold/s0__Otu1739.fna	30.31314108586843	False		below_50pct_floor_probe	marine	gold
+s0__Otu331.0	bins/marine/gold/s0__Otu331.0.fna	30.502709326400893	False		below_50pct_floor_probe	marine	gold
+s0__Otu44.0	bins/marine/gold/s0__Otu44.0.fna	30.673567729023205	False		below_50pct_floor_probe	marine	gold
+s0__Otu459	bins/marine/gold/s0__Otu459.fna	30.394403768165493	False		below_50pct_floor_probe	marine	gold
+s0__Otu60.0	bins/marine/gold/s0__Otu60.0.fna	30.443784563203828	False		below_50pct_floor_probe	marine	gold
+s0__Otu618.0	bins/marine/gold/s0__Otu618.0.fna	30.332943800877104	False		below_50pct_floor_probe	marine	gold
+s0__Otu945	bins/marine/gold/s0__Otu945.fna	30.311671959514307	False		below_50pct_floor_probe	marine	gold
+s1__Otu1057	bins/marine/gold/s1__Otu1057.fna	35.27791284983144	False		below_50pct_floor_probe	marine	gold
+s1__Otu1182	bins/marine/gold/s1__Otu1182.fna	35.62314288850726	False		below_50pct_floor_probe	marine	gold
+s1__Otu1322	bins/marine/gold/s1__Otu1322.fna	34.961737223234884	False		below_50pct_floor_probe	marine	gold
+s1__Otu1832	bins/marine/gold/s1__Otu1832.fna	35.13674140285284	False		below_50pct_floor_probe	marine	gold
+s1__Otu771	bins/marine/gold/s1__Otu771.fna	34.751848055233644	False		below_50pct_floor_probe	marine	gold
+s1__Otu800.0	bins/marine/gold/s1__Otu800.0.fna	35.113674866665015	False		below_50pct_floor_probe	marine	gold
+s1__Otu974	bins/marine/gold/s1__Otu974.fna	35.35688053564088	False		below_50pct_floor_probe	marine	gold
+s2__Otu1027	bins/marine/gold/s2__Otu1027.fna	40.85150618756067	False		below_50pct_floor_probe	marine	gold
+s2__Otu1093	bins/marine/gold/s2__Otu1093.fna	40.94618215139259	False		below_50pct_floor_probe	marine	gold
+s2__Otu119.1	bins/marine/gold/s2__Otu119.1.fna	35.79052549186956	False		below_50pct_floor_probe	marine	gold
+s2__Otu1297	bins/marine/gold/s2__Otu1297.fna	41.43410507242602	False		below_50pct_floor_probe	marine	gold
+s2__Otu1379	bins/marine/gold/s2__Otu1379.fna	41.21915637009834	False		below_50pct_floor_probe	marine	gold
+s2__Otu1427	bins/marine/gold/s2__Otu1427.fna	41.197578042357264	False		below_50pct_floor_probe	marine	gold
+s2__Otu1847	bins/marine/gold/s2__Otu1847.fna	41.10085520915862	False		below_50pct_floor_probe	marine	gold
+s2__Otu230.1	bins/marine/gold/s2__Otu230.1.fna	35.805661360422256	False		below_50pct_floor_probe	marine	gold
+s2__Otu2423	bins/marine/gold/s2__Otu2423.fna	41.02799292843609	False		below_50pct_floor_probe	marine	gold
+s2__Otu293.0	bins/marine/gold/s2__Otu293.0.fna	41.08838999118045	False		below_50pct_floor_probe	marine	gold
+s2__Otu318.0	bins/marine/gold/s2__Otu318.0.fna	41.17338522702222	False		below_50pct_floor_probe	marine	gold
+s2__Otu365.0	bins/marine/gold/s2__Otu365.0.fna	41.08274856633857	False		below_50pct_floor_probe	marine	gold
+s2__Otu592.0	bins/marine/gold/s2__Otu592.0.fna	40.93969538781168	False		below_50pct_floor_probe	marine	gold
+s2__Otu610	bins/marine/gold/s2__Otu610.fna	41.30099244034994	False		below_50pct_floor_probe	marine	gold
+s2__Otu703	bins/marine/gold/s2__Otu703.fna	41.15321964800168	False		below_50pct_floor_probe	marine	gold
+s2__Otu716.0	bins/marine/gold/s2__Otu716.0.fna	41.19621554123985	False		below_50pct_floor_probe	marine	gold
+s3__Otu1028	bins/marine/gold/s3__Otu1028.fna	39.88411690104804	False		below_50pct_floor_probe	marine	gold
+s3__Otu1078	bins/marine/gold/s3__Otu1078.fna	39.960861882330605	False		below_50pct_floor_probe	marine	gold
+s3__Otu1084	bins/marine/gold/s3__Otu1084.fna	49.44052591230864	False		below_50pct_floor_probe	marine	gold
+s3__Otu1146.0	bins/marine/gold/s3__Otu1146.0.fna	49.44298825857236	False		below_50pct_floor_probe	marine	gold
+s3__Otu1330	bins/marine/gold/s3__Otu1330.fna	39.86832697646199	False		below_50pct_floor_probe	marine	gold
+s3__Otu1545	bins/marine/gold/s3__Otu1545.fna	49.75364276557479	False		below_50pct_floor_probe	marine	gold
+s3__Otu1918	bins/marine/gold/s3__Otu1918.fna	49.55871468500141	False		below_50pct_floor_probe	marine	gold
+s3__Otu2259	bins/marine/gold/s3__Otu2259.fna	40.05521291841539	False		below_50pct_floor_probe	marine	gold
+s3__Otu491.0	bins/marine/gold/s3__Otu491.0.fna	39.997485797430166	False		below_50pct_floor_probe	marine	gold
+s3__Otu555.0	bins/marine/gold/s3__Otu555.0.fna	49.31142584855272	False		below_50pct_floor_probe	marine	gold
+s3__Otu605	bins/marine/gold/s3__Otu605.fna	39.82372808904712	False		below_50pct_floor_probe	marine	gold
+s3__Otu801.0	bins/marine/gold/s3__Otu801.0.fna	31.16467948959053	False		below_50pct_floor_probe	marine	gold
+s3__Otu941	bins/marine/gold/s3__Otu941.fna	49.201458514233366	False		below_50pct_floor_probe	marine	gold
+s3__Otu954	bins/marine/gold/s3__Otu954.fna	40.29343996131913	False		below_50pct_floor_probe	marine	gold
+s3__Otu999	bins/marine/gold/s3__Otu999.fna	40.11038849386958	False		below_50pct_floor_probe	marine	gold
+s4__Otu1160	bins/marine/gold/s4__Otu1160.fna	47.37425469059972	False		below_50pct_floor_probe	marine	gold
+s4__Otu1784	bins/marine/gold/s4__Otu1784.fna	46.84232754647648	False		below_50pct_floor_probe	marine	gold
+s4__Otu2206	bins/marine/gold/s4__Otu2206.fna	47.17458637171172	False		below_50pct_floor_probe	marine	gold
+s4__Otu2389	bins/marine/gold/s4__Otu2389.fna	47.13078108526995	False		below_50pct_floor_probe	marine	gold
+s4__Otu794.0	bins/marine/gold/s4__Otu794.0.fna	47.1990070537899	False		below_50pct_floor_probe	marine	gold
+s4__Otu797	bins/marine/gold/s4__Otu797.fna	47.02222698772045	False		below_50pct_floor_probe	marine	gold
+s5__Otu1383	bins/marine/gold/s5__Otu1383.fna	38.60822986647537	False		below_50pct_floor_probe	marine	gold
+s5__Otu1677.0	bins/marine/gold/s5__Otu1677.0.fna	38.858014915488496	False		below_50pct_floor_probe	marine	gold
+s5__Otu1871	bins/marine/gold/s5__Otu1871.fna	38.19581213476389	False		below_50pct_floor_probe	marine	gold
+s5__Otu1986.0	bins/marine/gold/s5__Otu1986.0.fna	38.58716927591377	False		below_50pct_floor_probe	marine	gold
+s5__Otu2279	bins/marine/gold/s5__Otu2279.fna	38.80459551541082	False		below_50pct_floor_probe	marine	gold
+s5__Otu2425	bins/marine/gold/s5__Otu2425.fna	38.42740362683124	False		below_50pct_floor_probe	marine	gold
+s5__Otu625	bins/marine/gold/s5__Otu625.fna	38.38997240880136	False		below_50pct_floor_probe	marine	gold
+s5__Otu937	bins/marine/gold/s5__Otu937.fna	38.704759405059406	False		below_50pct_floor_probe	marine	gold
+s6__Otu1321	bins/marine/gold/s6__Otu1321.fna	45.03717074598893	False		below_50pct_floor_probe	marine	gold
+s6__Otu1913	bins/marine/gold/s6__Otu1913.fna	45.12240941187268	False		below_50pct_floor_probe	marine	gold
+s6__Otu413	bins/marine/gold/s6__Otu413.fna	45.1952658552452	False		below_50pct_floor_probe	marine	gold
+s6__Otu689.0	bins/marine/gold/s6__Otu689.0.fna	45.2228952409444	False		below_50pct_floor_probe	marine	gold
+s7__Otu1283	bins/marine/gold/s7__Otu1283.fna	31.41151893616065	False		below_50pct_floor_probe	marine	gold
+s7__Otu1287	bins/marine/gold/s7__Otu1287.fna	31.226707438882613	False		below_50pct_floor_probe	marine	gold
+s7__Otu1428.0	bins/marine/gold/s7__Otu1428.0.fna	31.133438945120574	False		below_50pct_floor_probe	marine	gold
+s7__Otu1545	bins/marine/gold/s7__Otu1545.fna	31.213660390471286	False		below_50pct_floor_probe	marine	gold
+s7__Otu1791	bins/marine/gold/s7__Otu1791.fna	31.42294191157424	False		below_50pct_floor_probe	marine	gold
+s7__Otu2016.0	bins/marine/gold/s7__Otu2016.0.fna	31.297407230634843	False		below_50pct_floor_probe	marine	gold
+s7__Otu2087	bins/marine/gold/s7__Otu2087.fna	31.183473060700265	False		below_50pct_floor_probe	marine	gold
+s7__Otu2227.0	bins/marine/gold/s7__Otu2227.0.fna	31.262410538978436	False		below_50pct_floor_probe	marine	gold
+s7__Otu2403	bins/marine/gold/s7__Otu2403.fna	31.477962830474358	False		below_50pct_floor_probe	marine	gold
+s7__Otu467	bins/marine/gold/s7__Otu467.fna	31.30585859016516	False		below_50pct_floor_probe	marine	gold
+s7__Otu489.0	bins/marine/gold/s7__Otu489.0.fna	31.205868686429916	False		below_50pct_floor_probe	marine	gold
+s7__Otu549	bins/marine/gold/s7__Otu549.fna	31.133986420475917	False		below_50pct_floor_probe	marine	gold
+s7__Otu564	bins/marine/gold/s7__Otu564.fna	31.42898576201374	False		below_50pct_floor_probe	marine	gold
+s7__Otu717	bins/marine/gold/s7__Otu717.fna	31.474968118211628	False		below_50pct_floor_probe	marine	gold
+s7__Otu860	bins/marine/gold/s7__Otu860.fna	31.341100724939743	False		below_50pct_floor_probe	marine	gold
+s7__Otu965	bins/marine/gold/s7__Otu965.fna	31.231026597368515	False		below_50pct_floor_probe	marine	gold
+s7__Otu999	bins/marine/gold/s7__Otu999.fna	31.36213165283257	False		below_50pct_floor_probe	marine	gold
+s8__Otu1160	bins/marine/gold/s8__Otu1160.fna	37.302867325984415	False		below_50pct_floor_probe	marine	gold
+s8__Otu1469.1	bins/marine/gold/s8__Otu1469.1.fna	33.10246262363897	False		below_50pct_floor_probe	marine	gold
+s8__Otu1519	bins/marine/gold/s8__Otu1519.fna	37.18400844876003	False		below_50pct_floor_probe	marine	gold
+s8__Otu1541	bins/marine/gold/s8__Otu1541.fna	37.21519998663205	False		below_50pct_floor_probe	marine	gold
+s8__Otu1573	bins/marine/gold/s8__Otu1573.fna	37.008926463485466	False		below_50pct_floor_probe	marine	gold
+s8__Otu352.0	bins/marine/gold/s8__Otu352.0.fna	36.86181622341286	False		below_50pct_floor_probe	marine	gold
+s8__Otu589	bins/marine/gold/s8__Otu589.fna	49.941736152787456	False		below_50pct_floor_probe	marine	gold
+s8__Otu801.0	bins/marine/gold/s8__Otu801.0.fna	49.66283709920274	False		below_50pct_floor_probe	marine	gold
+s8__Otu945	bins/marine/gold/s8__Otu945.fna	37.08684751236161	False		below_50pct_floor_probe	marine	gold
+s8__RNODE_418_length_1505_cov_4.15172	bins/marine/gold/s8__RNODE_418_length_1505_cov_4.15172.fna	42.7714093054619	False		below_50pct_floor_probe	marine	gold
+s9__Otu1710	bins/marine/gold/s9__Otu1710.fna	30.328958991164228	False		below_50pct_floor_probe	marine	gold
+s9__Otu1832	bins/marine/gold/s9__Otu1832.fna	30.445801435291816	False		below_50pct_floor_probe	marine	gold
+s9__Otu2044	bins/marine/gold/s9__Otu2044.fna	30.26577833405758	False		below_50pct_floor_probe	marine	gold
+s9__Otu394.0	bins/marine/gold/s9__Otu394.0.fna	48.83466237795596	False		below_50pct_floor_probe	marine	gold
+s9__Otu399.0	bins/marine/gold/s9__Otu399.0.fna	30.52513703975917	False		below_50pct_floor_probe	marine	gold
+s9__Otu564	bins/marine/gold/s9__Otu564.fna	30.51988104014289	False		below_50pct_floor_probe	marine	gold
+s9__Otu707	bins/marine/gold/s9__Otu707.fna	30.36178377875967	False		below_50pct_floor_probe	marine	gold

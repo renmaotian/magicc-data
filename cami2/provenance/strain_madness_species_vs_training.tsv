@@ -1,0 +1,21 @@
+dataset	species	n_cami_genomes	n_train_genomes_same_species	n_val_genomes_same_species	species_seen_in_training
+strain_madness	Streptococcus pneumoniae	174	1689	212	True
+strain_madness	Escherichia coli	97	2672	350	True
+strain_madness	Klebsiella pneumoniae	47	2429	303	True
+strain_madness	Enterococcus faecium	21	0	0	False
+strain_madness	Staphylococcus aureus	21	3499	429	True
+strain_madness	Phocaeicola sartorii	3	9	0	True
+strain_madness	Citrobacter portucalensis	3	56	9	True
+strain_madness	Streptococcus pseudopneumoniae	3	10	2	True
+strain_madness	Lactobacillus sp. ASF360	2	0	0	False
+strain_madness	Enterobacter cloacae	1	63	5	True
+strain_madness	Enterococcus faecalis	1	804	113	True
+strain_madness	Klebsiella aerogenes	1	109	13	True
+strain_madness	Paenibacillus sp. Y412MC10	1	0	0	False
+strain_madness	Limosilactobacillus reuteri	1	12	1	True
+strain_madness	Lactococcus garvieae	1	20	1	True
+strain_madness	Lactobacillus taiwanensis	1	5	0	True
+strain_madness	Parabacteroides distasonis	1	108	13	True
+strain_madness	Parabacteroides sp. ASF519	1	0	0	False
+strain_madness	Streptococcus mitis	1	7	0	True
+strain_madness	Streptococcus infantis	1	2	0	True
