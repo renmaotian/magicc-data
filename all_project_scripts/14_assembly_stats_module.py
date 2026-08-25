@@ -15,7 +15,7 @@ import os
 import time
 import numpy as np
 
-sys.path.insert(0, '/home/tianrm/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc')
 from magicc.assembly_stats import (
     compute_assembly_stats, compute_assembly_stats_batch,
     format_stats, FEATURE_NAMES, N_FEATURES,
@@ -110,7 +110,7 @@ def test_real_genomes():
     print("TEST 4: Real reference genomes")
     print("=" * 70)
 
-    manifest_path = '/home/tianrm/projects/magicc2/data/splits/genome_manifest.tsv'
+    manifest_path = '/path/to/magicc/data/splits/genome_manifest.tsv'
     genomes = []
     with open(manifest_path) as f:
         header = f.readline()

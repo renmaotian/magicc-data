@@ -39,7 +39,7 @@ from typing import List, Dict, Tuple, Optional
 from multiprocessing import Pool, cpu_count
 from functools import partial
 
-sys.path.insert(0, '/home/tianrm/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc')
 from magicc.fragmentation import (
     simulate_fragmentation, read_fasta, load_original_contigs
 )
@@ -50,7 +50,7 @@ from magicc.contamination import (
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = Path('/home/tianrm/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc')
 DATA_DIR = PROJECT_DIR / 'data'
 BENCHMARK_DIR = DATA_DIR / 'benchmarks'
 SPLITS_DIR = DATA_DIR / 'splits'

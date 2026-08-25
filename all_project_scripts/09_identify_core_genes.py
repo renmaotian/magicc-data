@@ -26,7 +26,7 @@ from collections import defaultdict
 import time
 import logging
 
-PROJ = Path("/home/tianrm/projects/magicc2")
+PROJ = Path("/path/to/magicc")
 OUT_DIR = PROJ / "data/kmer_selection"
 BCG_HMM = PROJ / "85_bcg.hmm"
 UACG_HMM = PROJ / "uacg.hmm"

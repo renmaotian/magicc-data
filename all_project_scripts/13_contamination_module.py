@@ -15,7 +15,7 @@ import os
 import time
 import numpy as np
 
-sys.path.insert(0, '/home/tianrm/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc')
 from magicc.contamination import (
     generate_contaminated_sample, generate_pure_sample,
     compute_contamination_rate, select_contaminant_target_bp,
@@ -147,7 +147,7 @@ def test_real_genomes():
     print("TEST 5: Real genome contamination mixing")
     print("=" * 70)
 
-    manifest_path = '/home/tianrm/projects/magicc2/data/splits/genome_manifest.tsv'
+    manifest_path = '/path/to/magicc/data/splits/genome_manifest.tsv'
     genomes = []
     with open(manifest_path) as f:
         header = f.readline()

@@ -15,7 +15,7 @@ import os
 import time
 import numpy as np
 
-sys.path.insert(0, '/home/tianrm/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc')
 from magicc.kmer_counter import (
     KmerCounter, encode_kmer, reverse_complement_code, canonical_code,
     load_selected_kmers, K,
@@ -61,7 +61,7 @@ def test_load_selected_kmers():
     print("TEST 2: Load selected k-mers")
     print("=" * 70)
 
-    kmer_path = '/home/tianrm/projects/magicc2/data/kmer_selection/selected_kmers.txt'
+    kmer_path = '/path/to/magicc/data/kmer_selection/selected_kmers.txt'
     codes = load_selected_kmers(kmer_path)
 
     print(f"  Loaded {len(codes)} k-mers")
@@ -82,7 +82,7 @@ def test_simple_counting():
     print("TEST 3: Simple k-mer counting")
     print("=" * 70)
 
-    kmer_path = '/home/tianrm/projects/magicc2/data/kmer_selection/selected_kmers.txt'
+    kmer_path = '/path/to/magicc/data/kmer_selection/selected_kmers.txt'
     counter = KmerCounter(kmer_path)
     print(f"  Counter initialized: {counter.n_features} features")
 
@@ -122,7 +122,7 @@ def test_contig_counting():
     print("TEST 4: Contig-level k-mer counting")
     print("=" * 70)
 
-    kmer_path = '/home/tianrm/projects/magicc2/data/kmer_selection/selected_kmers.txt'
+    kmer_path = '/path/to/magicc/data/kmer_selection/selected_kmers.txt'
     counter = KmerCounter(kmer_path)
 
     rng = np.random.default_rng(42)
@@ -162,10 +162,10 @@ def test_real_genome():
 
     from magicc.fragmentation import read_fasta
 
-    kmer_path = '/home/tianrm/projects/magicc2/data/kmer_selection/selected_kmers.txt'
+    kmer_path = '/path/to/magicc/data/kmer_selection/selected_kmers.txt'
     counter = KmerCounter(kmer_path)
 
-    manifest_path = '/home/tianrm/projects/magicc2/data/splits/genome_manifest.tsv'
+    manifest_path = '/path/to/magicc/data/splits/genome_manifest.tsv'
     genomes = []
     with open(manifest_path) as f:
         header = f.readline()
@@ -203,7 +203,7 @@ def test_performance():
     print("TEST 6: Performance benchmark")
     print("=" * 70)
 
-    kmer_path = '/home/tianrm/projects/magicc2/data/kmer_selection/selected_kmers.txt'
+    kmer_path = '/path/to/magicc/data/kmer_selection/selected_kmers.txt'
     counter = KmerCounter(kmer_path)
 
     rng = np.random.default_rng(101)

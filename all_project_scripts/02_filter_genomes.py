@@ -19,10 +19,10 @@ import os
 import sys
 
 # Paths
-DATA_DIR = "/home/tianrm/projects/magicc2/data/gtdb"
+DATA_DIR = "/path/to/magicc/data/gtdb"
 BAC_META = os.path.join(DATA_DIR, "bac120_metadata.tsv.gz")
 AR_META = os.path.join(DATA_DIR, "ar53_metadata.tsv.gz")
-OUTPUT_DIR = "/home/tianrm/projects/magicc2/data/gtdb"
+OUTPUT_DIR = "/path/to/magicc/data/gtdb"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "filtered_genomes.tsv")
 
 # Columns to load (to save memory)

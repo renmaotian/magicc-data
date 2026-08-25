@@ -17,7 +17,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
-PROJECT_DIR = "/home/tianrm/projects/magicc2"
+PROJECT_DIR = "/path/to/magicc"
 DEEPCHECK_DIR = os.path.join(PROJECT_DIR, "tools", "DeepCheck")
 SET_E_DIR = os.path.join(PROJECT_DIR, "data", "benchmarks", "set_E")
 

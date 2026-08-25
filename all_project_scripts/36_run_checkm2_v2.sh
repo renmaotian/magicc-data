@@ -3,12 +3,12 @@
 # Sets: motivating_v2/set_A, motivating_v2/set_B, set_A_v2, set_B_v2, set_E
 # Each set has 1,000 genomes
 # CheckM2 installed in conda env checkm2_py39 (Python 3.9.23)
-# Database: /home/tianrm/projects/magicc2/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd
+# Database: /path/to/magicc/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd
 # Uses 32 threads, runs sets sequentially, resumable (skips existing output)
 
 set -euo pipefail
 
-PROJECT_DIR="/home/tianrm/projects/magicc2"
+PROJECT_DIR="/path/to/magicc"
 CHECKM2_DB="${PROJECT_DIR}/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd"
 CONDA_ENV="checkm2_py39"
 THREADS=32

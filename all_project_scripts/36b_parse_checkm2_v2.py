@@ -12,7 +12,7 @@ import pandas as pd
 import os
 import numpy as np
 
-PROJECT_DIR = "/home/tianrm/projects/magicc2"
+PROJECT_DIR = "/path/to/magicc"
 BENCHMARK_DIR = os.path.join(PROJECT_DIR, "data", "benchmarks")
 N_THREADS = 32
 

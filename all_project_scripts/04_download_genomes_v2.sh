@@ -5,9 +5,9 @@
 
 set -uo pipefail
 
-GENOME_DIR="/home/tianrm/projects/magicc2/data/genomes"
-BATCH_DIR="/home/tianrm/projects/magicc2/data/genome_batches"
-LOG_DIR="/home/tianrm/projects/magicc2/data/download_logs"
+GENOME_DIR="/path/to/magicc/data/genomes"
+BATCH_DIR="/path/to/magicc/data/genome_batches"
+LOG_DIR="/path/to/magicc/data/download_logs"
 NUM_WORKERS=10
 
 mkdir -p "$GENOME_DIR" "$LOG_DIR"
@@ -26,8 +26,8 @@ cat > /tmp/download_one_batch.sh << 'SCRIPT'
 #!/bin/bash
 BATCH_FILE="$1"
 BATCH_NAME=$(basename "$BATCH_FILE")
-GENOME_DIR="/home/tianrm/projects/magicc2/data/genomes"
-LOG_DIR="/home/tianrm/projects/magicc2/data/download_logs"
+GENOME_DIR="/path/to/magicc/data/genomes"
+LOG_DIR="/path/to/magicc/data/download_logs"
 BATCH_LOG="$LOG_DIR/${BATCH_NAME}.log"
 DONE_MARKER="$LOG_DIR/${BATCH_NAME}.done"
 

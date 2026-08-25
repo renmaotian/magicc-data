@@ -26,7 +26,7 @@ import time
 import logging
 import pickle
 
-PROJ = Path("/home/tianrm/projects/magicc2")
+PROJ = Path("/path/to/magicc")
 OUT_DIR = PROJ / "data/kmer_selection"
 
 N_CPUS = max(1, int(os.cpu_count() * 0.9))

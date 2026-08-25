@@ -53,7 +53,7 @@ warnings.filterwarnings('ignore', category=UserWarning)
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = Path('/home/tianrm/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc')
 DATA_DIR = PROJECT_DIR / 'data'
 BENCHMARK_DIR = DATA_DIR / 'benchmarks'
 RESULTS_DIR = PROJECT_DIR / 'results'

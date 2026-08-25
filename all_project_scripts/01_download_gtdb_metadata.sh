@@ -1,10 +1,10 @@
 #!/bin/bash
 # Step 1: Download GTDB metadata files (bacterial and archaeal)
-# Saves to /home/tianrm/projects/magicc2/data/gtdb/
+# Saves to /path/to/magicc/data/gtdb/
 
 set -euo pipefail
 
-OUTDIR="/home/tianrm/projects/magicc2/data/gtdb"
+OUTDIR="/path/to/magicc/data/gtdb"
 mkdir -p "$OUTDIR"
 
 BAC_URL="https://data.gtdb.aau.ecogenomic.org/releases/latest/bac120_metadata.tsv.gz"

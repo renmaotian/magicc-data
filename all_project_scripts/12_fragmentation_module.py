@@ -14,7 +14,7 @@ import os
 import time
 import numpy as np
 
-sys.path.insert(0, '/home/tianrm/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc')
 from magicc.fragmentation import (
     simulate_fragmentation, read_fasta, generate_contig_lengths,
     QUALITY_TIERS, apply_completeness
@@ -67,7 +67,7 @@ def test_real_genome_fragmentation():
     print("=" * 70)
 
     # Load genome manifest to find a few test genomes
-    manifest_path = '/home/tianrm/projects/magicc2/data/splits/genome_manifest.tsv'
+    manifest_path = '/path/to/magicc/data/splits/genome_manifest.tsv'
     test_genomes = []
     with open(manifest_path) as f:
         header = f.readline()

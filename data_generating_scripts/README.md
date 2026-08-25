@@ -2,6 +2,29 @@
 
 These scripts generated the benchmark and motivating analysis datasets used in the MAGICC paper. They depend on the `magicc` Python package ([github.com/renmaotian/magicc](https://github.com/renmaotian/magicc)) for genome fragmentation and contamination simulation modules.
 
+> **Paths.** Every path of the form `/path/to/magicc/...` is a placeholder for a
+> local checkout of the analysis workspace and must be repointed before these
+> scripts will run. Output paths named below (`data/benchmarks/...`) are the
+> workspace layout, not this repository's layout; the corresponding metadata is
+> published here under `benchmark/`.
+
+> **`25_benchmark_generate.py` produced the WITHDRAWN sets C and D.** Its module
+> docstring states that dominants come from "ALL ... from train+val+test" — that
+> is the leakage, in the source. It is kept here for exactly that reason. See
+> [`../withdrawn/`](../withdrawn/).
+
+## Scripts added in the 2026 revision
+
+| Script | Produces |
+|---|---|
+| `72_select_clean_cd_refs.py` | selects the 100 test-split Patescibacteriota and 100 test-split archaeal references for the clean sets |
+| `73_generate_clean_cd_benchmarks.py` | generates `set_C_clean` and `set_D_clean` (100 references x 10 simulations each), recording a **literal per-sample seed** |
+| `74_provenance_audit.py` | the GCA/GCF-aware leakage audit behind `../provenance/overlap_summary.tsv` |
+| `144_contamination_type_module.py`, `145_generate_set_F.py` | set F: contamination type x donor taxonomic distance |
+| `150_error_injection_module.py`, `151_generate_set_G.py` | set G: sequencing and assembly error robustness |
+| `185_ws1_11_select_ncbi_refs.py`, `187_ws1_11_generate_set_H.py` | set H: 400 NCBI references in 200 matched pairs, circularity safeguard |
+| `188_ws1_11_provenance_audit.py` | the set H provenance audit (delegates to `74_provenance_audit.py`, so the two cannot drift apart) |
+
 ## Scripts
 
 ### `33_filter_finished_genomes.py`

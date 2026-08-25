@@ -29,7 +29,7 @@ from pathlib import Path
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = Path('/home/tianrm/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc')
 BENCHMARK_DIR = PROJECT_DIR / 'data' / 'benchmarks'
 
 SETS = {

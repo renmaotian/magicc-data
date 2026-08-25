@@ -41,7 +41,7 @@ import numpy as np
 import h5py
 
 # Project root
-PROJECT_ROOT = '/home/tianrm/projects/magicc2'
+PROJECT_ROOT = '/path/to/magicc'
 sys.path.insert(0, PROJECT_ROOT)
 
 from magicc.fragmentation import read_fasta, simulate_fragmentation

@@ -6,10 +6,10 @@
 
 set -euo pipefail
 
-ACC_FILE="/home/tianrm/projects/magicc2/data/gtdb/selected_100k_accessions.txt"
-GENOME_DIR="/home/tianrm/projects/magicc2/data/genomes"
-BATCH_DIR="/home/tianrm/projects/magicc2/data/genome_batches"
-LOG_DIR="/home/tianrm/projects/magicc2/data/download_logs"
+ACC_FILE="/path/to/magicc/data/gtdb/selected_100k_accessions.txt"
+GENOME_DIR="/path/to/magicc/data/genomes"
+BATCH_DIR="/path/to/magicc/data/genome_batches"
+LOG_DIR="/path/to/magicc/data/download_logs"
 BATCH_SIZE=200
 NUM_WORKERS=10
 
@@ -34,7 +34,7 @@ download_batch() {
     local BATCH_LOG="$LOG_DIR/${BATCH_NAME}.log"
     local DONE_MARKER="$LOG_DIR/${BATCH_NAME}.done"
     local FAIL_MARKER="$LOG_DIR/${BATCH_NAME}.failed"
-    local GENOME_DIR="/home/tianrm/projects/magicc2/data/genomes"
+    local GENOME_DIR="/path/to/magicc/data/genomes"
 
     # Skip if already done
     if [ -f "$DONE_MARKER" ]; then

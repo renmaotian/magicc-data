@@ -17,7 +17,7 @@ import pandas as pd
 from pathlib import Path
 from collections import Counter
 
-sys.path.insert(0, '/home/tianrm/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc')
 
 import h5py
 import onnxruntime as ort
@@ -25,7 +25,7 @@ import onnxruntime as ort
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = Path('/home/tianrm/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc')
 DATA_DIR = PROJECT_DIR / 'data'
 
 HDF5_PATH = str(DATA_DIR / 'features' / 'magicc_features.h5')

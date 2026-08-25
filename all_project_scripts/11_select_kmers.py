@@ -17,7 +17,7 @@ import numpy as np
 from pathlib import Path
 import logging
 
-PROJ = Path("/home/tianrm/projects/magicc2")
+PROJ = Path("/path/to/magicc")
 OUT_DIR = PROJ / "data/kmer_selection"
 
 logging.basicConfig(

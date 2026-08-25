@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-PROJ = Path("/home/tianrm/projects/magicc2")
+PROJ = Path("/path/to/magicc")
 TRAIN_TSV = PROJ / "data/splits/train_genomes.tsv"
 OUT_DIR = PROJ / "data/kmer_selection"
 SEED = 42

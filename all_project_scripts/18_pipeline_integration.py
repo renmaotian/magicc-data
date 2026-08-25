@@ -15,7 +15,7 @@ import os
 import time
 import numpy as np
 
-sys.path.insert(0, '/home/tianrm/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc')
 from magicc.pipeline import MAGICCPipeline
 from magicc.kmer_counter import KmerCounter
 from magicc.assembly_stats import compute_assembly_stats, FEATURE_NAMES
@@ -24,7 +24,7 @@ from magicc.storage import FeatureStore, METADATA_DTYPE
 from magicc.fragmentation import read_fasta, simulate_fragmentation
 
 
-KMER_PATH = '/home/tianrm/projects/magicc2/data/kmer_selection/selected_kmers.txt'
+KMER_PATH = '/path/to/magicc/data/kmer_selection/selected_kmers.txt'
 
 
 def fast_random_seq(rng, length):
@@ -161,7 +161,7 @@ def test_real_genome_pipeline():
     pipeline = MAGICCPipeline(KMER_PATH)
     rng = np.random.default_rng(789)
 
-    manifest_path = '/home/tianrm/projects/magicc2/data/splits/genome_manifest.tsv'
+    manifest_path = '/path/to/magicc/data/splits/genome_manifest.tsv'
     genomes = []
     with open(manifest_path) as f:
         header = f.readline()

@@ -1,12 +1,12 @@
 #!/bin/bash
 # Script 28: Run CheckM2 on all 4 benchmark sets (A, B, C, D)
 # CheckM2 is installed in conda env checkm2_py39 (Python 3.9.23)
-# Database: /home/tianrm/projects/magicc2/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd
+# Database: /path/to/magicc/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd
 # Uses 32 threads, runs sets sequentially, resumable (skips existing output)
 
 set -euo pipefail
 
-PROJECT_DIR="/home/tianrm/projects/magicc2"
+PROJECT_DIR="/path/to/magicc"
 CHECKM2_DB="${PROJECT_DIR}/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd"
 CONDA_ENV="checkm2_py39"
 THREADS=32

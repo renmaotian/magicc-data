@@ -30,7 +30,7 @@ import matplotlib.ticker as mticker
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = '/home/tianrm/projects/magicc2'
+PROJECT_DIR = '/path/to/magicc'
 BENCHMARK_DIR = os.path.join(PROJECT_DIR, 'data', 'benchmarks', 'motivating')
 RESULTS_DIR = os.path.join(PROJECT_DIR, 'results')
 FIGURES_DIR = os.path.join(RESULTS_DIR, 'figures')
