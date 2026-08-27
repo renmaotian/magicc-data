@@ -1,0 +1,4 @@
+colour_a	colour_b	hex_a	hex_b	delta_e_normal	delta_e_deuteranopia	delta_e_protanopia	delta_e_tritanopia	min_delta_e	flag_too_similar
+neg_end	mid	#0072B2	#F2F2F2	64.59	68.35	59.88	54.91	54.91	False
+mid	pos_end	#F2F2F2	#D55E00	87.07	72.98	72.02	83.41	72.02	False
+neg_end	pos_end	#0072B2	#D55E00	114.61	108.28	91.88	101.98	91.88	False

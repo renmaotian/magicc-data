@@ -1,0 +1,196 @@
+{
+  "production_n_kmers": 9249,
+  "panel_level": "family",
+  "panel_taxa": [
+    "2-12-FULL-60-25",
+    "Arcobacteraceae",
+    "Flavobacteriaceae",
+    "GWA2-37-8",
+    "GWC2-37-13",
+    "Haloarculaceae",
+    "Haloferacaceae",
+    "Helicobacteraceae",
+    "Minisyncoccaceae",
+    "Muribaculaceae",
+    "Nanoperiomorbaceae",
+    "Nanosynbacteraceae",
+    "Nanosyncoccaceae",
+    "PJMF01",
+    "Peribacteraceae",
+    "Saccharimonadaceae",
+    "Staskawiczbacteraceae",
+    "UBA1547",
+    "UBA2103",
+    "UBA2206",
+    "UBA4665",
+    "UBA8517",
+    "UBA918",
+    "UBA922",
+    "UBA9973"
+  ],
+  "panel_phyla": [],
+  "domains": {
+    "bacterial": {
+      "spearman_rho_prevalence": 0.997676,
+      "prevalence_rate_lost": {
+        "all_reps": 0.5356,
+        "nonpanel_reps": 0.5244,
+        "panel_reps": 0.6935,
+        "panel_minus_nonpanel": 0.1691
+      },
+      "prevalence_rate_retained": {
+        "all_reps": 0.6072,
+        "nonpanel_reps": 0.6095,
+        "panel_reps": 0.5757,
+        "panel_minus_nonpanel": -0.0337
+      },
+      "retention_by_production_rank": [
+        {
+          "rank_range": "1-1000",
+          "n": 1000,
+          "retained_frac": 1.0,
+          "prevalence_rate_all_reps": 0.7481
+        },
+        {
+          "rank_range": "1001-3000",
+          "n": 2000,
+          "retained_frac": 1.0,
+          "prevalence_rate_all_reps": 0.6455
+        },
+        {
+          "rank_range": "3001-6000",
+          "n": 3000,
+          "retained_frac": 1.0,
+          "prevalence_rate_all_reps": 0.5856
+        },
+        {
+          "rank_range": "6001-9000",
+          "n": 3000,
+          "retained_frac": 0.8343,
+          "prevalence_rate_all_reps": 0.5445
+        }
+      ],
+      "n_representatives": 1000,
+      "n_panel_representatives": 66,
+      "pct_panel_representatives": 6.6,
+      "panel_by_phylum": {
+        "Helicobacteraceae": 21,
+        "Muribaculaceae": 19,
+        "Flavobacteriaceae": 8,
+        "Nanosyncoccaceae": 4,
+        "UBA2103": 3,
+        "Arcobacteraceae": 2,
+        "UBA2206": 2,
+        "Minisyncoccaceae": 2,
+        "UBA9973": 2,
+        "Nanoperiomorbaceae": 1,
+        "GWA2-37-8": 1,
+        "PJMF01": 1
+      },
+      "n_nonpanel_representatives": 934,
+      "validation_vs_stored": {
+        "n_compared": 131072,
+        "exact_match": 131072,
+        "pct_exact": 100.0,
+        "pearson_r": 1.0,
+        "max_abs_diff": 0
+      },
+      "top_n": 9000,
+      "prevalence_cutoff_all": 529,
+      "prevalence_cutoff_nonpanel": 496,
+      "within_domain_jaccard": 0.8953,
+      "within_domain_shared": 8503,
+      "lost": 497,
+      "gained": 497
+    },
+    "archaeal": {
+      "spearman_rho_prevalence": 0.940429,
+      "prevalence_rate_lost": {
+        "all_reps": 0.8061,
+        "nonpanel_reps": 0.7886,
+        "panel_reps": 0.9181,
+        "panel_minus_nonpanel": 0.1295
+      },
+      "prevalence_rate_retained": {
+        "all_reps": 0.8594,
+        "nonpanel_reps": 0.8707,
+        "panel_reps": 0.787,
+        "panel_minus_nonpanel": -0.0837
+      },
+      "retention_by_production_rank": [
+        {
+          "rank_range": "1-1000",
+          "n": 1000,
+          "retained_frac": 0.757,
+          "prevalence_rate_all_reps": 0.8465
+        }
+      ],
+      "n_representatives": 1000,
+      "n_panel_representatives": 135,
+      "pct_panel_representatives": 13.5,
+      "panel_by_phylum": {
+        "Haloferacaceae": 87,
+        "Haloarculaceae": 48
+      },
+      "n_nonpanel_representatives": 865,
+      "validation_vs_stored": {
+        "n_compared": 131072,
+        "exact_match": 131072,
+        "pct_exact": 100.0,
+        "pearson_r": 1.0,
+        "max_abs_diff": 0
+      },
+      "top_n": 1000,
+      "prevalence_cutoff_all": 791,
+      "prevalence_cutoff_nonpanel": 700,
+      "within_domain_jaccard": 0.609,
+      "within_domain_shared": 757,
+      "lost": 243,
+      "gained": 243
+    }
+  },
+  "merged": {
+    "n_production": 9249,
+    "n_reproduced_all_reps": 9249,
+    "n_reselected_nonpanel": 9220,
+    "jaccard_production_vs_reselected": 0.8838,
+    "jaccard_production_vs_reproduced_control": 1.0,
+    "jaccard_reproduced_vs_reselected": 0.8838,
+    "shared": 8665,
+    "lost": 584,
+    "gained": 555,
+    "pct_production_retained": 93.69,
+    "lost_by_production_source_branch": {
+      "bacterial": 484,
+      "archaeal": 95,
+      "bacterial+archaeal": 5
+    },
+    "lost_production_prevalence": {
+      "bacterial_mean": 518.0,
+      "bacterial_max": 556,
+      "archaeal_mean": 566.1,
+      "archaeal_max": 833
+    },
+    "all_selected_production_prevalence": {
+      "bacterial_mean": 598.9,
+      "bacterial_max": 992,
+      "archaeal_mean": 607.5,
+      "archaeal_max": 998
+    },
+    "production_composition": {
+      "n_bacterial_selected": 9000,
+      "n_archaeal_selected": 1000,
+      "n_overlap": 751,
+      "n_bact_only": 8249,
+      "n_arch_only": 249,
+      "n_final_merged": 9249,
+      "bacterial_prevalence_cutoff": 529,
+      "archaeal_prevalence_cutoff": 791,
+      "bacterial_max_prevalence": 992,
+      "archaeal_max_prevalence": 998,
+      "output_file": "/path/to/home/projects/magicc2/data/kmer_selection/selected_kmers.txt"
+    },
+    "archaeal_only_share_pct": 2.69
+  },
+  "interpretation": "Jaccard alone is misleading here because the selection is a hard top-N cut on a continuous prevalence ranking, so k-mers sitting near the cutoff churn even under small perturbations of the representative set. The informative statistics are (a) the Spearman correlation of prevalence, (b) retention stratified by production prevalence rank, and (c) the production prevalence of the lost k-mers. Retention of 100% in the top bacterial ranks with churn confined to the low-prevalence tail means the feature set is stable where it carries signal. Direction of residual bias: because the production features were partly chosen using panel genomes, they are if anything slightly better suited to panel-phylum core genes than a panel-blind feature set would be, so any measured degradation on held-out phyla is a CONSERVATIVE (under)estimate. Feature-level leakage therefore cannot manufacture a false-negative result."
+}

@@ -1,0 +1,91 @@
+{
+  "generated_utc": "2026-08-01T18:39:03.259989+00:00",
+  "generated_by": "scripts/187_ws1_11_generate_set_H.py",
+  "n_refs": 4,
+  "n_sims_per_ref": 2,
+  "n_workers": 8,
+  "set_base_seed": 7500000,
+  "seed_formula": "SET_BASE + 1000 * ref_index + replicate",
+  "design_rng": "np.random.default_rng(SET_BASE), targets drawn per (pair, replicate) and shared by both arms",
+  "generator": "scripts/73_generate_clean_cd_benchmarks.py logic, verbatim",
+  "report": {
+    "set": "set_H_ncbi",
+    "n_samples": 8,
+    "n_generation_metadata_columns": 53,
+    "metadata_matches_generation_metadata": true,
+    "labels_match_metadata": true,
+    "fasta_missing": 0,
+    "fasta_empty": 0,
+    "fasta_unparseable": 0,
+    "fasta_length_mismatch": 0,
+    "fasta_integrity_pass": true,
+    "violations_contaminant_bp_gt_dominant_bp": 0,
+    "violations_contamination_gt_completeness": 0,
+    "violations_contamination_gt_100": 0,
+    "violations_completeness_out_of_50_100": 0,
+    "constraint_guard_fired_n": 0,
+    "out_of_domain_samples": 0,
+    "constraints_pass": true,
+    "completeness": {
+      "mean": 74.296,
+      "min": 51.378,
+      "max": 88.135,
+      "hist_50_100_5bins": [
+        2,
+        0,
+        2,
+        4,
+        0
+      ]
+    },
+    "contamination": {
+      "mean": 60.637,
+      "min": 16.98,
+      "max": 88.068,
+      "hist_0_100_5bins": [
+        1,
+        1,
+        2,
+        0,
+        4
+      ]
+    },
+    "ks_target_completeness_uniform": {
+      "stat": 0.227,
+      "p": 0.7255
+    },
+    "ks_target_contamination_uniform": {
+      "stat": 0.3716,
+      "p": 0.1688
+    },
+    "n_unique_dominants": 4,
+    "sims_per_reference": [
+      2
+    ],
+    "arm_counts": {
+      "H_fail": 4,
+      "H_pass": 4
+    },
+    "severity_counts": {
+      "pass": 4,
+      "moderate": 2,
+      "severe": 2
+    },
+    "n_pairs": 2,
+    "paired_targets_identical": true,
+    "contaminant_events_total": 33,
+    "unique_contaminant_genomes": 33,
+    "contaminant_same_phylum_as_dominant": 0,
+    "n_contaminants_distribution": {
+      "3": 2,
+      "4": 3,
+      "5": 3
+    },
+    "quality_tier_counts": {
+      "medium": 3,
+      "low": 3,
+      "high": 1,
+      "highly_fragmented": 1
+    }
+  }
+}

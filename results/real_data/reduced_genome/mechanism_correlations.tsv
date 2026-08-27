@@ -1,0 +1,58 @@
+pool	n	target	predictor	rho	p	controlling_for
+all_cohorts	1368	delta_contamination	genome_size	-0.3068	3.4e-31	
+all_cohorts	1368	delta_completeness	genome_size	0.4095	1.87e-56	
+all_cohorts	1368	delta_contamination	contig_count	-0.2916	3.23e-28	
+all_cohorts	1368	delta_contamination	contig_count	-0.2016	5.3e-14	genome_size
+all_cohorts	1368	delta_completeness	contig_count	0.2396	2.56e-19	
+all_cohorts	1368	delta_completeness	contig_count	0.1043	0.000112	genome_size
+all_cohorts	1363	delta_contamination	log2_size_vs_phylum	-0.2778	1.39e-25	
+all_cohorts	1363	delta_contamination	log2_size_vs_phylum	-0.0716	0.00825	genome_size
+all_cohorts	1363	delta_contamination	genome_size	-0.1546	9.66e-09	log2_size_vs_phylum
+all_cohorts	1363	delta_completeness	log2_size_vs_phylum	0.388	3.39e-50	
+all_cohorts	1363	delta_completeness	log2_size_vs_phylum	0.1291	1.74e-06	genome_size
+all_cohorts	1363	delta_completeness	genome_size	0.1926	7.5e-13	log2_size_vs_phylum
+all_cohorts	1368	n_scg_detected	genome_size	0.1978	1.56e-13	
+all_cohorts	1368	delta_contamination	n_scg_detected	0.1506	2.2e-08	
+all_cohorts	1368	delta_contamination	n_scg_detected	0.2264	2.39e-17	genome_size
+all_cohorts	1368	delta_contamination	genome_size	-0.3473	5.01e-40	n_scg_detected
+all_cohorts	1368	delta_completeness	n_scg_detected	-0.1954	3.07e-13	
+all_cohorts	1368	delta_completeness	n_scg_detected	-0.3091	1.21e-31	genome_size
+all_cohorts	1368	delta_completeness	genome_size	0.4662	1.08e-74	n_scg_detected
+size_stratified_only	750	delta_contamination	genome_size	-0.1071	0.00331	
+size_stratified_only	750	delta_completeness	genome_size	0.3815	2.18e-27	
+size_stratified_only	750	delta_contamination	contig_count	-0.2281	2.62e-10	
+size_stratified_only	750	delta_contamination	contig_count	-0.2044	1.67e-08	genome_size
+size_stratified_only	750	delta_completeness	contig_count	0.2216	8.56e-10	
+size_stratified_only	750	delta_completeness	contig_count	0.098	0.00726	genome_size
+size_stratified_only	745	delta_contamination	log2_size_vs_phylum	0.0163	0.658	
+size_stratified_only	745	delta_contamination	log2_size_vs_phylum	0.1314	0.000327	genome_size
+size_stratified_only	745	delta_contamination	genome_size	-0.1682	3.98e-06	log2_size_vs_phylum
+size_stratified_only	745	delta_completeness	log2_size_vs_phylum	0.3015	4.01e-17	
+size_stratified_only	745	delta_completeness	log2_size_vs_phylum	0.0484	0.187	genome_size
+size_stratified_only	745	delta_completeness	genome_size	0.2487	5.92e-12	log2_size_vs_phylum
+size_stratified_only	750	n_scg_detected	genome_size	0.2562	1.05e-12	
+size_stratified_only	750	delta_contamination	n_scg_detected	0.0856	0.0191	
+size_stratified_only	750	delta_contamination	n_scg_detected	0.1176	0.00126	genome_size
+size_stratified_only	750	delta_contamination	genome_size	-0.134	0.000235	n_scg_detected
+size_stratified_only	750	delta_completeness	n_scg_detected	-0.1355	0.000198	
+size_stratified_only	750	delta_completeness	n_scg_detected	-0.261	3.95e-13	genome_size
+size_stratified_only	750	delta_completeness	genome_size	0.4345	7.58e-36	n_scg_detected
+excluding_reviewer_genera	1070	delta_contamination	genome_size	-0.0554	0.0702	
+excluding_reviewer_genera	1070	delta_completeness	genome_size	0.2774	2.34e-20	
+excluding_reviewer_genera	1070	delta_contamination	contig_count	-0.2599	5.58e-18	
+excluding_reviewer_genera	1070	delta_contamination	contig_count	-0.2556	2.11e-17	genome_size
+excluding_reviewer_genera	1070	delta_completeness	contig_count	0.1925	2.15e-10	
+excluding_reviewer_genera	1070	delta_completeness	contig_count	0.1179	0.000111	genome_size
+excluding_reviewer_genera	1065	delta_contamination	log2_size_vs_phylum	0.0134	0.663	
+excluding_reviewer_genera	1065	delta_contamination	log2_size_vs_phylum	0.0763	0.0128	genome_size
+excluding_reviewer_genera	1065	delta_contamination	genome_size	-0.0928	0.00244	log2_size_vs_phylum
+excluding_reviewer_genera	1065	delta_completeness	log2_size_vs_phylum	0.2428	9.27e-16	
+excluding_reviewer_genera	1065	delta_completeness	log2_size_vs_phylum	0.0671	0.0287	genome_size
+excluding_reviewer_genera	1065	delta_completeness	genome_size	0.1486	1.12e-06	log2_size_vs_phylum
+excluding_reviewer_genera	1070	n_scg_detected	genome_size	0.233	1.18e-14	
+excluding_reviewer_genera	1070	delta_contamination	n_scg_detected	0.1633	7.74e-08	
+excluding_reviewer_genera	1070	delta_contamination	n_scg_detected	0.1815	2.27e-09	genome_size
+excluding_reviewer_genera	1070	delta_contamination	genome_size	-0.0974	0.00143	n_scg_detected
+excluding_reviewer_genera	1070	delta_completeness	n_scg_detected	-0.1876	6.29e-10	
+excluding_reviewer_genera	1070	delta_completeness	n_scg_detected	-0.2699	2.66e-19	genome_size
+excluding_reviewer_genera	1070	delta_completeness	genome_size	0.3362	1.19e-29	n_scg_detected

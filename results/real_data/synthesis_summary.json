@@ -1,0 +1,12 @@
+{
+  "generated_utc": "2026-07-26T22:34:14.438025+00:00",
+  "n_rows": 20,
+  "datasets": [
+    "Meslier MOCK1 (all organisms, >=50 %, all 7 assemblies)",
+    "Meslier MOCK1 (indel-dense MinION assembly only)",
+    "Meslier MOCK1 (leakage-free, >=50 %, ORF-intact assemblies)",
+    "Meslier MOCK1 (leakage-free, >=50 %, all 7 assemblies)",
+    "Zymo isolate drafts (n=8)"
+  ],
+  "denominator_caption": "Denominators (identical for ground truth and for every tool): completeness = retained dominant-organism bp / dominant reference FULL length x 100; contamination = contaminant bp / dominant reference FULL length x 100. MIMAG-inspired thresholds (completeness/contamination only): high quality >=90 % completeness AND <5 % contamination; medium quality >=50 % AND <10 %. R2 is the coefficient of determination (1 - SS_res/SS_tot), never squared Pearson."
+}

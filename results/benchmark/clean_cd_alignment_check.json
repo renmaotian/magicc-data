@@ -1,0 +1,94 @@
+{
+  "set_C_clean": {
+    "n_metadata": 1000,
+    "tools": {
+      "MAGICC V5": {
+        "n_rows": 1000,
+        "genome_ids_match_metadata_in_order": true,
+        "true_completeness_matches": true,
+        "true_contamination_matches": true,
+        "n_nan_predictions": 0,
+        "path": "/path/to/magicc/data/benchmarks/set_C_clean/magicc_v5_predictions.tsv",
+        "ok": true,
+        "fully_scored": true
+      },
+      "CheckM2 1.0.1": {
+        "n_rows": 1000,
+        "genome_ids_match_metadata_in_order": true,
+        "true_completeness_matches": true,
+        "true_contamination_matches": true,
+        "n_nan_predictions": 0,
+        "path": "/path/to/magicc/data/benchmarks/set_C_clean/checkm2_predictions.tsv",
+        "ok": true,
+        "fully_scored": true
+      },
+      "CoCoPyE 0.5.0": {
+        "n_rows": 1000,
+        "genome_ids_match_metadata_in_order": true,
+        "true_completeness_matches": true,
+        "true_contamination_matches": true,
+        "n_nan_predictions": 0,
+        "path": "/path/to/magicc/data/benchmarks/set_C_clean/cocopye_predictions.tsv",
+        "ok": true,
+        "fully_scored": true
+      },
+      "DeepCheck": {
+        "n_rows": 1000,
+        "genome_ids_match_metadata_in_order": true,
+        "true_completeness_matches": true,
+        "true_contamination_matches": true,
+        "n_nan_predictions": 0,
+        "path": "/path/to/magicc/data/benchmarks/set_C_clean/deepcheck_predictions.tsv",
+        "ok": true,
+        "fully_scored": true
+      }
+    },
+    "ok": true
+  },
+  "set_D_clean": {
+    "n_metadata": 1000,
+    "tools": {
+      "MAGICC V5": {
+        "n_rows": 1000,
+        "genome_ids_match_metadata_in_order": true,
+        "true_completeness_matches": true,
+        "true_contamination_matches": true,
+        "n_nan_predictions": 0,
+        "path": "/path/to/magicc/data/benchmarks/set_D_clean/magicc_v5_predictions.tsv",
+        "ok": true,
+        "fully_scored": true
+      },
+      "CheckM2 1.0.1": {
+        "n_rows": 1000,
+        "genome_ids_match_metadata_in_order": true,
+        "true_completeness_matches": true,
+        "true_contamination_matches": true,
+        "n_nan_predictions": 0,
+        "path": "/path/to/magicc/data/benchmarks/set_D_clean/checkm2_predictions.tsv",
+        "ok": true,
+        "fully_scored": true
+      },
+      "CoCoPyE 0.5.0": {
+        "n_rows": 1000,
+        "genome_ids_match_metadata_in_order": true,
+        "true_completeness_matches": true,
+        "true_contamination_matches": true,
+        "n_nan_predictions": 0,
+        "path": "/path/to/magicc/data/benchmarks/set_D_clean/cocopye_predictions.tsv",
+        "ok": true,
+        "fully_scored": true
+      },
+      "DeepCheck": {
+        "n_rows": 1000,
+        "genome_ids_match_metadata_in_order": true,
+        "true_completeness_matches": true,
+        "true_contamination_matches": true,
+        "n_nan_predictions": 0,
+        "path": "/path/to/magicc/data/benchmarks/set_D_clean/deepcheck_predictions.tsv",
+        "ok": true,
+        "fully_scored": true
+      }
+    },
+    "ok": true
+  }
+}

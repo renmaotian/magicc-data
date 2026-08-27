@@ -1,0 +1,11 @@
+GUNC:      1.1.1
+DIAMOND:   diamond version 2.1.24
+Database:  /path/to/magicc/tools/gunc_db_gtdb95/gunc_db_gtdb95.dmnd (37.44 GB)
+Genomes:   8
+Threads:   8
+Command:   gunc run -d /path/to/magicc/results/revision/gunc/controls_gtdb95/positive/tmp/gunc_stage_rk04yb93 -e .fa -r /path/to/magicc/tools/gunc_db_gtdb95/gunc_db_gtdb95.dmnd -t 8 -o /path/to/magicc/results/revision/gunc/controls_gtdb95/positive/gunc_output --temp_dir /path/to/magicc/results/revision/gunc/controls_gtdb95/positive/tmp --min_mapped_genes 11 --detailed_output
+
+Done in 2164.2s (270.5s/genome, 8 threads)
+  scored=8  pass=8  fail=0  unscored=0
+  /path/to/magicc/results/revision/gunc/controls_gtdb95/positive/gunc_normalized.tsv
+  /path/to/magicc/results/revision/gunc/controls_gtdb95/positive/gunc_run_summary.json

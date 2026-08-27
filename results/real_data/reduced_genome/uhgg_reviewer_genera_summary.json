@@ -1,0 +1,47 @@
+{
+  "script": "scripts/135_uhgg_reviewer_genera.py",
+  "catalogue": "MGnify human-gut v2.0.2 (UHGG)",
+  "comparator_caveat": "UHGG ships CheckM v1 values, NOT CheckM2",
+  "n": 126,
+  "per_genus": [
+    {
+      "genus": "CAG-557",
+      "n": 89,
+      "length_median": 1067093,
+      "contigs_median": 98,
+      "uhgg_checkm1_completeness_median": 77.16,
+      "uhgg_checkm1_contamination_median": 0.67,
+      "magicc_completeness_median": 58.86,
+      "magicc_contamination_median": 24.31,
+      "delta_completeness_MAGICC_minus_CheckM1_median": -17.83,
+      "delta_contamination_MAGICC_minus_CheckM1_median": 23.53,
+      "pct_magicc_cont_gt_5": 97.8
+    },
+    {
+      "genus": "UMGS1491",
+      "n": 30,
+      "length_median": 960731,
+      "contigs_median": 135,
+      "uhgg_checkm1_completeness_median": 67.52,
+      "uhgg_checkm1_contamination_median": 0.67,
+      "magicc_completeness_median": 57.3,
+      "magicc_contamination_median": 11.98,
+      "delta_completeness_MAGICC_minus_CheckM1_median": -7.27,
+      "delta_contamination_MAGICC_minus_CheckM1_median": 10.71,
+      "pct_magicc_cont_gt_5": 86.7
+    },
+    {
+      "genus": "HGM10766",
+      "n": 7,
+      "length_median": 1129673,
+      "contigs_median": 52,
+      "uhgg_checkm1_completeness_median": 91.01,
+      "uhgg_checkm1_contamination_median": 0.28,
+      "magicc_completeness_median": 62.94,
+      "magicc_contamination_median": 24.85,
+      "delta_completeness_MAGICC_minus_CheckM1_median": -29.16,
+      "delta_contamination_MAGICC_minus_CheckM1_median": 24.85,
+      "pct_magicc_cont_gt_5": 100.0
+    }
+  ]
+}

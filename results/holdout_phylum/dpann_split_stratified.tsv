@@ -1,0 +1,7 @@
+v5_split_of_dominant	model	n	n_refs	comp_mae	cont_mae	comp_bias	cont_bias
+test	V5	108	9	7.172	8.312	-2.042	-2.569
+test	holdout	108	9	25.087	20.74	-25.026	-20.561
+train	V5	768	64	3.381	5.778	0.111	-4.288
+train	holdout	768	64	23.208	17.61	-22.836	-15.249
+val	V5	120	10	10.117	11.499	-8.165	0.289
+val	holdout	120	10	27.652	21.406	-27.593	-19.441

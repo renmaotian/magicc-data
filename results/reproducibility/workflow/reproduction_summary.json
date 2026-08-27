@@ -1,0 +1,395 @@
+{
+  "schema": "magicc-headline-reproduction/1.0",
+  "generated_utc": "2026-08-25T16:48:35.472736+00:00",
+  "workstream_items": [
+    "WS7.4",
+    "WS7.11"
+  ],
+  "reviewer_comments": [
+    "R1-M6",
+    "R1-M8",
+    "R1-m18"
+  ],
+  "overall": "PASS",
+  "subsampled": false,
+  "subsample_n_per_set": 0,
+  "tolerance_pp": 0.01,
+  "model": {
+    "sha256": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+    "version": "V5"
+  },
+  "artefact_checks": "PASS",
+  "pooled": {
+    "schema": "magicc-workflow-evaluation/1.0",
+    "generated_utc": "2026-08-25T16:48:30.052881+00:00",
+    "set_name": "POOLED_leakage_free_5_sets",
+    "sets_included": [
+      "set_A_v2",
+      "set_B_v2",
+      "set_C_clean",
+      "set_D_clean",
+      "set_E"
+    ],
+    "n_genomes": 5000,
+    "cluster_column": "dominant_accession",
+    "cluster_scope": "(set, reference genome) pair",
+    "r2_convention": "coefficient of determination, 1 - SS_res/SS_tot (protocol 4.4d)",
+    "metrics": {
+      "completeness": {
+        "n": 5000,
+        "mae": 4.617909868475892,
+        "rmse": 7.814488253733473,
+        "bias": -0.8669099173584341,
+        "true_variance": 284.38402203525874,
+        "r2": 0.7852684330480169,
+        "r2_omitted_reason": null,
+        "r_pearson_sq": 0.7894429091620857,
+        "n_clusters": 2586,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          4.332174523282706,
+          4.926847105001772
+        ],
+        "bias_ci": [
+          -1.2849253343228664,
+          -0.47489352806148705
+        ],
+        "r2_ci": [
+          0.7550388874507021,
+          0.8118088849399548
+        ]
+      },
+      "contamination": {
+        "n": 5000,
+        "mae": 5.308570454111886,
+        "rmse": 8.830246072110786,
+        "bias": -1.9625997203851542,
+        "true_variance": 916.5620526042775,
+        "r2": 0.9149285686959455,
+        "r2_omitted_reason": null,
+        "r_pearson_sq": 0.9213301816811711,
+        "n_clusters": 2586,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          5.013380793432728,
+          5.601279053749295
+        ],
+        "bias_ci": [
+          -2.3476962454185326,
+          -1.5606282284169248
+        ],
+        "r2_ci": [
+          0.9054234540178683,
+          0.9244074167885195
+        ]
+      }
+    }
+  },
+  "per_set": {
+    "set_A_v2": {
+      "completeness": {
+        "n": 1000,
+        "mae": 2.176632903613406,
+        "rmse": 4.265460490012575,
+        "bias": 0.0922177271372748,
+        "true_variance": 288.16837015258153,
+        "r2": 0.9368627681718686,
+        "r2_omitted_reason": null,
+        "r_pearson_sq": 0.9369097498177438,
+        "n_clusters": 798,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          1.9435337569319797,
+          2.4453068006894156
+        ],
+        "bias_ci": [
+          -0.2150188193459618,
+          0.3614711907079489
+        ],
+        "r2_ci": [
+          0.9154874192345158,
+          0.9543042618099807
+        ]
+      },
+      "contamination": {
+        "n": 1000,
+        "mae": 0.8285281999999999,
+        "rmse": 3.012492171724268,
+        "bias": 0.8285281999999999,
+        "true_variance": 0.0,
+        "r2": null,
+        "r2_omitted_reason": "true value has zero variance (R1-m19)",
+        "r_pearson_sq": null,
+        "n_clusters": 798,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          0.6457440102398132,
+          1.047433276151223
+        ],
+        "bias_ci": [
+          0.6457440102398132,
+          1.047433276151223
+        ],
+        "r2_ci": [
+          null,
+          null
+        ]
+      }
+    },
+    "set_B_v2": {
+      "completeness": {
+        "n": 1000,
+        "mae": 2.9724279,
+        "rmse": 6.014788268167882,
+        "bias": -2.9724279,
+        "true_variance": 0.0,
+        "r2": null,
+        "r2_omitted_reason": "true value has zero variance (R1-m19)",
+        "r_pearson_sq": null,
+        "n_clusters": 803,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          2.633177184205642,
+          3.333590816484623
+        ],
+        "bias_ci": [
+          -3.333590816484623,
+          -2.6331771842056426
+        ],
+        "r2_ci": [
+          null,
+          null
+        ]
+      },
+      "contamination": {
+        "n": 1000,
+        "mae": 4.453452175417676,
+        "rmse": 6.772517630813695,
+        "bias": -0.13556016314851582,
+        "true_variance": 772.4672959754683,
+        "r2": 0.9406227353589621,
+        "r2_omitted_reason": null,
+        "r_pearson_sq": 0.94088551433855,
+        "n_clusters": 803,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          4.137859714393292,
+          4.782524564425452
+        ],
+        "bias_ci": [
+          -0.588172799756371,
+          0.30959950937732583
+        ],
+        "r2_ci": [
+          0.9281661299632111,
+          0.9511536712005132
+        ]
+      }
+    },
+    "set_C_clean": {
+      "completeness": {
+        "n": 1000,
+        "mae": 6.821597512,
+        "rmse": 10.121520177183555,
+        "bias": -2.319672172,
+        "true_variance": 263.0906373819784,
+        "r2": 0.6106088315549032,
+        "r2_omitted_reason": null,
+        "r_pearson_sq": 0.656409211962797,
+        "n_clusters": 100,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          5.807185175825,
+          7.905771567149999
+        ],
+        "bias_ci": [
+          -3.8659990320500004,
+          -0.8650266448500009
+        ],
+        "r2_ci": [
+          0.4889338985192744,
+          0.7176606625380217
+        ]
+      },
+      "contamination": {
+        "n": 1000,
+        "mae": 9.080091263,
+        "rmse": 12.317445717793639,
+        "bias": -3.553603933,
+        "true_variance": 660.7142278823452,
+        "r2": 0.7703705132897336,
+        "r2_omitted_reason": null,
+        "r_pearson_sq": 0.7915862860626774,
+        "n_clusters": 100,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          8.1512436346,
+          10.036169305724998
+        ],
+        "bias_ci": [
+          -5.062724268825,
+          -2.0605816582250007
+        ],
+        "r2_ci": [
+          0.7152056403144171,
+          0.8165947281671578
+        ]
+      }
+    },
+    "set_D_clean": {
+      "completeness": {
+        "n": 1000,
+        "mae": 5.633002878999999,
+        "rmse": 8.319820108431967,
+        "bias": -0.26235099699999975,
+        "true_variance": 234.85001367674175,
+        "r2": 0.7052612194779531,
+        "r2_omitted_reason": null,
+        "r_pearson_sq": 0.7124093978079299,
+        "n_clusters": 100,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          5.024744747000001,
+          6.35217498645
+        ],
+        "bias_ci": [
+          -1.336573571325,
+          0.7132031872499996
+        ],
+        "r2_ci": [
+          0.6222213248716836,
+          0.7707315564036419
+        ]
+      },
+      "contamination": {
+        "n": 1000,
+        "mae": 6.5229055119999995,
+        "rmse": 9.438965228925303,
+        "bias": -3.8341166280000003,
+        "true_variance": 609.7318663296475,
+        "r2": 0.8538799273700863,
+        "r2_omitted_reason": null,
+        "r_pearson_sq": 0.8786566623413716,
+        "n_clusters": 100,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          5.985985896225,
+          7.114610037649999
+        ],
+        "bias_ci": [
+          -4.690833923999999,
+          -3.013465806425
+        ],
+        "r2_ci": [
+          0.8227751957423499,
+          0.8796940831700228
+        ]
+      }
+    },
+    "set_E": {
+      "completeness": {
+        "n": 1000,
+        "mae": 5.485888147766055,
+        "rmse": 8.904758553837441,
+        "bias": 1.127683755070554,
+        "true_variance": 270.5628362589624,
+        "r2": 0.7069267679237139,
+        "r2_omitted_reason": null,
+        "r_pearson_sq": 0.71192684473533,
+        "n_clusters": 785,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          5.029433529792633,
+          5.922148055345374
+        ],
+        "bias_ci": [
+          0.573089128716941,
+          1.6986358067149816
+        ],
+        "r2_ci": [
+          0.6568098550382551,
+          0.7530013531694693
+        ]
+      },
+      "contamination": {
+        "n": 1000,
+        "mae": 5.657875120141756,
+        "rmse": 9.701061319366227,
+        "bias": -3.118246077777253,
+        "true_variance": 1084.7911044824548,
+        "r2": 0.9132454254711067,
+        "r2_omitted_reason": null,
+        "r_pearson_sq": 0.9265464514101359,
+        "n_clusters": 785,
+        "n_iterations": 2000,
+        "seed": 20260726,
+        "mae_ci": [
+          5.194517670690868,
+          6.1617347022511115
+        ],
+        "bias_ci": [
+          -3.729982213848872,
+          -2.530662597984528
+        ],
+        "r2_ci": [
+          0.8983185703770094,
+          0.9268733837862245
+        ]
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "metric": "completeness",
+      "status": "MATCH",
+      "reproduced_mae": 4.617909868475892,
+      "reproduced_mae_ci": [
+        4.332174523282706,
+        4.926847105001772
+      ],
+      "recorded_mae": 4.617909554275892,
+      "recorded_mae_ci": [
+        4.323586671180016,
+        4.920665336330619
+      ],
+      "delta_pp": 3.142000002398504e-07,
+      "reproduced_r2": 0.7852684330480169,
+      "recorded_r2": 0.7852684201029971,
+      "reproduced_bias": -0.8669099173584341,
+      "n": 5000,
+      "n_clusters": 2586
+    },
+    {
+      "metric": "contamination",
+      "status": "MATCH",
+      "reproduced_mae": 5.308570454111886,
+      "reproduced_mae_ci": [
+        5.013380793432728,
+        5.601279053749295
+      ],
+      "recorded_mae": 5.308570202842227,
+      "recorded_mae_ci": [
+        4.999347435046694,
+        5.625991177893222
+      ],
+      "delta_pp": 2.512696593015562e-07,
+      "reproduced_r2": 0.9149285686959455,
+      "recorded_r2": 0.9149285732132786,
+      "reproduced_bias": -1.9625997203851542,
+      "n": 5000,
+      "n_clusters": 2586
+    }
+  ],
+  "failures": []
+}

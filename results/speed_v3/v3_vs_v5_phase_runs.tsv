@@ -1,0 +1,28 @@
+tool	threads	repeat	input_set	cache	n_genomes	n_output_rows	wall_clock_s	peak_rss_gb	pct_cpu	user_s	sys_s	fs_inputs	return_code	model	code_root	t_start_utc	loadavg_1min_before	feature_extraction_s	normalization_s	onnx_inference_s	internal_total_s	process_overhead_s
+magicc	1	1	set_E_100	warm	100	100	5.9	0.3852	99.0	5.27	0.6	8	0			2026-07-31T00:24:58Z	0.89	4.9	0.009	0.138	5.6	0.3
+magicc	1	1	set_E_full	cold	1000	1000	49.0	0.6459	99.0	46.42	2.55	0	0			2026-07-31T07:46:32Z	0.94	46.6	0.232	1.333	48.7	0.3
+magicc	1	1	set_E_full	warm	1000	1000	48.61	0.6471	99.0	46.14	2.44	0	0			2026-07-31T00:31:24Z	0.87	46.3	0.217	1.33	48.3	0.31
+magicc	1	2	set_E_100	warm	100	100	5.95	0.3851	99.0	5.32	0.62	0	0			2026-07-31T01:10:13Z	0.8	5.0	0.009	0.137	5.7	0.25
+magicc	1	2	set_E_full	cold	1000	1000	49.07	0.6478	99.0	46.45	2.59	0	0			2026-07-31T08:03:48Z	0.98	46.7	0.226	1.331	48.8	0.27
+magicc	1	2	set_E_full	warm	1000	1000	48.83	0.6471	99.0	46.25	2.56	0	0			2026-07-31T01:00:09Z	0.88	46.4	0.225	1.34	48.5	0.33
+magicc	1	3	set_E_100	warm	100	100	5.88	0.3852	99.0	5.27	0.61	0	0			2026-07-31T01:39:11Z	0.98	5.0	0.008	0.139	5.6	0.28
+magicc	1	3	set_E_full	cold	1000	1000	50.03	0.6482	99.0	47.18	2.82	0	0			2026-07-31T08:06:55Z	0.98	47.4	0.242	1.546	49.7	0.33
+magicc	1	3	set_E_full	warm	1000	1000	49.23	0.6473	99.0	46.61	2.59	0	0			2026-07-31T01:26:05Z	0.99	46.8	0.225	1.341	48.9	0.33
+magicc	1	4	set_E_full	warm	1000	1000	49.03	0.6483	99.0	46.51	2.49	0	0			2026-07-31T08:08:51Z	0.83	46.6	0.227	1.353	48.7	0.33
+magicc	1	5	set_E_full	warm	1000	1000	49.31	0.6469	99.0	46.76	2.51	0	0			2026-07-31T08:09:40Z	0.93	46.9	0.226	1.34	49.0	0.31
+magicc	1	6	set_E_full	warm	1000	1000	49.0	0.6477	99.0	46.48	2.5	0	0			2026-07-31T08:12:26Z	0.77	46.6	0.226	1.338	48.7	0.3
+magicc	1	11	set_E_full	warm	1000	1000	49.86	0.6484	99.0	47.23	2.61	0	0	/path/to/magicc/models/magicc_v5.onnx		2026-08-26T17:02:26Z	1.19	47.5	0.131	1.36	49.6	0.26
+magicc	1	12	set_E_full	warm	1000	1000	50.62	0.6473	99.0	48.13	2.47	0	0	/path/to/magicc/models/magicc_v5.onnx		2026-08-26T17:13:11Z	1.31	48.2	0.137	1.415	50.3	0.32
+magicc	1	13	set_E_full	warm	1000	1000	49.18	0.6477	99.0	46.75	2.4	0	0	/path/to/magicc/models/magicc_v5.onnx		2026-08-26T17:35:55Z	0.89	46.8	0.136	1.395	48.9	0.28
+magicc_dir	1	11	set_E_full_dir	warm	1000	1000	49.93	0.6482	99.0	47.31	2.61	0	0	/path/to/magicc/models/magicc_v5.onnx		2026-08-26T17:04:18Z	1.31	47.6	0.131	1.368	49.7	0.23
+magicc_dir	1	12	set_E_full_dir	warm	1000	1000	50.84	0.6479	99.0	48.35	2.48	0	0	/path/to/magicc/models/magicc_v5.onnx		2026-08-26T17:25:04Z	1.39	48.4	0.136	1.452	50.5	0.34
+magicc_dir	1	13	set_E_full_dir	warm	1000	1000	49.42	0.6473	99.0	47.09	2.3	0	0	/path/to/magicc/models/magicc_v5.onnx		2026-08-26T17:36:46Z	0.96	47.1	0.132	1.351	49.1	0.32
+magicc_v3code	1	11	set_E_full_dir	warm	1000	1000	73.81	0.6617	99.0	71.0	2.77	0	0	/path/to/magicc/models/magicc_v3.onnx	/path/to/magicc/results/revision/speed_v3/v3_code	2026-08-26T17:11:55Z	1.07	70.9	0.158	1.671	73.3	0.51
+magicc_v3code	1	12	set_E_full_dir	warm	1000	1000	71.17	0.6556	99.0	68.67	2.47	0	0	/path/to/magicc/models/magicc_v3.onnx	/path/to/magicc/results/revision/speed_v3/v3_code	2026-08-26T17:34:41Z	0.63	68.6	0.134	1.454	70.8	0.37
+magicc_v3code	1	13	set_E_full_dir	warm	1000	1000	72.18	0.656	99.0	69.57	2.58	0	0	/path/to/magicc/models/magicc_v3.onnx	/path/to/magicc/results/revision/speed_v3/v3_code	2026-08-26T17:39:20Z	1.0	69.6	0.137	1.467	71.8	0.38
+magicc_v3code_nostats	1	11	set_E_full_dir	warm	1000	1000	49.8	0.6559	99.0	47.32	2.46	0	0	/path/to/magicc/models/magicc_v3.onnx	/path/to/magicc/results/revision/speed_v3/v3_code_nostats	2026-08-26T17:10:03Z	1.35	47.2	0.138	1.489	49.4	0.4
+magicc_v3code_nostats	1	12	set_E_full_dir	warm	1000	1000	50.04	0.6556	99.0	47.66	2.37	0	0	/path/to/magicc/models/magicc_v3.onnx	/path/to/magicc/results/revision/speed_v3/v3_code_nostats	2026-08-26T17:30:49Z	1.48	47.4	0.137	1.494	49.6	0.44
+magicc_v3code_nostats	1	13	set_E_full_dir	warm	1000	1000	49.59	0.6555	99.0	47.27	2.29	0	0	/path/to/magicc/models/magicc_v3.onnx	/path/to/magicc/results/revision/speed_v3/v3_code_nostats	2026-08-26T17:38:29Z	0.99	47.0	0.136	1.479	49.2	0.39
+magicc_v5code	1	11	set_E_full_dir	warm	1000	1000	50.52	0.6477	99.0	48.0	2.5	0	0	/path/to/magicc/models/magicc_v5.onnx	/path/to/magicc	2026-08-26T17:08:11Z	1.4	48.1	0.132	1.462	50.2	0.32
+magicc_v5code	1	12	set_E_full_dir	warm	1000	1000	49.4	0.6484	99.0	47.05	2.34	0	0	/path/to/magicc/models/magicc_v5.onnx	/path/to/magicc	2026-08-26T17:27:57Z	1.48	47.1	0.135	1.377	49.1	0.3
+magicc_v5code	1	13	set_E_full_dir	warm	1000	1000	48.91	0.6468	99.0	46.5	2.38	0	0	/path/to/magicc/models/magicc_v5.onnx	/path/to/magicc	2026-08-26T17:37:38Z	0.98	46.6	0.134	1.354	48.6	0.31

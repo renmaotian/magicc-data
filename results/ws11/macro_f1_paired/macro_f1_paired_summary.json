@@ -1,0 +1,448 @@
+{
+  "workstream": "WS11.P",
+  "generated_utc": "2026-08-26T17:13:32.772734+00:00",
+  "sets": [
+    "set_A_v2",
+    "set_B_v2",
+    "set_C_clean",
+    "set_D_clean",
+    "set_E"
+  ],
+  "informative_sets": [
+    "set_C_clean",
+    "set_D_clean",
+    "set_E"
+  ],
+  "bootstrap_iterations": 2000,
+  "cluster_definition": "dominant reference genome",
+  "seeding": "fw.stable_hash (CRC-32); PYTHONHASHSEED pinned; same seed as scripts/102_mimag_and_thresholds.py per set",
+  "macro_f1_cells": [
+    {
+      "set": "set_A_v2",
+      "comparator": "checkm2",
+      "informative": false,
+      "macro_f1_magicc": 0.6328,
+      "macro_f1_comparator": 0.6328,
+      "paired_difference": -0.0,
+      "ci": [
+        -0.0124,
+        0.0138
+      ],
+      "ci_width": 0.0262,
+      "ci_excludes_zero": false,
+      "p_cluster_bootstrap": 0.9545227386306847,
+      "q_bh": 0.9545227386306847,
+      "p_jackknife_ttest": 0.9983626489772864,
+      "p_jackknife_wilcoxon": 0.7623031599185865,
+      "n": 1000,
+      "n_clusters": 798
+    },
+    {
+      "set": "set_A_v2",
+      "comparator": "cocopye",
+      "informative": false,
+      "macro_f1_magicc": 0.6328,
+      "macro_f1_comparator": 0.6254,
+      "paired_difference": 0.0074,
+      "ci": [
+        -0.0059,
+        0.0219
+      ],
+      "ci_width": 0.0278,
+      "ci_excludes_zero": false,
+      "p_cluster_bootstrap": 0.29485257371314344,
+      "q_bh": 0.44227886056971516,
+      "p_jackknife_ttest": 0.2957232800723005,
+      "p_jackknife_wilcoxon": 0.6710858511340021,
+      "n": 1000,
+      "n_clusters": 798
+    },
+    {
+      "set": "set_A_v2",
+      "comparator": "deepcheck",
+      "informative": false,
+      "macro_f1_magicc": 0.6328,
+      "macro_f1_comparator": 0.63,
+      "paired_difference": 0.0028,
+      "ci": [
+        -0.0096,
+        0.0157
+      ],
+      "ci_width": 0.0254,
+      "ci_excludes_zero": false,
+      "p_cluster_bootstrap": 0.7106446776611695,
+      "q_bh": 0.7614050117798243,
+      "p_jackknife_ttest": 0.670853980536665,
+      "p_jackknife_wilcoxon": 0.3206077724283589,
+      "n": 1000,
+      "n_clusters": 798
+    },
+    {
+      "set": "set_B_v2",
+      "comparator": "checkm2",
+      "informative": false,
+      "macro_f1_magicc": 0.7783,
+      "macro_f1_comparator": 0.5984,
+      "paired_difference": 0.1799,
+      "ci": [
+        0.0575,
+        0.2914
+      ],
+      "ci_width": 0.2339,
+      "ci_excludes_zero": true,
+      "p_cluster_bootstrap": 0.0009995002498750624,
+      "q_bh": 0.0016658337497917708,
+      "p_jackknife_ttest": 0.008170056609907092,
+      "p_jackknife_wilcoxon": 1.1695799020655796e-123,
+      "n": 1000,
+      "n_clusters": 803
+    },
+    {
+      "set": "set_B_v2",
+      "comparator": "cocopye",
+      "informative": false,
+      "macro_f1_magicc": 0.7783,
+      "macro_f1_comparator": 0.7349,
+      "paired_difference": 0.0434,
+      "ci": [
+        -0.0173,
+        0.1316
+      ],
+      "ci_width": 0.149,
+      "ci_excludes_zero": false,
+      "p_cluster_bootstrap": 0.3818090954522739,
+      "q_bh": 0.4897551224387806,
+      "p_jackknife_ttest": 0.24786537192932212,
+      "p_jackknife_wilcoxon": 9.960178744874809e-127,
+      "n": 1000,
+      "n_clusters": 803
+    },
+    {
+      "set": "set_B_v2",
+      "comparator": "deepcheck",
+      "informative": false,
+      "macro_f1_magicc": 0.7783,
+      "macro_f1_comparator": 0.499,
+      "paired_difference": 0.2793,
+      "ci": [
+        0.1481,
+        0.3995
+      ],
+      "ci_width": 0.2514,
+      "ci_excludes_zero": true,
+      "p_cluster_bootstrap": 0.0009995002498750624,
+      "q_bh": 0.0016658337497917708,
+      "p_jackknife_ttest": 0.00015555390012404207,
+      "p_jackknife_wilcoxon": 1.7724268138072218e-120,
+      "n": 1000,
+      "n_clusters": 803
+    },
+    {
+      "set": "set_C_clean",
+      "comparator": "checkm2",
+      "informative": true,
+      "macro_f1_magicc": 0.6922,
+      "macro_f1_comparator": 0.2635,
+      "paired_difference": 0.4287,
+      "ci": [
+        0.3527,
+        0.5068
+      ],
+      "ci_width": 0.1541,
+      "ci_excludes_zero": true,
+      "p_cluster_bootstrap": 0.0009995002498750624,
+      "q_bh": 0.0016658337497917708,
+      "p_jackknife_ttest": 5.027957996154612e-19,
+      "p_jackknife_wilcoxon": 1.596532962148787e-13,
+      "n": 1000,
+      "n_clusters": 100
+    },
+    {
+      "set": "set_C_clean",
+      "comparator": "cocopye",
+      "informative": true,
+      "macro_f1_magicc": 0.6922,
+      "macro_f1_comparator": 0.4154,
+      "paired_difference": 0.2768,
+      "ci": [
+        0.2083,
+        0.3399
+      ],
+      "ci_width": 0.1316,
+      "ci_excludes_zero": true,
+      "p_cluster_bootstrap": 0.0009995002498750624,
+      "q_bh": 0.0016658337497917708,
+      "p_jackknife_ttest": 1.3899201544856416e-12,
+      "p_jackknife_wilcoxon": 4.375010856810027e-11,
+      "n": 1000,
+      "n_clusters": 100
+    },
+    {
+      "set": "set_C_clean",
+      "comparator": "deepcheck",
+      "informative": true,
+      "macro_f1_magicc": 0.6922,
+      "macro_f1_comparator": 0.2431,
+      "paired_difference": 0.4491,
+      "ci": [
+        0.3703,
+        0.5184
+      ],
+      "ci_width": 0.148,
+      "ci_excludes_zero": true,
+      "p_cluster_bootstrap": 0.0009995002498750624,
+      "q_bh": 0.0016658337497917708,
+      "p_jackknife_ttest": 3.8182587568523777e-20,
+      "p_jackknife_wilcoxon": 5.161542241793306e-14,
+      "n": 1000,
+      "n_clusters": 100
+    },
+    {
+      "set": "set_D_clean",
+      "comparator": "checkm2",
+      "informative": true,
+      "macro_f1_magicc": 0.7881,
+      "macro_f1_comparator": 0.3824,
+      "paired_difference": 0.4057,
+      "ci": [
+        0.3165,
+        0.4855
+      ],
+      "ci_width": 0.169,
+      "ci_excludes_zero": true,
+      "p_cluster_bootstrap": 0.0009995002498750624,
+      "q_bh": 0.0016658337497917708,
+      "p_jackknife_ttest": 1.9622189195563876e-15,
+      "p_jackknife_wilcoxon": 4.244758911436865e-11,
+      "n": 1000,
+      "n_clusters": 100
+    },
+    {
+      "set": "set_D_clean",
+      "comparator": "cocopye",
+      "informative": true,
+      "macro_f1_magicc": 0.7881,
+      "macro_f1_comparator": 0.7562,
+      "paired_difference": 0.0319,
+      "ci": [
+        -0.0759,
+        0.1308
+      ],
+      "ci_width": 0.2067,
+      "ci_excludes_zero": false,
+      "p_cluster_bootstrap": 0.5567216391804098,
+      "q_bh": 0.6423711221312421,
+      "p_jackknife_ttest": 0.5396882748736539,
+      "p_jackknife_wilcoxon": 0.004715596024275636,
+      "n": 1000,
+      "n_clusters": 100
+    },
+    {
+      "set": "set_D_clean",
+      "comparator": "deepcheck",
+      "informative": true,
+      "macro_f1_magicc": 0.7881,
+      "macro_f1_comparator": 0.2207,
+      "paired_difference": 0.5674,
+      "ci": [
+        0.4736,
+        0.6466
+      ],
+      "ci_width": 0.173,
+      "ci_excludes_zero": true,
+      "p_cluster_bootstrap": 0.0009995002498750624,
+      "q_bh": 0.0016658337497917708,
+      "p_jackknife_ttest": 2.531660168247521e-23,
+      "p_jackknife_wilcoxon": 5.4678775458610295e-15,
+      "n": 1000,
+      "n_clusters": 100
+    },
+    {
+      "set": "set_E",
+      "comparator": "checkm2",
+      "informative": true,
+      "macro_f1_magicc": 0.9032,
+      "macro_f1_comparator": 0.814,
+      "paired_difference": 0.0892,
+      "ci": [
+        0.0532,
+        0.1254
+      ],
+      "ci_width": 0.0722,
+      "ci_excludes_zero": true,
+      "p_cluster_bootstrap": 0.0009995002498750624,
+      "q_bh": 0.0016658337497917708,
+      "p_jackknife_ttest": 3.2523873908980055e-06,
+      "p_jackknife_wilcoxon": 2.5129093184167153e-29,
+      "n": 1000,
+      "n_clusters": 785
+    },
+    {
+      "set": "set_E",
+      "comparator": "cocopye",
+      "informative": true,
+      "macro_f1_magicc": 0.9032,
+      "macro_f1_comparator": 0.8878,
+      "paired_difference": 0.0154,
+      "ci": [
+        -0.0204,
+        0.0554
+      ],
+      "ci_width": 0.0758,
+      "ci_excludes_zero": false,
+      "p_cluster_bootstrap": 0.3918040979510245,
+      "q_bh": 0.4897551224387806,
+      "p_jackknife_ttest": 0.42237308826920694,
+      "p_jackknife_wilcoxon": 1.351158720560635e-12,
+      "n": 1000,
+      "n_clusters": 785
+    },
+    {
+      "set": "set_E",
+      "comparator": "deepcheck",
+      "informative": true,
+      "macro_f1_magicc": 0.9032,
+      "macro_f1_comparator": 0.6948,
+      "paired_difference": 0.2084,
+      "ci": [
+        0.1704,
+        0.2472
+      ],
+      "ci_width": 0.0768,
+      "ci_excludes_zero": true,
+      "p_cluster_bootstrap": 0.0009995002498750624,
+      "q_bh": 0.0016658337497917708,
+      "p_jackknife_ttest": 1.2282126756577998e-24,
+      "p_jackknife_wilcoxon": 1.66207533107479e-54,
+      "n": 1000,
+      "n_clusters": 785
+    }
+  ],
+  "cells_whose_interval_includes_zero": [
+    "set_A_v2 vs checkm2",
+    "set_A_v2 vs cocopye",
+    "set_A_v2 vs deepcheck",
+    "set_B_v2 vs cocopye",
+    "set_D_clean vs cocopye",
+    "set_E vs cocopye"
+  ],
+  "n_cells": 15,
+  "n_cells_interval_includes_zero": 6,
+  "macro_f1_point_estimate_max_abs_diff_vs_ws5": 8.326672684688674e-17,
+  "eda": {
+    "generated_utc": "2026-08-26T17:13:32.772734+00:00",
+    "pythonhashseed": "0",
+    "n_boot": 2000,
+    "issues": [],
+    "sets": {
+      "set_A_v2": {
+        "n_rows": 1000,
+        "n_clusters": 798,
+        "class_balance_true": {
+          "medium": 724,
+          "high": 276
+        },
+        "available_tools": [
+          "magicc_v5",
+          "magicc_v4",
+          "magicc_v3",
+          "checkm2",
+          "cocopye",
+          "deepcheck"
+        ]
+      },
+      "set_B_v2": {
+        "n_rows": 1000,
+        "n_clusters": 803,
+        "class_balance_true": {
+          "low": 798,
+          "high": 200,
+          "medium": 2
+        },
+        "available_tools": [
+          "magicc_v5",
+          "magicc_v4",
+          "magicc_v3",
+          "checkm2",
+          "cocopye",
+          "deepcheck"
+        ]
+      },
+      "set_C_clean": {
+        "n_rows": 1000,
+        "n_clusters": 100,
+        "class_balance_true": {
+          "low": 900,
+          "medium": 70,
+          "high": 30
+        },
+        "available_tools": [
+          "magicc_v5",
+          "checkm2",
+          "cocopye",
+          "deepcheck"
+        ]
+      },
+      "set_D_clean": {
+        "n_rows": 1000,
+        "n_clusters": 100,
+        "class_balance_true": {
+          "low": 887,
+          "medium": 100,
+          "high": 13
+        },
+        "available_tools": [
+          "magicc_v5",
+          "checkm2",
+          "cocopye",
+          "deepcheck"
+        ]
+      },
+      "set_E": {
+        "n_rows": 1000,
+        "n_clusters": 785,
+        "class_balance_true": {
+          "low": 719,
+          "medium": 215,
+          "high": 66
+        },
+        "available_tools": [
+          "magicc_v5",
+          "magicc_v4",
+          "magicc_v3",
+          "checkm2",
+          "cocopye",
+          "deepcheck"
+        ]
+      }
+    },
+    "max_abs_diff_vs_definitive_macro_f1": 8.326672684688674e-17
+  },
+  "determinism_check": [
+    {
+      "file": "macro_f1_paired_differences.tsv",
+      "sha256_hashseed0": "86235d911ac7b6021005a0294ccdd8601ad2d129931238cdc1442e85a5a27d13",
+      "sha256_hashseed99999": "86235d911ac7b6021005a0294ccdd8601ad2d129931238cdc1442e85a5a27d13",
+      "identical": true
+    },
+    {
+      "file": "macro_f1_point_estimate_verification.tsv",
+      "sha256_hashseed0": "15b5afaae767da7b3db96e3731935ab8989b2dbb9b7c61d4b345703501537d18",
+      "sha256_hashseed99999": "15b5afaae767da7b3db96e3731935ab8989b2dbb9b7c61d4b345703501537d18",
+      "identical": true
+    },
+    {
+      "file": "per_class_f1_paired.tsv",
+      "sha256_hashseed0": "0d1de6f1cda865121ac6cba9548131ed5b55c3e0d5995ee6e788c41d5fbf53b9",
+      "sha256_hashseed99999": "0d1de6f1cda865121ac6cba9548131ed5b55c3e0d5995ee6e788c41d5fbf53b9",
+      "identical": true
+    },
+    {
+      "file": "power_statement.tsv",
+      "sha256_hashseed0": "3a03378dc3acf94d15d032cd5c84a42a038136b109eea7370ce00f28437de997",
+      "sha256_hashseed99999": "3a03378dc3acf94d15d032cd5c84a42a038136b109eea7370ce00f28437de997",
+      "identical": true
+    }
+  ],
+  "determinism_all_identical": true
+}

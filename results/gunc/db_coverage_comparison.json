@@ -1,0 +1,67 @@
+{
+  "gunc_data_dir": "/path/to/conda/envs/gunc_env/lib/python3.14/site-packages/gunc/data",
+  "cpr_synonyms": [
+    "Patescibacteria",
+    "Parcubacteria",
+    "Microgenomates",
+    "Gracilibacteria",
+    "Saccharibacteria",
+    "Absconditabacteria",
+    "Peregrinibacteria",
+    "Dojkabacteria",
+    "Katanobacteria",
+    "Berkelbacteria",
+    "Candidate division"
+  ],
+  "archaea_synonyms": [
+    "Archaea"
+  ],
+  "note": "GB_ = GenBank-derived GTDB entries (include MAGs from uncultivated lineages); RS_ = RefSeq isolate genomes. proGenomes 2.1 is isolate/specI-cluster based and therefore thinly covers uncultivated lineages such as CPR.",
+  "caveat": "Lineage counts use substring matching over two different taxonomies (NCBI names in proGenomes, GTDB names in gtdb_*), so per-lineage totals are not strictly commensurable. The order-of-magnitude differences are robust, and the GB_/RS_ split independently shows that only the GTDB databases contain MAG-derived references.",
+  "rows": [
+    {
+      "database": "progenomes_2.1",
+      "taxonomy_file": "genome2taxonomy_pg2.1ref.tsv",
+      "n_reference_genomes": 11223,
+      "n_distinct_phyla": 149,
+      "n_cpr_patescibacteria": 104,
+      "n_archaea": 457,
+      "n_genbank_prefixed": 0,
+      "n_refseq_prefixed": 0,
+      "available": "True"
+    },
+    {
+      "database": "progenomes_3",
+      "taxonomy_file": "genome2taxonomy_pg3ref.tsv",
+      "n_reference_genomes": 41171,
+      "n_distinct_phyla": 148,
+      "n_cpr_patescibacteria": 138,
+      "n_archaea": 1458,
+      "n_genbank_prefixed": 0,
+      "n_refseq_prefixed": 0,
+      "available": "True"
+    },
+    {
+      "database": "gtdb_95",
+      "taxonomy_file": "genome2taxonomy_gtdb95ref.tsv",
+      "n_reference_genomes": 31910,
+      "n_distinct_phyla": 149,
+      "n_cpr_patescibacteria": 1131,
+      "n_archaea": 1672,
+      "n_genbank_prefixed": 14566,
+      "n_refseq_prefixed": 17344,
+      "available": "True"
+    },
+    {
+      "database": "gtdb_214",
+      "taxonomy_file": "genome2taxonomy_gtdb214ref.tsv",
+      "n_reference_genomes": 65703,
+      "n_distinct_phyla": 189,
+      "n_cpr_patescibacteria": 2485,
+      "n_archaea": 3412,
+      "n_genbank_prefixed": 42580,
+      "n_refseq_prefixed": 23123,
+      "available": "True"
+    }
+  ]
+}

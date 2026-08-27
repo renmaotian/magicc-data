@@ -1,0 +1,8 @@
+component	total_s_over_100_genomes	ms_per_genome	us_per_Mbp	projected_s_over_set_E_full_4806980767bp
+read_fasta_contigs (identical code in V3 and V5)	1.9844	19.844	4150.6	19.95
+k-mer counting (identical code in V3 and V5)	2.6878	26.878	5621.7	27.02
+compute_assembly_stats V3 (26 features, needs contigs)	2.2048	22.048	4611.5	22.17
+compute_assembly_stats V5 (7 features, kmer_counts only)	0.0126	0.126	26.4	0.13
+  of which: per-contig .encode('ascii') + Numba GC scan	2.1527	21.527	4502.5	21.64
+V3 MINUS V5 (the one-line difference)	2.1922	21.922	4585.1	22.04
+# genomes=100  measured_bp=478109066  set_E_full_bp=4806980767  scale_factor=10.0542  single-threaded, warm page cache

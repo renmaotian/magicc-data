@@ -1,0 +1,81 @@
+{
+  "script": "scripts/131_build_reduced_genome_cohorts.py",
+  "seed": 13100,
+  "comparator": "GTDB published checkm2_completeness / checkm2_contamination",
+  "why_not_uhgg": "UHGG v2.0.2 ships CheckM v1 values, not CheckM2",
+  "n_total": 1368,
+  "by_cohort": {
+    "reviewer_genera": 298,
+    "size_stratified": 750,
+    "control_genera": 320
+  },
+  "by_stratum": {
+    "reviewer_genera:UMGS1491": 61,
+    "reviewer_genera:CAG-557": 60,
+    "reviewer_genera:Caccenecus": 101,
+    "reviewer_genera:HGM10766": 15,
+    "reviewer_genera:Faecimonas": 61,
+    "size_stratified:<1Mb": 150,
+    "size_stratified:1-2Mb": 150,
+    "size_stratified:2-3Mb": 150,
+    "size_stratified:3-5Mb": 150,
+    "size_stratified:>5Mb": 150,
+    "control_genera:Bacteroides": 40,
+    "control_genera:Prevotella": 40,
+    "control_genera:Faecalibacterium": 40,
+    "control_genera:Blautia": 40,
+    "control_genera:Escherichia": 40,
+    "control_genera:Alistipes": 40,
+    "control_genera:Ruminococcus": 40,
+    "control_genera:Bifidobacterium": 40
+  },
+  "by_split": {
+    "none": 1291,
+    "test": 7,
+    "train": 64,
+    "val": 6
+  },
+  "by_split_and_cohort": {
+    "control_genera": {
+      "none": 291,
+      "train": 25,
+      "val": 4
+    },
+    "size_stratified": {
+      "none": 704,
+      "test": 6,
+      "train": 38,
+      "val": 2
+    },
+    "reviewer_genera": {
+      "none": 296,
+      "test": 1,
+      "train": 1
+    }
+  },
+  "reviewer_genera": [
+    "CAG-557",
+    "UMGS1491",
+    "Caccenecus",
+    "HGM10766",
+    "Faecimonas"
+  ],
+  "control_genera": [
+    "Bacteroides",
+    "Prevotella",
+    "Faecalibacterium",
+    "Blautia",
+    "Escherichia",
+    "Alistipes",
+    "Ruminococcus",
+    "Bifidobacterium"
+  ],
+  "size_bins": [
+    "<1Mb",
+    "1-2Mb",
+    "2-3Mb",
+    "3-5Mb",
+    ">5Mb"
+  ],
+  "estimated_download_gb": 1.02
+}

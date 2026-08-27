@@ -1,0 +1,252 @@
+{
+  "workstream": "WS3.8 CAMI II external benchmark (R1-M3)",
+  "generated_utc": "2026-08-02T21:19:33.018389+00:00",
+  "denominator": "completeness = retained dominant bp / FULL reference length of the dominant source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention, magicc/contamination.py). Truth from CAMI II's own gsa_mapping.tsv contig->source-genome assignment.",
+  "r2_convention": "coefficient of determination (1 - SS_res/SS_tot); omitted where the true value has (near-)zero variance (R1-m19)",
+  "mimag_note": "MIMAG-inspired thresholds throughout",
+  "bootstrap": {
+    "n_iter": 2000,
+    "clustered_by": "dominant source genome",
+    "seeding": "fw.stable_hash CRC-32 + PYTHONHASHSEED=0"
+  },
+  "tools": [
+    "CheckM2",
+    "CoCoPyE",
+    "DeepCheck",
+    "MAGICC_V5"
+  ],
+  "n_tool_bin_rows": 28503,
+  "censoring": [
+    {
+      "dataset": "marine",
+      "binset": "gold",
+      "n_bins_scored": 4497,
+      "n_below_50pct_floor": 1189,
+      "pct_below_floor": 26.44,
+      "n_out_of_domain": 0,
+      "n_dominant_leaked": 1548.0,
+      "n_leakage_free": 2949.0,
+      "denominator": "completeness = retained dominant bp / FULL reference length of the dominant source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention, magicc/contamination.py). Truth from CAMI II's own gsa_mapping.tsv contig->source-genome assignment."
+    },
+    {
+      "dataset": "marine",
+      "binset": "mixed",
+      "n_bins_scored": 2201,
+      "n_below_50pct_floor": 0,
+      "pct_below_floor": 0.0,
+      "n_out_of_domain": 0,
+      "n_dominant_leaked": 752.0,
+      "n_leakage_free": 1070.0,
+      "denominator": "completeness = retained dominant bp / FULL reference length of the dominant source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention, magicc/contamination.py). Truth from CAMI II's own gsa_mapping.tsv contig->source-genome assignment."
+    },
+    {
+      "dataset": "strain_madness",
+      "binset": "gold",
+      "n_bins_scored": 1564,
+      "n_below_50pct_floor": 457,
+      "pct_below_floor": 29.22,
+      "n_out_of_domain": 0,
+      "n_dominant_leaked": 0.0,
+      "n_leakage_free": 1564.0,
+      "denominator": "completeness = retained dominant bp / FULL reference length of the dominant source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention, magicc/contamination.py). Truth from CAMI II's own gsa_mapping.tsv contig->source-genome assignment."
+    },
+    {
+      "dataset": "strain_madness",
+      "binset": "mixed",
+      "n_bins_scored": 2250,
+      "n_below_50pct_floor": 0,
+      "pct_below_floor": 0.0,
+      "n_out_of_domain": 0,
+      "n_dominant_leaked": 0.0,
+      "n_leakage_free": 2250.0,
+      "denominator": "completeness = retained dominant bp / FULL reference length of the dominant source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention, magicc/contamination.py). Truth from CAMI II's own gsa_mapping.tsv contig->source-genome assignment."
+    },
+    {
+      "dataset": "marine",
+      "binset": "gold_ALL_TRUTH_ROWS",
+      "n_bins_scored": 6359,
+      "n_below_50pct_floor": 2139,
+      "pct_below_floor": 33.64,
+      "n_out_of_domain": 0,
+      "n_dominant_leaked": NaN,
+      "n_leakage_free": NaN,
+      "denominator": "completeness = retained dominant bp / FULL reference length of the dominant source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention, magicc/contamination.py). Truth from CAMI II's own gsa_mapping.tsv contig->source-genome assignment."
+    },
+    {
+      "dataset": "strain_madness",
+      "binset": "gold_ALL_TRUTH_ROWS",
+      "n_bins_scored": 4064,
+      "n_below_50pct_floor": 2957,
+      "pct_below_floor": 72.76,
+      "n_out_of_domain": 0,
+      "n_dominant_leaked": NaN,
+      "n_leakage_free": NaN,
+      "denominator": "completeness = retained dominant bp / FULL reference length of the dominant source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention, magicc/contamination.py). Truth from CAMI II's own gsa_mapping.tsv contig->source-genome assignment."
+    }
+  ],
+  "setF_reference": {
+    "contamination_bias_pp": {
+      "species": -7.76,
+      "genus": -7.73,
+      "family": -5.98,
+      "order": -3.6,
+      "class": -1.89,
+      "phylum": -0.9
+    },
+    "species_detection_slopes_per_type": {
+      "replaced": -0.014,
+      "single": 0.135,
+      "redundant": 0.178
+    },
+    "phylum_slope_range": [
+      0.94,
+      1.08
+    ]
+  },
+  "setF_head_to_head": [
+    {
+      "distance_rank": "species",
+      "dataset": "CAMI_II_marine",
+      "cami2_cont_bias_pp": -13.165,
+      "cami2_bias_ci": "[-14.74, -11.65]",
+      "cami2_detection_slope": 0.245,
+      "cami2_slope_ci": "[-0.035, 0.513]",
+      "cami2_n": 195,
+      "cami2_n_clusters": 94,
+      "ws2_setF_cont_bias_pp": -7.76,
+      "delta_cami2_minus_setF": -5.405
+    },
+    {
+      "distance_rank": "genus",
+      "dataset": "CAMI_II_marine",
+      "cami2_cont_bias_pp": -8.349,
+      "cami2_bias_ci": "[-9.57, -7.14]",
+      "cami2_detection_slope": 0.729,
+      "cami2_slope_ci": "[0.092, 0.908]",
+      "cami2_n": 146,
+      "cami2_n_clusters": 75,
+      "ws2_setF_cont_bias_pp": -7.73,
+      "delta_cami2_minus_setF": -0.619
+    },
+    {
+      "distance_rank": "family",
+      "dataset": "CAMI_II_marine",
+      "cami2_cont_bias_pp": -5.78,
+      "cami2_bias_ci": "[-7.12, -4.46]",
+      "cami2_detection_slope": 0.647,
+      "cami2_slope_ci": "[0.369, 0.772]",
+      "cami2_n": 168,
+      "cami2_n_clusters": 85,
+      "ws2_setF_cont_bias_pp": -5.98,
+      "delta_cami2_minus_setF": 0.2
+    },
+    {
+      "distance_rank": "order",
+      "dataset": "CAMI_II_marine",
+      "cami2_cont_bias_pp": -2.713,
+      "cami2_bias_ci": "[-4.35, -1.10]",
+      "cami2_detection_slope": 0.918,
+      "cami2_slope_ci": "[0.751, 1.169]",
+      "cami2_n": 146,
+      "cami2_n_clusters": 69,
+      "ws2_setF_cont_bias_pp": -3.6,
+      "delta_cami2_minus_setF": 0.887
+    },
+    {
+      "distance_rank": "class",
+      "dataset": "CAMI_II_marine",
+      "cami2_cont_bias_pp": -2.506,
+      "cami2_bias_ci": "[-3.89, -0.87]",
+      "cami2_detection_slope": 0.882,
+      "cami2_slope_ci": "[0.703, 1.017]",
+      "cami2_n": 161,
+      "cami2_n_clusters": 90,
+      "ws2_setF_cont_bias_pp": -1.89,
+      "delta_cami2_minus_setF": -0.616
+    },
+    {
+      "distance_rank": "phylum",
+      "dataset": "CAMI_II_marine",
+      "cami2_cont_bias_pp": 0.019,
+      "cami2_bias_ci": "[-1.09, 1.26]",
+      "cami2_detection_slope": 1.073,
+      "cami2_slope_ci": "[0.968, 1.201]",
+      "cami2_n": 170,
+      "cami2_n_clusters": 96,
+      "ws2_setF_cont_bias_pp": -0.9,
+      "delta_cami2_minus_setF": 0.919
+    },
+    {
+      "distance_rank": "species",
+      "dataset": "CAMI_II_strain_madness",
+      "cami2_cont_bias_pp": -8.098,
+      "cami2_bias_ci": "[-8.76, -7.47]",
+      "cami2_detection_slope": 0.369,
+      "cami2_slope_ci": "[0.264, 0.475]",
+      "cami2_n": 375,
+      "cami2_n_clusters": 205,
+      "ws2_setF_cont_bias_pp": -7.76,
+      "delta_cami2_minus_setF": -0.338
+    },
+    {
+      "distance_rank": "genus",
+      "dataset": "CAMI_II_strain_madness",
+      "cami2_cont_bias_pp": -7.998,
+      "cami2_bias_ci": "[-8.65, -7.33]",
+      "cami2_detection_slope": 0.435,
+      "cami2_slope_ci": "[0.321, 0.547]",
+      "cami2_n": 375,
+      "cami2_n_clusters": 163,
+      "ws2_setF_cont_bias_pp": -7.73,
+      "delta_cami2_minus_setF": -0.268
+    },
+    {
+      "distance_rank": "family",
+      "dataset": "CAMI_II_strain_madness",
+      "cami2_cont_bias_pp": -2.898,
+      "cami2_bias_ci": "[-3.51, -2.33]",
+      "cami2_detection_slope": 0.939,
+      "cami2_slope_ci": "[0.849, 1.023]",
+      "cami2_n": 375,
+      "cami2_n_clusters": 178,
+      "ws2_setF_cont_bias_pp": -5.98,
+      "delta_cami2_minus_setF": 3.082
+    },
+    {
+      "distance_rank": "order",
+      "dataset": "CAMI_II_strain_madness",
+      "cami2_cont_bias_pp": -1.669,
+      "cami2_bias_ci": "[-1.99, -1.33]",
+      "cami2_detection_slope": 1.019,
+      "cami2_slope_ci": "[0.971, 1.062]",
+      "cami2_n": 375,
+      "cami2_n_clusters": 155,
+      "ws2_setF_cont_bias_pp": -3.6,
+      "delta_cami2_minus_setF": 1.931
+    },
+    {
+      "distance_rank": "class",
+      "dataset": "CAMI_II_strain_madness",
+      "cami2_cont_bias_pp": -0.839,
+      "cami2_bias_ci": "[-1.10, -0.57]",
+      "cami2_detection_slope": 1.056,
+      "cami2_slope_ci": "[1.028, 1.085]",
+      "cami2_n": 375,
+      "cami2_n_clusters": 153,
+      "ws2_setF_cont_bias_pp": -1.89,
+      "delta_cami2_minus_setF": 1.051
+    },
+    {
+      "distance_rank": "phylum",
+      "dataset": "CAMI_II_strain_madness",
+      "cami2_cont_bias_pp": -0.422,
+      "cami2_bias_ci": "[-0.73, -0.05]",
+      "cami2_detection_slope": 1.04,
+      "cami2_slope_ci": "[1.007, 1.081]",
+      "cami2_n": 375,
+      "cami2_n_clusters": 162,
+      "ws2_setF_cont_bias_pp": -0.9,
+      "delta_cami2_minus_setF": 0.478
+    }
+  ]
+}

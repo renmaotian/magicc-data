@@ -1,0 +1,86 @@
+{
+ "measured_on": "2026-07-29T19:38:40Z",
+ "host": "Alborz",
+ "filesystem": "/dev/sdb ext4 mounted at /path/to/data (3.6 TB); conda envs and CoCoPyE data on the root filesystem",
+ "tools": {
+  "MAGICC v0.3.0 (V5)": {
+   "reference_data_bytes": 172178963,
+   "reference_data_detail": {
+    "magicc_v5.onnx": 169658949,
+    "magicc/data (9-mer list + normalization params)": 2520014
+   },
+   "reference_data_note": "No sequence database of any kind. The 'database' is the ONNX model plus the selected 9-mer list; it ships with the package or auto-downloads once to ~/.magicc/.",
+   "env_path": "/path/to/conda/envs/magicc2",
+   "env_note": "The magicc2 conda env on this host is a shared analysis environment (it also carries PyTorch+CUDA for training and CoCoPyE). The size a user actually installs is the pinned runtime environment, measured separately below as 'minimal_runtime_env'.",
+   "setup": {
+    "database_download": "none",
+    "model_download_bytes": 169658949
+   },
+   "env_bytes_SUPERSEDED": 8182289570,
+   "env_packages_SUPERSEDED": 65,
+   "env_size_note": "SUPERSEDED 2026-08-01. This was the size of the conda environment this tool happened to be installed in on this host; for MAGICC, CoCoPyE and DeepCheck that was one shared analysis environment, so the same number was charged to three tools. Use env_footprint.json / tco_table.tsv instead."
+  },
+  "CheckM2 1.0.1": {
+   "reference_data_bytes": 3082500605,
+   "reference_data_detail": {
+    "uniref100.KO.1.dmnd": 3082500605
+   },
+   "reference_data_note": "uniref100.KO.1.dmnd, a DIAMOND-formatted UniRef100 subset. Downloaded once via `checkm2 database --download`.",
+   "env_path": "/path/to/conda/envs/checkm2_py39",
+   "env_bytes_SUPERSEDED": 2769191551,
+   "env_packages_SUPERSEDED": 29,
+   "env_size_note": "SUPERSEDED 2026-08-01. This was the size of the conda environment this tool happened to be installed in on this host; for MAGICC, CoCoPyE and DeepCheck that was one shared analysis environment, so the same number was charged to three tools. Use env_footprint.json / tco_table.tsv instead."
+  },
+  "CoCoPyE 0.5.0": {
+   "reference_data_bytes": 17044746129,
+   "reference_data_detail": {
+    "cocopye_db": 38048860,
+    "model": 1449347,
+    "pfam_db": 17003723624,
+    "uproc": 1524298
+   },
+   "reference_data_note": "UProC Pfam databases (v24 + v28), UProC model, and the CoCoPyE reference database, downloaded by `cocopye toolbox download-dependencies`.",
+   "env_path": "/path/to/conda/envs/magicc2",
+   "env_note": "Installed into the same conda env as MAGICC on this host, so the env size is not separable; the reference data is.",
+   "env_bytes_SUPERSEDED": 8182289570,
+   "env_packages_SUPERSEDED": 65,
+   "env_size_note": "SUPERSEDED 2026-08-01. This was the size of the conda environment this tool happened to be installed in on this host; for MAGICC, CoCoPyE and DeepCheck that was one shared analysis environment, so the same number was charged to three tools. Use env_footprint.json / tco_table.tsv instead."
+  },
+  "DeepCheck": {
+   "reference_data_bytes": 89605258,
+   "reference_data_detail": {
+    "models/best_model.pt": 46285525,
+    "scaler_params.npz": 851446,
+    "feature_names.pkl": 208989
+   },
+   "reference_data_note": "DeepCheck ships only a model; it has no sequence database. It cannot read FASTA at all: its input is CheckM2's pickled feature vectors, so in practice its true installed footprint is its own 86 MB PLUS the whole CheckM2 install and the 2.9 GB CheckM2 database.",
+   "env_path": "/path/to/conda/envs/magicc2",
+   "requires": "CheckM2 (environment + database + a full CheckM2 run per input set)",
+   "env_bytes_SUPERSEDED": 8182289570,
+   "env_packages_SUPERSEDED": null,
+   "env_size_note": "SUPERSEDED 2026-08-01. This was the size of the conda environment this tool happened to be installed in on this host; for MAGICC, CoCoPyE and DeepCheck that was one shared analysis environment, so the same number was charged to three tools. Use env_footprint.json / tco_table.tsv instead."
+  }
+ },
+ "magicc_minimal_runtime": {
+  "docker_image_tag": "magicc:0.3.0",
+  "docker_image_size_bytes": 1059062945,
+  "apptainer_sif_bytes": 384008192,
+  "pip_lock_file": "/path/to/magicc/docker/requirements-lock.txt",
+  "n_pinned_pip_packages": 13,
+  "dockerfile": "/path/to/magicc/docker/Dockerfile"
+ },
+ "cold_vs_warm_cache": {
+  "method": "System-wide `echo 3 > /proc/sys/vm/drop_caches` requires root and passwordless sudo is NOT configured on this host, so a true system-wide cold cache could not be produced. THIS IS A STATED LIMITATION. What was done instead is an unprivileged, file-scoped eviction: posix_fadvise(POSIX_FADV_DONTNEED) applied to every input FASTA and to the tool's model/database files, with residency verified before and after by mincore(2) (scripts/162_ws8_drop_file_cache.py). Everything the run reads from those files therefore comes from disk again; kernel/libc pages and the conda environment's shared objects remain cached.",
+  "results": "see cold_vs_warm.tsv (filled by scripts/169)"
+ },
+ "first_run_setup_time": {
+  "method": "Download and index times were NOT re-measured: re-downloading the CheckM2 and CoCoPyE databases would consume bandwidth and disk for artefacts already present, and the measured value would be a property of this site's network rather than of the tool. What is reported instead is the number of bytes that must be transferred before first use, which is network-independent, together with the wall-clock time to first result on an already-installed system (the 'cold cache' column)."
+ },
+ "env_size_correction": {
+  "date": "2026-08-01",
+  "problem": "conda_env_GB charged the 8.182 GB shared analysis environment to MAGICC, CoCoPyE and DeepCheck alike. That environment contains torch+cu121, lightgbm, xgboost, optuna, scikit-learn, pandas, matplotlib and cocopye 0.5.0 (a competitor tool); none of it is required to run MAGICC.",
+  "replacement": "results/revision/speed/env_footprint.json (scripts/180) and the install_footprint_GB column of tco_table.tsv (scripts/181).",
+  "magicc_minimal_install_GB": 0.749,
+  "direction_of_the_error": "The correction REDUCES MAGICC's reported footprint from 8.18 GB to 0.75 GB, i.e. it favours MAGICC. It is made because the original figure measured the wrong object, and the method is stated in full so the claim can be checked."
+ }
+}

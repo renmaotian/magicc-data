@@ -1,0 +1,101 @@
+{
+  "schema": "magicc-determinism-report/1.0",
+  "generated_utc": "2026-07-26T22:08:13.164548+00:00",
+  "generated_by": "scripts/115_determinism_check.py",
+  "workstream_item": "WS7.12",
+  "reviewer_comments": [
+    "R1-M8",
+    "R1-m17",
+    "E2"
+  ],
+  "n_genomes": 24,
+  "source_set": "set_E",
+  "thread_counts_tested": [
+    1,
+    2,
+    4
+  ],
+  "reference_output_sha256": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4",
+  "console_script": "/path/to/conda/envs/magicc2/bin/magicc",
+  "environment": {
+    "python": "3.11.0",
+    "platform": "linux",
+    "executable": "/path/to/conda/envs/magicc2/bin/python"
+  },
+  "checks": [
+    {
+      "check": "model_artefact_sha256",
+      "result": "PASS",
+      "detail": "models/magicc_v5.onnx = b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+      "evidence": {
+        "expected": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+        "model_card": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+        "actual": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096"
+      }
+    },
+    {
+      "check": "model_card_determinism_probe",
+      "result": "PASS",
+      "detail": "reproduced bit-exactly; probe input sha256 matches",
+      "evidence": {
+        "probe_input_sha256": "34d0a3edb4faa2971144d94baedebc1077417867dbd3048583f652d6a0122d79",
+        "probe_input_sha256_expected": "34d0a3edb4faa2971144d94baedebc1077417867dbd3048583f652d6a0122d79",
+        "max_abs_deviation": 0.0,
+        "onnxruntime_version": "1.23.2"
+      }
+    },
+    {
+      "check": "thread_count_invariance",
+      "result": "PASS",
+      "detail": "threads [1, 2, 4] -> 1 distinct output digest(s)",
+      "evidence": {
+        "threads=1": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4",
+        "threads=2": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4",
+        "threads=4": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4"
+      }
+    },
+    {
+      "check": "gzip_input_invariance",
+      "result": "PASS",
+      "detail": "X.fasta and X.fasta.gz give byte-identical predictions",
+      "evidence": {
+        "plain": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4",
+        "gzipped": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4"
+      }
+    },
+    {
+      "check": "input_mode_invariance",
+      "result": "PASS",
+      "detail": "--input DIR and --input-list (mixed plain/gz) agree on every genome",
+      "evidence": {
+        "directory_values": "2bf9f2224b3f3caa121f4dd78c9ee79c7f3081b4fd3a5043c7d66246947968dd",
+        "list_values": "2bf9f2224b3f3caa121f4dd78c9ee79c7f3081b4fd3a5043c7d66246947968dd"
+      }
+    },
+    {
+      "check": "repeat_run_invariance",
+      "result": "PASS",
+      "detail": "identical command run twice gives byte-identical output",
+      "evidence": {
+        "first": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4",
+        "second": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4"
+      }
+    },
+    {
+      "check": "batch_size_invariance",
+      "result": "PASS",
+      "detail": "batch sizes 1/64/512 -> 1 distinct digest(s)",
+      "evidence": {
+        "batch=1": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4",
+        "batch=64": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4",
+        "batch=512": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4"
+      }
+    }
+  ],
+  "overall": "PASS",
+  "training_reproducibility": {
+    "seeded": false,
+    "statement": "V5 training was never seeded (verified by code inspection of magicc/trainer.py and scripts/53_train_v5_run3.py), so the released weights cannot be re-derived bit-exactly from the training data. The released artefact is pinned by SHA256 instead. This report establishes determinism of INFERENCE only.",
+    "protocol_reference": "project_design_and_protocol.md section 4.4b"
+  }
+}

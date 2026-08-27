@@ -1,0 +1,76 @@
+{
+  "check": "GitHub artefact acceptance test, clean clone of tag v0.3.1",
+  "captured_utc": "2026-08-26T21:01:47.221944+00:00",
+  "clone": {
+    "command": "git clone --depth 1 --branch v0.3.1 https://github.com/renmaotian/magicc.git",
+    "rc": 0,
+    "HEAD": "ca1ddf04154e75c2e00ec453eec32bea4ed29cfe",
+    "describe": "v0.3.1",
+    "head_commit_date": "2026-08-25 11:58:44 -0500",
+    "head_subject": "fix(build): anchor .gitignore directory patterns to the repository root",
+    "matches_REPO_RELEASE_RECORD_main_after": true
+  },
+  "repository_state": {
+    "default_branch": "main",
+    "main_head": "ca1ddf04154e75c2e00ec453eec32bea4ed29cfe",
+    "main_equals_tag_v0_3_1": true,
+    "tags": [
+      "v0.3.1"
+    ],
+    "release_count": 1,
+    "release_v0_3_1_published_at": "2026-08-25T17:00:09Z",
+    "release_v0_3_1_uploaded_assets": 0,
+    "note": "The release carries no uploaded assets; only GitHub's auto-generated source tarballs."
+  },
+  "git_lfs": {
+    "lfs_tracked_files": [
+      "models/magicc_v5.onnx"
+    ],
+    "lfs_oid_prefix": "b84346650c",
+    "smudge_performed": true,
+    "size_bytes": 169658949,
+    "is_pointer_file": false,
+    "pointer_check": "first bytes are ONNX/protobuf payload (\\b\\b\\022\\a pytorch \\032 2.5.1), not 'version https://git-lfs...'",
+    "sha256": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+    "ASSERTION_model_hash_matches_paper": true,
+    "PASS": true
+  },
+  "install": {
+    "command": "pip install <clone>  (non-editable, into a second fresh venv, py3.12.3)",
+    "rc": 0,
+    "reported_version": "0.3.1",
+    "pyproject_version": "0.3.1",
+    "onnx_files_in_installed_package": 0,
+    "FINDING": "Installing FROM the GitHub tag also does not bundle the model - packaging excludes it identically to PyPI. site-packages/../models does not exist, so the dev-layout fallback in _ensure_model() cannot fire either."
+  },
+  "no_network_test": {
+    "fresh_install_empty_HOME_network_blocked": "FAIL (exit 1), 'Downloading MAGICC model' emitted once",
+    "verdict": "Same D7 behaviour as the PyPI channel - the defect is in the code, not in the distribution channel."
+  },
+  "determinism_runs": {
+    "model_used": "the tag's own models/magicc_v5.onnx via --model",
+    "input_modes": [
+      "plain directory",
+      "gzip directory",
+      "--input-list"
+    ],
+    "extension_flags": [
+      "default .fasta",
+      "--extension auto"
+    ],
+    "threads": [
+      1,
+      4
+    ],
+    "run_count": 8,
+    "distinct_output_digests": 1,
+    "output_sha256": "bb7825cea40ddbc1dca159172b451ef714d66edc9c1ba705e2ce1af104805ee5",
+    "all_rc_zero": true,
+    "PASS": true
+  },
+  "byte_identity_with_pypi": {
+    "identical": true,
+    "shared_sha256": "bb7825cea40ddbc1dca159172b451ef714d66edc9c1ba705e2ce1af104805ee5"
+  },
+  "OVERALL": "clone/tag PASS; LFS content PASS; model hash PASS; determinism PASS; identical to PyPI PASS; bundled-in-installed-package FAIL (same D7)"
+}

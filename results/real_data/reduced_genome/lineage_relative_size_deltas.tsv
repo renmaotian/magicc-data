@@ -1,0 +1,6 @@
+log2_size_vs_phylum_bin	n	n_family_clusters	genome_size_median_Mbp	delta_completeness_median	delta_completeness_ci95	delta_contamination_median	delta_contamination_ci95	pct_magicc_cont_ge5_while_checkm2_lt5
+<-1 (>=2x reduced)	257	44	1.074	-13.07	[-21.32, -0.56]	3.77	[0.04, 7.02]	48.6
+-1 to -0.5	282	74	1.532	-1.49	[-9.33, 0.19]	0.66	[-0.08, 10.48]	41.5
+-0.5 to -0.25	152	86	1.993	-1.46	[-6.78, 0.01]	-0.05	[-0.21, 0.28]	9.2
+-0.25 to +0.25 (typical)	412	154	2.637	0.07	[-0.12, 1.08]	-0.06	[-0.33, 0.14]	9.7
+>+0.25 (larger than lineage)	260	98	5.065	1.01	[-0.03, 1.68]	0.01	[-0.21, 0.38]	21.2

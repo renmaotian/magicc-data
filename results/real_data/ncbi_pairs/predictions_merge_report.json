@@ -1,0 +1,9 @@
+{
+  "generated_utc": "2026-07-26T23:31:36.516297+00:00",
+  "dir": "results/revision/real_data/ncbi_pairs",
+  "n_truth_rows": 1097,
+  "magicc_matched": 1096,
+  "checkm2": "absent",
+  "cocopye": "absent",
+  "deepcheck": "absent"
+}

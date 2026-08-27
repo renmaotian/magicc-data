@@ -1,0 +1,5 @@
+analysis	subset	tool	n	n_reference_clusters	recovery_slope_lambda	ci95	p	R2_CoD	ideal_lambda	pct_shrinkage_per_decade_of_L
+M2_implied_reference_length_recovery	all	MAGICC_V5	5000	1648	0.9796	[0.971, 0.989]	0.000e+00	0.9797	1.0	2.036
+M2_implied_reference_length_recovery	all	CheckM2	5000	1648	0.943	[0.937, 0.949]	0.000e+00	0.9679	1.0	5.702
+M2_implied_reference_length_recovery	low_contamination(true<5)	MAGICC_V5	1566	1112	0.9739	[0.965, 0.983]	0.000e+00	0.9887	1.0	2.61
+M2_implied_reference_length_recovery	low_contamination(true<5)	CheckM2	1566	1112	0.9837	[0.978, 0.989]	0.000e+00	0.9914	1.0	1.632

@@ -1,0 +1,13 @@
+cell	input_set	n_genomes	total_bp	threads	magicc_rss_gb_median	magicc_rss_gb_max	n_magicc	competitor	competitor_rss_gb_median	competitor_rss_gb_max	n_competitor	rss_ratio_median_over_median	rss_ratio_max_over_max
+set_E_100 @ 32 threads	set_E_100	100	478109066	32	0.3584	0.3589	4	CheckM2 1.0.1	10.6102	10.6593	5	29.61	29.7
+set_E_100 @ 32 threads	set_E_100	100	478109066	32	0.3584	0.3589	4	CoCoPyE 0.5.0	15.8878	15.8891	4	44.34	44.27
+set_E_100 @ 32 threads	set_E_100	100	478109066	32	0.3584	0.3589	4	DeepCheck (inference only)	0.6672	0.6673	4	1.86	1.86
+set_E_full @ 32 threads	set_E_full	1000	4806980767	32	0.4975	0.4983	5	CheckM2 1.0.1	18.861	18.8767	3	37.91	37.88
+set_E_full @ 32 threads	set_E_full	1000	4806980767	32	0.4975	0.4983	5	CoCoPyE 0.5.0	15.9	15.9005	3	31.96	31.91
+set_E_full @ 32 threads	set_E_full	1000	4806980767	32	0.4975	0.4983	5	DeepCheck (inference only)	1.2739	1.2834	5	2.56	2.58
+PROVENANCE (published style): set_E_100, MAX over ALL thread counts	set_E_100	100	478109066	MAGICC@1 vs checkm2@32		0.3852	3	CheckM2 1.0.1		10.6629	1		27.68
+PROVENANCE (published style): set_E_100, MAX over ALL thread counts	set_E_100	100	478109066	MAGICC@1 vs cocopye@32		0.3852	3	CoCoPyE 0.5.0		15.8891	4		41.25
+PROVENANCE (published style): set_E_100, MAX over ALL thread counts	set_E_100	100	478109066	MAGICC@1 vs deepcheck@16		0.3852	3	DeepCheck (inference only)		0.7053	3		1.83
+PROVENANCE (published style): set_E_full, MAX over ALL thread counts	set_E_full	1000	4806980767	MAGICC@1 vs checkm2@32		0.6484	9	CheckM2 1.0.1		18.8767	3		29.11
+PROVENANCE (published style): set_E_full, MAX over ALL thread counts	set_E_full	1000	4806980767	MAGICC@1 vs cocopye@32		0.6484	9	CoCoPyE 0.5.0		15.9005	3		24.52
+PROVENANCE (published style): set_E_full, MAX over ALL thread counts	set_E_full	1000	4806980767	MAGICC@1 vs deepcheck@1		0.6484	9	DeepCheck (inference only)		1.2872	3		1.99

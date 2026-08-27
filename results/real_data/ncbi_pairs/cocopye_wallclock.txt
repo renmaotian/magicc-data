@@ -1,0 +1,9 @@
+tool=cocopye
+version=CoCoPyE 0.5.0
+set=ncbi_pairs
+wall_clock_s=2158
+threads=12
+started=2026-07-26T20:14:05-05:00
+finished=2026-07-26T20:50:03-05:00
+n_genomes=1096
+note=ACCURACY RUN, not the controlled speed benchmark (WS8.1). Shared, concurrently loaded 48-core machine; wall-clock indicative only.

@@ -1,0 +1,4 @@
+set	n_paired	n_same_verdict	n_pass_to_fail_gtdb	n_fail_to_pass_gtdb	pass_to_fail_true_positive_ge5	pass_to_fail_false_positive_lt5	fail_to_pass_lost_true_positive_ge5	fail_to_pass_corrected_false_positive_lt5	pass_to_fail_true_positive_ge10	net_true_positives_gained_ge5	net_false_positives_gained_lt5	median_true_contamination_of_pass_to_fail	n_unpowered_progenomes_to_powered_gtdb	n_powered_progenomes_to_unpowered_gtdb	n_powered_both	n_unpowered_both
+set_C_clean	1000	887	110	3	95	15	1	2	69	94	13	15.049	217	18	663	102
+set_D_clean	1000	989	9	2	6	3	0	2	3	6	1	8.276	31	2	943	24
+set_E	1000	977	17	6	10	7	0	6	9	10	1	10.716	6	0	986	8

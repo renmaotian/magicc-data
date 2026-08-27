@@ -1,0 +1,7 @@
+stage	n_remaining	note
+GTDB genomes (bac120 + ar53)	732475	
+"NCBI assembly_level == ""Complete Genome"" (latest)"	47820	selector = NCBI/submitter annotation; NO CheckM2 filter applied
+has an NCBI ftp_path (downloadable)	47820	
+taxonomic-consistency filter (GTDB<->NCBI genus + domain agree)	39383	dropped 0 no/placeholder GTDB assignment, 6623 no NCBI assignment, 1814 genus mismatch (of 47820)
+excluded train / val / 9-mer-selection genomes	28054	references are absent from training entirely
+FINAL selected references (both arms)	400	200 would-FAIL + 200 matched would-PASS

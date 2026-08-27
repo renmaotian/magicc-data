@@ -1,0 +1,7 @@
+{
+  "generated_utc": "2026-07-26T21:53:56.261914+00:00",
+  "cohort": "full",
+  "n": 1097,
+  "n_ok": 1096,
+  "aligner": "minimap2 -x asm10 --secondary=no (draft -> complete)"
+}

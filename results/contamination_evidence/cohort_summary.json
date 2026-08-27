@@ -1,0 +1,242 @@
+{
+  "n_mags": 1000,
+  "cohort_counts": {
+    "agree_clean": 316,
+    "neither_hq": 450,
+    "disagreement_141": 141,
+    "v5hq_only": 93
+  },
+  "hq_definition": "completeness >= 90 and contamination <= 5 (MIMAG HQ)",
+  "distributions": {
+    "disagreement_141": {
+      "total_bp": {
+        "n": 141,
+        "median": 2447981.0,
+        "q1": 1681488.0,
+        "q3": 3621627.0,
+        "min": 432397.0,
+        "max": 10215802.0,
+        "mean": 2821336.7589
+      },
+      "n_contigs": {
+        "n": 141,
+        "median": 90.0,
+        "q1": 48.0,
+        "q3": 172.0,
+        "min": 1.0,
+        "max": 2183.0,
+        "mean": 176.4113
+      },
+      "n50": {
+        "n": 141,
+        "median": 36257.0,
+        "q1": 19595.0,
+        "q3": 85658.0,
+        "min": 3812.0,
+        "max": 4850502.0,
+        "mean": 200657.4681
+      },
+      "gc_pct": {
+        "n": 141,
+        "median": 47.108,
+        "q1": 38.478,
+        "q3": 61.528,
+        "min": 24.74,
+        "max": 73.017,
+        "mean": 48.7627
+      },
+      "v5_contamination": {
+        "n": 141,
+        "median": 5.0718966,
+        "q1": 0.38408637,
+        "q3": 12.060195,
+        "min": 0.0044882298,
+        "max": 64.5203,
+        "mean": 9.2899
+      },
+      "checkm2_contamination": {
+        "n": 141,
+        "median": 0.98,
+        "q1": 0.34,
+        "q3": 1.88,
+        "min": 0.0,
+        "max": 4.85,
+        "mean": 1.3343
+      }
+    },
+    "agree_clean": {
+      "total_bp": {
+        "n": 316,
+        "median": 2874844.0,
+        "q1": 2266394.0,
+        "q3": 3829325.0,
+        "min": 798884.0,
+        "max": 9217369.0,
+        "mean": 3155411.7532
+      },
+      "n_contigs": {
+        "n": 316,
+        "median": 86.0,
+        "q1": 43.0,
+        "q3": 157.0,
+        "min": 1.0,
+        "max": 1434.0,
+        "mean": 129.6614
+      },
+      "n50": {
+        "n": 316,
+        "median": 65343.0,
+        "q1": 28189.0,
+        "q3": 119418.0,
+        "min": 5370.0,
+        "max": 5677623.0,
+        "mean": 225328.4937
+      },
+      "gc_pct": {
+        "n": 316,
+        "median": 49.75,
+        "q1": 42.74,
+        "q3": 56.76,
+        "min": 27.832,
+        "max": 72.492,
+        "mean": 49.8369
+      },
+      "v5_contamination": {
+        "n": 316,
+        "median": 0.45664012,
+        "q1": 0.1627475,
+        "q3": 1.1258602,
+        "min": 1.4901161e-05,
+        "max": 4.957688,
+        "mean": 0.865
+      },
+      "checkm2_contamination": {
+        "n": 316,
+        "median": 0.65,
+        "q1": 0.18,
+        "q3": 1.69,
+        "min": 0.0,
+        "max": 4.94,
+        "mean": 1.1082
+      }
+    },
+    "v5hq_only": {
+      "total_bp": {
+        "n": 93,
+        "median": 2617651.0,
+        "q1": 2125253.0,
+        "q3": 3730794.0,
+        "min": 977099.0,
+        "max": 7201722.0,
+        "mean": 2976650.2581
+      },
+      "n_contigs": {
+        "n": 93,
+        "median": 308.0,
+        "q1": 172.0,
+        "q3": 444.0,
+        "min": 15.0,
+        "max": 1735.0,
+        "mean": 365.3978
+      },
+      "n50": {
+        "n": 93,
+        "median": 13652.0,
+        "q1": 7149.0,
+        "q3": 22168.0,
+        "min": 3421.0,
+        "max": 810156.0,
+        "mean": 34899.2473
+      },
+      "gc_pct": {
+        "n": 93,
+        "median": 51.331,
+        "q1": 42.973,
+        "q3": 59.301,
+        "min": 27.384,
+        "max": 73.412,
+        "mean": 50.9366
+      },
+      "v5_contamination": {
+        "n": 93,
+        "median": 0.4018128,
+        "q1": 0.09953976,
+        "q3": 1.2263954,
+        "min": 0.0,
+        "max": 4.965907,
+        "mean": 0.9685
+      },
+      "checkm2_contamination": {
+        "n": 93,
+        "median": 2.26,
+        "q1": 0.99,
+        "q3": 3.32,
+        "min": 0.02,
+        "max": 15.02,
+        "mean": 2.8385
+      }
+    },
+    "neither_hq": {
+      "total_bp": {
+        "n": 450,
+        "median": 1978356.0,
+        "q1": 1362205.0,
+        "q3": 2606578.0,
+        "min": 272762.0,
+        "max": 45443492.0,
+        "mean": 2352783.6378
+      },
+      "n_contigs": {
+        "n": 450,
+        "median": 291.0,
+        "q1": 136.0,
+        "q3": 463.0,
+        "min": 1.0,
+        "max": 40535.0,
+        "mean": 457.7533
+      },
+      "n50": {
+        "n": 450,
+        "median": 8246.0,
+        "q1": 4631.0,
+        "q3": 19699.0,
+        "min": 426.0,
+        "max": 2515759.0,
+        "mean": 39038.98
+      },
+      "gc_pct": {
+        "n": 450,
+        "median": 52.343,
+        "q1": 43.295,
+        "q3": 61.616,
+        "min": 22.748,
+        "max": 75.874,
+        "mean": 51.969
+      },
+      "v5_contamination": {
+        "n": 450,
+        "median": 0.2274543,
+        "q1": 0.053054094,
+        "q3": 1.7203778,
+        "min": 3.874302e-05,
+        "max": 99.74009,
+        "mean": 4.3064
+      },
+      "checkm2_contamination": {
+        "n": 450,
+        "median": 1.67,
+        "q1": 0.52,
+        "q3": 3.31,
+        "min": 0.0,
+        "max": 99.55,
+        "mean": 2.8065
+      }
+    }
+  },
+  "kraken2_existing": 234,
+  "kraken2_todo_agree_clean": 316,
+  "outputs": {
+    "stats": "/path/to/magicc/results/revision/contamination_evidence/cohort_genome_stats.tsv",
+    "todo": "/path/to/magicc/results/revision/contamination_evidence/kraken2_todo.txt"
+  }
+}

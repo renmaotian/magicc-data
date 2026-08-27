@@ -1,0 +1,23 @@
+	Command being timed: "env OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 PATH=/path/to/conda/envs/magicc2/bin:/path/to/home/.local/bin:/path/to/home/bin:/path/to/home/.npm-global/bin:/path/to/home/.local/bin:/path/to/home/bin:/path/to/home/.npm-global/bin:/path/to/conda/bin:/path/to/conda/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/context7/unknown/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/code-review/unknown/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/superpowers/6.2.0/bin:/path/to/home/.claude/plugins/cache/anthropic-agent-skills/document-skills/b29e7cf65e5c/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/code-simplifier/1.0.0/bin /path/to/conda/envs/magicc2/bin/cocopye run -i /path/to/magicc/results/revision/speed/inputs/set_E_100 -o /path/to/magicc/results/revision/speed/scratch/cocopye__t1__set_E_100__warm__r1/cocopye_output.csv -t 1 -v full"
+	User time (seconds): 1457.45
+	System time (seconds): 15.33
+	Percent of CPU this job got: 103%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 23:37.30
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 16609836
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 8196581
+	Voluntary context switches: 99331
+	Involuntary context switches: 11353
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 280
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

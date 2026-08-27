@@ -1,0 +1,131 @@
+{
+  "check": "PyPI artefact acceptance test, clean environment",
+  "captured_utc": "2026-08-26T21:01:47.221944+00:00",
+  "environment": {
+    "interpreter": "/usr/bin/python3 (CPython 3.12.3, system, NOT the magicc2 conda env)",
+    "venv": "fresh venv, no --system-site-packages",
+    "pip": "25.x after self-upgrade in venv"
+  },
+  "install_command": "pip install magicc   (NO version pin)",
+  "resolved_version": "0.3.1",
+  "assertion_version_matches_code_availability": {
+    "expected": "0.3.1",
+    "observed": "0.3.1",
+    "PASS": true
+  },
+  "artefact": {
+    "file": "magicc-0.3.1-py3-none-any.whl",
+    "size_bytes": 653983,
+    "sha256_downloaded": "55ac58af1fed22610fd0a6613ebf1f0faf33b6814abd659835acb693b8c09244",
+    "sha256_pypi_json_api": "55ac58af1fed22610fd0a6613ebf1f0faf33b6814abd659835acb693b8c09244",
+    "match": true,
+    "upload_time_iso_8601": "2026-08-25T17:00:28.522359Z"
+  },
+  "sdist_on_index": {
+    "file": "magicc-0.3.1.tar.gz",
+    "size_bytes": 661376,
+    "sha256": "aa36d2091487af864f264c1caed21ab67aa885cd6a062291629b7b3607e2926c",
+    "upload_time_iso_8601": "2026-08-25T17:00:30.173809Z"
+  },
+  "all_versions_on_index": [
+    "0.1.0",
+    "0.2.0",
+    "0.2.1",
+    "0.3.0",
+    "0.3.1"
+  ],
+  "version_chronology_confirmed": {
+    "0.3.0": "2026-03-19T18:49:25.900981Z",
+    "0.3.1": "2026-08-25T17:00:28.522359Z"
+  },
+  "installed_dependencies": [
+    "flatbuffers-25.12.19",
+    "h5py-3.16.0",
+    "llvmlite-0.49.0",
+    "numba-0.67.0",
+    "numpy-2.5.2",
+    "onnxruntime-1.29.0",
+    "packaging-26.3",
+    "protobuf-7.36.0",
+    "scipy-1.18.1"
+  ],
+  "installed_file_list": "logs/pypi_installed_metadata.txt (pip show -f + RECORD)",
+  "bundled_model": {
+    "onnx_files_in_wheel": 0,
+    "onnx_files_in_installed_package": 0,
+    "wheel_entry_count": 20,
+    "largest_wheel_entries": [
+      [
+        "magicc/data/normalization_params.json",
+        2427524
+      ],
+      [
+        "magicc/data/selected_kmers.txt",
+        92490
+      ],
+      [
+        "magicc/cli.py",
+        33967
+      ]
+    ],
+    "ASSERTION_model_bundled": false,
+    "FAIL_REASON": "The PyPI distribution contains NO ONNX model. pyproject.toml [tool.setuptools.package-data] lists only data/normalization_params.json and data/selected_kmers.txt. The manuscript's Code availability sentence 'v0.3.1 ... contains model V5 with SHA256 b84346...' is therefore NOT TRUE of the PyPI artefact."
+  },
+  "runtime_model_acquisition": {
+    "mechanism": "magicc/cli.py:_ensure_model() downloads at first run",
+    "MODEL_URL": "https://github.com/renmaotian/magicc/raw/main/models/magicc_v5.onnx",
+    "url_pins_to": "branch main - NOT the v0.3.1 tag, and not a checksum",
+    "redirects_to": "https://media.githubusercontent.com/media/renmaotian/magicc/main/models/magicc_v5.onnx (Git LFS media endpoint), HTTP 200",
+    "cache_destination": "$HOME/.magicc/magicc_v5.onnx",
+    "checksum_verified_after_download": false,
+    "observed_download_bytes": 169658949,
+    "sha256_of_downloaded_model": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+    "ASSERTION_downloaded_model_hash_matches_paper": true,
+    "note": "The CONTENT currently served is the correct V5 model, because main happens to point at ca1ddf0 == tag v0.3.1 today. Nothing enforces that."
+  },
+  "no_network_download_test": {
+    "method": "strace syscall-level fault injection: strace -f -e trace=connect -e inject=connect:error=ENETUNREACH. unshare -rn is unavailable on this host (kernel.apparmor_restrict_unprivileged_userns=1, no passwordless sudo, no firejail). The injector was validated with a control: curl https://pypi.org/simple/ under it fails with 'Could not resolve host' (rc=6). It blocks at the syscall boundary so it also covers native code and subprocesses.",
+    "test_1_fresh_install_empty_HOME_network_blocked": {
+      "result": "FAIL (exit 1)",
+      "exception": "urllib.error.URLError: <urlopen error [Errno -3] Temporary failure in name resolution>",
+      "verdict": "D7 IS LIVE: a clean PyPI install CANNOT run without network access. The install is not self-contained."
+    },
+    "test_2_model_already_cached_network_blocked": {
+      "result": "PASS (exit 0)",
+      "successful_external_connects": 0,
+      "model_loaded": "$HOME/.magicc/magicc_v5.onnx",
+      "verdict": "Once the model is present, the run performs zero network I/O."
+    },
+    "test_3_first_run_network_allowed_strace": {
+      "connect_syscalls": 37,
+      "observed_endpoints": [
+        "140.82.112.4:443 (github.com)",
+        "2606:50c0:800x::154:443 (raw/media.githubusercontent.com)",
+        "127.0.0.53:53 (systemd-resolved DNS)"
+      ],
+      "verdict": "A run-time download from GitHub is directly observed."
+    },
+    "OVERALL_VERDICT": "FAIL - the published PyPI package downloads its model from GitHub at run time. This is exactly defect D7, which was fixed only inside the Docker image, never in the packaged CLI."
+  },
+  "determinism_runs": {
+    "input_modes": [
+      "plain directory",
+      "gzip directory",
+      "--input-list"
+    ],
+    "extension_flags": [
+      "default .fasta",
+      "--extension auto"
+    ],
+    "threads": [
+      1,
+      4
+    ],
+    "run_count": 8,
+    "distinct_output_digests": 1,
+    "output_sha256": "bb7825cea40ddbc1dca159172b451ef714d66edc9c1ba705e2ce1af104805ee5",
+    "all_rc_zero": true,
+    "PASS": true
+  },
+  "OVERALL": "version PASS; wheel-artefact-integrity PASS; determinism PASS; bundled-model assertion FAIL; no-runtime-download assertion FAIL"
+}

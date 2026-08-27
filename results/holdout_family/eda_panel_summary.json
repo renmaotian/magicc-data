@@ -1,0 +1,668 @@
+{
+  "created": "2026-07-27T16:17:40.700658",
+  "workstream": "WS1.9 leave-family-out",
+  "panel_level": "family",
+  "design_constraint": "every held-out family's parent phylum REMAINS in the training set; verified, not asserted",
+  "panel_groups": {
+    "Bacteroidota_Muribaculaceae": {
+      "taxa": [
+        "Muribaculaceae"
+      ],
+      "parent_phylum": "Bacteroidota",
+      "rationale": "Largest host-associated (gut) Bacteroidota family, 2,254 genomes, median 2.60 Mbp, 212 test references. Bacteroidota was the largest bacterial phylum group in WS1.6 (+8.01 pp completeness DiD), so this is the direct family-vs-phylum contrast for the same lineage.",
+      "phyla": [
+        "Bacteroidota"
+      ],
+      "train": 1810,
+      "val": 232,
+      "test": 212,
+      "parent_phylum_retained_pct": 78.14
+    },
+    "Bacteroidota_Flavobacteriaceae": {
+      "taxa": [
+        "Flavobacteriaceae"
+      ],
+      "parent_phylum": "Bacteroidota",
+      "rationale": "Environmental / most genus-diverse Bacteroidota family (145 genera), median 3.54 Mbp, 155 test references. Contrasts with Muribaculaceae in both ecology and genome size within one phylum.",
+      "phyla": [
+        "Bacteroidota"
+      ],
+      "train": 1100,
+      "val": 153,
+      "test": 155,
+      "parent_phylum_retained_pct": 86.71
+    },
+    "Campylobacterota_Helicobacteraceae": {
+      "taxa": [
+        "Helicobacteraceae"
+      ],
+      "parent_phylum": "Campylobacterota",
+      "rationale": "Second-largest Campylobacterota family (2,042 genomes, median 1.64 Mbp, 205 test references). Campylobacteraceae, the largest family, is deliberately retained in training.",
+      "phyla": [
+        "Campylobacterota"
+      ],
+      "train": 1627,
+      "val": 210,
+      "test": 205,
+      "parent_phylum_retained_pct": 67.28
+    },
+    "Campylobacterota_Arcobacteraceae": {
+      "taxa": [
+        "Arcobacteraceae"
+      ],
+      "parent_phylum": "Campylobacterota",
+      "rationale": "Small-N Campylobacterota family (336 genomes, 40 test references): gives a within-phylum dose contrast on family size against Helicobacteraceae.",
+      "phyla": [
+        "Campylobacterota"
+      ],
+      "train": 269,
+      "val": 27,
+      "test": 40,
+      "parent_phylum_retained_pct": 94.59
+    },
+    "Halobacteriota_halophilic": {
+      "taxa": [
+        "Haloferacaceae",
+        "Haloarculaceae"
+      ],
+      "parent_phylum": "Halobacteriota",
+      "rationale": "Two halophilic archaeal families (28 test references). Domain-level generalization at family resolution. Natrialbaceae and Halobacteriaceae (also halophilic) plus every methanogen family stay in training, so both the phylum and its physiology remain represented.",
+      "phyla": [
+        "Halobacteriota"
+      ],
+      "train": 222,
+      "val": 28,
+      "test": 28,
+      "parent_phylum_retained_pct": 61.26
+    },
+    "Patescibacteriota_families": {
+      "taxa": [
+        "2-12-FULL-60-25",
+        "GWA2-37-8",
+        "GWC2-37-13",
+        "Minisyncoccaceae",
+        "Nanoperiomorbaceae",
+        "Nanosynbacteraceae",
+        "Nanosyncoccaceae",
+        "PJMF01",
+        "Peribacteraceae",
+        "Saccharimonadaceae",
+        "Staskawiczbacteraceae",
+        "UBA1547",
+        "UBA2103",
+        "UBA2206",
+        "UBA4665",
+        "UBA8517",
+        "UBA918",
+        "UBA922",
+        "UBA9973"
+      ],
+      "parent_phylum": "Patescibacteriota",
+      "rationale": "THE KEY COMPARISON. Patescibacteriota was the worst phylum-level group in WS1.6 (+22.81 pp completeness DiD); holding out families inside it, with 756 Patescibacteriota training genomes across ~281 other families retained, measures family-level novelty for exactly that lineage. Pooled (19 families, 66 test references) because no single CPR family has enough test genomes for a stable cluster bootstrap; a per-family breakdown is reported. Reduced genomes (median 0.86 Mbp) - note WS3.10: MAGICC completeness is dominated by absolute genome size, and the DiD design cancels that shared bias because both models score identical samples.",
+      "phyla": [
+        "Patescibacteriota"
+      ],
+      "train": 530,
+      "val": 71,
+      "test": 66,
+      "parent_phylum_retained_pct": 58.79
+    }
+  },
+  "panel_taxa": [
+    "2-12-FULL-60-25",
+    "Arcobacteraceae",
+    "Flavobacteriaceae",
+    "GWA2-37-8",
+    "GWC2-37-13",
+    "Haloarculaceae",
+    "Haloferacaceae",
+    "Helicobacteraceae",
+    "Minisyncoccaceae",
+    "Muribaculaceae",
+    "Nanoperiomorbaceae",
+    "Nanosynbacteraceae",
+    "Nanosyncoccaceae",
+    "PJMF01",
+    "Peribacteraceae",
+    "Saccharimonadaceae",
+    "Staskawiczbacteraceae",
+    "UBA1547",
+    "UBA2103",
+    "UBA2206",
+    "UBA4665",
+    "UBA8517",
+    "UBA918",
+    "UBA922",
+    "UBA9973"
+  ],
+  "panel_phyla": [],
+  "panel_parent_phyla": [
+    "Bacteroidota",
+    "Campylobacterota",
+    "Halobacteriota",
+    "Patescibacteriota"
+  ],
+  "n_removed": {
+    "train": 5558,
+    "val": 721,
+    "test": 706
+  },
+  "pct_removed": {
+    "train": 6.952,
+    "val": 7.203,
+    "test": 7.061
+  },
+  "ws1_6_pct_removed_train": 19.64,
+  "surviving": {
+    "train": 74390,
+    "val": 9289,
+    "test": 9293,
+    "train_phyla": 110,
+    "train_families": 1595,
+    "train_archaea": 1356,
+    "phyla_eliminated": []
+  },
+  "eval_capacity": [
+    {
+      "group": "Bacteroidota_Muribaculaceae",
+      "test_refs_available": 212,
+      "all_split_refs": 2254,
+      "ref_source": "test",
+      "refs_used": 100,
+      "sims_per_ref": 10,
+      "eval_n": 1000,
+      "clean_head_to_head": "yes"
+    },
+    {
+      "group": "Bacteroidota_Flavobacteriaceae",
+      "test_refs_available": 155,
+      "all_split_refs": 1408,
+      "ref_source": "test",
+      "refs_used": 100,
+      "sims_per_ref": 10,
+      "eval_n": 1000,
+      "clean_head_to_head": "yes"
+    },
+    {
+      "group": "Campylobacterota_Helicobacteraceae",
+      "test_refs_available": 205,
+      "all_split_refs": 2042,
+      "ref_source": "test",
+      "refs_used": 100,
+      "sims_per_ref": 10,
+      "eval_n": 1000,
+      "clean_head_to_head": "yes"
+    },
+    {
+      "group": "Campylobacterota_Arcobacteraceae",
+      "test_refs_available": 40,
+      "all_split_refs": 336,
+      "ref_source": "test",
+      "refs_used": 40,
+      "sims_per_ref": 25,
+      "eval_n": 1000,
+      "clean_head_to_head": "yes"
+    },
+    {
+      "group": "Halobacteriota_halophilic",
+      "test_refs_available": 28,
+      "all_split_refs": 278,
+      "ref_source": "test",
+      "refs_used": 28,
+      "sims_per_ref": 36,
+      "eval_n": 1008,
+      "clean_head_to_head": "yes"
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "test_refs_available": 66,
+      "all_split_refs": 667,
+      "ref_source": "test",
+      "refs_used": 66,
+      "sims_per_ref": 15,
+      "eval_n": 990,
+      "clean_head_to_head": "yes"
+    },
+    {
+      "group": "in_distribution",
+      "test_refs_available": 9293,
+      "all_split_refs": 92972,
+      "ref_source": "test",
+      "refs_used": 100,
+      "sims_per_ref": 10,
+      "eval_n": 1000,
+      "clean_head_to_head": "yes (control)"
+    }
+  ],
+  "reduced_genome_pool": {
+    "definition": "V5 verbatim (V5_REDUCED_GENOME_PHYLA); NO adaptation applied",
+    "n_v5_pool": 1453,
+    "n_surviving": 923,
+    "pct_surviving": 63.52,
+    "median_Mbp_surviving": 0.95,
+    "median_Mbp_v5": 0.912,
+    "adaptation_applied": false,
+    "ws1_6_note": "WS1.6 had to redefine this pool (1,622 genomes, median 1.17 Mbp) because the phylum panel collapsed it to 103 genomes; the family panel does not, so V5's own definition is used unchanged"
+  },
+  "panel_family_detail": [
+    {
+      "group": "Bacteroidota_Muribaculaceae",
+      "family": "Muribaculaceae",
+      "phylum": "Bacteroidota",
+      "class": "Bacteroidia",
+      "order": "Bacteroidales",
+      "train_removed": 1810,
+      "val_removed": 232,
+      "test_refs": 212,
+      "n_genera": 19,
+      "median_Mbp": 2.595,
+      "train_left_same_order": 3536,
+      "train_left_same_class": 5369,
+      "train_left_same_phylum": 5369
+    },
+    {
+      "group": "Bacteroidota_Flavobacteriaceae",
+      "family": "Flavobacteriaceae",
+      "phylum": "Bacteroidota",
+      "class": "Bacteroidia",
+      "order": "Flavobacteriales",
+      "train_removed": 1100,
+      "val_removed": 153,
+      "test_refs": 155,
+      "n_genera": 145,
+      "median_Mbp": 3.536,
+      "train_left_same_order": 743,
+      "train_left_same_class": 5369,
+      "train_left_same_phylum": 5369
+    },
+    {
+      "group": "Campylobacterota_Helicobacteraceae",
+      "family": "Helicobacteraceae",
+      "phylum": "Campylobacterota",
+      "class": "Campylobacteria",
+      "order": "Campylobacterales",
+      "train_removed": 1627,
+      "val_removed": 210,
+      "test_refs": 205,
+      "n_genera": 14,
+      "median_Mbp": 1.638,
+      "train_left_same_order": 3062,
+      "train_left_same_class": 3072,
+      "train_left_same_phylum": 3077
+    },
+    {
+      "group": "Campylobacterota_Arcobacteraceae",
+      "family": "Arcobacteraceae",
+      "phylum": "Campylobacterota",
+      "class": "Campylobacteria",
+      "order": "Campylobacterales",
+      "train_removed": 269,
+      "val_removed": 27,
+      "test_refs": 40,
+      "n_genera": 14,
+      "median_Mbp": 2.216,
+      "train_left_same_order": 3062,
+      "train_left_same_class": 3072,
+      "train_left_same_phylum": 3077
+    },
+    {
+      "group": "Halobacteriota_halophilic",
+      "family": "Haloarculaceae",
+      "phylum": "Halobacteriota",
+      "class": "Halobacteria",
+      "order": "Halobacteriales",
+      "train_removed": 75,
+      "val_removed": 13,
+      "test_refs": 14,
+      "n_genera": 14,
+      "median_Mbp": 3.777,
+      "train_left_same_order": 122,
+      "train_left_same_class": 122,
+      "train_left_same_phylum": 351
+    },
+    {
+      "group": "Halobacteriota_halophilic",
+      "family": "Haloferacaceae",
+      "phylum": "Halobacteriota",
+      "class": "Halobacteria",
+      "order": "Halobacteriales",
+      "train_removed": 147,
+      "val_removed": 15,
+      "test_refs": 14,
+      "n_genera": 20,
+      "median_Mbp": 3.507,
+      "train_left_same_order": 122,
+      "train_left_same_class": 122,
+      "train_left_same_phylum": 351
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "2-12-FULL-60-25",
+      "phylum": "Patescibacteriota",
+      "class": "Patescibacteriia",
+      "order": "2-12-FULL-60-25",
+      "train_removed": 21,
+      "val_removed": 5,
+      "test_refs": 2,
+      "n_genera": 8,
+      "median_Mbp": 1.282,
+      "train_left_same_order": 0,
+      "train_left_same_class": 123,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "GWA2-37-8",
+      "phylum": "Patescibacteriota",
+      "class": "Patescibacteriia",
+      "order": "Magasanikbacterales",
+      "train_removed": 13,
+      "val_removed": 1,
+      "test_refs": 3,
+      "n_genera": 8,
+      "median_Mbp": 1.021,
+      "train_left_same_order": 4,
+      "train_left_same_class": 123,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "GWC2-37-13",
+      "phylum": "Patescibacteriota",
+      "class": "Microgenomatia",
+      "order": "UBA1406",
+      "train_removed": 11,
+      "val_removed": 4,
+      "test_refs": 2,
+      "n_genera": 8,
+      "median_Mbp": 1.118,
+      "train_left_same_order": 2,
+      "train_left_same_class": 99,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "Minisyncoccaceae",
+      "phylum": "Patescibacteriota",
+      "class": "Minisyncoccia",
+      "order": "Minisyncoccales",
+      "train_removed": 13,
+      "val_removed": 1,
+      "test_refs": 2,
+      "n_genera": 7,
+      "median_Mbp": 0.664,
+      "train_left_same_order": 35,
+      "train_left_same_class": 323,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "Nanoperiomorbaceae",
+      "phylum": "Patescibacteriota",
+      "class": "Saccharimonadia",
+      "order": "Saccharimonadales",
+      "train_removed": 14,
+      "val_removed": 1,
+      "test_refs": 2,
+      "n_genera": 3,
+      "median_Mbp": 0.816,
+      "train_left_same_order": 93,
+      "train_left_same_class": 103,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "Nanosynbacteraceae",
+      "phylum": "Patescibacteriota",
+      "class": "Saccharimonadia",
+      "order": "Saccharimonadales",
+      "train_removed": 49,
+      "val_removed": 5,
+      "test_refs": 3,
+      "n_genera": 1,
+      "median_Mbp": 0.774,
+      "train_left_same_order": 93,
+      "train_left_same_class": 103,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "Nanosyncoccaceae",
+      "phylum": "Patescibacteriota",
+      "class": "Saccharimonadia",
+      "order": "Saccharimonadales",
+      "train_removed": 63,
+      "val_removed": 7,
+      "test_refs": 10,
+      "n_genera": 3,
+      "median_Mbp": 0.805,
+      "train_left_same_order": 93,
+      "train_left_same_class": 103,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "PJMF01",
+      "phylum": "Patescibacteriota",
+      "class": "Microgenomatia",
+      "order": "UBA1400",
+      "train_removed": 22,
+      "val_removed": 2,
+      "test_refs": 3,
+      "n_genera": 10,
+      "median_Mbp": 0.976,
+      "train_left_same_order": 24,
+      "train_left_same_class": 99,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "Peribacteraceae",
+      "phylum": "Patescibacteriota",
+      "class": "Gracilibacteria",
+      "order": "Peribacterales",
+      "train_removed": 41,
+      "val_removed": 3,
+      "test_refs": 2,
+      "n_genera": 20,
+      "median_Mbp": 1.209,
+      "train_left_same_order": 0,
+      "train_left_same_class": 40,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "Saccharimonadaceae",
+      "phylum": "Patescibacteriota",
+      "class": "Saccharimonadia",
+      "order": "Saccharimonadales",
+      "train_removed": 35,
+      "val_removed": 3,
+      "test_refs": 4,
+      "n_genera": 1,
+      "median_Mbp": 1.009,
+      "train_left_same_order": 93,
+      "train_left_same_class": 103,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "Staskawiczbacteraceae",
+      "phylum": "Patescibacteriota",
+      "class": "Minisyncoccia",
+      "order": "Minisyncoccales",
+      "train_removed": 10,
+      "val_removed": 4,
+      "test_refs": 3,
+      "n_genera": 5,
+      "median_Mbp": 0.762,
+      "train_left_same_order": 35,
+      "train_left_same_class": 323,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "UBA1547",
+      "phylum": "Patescibacteriota",
+      "class": "Saccharimonadia",
+      "order": "Saccharimonadales",
+      "train_removed": 14,
+      "val_removed": 6,
+      "test_refs": 3,
+      "n_genera": 3,
+      "median_Mbp": 0.848,
+      "train_left_same_order": 93,
+      "train_left_same_class": 103,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "UBA2103",
+      "phylum": "Patescibacteriota",
+      "class": "Minisyncoccia",
+      "order": "UBA9973",
+      "train_removed": 42,
+      "val_removed": 7,
+      "test_refs": 3,
+      "n_genera": 3,
+      "median_Mbp": 0.721,
+      "train_left_same_order": 130,
+      "train_left_same_class": 323,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "UBA2206",
+      "phylum": "Patescibacteriota",
+      "class": "Minisyncoccia",
+      "order": "Moranbacterales",
+      "train_removed": 15,
+      "val_removed": 3,
+      "test_refs": 2,
+      "n_genera": 11,
+      "median_Mbp": 1.005,
+      "train_left_same_order": 27,
+      "train_left_same_class": 323,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "UBA4665",
+      "phylum": "Patescibacteriota",
+      "class": "Saccharimonadia",
+      "order": "Saccharimonadales",
+      "train_removed": 39,
+      "val_removed": 6,
+      "test_refs": 5,
+      "n_genera": 25,
+      "median_Mbp": 0.918,
+      "train_left_same_order": 93,
+      "train_left_same_class": 103,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "UBA8517",
+      "phylum": "Patescibacteriota",
+      "class": "Microgenomatia",
+      "order": "GWA2-44-7",
+      "train_removed": 14,
+      "val_removed": 1,
+      "test_refs": 3,
+      "n_genera": 10,
+      "median_Mbp": 0.992,
+      "train_left_same_order": 1,
+      "train_left_same_class": 99,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "UBA918",
+      "phylum": "Patescibacteriota",
+      "class": "Minisyncoccia",
+      "order": "UBA9973",
+      "train_removed": 23,
+      "val_removed": 1,
+      "test_refs": 3,
+      "n_genera": 5,
+      "median_Mbp": 0.906,
+      "train_left_same_order": 130,
+      "train_left_same_class": 323,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "UBA922",
+      "phylum": "Patescibacteriota",
+      "class": "Patescibacteriia",
+      "order": "Magasanikbacterales",
+      "train_removed": 27,
+      "val_removed": 1,
+      "test_refs": 3,
+      "n_genera": 18,
+      "median_Mbp": 1.019,
+      "train_left_same_order": 4,
+      "train_left_same_class": 123,
+      "train_left_same_phylum": 756
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "family": "UBA9973",
+      "phylum": "Patescibacteriota",
+      "class": "Minisyncoccia",
+      "order": "UBA9973",
+      "train_removed": 64,
+      "val_removed": 10,
+      "test_refs": 8,
+      "n_genera": 12,
+      "median_Mbp": 0.725,
+      "train_left_same_order": 130,
+      "train_left_same_class": 323,
+      "train_left_same_phylum": 756
+    }
+  ],
+  "kmer_selection_leakage": {
+    "bacterial": {
+      "n_reps": 1000,
+      "n_panel": 66,
+      "pct_panel": 6.6,
+      "by_family": {
+        "Helicobacteraceae": 21,
+        "Muribaculaceae": 19,
+        "Flavobacteriaceae": 8,
+        "Nanosyncoccaceae": 4,
+        "UBA2103": 3,
+        "Arcobacteraceae": 2,
+        "UBA2206": 2,
+        "Minisyncoccaceae": 2,
+        "UBA9973": 2,
+        "Nanoperiomorbaceae": 1,
+        "GWA2-37-8": 1,
+        "PJMF01": 1
+      }
+    },
+    "archaeal": {
+      "n_reps": 1000,
+      "n_panel": 135,
+      "pct_panel": 13.5,
+      "by_family": {
+        "Haloferacaceae": 87,
+        "Haloarculaceae": 48
+      }
+    }
+  },
+  "v5_metadata_fields": [
+    "completeness",
+    "contamination",
+    "dominant_phylum",
+    "sample_type",
+    "quality_tier",
+    "dominant_accession",
+    "genome_full_length",
+    "n_contaminants",
+    "batch_id"
+  ],
+  "v5_records_contaminant_taxonomy": false,
+  "v5_train_panel_family_dominant_fraction": 8.427,
+  "holdout_model_status": "VALIDATION ARTIFACT ONLY. The released MAGICC model (models/magicc_v5.onnx) remains trained on all data."
+}

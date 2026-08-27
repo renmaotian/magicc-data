@@ -1,0 +1,2055 @@
+{
+  "script": "scripts/136_reduced_genome_mechanism_and_crosscheck.py",
+  "seed": 13600,
+  "n_bootstrap": 5000,
+  "R2_convention": "coefficient of determination, 1 - SS_res/SS_tot (protocol 4.4d)",
+  "sign_convention": "all real-data deltas are MAGICC minus CheckM2",
+  "clustering": "GTDB family for real cohorts; dominant reference genome for set_C_clean",
+  "magicc_completeness_floor": 50.0,
+  "n_real_genomes": 1368,
+  "dose_response": [
+    {
+      "analysis": "dose_response_log10size",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_completeness",
+      "n": 750,
+      "n_clusters": 361,
+      "intercept": -101.034,
+      "slope_per_log10Mbp": 15.311,
+      "slope_ci95": [
+        12.313,
+        18.309
+      ],
+      "slope_p": "4.34e-21",
+      "R2_coefficient_of_determination": 0.1826
+    },
+    {
+      "analysis": "dose_response_log10size",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_contamination",
+      "n": 750,
+      "n_clusters": 361,
+      "intercept": -23.356,
+      "slope_per_log10Mbp": 4.084,
+      "slope_ci95": [
+        0.548,
+        7.62
+      ],
+      "slope_p": "0.0237",
+      "R2_coefficient_of_determination": 0.0188
+    },
+    {
+      "analysis": "dose_response_log10size",
+      "pool": "non_reduced_control_genera",
+      "target": "delta_completeness",
+      "n": 320,
+      "n_clusters": 6,
+      "intercept": 35.435,
+      "slope_per_log10Mbp": -5.293,
+      "slope_ci95": [
+        -14.559,
+        3.974
+      ],
+      "slope_p": "0.202",
+      "R2_coefficient_of_determination": 0.0145
+    },
+    {
+      "analysis": "dose_response_log10size",
+      "pool": "non_reduced_control_genera",
+      "target": "delta_contamination",
+      "n": 320,
+      "n_clusters": 6,
+      "intercept": -108.933,
+      "slope_per_log10Mbp": 17.022,
+      "slope_ci95": [
+        -25.308,
+        59.353
+      ],
+      "slope_p": "0.349",
+      "R2_coefficient_of_determination": 0.0941
+    },
+    {
+      "analysis": "dose_response_log10size",
+      "pool": "size_stratified+controls",
+      "target": "delta_completeness",
+      "n": 1070,
+      "n_clusters": 361,
+      "intercept": -93.391,
+      "slope_per_log10Mbp": 14.284,
+      "slope_ci95": [
+        11.14,
+        17.428
+      ],
+      "slope_p": "2.17e-17",
+      "R2_coefficient_of_determination": 0.1477
+    },
+    {
+      "analysis": "dose_response_log10size",
+      "pool": "size_stratified+controls",
+      "target": "delta_contamination",
+      "n": 1070,
+      "n_clusters": 361,
+      "intercept": -28.291,
+      "slope_per_log10Mbp": 4.756,
+      "slope_ci95": [
+        -0.773,
+        10.285
+      ],
+      "slope_p": "0.0916",
+      "R2_coefficient_of_determination": 0.021
+    },
+    {
+      "analysis": "dose_response_log10size",
+      "pool": "all_cohorts",
+      "target": "delta_completeness",
+      "n": 1368,
+      "n_clusters": 361,
+      "intercept": -132.252,
+      "slope_per_log10Mbp": 20.16,
+      "slope_ci95": [
+        13.104,
+        27.216
+      ],
+      "slope_p": "3.86e-08",
+      "R2_coefficient_of_determination": 0.1872
+    },
+    {
+      "analysis": "dose_response_log10size",
+      "pool": "all_cohorts",
+      "target": "delta_contamination",
+      "n": 1368,
+      "n_clusters": 361,
+      "intercept": 30.417,
+      "slope_per_log10Mbp": -4.029,
+      "slope_ci95": [
+        -12.233,
+        4.175
+      ],
+      "slope_p": "0.335",
+      "R2_coefficient_of_determination": 0.0102
+    }
+  ],
+  "mechanism_coefficients": [
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_completeness",
+      "predictor": "log10_genome_size",
+      "n": 745,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 5.821,
+      "ci95": [
+        4.503,
+        7.14
+      ],
+      "p": "1.41e-16",
+      "partial_R2_increment": 0.132,
+      "full_model_R2": 0.2714
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_completeness",
+      "predictor": "n_scg_detected",
+      "n": 745,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -3.521,
+      "ci95": [
+        -4.437,
+        -2.605
+      ],
+      "p": "3.44e-13",
+      "partial_R2_increment": 0.0834,
+      "full_model_R2": 0.2714
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_completeness",
+      "predictor": "log2_size_vs_phylum",
+      "n": 745,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -0.162,
+      "ci95": [
+        -1.316,
+        0.993
+      ],
+      "p": "0.783",
+      "partial_R2_increment": 0.0001,
+      "full_model_R2": 0.2714
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_completeness",
+      "predictor": "log10_contig_count",
+      "n": 745,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -0.371,
+      "ci95": [
+        -1.143,
+        0.401
+      ],
+      "p": "0.345",
+      "partial_R2_increment": 0.0009,
+      "full_model_R2": 0.2714
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_contamination",
+      "predictor": "log10_genome_size",
+      "n": 745,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -0.08,
+      "ci95": [
+        -1.128,
+        0.968
+      ],
+      "p": "0.88",
+      "partial_R2_increment": 0.0,
+      "full_model_R2": 0.0436
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_contamination",
+      "predictor": "n_scg_detected",
+      "n": 745,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 0.587,
+      "ci95": [
+        -0.047,
+        1.22
+      ],
+      "p": "0.0696",
+      "partial_R2_increment": 0.0033,
+      "full_model_R2": 0.0436
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_contamination",
+      "predictor": "log2_size_vs_phylum",
+      "n": 745,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 1.875,
+      "ci95": [
+        0.738,
+        3.012
+      ],
+      "p": "0.0013",
+      "partial_R2_increment": 0.0222,
+      "full_model_R2": 0.0436
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_contamination",
+      "predictor": "log10_contig_count",
+      "n": 745,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 0.008,
+      "ci95": [
+        -0.968,
+        0.985
+      ],
+      "p": "0.987",
+      "partial_R2_increment": 0.0,
+      "full_model_R2": 0.0436
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified+controls",
+      "target": "delta_completeness",
+      "predictor": "log10_genome_size",
+      "n": 1065,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 5.182,
+      "ci95": [
+        3.896,
+        6.469
+      ],
+      "p": "3.05e-14",
+      "partial_R2_increment": 0.1237,
+      "full_model_R2": 0.2369
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified+controls",
+      "target": "delta_completeness",
+      "predictor": "n_scg_detected",
+      "n": 1065,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -3.278,
+      "ci95": [
+        -4.17,
+        -2.386
+      ],
+      "p": "3.03e-12",
+      "partial_R2_increment": 0.0829,
+      "full_model_R2": 0.2369
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified+controls",
+      "target": "delta_completeness",
+      "predictor": "log2_size_vs_phylum",
+      "n": 1065,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -0.681,
+      "ci95": [
+        -1.954,
+        0.593
+      ],
+      "p": "0.294",
+      "partial_R2_increment": 0.0024,
+      "full_model_R2": 0.2369
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified+controls",
+      "target": "delta_completeness",
+      "predictor": "log10_contig_count",
+      "n": 1065,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -0.307,
+      "ci95": [
+        -1.011,
+        0.398
+      ],
+      "p": "0.393",
+      "partial_R2_increment": 0.0007,
+      "full_model_R2": 0.2369
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified+controls",
+      "target": "delta_contamination",
+      "predictor": "log10_genome_size",
+      "n": 1065,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -0.311,
+      "ci95": [
+        -1.234,
+        0.612
+      ],
+      "p": "0.508",
+      "partial_R2_increment": 0.0006,
+      "full_model_R2": 0.0593
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified+controls",
+      "target": "delta_contamination",
+      "predictor": "n_scg_detected",
+      "n": 1065,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 0.938,
+      "ci95": [
+        0.247,
+        1.628
+      ],
+      "p": "0.00789",
+      "partial_R2_increment": 0.0086,
+      "full_model_R2": 0.0593
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified+controls",
+      "target": "delta_contamination",
+      "predictor": "log2_size_vs_phylum",
+      "n": 1065,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 2.231,
+      "ci95": [
+        0.501,
+        3.962
+      ],
+      "p": "0.0117",
+      "partial_R2_increment": 0.0324,
+      "full_model_R2": 0.0593
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "size_stratified+controls",
+      "target": "delta_contamination",
+      "predictor": "log10_contig_count",
+      "n": 1065,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -0.07,
+      "ci95": [
+        -0.79,
+        0.649
+      ],
+      "p": "0.848",
+      "partial_R2_increment": 0.0,
+      "full_model_R2": 0.0593
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "all_cohorts",
+      "target": "delta_completeness",
+      "predictor": "log10_genome_size",
+      "n": 1363,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 5.547,
+      "ci95": [
+        4.074,
+        7.019
+      ],
+      "p": "9.39e-13",
+      "partial_R2_increment": 0.0689,
+      "full_model_R2": 0.2937
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "all_cohorts",
+      "target": "delta_completeness",
+      "predictor": "n_scg_detected",
+      "n": 1363,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -4.169,
+      "ci95": [
+        -5.624,
+        -2.713
+      ],
+      "p": "3.61e-08",
+      "partial_R2_increment": 0.0818,
+      "full_model_R2": 0.2937
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "all_cohorts",
+      "target": "delta_completeness",
+      "predictor": "log2_size_vs_phylum",
+      "n": 1363,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 1.093,
+      "ci95": [
+        -1.224,
+        3.41
+      ],
+      "p": "0.354",
+      "partial_R2_increment": 0.0029,
+      "full_model_R2": 0.2937
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "all_cohorts",
+      "target": "delta_completeness",
+      "predictor": "log10_contig_count",
+      "n": 1363,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -0.132,
+      "ci95": [
+        -0.964,
+        0.7
+      ],
+      "p": "0.756",
+      "partial_R2_increment": 0.0001,
+      "full_model_R2": 0.2937
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "all_cohorts",
+      "target": "delta_contamination",
+      "predictor": "log10_genome_size",
+      "n": 1363,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": -1.526,
+      "ci95": [
+        -3.139,
+        0.088
+      ],
+      "p": "0.0637",
+      "partial_R2_increment": 0.0071,
+      "full_model_R2": 0.0375
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "all_cohorts",
+      "target": "delta_contamination",
+      "predictor": "n_scg_detected",
+      "n": 1363,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 1.934,
+      "ci95": [
+        0.855,
+        3.014
+      ],
+      "p": "0.000481",
+      "partial_R2_increment": 0.0239,
+      "full_model_R2": 0.0375
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "all_cohorts",
+      "target": "delta_contamination",
+      "predictor": "log2_size_vs_phylum",
+      "n": 1363,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 0.073,
+      "ci95": [
+        -2.215,
+        2.36
+      ],
+      "p": "0.95",
+      "partial_R2_increment": 0.0,
+      "full_model_R2": 0.0375
+    },
+    {
+      "analysis": "standardised_multiple_regression",
+      "pool": "all_cohorts",
+      "target": "delta_contamination",
+      "predictor": "log10_contig_count",
+      "n": 1363,
+      "n_clusters": 356,
+      "std_beta_pp_per_SD": 0.115,
+      "ci95": [
+        -0.582,
+        0.813
+      ],
+      "p": "0.745",
+      "partial_R2_increment": 0.0001,
+      "full_model_R2": 0.0375
+    }
+  ],
+  "nested_model_R2": [
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_completeness",
+      "model": "size_only",
+      "predictors": "log10_genome_size",
+      "n": 745,
+      "R2_coefficient_of_determination": 0.1838
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_completeness",
+      "model": "scg_only",
+      "predictors": "n_scg_detected",
+      "n": 745,
+      "R2_coefficient_of_determination": 0.0388
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_completeness",
+      "model": "size_plus_scg",
+      "predictors": "log10_genome_size+n_scg_detected",
+      "n": 745,
+      "R2_coefficient_of_determination": 0.2704
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_completeness",
+      "model": "full_4_predictor",
+      "predictors": "log10_genome_size+n_scg_detected+log2_size_vs_phylum+log10_contig_count",
+      "n": 745,
+      "R2_coefficient_of_determination": 0.2714
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_contamination",
+      "model": "size_only",
+      "predictors": "log10_genome_size",
+      "n": 745,
+      "R2_coefficient_of_determination": 0.0185
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_contamination",
+      "model": "scg_only",
+      "predictors": "n_scg_detected",
+      "n": 745,
+      "R2_coefficient_of_determination": 0.0065
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_contamination",
+      "model": "size_plus_scg",
+      "predictors": "log10_genome_size+n_scg_detected",
+      "n": 745,
+      "R2_coefficient_of_determination": 0.0213
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified_MAGs",
+      "target": "delta_contamination",
+      "model": "full_4_predictor",
+      "predictors": "log10_genome_size+n_scg_detected+log2_size_vs_phylum+log10_contig_count",
+      "n": 745,
+      "R2_coefficient_of_determination": 0.0436
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified+controls",
+      "target": "delta_completeness",
+      "model": "size_only",
+      "predictors": "log10_genome_size",
+      "n": 1065,
+      "R2_coefficient_of_determination": 0.148
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified+controls",
+      "target": "delta_completeness",
+      "model": "scg_only",
+      "predictors": "n_scg_detected",
+      "n": 1065,
+      "R2_coefficient_of_determination": 0.0447
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified+controls",
+      "target": "delta_completeness",
+      "model": "size_plus_scg",
+      "predictors": "log10_genome_size+n_scg_detected",
+      "n": 1065,
+      "R2_coefficient_of_determination": 0.2337
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified+controls",
+      "target": "delta_completeness",
+      "model": "full_4_predictor",
+      "predictors": "log10_genome_size+n_scg_detected+log2_size_vs_phylum+log10_contig_count",
+      "n": 1065,
+      "R2_coefficient_of_determination": 0.2369
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified+controls",
+      "target": "delta_contamination",
+      "model": "size_only",
+      "predictors": "log10_genome_size",
+      "n": 1065,
+      "R2_coefficient_of_determination": 0.0208
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified+controls",
+      "target": "delta_contamination",
+      "model": "scg_only",
+      "predictors": "n_scg_detected",
+      "n": 1065,
+      "R2_coefficient_of_determination": 0.011
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified+controls",
+      "target": "delta_contamination",
+      "model": "size_plus_scg",
+      "predictors": "log10_genome_size+n_scg_detected",
+      "n": 1065,
+      "R2_coefficient_of_determination": 0.0269
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "size_stratified+controls",
+      "target": "delta_contamination",
+      "model": "full_4_predictor",
+      "predictors": "log10_genome_size+n_scg_detected+log2_size_vs_phylum+log10_contig_count",
+      "n": 1065,
+      "R2_coefficient_of_determination": 0.0593
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "all_cohorts",
+      "target": "delta_completeness",
+      "model": "size_only",
+      "predictors": "log10_genome_size",
+      "n": 1363,
+      "R2_coefficient_of_determination": 0.188
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "all_cohorts",
+      "target": "delta_completeness",
+      "model": "scg_only",
+      "predictors": "n_scg_detected",
+      "n": 1363,
+      "R2_coefficient_of_determination": 0.0654
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "all_cohorts",
+      "target": "delta_completeness",
+      "model": "size_plus_scg",
+      "predictors": "log10_genome_size+n_scg_detected",
+      "n": 1363,
+      "R2_coefficient_of_determination": 0.2908
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "all_cohorts",
+      "target": "delta_completeness",
+      "model": "full_4_predictor",
+      "predictors": "log10_genome_size+n_scg_detected+log2_size_vs_phylum+log10_contig_count",
+      "n": 1363,
+      "R2_coefficient_of_determination": 0.2937
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "all_cohorts",
+      "target": "delta_contamination",
+      "model": "size_only",
+      "predictors": "log10_genome_size",
+      "n": 1363,
+      "R2_coefficient_of_determination": 0.0104
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "all_cohorts",
+      "target": "delta_contamination",
+      "model": "scg_only",
+      "predictors": "n_scg_detected",
+      "n": 1363,
+      "R2_coefficient_of_determination": 0.022
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "all_cohorts",
+      "target": "delta_contamination",
+      "model": "size_plus_scg",
+      "predictors": "log10_genome_size+n_scg_detected",
+      "n": 1363,
+      "R2_coefficient_of_determination": 0.0374
+    },
+    {
+      "analysis": "nested_model_R2",
+      "pool": "all_cohorts",
+      "target": "delta_contamination",
+      "model": "full_4_predictor",
+      "predictors": "log10_genome_size+n_scg_detected+log2_size_vs_phylum+log10_contig_count",
+      "n": 1363,
+      "R2_coefficient_of_determination": 0.0375
+    }
+  ],
+  "within_size_bin": [
+    {
+      "analysis": "within_size_bin",
+      "bin": "<1Mb",
+      "n": 211,
+      "target": "delta_completeness",
+      "rho_n_scg_detected": -0.3358,
+      "p_n_scg": "5.88e-07",
+      "rho_genome_size": 0.164,
+      "p_size": "0.0171"
+    },
+    {
+      "analysis": "within_size_bin",
+      "bin": "<1Mb",
+      "n": 211,
+      "target": "delta_contamination",
+      "rho_n_scg_detected": 0.025,
+      "p_n_scg": "0.718",
+      "rho_genome_size": 0.0999,
+      "p_size": "0.148"
+    },
+    {
+      "analysis": "within_size_bin",
+      "bin": "1-2Mb",
+      "n": 431,
+      "target": "delta_completeness",
+      "rho_n_scg_detected": -0.3,
+      "p_n_scg": "2.07e-10",
+      "rho_genome_size": 0.4986,
+      "p_size": "1.79e-28"
+    },
+    {
+      "analysis": "within_size_bin",
+      "bin": "1-2Mb",
+      "n": 431,
+      "target": "delta_contamination",
+      "rho_n_scg_detected": 0.2971,
+      "p_n_scg": "3.12e-10",
+      "rho_genome_size": -0.4628,
+      "p_size": "2.9e-24"
+    },
+    {
+      "analysis": "within_size_bin",
+      "bin": "2-3Mb",
+      "n": 312,
+      "target": "delta_completeness",
+      "rho_n_scg_detected": -0.3239,
+      "p_n_scg": "4.7e-09",
+      "rho_genome_size": 0.014,
+      "p_size": "0.805"
+    },
+    {
+      "analysis": "within_size_bin",
+      "bin": "2-3Mb",
+      "n": 312,
+      "target": "delta_contamination",
+      "rho_n_scg_detected": 0.2467,
+      "p_n_scg": "1.04e-05",
+      "rho_genome_size": 0.0162,
+      "p_size": "0.776"
+    },
+    {
+      "analysis": "within_size_bin",
+      "bin": "3-5Mb",
+      "n": 241,
+      "target": "delta_completeness",
+      "rho_n_scg_detected": -0.335,
+      "p_n_scg": "9.92e-08",
+      "rho_genome_size": -0.019,
+      "p_size": "0.769"
+    },
+    {
+      "analysis": "within_size_bin",
+      "bin": "3-5Mb",
+      "n": 241,
+      "target": "delta_contamination",
+      "rho_n_scg_detected": 0.2458,
+      "p_n_scg": "0.000115",
+      "rho_genome_size": 0.0861,
+      "p_size": "0.183"
+    },
+    {
+      "analysis": "within_size_bin",
+      "bin": ">5Mb",
+      "n": 173,
+      "target": "delta_completeness",
+      "rho_n_scg_detected": -0.373,
+      "p_n_scg": "4.32e-07",
+      "rho_genome_size": 0.0214,
+      "p_size": "0.78"
+    },
+    {
+      "analysis": "within_size_bin",
+      "bin": ">5Mb",
+      "n": 173,
+      "target": "delta_contamination",
+      "rho_n_scg_detected": 0.1179,
+      "p_n_scg": "0.122",
+      "rho_genome_size": 0.0087,
+      "p_size": "0.909"
+    }
+  ],
+  "tool_attribution": [
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified_MAGs",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_completeness",
+      "predictor": "log10_genome_size",
+      "n": 750,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 8.823,
+      "ci95": [
+        7.518,
+        10.128
+      ],
+      "p": "4.12e-33",
+      "partial_R2_increment": 0.3126,
+      "full_model_R2": 0.3761
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified_MAGs",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_completeness",
+      "predictor": "n_scg_detected",
+      "n": 750,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 2.081,
+      "ci95": [
+        0.893,
+        3.27
+      ],
+      "p": "0.000638",
+      "partial_R2_increment": 0.0174,
+      "full_model_R2": 0.3761
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified_MAGs",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_contamination",
+      "predictor": "log10_genome_size",
+      "n": 750,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 1.834,
+      "ci95": [
+        0.614,
+        3.053
+      ],
+      "p": "0.0033",
+      "partial_R2_increment": 0.0334,
+      "full_model_R2": 0.0379
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified_MAGs",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_contamination",
+      "predictor": "n_scg_detected",
+      "n": 750,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 0.277,
+      "ci95": [
+        -0.232,
+        0.785
+      ],
+      "p": "0.285",
+      "partial_R2_increment": 0.0008,
+      "full_model_R2": 0.0379
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified_MAGs",
+      "tool": "CheckM2",
+      "target": "CheckM2_completeness",
+      "predictor": "log10_genome_size",
+      "n": 750,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 3.296,
+      "ci95": [
+        2.295,
+        4.296
+      ],
+      "p": "3.09e-10",
+      "partial_R2_increment": 0.0854,
+      "full_model_R2": 0.3938
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified_MAGs",
+      "tool": "CheckM2",
+      "target": "CheckM2_completeness",
+      "predictor": "n_scg_detected",
+      "n": 750,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 5.454,
+      "ci95": [
+        4.548,
+        6.36
+      ],
+      "p": "1.58e-27",
+      "partial_R2_increment": 0.2338,
+      "full_model_R2": 0.3938
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified_MAGs",
+      "tool": "CheckM2",
+      "target": "CheckM2_contamination",
+      "predictor": "log10_genome_size",
+      "n": 750,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 0.647,
+      "ci95": [
+        0.45,
+        0.843
+      ],
+      "p": "3.19e-10",
+      "partial_R2_increment": 0.145,
+      "full_model_R2": 0.148
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified_MAGs",
+      "tool": "CheckM2",
+      "target": "CheckM2_contamination",
+      "predictor": "n_scg_detected",
+      "n": 750,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": -0.224,
+      "ci95": [
+        -0.331,
+        -0.117
+      ],
+      "p": "4.86e-05",
+      "partial_R2_increment": 0.0174,
+      "full_model_R2": 0.148
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified+controls",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_completeness",
+      "predictor": "log10_genome_size",
+      "n": 1070,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 7.717,
+      "ci95": [
+        6.513,
+        8.921
+      ],
+      "p": "2.04e-30",
+      "partial_R2_increment": 0.2707,
+      "full_model_R2": 0.3571
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified+controls",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_completeness",
+      "predictor": "n_scg_detected",
+      "n": 1070,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 2.799,
+      "ci95": [
+        1.562,
+        4.035
+      ],
+      "p": "1.14e-05",
+      "partial_R2_increment": 0.0356,
+      "full_model_R2": 0.3571
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified+controls",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_contamination",
+      "predictor": "log10_genome_size",
+      "n": 1070,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 1.717,
+      "ci95": [
+        0.067,
+        3.367
+      ],
+      "p": "0.0414",
+      "partial_R2_increment": 0.031,
+      "full_model_R2": 0.0386
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified+controls",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_contamination",
+      "predictor": "n_scg_detected",
+      "n": 1070,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 0.506,
+      "ci95": [
+        -0.039,
+        1.05
+      ],
+      "p": "0.0686",
+      "partial_R2_increment": 0.0027,
+      "full_model_R2": 0.0386
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified+controls",
+      "tool": "CheckM2",
+      "target": "CheckM2_completeness",
+      "predictor": "log10_genome_size",
+      "n": 1070,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 3.126,
+      "ci95": [
+        2.206,
+        4.045
+      ],
+      "p": "8.72e-11",
+      "partial_R2_increment": 0.0808,
+      "full_model_R2": 0.4422
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified+controls",
+      "tool": "CheckM2",
+      "target": "CheckM2_completeness",
+      "predictor": "n_scg_detected",
+      "n": 1070,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 5.888,
+      "ci95": [
+        5.081,
+        6.695
+      ],
+      "p": "3.12e-37",
+      "partial_R2_increment": 0.2867,
+      "full_model_R2": 0.4422
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified+controls",
+      "tool": "CheckM2",
+      "target": "CheckM2_contamination",
+      "predictor": "log10_genome_size",
+      "n": 1070,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 0.524,
+      "ci95": [
+        0.316,
+        0.732
+      ],
+      "p": "1.11e-06",
+      "partial_R2_increment": 0.1002,
+      "full_model_R2": 0.1054
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "size_stratified+controls",
+      "tool": "CheckM2",
+      "target": "CheckM2_contamination",
+      "predictor": "n_scg_detected",
+      "n": 1070,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": -0.218,
+      "ci95": [
+        -0.355,
+        -0.08
+      ],
+      "p": "0.00208",
+      "partial_R2_increment": 0.0173,
+      "full_model_R2": 0.1054
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "all_cohorts",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_completeness",
+      "predictor": "log10_genome_size",
+      "n": 1368,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 8.976,
+      "ci95": [
+        7.55,
+        10.401
+      ],
+      "p": "1.39e-29",
+      "partial_R2_increment": 0.3204,
+      "full_model_R2": 0.3693
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "all_cohorts",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_completeness",
+      "predictor": "n_scg_detected",
+      "n": 1368,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 2.226,
+      "ci95": [
+        1.061,
+        3.392
+      ],
+      "p": "0.000202",
+      "partial_R2_increment": 0.0197,
+      "full_model_R2": 0.3693
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "all_cohorts",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_contamination",
+      "predictor": "log10_genome_size",
+      "n": 1368,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": -0.975,
+      "ci95": [
+        -3.468,
+        1.518
+      ],
+      "p": "0.442",
+      "partial_R2_increment": 0.007,
+      "full_model_R2": 0.0253
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "all_cohorts",
+      "tool": "MAGICC_V5",
+      "target": "MAGICC_V5_contamination",
+      "predictor": "n_scg_detected",
+      "n": 1368,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 1.703,
+      "ci95": [
+        0.537,
+        2.868
+      ],
+      "p": "0.00431",
+      "partial_R2_increment": 0.0212,
+      "full_model_R2": 0.0253
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "all_cohorts",
+      "tool": "CheckM2",
+      "target": "CheckM2_completeness",
+      "predictor": "log10_genome_size",
+      "n": 1368,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 2.672,
+      "ci95": [
+        1.697,
+        3.648
+      ],
+      "p": "1.3e-07",
+      "partial_R2_increment": 0.0629,
+      "full_model_R2": 0.4846
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "all_cohorts",
+      "tool": "CheckM2",
+      "target": "CheckM2_completeness",
+      "predictor": "n_scg_detected",
+      "n": 1368,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 6.479,
+      "ci95": [
+        5.223,
+        7.734
+      ],
+      "p": "1.9e-21",
+      "partial_R2_increment": 0.37,
+      "full_model_R2": 0.4846
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "all_cohorts",
+      "tool": "CheckM2",
+      "target": "CheckM2_contamination",
+      "predictor": "log10_genome_size",
+      "n": 1368,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": 0.425,
+      "ci95": [
+        0.208,
+        0.641
+      ],
+      "p": "0.000136",
+      "partial_R2_increment": 0.0699,
+      "full_model_R2": 0.0735
+    },
+    {
+      "analysis": "tool_attribution",
+      "pool": "all_cohorts",
+      "tool": "CheckM2",
+      "target": "CheckM2_contamination",
+      "predictor": "n_scg_detected",
+      "n": 1368,
+      "n_clusters": 361,
+      "std_beta_pp_per_SD": -0.155,
+      "ci95": [
+        -0.303,
+        -0.007
+      ],
+      "p": "0.0399",
+      "partial_R2_increment": 0.0093,
+      "full_model_R2": 0.0735
+    }
+  ],
+  "set_C_clean_size_response": [
+    {
+      "analysis": "set_C_clean_size_response",
+      "tool": "MAGICC_V5",
+      "target": "completeness",
+      "n": 1000,
+      "n_reference_clusters": 100,
+      "rho_assembly_size": 0.1018,
+      "p_size": "0.00126",
+      "rho_n_contigs": 0.1779,
+      "p_contigs": "1.48e-08",
+      "std_beta_pp_per_SD_log10size": 0.692,
+      "ci95": [
+        -0.657,
+        2.04
+      ],
+      "p": "0.311"
+    },
+    {
+      "analysis": "set_C_clean_size_response",
+      "tool": "MAGICC_V5",
+      "target": "contamination",
+      "n": 1000,
+      "n_reference_clusters": 100,
+      "rho_assembly_size": -0.1237,
+      "p_size": "8.76e-05",
+      "rho_n_contigs": -0.1814,
+      "p_contigs": "7.6e-09",
+      "std_beta_pp_per_SD_log10size": -1.319,
+      "ci95": [
+        -2.624,
+        -0.014
+      ],
+      "p": "0.0476"
+    },
+    {
+      "analysis": "set_C_clean_size_response",
+      "tool": "CheckM2",
+      "target": "completeness",
+      "n": 1000,
+      "n_reference_clusters": 100,
+      "rho_assembly_size": -0.3068,
+      "p_size": "3.05e-23",
+      "rho_n_contigs": 0.0207,
+      "p_contigs": "0.514",
+      "std_beta_pp_per_SD_log10size": -2.33,
+      "ci95": [
+        -3.043,
+        -1.616
+      ],
+      "p": "3.58e-09"
+    },
+    {
+      "analysis": "set_C_clean_size_response",
+      "tool": "CheckM2",
+      "target": "contamination",
+      "n": 1000,
+      "n_reference_clusters": 100,
+      "rho_assembly_size": -0.5938,
+      "p_size": "2.47e-96",
+      "rho_n_contigs": -0.3215,
+      "p_contigs": "1.78e-25",
+      "std_beta_pp_per_SD_log10size": -13.737,
+      "ci95": [
+        -15.665,
+        -11.808
+      ],
+      "p": "1.75e-25"
+    }
+  ],
+  "implied_complete_genome_size": [
+    {
+      "analysis": "implied_complete_genome_size_Mbp",
+      "group": "reviewer_genera",
+      "n": 298,
+      "observed_size_median": 1.187,
+      "implied_by_MAGICC_median": 1.669,
+      "implied_by_CheckM2_median": 1.341,
+      "lineage_phylum_median": 2.761,
+      "implied_by_MAGICC_IQR": [
+        1.438,
+        1.939
+      ],
+      "implied_by_CheckM2_IQR": [
+        1.137,
+        1.545
+      ]
+    },
+    {
+      "analysis": "implied_complete_genome_size_Mbp",
+      "group": "size_stratified:<1Mb",
+      "n": 150,
+      "observed_size_median": 0.814,
+      "implied_by_MAGICC_median": 1.134,
+      "implied_by_CheckM2_median": 0.923,
+      "lineage_phylum_median": 0.912,
+      "implied_by_MAGICC_IQR": [
+        0.898,
+        1.378
+      ],
+      "implied_by_CheckM2_IQR": [
+        0.763,
+        1.096
+      ]
+    },
+    {
+      "analysis": "implied_complete_genome_size_Mbp",
+      "group": "size_stratified:1-2Mb",
+      "n": 150,
+      "observed_size_median": 1.644,
+      "implied_by_MAGICC_median": 2.009,
+      "implied_by_CheckM2_median": 1.911,
+      "lineage_phylum_median": 3.021,
+      "implied_by_MAGICC_IQR": [
+        1.761,
+        2.265
+      ],
+      "implied_by_CheckM2_IQR": [
+        1.634,
+        2.17
+      ]
+    },
+    {
+      "analysis": "implied_complete_genome_size_Mbp",
+      "group": "size_stratified:2-3Mb",
+      "n": 150,
+      "observed_size_median": 2.414,
+      "implied_by_MAGICC_median": 2.742,
+      "implied_by_CheckM2_median": 2.744,
+      "lineage_phylum_median": 3.07,
+      "implied_by_MAGICC_IQR": [
+        2.41,
+        3.085
+      ],
+      "implied_by_CheckM2_IQR": [
+        2.426,
+        3.08
+      ]
+    },
+    {
+      "analysis": "implied_complete_genome_size_Mbp",
+      "group": "size_stratified:3-5Mb",
+      "n": 150,
+      "observed_size_median": 3.592,
+      "implied_by_MAGICC_median": 3.93,
+      "implied_by_CheckM2_median": 3.975,
+      "lineage_phylum_median": 3.421,
+      "implied_by_MAGICC_IQR": [
+        3.546,
+        4.529
+      ],
+      "implied_by_CheckM2_IQR": [
+        3.562,
+        4.571
+      ]
+    },
+    {
+      "analysis": "implied_complete_genome_size_Mbp",
+      "group": "size_stratified:>5Mb",
+      "n": 150,
+      "observed_size_median": 5.798,
+      "implied_by_MAGICC_median": 6.065,
+      "implied_by_CheckM2_median": 6.142,
+      "lineage_phylum_median": 4.601,
+      "implied_by_MAGICC_IQR": [
+        5.496,
+        6.894
+      ],
+      "implied_by_CheckM2_IQR": [
+        5.484,
+        7.047
+      ]
+    },
+    {
+      "analysis": "implied_complete_genome_size_Mbp",
+      "group": "control_genera",
+      "n": 320,
+      "observed_size_median": 2.582,
+      "implied_by_MAGICC_median": 2.814,
+      "implied_by_CheckM2_median": 2.903,
+      "lineage_phylum_median": 3.07,
+      "implied_by_MAGICC_IQR": [
+        2.351,
+        3.96
+      ],
+      "implied_by_CheckM2_IQR": [
+        2.364,
+        4.135
+      ]
+    },
+    {
+      "analysis": "implied_complete_genome_size_Mbp",
+      "group": "ALL",
+      "n": 1368,
+      "observed_size_median": 2.107,
+      "implied_by_MAGICC_median": 2.373,
+      "implied_by_CheckM2_median": 2.342,
+      "lineage_phylum_median": null,
+      "implied_by_MAGICC_IQR": [
+        1.725,
+        3.751
+      ],
+      "implied_by_CheckM2_IQR": [
+        1.442,
+        3.7
+      ]
+    }
+  ],
+  "lineage_relative_size": [
+    {
+      "log2_size_vs_phylum_bin": "<-1 (>=2x reduced)",
+      "n": 257,
+      "n_family_clusters": 44,
+      "genome_size_median_Mbp": 1.074,
+      "delta_completeness_median": -13.07,
+      "delta_completeness_ci95": [
+        -21.32,
+        -0.56
+      ],
+      "delta_contamination_median": 3.77,
+      "delta_contamination_ci95": [
+        0.04,
+        7.02
+      ],
+      "pct_magicc_cont_ge5_while_checkm2_lt5": 48.6
+    },
+    {
+      "log2_size_vs_phylum_bin": "-1 to -0.5",
+      "n": 282,
+      "n_family_clusters": 74,
+      "genome_size_median_Mbp": 1.532,
+      "delta_completeness_median": -1.49,
+      "delta_completeness_ci95": [
+        -9.33,
+        0.19
+      ],
+      "delta_contamination_median": 0.66,
+      "delta_contamination_ci95": [
+        -0.08,
+        10.48
+      ],
+      "pct_magicc_cont_ge5_while_checkm2_lt5": 41.5
+    },
+    {
+      "log2_size_vs_phylum_bin": "-0.5 to -0.25",
+      "n": 152,
+      "n_family_clusters": 86,
+      "genome_size_median_Mbp": 1.993,
+      "delta_completeness_median": -1.46,
+      "delta_completeness_ci95": [
+        -6.78,
+        0.01
+      ],
+      "delta_contamination_median": -0.05,
+      "delta_contamination_ci95": [
+        -0.21,
+        0.28
+      ],
+      "pct_magicc_cont_ge5_while_checkm2_lt5": 9.2
+    },
+    {
+      "log2_size_vs_phylum_bin": "-0.25 to +0.25 (typical)",
+      "n": 412,
+      "n_family_clusters": 154,
+      "genome_size_median_Mbp": 2.637,
+      "delta_completeness_median": 0.07,
+      "delta_completeness_ci95": [
+        -0.12,
+        1.08
+      ],
+      "delta_contamination_median": -0.06,
+      "delta_contamination_ci95": [
+        -0.33,
+        0.14
+      ],
+      "pct_magicc_cont_ge5_while_checkm2_lt5": 9.7
+    },
+    {
+      "log2_size_vs_phylum_bin": ">+0.25 (larger than lineage)",
+      "n": 260,
+      "n_family_clusters": 98,
+      "genome_size_median_Mbp": 5.065,
+      "delta_completeness_median": 1.01,
+      "delta_completeness_ci95": [
+        -0.03,
+        1.68
+      ],
+      "delta_contamination_median": 0.01,
+      "delta_contamination_ci95": [
+        -0.21,
+        0.38
+      ],
+      "pct_magicc_cont_ge5_while_checkm2_lt5": 21.2
+    }
+  ],
+  "mimag_threshold_impact": [
+    {
+      "group": "reviewer_genera(all 5)",
+      "n": 298,
+      "pct_HQ_by_CheckM2": 60.7,
+      "pct_HQ_by_MAGICC": 8.1,
+      "false_fail_rate_cont5_vs_CheckM2": 0.7617,
+      "false_fail_ci95": [
+        0.7355,
+        0.7797
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.5537,
+      "HQ_downgrade_ci95": [
+        0.4859,
+        0.6529
+      ],
+      "n_at_magicc_completeness_floor_50": 1
+    },
+    {
+      "group": "CAG-557",
+      "n": 60,
+      "pct_HQ_by_CheckM2": 73.3,
+      "pct_HQ_by_MAGICC": 18.3,
+      "false_fail_rate_cont5_vs_CheckM2": 0.6333,
+      "false_fail_ci95": [
+        0.6333,
+        0.6333
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.5833,
+      "HQ_downgrade_ci95": [
+        0.5833,
+        0.5833
+      ],
+      "n_at_magicc_completeness_floor_50": 0
+    },
+    {
+      "group": "UMGS1491",
+      "n": 61,
+      "pct_HQ_by_CheckM2": 72.1,
+      "pct_HQ_by_MAGICC": 0.0,
+      "false_fail_rate_cont5_vs_CheckM2": 0.8361,
+      "false_fail_ci95": [
+        0.8361,
+        0.8361
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.7213,
+      "HQ_downgrade_ci95": [
+        0.7213,
+        0.7213
+      ],
+      "n_at_magicc_completeness_floor_50": 1
+    },
+    {
+      "group": "Caccenecus",
+      "n": 101,
+      "pct_HQ_by_CheckM2": 59.4,
+      "pct_HQ_by_MAGICC": 2.0,
+      "false_fail_rate_cont5_vs_CheckM2": 0.8812,
+      "false_fail_ci95": [
+        0.8812,
+        0.8812
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.5743,
+      "HQ_downgrade_ci95": [
+        0.5743,
+        0.5743
+      ],
+      "n_at_magicc_completeness_floor_50": 0
+    },
+    {
+      "group": "HGM10766",
+      "n": 15,
+      "pct_HQ_by_CheckM2": 26.7,
+      "pct_HQ_by_MAGICC": 0.0,
+      "false_fail_rate_cont5_vs_CheckM2": 0.7333,
+      "false_fail_ci95": [
+        0.7333,
+        0.7333
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.2667,
+      "HQ_downgrade_ci95": [
+        0.2667,
+        0.2667
+      ],
+      "n_at_magicc_completeness_floor_50": 0
+    },
+    {
+      "group": "Faecimonas",
+      "n": 61,
+      "pct_HQ_by_CheckM2": 47.5,
+      "pct_HQ_by_MAGICC": 18.0,
+      "false_fail_rate_cont5_vs_CheckM2": 0.623,
+      "false_fail_ci95": [
+        0.623,
+        0.623
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.3934,
+      "HQ_downgrade_ci95": [
+        0.3934,
+        0.3934
+      ],
+      "n_at_magicc_completeness_floor_50": 0
+    },
+    {
+      "group": "size_stratified:<1Mb",
+      "n": 150,
+      "pct_HQ_by_CheckM2": 40.7,
+      "pct_HQ_by_MAGICC": 14.7,
+      "false_fail_rate_cont5_vs_CheckM2": 0.2267,
+      "false_fail_ci95": [
+        0.156,
+        0.3
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.2733,
+      "HQ_downgrade_ci95": [
+        0.1928,
+        0.3657
+      ],
+      "n_at_magicc_completeness_floor_50": 3
+    },
+    {
+      "group": "size_stratified:1-2Mb",
+      "n": 150,
+      "pct_HQ_by_CheckM2": 42.0,
+      "pct_HQ_by_MAGICC": 28.0,
+      "false_fail_rate_cont5_vs_CheckM2": 0.0667,
+      "false_fail_ci95": [
+        0.0274,
+        0.1126
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.1933,
+      "HQ_downgrade_ci95": [
+        0.1274,
+        0.2628
+      ],
+      "n_at_magicc_completeness_floor_50": 0
+    },
+    {
+      "group": "size_stratified:2-3Mb",
+      "n": 150,
+      "pct_HQ_by_CheckM2": 52.7,
+      "pct_HQ_by_MAGICC": 53.3,
+      "false_fail_rate_cont5_vs_CheckM2": 0.0867,
+      "false_fail_ci95": [
+        0.0435,
+        0.1429
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.1067,
+      "HQ_downgrade_ci95": [
+        0.0593,
+        0.1742
+      ],
+      "n_at_magicc_completeness_floor_50": 0
+    },
+    {
+      "group": "size_stratified:3-5Mb",
+      "n": 150,
+      "pct_HQ_by_CheckM2": 64.0,
+      "pct_HQ_by_MAGICC": 56.7,
+      "false_fail_rate_cont5_vs_CheckM2": 0.1267,
+      "false_fail_ci95": [
+        0.0759,
+        0.1875
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.2067,
+      "HQ_downgrade_ci95": [
+        0.1491,
+        0.2845
+      ],
+      "n_at_magicc_completeness_floor_50": 0
+    },
+    {
+      "group": "size_stratified:>5Mb",
+      "n": 150,
+      "pct_HQ_by_CheckM2": 78.7,
+      "pct_HQ_by_MAGICC": 63.3,
+      "false_fail_rate_cont5_vs_CheckM2": 0.2333,
+      "false_fail_ci95": [
+        0.1548,
+        0.32
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.24,
+      "HQ_downgrade_ci95": [
+        0.1617,
+        0.3248
+      ],
+      "n_at_magicc_completeness_floor_50": 0
+    },
+    {
+      "group": "control_genera(all 8)",
+      "n": 320,
+      "pct_HQ_by_CheckM2": 65.6,
+      "pct_HQ_by_MAGICC": 67.5,
+      "false_fail_rate_cont5_vs_CheckM2": 0.0406,
+      "false_fail_ci95": [
+        0.0071,
+        0.0964
+      ],
+      "HQ_downgrade_rate_vs_CheckM2": 0.0906,
+      "HQ_downgrade_ci95": [
+        0.0464,
+        0.1306
+      ],
+      "n_at_magicc_completeness_floor_50": 0
+    }
+  ],
+  "set_C_clean_crosscheck": [
+    {
+      "stratum": "ALL set_C_clean",
+      "n": 1000,
+      "n_reference_clusters": 100,
+      "assembly_size_median_Mbp": 1.099,
+      "MAGICC_minus_truth_comp_mean": -2.32,
+      "MAGICC_minus_truth_comp_mean_ci95": [
+        -3.81,
+        -0.878
+      ],
+      "MAGICC_minus_truth_comp_median": -0.645,
+      "MAGICC_minus_truth_comp_median_ci95": [
+        -1.293,
+        -0.37
+      ],
+      "MAGICC_minus_truth_cont_mean": -3.554,
+      "MAGICC_minus_truth_cont_mean_ci95": [
+        -5.041,
+        -2.034
+      ],
+      "MAGICC_minus_truth_cont_median": -2.637,
+      "MAGICC_minus_truth_cont_median_ci95": [
+        -4.187,
+        -1.443
+      ],
+      "CheckM2_minus_truth_comp_mean": -4.205,
+      "CheckM2_minus_truth_comp_mean_ci95": [
+        -4.842,
+        -3.568
+      ],
+      "CheckM2_minus_truth_comp_median": -4.752,
+      "CheckM2_minus_truth_comp_median_ci95": [
+        -5.371,
+        -4.12
+      ],
+      "CheckM2_minus_truth_cont_mean": -39.604,
+      "CheckM2_minus_truth_cont_mean_ci95": [
+        -41.154,
+        -38.04
+      ],
+      "CheckM2_minus_truth_cont_median": -39.22,
+      "CheckM2_minus_truth_cont_median_ci95": [
+        -41.865,
+        -36.256
+      ],
+      "MAGICC_minus_CheckM2_comp_mean": 1.886,
+      "MAGICC_minus_CheckM2_comp_mean_ci95": [
+        0.282,
+        3.44
+      ],
+      "MAGICC_minus_CheckM2_comp_median": 2.997,
+      "MAGICC_minus_CheckM2_comp_median_ci95": [
+        1.504,
+        4.131
+      ],
+      "MAGICC_minus_CheckM2_cont_mean": 36.051,
+      "MAGICC_minus_CheckM2_cont_mean_ci95": [
+        34.461,
+        37.634
+      ],
+      "MAGICC_minus_CheckM2_cont_median": 37.627,
+      "MAGICC_minus_CheckM2_cont_median_ci95": [
+        34.679,
+        39.598
+      ],
+      "MAGICC_false_fail_rate_cont5": 0.023,
+      "MAGICC_false_fail_ci95": [
+        0.013,
+        0.036
+      ],
+      "CheckM2_false_fail_rate_cont5": 0.0,
+      "CheckM2_false_fail_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "stratum": "clean only (true cont < 5%)",
+      "n": 52,
+      "n_reference_clusters": 40,
+      "assembly_size_median_Mbp": 0.71,
+      "MAGICC_minus_truth_comp_mean": -6.455,
+      "MAGICC_minus_truth_comp_mean_ci95": [
+        -10.466,
+        -2.754
+      ],
+      "MAGICC_minus_truth_comp_median": -0.856,
+      "MAGICC_minus_truth_comp_median_ci95": [
+        -8.753,
+        -0.179
+      ],
+      "MAGICC_minus_truth_cont_mean": 4.791,
+      "MAGICC_minus_truth_cont_mean_ci95": [
+        2.526,
+        7.198
+      ],
+      "MAGICC_minus_truth_cont_median": 1.931,
+      "MAGICC_minus_truth_cont_median_ci95": [
+        0.564,
+        6.69
+      ],
+      "CheckM2_minus_truth_comp_mean": 1.318,
+      "CheckM2_minus_truth_comp_mean_ci95": [
+        -0.26,
+        2.884
+      ],
+      "CheckM2_minus_truth_comp_median": -0.02,
+      "CheckM2_minus_truth_comp_median_ci95": [
+        -1.12,
+        0.126
+      ],
+      "CheckM2_minus_truth_cont_mean": -1.4,
+      "CheckM2_minus_truth_cont_mean_ci95": [
+        -1.835,
+        -0.985
+      ],
+      "CheckM2_minus_truth_cont_median": -1.474,
+      "CheckM2_minus_truth_cont_median_ci95": [
+        -2.064,
+        -0.641
+      ],
+      "MAGICC_minus_CheckM2_comp_mean": -7.773,
+      "MAGICC_minus_CheckM2_comp_mean_ci95": [
+        -11.645,
+        -3.829
+      ],
+      "MAGICC_minus_CheckM2_comp_median": -4.266,
+      "MAGICC_minus_CheckM2_comp_median_ci95": [
+        -13.409,
+        0.583
+      ],
+      "MAGICC_minus_CheckM2_cont_mean": 6.192,
+      "MAGICC_minus_CheckM2_cont_mean_ci95": [
+        3.889,
+        8.655
+      ],
+      "MAGICC_minus_CheckM2_cont_median": 2.122,
+      "MAGICC_minus_CheckM2_cont_median_ci95": [
+        1.429,
+        7.484
+      ],
+      "MAGICC_false_fail_rate_cont5": 0.4423,
+      "MAGICC_false_fail_ci95": [
+        0.2758,
+        0.6111
+      ],
+      "CheckM2_false_fail_rate_cont5": 0.0,
+      "CheckM2_false_fail_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "stratum": "clean AND HQ-truth (cont<5, comp>=90)",
+      "n": 30,
+      "n_reference_clusters": 25,
+      "assembly_size_median_Mbp": 0.834,
+      "MAGICC_minus_truth_comp_mean": -8.677,
+      "MAGICC_minus_truth_comp_mean_ci95": [
+        -14.028,
+        -3.57
+      ],
+      "MAGICC_minus_truth_comp_median": -0.737,
+      "MAGICC_minus_truth_comp_median_ci95": [
+        -12.341,
+        -0.157
+      ],
+      "MAGICC_minus_truth_cont_mean": 5.091,
+      "MAGICC_minus_truth_cont_mean_ci95": [
+        1.895,
+        8.645
+      ],
+      "MAGICC_minus_truth_cont_median": 1.121,
+      "MAGICC_minus_truth_cont_median_ci95": [
+        -0.61,
+        7.23
+      ],
+      "CheckM2_minus_truth_comp_mean": -0.701,
+      "CheckM2_minus_truth_comp_mean_ci95": [
+        -1.46,
+        0.09
+      ],
+      "CheckM2_minus_truth_comp_median": -0.89,
+      "CheckM2_minus_truth_comp_median_ci95": [
+        -1.76,
+        0.0
+      ],
+      "CheckM2_minus_truth_cont_mean": -1.162,
+      "CheckM2_minus_truth_cont_mean_ci95": [
+        -1.718,
+        -0.619
+      ],
+      "CheckM2_minus_truth_cont_median": -1.599,
+      "CheckM2_minus_truth_cont_median_ci95": [
+        -2.201,
+        -0.48
+      ],
+      "MAGICC_minus_CheckM2_comp_mean": -7.976,
+      "MAGICC_minus_CheckM2_comp_mean_ci95": [
+        -13.364,
+        -2.8
+      ],
+      "MAGICC_minus_CheckM2_comp_median": -0.053,
+      "MAGICC_minus_CheckM2_comp_median_ci95": [
+        -16.449,
+        0.976
+      ],
+      "MAGICC_minus_CheckM2_cont_mean": 6.253,
+      "MAGICC_minus_CheckM2_cont_mean_ci95": [
+        2.954,
+        10.015
+      ],
+      "MAGICC_minus_CheckM2_cont_median": 1.626,
+      "MAGICC_minus_CheckM2_cont_median_ci95": [
+        1.217,
+        6.171
+      ],
+      "MAGICC_false_fail_rate_cont5": 0.3333,
+      "MAGICC_false_fail_ci95": [
+        0.1429,
+        0.5333
+      ],
+      "CheckM2_false_fail_rate_cont5": 0.0,
+      "CheckM2_false_fail_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "stratum": "in-domain (cont <= comp)",
+      "n": 1000,
+      "n_reference_clusters": 100,
+      "assembly_size_median_Mbp": 1.099,
+      "MAGICC_minus_truth_comp_mean": -2.32,
+      "MAGICC_minus_truth_comp_mean_ci95": [
+        -3.81,
+        -0.878
+      ],
+      "MAGICC_minus_truth_comp_median": -0.645,
+      "MAGICC_minus_truth_comp_median_ci95": [
+        -1.293,
+        -0.37
+      ],
+      "MAGICC_minus_truth_cont_mean": -3.554,
+      "MAGICC_minus_truth_cont_mean_ci95": [
+        -5.041,
+        -2.034
+      ],
+      "MAGICC_minus_truth_cont_median": -2.637,
+      "MAGICC_minus_truth_cont_median_ci95": [
+        -4.187,
+        -1.443
+      ],
+      "CheckM2_minus_truth_comp_mean": -4.205,
+      "CheckM2_minus_truth_comp_mean_ci95": [
+        -4.842,
+        -3.568
+      ],
+      "CheckM2_minus_truth_comp_median": -4.752,
+      "CheckM2_minus_truth_comp_median_ci95": [
+        -5.371,
+        -4.12
+      ],
+      "CheckM2_minus_truth_cont_mean": -39.604,
+      "CheckM2_minus_truth_cont_mean_ci95": [
+        -41.154,
+        -38.04
+      ],
+      "CheckM2_minus_truth_cont_median": -39.22,
+      "CheckM2_minus_truth_cont_median_ci95": [
+        -41.865,
+        -36.256
+      ],
+      "MAGICC_minus_CheckM2_comp_mean": 1.886,
+      "MAGICC_minus_CheckM2_comp_mean_ci95": [
+        0.282,
+        3.44
+      ],
+      "MAGICC_minus_CheckM2_comp_median": 2.997,
+      "MAGICC_minus_CheckM2_comp_median_ci95": [
+        1.504,
+        4.131
+      ],
+      "MAGICC_minus_CheckM2_cont_mean": 36.051,
+      "MAGICC_minus_CheckM2_cont_mean_ci95": [
+        34.461,
+        37.634
+      ],
+      "MAGICC_minus_CheckM2_cont_median": 37.627,
+      "MAGICC_minus_CheckM2_cont_median_ci95": [
+        34.679,
+        39.598
+      ],
+      "MAGICC_false_fail_rate_cont5": 0.023,
+      "MAGICC_false_fail_ci95": [
+        0.013,
+        0.036
+      ],
+      "CheckM2_false_fail_rate_cont5": 0.0,
+      "CheckM2_false_fail_ci95": [
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

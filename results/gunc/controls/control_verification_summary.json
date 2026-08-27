@@ -1,0 +1,25 @@
+{
+  "negative_controls": {
+    "ok": 6,
+    "n": 6
+  },
+  "positive_controls": {
+    "ok": 0,
+    "n": 8
+  },
+  "negative_source": "data/ncbi/pure_culture (finished, 1-2 contigs, both tools HQ)",
+  "positive_source": "data/ncbi/mags, 141-MAG disagreement cohort, Kraken2 cross-phylum contamination >40%",
+  "gunc_reference_coverage": {
+    "negative": {
+      "n": 6,
+      "well_powered": 6
+    },
+    "positive": {
+      "n": 8,
+      "well_powered": 1
+    }
+  },
+  "gunc_pass_criterion": "pass.GUNC = False iff adjusted clade separation score (CSS) > 0.45 at the max-CSS taxonomic level; CSS is forced to 0 when genes_retained_index <= 0.4",
+  "interpretation_caveat": "GUNC CSS measures whether taxonomic discordance separates cleanly by contig. A pass on a genome with reference_representation_score < 0.5 is NOT evidence of cleanliness -- GUNC has insufficient reference coverage to adjudicate. Likewise, the Kraken2 phylum_contam_pct metric (1 - dominant phylum fraction) is inflated for novel lineages whose LCA assignments are diffuse rather than bimodal.",
+  "table": "results/revision/gunc/controls/control_verification.tsv"
+}

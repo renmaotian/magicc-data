@@ -1,0 +1,31 @@
+PASS  mimag_classify: hand-checked boundary cases (>=90/<5 high, >=50/<10 medium)
+PASS  mimag_classify: NaN -> 'na'
+PASS  contamination_bin: hand-checked edges
+PASS  mae / bias / rmse: hand-checked
+PASS  R^2: perfect=1, mean-predictor=0, constant truth=NaN
+PASS  r^2 (Pearson) vs R^2 (coeff. of determination) are demonstrably different
+PASS  R^2 matches sklearn.metrics.r2_score
+PASS  classification_metrics: hand-computed 3x3 precision/recall/F1/accuracy
+PASS  cm_from_codes / metrics_from_cm: vectorised path matches, unknown codes dropped
+PASS  classification_metrics matches sklearn (P/R/F1/support/balanced acc/kappa)
+PASS  threshold_metrics (contamination, tau=5): hand-checked false-pass/false-fail
+PASS  threshold_metrics (completeness, tau=90): hand-checked
+PASS  cliffs_delta: hand-checked (-1, +1, 0, -0.25 with ties)
+PASS  cliffs_delta: 200 random cases match the O(nm) brute force (ties included)
+PASS  rank_biserial_paired: hand-checked (0, +1, -1, zero-dropping)
+PASS  rank_biserial_paired: W+/W- consistent with scipy.stats.wilcoxon statistic
+PASS  hodges_lehmann_paired: hand-enumerated Walsh averages
+PASS  hodges_lehmann_paired: maximises the signed-rank p-value (test inversion)
+PASS  bh_correct: hand-computed step-up q-values, monotone, NaN-safe
+PASS  bh_correct matches scipy.stats.false_discovery_control on 97 random p-values
+PASS  stable_hash: CRC-32 seed derivation is process-independent (builtin hash() verified salted, so it must not be used for seeds)
+PASS  Bootstrapper: singleton clusters reproduce the iid bootstrap exactly
+PASS  Bootstrapper: perfectly redundant clusters == iid bootstrap of cluster means
+PASS  Bootstrapper: cluster CI is 2.25x wider than the naive CI on 5x-redundant data (sqrt(5)=2.24 expected)
+PASS  Bootstrapper coverage simulation (ICC=0.8, 40 clusters x 10): cluster 95.0% (nominal 95%), naive iid 54.0% -> clustering matters
+PASS  Bootstrapper.p_two_sided: null p=0.449, strong-effect p=1.00e-03
+PASS  palette_cvd_report: flags red/green, accepts Okabe-Ito blue/orange
+PASS  configured tool palette is CVD-safe: min Delta-E over all pairs and all vision types = 24.6 (>= 20)
+PASS  configured MIMAG palette is CVD-safe (min Delta-E = 32.5)
+
+ALL 29 CHECKS PASSED

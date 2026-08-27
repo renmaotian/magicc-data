@@ -1,0 +1,24 @@
+==================================================================
+WS11.T campaign start 2026-08-26T16:41:41Z
+host=Alborz nproc=48 plan=/path/to/magicc/results/revision/speed_v3/run_plan_v3.tsv
+tiers 0..9  gate_general=4.0 gate_magicc1thr=1.5
+mem: 881 GiB total, 868 GiB available
+==================================================================
+[run ] tier=0 order=1 magicc__t32__set_E_100__warm__r4 | pilot: MAGICC dispatch path
+       loadavg=0.44 0.18 0.07 memavail=910670988kB 2026-08-26T16:41:41Z
+[time] magicc t=32 r=4 set_E_100/warm: wall=2.19s rss=0.3584GB rc=0 load_before=0.44 fs_inputs=0
+[done] magicc__t32__set_E_100__warm__r4 rc=0
+[run ] tier=0 order=2 deepcheck__t32__set_E_100__warm__r4 | pilot: DeepCheck dispatch path
+       loadavg=0.56 0.21 0.08 memavail=909298468kB 2026-08-26T16:41:45Z
+[time] deepcheck t=32 r=4 set_E_100/warm: wall=5.0s rss=0.6673GB rc=0 load_before=0.56 fs_inputs=3696
+[done] deepcheck__t32__set_E_100__warm__r4 rc=0
+[run ] tier=0 order=3 cocopye__t32__set_E_100__warm__r4 | pilot: CoCoPyE dispatch path
+       loadavg=3.08 0.73 0.25 memavail=910007072kB 2026-08-26T16:41:53Z
+[time] cocopye t=32 r=4 set_E_100/warm: wall=324.44s rss=15.8865GB rc=0 load_before=3.08 fs_inputs=6448
+[done] cocopye__t32__set_E_100__warm__r4 rc=0
+[warn] load 39.96 still >= 4.0 after 0s; running anyway and FLAGGING
+[run ] tier=0 order=4 checkm2__t32__set_E_100__warm__r4 | pilot: CheckM2 dispatch path + 251x cell repeat
+       loadavg=39.96 22.56 9.66 memavail=909951112kB 2026-08-26T16:47:19Z
+[time] checkm2 t=32 r=4 set_E_100/warm: wall=597.56s rss=10.6313GB rc=0 load_before=39.96 fs_inputs=21200
+[done] checkm2__t32__set_E_100__warm__r4 rc=0
+[wait] magicc__t1__set_E_full__warm__r11: load1=27.01 >= 1.5, waited 0s

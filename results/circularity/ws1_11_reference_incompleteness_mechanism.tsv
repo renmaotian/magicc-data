@@ -1,0 +1,9 @@
+tool	y	x	n_references	spearman_rho	spearman_p	ols_slope	ols_slope_se	ols_intercept	ols_p	independent_of_the_x_variable	note
+magicc_v5	comp_bias	checkm2_completeness_deficit	400	-0.2159	1.3276501837930218e-05	-0.1333	0.0401	3.5729	0.0009766907681203916	True	independent: this tool never sees the CheckM2 score
+magicc_v5	cont_bias	checkm2_contamination_excess	400	0.105	0.03581436403110478	1.1337	0.1837	-2.4131	1.675724831629905e-09	True	independent: this tool never sees the CheckM2 score
+checkm2	comp_bias	checkm2_completeness_deficit	400	-0.3583	1.4643130560817707e-13	-0.4812	0.0634	12.8834	2.392054841574656e-13	False	CIRCULAR: the x variable IS this tool's own estimate
+checkm2	cont_bias	checkm2_contamination_excess	400	0.1109	0.02655184843096757	0.9866	0.4404	-21.2502	0.02562905220890788	False	CIRCULAR: the x variable IS this tool's own estimate
+cocopye	comp_bias	checkm2_completeness_deficit	400	-0.1836	0.00022343017502136827	-0.052	0.028	2.0718	0.06460085796246283	True	independent: this tool never sees the CheckM2 score
+cocopye	cont_bias	checkm2_contamination_excess	400	0.1496	0.002697282776328439	0.8479	0.2148	-20.9334	9.348952171877879e-05	True	independent: this tool never sees the CheckM2 score
+deepcheck	comp_bias	checkm2_completeness_deficit	400	-0.4116	8.66861037659197e-18	-0.6557	0.0743	15.1096	3.6364449347573107e-17	True	independent: this tool never sees the CheckM2 score
+deepcheck	cont_bias	checkm2_contamination_excess	400	0.0732	0.14393458525188382	0.9579	0.5699	-25.4575	0.09355552444828903	True	independent: this tool never sees the CheckM2 score

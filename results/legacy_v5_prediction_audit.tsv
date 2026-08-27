@@ -1,0 +1,13 @@
+set	n_metadata	n_fasta_files	n_metadata_fastas_present	v5_pred_exists	n_v5_rows	genome_ids_match	labels_match	pred_newer_than_metadata	pred_newer_than_model	status	competitors_present
+motivating/set_A	600	600	600	True	600	True	True	True	True	OK	checkm2,cocopye,deepcheck
+motivating/set_B	1100	1100	1100	True	1100	True	True	True	True	OK	checkm2,cocopye,deepcheck
+motivating_v2/set_A	1000	1000	1000	True	1000	True	True	True	True	OK	checkm2,cocopye,deepcheck
+motivating_v2/set_B	1000	1000	1000	True	1000	True	True	True	True	OK	checkm2,cocopye,deepcheck
+motivating_v2/set_C	1000	1000	1000	True	1000	True	True	True	True	OK	checkm2,cocopye,deepcheck
+set_A	600	600	600	True	600	True	True	True	True	OK	checkm2,cocopye,deepcheck
+set_A_v2	1000	1000	1000	True	1000	True	True	True	True	OK	checkm2,cocopye,deepcheck
+set_B	600	600	600	True	600	True	True	True	True	OK	checkm2,cocopye,deepcheck
+set_B_v2	1000	1000	1000	True	1000	True	True	True	True	OK	checkm2,cocopye,deepcheck
+set_C	1000	1000	1000	True	1000	True	True	True	True	OK	checkm2,cocopye,deepcheck
+set_D	1000	1000	1000	True	1000	True	True	True	True	OK	checkm2,cocopye,deepcheck
+set_E	1000	1000	1000	True	1000	True	True	True	True	OK	checkm2,cocopye,deepcheck

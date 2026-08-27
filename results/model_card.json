@@ -1,0 +1,267 @@
+{
+  "schema": "magicc-model-card/1.0",
+  "generated_utc": "2026-07-26T14:06:55.781373+00:00",
+  "generated_by": "scripts/70_freeze_model_version.py",
+  "git_commit": "5b6a9a661d47937391e736100b294bb52b4f2b33",
+  "frozen_model": {
+    "name": "MAGICC",
+    "model_version": "V5",
+    "python_package_version": "0.3.0",
+    "decision": "WS0.1: V5 is FROZEN as the single model for the revised manuscript. It is the version released on PyPI/GitHub as magicc-genome 0.3.0. No number in the revised manuscript may come from V1-V4.",
+    "supersedes_in_manuscript": "V4 (submitted manuscript reported V4: overall 4.00 % completeness MAE / 5.53 % contamination MAE on the 5,000-genome benchmark; V5 gives 3.79 % / 5.39 %)"
+  },
+  "onnx": {
+    "path": "models/magicc_v5.onnx",
+    "sha256": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+    "size_bytes": 169658949,
+    "size_mb": 169.66,
+    "ir_version": 8,
+    "opset_imports": [
+      {
+        "domain": "ai.onnx",
+        "version": 17
+      }
+    ],
+    "producer": "pytorch 2.5.1",
+    "precision": "FP32",
+    "inputs": [
+      {
+        "name": "kmer_features",
+        "shape": [
+          "batch_size",
+          9249
+        ],
+        "dtype": "float32"
+      },
+      {
+        "name": "assembly_features",
+        "shape": [
+          "batch_size",
+          7
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "predictions",
+        "shape": [
+          "batch_size",
+          2
+        ],
+        "dtype": "float32"
+      }
+    ],
+    "n_graph_nodes": 47,
+    "n_initializers": 40,
+    "n_initializer_elements": 42412050,
+    "onnxruntime_version_verified_with": "1.23.2",
+    "onnx_version_verified_with": "1.20.1",
+    "determinism_probe": {
+      "description": "numpy default_rng(20260726) standard_normal((4,9249)) and ((4,7)) as kmer_features/assembly_features, float32, CPUExecutionProvider, 1 intra/inter-op thread",
+      "probe_input_sha256": "34d0a3edb4faa2971144d94baedebc1077417867dbd3048583f652d6a0122d79",
+      "expected_output": [
+        [
+          98.18494415283203,
+          75.7735366821289
+        ],
+        [
+          58.47699737548828,
+          22.592803955078125
+        ],
+        [
+          86.02031707763672,
+          55.729736328125
+        ],
+        [
+          99.9921875,
+          22.720521926879883
+        ]
+      ]
+    }
+  },
+  "pytorch_checkpoint": {
+    "path": "models/best_model_v5_run3.pt",
+    "sha256": "dd379488e4bc87d3f2a05a4e14679b53ccf3a1ad6e1d7d47c81c7e1f0102be93",
+    "size_bytes": 508903296,
+    "epoch_at_save_0indexed": 68,
+    "best_epoch_0indexed": 68,
+    "best_epoch_1indexed": 69,
+    "best_val_loss": 126.71302297163983,
+    "state_dict_total_elements": 42412056,
+    "state_dict_parameter_elements_excluding_bn_buffers": 42400946,
+    "torch_version_verified_with": "2.5.1+cu121"
+  },
+  "architecture": {
+    "family": "MAGICCModel (\"V2-style\" two-branch MLP; no attention)",
+    "source_module": "magicc/model.py::MAGICCModel",
+    "n_kmer_features": 9249,
+    "n_kmer_summary_features": 7,
+    "kmer_branch": "Linear(9249->4096)-BN-SiLU-Dropout(0.4) -> Linear(4096->1024)-BN-SiLU-Dropout(0.2) -> Linear(1024->256)-BN-SiLU",
+    "kmer_summary_branch": "Linear(7->32)-BN-SiLU-Dropout(0.2) -> Linear(32->16)-BN-SiLU",
+    "fusion_head": "concat(256,16)=272 -> Linear(272->128)-BN-SiLU-Dropout(0.1) -> Linear(128->64)-SiLU -> Linear(64->2)",
+    "output_activations": {
+      "completeness": "sigmoid(x)*50 + 50  -> [50, 100] %",
+      "contamination": "sigmoid(x)*100     -> [0, 100] %"
+    },
+    "weight_init": "Kaiming normal (nonlinearity=relu proxy for SiLU); BN weight=1, bias=0",
+    "parameter_counts": {
+      "total": 42400946,
+      "trainable": 42400946,
+      "kmer_branch": 42356480,
+      "assembly_branch": 880,
+      "fusion_head": 43586
+    },
+    "state_dict_load": "strict load of best_model_v5_run3.pt succeeded"
+  },
+  "features": {
+    "kmer_features": {
+      "n": 9249,
+      "k": 9,
+      "canonical": true,
+      "list_file": "data/kmer_selection/selected_kmers.txt",
+      "list_sha256": "02a2857d5dffa6bfe6b26f624c78aa7a72a619e0e2a08919f3dc7fbe5d5a0eae",
+      "selection": "top 9,000 bacterial (prevalence 529-992/1000) + top 1,000 archaeal (791-998/1000) single-copy-core-gene 9-mers, 751 shared -> 9,249 unique",
+      "selection_genomes": "1,000 bacterial + 1,000 archaeal representatives sampled from the TRAIN split only, seed=42 (data/kmer_selection/selected_{bacterial,archaeal}_1000.tsv)",
+      "transform": "log10(count + 1) then z-score with stored mean/std"
+    },
+    "kmer_summary_features": {
+      "n": 7,
+      "names": [
+        "log10_total_kmer_count",
+        "total_kmer_sum",
+        "unique_kmer_count",
+        "duplicate_kmer_count",
+        "kmer_entropy",
+        "unique_kmer_ratio",
+        "duplicate_kmer_ratio"
+      ],
+      "note": "V4 onward: all 20/26 assembly statistics were REMOVED and replaced by these 7 features derived purely from the selected-9-mer count vector, so inference needs no assembly-level metadata."
+    },
+    "normalization": {
+      "path": "data/features/normalization_params.json",
+      "sha256": "b1e3f211a43560d8bed1dd8264921c7ec8ce0529c9bdbdbdc000894c9ce1d7d9",
+      "n_kmer_features": 9249,
+      "n_assembly_features": 7,
+      "finalized": true,
+      "method": "streaming Welford mean/std over the training synthesis stream (k-mers, after log10(count+1)); reservoir sampling for the k-mer-summary feature scalers"
+    }
+  },
+  "training": {
+    "training_script": "scripts/53_train_v5_run3.py",
+    "run_label": "V5 Run 3 (V2 architecture on V5 expanded data)",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0005,
+    "lr_schedule": "CosineAnnealingWarmRestarts(T_0=10, T_mult=2)",
+    "loss": "weighted MSE, comp_weight=2.0, cont_weight=1.0",
+    "batch_size": 512,
+    "max_epochs": 150,
+    "early_stopping_patience": 20,
+    "grad_clip_norm": 1.0,
+    "mixed_precision": "FP16 (torch.cuda.amp)",
+    "gradient_checkpointing": true,
+    "augmentation": {
+      "kmer_mask_rate": 0.02,
+      "gaussian_noise_std": 0.01
+    },
+    "dataloader_workers": 4,
+    "epochs_run": 89,
+    "early_stopped": true,
+    "best_epoch_0indexed": 68,
+    "best_epoch_1indexed": 69,
+    "best_val_loss": 126.71302297163983,
+    "best_epoch_val_metrics": {
+      "val_comp_mae": 3.794996,
+      "val_cont_mae": 4.14408,
+      "val_comp_rmse": 6.369719,
+      "val_cont_rmse": 6.750077,
+      "val_comp_r2": 0.837691,
+      "val_cont_r2": 0.933053,
+      "val_loss": 126.713023,
+      "train_loss": 54.701775
+    },
+    "random_seed": null,
+    "random_seed_note": "VERIFIED BY CODE INSPECTION: neither magicc/trainer.py nor scripts/53_train_v5_run3.py sets a torch/numpy/python random seed, so the released weights are not bit-reproducible from scratch. The released artefact is therefore frozen by SHA256 (above) rather than by seed. Inference IS deterministic: see determinism_probe.",
+    "hardware": "NVIDIA Quadro P2200 (5.1 GB VRAM), 48-core CPU, 881 GB RAM",
+    "wall_clock_minutes": 345.9,
+    "early_stopping_epoch_reported_in_log": 89,
+    "training_log": "models/training_v5_run3_log.txt"
+  },
+  "training_data": {
+    "path": "data/features/magicc_v5_features.h5",
+    "exists": true,
+    "size_bytes": 40985600824,
+    "size_gb": 40.99,
+    "mtime_utc": "2026-03-17T23:04:39.291744+00:00",
+    "fingerprint": {
+      "method": "sha256 of first and last 67108864 bytes",
+      "head_sha256": "9825e7111be29f2758102aee2fe465310c6c7ae70d6d124a7c3c54ed49053244",
+      "tail_sha256": "e091d655754ccb2cc205acec9336cb0a993c942ff18745ec059ddddac59b00e4"
+    },
+    "splits": {
+      "train": {
+        "n_samples": 1000000,
+        "n_kmer_features": 9249,
+        "n_assembly_features": 7,
+        "datasets": [
+          "assembly_features",
+          "kmer_features",
+          "labels",
+          "metadata"
+        ]
+      },
+      "val": {
+        "n_samples": 100000,
+        "n_kmer_features": 9249,
+        "n_assembly_features": 7,
+        "datasets": [
+          "assembly_features",
+          "kmer_features",
+          "labels",
+          "metadata"
+        ]
+      },
+      "test": {
+        "n_samples": 100000,
+        "n_kmer_features": 9249,
+        "n_assembly_features": 7,
+        "datasets": [
+          "assembly_features",
+          "kmer_features",
+          "labels",
+          "metadata"
+        ]
+      }
+    },
+    "composition": "V5 = 800,000 V4-style synthetic samples + 100,000 completeness=100%/contamination=0% + 100,000 completeness=100%/contamination=0-10% = 1,000,000 train; 100,000 val; 100,000 test (see scripts/50_generate_v5_training_data.py and Phase 4 of project_progress_and_results.md)",
+    "reference_genomes": "Synthesised from the 79,948-genome train split for train, the 10,010-genome val split for val, and the 9,999-genome test split for test (data/splits/{train,val,test}_genomes.tsv). Splits are stratified by phylum and mutually disjoint by accession."
+  },
+  "ground_truth_definitions": {
+    "completeness_pct": "100 x (retained dominant-genome bp) / (dominant reference full length)",
+    "contamination_pct": "100 x (total contaminant bp) / (dominant reference full length)",
+    "note": "the two metrics are independent and share the same denominator, the dominant genome full reference length; the synthesis constraint contaminant_bp <= dominant_retained_bp implies contamination% <= completeness%"
+  },
+  "intended_use": "Genome-level completeness and contamination estimation for bacterial and archaeal draft genomes / MAGs from nucleotide FASTA, annotation-free at inference time.",
+  "limitations": [
+    "Completeness output is architecturally bounded to [50, 100] %: the model cannot report completeness below 50 % and must not be used to triage very incomplete bins.",
+    "Contamination output is architecturally bounded to [0, 100] %.",
+    "Bacteria and Archaea only. No eukaryotes, no viruses, no plasmid-only input.",
+    "Genome-level estimates only; MAGICC does not localise contamination to contigs.",
+    "Trained exclusively on synthetic mixtures derived from high-quality GTDB reference genomes (CheckM2 completeness >= 98 %, contamination <= 2 %), so reference selection inherits CheckM2 as a filter (circularity addressed in protocol WS1.11).",
+    "k-mer composition features are a priori more sensitive to sequencing and assembly error than protein-level features; quantified in protocol WS6.",
+    "Accuracy on lineages that are taxonomically novel relative to the training set is quantified separately (protocol WS1.6-1.8) and is not covered by the in-distribution numbers reported here.",
+    "Training was not seeded, so the released weights cannot be re-derived bit-exactly; the artefact is pinned by SHA256 instead."
+  ],
+  "known_issues_fixed_in_this_revision": [
+    "Benchmark Sets C and D as submitted drew their dominant reference genomes from train+val+test (985/1000 of Set C dominants are TRAIN genomes; only 36/1000 of Set D dominants are TEST genomes). Both sets are superseded by data/benchmarks/set_C_clean and set_D_clean, whose dominants come from the held-out test split only (protocol WS1.1-1.4)."
+  ],
+  "environment_at_freeze": {
+    "python": "3.11.0",
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "torch": "2.5.1+cu121",
+    "onnx": "1.20.1",
+    "onnxruntime": "1.23.2",
+    "numpy": "1.26.4"
+  }
+}

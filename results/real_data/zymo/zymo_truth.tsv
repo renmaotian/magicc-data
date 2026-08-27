@@ -1,0 +1,9 @@
+code	organism	draft_fasta	n_contigs	draft_bp	draft_n50	ref_len	ref_nseq	draft_over_ref	covered_ref_bp	contam_bp	unaligned_bp	true_completeness	true_contamination	true_contamination_upper
+bs	Bacillus subtilis	/path/to/magicc/data/real_data/zymo/drafts/bs.fasta	29	3985829	294381	4045677	1	0.9852	3981175	4773	586	98.4057	0.118	0.1325
+ec	Escherichia coli	/path/to/magicc/data/real_data/zymo/drafts/ec.fasta	103	4787036	107753	4875441	2	0.9819	4782974	0	1715	98.1034	0.0	0.0352
+ef	Enterococcus faecalis	/path/to/magicc/data/real_data/zymo/drafts/ef.fasta	30	2820294	238991	2845392	1	0.9912	2822187	0	603	99.1845	0.0	0.0212
+lf	Limosilactobacillus fermentum	/path/to/magicc/data/real_data/zymo/drafts/lf.fasta	84	1805517	40416	1905333	1	0.9476	1803909	0	1562	94.6768	0.0	0.082
+lm	Listeria monocytogenes	/path/to/magicc/data/real_data/zymo/drafts/lm.fasta	16	2958570	542799	2992342	1	0.9887	2959547	0	314	98.904	0.0	0.0105
+pa	Pseudomonas aeruginosa	/path/to/magicc/data/real_data/zymo/drafts/pa.fasta	83	6728151	249467	6792330	1	0.9906	6725079	160	1538	99.0099	0.0024	0.025
+sa	Staphylococcus aureus	/path/to/magicc/data/real_data/zymo/drafts/sa.fasta	67	2689205	131983	2730326	4	0.9849	2686266	0	1514	98.3863	0.0	0.0555
+se	Salmonella enterica	/path/to/magicc/data/real_data/zymo/drafts/se.fasta	66	4738357	177680	4809318	2	0.9852	4735477	0	1518	98.4646	0.0	0.0316

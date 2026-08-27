@@ -1,0 +1,28 @@
+tool_label	input_set	threads	n_repeats_cold	n_repeats_warm	wall_median_s_cold	wall_median_s_warm	cold_minus_warm_s	cold_over_warm
+CheckM2 1.0.1	set_E_100	1		3.0		7907.0		
+CheckM2 1.0.1	set_E_100	8		3.0		1208.65		
+CheckM2 1.0.1	set_E_100	16		3.0		687.94		
+CheckM2 1.0.1	set_E_100	32	1.0	3.0	543.97	559.66	-15.69	0.972
+CheckM2 1.0.1	set_E_full	32		1.0		4208.0		
+CoCoPyE 0.5.0	set_E_100	1		3.0		1439.1		
+CoCoPyE 0.5.0	set_E_100	8		3.0		299.09		
+CoCoPyE 0.5.0	set_E_100	16		3.0		216.09		
+CoCoPyE 0.5.0	set_E_100	32	1.0	3.0	357.59	353.9	3.69	1.01
+CoCoPyE 0.5.0	set_E_full	32		1.0		3177.54		
+DeepCheck (inference only)	set_E_100	1	3.0	3.0	55.49	55.54	-0.05	0.999
+DeepCheck (inference only)	set_E_100	8		3.0		9.78		
+DeepCheck (inference only)	set_E_100	16		3.0		6.39		
+DeepCheck (inference only)	set_E_100	32		3.0		4.98		
+DeepCheck (inference only)	set_E_full	1		3.0		534.59		
+DeepCheck (inference only)	set_E_full	8		3.0		78.11		
+DeepCheck (inference only)	set_E_full	16		3.0		43.54		
+DeepCheck (inference only)	set_E_full	32		3.0		29.48		
+MAGICC v0.3.0 (V5)	set_E_100	1		3.0		5.9		
+MAGICC v0.3.0 (V5)	set_E_100	8		3.0		2.21		
+MAGICC v0.3.0 (V5)	set_E_100	16		3.0		2.11		
+MAGICC v0.3.0 (V5)	set_E_100	32		3.0		2.23		
+MAGICC v0.3.0 (V5)	set_E_full	1	3.0	6.0	49.07	49.015	0.055	1.001
+MAGICC v0.3.0 (V5)	set_E_full	8		3.0		10.27		
+MAGICC v0.3.0 (V5)	set_E_full	16		3.0		6.94		
+MAGICC v0.3.0 (V5)	set_E_full	32	3.0	3.0	5.86	6.04	-0.18	0.97
+magicc_condarun	set_E_full	1		3.0		50.83		

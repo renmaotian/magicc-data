@@ -1,0 +1,55 @@
+{
+  "check": "Working tree agreement with the published artefacts",
+  "captured_utc": "2026-08-26T21:01:47.221944+00:00",
+  "environment": {
+    "env": "conda env magicc2",
+    "python": "3.11.0",
+    "console_script": "/path/to/conda/envs/magicc2/bin/magicc",
+    "package_resolved_to": "/path/to/magicc/magicc/__init__.py (editable install)",
+    "reported_version": "0.3.1"
+  },
+  "model_used": {
+    "path": "/path/to/magicc/models/magicc_v5.onnx",
+    "resolved_by": "_ensure_model() candidate 2, the dev-layout _PROJECT_DIR/models path",
+    "size_bytes": 169658949,
+    "sha256": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+    "matches_paper": true,
+    "no_download_occurred": true
+  },
+  "determinism_runs": {
+    "input_modes": [
+      "plain directory",
+      "gzip directory",
+      "--input-list"
+    ],
+    "extension_flags": [
+      "default .fasta",
+      "--extension auto"
+    ],
+    "threads": [
+      1,
+      4
+    ],
+    "run_count": 8,
+    "distinct_output_digests": 1,
+    "output_sha256": "bb7825cea40ddbc1dca159172b451ef714d66edc9c1ba705e2ce1af104805ee5",
+    "all_rc_zero": true,
+    "PASS": true
+  },
+  "byte_identity_with_pypi_and_github": {
+    "identical": true,
+    "shared_sha256": "bb7825cea40ddbc1dca159172b451ef714d66edc9c1ba705e2ce1af104805ee5",
+    "cross_python_versions": [
+      "3.12.3 (both venvs)",
+      "3.11.0 (conda magicc2)"
+    ],
+    "note": "Byte-identical across two different CPython minor versions and three independent numpy/onnxruntime installs."
+  },
+  "host_user_cache": {
+    "path": "$HOME/.magicc/magicc_v5.onnx",
+    "sha256": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+    "mtime": "2026-03-19 13:50",
+    "note": "Pre-existing on this host; isolated HOMEs were used for every published-artefact run so this cache could not mask a download."
+  },
+  "OVERALL": "PASS - the published packages reproduce the working tree's output exactly on this test set."
+}

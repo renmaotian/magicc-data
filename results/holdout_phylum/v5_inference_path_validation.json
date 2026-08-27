@@ -1,0 +1,45 @@
+{
+  "val": {
+    "completeness": {
+      "n": 30000,
+      "mae": 3.7571,
+      "rmse": 6.3096,
+      "r2": 0.8404,
+      "r2_pearson": 0.842,
+      "bias": 0.32
+    },
+    "contamination": {
+      "n": 30000,
+      "mae": 4.1038,
+      "rmse": 6.6854,
+      "r2": 0.9339,
+      "r2_pearson": 0.9355,
+      "bias": -1.048
+    }
+  },
+  "test": {
+    "completeness": {
+      "n": 30000,
+      "mae": 3.8369,
+      "rmse": 6.4851,
+      "r2": 0.8324,
+      "r2_pearson": 0.8343,
+      "bias": 0.3832
+    },
+    "contamination": {
+      "n": 30000,
+      "mae": 4.2148,
+      "rmse": 6.8518,
+      "r2": 0.9309,
+      "r2_pearson": 0.933,
+      "bias": -1.2089
+    }
+  },
+  "published_v5_val": {
+    "comp_mae": 3.795,
+    "cont_mae": 4.144,
+    "comp_r2": 0.838,
+    "cont_r2": 0.933
+  },
+  "note": "Validation of this agent inference path (ONNX + normalization) against the published production V5 numbers, on the first 30,000 samples of the V5 val/test splits (features already normalized inside magicc_v5_features.h5). Reproduction confirms the R2 convention behind the published V5 numbers is the coefficient of determination (1 - SSres/SStot), not squared Pearson correlation."
+}

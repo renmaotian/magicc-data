@@ -1,0 +1,168 @@
+=== v3_code pass 1 2026-08-26T16:41:24Z ===
+[launcher] magicc.cli = /path/to/magicc/results/revision/speed_v3/v3_code/magicc/cli.py
+2026-08-26 11:41:24 [INFO] Discovering genome files...
+2026-08-26 11:41:24 [INFO] Found 5 genome(s)
+2026-08-26 11:41:24 [INFO] Loading ONNX model: models/magicc_v3.onnx
+2026-08-26 11:41:24 [INFO] Loading normalization parameters: /path/to/magicc/results/revision/speed_v3/v3_code/magicc/data/normalization_params.json
+2026-08-26 11:41:25 [INFO] Extracting features for 5 genomes using 1 thread(s)...
+2026-08-26 11:41:25 [INFO]   Feature extraction: 5/5 (8.1 genomes/s, 122.9 ms/genome)
+2026-08-26 11:41:25 [INFO] Feature extraction complete: 5 genomes in 0.6s (123.0 ms/genome)
+2026-08-26 11:41:25 [INFO] Normalizing features...
+2026-08-26 11:41:25 [INFO] Normalization: 0.001s
+2026-08-26 11:41:25 [INFO] Running ONNX inference (batch_size=64)...
+2026-08-26 11:41:25 [INFO] Inference complete: 0.017s (3.34 ms/genome)
+2026-08-26 11:41:25 [INFO] Writing predictions to /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code.tsv
+2026-08-26 11:41:25 [INFO] ============================================================
+2026-08-26 11:41:25 [INFO] MAGICC Prediction Summary
+2026-08-26 11:41:25 [INFO] ============================================================
+2026-08-26 11:41:25 [INFO]   Genomes processed: 5
+2026-08-26 11:41:25 [INFO]   Threads:           1
+2026-08-26 11:41:25 [INFO]   Feature extraction: 0.6s
+2026-08-26 11:41:25 [INFO]   Normalization:      0.001s
+2026-08-26 11:41:25 [INFO]   ONNX inference:     0.017s
+2026-08-26 11:41:25 [INFO]   Total time:         1.2s
+2026-08-26 11:41:25 [INFO]   Speed:              248 genomes/min
+2026-08-26 11:41:25 [INFO]   Speed/thread:       248 genomes/min/thread
+2026-08-26 11:41:25 [INFO]   Output:             /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code.tsv
+2026-08-26 11:41:25 [INFO] ============================================================
+WALL 1.66 s
+=== v3_code pass 2 2026-08-26T16:41:25Z ===
+[launcher] magicc.cli = /path/to/magicc/results/revision/speed_v3/v3_code/magicc/cli.py
+2026-08-26 11:41:26 [INFO] Discovering genome files...
+2026-08-26 11:41:26 [INFO] Found 5 genome(s)
+2026-08-26 11:41:26 [INFO] Loading ONNX model: models/magicc_v3.onnx
+2026-08-26 11:41:26 [INFO] Loading normalization parameters: /path/to/magicc/results/revision/speed_v3/v3_code/magicc/data/normalization_params.json
+2026-08-26 11:41:26 [INFO] Extracting features for 5 genomes using 1 thread(s)...
+2026-08-26 11:41:27 [INFO]   Feature extraction: 5/5 (8.2 genomes/s, 122.4 ms/genome)
+2026-08-26 11:41:27 [INFO] Feature extraction complete: 5 genomes in 0.6s (122.4 ms/genome)
+2026-08-26 11:41:27 [INFO] Normalizing features...
+2026-08-26 11:41:27 [INFO] Normalization: 0.001s
+2026-08-26 11:41:27 [INFO] Running ONNX inference (batch_size=64)...
+2026-08-26 11:41:27 [INFO] Inference complete: 0.017s (3.30 ms/genome)
+2026-08-26 11:41:27 [INFO] Writing predictions to /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code.tsv
+2026-08-26 11:41:27 [INFO] ============================================================
+2026-08-26 11:41:27 [INFO] MAGICC Prediction Summary
+2026-08-26 11:41:27 [INFO] ============================================================
+2026-08-26 11:41:27 [INFO]   Genomes processed: 5
+2026-08-26 11:41:27 [INFO]   Threads:           1
+2026-08-26 11:41:27 [INFO]   Feature extraction: 0.6s
+2026-08-26 11:41:27 [INFO]   Normalization:      0.001s
+2026-08-26 11:41:27 [INFO]   ONNX inference:     0.017s
+2026-08-26 11:41:27 [INFO]   Total time:         1.2s
+2026-08-26 11:41:27 [INFO]   Speed:              255 genomes/min
+2026-08-26 11:41:27 [INFO]   Speed/thread:       255 genomes/min/thread
+2026-08-26 11:41:27 [INFO]   Output:             /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code.tsv
+2026-08-26 11:41:27 [INFO] ============================================================
+WALL 1.58 s
+=== v3_code pass 3 2026-08-26T16:41:27Z ===
+[launcher] magicc.cli = /path/to/magicc/results/revision/speed_v3/v3_code/magicc/cli.py
+2026-08-26 11:41:27 [INFO] Discovering genome files...
+2026-08-26 11:41:27 [INFO] Found 5 genome(s)
+2026-08-26 11:41:27 [INFO] Loading ONNX model: models/magicc_v3.onnx
+2026-08-26 11:41:28 [INFO] Loading normalization parameters: /path/to/magicc/results/revision/speed_v3/v3_code/magicc/data/normalization_params.json
+2026-08-26 11:41:28 [INFO] Extracting features for 5 genomes using 1 thread(s)...
+2026-08-26 11:41:28 [INFO]   Feature extraction: 5/5 (8.2 genomes/s, 122.4 ms/genome)
+2026-08-26 11:41:28 [INFO] Feature extraction complete: 5 genomes in 0.6s (122.4 ms/genome)
+2026-08-26 11:41:28 [INFO] Normalizing features...
+2026-08-26 11:41:28 [INFO] Normalization: 0.001s
+2026-08-26 11:41:28 [INFO] Running ONNX inference (batch_size=64)...
+2026-08-26 11:41:28 [INFO] Inference complete: 0.017s (3.42 ms/genome)
+2026-08-26 11:41:28 [INFO] Writing predictions to /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code.tsv
+2026-08-26 11:41:28 [INFO] ============================================================
+2026-08-26 11:41:28 [INFO] MAGICC Prediction Summary
+2026-08-26 11:41:28 [INFO] ============================================================
+2026-08-26 11:41:28 [INFO]   Genomes processed: 5
+2026-08-26 11:41:28 [INFO]   Threads:           1
+2026-08-26 11:41:28 [INFO]   Feature extraction: 0.6s
+2026-08-26 11:41:28 [INFO]   Normalization:      0.001s
+2026-08-26 11:41:28 [INFO]   ONNX inference:     0.017s
+2026-08-26 11:41:28 [INFO]   Total time:         1.2s
+2026-08-26 11:41:28 [INFO]   Speed:              256 genomes/min
+2026-08-26 11:41:28 [INFO]   Speed/thread:       256 genomes/min/thread
+2026-08-26 11:41:28 [INFO]   Output:             /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code.tsv
+2026-08-26 11:41:28 [INFO] ============================================================
+WALL 1.57 s
+=== v3_code_nostats pass 1 2026-08-26T16:41:28Z ===
+[launcher] magicc.cli = /path/to/magicc/results/revision/speed_v3/v3_code_nostats/magicc/cli.py
+2026-08-26 11:41:29 [INFO] Discovering genome files...
+2026-08-26 11:41:29 [INFO] Found 5 genome(s)
+2026-08-26 11:41:29 [INFO] Loading ONNX model: models/magicc_v3.onnx
+2026-08-26 11:41:29 [INFO] Loading normalization parameters: /path/to/magicc/results/revision/speed_v3/v3_code_nostats/magicc/data/normalization_params.json
+2026-08-26 11:41:29 [INFO] Extracting features for 5 genomes using 1 thread(s)...
+2026-08-26 11:41:30 [INFO]   Feature extraction: 5/5 (5.2 genomes/s, 193.2 ms/genome)
+2026-08-26 11:41:30 [INFO] Feature extraction complete: 5 genomes in 1.0s (193.3 ms/genome)
+2026-08-26 11:41:30 [INFO] Normalizing features...
+2026-08-26 11:41:30 [INFO] Normalization: 0.001s
+2026-08-26 11:41:30 [INFO] Running ONNX inference (batch_size=64)...
+2026-08-26 11:41:30 [INFO] Inference complete: 0.024s (4.75 ms/genome)
+2026-08-26 11:41:30 [INFO] Writing predictions to /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code_nostats.tsv
+2026-08-26 11:41:30 [INFO] ============================================================
+2026-08-26 11:41:30 [INFO] MAGICC Prediction Summary
+2026-08-26 11:41:30 [INFO] ============================================================
+2026-08-26 11:41:30 [INFO]   Genomes processed: 5
+2026-08-26 11:41:30 [INFO]   Threads:           1
+2026-08-26 11:41:30 [INFO]   Feature extraction: 1.0s
+2026-08-26 11:41:30 [INFO]   Normalization:      0.001s
+2026-08-26 11:41:30 [INFO]   ONNX inference:     0.024s
+2026-08-26 11:41:30 [INFO]   Total time:         1.5s
+2026-08-26 11:41:30 [INFO]   Speed:              195 genomes/min
+2026-08-26 11:41:30 [INFO]   Speed/thread:       195 genomes/min/thread
+2026-08-26 11:41:30 [INFO]   Output:             /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code_nostats.tsv
+2026-08-26 11:41:30 [INFO] ============================================================
+WALL 2.00 s
+=== v3_code_nostats pass 2 2026-08-26T16:41:30Z ===
+[launcher] magicc.cli = /path/to/magicc/results/revision/speed_v3/v3_code_nostats/magicc/cli.py
+2026-08-26 11:41:31 [INFO] Discovering genome files...
+2026-08-26 11:41:31 [INFO] Found 5 genome(s)
+2026-08-26 11:41:31 [INFO] Loading ONNX model: models/magicc_v3.onnx
+2026-08-26 11:41:31 [INFO] Loading normalization parameters: /path/to/magicc/results/revision/speed_v3/v3_code_nostats/magicc/data/normalization_params.json
+2026-08-26 11:41:31 [INFO] Extracting features for 5 genomes using 1 thread(s)...
+2026-08-26 11:41:32 [INFO]   Feature extraction: 5/5 (10.3 genomes/s, 97.4 ms/genome)
+2026-08-26 11:41:32 [INFO] Feature extraction complete: 5 genomes in 0.5s (97.4 ms/genome)
+2026-08-26 11:41:32 [INFO] Normalizing features...
+2026-08-26 11:41:32 [INFO] Normalization: 0.001s
+2026-08-26 11:41:32 [INFO] Running ONNX inference (batch_size=64)...
+2026-08-26 11:41:32 [INFO] Inference complete: 0.016s (3.19 ms/genome)
+2026-08-26 11:41:32 [INFO] Writing predictions to /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code_nostats.tsv
+2026-08-26 11:41:32 [INFO] ============================================================
+2026-08-26 11:41:32 [INFO] MAGICC Prediction Summary
+2026-08-26 11:41:32 [INFO] ============================================================
+2026-08-26 11:41:32 [INFO]   Genomes processed: 5
+2026-08-26 11:41:32 [INFO]   Threads:           1
+2026-08-26 11:41:32 [INFO]   Feature extraction: 0.5s
+2026-08-26 11:41:32 [INFO]   Normalization:      0.001s
+2026-08-26 11:41:32 [INFO]   ONNX inference:     0.016s
+2026-08-26 11:41:32 [INFO]   Total time:         1.0s
+2026-08-26 11:41:32 [INFO]   Speed:              287 genomes/min
+2026-08-26 11:41:32 [INFO]   Speed/thread:       287 genomes/min/thread
+2026-08-26 11:41:32 [INFO]   Output:             /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code_nostats.tsv
+2026-08-26 11:41:32 [INFO] ============================================================
+WALL 1.44 s
+=== v3_code_nostats pass 3 2026-08-26T16:41:32Z ===
+[launcher] magicc.cli = /path/to/magicc/results/revision/speed_v3/v3_code_nostats/magicc/cli.py
+2026-08-26 11:41:32 [INFO] Discovering genome files...
+2026-08-26 11:41:32 [INFO] Found 5 genome(s)
+2026-08-26 11:41:32 [INFO] Loading ONNX model: models/magicc_v3.onnx
+2026-08-26 11:41:33 [INFO] Loading normalization parameters: /path/to/magicc/results/revision/speed_v3/v3_code_nostats/magicc/data/normalization_params.json
+2026-08-26 11:41:33 [INFO] Extracting features for 5 genomes using 1 thread(s)...
+2026-08-26 11:41:33 [INFO]   Feature extraction: 5/5 (10.3 genomes/s, 97.4 ms/genome)
+2026-08-26 11:41:33 [INFO] Feature extraction complete: 5 genomes in 0.5s (97.4 ms/genome)
+2026-08-26 11:41:33 [INFO] Normalizing features...
+2026-08-26 11:41:33 [INFO] Normalization: 0.001s
+2026-08-26 11:41:33 [INFO] Running ONNX inference (batch_size=64)...
+2026-08-26 11:41:33 [INFO] Inference complete: 0.016s (3.24 ms/genome)
+2026-08-26 11:41:33 [INFO] Writing predictions to /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code_nostats.tsv
+2026-08-26 11:41:33 [INFO] ============================================================
+2026-08-26 11:41:33 [INFO] MAGICC Prediction Summary
+2026-08-26 11:41:33 [INFO] ============================================================
+2026-08-26 11:41:33 [INFO]   Genomes processed: 5
+2026-08-26 11:41:33 [INFO]   Threads:           1
+2026-08-26 11:41:33 [INFO]   Feature extraction: 0.5s
+2026-08-26 11:41:33 [INFO]   Normalization:      0.001s
+2026-08-26 11:41:33 [INFO]   ONNX inference:     0.016s
+2026-08-26 11:41:33 [INFO]   Total time:         1.0s
+2026-08-26 11:41:33 [INFO]   Speed:              286 genomes/min
+2026-08-26 11:41:33 [INFO]   Speed/thread:       286 genomes/min/thread
+2026-08-26 11:41:33 [INFO]   Output:             /tmp/claude-1001/-media-Data-1-tianrm-projects-magicc2/c9be6d81-e100-4e19-a921-f996377e8a63/scratchpad/warm_v3_code_nostats.tsv
+2026-08-26 11:41:33 [INFO] ============================================================
+WALL 1.46 s

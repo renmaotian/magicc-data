@@ -1,0 +1,93 @@
+cell	tool	input_set	cache	threads	repeat	t_start_utc	wall_clock_s	pct_cpu	user_s	sys_s	disk_read_gb	disk_read_frac_of_input	major_faults	page_cache_state	loadavg_1min_before	sum_pcpu_all_processes_before	feature_extraction_s	normalization_s	onnx_inference_s	internal_total_s	peak_rss_gb
+checkm2_vectors__t32__set_E_100__warm__r1	checkm2_vectors	set_E_100	warm	32	1	2026-07-29T19:37:41Z	547.44	2239.0	12051.74	205.61	0.0	0.0	0	resident	0.83	104.0					10.5575
+magicc__t32__set_E_100__warm__r1	magicc	set_E_100	warm	32	1	2026-07-31T00:23:30Z	13.25	642.0	39.98	45.22	0.9637	1.989	1226	cold_first_touch	0.29	39.2	8.7	0.02	0.139	10.7	0.3566
+magicc__t1__set_E_100__warm__r1	magicc	set_E_100	warm	1	1	2026-07-31T00:24:58Z	5.9	99.0	5.27	0.6	0.0	0.0	1	resident	0.89	39.3	4.9	0.009	0.138	5.6	0.3852
+magicc__t32__set_E_full__warm__r1	magicc	set_E_full	warm	32	1	2026-07-31T00:25:04Z	39.06	341.0	112.86	20.57	4.388	0.901	5	cold_first_touch	0.83	138.3	36.7	0.301	1.358	38.9	0.4968
+deepcheck__t32__set_E_full__warm__r1	deepcheck	set_E_full	warm	32	1	2026-07-31T00:28:29Z	39.84	1958.0	767.3	13.13	1.025	0.21	1055	cold_first_touch	0.84	22.1					1.2117
+magicc__t1__set_E_full__warm__r1	magicc	set_E_full	warm	1	1	2026-07-31T00:31:24Z	48.61	99.0	46.14	2.44	0.0	0.0	0	resident	0.87	115.9	46.3	0.217	1.33	48.3	0.6471
+magicc__t16__set_E_full__warm__r1	magicc	set_E_full	warm	16	1	2026-07-31T00:32:12Z	6.94	973.0	59.12	8.41	0.0	0.0	1	resident	0.94	15.0	4.5	0.31	1.354	6.7	0.4977
+deepcheck__t16__set_E_100__warm__r1	deepcheck	set_E_100	warm	16	1	2026-07-31T00:33:04Z	6.53	1052.0	67.62	1.12	0.0172	0.036	0	resident	0.97	114.0					0.7053
+magicc__t16__set_E_100__warm__r1	magicc	set_E_100	warm	16	1	2026-07-31T00:34:11Z	2.08	856.0	11.96	5.85	0.0	0.0	0	resident	0.8	12.7	1.2	0.039	0.152	1.9	0.3598
+deepcheck__t1__set_E_100__warm__r1	deepcheck	set_E_100	warm	1	1	2026-07-31T00:34:13Z	55.6	100.0	54.81	0.81	0.0	0.0	0	resident	0.8	12.7					0.6687
+deepcheck__t32__set_E_100__warm__r1	deepcheck	set_E_100	warm	32	1	2026-07-31T00:35:09Z	4.98	1714.0	83.7	1.67	0.0	0.0	0	resident	0.93	11.9					0.6672
+deepcheck__t16__set_E_full__warm__r1	deepcheck	set_E_full	warm	16	1	2026-07-31T00:35:14Z	43.81	1457.0	630.27	8.24	0.0	0.0	0	resident	0.93	11.8					1.2492
+magicc__t8__set_E_full__warm__r1	magicc	set_E_full	warm	8	1	2026-07-31T00:38:13Z	10.27	563.0	53.29	4.6	0.0	0.0	2	resident	0.81	110.0	7.8	0.325	1.349	10.1	0.4981
+deepcheck__t8__set_E_100__warm__r1	deepcheck	set_E_100	warm	8	1	2026-07-31T00:38:53Z	9.78	640.0	61.7	1.0	0.0	0.0	0	resident	0.85	9.7					0.6672
+deepcheck__t1__set_E_full__warm__r1	deepcheck	set_E_full	warm	1	1	2026-07-31T00:39:33Z	537.28	99.0	533.11	3.99	0.0	0.0	0	resident	0.87	109.3					1.2778
+deepcheck__t8__set_E_full__warm__r1	deepcheck	set_E_full	warm	8	1	2026-07-31T00:48:46Z	78.02	761.0	588.61	5.87	0.0	0.0	0	resident	0.81	6.4					1.2759
+magicc__t8__set_E_100__warm__r1	magicc	set_E_100	warm	8	1	2026-07-31T00:51:49Z	2.21	460.0	8.26	1.91	0.0	0.0	1	resident	0.95	5.7	1.3	0.039	0.17	2.0	0.3601
+magicc__t8__set_E_full__warm__r2	magicc	set_E_full	warm	8	2	2026-07-31T00:51:51Z	10.27	563.0	53.38	4.52	0.0	0.0	1	resident	0.95	5.7	7.9	0.326	1.33	10.1	0.4978
+deepcheck__t32__set_E_full__warm__r2	deepcheck	set_E_full	warm	32	2	2026-07-31T00:52:31Z	29.24	2603.0	751.38	10.03	0.0	0.0	0	resident	0.94	105.6					1.2834
+deepcheck__t16__set_E_100__warm__r2	deepcheck	set_E_100	warm	16	2	2026-07-31T00:55:16Z	6.39	1080.0	67.66	1.36	0.0	0.0	0	resident	0.99	5.2					0.6664
+deepcheck__t16__set_E_full__warm__r2	deepcheck	set_E_full	warm	16	2	2026-07-31T00:56:22Z	43.54	1459.0	626.89	8.79	0.0	0.0	0	resident	0.8	105.0					1.2191
+magicc__t32__set_E_100__warm__r2	magicc	set_E_100	warm	32	2	2026-07-31T00:59:21Z	2.23	1681.0	22.49	15.01	0.0	0.0	4	resident	0.86	4.8	1.3	0.02	0.169	2.0	0.3583
+magicc__t32__set_E_full__warm__r2	magicc	set_E_full	warm	32	2	2026-07-31T00:59:23Z	6.04	1683.0	85.35	16.34	0.0	0.0	1	resident	0.86	4.8	3.5	0.247	1.592	5.8	0.4975
+deepcheck__t8__set_E_100__warm__r2	deepcheck	set_E_100	warm	8	2	2026-07-31T00:59:29Z	9.82	641.0	61.95	1.06	0.0	0.0	0	resident	0.88	4.8					0.6673
+magicc__t1__set_E_full__warm__r2	magicc	set_E_full	warm	1	2	2026-07-31T01:00:09Z	48.83	99.0	46.25	2.56	0.0	0.0	0	resident	0.88	104.7	46.4	0.225	1.34	48.5	0.6471
+deepcheck__t1__set_E_full__warm__r2	deepcheck	set_E_full	warm	1	2	2026-07-31T01:00:58Z	534.59	99.0	530.78	3.64	0.0	0.0	0	resident	0.95	4.6					1.277
+deepcheck__t32__set_E_100__warm__r2	deepcheck	set_E_100	warm	32	2	2026-07-31T01:10:08Z	4.98	1716.0	83.63	1.96	0.0	0.0	0	resident	0.78	103.8					0.6667
+magicc__t1__set_E_100__warm__r2	magicc	set_E_100	warm	1	2	2026-07-31T01:10:13Z	5.95	99.0	5.32	0.62	0.0	0.0	0	resident	0.8	3.8	5.0	0.009	0.137	5.7	0.3851
+magicc__t16__set_E_full__warm__r2	magicc	set_E_full	warm	16	2	2026-07-31T01:10:19Z	6.94	965.0	58.48	8.51	0.0	0.0	4	resident	0.83	3.8	4.5	0.329	1.353	6.8	0.4967
+magicc__t8__set_E_100__warm__r2	magicc	set_E_100	warm	8	2	2026-07-31T01:10:41Z	2.24	474.0	8.35	2.28	0.0	0.0	1	resident	0.9	3.8	1.3	0.039	0.146	2.0	0.361
+deepcheck__t1__set_E_100__warm__r2	deepcheck	set_E_100	warm	1	2	2026-07-31T01:10:44Z	55.26	100.0	54.62	0.66	0.0	0.0	0	resident	0.9	103.8					0.6682
+magicc__t16__set_E_100__warm__r2	magicc	set_E_100	warm	16	2	2026-07-31T01:11:39Z	2.11	869.0	11.96	6.39	0.0	0.0	1	resident	0.96	3.7	1.2	0.038	0.153	1.9	0.3602
+deepcheck__t8__set_E_full__warm__r2	deepcheck	set_E_full	warm	8	2	2026-07-31T01:11:41Z	78.11	759.0	588.11	5.48	0.0	0.0	0	resident	0.97	3.7					1.2771
+deepcheck__t1__set_E_full__warm__r3	deepcheck	set_E_full	warm	1	3	2026-07-31T01:14:44Z	534.43	99.0	530.78	3.48	0.0	0.0	0	resident	0.97	103.5					1.2872
+magicc__t16__set_E_100__warm__r3	magicc	set_E_100	warm	16	3	2026-07-31T01:23:54Z	2.13	821.0	11.88	5.62	0.0	0.0	0	resident	0.85	3.1	1.2	0.039	0.171	1.9	0.3583
+deepcheck__t16__set_E_100__warm__r3	deepcheck	set_E_100	warm	16	3	2026-07-31T01:23:56Z	6.37	1082.0	67.69	1.32	0.0	0.0	0	resident	0.86	3.1					0.6675
+magicc__t32__set_E_100__warm__r3	magicc	set_E_100	warm	32	3	2026-07-31T01:24:48Z	2.15	1662.0	22.39	13.47	0.0	0.0	1	resident	0.98	3.1	1.3	0.02	0.139	2.0	0.3589
+magicc__t1__set_E_full__warm__r3	magicc	set_E_full	warm	1	3	2026-07-31T01:26:05Z	49.23	99.0	46.61	2.59	0.0	0.0	0	resident	0.99	3.1	46.8	0.225	1.341	48.9	0.6473
+deepcheck__t8__set_E_100__warm__r3	deepcheck	set_E_100	warm	8	3	2026-07-31T01:27:09Z	9.71	639.0	61.21	0.87	0.0	0.0	0	resident	0.77	3.0					0.6667
+deepcheck__t32__set_E_full__warm__r3	deepcheck	set_E_full	warm	32	3	2026-07-31T01:27:49Z	29.48	2601.0	756.77	10.41	0.0	0.0	0	resident	0.82	3.0					1.2739
+deepcheck__t16__set_E_full__warm__r3	deepcheck	set_E_full	warm	16	3	2026-07-31T01:30:49Z	42.71	1459.0	616.75	6.82	0.0	0.0	0	resident	0.81	3.0					1.2756
+deepcheck__t8__set_E_full__warm__r3	deepcheck	set_E_full	warm	8	3	2026-07-31T01:33:47Z	78.67	759.0	591.08	6.7	0.0	0.0	0	resident	0.86	102.9					1.2269
+magicc__t32__set_E_full__warm__r3	magicc	set_E_full	warm	32	3	2026-07-31T01:37:05Z	5.83	1752.0	85.03	17.24	0.0	0.0	0	resident	0.83	102.8	3.5	0.238	1.366	5.6	0.4983
+magicc__t16__set_E_full__warm__r3	magicc	set_E_full	warm	16	3	2026-07-31T01:38:11Z	7.28	933.0	59.53	8.43	0.0	0.0	0	resident	0.87	102.8	4.6	0.305	1.656	7.1	0.4979
+deepcheck__t32__set_E_100__warm__r3	deepcheck	set_E_100	warm	32	3	2026-07-31T01:39:04Z	4.95	1709.0	83.37	1.34	0.0	0.0	0	resident	0.98	2.8					0.6673
+magicc__t8__set_E_100__warm__r3	magicc	set_E_100	warm	8	3	2026-07-31T01:39:09Z	2.14	470.0	8.16	1.91	0.0	0.0	0	resident	0.98	2.8	1.3	0.038	0.154	2.0	0.3605
+magicc__t1__set_E_100__warm__r3	magicc	set_E_100	warm	1	3	2026-07-31T01:39:11Z	5.88	99.0	5.27	0.61	0.0	0.0	0	resident	0.98	102.8	5.0	0.008	0.139	5.6	0.3852
+deepcheck__t1__set_E_100__warm__r3	deepcheck	set_E_100	warm	1	3	2026-07-31T01:39:17Z	55.54	100.0	54.85	0.71	0.0	0.0	0	resident	0.98	2.8					0.6687
+magicc__t8__set_E_full__warm__r3	magicc	set_E_full	warm	8	3	2026-07-31T01:40:28Z	10.27	563.0	53.52	4.4	0.0	0.0	0	resident	0.84	2.8	7.8	0.334	1.369	10.1	0.4976
+checkm2__t8__set_E_100__warm__r1	checkm2	set_E_100	warm	8	1	2026-07-31T01:41:23Z	1233.47	713.0	8634.66	167.67	4.2604	8.795	494	cold_first_touch	0.91	102.8					10.5424
+checkm2__t16__set_E_100__warm__r1	checkm2	set_E_100	warm	16	1	2026-07-31T02:03:57Z	679.71	1368.0	9134.14	165.96	0.0	0.0	1	resident	0.88	2.5					10.5348
+cocopye__t32__set_E_100__warm__r1	cocopye	set_E_100	warm	32	1	2026-07-31T02:18:02Z	495.09	1427.0	6960.92	104.62	17.0907	35.281	110	cold_first_touch	0.81	202.4					15.8877
+cocopye__t16__set_E_100__warm__r1	cocopye	set_E_100	warm	16	1	2026-07-31T02:30:02Z	213.4	2130.0	4497.14	49.0	0.0	0.0	0	resident	0.95	2.3					15.869
+checkm2__t32__set_E_100__warm__r1	checkm2	set_E_100	warm	32	1	2026-07-31T02:37:05Z	559.66	2181.0	12032.27	178.65	0.0001	0.0	2	resident	0.85	2.3					10.6102
+cocopye__t8__set_E_100__warm__r1	cocopye	set_E_100	warm	8	1	2026-07-31T02:49:40Z	325.1	1069.0	3448.44	30.2	0.0	0.0	0	resident	0.94	2.2					15.8577
+checkm2__t16__set_E_100__warm__r2	checkm2	set_E_100	warm	16	2	2026-07-31T02:57:36Z	687.94	1358.0	9166.92	175.86	0.0	0.0	0	resident	0.89	2.2					10.5331
+cocopye__t32__set_E_100__warm__r2	cocopye	set_E_100	warm	32	2	2026-07-31T03:11:49Z	353.9	2004.0	6994.17	98.36	0.0	0.0	0	resident	0.8	2.2					15.8891
+cocopye__t8__set_E_100__warm__r2	cocopye	set_E_100	warm	8	2	2026-07-31T03:21:58Z	299.09000000000003	1094.0	3241.34	31.87	0.0	0.0	0	resident	0.83	2.1					15.8577
+checkm2__t8__set_E_100__warm__r2	checkm2	set_E_100	warm	8	2	2026-07-31T03:29:27Z	1195.24	740.0	8678.5	176.49	0.0	0.0	0	resident	0.97	102.0					10.4767
+cocopye__t16__set_E_100__warm__r2	cocopye	set_E_100	warm	16	2	2026-07-31T03:51:22Z	216.41	2119.0	4537.57	48.98	0.0	0.0	0	resident	0.91	102.0					15.8679
+checkm2__t32__set_E_100__warm__r2	checkm2	set_E_100	warm	32	2	2026-07-31T03:58:44Z	563.61	2205.0	12196.54	233.6	0.0	0.0	0	resident	0.88	102.0					10.5826
+cocopye__t16__set_E_100__warm__r3	cocopye	set_E_100	warm	16	3	2026-07-31T04:11:23Z	216.09	2131.0	4556.32	49.22	0.0	0.0	0	resident	0.95	2.0					15.8694
+checkm2__t32__set_E_100__warm__r3	checkm2	set_E_100	warm	32	3	2026-07-31T04:18:29Z	553.03	2198.0	11968.26	192.59	0.0	0.0	0	resident	0.84	1.9					10.6593
+checkm2__t8__set_E_100__warm__r3	checkm2	set_E_100	warm	8	3	2026-07-31T04:30:57Z	1208.65	738.0	8751.72	173.89	0.0	0.0	0	resident	0.93	1.9					10.3675
+cocopye__t32__set_E_100__warm__r3	cocopye	set_E_100	warm	32	3	2026-07-31T04:53:06Z	339.44	2059.0	6892.66	96.83	0.0	0.0	0	resident	0.93	1.8					15.888
+cocopye__t8__set_E_100__warm__r3	cocopye	set_E_100	warm	8	3	2026-07-31T05:02:31Z	296.98	1099.0	3234.71	29.27	0.0	0.0	0	resident	0.83	2.0					15.8577
+checkm2__t16__set_E_100__warm__r3	checkm2	set_E_100	warm	16	3	2026-07-31T05:09:58Z	723.83	1323.0	9398.14	180.51	0.0	0.0	0	resident	0.98	101.8					10.4338
+checkm2__t32__set_E_full__warm__r1	checkm2	set_E_full	warm	32	1	2026-07-31T05:24:47Z	4208.0	2627.0	108598.09	1965.6	0.0	0.0	0	resident	0.89	1.9					18.8767
+cocopye__t32__set_E_full__warm__r1	cocopye	set_E_full	warm	32	1	2026-07-31T06:37:26Z	3177.54	2213.0	69315.78	1006.29	0.0	0.0	0	resident	0.98	1.9					15.9
+cocopye__t32__set_E_100__cold__r1	cocopye	set_E_100	cold	32	1	2026-07-31T07:35:24Z	357.59000000000003	1980.0	6983.41	99.51	0.0	0.0	0	resident	0.79	1.7					15.8875
+deepcheck__t1__set_E_100__cold__r1	deepcheck	set_E_100	cold	1	1	2026-07-31T07:45:37Z	55.49	100.0	54.8	0.7	0.0	0.0	0	resident	0.85	1.6					0.669
+magicc__t1__set_E_full__cold__r1	magicc	set_E_full	cold	1	1	2026-07-31T07:46:32Z	49.0	99.0	46.42	2.55	0.0	0.0	0	resident	0.94	1.6	46.6	0.232	1.333	48.7	0.6459
+magicc__t32__set_E_full__cold__r1	magicc	set_E_full	cold	32	1	2026-07-31T07:47:37Z	5.81	1744.0	85.93	15.52	0.0	0.0	4	resident	0.8	1.6	3.5	0.239	1.339	5.6	0.4979
+checkm2__t32__set_E_100__cold__r1	checkm2	set_E_100	cold	32	1	2026-07-31T07:48:58Z	543.97	2239.0	11988.1	195.31	0.0	0.0	1	resident	0.94	1.6					10.6629
+deepcheck__t1__set_E_100__cold__r2	deepcheck	set_E_100	cold	1	2	2026-07-31T08:01:32Z	55.31	100.0	54.61	0.72	0.0	0.0	0	resident	0.89	101.6					0.6691
+magicc__t32__set_E_full__cold__r2	magicc	set_E_full	cold	32	2	2026-07-31T08:02:27Z	5.86	1767.0	85.45	18.13	0.0	0.0	1	resident	0.96	101.6	3.5	0.239	1.35	5.7	0.4976
+magicc__t1__set_E_full__cold__r2	magicc	set_E_full	cold	1	2	2026-07-31T08:03:48Z	49.07	99.0	46.45	2.59	0.0	0.0	0	resident	0.98	1.6	46.7	0.226	1.331	48.8	0.6478
+magicc__t32__set_E_full__cold__r3	magicc	set_E_full	cold	32	3	2026-07-31T08:04:38Z	6.09	1664.0	85.56	15.85	0.0	0.0	1	resident	0.99	101.6	3.5	0.249	1.595	5.9	0.4973
+deepcheck__t1__set_E_100__cold__r3	deepcheck	set_E_100	cold	1	3	2026-07-31T08:05:59Z	55.66	100.0	54.86	0.83	0.0	0.0	0	resident	0.93	1.6					0.6691
+magicc__t1__set_E_full__cold__r3	magicc	set_E_full	cold	1	3	2026-07-31T08:06:55Z	50.03	99.0	47.18	2.82	0.0	0.0	0	resident	0.98	101.6	47.4	0.242	1.546	49.7	0.6482
+magicc_condarun__t1__set_E_full__warm__r4	magicc_condarun	set_E_full	warm	1	4	2026-07-31T08:07:45Z	50.84	99.0	47.92	2.87	0.0	0.0	0	resident	0.99	1.6	47.2	0.227	1.333	49.3	0.6471
+magicc__t1__set_E_full__warm__r4	magicc	set_E_full	warm	1	4	2026-07-31T08:08:51Z	49.03	99.0	46.51	2.49	0.0	0.0	0	resident	0.83	101.6	46.6	0.227	1.353	48.7	0.6483
+magicc__t1__set_E_full__warm__r5	magicc	set_E_full	warm	1	5	2026-07-31T08:09:40Z	49.31	99.0	46.76	2.51	0.0	0.0	0	resident	0.93	101.6	46.9	0.226	1.34	49.0	0.6469
+magicc_condarun__t1__set_E_full__warm__r5	magicc_condarun	set_E_full	warm	1	5	2026-07-31T08:10:30Z	50.83	99.0	48.15	2.64	0.0	0.0	0	resident	0.97	1.6	47.2	0.229	1.337	49.3	0.6474
+magicc_condarun__t1__set_E_full__warm__r6	magicc_condarun	set_E_full	warm	1	6	2026-07-31T08:11:21Z	50.09	99.0	47.43	2.63	0.0	0.0	0	resident	0.99	1.6	46.4	0.232	1.34	48.5	0.6479
+magicc__t1__set_E_full__warm__r6	magicc	set_E_full	warm	1	6	2026-07-31T08:12:26Z	49.0	99.0	46.48	2.5	0.0	0.0	0	resident	0.77	1.6	46.6	0.226	1.338	48.7	0.6477
+checkm2__t1__set_E_100__warm__r1	checkm2	set_E_100	warm	1	1	2026-07-31T08:13:15Z	7907.0	100.0	7818.59	124.24	0.0	0.0	0	resident	0.9	1.6					10.6074
+cocopye__t1__set_E_100__warm__r1	cocopye	set_E_100	warm	1	1	2026-07-31T10:25:32Z	1417.3	103.0	1457.45	15.33	0.0	0.0	0	resident	0.99	1.6					15.8404
+checkm2__t1__set_E_100__warm__r2	checkm2	set_E_100	warm	1	2	2026-07-31T10:49:25Z	7900.0	100.0	7813.54	121.96	0.0003	0.001	0	resident	0.78	1.6					10.6077
+cocopye__t1__set_E_100__warm__r2	cocopye	set_E_100	warm	1	2	2026-07-31T13:01:21Z	1439.1	103.0	1478.73	15.51	0.0015	0.003	0	resident	0.78	1.5					15.841
+cocopye__t1__set_E_100__warm__r3	cocopye	set_E_100	warm	1	3	2026-07-31T13:25:35Z	1592.51	103.0	1629.96	14.96	0.0	0.0	0	resident	0.89	1.5					15.841
+checkm2__t1__set_E_100__warm__r3	checkm2	set_E_100	warm	1	3	2026-07-31T13:52:23Z	7915.0	100.0	7827.67	121.81	0.0023	0.005	0	resident	0.78	1.5					10.6071

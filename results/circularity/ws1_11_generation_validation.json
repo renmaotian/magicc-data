@@ -1,0 +1,94 @@
+{
+  "generated_utc": "2026-08-01T18:45:29.869913+00:00",
+  "generated_by": "scripts/187_ws1_11_generate_set_H.py",
+  "n_refs": 400,
+  "n_sims_per_ref": 10,
+  "n_workers": 8,
+  "set_base_seed": 7500000,
+  "seed_formula": "SET_BASE + 1000 * ref_index + replicate",
+  "design_rng": "np.random.default_rng(SET_BASE), targets drawn per (pair, replicate) and shared by both arms",
+  "generator": "scripts/73_generate_clean_cd_benchmarks.py logic, verbatim",
+  "report": {
+    "set": "set_H_ncbi",
+    "n_samples": 4000,
+    "n_generation_metadata_columns": 53,
+    "metadata_matches_generation_metadata": true,
+    "labels_match_metadata": true,
+    "fasta_missing": 0,
+    "fasta_empty": 0,
+    "fasta_unparseable": 0,
+    "fasta_length_mismatch": 0,
+    "fasta_integrity_pass": true,
+    "violations_contaminant_bp_gt_dominant_bp": 0,
+    "violations_contamination_gt_completeness": 0,
+    "violations_contamination_gt_100": 0,
+    "violations_completeness_out_of_50_100": 0,
+    "constraint_guard_fired_n": 0,
+    "out_of_domain_samples": 0,
+    "constraints_pass": true,
+    "completeness": {
+      "mean": 75.705,
+      "min": 50.042,
+      "max": 100.0,
+      "hist_50_100_5bins": [
+        707,
+        772,
+        877,
+        1003,
+        641
+      ]
+    },
+    "contamination": {
+      "mean": 45.424,
+      "min": 0.054,
+      "max": 99.997,
+      "hist_0_100_5bins": [
+        825,
+        800,
+        1091,
+        1001,
+        283
+      ]
+    },
+    "ks_target_completeness_uniform": {
+      "stat": 0.013,
+      "p": 0.4999
+    },
+    "ks_target_contamination_uniform": {
+      "stat": 0.0214,
+      "p": 0.0511
+    },
+    "n_unique_dominants": 400,
+    "sims_per_reference": [
+      10
+    ],
+    "arm_counts": {
+      "H_fail": 2000,
+      "H_pass": 2000
+    },
+    "severity_counts": {
+      "pass": 2000,
+      "mild": 870,
+      "moderate": 670,
+      "severe": 460
+    },
+    "n_pairs": 200,
+    "paired_targets_identical": true,
+    "contaminant_events_total": 12075,
+    "unique_contaminant_genomes": 6853,
+    "contaminant_same_phylum_as_dominant": 0,
+    "n_contaminants_distribution": {
+      "1": 775,
+      "2": 839,
+      "3": 755,
+      "4": 798,
+      "5": 833
+    },
+    "quality_tier_counts": {
+      "low": 1041,
+      "highly_fragmented": 997,
+      "medium": 987,
+      "high": 975
+    }
+  }
+}

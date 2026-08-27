@@ -1,0 +1,29 @@
+tier	order	tool	threads	repeat	input_set	cache	note
+0	1	magicc	32	4	set_E_100	warm	pilot: MAGICC dispatch path
+0	2	deepcheck	32	4	set_E_100	warm	pilot: DeepCheck dispatch path
+0	3	cocopye	32	4	set_E_100	warm	pilot: CoCoPyE dispatch path
+0	4	checkm2	32	4	set_E_100	warm	pilot: CheckM2 dispatch path + 251x cell repeat
+1	5	magicc	1	11	set_E_full	warm	T3 ladder rep 1
+1	6	magicc_dir	1	11	set_E_full_dir	warm	T3 ladder rep 1
+1	7	magicc_v5code	1	11	set_E_full_dir	warm	T3 ladder rep 1
+1	8	magicc_v3code_nostats	1	11	set_E_full_dir	warm	T3 ladder rep 1
+1	9	magicc_v3code	1	11	set_E_full_dir	warm	T3 ladder rep 1
+1	10	magicc	1	12	set_E_full	warm	T3 ladder rep 2
+1	11	magicc_dir	1	12	set_E_full_dir	warm	T3 ladder rep 2
+1	12	magicc_v5code	1	12	set_E_full_dir	warm	T3 ladder rep 2
+1	13	magicc_v3code_nostats	1	12	set_E_full_dir	warm	T3 ladder rep 2
+1	14	magicc_v3code	1	12	set_E_full_dir	warm	T3 ladder rep 2
+1	15	magicc	1	13	set_E_full	warm	T3 ladder rep 3
+1	16	magicc_dir	1	13	set_E_full_dir	warm	T3 ladder rep 3
+1	17	magicc_v5code	1	13	set_E_full_dir	warm	T3 ladder rep 3
+1	18	magicc_v3code_nostats	1	13	set_E_full_dir	warm	T3 ladder rep 3
+1	19	magicc_v3code	1	13	set_E_full_dir	warm	T3 ladder rep 3
+2	20	checkm2	32	5	set_E_100	warm	T2: 5th repeat of the 251x numerator cell
+3	21	magicc	32	4	set_E_full	warm	T1: MAGICC repeat (cheap)
+3	22	deepcheck	32	4	set_E_full	warm	T1: DeepCheck repeat (cheap)
+3	23	checkm2	32	2	set_E_full	warm	T1: CheckM2 repeat (~4208 s)
+3	24	cocopye	32	2	set_E_full	warm	T1: CoCoPyE repeat (~3178 s)
+3	25	magicc	32	5	set_E_full	warm	T1: MAGICC repeat (cheap)
+3	26	deepcheck	32	5	set_E_full	warm	T1: DeepCheck repeat (cheap)
+3	27	checkm2	32	3	set_E_full	warm	T1: CheckM2 repeat (~4208 s)
+3	28	cocopye	32	3	set_E_full	warm	T1: CoCoPyE repeat (~3178 s)

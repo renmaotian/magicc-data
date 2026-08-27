@@ -1,0 +1,96 @@
+{
+  "workstream": "WS3 Phase 1 - real-data discovery and acquisition",
+  "date": "2026-07-26",
+  "downloaded_bytes_total": 944000000,
+  "datasets": {
+    "meslier2022": {
+      "doi": "10.1038/s41597-022-01762-z", "pmcid": "PMC9652401",
+      "ena_project": "PRJEB52977", "ena_total_gb": 186.90,
+      "code_and_reference_repo": "https://forge.inrae.fr/metagenopolis/benchmark_mock",
+      "kbase_narrative": "https://narrative.kbase.us/narrative/125743",
+      "strains_total": 91, "bacteria": 68, "archaea": 23, "gtdb_phyla": 29,
+      "reference_status": {"Complete": 86, "Draft": 5},
+      "reference_single_sequence": 65, "reference_2_to_3_sequences": 16,
+      "mock_sizes": {"MOCK1": 71, "MOCK2": 87, "MOCK3": 64},
+      "abundance_range_pct": {"MOCK1": [0.003312, 7.3500], "MOCK2": [0.003265, 7.2461], "MOCK3": [0.032553, 11.1213]},
+      "assemblies_precomputed": 7,
+      "authors_dastool_mag_recovery": {"illumina_pacbio": "47/71", "illumina_minion": "43/71", "illumina": "41/71",
+                                        "organisms_below_0.1pct_recovered": "0/13"},
+      "correct_illumina_run_accessions": {"MOCK1": "ERR9765746", "MOCK2": "ERR9765747", "MOCK3": ["ERR9765748","ERR9765749"]},
+      "paper_table4_illumina_accessions_are_wrong": "ERR9765446-49 do not resolve in ENA",
+      "training_overlap_of_91_refs": {"TRAIN": 49, "VAL": 8, "TEST": 7, "none": 27},
+      "ground_truth": "exact, genome-level, in MAGICC's own denominator convention",
+      "local_path": "data/real_data/meslier2022"
+    },
+    "zymo": {
+      "publication": "Nicholls et al. 2019 GigaScience 8:giz043", "pmcid": "PMC6520541",
+      "ena_project": "PRJEB29504",
+      "reference_bundles": ["ZymoBIOMICS.STD.refseq.v2.zip", "D6331.refseq.zip", "D6320.refseq.zip"],
+      "isolate_draft_multifasta": "http://nanopore.s3.climb.ac.uk/mockcommunity/v2/Zymo-Isolates-SPAdes-Illumina.fasta",
+      "usable_bacterial_isolate_pairs": 8, "eukaryotes_excluded": 2,
+      "draft_over_reference_size_ratio_range": [0.9476, 0.9912],
+      "community_illumina_gb": {"even_ERR2984773": 1.96, "log_ERR2935805": 6.54},
+      "ground_truth": "exact for the 8 isolate pairs",
+      "local_path": "data/real_data/zymo"
+    },
+    "ncbi_pairs": {
+      "script": "scripts/130_ncbi_draft_complete_pairs.py",
+      "tier1_same_biosample_pairs": 4834, "tier1_species": 3666,
+      "tier1_prokaryote_in_size_band": 1097, "tier1_prokaryote_species": 165,
+      "tier2_same_strain_pairs": 23327, "tier2_prokaryote_in_size_band": 22146, "tier2_species": 1338,
+      "tier2_capped_2_per_species": 1687,
+      "ncbi_contaminated_flagged_assemblies": 23048,
+      "tier1_download_gb_est": 2.6,
+      "ground_truth": "reference-anchored; unaligned bp is an UPPER BOUND on contamination",
+      "outputs": "results/revision/real_data/ncbi_pairs/"
+    },
+    "uhgg": {
+      "release": "MGnify human-gut v2.0.2", "genomes": 289232, "mags": 278263, "isolates": 10969,
+      "species_reps": 4744, "taxonomy": "GTDB r202", "shipped_quality_tool": "CheckM v1",
+      "reviewer_genera_present": {"CAG-557": 89, "UMGS1491": 30, "HGM10766": 7},
+      "reviewer_genera_absent": ["Caccenecus", "Faecimonas"],
+      "per_genome_format": "Prokka .gff.gz with embedded ##FASTA",
+      "subset_5000_download_gb_est": 5.6,
+      "ground_truth": "NONE - disagreement characterisation only",
+      "local_path": "data/real_data/uhgg"
+    },
+    "gtdb_reviewer_genera": {
+      "source": "data/gtdb/{bac120,ar53}_metadata.tsv.gz (already local, 732475 genomes, published checkm2_* columns)",
+      "genomes": {"CAG-557": 60, "UMGS1491": 61, "Caccenecus": 101, "HGM10766": 15, "Faecimonas": 61},
+      "all_derived_from_metagenome": true,
+      "checkm2_completeness_median": {"CAG-557": 97.36, "UMGS1491": 94.52, "Caccenecus": 92.41, "HGM10766": 89.05, "Faecimonas": 92.84},
+      "genome_size_median_bp": {"CAG-557": 981188, "UMGS1491": 1095451, "Caccenecus": 1286632, "HGM10766": 1091647, "Faecimonas": 1410926},
+      "ground_truth": "NONE - disagreement characterisation only"
+    },
+    "cami2": {
+      "base_url": "https://frl.publisso.de/data/frl:6425521/",
+      "requires_request_form": false,
+      "genome_bundle_bytes": {"marine": 836461952, "strain": 452195617, "plant_associated": 1639376960, "pathogen": 584127020},
+      "per_sample_contigs_bytes_marine_s0": 377315812,
+      "tarball_contents": ["anonymous_gsa.fasta.gz", "binning_gs.tsv", "gsa_mapping.tsv.gz"],
+      "source_genomes": 1680, "circular_elements": 599,
+      "ground_truth": "exact; gold-standard bins have contamination 0 by construction"
+    },
+    "sags": {
+      "gorg_tropics": {"bioproject": "PRJEB33281", "assemblies_in_ena": 12715,
+        "present_in_gtdb_completeness_ge_50": 3151, "fraction_scoreable_by_magicc": 0.248,
+        "checkm2_completeness_median": 75.4, "checkm2_contamination_median": 0.05,
+        "manifest": "data/real_data/gorg_tropics/ena_PRJEB33281_assemblies.tsv"},
+      "gtdb_single_cell": {"n": 1596, "checkm2_completeness_median": 75.07,
+        "with_conspecific_complete_reference": 453,
+        "conspecific_cohort_completeness_median": 72.3},
+      "ground_truth": "bounded (conspecific reference) for n=453; none otherwise"
+    },
+    "atcc": {
+      "msa_1003_bioproject": "PRJNA546278", "public_runs": 2, "platform": "PacBio Sequel II only",
+      "run_bytes": {"SRR9328980": 16144205832, "SRR9202034": 14990931566},
+      "reference_genomes": "ATCC Genome Portal, gated by Data Use Agreement / membership; no public bulk API found",
+      "resolution": "ATCC MSA-1002 strains are embedded in Meslier MOCK1/2/3 with public GenBank accessions; 22/91 Meslier references are ATCC strains"
+    }
+  },
+  "protocol_corrections": [
+    "WS3.7 mis-describes Meslier et al. 2022 as a SAG dataset; it is a mock-community/sequencing-platform benchmark. Move to WS3.6.",
+    "Meslier Table 4 Illumina run accessions ERR9765446-49 do not exist; correct accessions are ERR9765746-49.",
+    "UHGG ships CheckM v1 values, not CheckM2; the reviewer's comparison requires either our own CheckM2 run or GTDB's published CheckM2 values."
+  ]
+}

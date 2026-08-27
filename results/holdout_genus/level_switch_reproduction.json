@@ -1,0 +1,723 @@
+{
+  "phylum": {
+    "config_equivalence": true,
+    "current": {
+      "level": "phylum",
+      "ws": "ws1.6",
+      "panel_taxa": [
+        "Altiarchaeota",
+        "Bacteroidota",
+        "Bacteroidota_A",
+        "Campylobacterota",
+        "Halobacteriota",
+        "Iainarchaeota",
+        "Micrarchaeota",
+        "Nanobdellota",
+        "Nanohalarchaeota",
+        "Patescibacteriota"
+      ],
+      "panel_phyla": [
+        "Altiarchaeota",
+        "Bacteroidota",
+        "Bacteroidota_A",
+        "Campylobacterota",
+        "Halobacteriota",
+        "Iainarchaeota",
+        "Micrarchaeota",
+        "Nanobdellota",
+        "Nanohalarchaeota",
+        "Patescibacteriota"
+      ],
+      "panel_parent_phyla": [
+        "Altiarchaeota",
+        "Bacteroidota",
+        "Bacteroidota_A",
+        "Campylobacterota",
+        "Halobacteriota",
+        "Iainarchaeota",
+        "Micrarchaeota",
+        "Nanobdellota",
+        "Nanohalarchaeota",
+        "Patescibacteriota"
+      ],
+      "panel_groups": {
+        "Bacteroidota": [
+          "Bacteroidota"
+        ],
+        "Bacteroidota_A": [
+          "Bacteroidota_A"
+        ],
+        "Campylobacterota": [
+          "Campylobacterota"
+        ],
+        "Patescibacteriota": [
+          "Patescibacteriota"
+        ],
+        "Halobacteriota": [
+          "Halobacteriota"
+        ],
+        "DPANN": [
+          "Altiarchaeota",
+          "Iainarchaeota",
+          "Micrarchaeota",
+          "Nanobdellota",
+          "Nanohalarchaeota"
+        ]
+      },
+      "eval_design": {
+        "Bacteroidota": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test"
+        },
+        "Bacteroidota_A": {
+          "n_refs": 66,
+          "sims": 15,
+          "ref_source": "test"
+        },
+        "Campylobacterota": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test"
+        },
+        "Patescibacteriota": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test"
+        },
+        "Halobacteriota": {
+          "n_refs": 72,
+          "sims": 14,
+          "ref_source": "test"
+        },
+        "DPANN": {
+          "n_refs": 83,
+          "sims": 12,
+          "ref_source": "all"
+        },
+        "in_distribution": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test"
+        }
+      },
+      "eval_groups": [
+        "Bacteroidota",
+        "Bacteroidota_A",
+        "Campylobacterota",
+        "Patescibacteriota",
+        "Halobacteriota",
+        "DPANN"
+      ],
+      "control_group": "in_distribution",
+      "paths": {
+        "results_dir": "/path/to/magicc/results/revision/holdout",
+        "holdout_dir": "/path/to/magicc/data/holdout",
+        "features_h5": "/path/to/magicc/data/features/holdout_phylum_features.h5",
+        "onnx": "/path/to/magicc/models/magicc_holdout_phylum.onnx",
+        "norm_params": "/path/to/magicc/data/holdout/holdout_normalization_params.json",
+        "train_out": "/path/to/magicc/models/holdout",
+        "eval_dir": "/path/to/magicc/data/holdout/eval_sets",
+        "panel_json": "/path/to/magicc/data/holdout/holdout_panel.json"
+      },
+      "synthesis": {
+        "n_train": 1000000,
+        "n_val": 100000,
+        "n_test": 100000,
+        "sample_types": {
+          "pure": 1500,
+          "complete": 1500,
+          "within_phylum": 3000,
+          "cross_phylum": 3000,
+          "reduced_genome": 500,
+          "archaeal": 500
+        },
+        "batch_size": 10000,
+        "n_kmer_features": 9249,
+        "quality_tier_weights": {
+          "high": 0.15,
+          "medium": 0.35,
+          "low": 0.35,
+          "highly_fragmented": 0.15
+        },
+        "adapted_reduced_pool": true,
+        "adapted_reduced_cutoff": 1500000,
+        "reduced_pool_threshold": 0.5,
+        "v5_reduced_phyla": [
+          "Aenigmatarchaeota",
+          "Altiarchaeota",
+          "Bdellovibrionota",
+          "Dependentiae",
+          "Diapherotrites",
+          "Huberarchaeota",
+          "Iainarchaeota",
+          "Micrarchaeota",
+          "Nanoarchaeota",
+          "Nanobdellota",
+          "Nanohalarchaeota",
+          "Nanohaloarchaeota",
+          "Patescibacteriota",
+          "Undinarchaeota",
+          "Woesearchaeota"
+        ],
+        "eval_seed_base": 20260726,
+        "eval_target_n": 1000,
+        "eval_max_refs": 100,
+        "eval_min_sims": 10
+      },
+      "reference_selection": {
+        "Bacteroidota": {
+          "n": 100,
+          "sha256": "48c16287ea4dbf4daac66726c6ec84b071ff59e10bd6fdec92e9d72daae8344a",
+          "recorded_n": 100,
+          "matches_recorded": false,
+          "overlap_with_recorded": 8,
+          "subsamples": true
+        },
+        "Bacteroidota_A": {
+          "n": 66,
+          "sha256": "3d8f570d6aa55fbbaafca185f1a85c9d1966bf837cbfe0613507aed448645f88",
+          "recorded_n": 66,
+          "matches_recorded": true,
+          "overlap_with_recorded": 66,
+          "subsamples": true
+        },
+        "Campylobacterota": {
+          "n": 100,
+          "sha256": "7a236f882771ffe958d70d5944c6b0749877ff799b4466e821797ff2ea64d3ce",
+          "recorded_n": 100,
+          "matches_recorded": false,
+          "overlap_with_recorded": 13,
+          "subsamples": true
+        },
+        "Patescibacteriota": {
+          "n": 100,
+          "sha256": "18f7319a97a1a061f797c5af41dbd4da31652fca0e3657700364c3bbde4ca77e",
+          "recorded_n": 100,
+          "matches_recorded": false,
+          "overlap_with_recorded": 67,
+          "subsamples": true
+        },
+        "Halobacteriota": {
+          "n": 72,
+          "sha256": "d42842251984510e186d33cc2209d200e708b5ebdd57546afb1a4547b5aab0ab",
+          "recorded_n": 72,
+          "matches_recorded": true,
+          "overlap_with_recorded": 72,
+          "subsamples": true
+        },
+        "DPANN": {
+          "n": 83,
+          "sha256": "68493588f217f8ba904628222b323b54461de10117b6a8ac882a843870c75ce4",
+          "recorded_n": 83,
+          "matches_recorded": true,
+          "overlap_with_recorded": 83,
+          "subsamples": true
+        },
+        "in_distribution": {
+          "n": 100,
+          "sha256": "61b2a4a6645a4f53e67c224a783697d974439de28f4de63d0ef44f9397fdf508",
+          "recorded_n": 100,
+          "matches_recorded": false,
+          "overlap_with_recorded": 5,
+          "subsamples": true
+        }
+      }
+    }
+  },
+  "family": {
+    "config_equivalence": true,
+    "current": {
+      "level": "family",
+      "ws": "ws1.9",
+      "panel_taxa": [
+        "2-12-FULL-60-25",
+        "Arcobacteraceae",
+        "Flavobacteriaceae",
+        "GWA2-37-8",
+        "GWC2-37-13",
+        "Haloarculaceae",
+        "Haloferacaceae",
+        "Helicobacteraceae",
+        "Minisyncoccaceae",
+        "Muribaculaceae",
+        "Nanoperiomorbaceae",
+        "Nanosynbacteraceae",
+        "Nanosyncoccaceae",
+        "PJMF01",
+        "Peribacteraceae",
+        "Saccharimonadaceae",
+        "Staskawiczbacteraceae",
+        "UBA1547",
+        "UBA2103",
+        "UBA2206",
+        "UBA4665",
+        "UBA8517",
+        "UBA918",
+        "UBA922",
+        "UBA9973"
+      ],
+      "panel_phyla": [],
+      "panel_parent_phyla": [
+        "Bacteroidota",
+        "Campylobacterota",
+        "Halobacteriota",
+        "Patescibacteriota"
+      ],
+      "panel_groups": {
+        "Bacteroidota_Muribaculaceae": [
+          "Muribaculaceae"
+        ],
+        "Bacteroidota_Flavobacteriaceae": [
+          "Flavobacteriaceae"
+        ],
+        "Campylobacterota_Helicobacteraceae": [
+          "Helicobacteraceae"
+        ],
+        "Campylobacterota_Arcobacteraceae": [
+          "Arcobacteraceae"
+        ],
+        "Halobacteriota_halophilic": [
+          "Haloarculaceae",
+          "Haloferacaceae"
+        ],
+        "Patescibacteriota_families": [
+          "2-12-FULL-60-25",
+          "GWA2-37-8",
+          "GWC2-37-13",
+          "Minisyncoccaceae",
+          "Nanoperiomorbaceae",
+          "Nanosynbacteraceae",
+          "Nanosyncoccaceae",
+          "PJMF01",
+          "Peribacteraceae",
+          "Saccharimonadaceae",
+          "Staskawiczbacteraceae",
+          "UBA1547",
+          "UBA2103",
+          "UBA2206",
+          "UBA4665",
+          "UBA8517",
+          "UBA918",
+          "UBA922",
+          "UBA9973"
+        ]
+      },
+      "eval_design": {
+        "Bacteroidota_Muribaculaceae": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test"
+        },
+        "Bacteroidota_Flavobacteriaceae": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test"
+        },
+        "Campylobacterota_Helicobacteraceae": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test"
+        },
+        "Campylobacterota_Arcobacteraceae": {
+          "n_refs": 40,
+          "sims": 25,
+          "ref_source": "test"
+        },
+        "Halobacteriota_halophilic": {
+          "n_refs": 28,
+          "sims": 36,
+          "ref_source": "test"
+        },
+        "Patescibacteriota_families": {
+          "n_refs": 66,
+          "sims": 15,
+          "ref_source": "test"
+        },
+        "in_distribution": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test"
+        }
+      },
+      "eval_groups": [
+        "Bacteroidota_Muribaculaceae",
+        "Bacteroidota_Flavobacteriaceae",
+        "Campylobacterota_Helicobacteraceae",
+        "Campylobacterota_Arcobacteraceae",
+        "Halobacteriota_halophilic",
+        "Patescibacteriota_families"
+      ],
+      "control_group": "in_distribution",
+      "paths": {
+        "results_dir": "/path/to/magicc/results/revision/holdout_family",
+        "holdout_dir": "/path/to/magicc/data/holdout_family",
+        "features_h5": "/path/to/magicc/data/features/holdout_family_features.h5",
+        "onnx": "/path/to/magicc/models/magicc_holdout_family.onnx",
+        "norm_params": "/path/to/magicc/data/holdout_family/holdout_normalization_params.json",
+        "train_out": "/path/to/magicc/models/holdout_family",
+        "eval_dir": "/path/to/magicc/data/holdout_family/eval_sets",
+        "panel_json": "/path/to/magicc/data/holdout_family/holdout_panel.json"
+      },
+      "synthesis": {
+        "n_train": 1000000,
+        "n_val": 100000,
+        "n_test": 100000,
+        "sample_types": {
+          "pure": 1500,
+          "complete": 1500,
+          "within_phylum": 3000,
+          "cross_phylum": 3000,
+          "reduced_genome": 500,
+          "archaeal": 500
+        },
+        "batch_size": 10000,
+        "n_kmer_features": 9249,
+        "quality_tier_weights": {
+          "high": 0.15,
+          "medium": 0.35,
+          "low": 0.35,
+          "highly_fragmented": 0.15
+        },
+        "adapted_reduced_pool": false,
+        "adapted_reduced_cutoff": 1500000,
+        "reduced_pool_threshold": 0.5,
+        "v5_reduced_phyla": [
+          "Aenigmatarchaeota",
+          "Altiarchaeota",
+          "Bdellovibrionota",
+          "Dependentiae",
+          "Diapherotrites",
+          "Huberarchaeota",
+          "Iainarchaeota",
+          "Micrarchaeota",
+          "Nanoarchaeota",
+          "Nanobdellota",
+          "Nanohalarchaeota",
+          "Nanohaloarchaeota",
+          "Patescibacteriota",
+          "Undinarchaeota",
+          "Woesearchaeota"
+        ],
+        "eval_seed_base": 20260726,
+        "eval_target_n": 1000,
+        "eval_max_refs": 100,
+        "eval_min_sims": 10
+      },
+      "reference_selection": {
+        "Bacteroidota_Muribaculaceae": {
+          "n": 100,
+          "sha256": "c028ed6ab68b6ba3c0e94595ff204eda83620f2318bddab81974695212313c4d",
+          "recorded_n": 100,
+          "matches_recorded": true,
+          "overlap_with_recorded": 100,
+          "subsamples": true
+        },
+        "Bacteroidota_Flavobacteriaceae": {
+          "n": 100,
+          "sha256": "a25a919832d2e9c990e2cc3c6c7630d4d5513e93d60fe0f29ca771cb2e22189e",
+          "recorded_n": 100,
+          "matches_recorded": true,
+          "overlap_with_recorded": 100,
+          "subsamples": true
+        },
+        "Campylobacterota_Helicobacteraceae": {
+          "n": 100,
+          "sha256": "d2bcf59af3140724f602374b1c3fa8017e9f5139f339e2d2c2f253ba86584e8d",
+          "recorded_n": 100,
+          "matches_recorded": true,
+          "overlap_with_recorded": 100,
+          "subsamples": true
+        },
+        "Campylobacterota_Arcobacteraceae": {
+          "n": 40,
+          "sha256": "5d77de2bc92475af78dac4a04ca645df9cb32499d9ce0e3e9a3000ad10d8b84b",
+          "recorded_n": 40,
+          "matches_recorded": true,
+          "overlap_with_recorded": 40,
+          "subsamples": true
+        },
+        "Halobacteriota_halophilic": {
+          "n": 28,
+          "sha256": "81dea4271ee61e9a4d14e7d61333c60f559be65805a81638d798e7892be098e1",
+          "recorded_n": 28,
+          "matches_recorded": true,
+          "overlap_with_recorded": 28,
+          "subsamples": true
+        },
+        "Patescibacteriota_families": {
+          "n": 66,
+          "sha256": "d54d66ae10b06cbfdf7467642c4884860488cf3e4ef539d00fde2da6813cc07d",
+          "recorded_n": 66,
+          "matches_recorded": true,
+          "overlap_with_recorded": 66,
+          "subsamples": true
+        },
+        "in_distribution": {
+          "n": 100,
+          "sha256": "75cbbad38207a16884171c3cb7434226e1990a4c881323c0bb4172abcb538cb7",
+          "recorded_n": 100,
+          "matches_recorded": false,
+          "overlap_with_recorded": 92,
+          "subsamples": true
+        }
+      }
+    }
+  },
+  "genus": {
+    "config_equivalence": null,
+    "current": {
+      "level": "genus",
+      "ws": "ws11.g",
+      "panel_taxa": [
+        "Aequorivita",
+        "Aliarcobacter",
+        "C7867-001",
+        "CAG-1031",
+        "CAG-873",
+        "CAIKZD01",
+        "CAIYEO01",
+        "CG1-02-43-31",
+        "Flagellimonas",
+        "Flavobacterium",
+        "Halapricum",
+        "Haloarcula",
+        "Halobellus",
+        "Haloferax",
+        "Halomicrobium",
+        "Haloplanus",
+        "Halorhabdus",
+        "Halorientalis",
+        "Halorubrum",
+        "Helicobacter_B",
+        "Helicobacter_C",
+        "Helicobacter_D",
+        "Helicobacter_E",
+        "Helicobacter_F",
+        "Helicobacter_G",
+        "JABIEQ01",
+        "JAKLGL01",
+        "Lepagella",
+        "Limisoma",
+        "MWCR01",
+        "Nanosyncoccus",
+        "Nonlabens",
+        "Paramuribaculum",
+        "Peribacter",
+        "Polaribacter",
+        "Poseidonibacter",
+        "Tenacibaculum",
+        "UBA1547",
+        "UBA2170",
+        "UBA4124",
+        "UBA8515",
+        "UBA9973",
+        "XYD1-FULL-39-28",
+        "XYD2-FULL-39-9"
+      ],
+      "panel_phyla": [],
+      "panel_parent_phyla": [
+        "Bacteroidota",
+        "Campylobacterota",
+        "Halobacteriota",
+        "Patescibacteriota"
+      ],
+      "panel_groups": {
+        "Bacteroidota_Muribaculaceae_genera": [
+          "CAG-1031",
+          "CAG-873",
+          "Lepagella",
+          "Limisoma",
+          "Paramuribaculum"
+        ],
+        "Bacteroidota_Flavobacteriaceae_genera": [
+          "Aequorivita",
+          "Flagellimonas",
+          "Flavobacterium",
+          "Nonlabens",
+          "Polaribacter",
+          "Tenacibaculum"
+        ],
+        "Campylobacterota_Helicobacteraceae_genera": [
+          "Helicobacter_B",
+          "Helicobacter_C",
+          "Helicobacter_D",
+          "Helicobacter_E",
+          "Helicobacter_F",
+          "Helicobacter_G"
+        ],
+        "Campylobacterota_Arcobacteraceae_genera": [
+          "Aliarcobacter",
+          "Poseidonibacter"
+        ],
+        "Halobacteriota_halophilic_genera": [
+          "Halapricum",
+          "Haloarcula",
+          "Halobellus",
+          "Haloferax",
+          "Halomicrobium",
+          "Haloplanus",
+          "Halorhabdus",
+          "Halorientalis",
+          "Halorubrum"
+        ],
+        "Patescibacteriota_genera": [
+          "C7867-001",
+          "CAIKZD01",
+          "CAIYEO01",
+          "CG1-02-43-31",
+          "JABIEQ01",
+          "JAKLGL01",
+          "MWCR01",
+          "Nanosyncoccus",
+          "Peribacter",
+          "UBA1547",
+          "UBA2170",
+          "UBA4124",
+          "UBA8515",
+          "UBA9973",
+          "XYD1-FULL-39-28",
+          "XYD2-FULL-39-9"
+        ]
+      },
+      "eval_design": {
+        "Bacteroidota_Muribaculaceae_genera": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test"
+        },
+        "Bacteroidota_Flavobacteriaceae_genera": {
+          "n_refs": 96,
+          "sims": 10,
+          "ref_source": "test"
+        },
+        "Campylobacterota_Helicobacteraceae_genera": {
+          "n_refs": 51,
+          "sims": 20,
+          "ref_source": "test"
+        },
+        "Campylobacterota_Arcobacteraceae_genera": {
+          "n_refs": 33,
+          "sims": 30,
+          "ref_source": "test"
+        },
+        "Halobacteriota_halophilic_genera": {
+          "n_refs": 24,
+          "sims": 42,
+          "ref_source": "test"
+        },
+        "Patescibacteriota_genera": {
+          "n_refs": 30,
+          "sims": 33,
+          "ref_source": "test"
+        },
+        "in_distribution": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test"
+        }
+      },
+      "eval_groups": [
+        "Bacteroidota_Muribaculaceae_genera",
+        "Bacteroidota_Flavobacteriaceae_genera",
+        "Campylobacterota_Helicobacteraceae_genera",
+        "Campylobacterota_Arcobacteraceae_genera",
+        "Halobacteriota_halophilic_genera",
+        "Patescibacteriota_genera"
+      ],
+      "control_group": "in_distribution",
+      "paths": {
+        "results_dir": "/path/to/magicc/results/revision/holdout_genus",
+        "holdout_dir": "/path/to/magicc/data/holdout_genus",
+        "features_h5": "/path/to/magicc/data/features/holdout_genus_features.h5",
+        "onnx": "/path/to/magicc/models/magicc_holdout_genus.onnx",
+        "norm_params": "/path/to/magicc/data/holdout_genus/holdout_normalization_params.json",
+        "train_out": "/path/to/magicc/models/holdout_genus",
+        "eval_dir": "/path/to/magicc/data/holdout_genus/eval_sets",
+        "panel_json": "/path/to/magicc/data/holdout_genus/holdout_panel.json"
+      },
+      "synthesis": {
+        "n_train": 1000000,
+        "n_val": 100000,
+        "n_test": 100000,
+        "sample_types": {
+          "pure": 1500,
+          "complete": 1500,
+          "within_phylum": 3000,
+          "cross_phylum": 3000,
+          "reduced_genome": 500,
+          "archaeal": 500
+        },
+        "batch_size": 10000,
+        "n_kmer_features": 9249,
+        "quality_tier_weights": {
+          "high": 0.15,
+          "medium": 0.35,
+          "low": 0.35,
+          "highly_fragmented": 0.15
+        },
+        "adapted_reduced_pool": false,
+        "adapted_reduced_cutoff": 1500000,
+        "reduced_pool_threshold": 0.5,
+        "v5_reduced_phyla": [
+          "Aenigmatarchaeota",
+          "Altiarchaeota",
+          "Bdellovibrionota",
+          "Dependentiae",
+          "Diapherotrites",
+          "Huberarchaeota",
+          "Iainarchaeota",
+          "Micrarchaeota",
+          "Nanoarchaeota",
+          "Nanobdellota",
+          "Nanohalarchaeota",
+          "Nanohaloarchaeota",
+          "Patescibacteriota",
+          "Undinarchaeota",
+          "Woesearchaeota"
+        ],
+        "eval_seed_base": 20260726,
+        "eval_target_n": 1000,
+        "eval_max_refs": 100,
+        "eval_min_sims": 10
+      },
+      "reference_selection": {
+        "Bacteroidota_Muribaculaceae_genera": {
+          "n": 100,
+          "sha256": "180de49818e5d8898fc20a492df8933ba4131ecee83494823f03961eba02e5f0",
+          "matches_recorded": null
+        },
+        "Bacteroidota_Flavobacteriaceae_genera": {
+          "n": 96,
+          "sha256": "c9a7f0c07d4bc033a42a4bf6df5887d98edd2cb2bb892632cd1693a53d61ffd7",
+          "matches_recorded": null
+        },
+        "Campylobacterota_Helicobacteraceae_genera": {
+          "n": 51,
+          "sha256": "aba0a685747214248eb1f72e38678b95d1f2b0d9a98b1abfa5471a44f473a278",
+          "matches_recorded": null
+        },
+        "Campylobacterota_Arcobacteraceae_genera": {
+          "n": 33,
+          "sha256": "7306426f358064e70700095938c8139c8eff8513de8ca74680ce08868fe8ac10",
+          "matches_recorded": null
+        },
+        "Halobacteriota_halophilic_genera": {
+          "n": 24,
+          "sha256": "7f20aa89659e996eebf098fec31c2705f77df8ec786f7d4d3adc8954f1ea4786",
+          "matches_recorded": null
+        },
+        "Patescibacteriota_genera": {
+          "n": 30,
+          "sha256": "3936c7705aa429ee4a2c164deda260ac2a194ff370ccf30e853ff248648bfbed",
+          "matches_recorded": null
+        },
+        "in_distribution": {
+          "n": 100,
+          "sha256": "f8ec28aef9cd83be9a885850352b2d77992646eefa68180d3dfb8c19105d35de",
+          "matches_recorded": null
+        }
+      }
+    }
+  }
+}

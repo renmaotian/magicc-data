@@ -1,0 +1,158 @@
+==================================================================
+WS11.T campaign start 2026-08-26T16:58:25Z
+host=Alborz nproc=48 plan=/path/to/magicc/results/revision/speed_v3/run_plan_v3.tsv
+tiers 0..9  gate_general=4.0 gate_magicc1thr=1.5
+mem: 881 GiB total, 863 GiB available
+==================================================================
+[skip] 1/magicc__t32__set_E_100__warm__r4
+[skip] 2/deepcheck__t32__set_E_100__warm__r4
+[skip] 3/cocopye__t32__set_E_100__warm__r4
+[skip] 4/checkm2__t32__set_E_100__warm__r4
+[wait] magicc__t1__set_E_full__warm__r11: load1=9.31 >= 1.5 (busy=108.7%), settling, waited 0s
+[wait] magicc__t1__set_E_full__warm__r11: load1=4.05 >= 1.5 (busy=108.8%), settling, waited 60s
+[wait] magicc__t1__set_E_full__warm__r11: load1=2.42 >= 1.5 (busy=109.0%), settling, waited 120s
+[wait] magicc__t1__set_E_full__warm__r11: load1=1.52 >= 1.5 (busy=109.0%), settling, waited 180s
+[run ] tier=1 order=5 magicc__t1__set_E_full__warm__r11 | T3 ladder rep 1
+       loadavg=1.19 10.00 12.44 memavail=909062560kB 2026-08-26T17:02:25Z
+[time] magicc t=1 r=11 set_E_full/warm: wall=49.86s rss=0.6484GB rc=0 load_before=1.19 fs_inputs=0
+[done] magicc__t1__set_E_full__warm__r11 rc=0
+[wait] magicc_dir__t1__set_E_full_dir__warm__r11: load1=1.86 >= 1.5 (busy=109.2%), settling, waited 0s
+[run ] tier=1 order=6 magicc_dir__t1__set_E_full_dir__warm__r11 | T3 ladder rep 1
+       loadavg=1.31 7.39 11.22 memavail=909219700kB 2026-08-26T17:04:17Z
+[time] magicc_dir t=1 r=11 set_E_full_dir/warm: wall=49.93s rss=0.6482GB rc=0 load_before=1.31 fs_inputs=0
+[done] magicc_dir__t1__set_E_full_dir__warm__r11 rc=0
+[wait] magicc_v5code__t1__set_E_full_dir__warm__r11: load1=1.96 >= 1.5 (busy=109.2%), settling, waited 0s
+[wait] magicc_v5code__t1__set_E_full_dir__warm__r11: load1=1.54 >= 1.5 (busy=109.1%), settling, waited 60s
+[wait] magicc_v5code__t1__set_E_full_dir__warm__r11: load1=1.57 >= 1.5 (busy=311.5%), settling, waited 120s
+[run ] tier=1 order=7 magicc_v5code__t1__set_E_full_dir__warm__r11 | T3 ladder rep 1
+       loadavg=1.40 4.24 9.09 memavail=909946480kB 2026-08-26T17:08:09Z
+[time] magicc_v5code t=1 r=11 set_E_full_dir/warm: wall=50.52s rss=0.6477GB rc=0 load_before=1.4 fs_inputs=0
+[done] magicc_v5code__t1__set_E_full_dir__warm__r11 rc=0
+[wait] magicc_v3code_nostats__t1__set_E_full_dir__warm__r11: load1=1.95 >= 1.5 (busy=209.2%), settling, waited 0s
+[run ] tier=1 order=8 magicc_v3code_nostats__t1__set_E_full_dir__warm__r11 | T3 ladder rep 1
+       loadavg=1.35 3.38 8.21 memavail=911151848kB 2026-08-26T17:10:02Z
+[time] magicc_v3code_nostats t=1 r=11 set_E_full_dir/warm: wall=49.8s rss=0.6559GB rc=0 load_before=1.35 fs_inputs=0
+[done] magicc_v3code_nostats__t1__set_E_full_dir__warm__r11 rc=0
+[wait] magicc_v3code__t1__set_E_full_dir__warm__r11: load1=1.62 >= 1.5 (busy=9.4%), settling, waited 0s
+[run ] tier=1 order=9 magicc_v3code__t1__set_E_full_dir__warm__r11 | T3 ladder rep 1
+       loadavg=1.07 2.69 7.42 memavail=911031968kB 2026-08-26T17:11:54Z
+[time] magicc_v3code t=1 r=11 set_E_full_dir/warm: wall=73.81s rss=0.6617GB rc=0 load_before=1.07 fs_inputs=0
+[done] magicc_v3code__t1__set_E_full_dir__warm__r11 rc=0
+[run ] tier=1 order=10 magicc__t1__set_E_full__warm__r12 | T3 ladder rep 2
+       loadavg=1.31 2.41 6.93 memavail=911198780kB 2026-08-26T17:13:10Z
+[time] magicc t=1 r=12 set_E_full/warm: wall=50.62s rss=0.6473GB rc=0 load_before=1.31 fs_inputs=0
+[done] magicc__t1__set_E_full__warm__r12 rc=0
+[wait] magicc_dir__t1__set_E_full_dir__warm__r12: load1=2.13 >= 1.5 (busy=260.2%), settling, waited 0s
+[wait] magicc_dir__t1__set_E_full_dir__warm__r12: load1=2.89 >= 1.5 (busy=282.7%), settling, waited 60s
+[wait] magicc_dir__t1__set_E_full_dir__warm__r12: load1=9.82 >= 1.5 (busy=227.7%), settling, waited 120s
+[wait] magicc_dir__t1__set_E_full_dir__warm__r12: load1=13.18 >= 1.5 (busy=428.2%), settling, waited 180s
+[wait] magicc_dir__t1__set_E_full_dir__warm__r12: load1=6.70 >= 1.5 (busy=210.2%), settling, waited 240s
+[wait] magicc_dir__t1__set_E_full_dir__warm__r12: load1=3.39 >= 1.5 (busy=210.3%), settling, waited 300s
+[wait] magicc_dir__t1__set_E_full_dir__warm__r12: load1=1.96 >= 1.5 (busy=118.3%), settling, waited 360s
+[wait] magicc_dir__t1__set_E_full_dir__warm__r12: load1=1.83 >= 1.5 (busy=218.5%), settling, waited 420s
+[wait] magicc_dir__t1__set_E_full_dir__warm__r12: load1=1.81 >= 1.5 (busy=210.4%), settling, waited 480s
+[wait] magicc_dir__t1__set_E_full_dir__warm__r12: load1=1.84 >= 1.5 (busy=220.9%), settling, waited 540s
+[wait] magicc_dir__t1__set_E_full_dir__warm__r12: load1=1.79 >= 1.5 (busy=114.6%), settling, waited 600s
+[run ] tier=1 order=11 magicc_dir__t1__set_E_full_dir__warm__r12 | T3 ladder rep 2
+       loadavg=1.39 2.61 5.10 memavail=905180432kB 2026-08-26T17:25:03Z
+[time] magicc_dir t=1 r=12 set_E_full_dir/warm: wall=50.84s rss=0.6479GB rc=0 load_before=1.39 fs_inputs=0
+[done] magicc_dir__t1__set_E_full_dir__warm__r12 rc=0
+[wait] magicc_v5code__t1__set_E_full_dir__warm__r12: load1=2.03 >= 1.5 (busy=316.3%), settling, waited 0s
+[wait] magicc_v5code__t1__set_E_full_dir__warm__r12: load1=1.80 >= 1.5 (busy=211.3%), settling, waited 60s
+[run ] tier=1 order=12 magicc_v5code__t1__set_E_full_dir__warm__r12 | T3 ladder rep 2
+       loadavg=1.48 2.22 4.53 memavail=907141104kB 2026-08-26T17:27:56Z
+[time] magicc_v5code t=1 r=12 set_E_full_dir/warm: wall=49.4s rss=0.6484GB rc=0 load_before=1.48 fs_inputs=0
+[done] magicc_v5code__t1__set_E_full_dir__warm__r12 rc=0
+[wait] magicc_v3code_nostats__t1__set_E_full_dir__warm__r12: load1=2.01 >= 1.5 (busy=131.4%), settling, waited 0s
+[wait] magicc_v3code_nostats__t1__set_E_full_dir__warm__r12: load1=1.70 >= 1.5 (busy=111.6%), settling, waited 60s
+[run ] tier=1 order=13 magicc_v3code_nostats__t1__set_E_full_dir__warm__r12 | T3 ladder rep 2
+       loadavg=1.48 1.96 4.04 memavail=908899524kB 2026-08-26T17:30:48Z
+[time] magicc_v3code_nostats t=1 r=12 set_E_full_dir/warm: wall=50.04s rss=0.6556GB rc=0 load_before=1.48 fs_inputs=0
+[done] magicc_v3code_nostats__t1__set_E_full_dir__warm__r12 rc=0
+[wait] magicc_v3code__t1__set_E_full_dir__warm__r12: load1=2.17 >= 1.5 (busy=311.8%), settling, waited 0s
+[wait] magicc_v3code__t1__set_E_full_dir__warm__r12: load1=2.72 >= 1.5 (busy=133.6%), settling, waited 60s
+[wait] magicc_v3code__t1__set_E_full_dir__warm__r12: load1=1.63 >= 1.5 (busy=211.8%), settling, waited 120s
+[run ] tier=1 order=14 magicc_v3code__t1__set_E_full_dir__warm__r12 | T3 ladder rep 2
+       loadavg=0.63 1.68 3.49 memavail=911288124kB 2026-08-26T17:34:40Z
+[time] magicc_v3code t=1 r=12 set_E_full_dir/warm: wall=71.17s rss=0.6556GB rc=0 load_before=0.63 fs_inputs=0
+[done] magicc_v3code__t1__set_E_full_dir__warm__r12 rc=0
+[run ] tier=1 order=15 magicc__t1__set_E_full__warm__r13 | T3 ladder rep 3
+       loadavg=0.89 1.53 3.31 memavail=911248720kB 2026-08-26T17:35:54Z
+[time] magicc t=1 r=13 set_E_full/warm: wall=49.18s rss=0.6477GB rc=0 load_before=0.89 fs_inputs=0
+[done] magicc__t1__set_E_full__warm__r13 rc=0
+[run ] tier=1 order=16 magicc_dir__t1__set_E_full_dir__warm__r13 | T3 ladder rep 3
+       loadavg=0.96 1.44 3.17 memavail=911251164kB 2026-08-26T17:36:45Z
+[time] magicc_dir t=1 r=13 set_E_full_dir/warm: wall=49.42s rss=0.6473GB rc=0 load_before=0.96 fs_inputs=0
+[done] magicc_dir__t1__set_E_full_dir__warm__r13 rc=0
+[run ] tier=1 order=17 magicc_v5code__t1__set_E_full_dir__warm__r13 | T3 ladder rep 3
+       loadavg=0.98 1.37 3.05 memavail=911226432kB 2026-08-26T17:37:36Z
+[time] magicc_v5code t=1 r=13 set_E_full_dir/warm: wall=48.91s rss=0.6468GB rc=0 load_before=0.98 fs_inputs=0
+[done] magicc_v5code__t1__set_E_full_dir__warm__r13 rc=0
+[run ] tier=1 order=18 magicc_v3code_nostats__t1__set_E_full_dir__warm__r13 | T3 ladder rep 3
+       loadavg=0.99 1.31 2.94 memavail=911244740kB 2026-08-26T17:38:28Z
+[time] magicc_v3code_nostats t=1 r=13 set_E_full_dir/warm: wall=49.59s rss=0.6555GB rc=0 load_before=0.99 fs_inputs=0
+[done] magicc_v3code_nostats__t1__set_E_full_dir__warm__r13 rc=0
+[run ] tier=1 order=19 magicc_v3code__t1__set_E_full_dir__warm__r13 | T3 ladder rep 3
+       loadavg=1.00 1.26 2.84 memavail=911301692kB 2026-08-26T17:39:19Z
+[time] magicc_v3code t=1 r=13 set_E_full_dir/warm: wall=72.18s rss=0.656GB rc=0 load_before=1.0 fs_inputs=0
+[done] magicc_v3code__t1__set_E_full_dir__warm__r13 rc=0
+[run ] tier=2 order=20 checkm2__t32__set_E_100__warm__r5 | T2: 5th repeat of the 251x numerator cell
+       loadavg=0.98 1.19 2.69 memavail=911241964kB 2026-08-26T17:40:34Z
+[time] checkm2 t=32 r=5 set_E_100/warm: wall=539.44s rss=10.558GB rc=0 load_before=0.98 fs_inputs=0
+[done] checkm2__t32__set_E_100__warm__r5 rc=0
+[wait] magicc__t32__set_E_full__warm__r4: load1=24.89 >= 4.0 (busy=10.8%), settling, waited 0s
+[wait] magicc__t32__set_E_full__warm__r4: load1=15.08 >= 4.0 (busy=10.7%), settling, waited 30s
+[wait] magicc__t32__set_E_full__warm__r4: load1=9.14 >= 4.0 (busy=10.6%), settling, waited 60s
+[wait] magicc__t32__set_E_full__warm__r4: load1=5.54 >= 4.0 (busy=10.6%), settling, waited 90s
+[run ] tier=3 order=21 magicc__t32__set_E_full__warm__r4 | T1: MAGICC repeat (cheap)
+       loadavg=3.35 14.47 10.79 memavail=911180836kB 2026-08-26T17:51:35Z
+[time] magicc t=32 r=4 set_E_full/warm: wall=5.98s rss=0.4972GB rc=0 load_before=3.35 fs_inputs=0
+[done] magicc__t32__set_E_full__warm__r4 rc=0
+[wait] deepcheck__t32__set_E_full__warm__r4: load1=5.49 >= 4.0 (busy=110.5%), settling, waited 0s
+[run ] tier=3 order=22 deepcheck__t32__set_E_full__warm__r4 | T1: DeepCheck repeat (cheap)
+       loadavg=3.33 13.32 10.55 memavail=910680196kB 2026-08-26T17:52:14Z
+[time] deepcheck t=32 r=4 set_E_full/warm: wall=29.16s rss=1.2826GB rc=0 load_before=3.33 fs_inputs=0
+[done] deepcheck__t32__set_E_full__warm__r4 rc=0
+[wait] checkm2__t32__set_E_full__warm__r2: load1=13.04 >= 4.0 (busy=10.4%), settling, waited 0s
+[wait] checkm2__t32__set_E_full__warm__r2: load1=7.90 >= 4.0 (busy=10.4%), settling, waited 30s
+[wait] checkm2__t32__set_E_full__warm__r2: load1=4.79 >= 4.0 (busy=10.4%), settling, waited 60s
+[run ] tier=3 order=23 checkm2__t32__set_E_full__warm__r2 | T1: CheckM2 repeat (~4208 s)
+       loadavg=3.12 10.88 10.06 memavail=911426084kB 2026-08-26T17:54:15Z
+[time] checkm2 t=32 r=2 set_E_full/warm: wall=4286.0s rss=18.7967GB rc=0 load_before=3.12 fs_inputs=0
+[done] checkm2__t32__set_E_full__warm__r2 rc=0
+[wait] cocopye__t32__set_E_full__warm__r2: load1=9.54 >= 4.0 (busy=107.2%), settling, waited 0s
+[wait] cocopye__t32__set_E_full__warm__r2: load1=5.78 >= 4.0 (busy=107.2%), settling, waited 30s
+[run ] tier=3 order=24 cocopye__t32__set_E_full__warm__r2 | T1: CoCoPyE repeat (~3178 s)
+       loadavg=3.50 19.64 24.89 memavail=911223640kB 2026-08-26T19:06:44Z
+[time] cocopye t=32 r=2 set_E_full/warm: wall=2924.29s rss=15.8996GB rc=0 load_before=3.5 fs_inputs=0
+[done] cocopye__t32__set_E_full__warm__r2 rc=0
+[wait] magicc__t32__set_E_full__warm__r5: load1=55.23 >= 4.0 (busy=6.0%), settling, waited 0s
+[wait] magicc__t32__set_E_full__warm__r5: load1=33.47 >= 4.0 (busy=6.0%), settling, waited 30s
+[wait] magicc__t32__set_E_full__warm__r5: load1=20.28 >= 4.0 (busy=106.0%), settling, waited 60s
+[wait] magicc__t32__set_E_full__warm__r5: load1=12.29 >= 4.0 (busy=6.0%), settling, waited 90s
+[wait] magicc__t32__set_E_full__warm__r5: load1=7.45 >= 4.0 (busy=5.9%), settling, waited 120s
+[wait] magicc__t32__set_E_full__warm__r5: load1=4.51 >= 4.0 (busy=5.9%), settling, waited 150s
+[run ] tier=3 order=25 magicc__t32__set_E_full__warm__r5 | T1: MAGICC repeat (cheap)
+       loadavg=2.73 26.47 31.12 memavail=911197904kB 2026-08-26T19:58:30Z
+[time] magicc t=32 r=5 set_E_full/warm: wall=5.83s rss=0.4981GB rc=0 load_before=2.73 fs_inputs=0
+[done] magicc__t32__set_E_full__warm__r5 rc=0
+[run ] tier=3 order=26 deepcheck__t32__set_E_full__warm__r5 | T1: DeepCheck repeat (cheap)
+       loadavg=2.47 25.63 30.79 memavail=910126276kB 2026-08-26T19:58:38Z
+[time] deepcheck t=32 r=5 set_E_full/warm: wall=29.67s rss=1.2054GB rc=0 load_before=2.47 fs_inputs=0
+[done] deepcheck__t32__set_E_full__warm__r5 rc=0
+[wait] checkm2__t32__set_E_full__warm__r3: load1=9.98 >= 4.0 (busy=105.9%), settling, waited 0s
+[wait] checkm2__t32__set_E_full__warm__r3: load1=6.05 >= 4.0 (busy=105.9%), settling, waited 30s
+[run ] tier=3 order=27 checkm2__t32__set_E_full__warm__r3 | T1: CheckM2 repeat (~4208 s)
+       loadavg=3.66 20.66 28.59 memavail=911674076kB 2026-08-26T20:00:10Z
+[time] checkm2 t=32 r=3 set_E_full/warm: wall=4288.0s rss=18.861GB rc=0 load_before=3.66 fs_inputs=48
+[done] checkm2__t32__set_E_full__warm__r3 rc=0
+[wait] cocopye__t32__set_E_full__warm__r3: load1=9.63 >= 4.0 (busy=106.3%), settling, waited 0s
+[wait] cocopye__t32__set_E_full__warm__r3: load1=6.35 >= 4.0 (busy=106.2%), settling, waited 30s
+[wait] cocopye__t32__set_E_full__warm__r3: load1=4.24 >= 4.0 (busy=206.1%), settling, waited 60s
+[run ] tier=3 order=28 cocopye__t32__set_E_full__warm__r3 | T1: CoCoPyE repeat (~3178 s)
+       loadavg=2.81 18.89 26.30 memavail=910801944kB 2026-08-26T21:13:11Z
+[time] cocopye t=32 r=3 set_E_full/warm: wall=2971.68s rss=15.9005GB rc=0 load_before=2.81 fs_inputs=0
+[done] cocopye__t32__set_E_full__warm__r3 rc=0
+==================================================================
+WS11.T campaign end 2026-08-26T22:02:45Z
+==================================================================

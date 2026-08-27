@@ -1,0 +1,9 @@
+{
+  "generated_utc": "2026-07-26T22:27:35.281017+00:00",
+  "dir": "results/revision/real_data/meslier",
+  "n_truth_rows": 461,
+  "magicc_matched": 394,
+  "checkm2_matched": 394,
+  "cocopye_matched": 394,
+  "deepcheck_matched": 394
+}

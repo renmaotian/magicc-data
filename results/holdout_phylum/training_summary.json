@@ -1,0 +1,73 @@
+{
+  "wall_hours": 5.721,
+  "best_metrics": {
+    "best_epoch": 66,
+    "best_val_loss": 105.59217484143315,
+    "comp_mae": 3.432084321975708,
+    "cont_mae": 3.692643404006958,
+    "comp_rmse": 5.849865436553955,
+    "cont_rmse": 6.100029468536377,
+    "comp_r2": 0.8619898855686188,
+    "cont_r2": 0.9454820603132248,
+    "total_time_min": 343.23224722941717
+  },
+  "seeding": {
+    "seed": 42,
+    "seeded": [
+      "PYTHONHASHSEED",
+      "random.seed",
+      "numpy.random.seed",
+      "torch.manual_seed",
+      "torch.cuda.manual_seed",
+      "torch.cuda.manual_seed_all",
+      "DataLoader generator (torch.Generator, seed)",
+      "DataLoader worker_init_fn (numpy + random + torch per worker)"
+    ],
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false,
+    "residual_nondeterminism": [
+      "torch.backends.cudnn.deterministic=False and torch.use_deterministic_algorithms=False: cuDNN/cuBLAS may pick non-deterministic kernels, so results are not guaranteed bit-identical (cudnn.benchmark=False)",
+      "non-deterministic CUDA atomics in some backward kernels",
+      "FP16 AMP GradScaler loss-scale trajectory depends on observed overflow timing",
+      "DataLoader completion order with num_workers>0 does not affect batch contents (a seeded sampler fixes the permutation) but can affect floating-point reduction order on the host"
+    ],
+    "note": "Given identical data, identical hardware and this seed, runs are statistically reproducible (val metrics within run-to-run noise) but not guaranteed bit-identical. Production V5 was trained with no seed at all, so it is not reproducible even to this degree."
+  },
+  "config": {
+    "arch": "MAGICCModel V2 (no attention)",
+    "params": 42400946,
+    "lr": 0.001,
+    "weight_decay": 0.0005,
+    "batch_size": 512,
+    "comp_weight": 2.0,
+    "cont_weight": 1.0,
+    "scheduler": "CosineAnnealingWarmRestarts T_0=10 T_mult=2",
+    "mask_rate": 0.02,
+    "noise_std": 0.01,
+    "patience": 20,
+    "max_epochs": 150,
+    "amp": "fp16",
+    "grad_checkpointing": true
+  },
+  "data": "/path/to/magicc/data/features/holdout_phylum_features.h5",
+  "panel_phyla": [
+    "Altiarchaeota",
+    "Bacteroidota",
+    "Bacteroidota_A",
+    "Campylobacterota",
+    "Halobacteriota",
+    "Iainarchaeota",
+    "Micrarchaeota",
+    "Nanobdellota",
+    "Nanohalarchaeota",
+    "Patescibacteriota"
+  ],
+  "onnx": {
+    "onnx_path": "/path/to/magicc/models/magicc_holdout_phylum.onnx",
+    "max_abs_diff_random": 4.57763671875e-05,
+    "max_abs_diff_real": 2.6702880859375e-05,
+    "verified": true,
+    "size_mb": 169.7
+  }
+}

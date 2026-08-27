@@ -1,0 +1,65 @@
+{
+  "kraken2_db": "/path/to/magicc/tools/kraken2_db_standard",
+  "kraken2_db_hash_bytes": 98600749380,
+  "control_design": "non-representative reference genomes (species present in a --one-per-species database, genome itself absent), stratified by phylum representation",
+  "always_sparse_lineages": [
+    "Patescibacteriota",
+    "Nanoarchaeota",
+    "Micrarchaeota",
+    "Altarchaeota",
+    "Aenigmatarchaeota",
+    "Huberarchaeota"
+  ],
+  "per_stratum_requested": 30,
+  "strata": {
+    "control_well_represented": {
+      "n": 30,
+      "p10": 0.014870259,
+      "p25": 0.0206881625,
+      "median": 0.09036069499999999,
+      "p75": 0.945095575,
+      "p90": 0.9722671780000001,
+      "min": 0.00744091,
+      "max": 0.98876522
+    },
+    "control_rare_phylum": {
+      "n": 3,
+      "p10": 0.004642602,
+      "p25": 0.005104785000000001,
+      "median": 0.00587509,
+      "p75": 0.006858744999999999,
+      "p90": 0.007448938,
+      "min": 0.00433448,
+      "max": 0.0078424
+    },
+    "control_cpr_dpann": {
+      "n": 30,
+      "p10": 0.003899784,
+      "p25": 0.0047795525,
+      "median": 0.006618295,
+      "p75": 0.0075103475,
+      "p90": 0.007977966,
+      "min": 0.00338554,
+      "max": 0.01512562
+    },
+    "cohort_disagreement_141": {
+      "n": 141,
+      "p10": 0.006235,
+      "p25": 0.008378,
+      "median": 0.015816,
+      "p75": 0.032799,
+      "p90": 0.081739,
+      "min": 0.002793,
+      "max": 0.960265
+    }
+  },
+  "verdict": {
+    "cohort_median": 0.015816,
+    "novel_control_stratum": "control_cpr_dpann",
+    "novel_control_median": 0.006618295,
+    "novel_control_p10": 0.003899784,
+    "cohort_below_novel_control_p10": false,
+    "interpretation": "Cohort density is NOT below the novel-control floor, so low absolute density does not by itself establish novelty; interpret the strict-metric evaluability alongside."
+  },
+  "controls_tsv": "/path/to/magicc/results/revision/contamination_evidence/density_controls_k2std.tsv"
+}

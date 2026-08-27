@@ -1,0 +1,9 @@
+{
+  "generated_utc": "2026-07-26T22:01:33.380455+00:00",
+  "dir": "results/revision/real_data/zymo",
+  "n_truth_rows": 8,
+  "magicc_matched": 8,
+  "checkm2_matched": 8,
+  "cocopye_matched": 8,
+  "deepcheck_matched": 8
+}

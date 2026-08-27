@@ -1,0 +1,7 @@
+analysis	tool	model	n	n_reference_clusters	beta_size_pp_per_SD	size_ci95	beta_Patescibacteriota_pp	patesci_ci95	R2_CoD
+M4_regression_signed_comp_error	MAGICC_V5	size only	543	482	1.2929	[0.531, 2.055]			0.0603
+M4_regression_signed_comp_error	MAGICC_V5	phylum only	543	482			-7.1113	[-12.307, -1.915]	0.0982
+M4_regression_signed_comp_error	MAGICC_V5	size + phylum	543	482	0.6798	[0.145, 1.214]	-5.7691	[-11.006, -0.532]	0.1114
+M4_regression_signed_comp_error	CheckM2	size only	543	482	0.2421	[0.172, 0.313]			0.1812
+M4_regression_signed_comp_error	CheckM2	phylum only	543	482			-1.2668	[-1.731, -0.803]	0.267
+M4_regression_signed_comp_error	CheckM2	size + phylum	543	482	0.1361	[0.083, 0.189]	-0.9981	[-1.486, -0.510]	0.3122

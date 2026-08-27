@@ -1,0 +1,11 @@
+{
+  "generated_utc": "2026-07-26T21:47:01.482435+00:00",
+  "n_pairs": 8,
+  "excluded_eukaryotes": [
+    "cn",
+    "sc"
+  ],
+  "aligner": "minimap2 -x asm10 --secondary=no",
+  "completeness_median": 98.43515,
+  "contamination_median": 0.0
+}

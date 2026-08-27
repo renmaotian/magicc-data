@@ -1,0 +1,8 @@
+group	n	n_refs	true_comp_mean	true_cont_mean	V5_comp_mae	V5_comp_bias	V5_comp_r2	V5_cont_mae	V5_cont_bias	V5_cont_r2	familyHO_comp_mae	familyHO_comp_bias	familyHO_comp_r2	familyHO_cont_mae	familyHO_cont_bias	familyHO_cont_r2	phylumHO_comp_mae	phylumHO_comp_bias	phylumHO_comp_r2	phylumHO_cont_mae	phylumHO_cont_bias	phylumHO_cont_r2
+Bacteroidota_Muribaculaceae	1000	100	76.52	45.36	4.523	2.499	0.802	5.229	-2.827	0.907	8.445	-2.056	0.4743	8.182	-1.843	0.7907	10.907	-7.106	0.1554	9.83	-2.93	0.686
+Bacteroidota_Flavobacteriaceae	1000	100	75.71	45.11	6.297	3.389	0.6231	6.375	-2.816	0.8746	10.497	4.075	0.1212	10.379	3.352	0.7122	13.63	4.782	-0.4141	21.239	16.169	-0.1142
+Campylobacterota_Helicobacteraceae	1000	100	79.39	44.38	2.648	1.033	0.9292	4.742	-4.187	0.9251	7.883	-0.708	0.5458	16.859	-16.2	0.3364	7.467	0.672	0.5788	19.174	-19.072	0.1887
+Campylobacterota_Arcobacteraceae	1000	40	77.21	44.46	4.511	0.073	0.8014	6.968	-5.898	0.8252	9.553	5.286	0.3365	8.551	-5.667	0.7589	12.501	8.858	-0.0651	8.674	-4.982	0.7589
+Halobacteriota_halophilic	1008	28	74.97	45.9	5.214	0.872	0.7566	6.098	-3.015	0.8687	8.197	1.118	0.4982	7.397	-4.551	0.8087	9.759	1.753	0.2579	9.036	-4.458	0.7221
+Patescibacteriota_families	990	66	83.45	45.16	5.334	-0.933	0.7544	7.643	-2.932	0.8442	10.397	-6.667	0.2214	11.067	-1.51	0.6611	29.948	-29.913	-3.3107	21.063	-17.447	-0.0159
+in_distribution	1000	100	76.88	45.62	6.532	1.662	0.5966	7.374	-0.908	0.8121	6.561	1.889	0.5974	7.267	-1.103	0.8152	8.212	1.275	0.2954	9.044	-0.071	0.6989

@@ -1,0 +1,122 @@
+{
+  "check": "magicc-data BEFORE state (established prior to any benchmark-data deposition)",
+  "captured_utc": "2026-08-26T21:00:44.665418+00:00",
+  "url": "https://github.com/renmaotian/magicc-data",
+  "reachable": true,
+  "http_status": 200,
+  "repository": {
+    "full_name": "renmaotian/magicc-data",
+    "visibility": "public",
+    "private": false,
+    "default_branch": "main",
+    "size_kb": null,
+    "pushed_at": "2026-08-25T17:10:33Z",
+    "updated_at": "2026-08-25T17:17:22Z",
+    "created_at": "2026-02-19T20:10:00Z",
+    "description": null
+  },
+  "size_kb_api": 9846,
+  "default_branch": "main",
+  "branches": [
+    {
+      "name": "main",
+      "head_sha": "9c72af7bd9565f30fddf3274543a747cc6ba2a05"
+    }
+  ],
+  "tags": [
+    {
+      "name": "v0.1.0",
+      "sha": "34e84306e0fdec661b64fc7e1cd983e8cfa251e3"
+    }
+  ],
+  "releases": [
+    {
+      "tag_name": "v0.1.0",
+      "name": "MAGICC Benchmark Data v0.1.0",
+      "draft": false,
+      "prerelease": false,
+      "published_at": "2026-02-19T21:10:02Z",
+      "target_commitish": "main",
+      "asset_count": 8,
+      "assets_total_bytes": 9358611849,
+      "assets": [
+        {
+          "name": "benchmark_set_A.tar.gz",
+          "size_bytes": 912868001,
+          "size_gb": 0.913,
+          "download_count": 0,
+          "created_at": "2026-02-19T21:10:15Z"
+        },
+        {
+          "name": "benchmark_set_B.tar.gz",
+          "size_bytes": 1654366970,
+          "size_gb": 1.654,
+          "download_count": 0,
+          "created_at": "2026-02-19T21:17:45Z"
+        },
+        {
+          "name": "benchmark_set_C.tar.gz",
+          "size_bytes": 368756285,
+          "size_gb": 0.369,
+          "download_count": 2,
+          "created_at": "2026-02-19T21:10:18Z"
+        },
+        {
+          "name": "benchmark_set_D.tar.gz",
+          "size_bytes": 895227083,
+          "size_gb": 0.895,
+          "download_count": 0,
+          "created_at": "2026-02-19T21:10:19Z"
+        },
+        {
+          "name": "benchmark_set_E.tar.gz",
+          "size_bytes": 1459666157,
+          "size_gb": 1.46,
+          "download_count": 0,
+          "created_at": "2026-02-19T21:17:46Z"
+        },
+        {
+          "name": "motivating_set_A.tar.gz",
+          "size_bytes": 923351957,
+          "size_gb": 0.923,
+          "download_count": 1,
+          "created_at": "2026-02-19T21:10:24Z"
+        },
+        {
+          "name": "motivating_set_B.tar.gz",
+          "size_bytes": 1695361481,
+          "size_gb": 1.695,
+          "download_count": 1,
+          "created_at": "2026-02-19T21:17:49Z"
+        },
+        {
+          "name": "motivating_set_C.tar.gz",
+          "size_bytes": 1449013915,
+          "size_gb": 1.449,
+          "download_count": 1,
+          "created_at": "2026-02-19T21:55:11Z"
+        }
+      ]
+    }
+  ],
+  "root_entries": [
+    "LICENSE",
+    "README.md",
+    "all_project_scripts",
+    "benchmark",
+    "cami2",
+    "data_generating_scripts",
+    "motivating",
+    "provenance",
+    "splits",
+    "withdrawn"
+  ],
+  "findings": [
+    "Repository is public and reachable; default branch 'main' at 9c72af7bd9565f30fddf3274543a747cc6ba2a05.",
+    "Exactly ONE release exists: v0.1.0, published 2026-02-19T21:10:02Z, pointing at commit 34e84306e0fdec661b64fc7e1cd983e8cfa251e3 (NOT main).",
+    "That release carries 8 assets totalling ~9.36 GB.",
+    "WARNING: the v0.1.0 release assets still include benchmark_set_C.tar.gz and benchmark_set_D.tar.gz - the leakage-contaminated Sets C and D that the manuscript declares WITHDRAWN. The 2026-08-25 realignment moved these to withdrawn/ in the repository TREE, but the RELEASE ASSETS were not changed and still serve the withdrawn data. benchmark_set_C.tar.gz has 2 recorded downloads.",
+    "No assets exist yet for set_C_clean, set_D_clean, set_F, set_G, set_H, or for any of the result files the Data availability statement promises.",
+    "No release tag for the revision data exists yet - the depositing agent will be creating the first one."
+  ]
+}

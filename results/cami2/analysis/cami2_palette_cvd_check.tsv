@@ -1,0 +1,11 @@
+colour_a	colour_b	hex_a	hex_b	delta_e_normal	delta_e_deuteranopia	delta_e_protanopia	delta_e_tritanopia	min_delta_e	flag_too_similar
+CoCoPyE	SetF	#F0E442	#999999	80.88	77.46	86.71	30.93	30.93	False
+MAGICC_V5	SetF	#0072B2	#999999	44.9	48.86	40.62	32.7	32.7	False
+CheckM2	CoCoPyE	#D55E00	#F0E442	67.61	33.44	49.67	65.22	33.44	False
+CheckM2	SetF	#D55E00	#999999	77.18	62.86	56.01	72.92	56.01	False
+MAGICC_V5	DeepCheck	#0072B2	#000000	61.9	62.82	62.41	57.41	57.41	False
+MAGICC_V5	CoCoPyE	#0072B2	#F0E442	124.98	126.12	127.16	61.12	61.12	False
+DeepCheck	SetF	#000000	#999999	63.22	63.22	63.22	63.22	63.22	False
+CheckM2	DeepCheck	#D55E00	#000000	93.88	85.42	71.82	90.22	71.82	False
+CoCoPyE	DeepCheck	#F0E442	#000000	117.53	115.66	120.83	90.03	90.03	False
+MAGICC_V5	CheckM2	#0072B2	#D55E00	114.61	108.28	91.88	101.98	91.88	False

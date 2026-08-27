@@ -1,0 +1,38 @@
+{
+  "tool": "deepcheck",
+  "threads": 8,
+  "repeat": 3,
+  "input_set": "set_E_100",
+  "cache": "warm",
+  "n_genomes": 100,
+  "n_output_rows": 100,
+  "return_code": 0,
+  "t_start_utc": "2026-07-31T01:27:09Z",
+  "t_end_utc": "2026-07-31T01:27:19Z",
+  "loadavg_before": [
+    0.77,
+    1.18,
+    1.4
+  ],
+  "loadavg_after": [
+    1.35,
+    1.29,
+    1.43
+  ],
+  "sum_pcpu_all_processes_before": 3.0,
+  "wall_clock_s": 9.71,
+  "elapsed_raw": "0:09.71",
+  "max_rss_kb": 699076,
+  "major_faults": 0,
+  "minor_faults": 315283,
+  "fs_inputs": 0,
+  "fs_outputs": 24,
+  "vol_ctx": 315,
+  "invol_ctx": 229,
+  "exit_status": 0,
+  "user_s": 61.21,
+  "sys_s": 0.87,
+  "pct_cpu": 639.0,
+  "peak_rss_gb": 0.6667,
+  "genomes_per_min": 617.92
+}

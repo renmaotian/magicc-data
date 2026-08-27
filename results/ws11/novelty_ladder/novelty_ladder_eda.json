@@ -1,0 +1,249 @@
+{
+  "generated_utc": "2026-08-26T17:14:08.878563+00:00",
+  "pythonhashseed": "0",
+  "n_boot": 2000,
+  "sets_allowed": [
+    "set_A_v2",
+    "set_B_v2",
+    "set_C_clean",
+    "set_D_clean",
+    "set_E"
+  ],
+  "issues": [],
+  "sets": {
+    "set_A_v2": {
+      "n_rows": 1000,
+      "available_tools": [
+        "magicc_v5",
+        "magicc_v4",
+        "magicc_v3",
+        "checkm2",
+        "cocopye",
+        "deepcheck"
+      ],
+      "n_clusters": 798,
+      "dominant_split_counts": {
+        "test": 1000
+      },
+      "magicc_v5_n_rows": 1000,
+      "magicc_v5_n_matched": 1000,
+      "checkm2_n_rows": 1000,
+      "checkm2_n_matched": 1000,
+      "cocopye_n_rows": 1000,
+      "cocopye_n_matched": 1000,
+      "deepcheck_n_rows": 1000,
+      "deepcheck_n_matched": 1000
+    },
+    "set_B_v2": {
+      "n_rows": 1000,
+      "available_tools": [
+        "magicc_v5",
+        "magicc_v4",
+        "magicc_v3",
+        "checkm2",
+        "cocopye",
+        "deepcheck"
+      ],
+      "n_clusters": 803,
+      "dominant_split_counts": {
+        "test": 1000
+      },
+      "magicc_v5_n_rows": 1000,
+      "magicc_v5_n_matched": 1000,
+      "checkm2_n_rows": 1000,
+      "checkm2_n_matched": 1000,
+      "cocopye_n_rows": 1000,
+      "cocopye_n_matched": 1000,
+      "deepcheck_n_rows": 1000,
+      "deepcheck_n_matched": 1000
+    },
+    "set_C_clean": {
+      "n_rows": 1000,
+      "available_tools": [
+        "magicc_v5",
+        "checkm2",
+        "cocopye",
+        "deepcheck"
+      ],
+      "n_clusters": 100,
+      "dominant_split_counts": {
+        "test": 1000
+      },
+      "magicc_v5_n_rows": 1000,
+      "magicc_v5_n_matched": 1000,
+      "checkm2_n_rows": 1000,
+      "checkm2_n_matched": 1000,
+      "cocopye_n_rows": 1000,
+      "cocopye_n_matched": 1000,
+      "deepcheck_n_rows": 1000,
+      "deepcheck_n_matched": 1000
+    },
+    "set_D_clean": {
+      "n_rows": 1000,
+      "available_tools": [
+        "magicc_v5",
+        "checkm2",
+        "cocopye",
+        "deepcheck"
+      ],
+      "n_clusters": 100,
+      "dominant_split_counts": {
+        "test": 1000
+      },
+      "magicc_v5_n_rows": 1000,
+      "magicc_v5_n_matched": 1000,
+      "checkm2_n_rows": 1000,
+      "checkm2_n_matched": 1000,
+      "cocopye_n_rows": 1000,
+      "cocopye_n_matched": 1000,
+      "deepcheck_n_rows": 1000,
+      "deepcheck_n_matched": 1000
+    },
+    "set_E": {
+      "n_rows": 1000,
+      "available_tools": [
+        "magicc_v5",
+        "magicc_v4",
+        "magicc_v3",
+        "checkm2",
+        "cocopye",
+        "deepcheck"
+      ],
+      "n_clusters": 785,
+      "dominant_split_counts": {
+        "test": 1000
+      },
+      "magicc_v5_n_rows": 1000,
+      "magicc_v5_n_matched": 1000,
+      "checkm2_n_rows": 1000,
+      "checkm2_n_matched": 1000,
+      "cocopye_n_rows": 1000,
+      "cocopye_n_matched": 1000,
+      "deepcheck_n_rows": 1000,
+      "deepcheck_n_matched": 1000
+    }
+  },
+  "pooled": {
+    "n_genomes": 5000,
+    "n_clusters_set_x_ref": 2586,
+    "n_distinct_reference_accessions": 1648
+  },
+  "crossmap_stats": {
+    "filtered_genomes_rows": 277183,
+    "distinct_accession_strings_mapped": 503511,
+    "distinct_canonical_assemblies": 277183,
+    "rows_with_inconsistent_assembly_numbers": 0,
+    "mean_strings_per_assembly": 1.817
+  },
+  "crossmap_matches_ws1_4_audit": true,
+  "train_split_rows": 79948,
+  "val_split_rows": 10010,
+  "train_distinct_taxa_per_rank": {
+    "domain": 2,
+    "phylum": 110,
+    "class": 253,
+    "order": 705,
+    "family": 1620,
+    "genus": 5648,
+    "species": 19246
+  },
+  "dominants_resolved": 1648,
+  "dominants_unresolved": 0,
+  "dominants_unresolved_list": [],
+  "class_balance_clusters": {
+    "set_A_v2": {
+      "lineage_represented": 643,
+      "species_novel": 129,
+      "genus_novel": 21,
+      "family_novel": 3,
+      "order_novel": 1,
+      "class_novel": 1,
+      "phylum_novel": 0
+    },
+    "set_B_v2": {
+      "lineage_represented": 625,
+      "species_novel": 146,
+      "genus_novel": 28,
+      "family_novel": 2,
+      "order_novel": 2,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_C_clean": {
+      "lineage_represented": 32,
+      "species_novel": 33,
+      "genus_novel": 21,
+      "family_novel": 10,
+      "order_novel": 4,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_D_clean": {
+      "lineage_represented": 64,
+      "species_novel": 29,
+      "genus_novel": 5,
+      "family_novel": 1,
+      "order_novel": 1,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_E": {
+      "lineage_represented": 631,
+      "species_novel": 132,
+      "genus_novel": 18,
+      "family_novel": 2,
+      "order_novel": 2,
+      "class_novel": 0,
+      "phylum_novel": 0
+    }
+  },
+  "class_balance_genomes": {
+    "set_A_v2": {
+      "lineage_represented": 799,
+      "species_novel": 170,
+      "genus_novel": 25,
+      "family_novel": 3,
+      "order_novel": 2,
+      "class_novel": 1,
+      "phylum_novel": 0
+    },
+    "set_B_v2": {
+      "lineage_represented": 775,
+      "species_novel": 186,
+      "genus_novel": 32,
+      "family_novel": 5,
+      "order_novel": 2,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_C_clean": {
+      "lineage_represented": 320,
+      "species_novel": 330,
+      "genus_novel": 210,
+      "family_novel": 100,
+      "order_novel": 40,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_D_clean": {
+      "lineage_represented": 640,
+      "species_novel": 290,
+      "genus_novel": 50,
+      "family_novel": 10,
+      "order_novel": 10,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_E": {
+      "lineage_represented": 807,
+      "species_novel": 165,
+      "genus_novel": 22,
+      "family_novel": 4,
+      "order_novel": 2,
+      "class_novel": 0,
+      "phylum_novel": 0
+    }
+  },
+  "sensitivity_suffix_stripped_clusters_changed": 47,
+  "sensitivity_train_plus_val_clusters_changed": 47
+}

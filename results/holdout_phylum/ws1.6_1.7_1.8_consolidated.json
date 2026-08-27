@@ -1,0 +1,3674 @@
+{
+  "workstreams": [
+    "WS1.6 leave-phylum-out retraining",
+    "WS1.7 k-mer feature-selection leakage control",
+    "WS1.8 accuracy vs taxonomic novelty"
+  ],
+  "generated": "2026-07-26T23:42:44.369831",
+  "panel": {
+    "created": "2026-07-26T09:11:44.740100",
+    "panel_groups": {
+      "Bacteroidota": {
+        "phyla": [
+          "Bacteroidota"
+        ],
+        "rationale": "Large, GC-distinct, 4th most abundant phylum (10.4% of training genomes)",
+        "train": 8279,
+        "val": 1033,
+        "test": 1035
+      },
+      "Bacteroidota_A": {
+        "phyla": [
+          "Bacteroidota_A"
+        ],
+        "rationale": "GTDB polyphyly split of Bacteroidota; excluded so the Bacteroidota holdout is not undermined by a sister lineage, and evaluated separately",
+        "train": 528,
+        "val": 66,
+        "test": 66
+      },
+      "Campylobacterota": {
+        "phyla": [
+          "Campylobacterota"
+        ],
+        "rationale": "Mid-size bacteria (median 1.68 Mbp), well populated (6.2% of training genomes)",
+        "train": 4973,
+        "val": 622,
+        "test": 622
+      },
+      "Patescibacteriota": {
+        "phyla": [
+          "Patescibacteriota"
+        ],
+        "rationale": "Reduced genomes (median 0.88 Mbp), the hardest case and the lineage both reviewers singled out; directly comparable to Set C_clean",
+        "train": 1286,
+        "val": 161,
+        "test": 161
+      },
+      "Halobacteriota": {
+        "phyla": [
+          "Halobacteriota"
+        ],
+        "rationale": "Largest archaeal phylum in the training set (573 genomes); domain-level generalization",
+        "train": 573,
+        "val": 72,
+        "test": 72
+      },
+      "DPANN": {
+        "phyla": [
+          "Nanobdellota",
+          "Micrarchaeota",
+          "Nanohalarchaeota",
+          "Altiarchaeota",
+          "Iainarchaeota"
+        ],
+        "rationale": "DPANN superphylum (candidate/uncultured archaea, median <1.1 Mbp): extreme taxonomic novelty. Pooled because no single DPANN phylum has enough genomes for an independent evaluation set",
+        "train": 64,
+        "val": 10,
+        "test": 9
+      }
+    },
+    "panel_phyla": [
+      "Altiarchaeota",
+      "Bacteroidota",
+      "Bacteroidota_A",
+      "Campylobacterota",
+      "Halobacteriota",
+      "Iainarchaeota",
+      "Micrarchaeota",
+      "Nanobdellota",
+      "Nanohalarchaeota",
+      "Patescibacteriota"
+    ],
+    "n_removed": {
+      "train": 15703,
+      "val": 1964,
+      "test": 1965
+    },
+    "pct_removed": {
+      "train": 19.642,
+      "val": 19.62,
+      "test": 19.652
+    },
+    "surviving": {
+      "train": 64245,
+      "val": 8046,
+      "test": 8034,
+      "train_phyla": 100,
+      "train_archaea": 941
+    },
+    "eval_capacity": [
+      {
+        "group": "Bacteroidota",
+        "test_refs_available": 1035,
+        "all_split_refs": 10347,
+        "ref_source": "test",
+        "refs_used": 100,
+        "sims_per_ref": 10,
+        "eval_n": 1000,
+        "clean_head_to_head": "yes"
+      },
+      {
+        "group": "Bacteroidota_A",
+        "test_refs_available": 66,
+        "all_split_refs": 660,
+        "ref_source": "test",
+        "refs_used": 66,
+        "sims_per_ref": 15,
+        "eval_n": 990,
+        "clean_head_to_head": "yes"
+      },
+      {
+        "group": "Campylobacterota",
+        "test_refs_available": 622,
+        "all_split_refs": 6217,
+        "ref_source": "test",
+        "refs_used": 100,
+        "sims_per_ref": 10,
+        "eval_n": 1000,
+        "clean_head_to_head": "yes"
+      },
+      {
+        "group": "Patescibacteriota",
+        "test_refs_available": 161,
+        "all_split_refs": 1608,
+        "ref_source": "test",
+        "refs_used": 100,
+        "sims_per_ref": 10,
+        "eval_n": 1000,
+        "clean_head_to_head": "yes"
+      },
+      {
+        "group": "Halobacteriota",
+        "test_refs_available": 72,
+        "all_split_refs": 717,
+        "ref_source": "test",
+        "refs_used": 72,
+        "sims_per_ref": 14,
+        "eval_n": 1008,
+        "clean_head_to_head": "yes"
+      },
+      {
+        "group": "DPANN",
+        "test_refs_available": 9,
+        "all_split_refs": 83,
+        "ref_source": "all",
+        "refs_used": 83,
+        "sims_per_ref": 12,
+        "eval_n": 996,
+        "clean_head_to_head": "test-subset only (n_refs=9)"
+      },
+      {
+        "group": "in_distribution",
+        "test_refs_available": 8034,
+        "all_split_refs": 80325,
+        "ref_source": "test",
+        "refs_used": 100,
+        "sims_per_ref": 10,
+        "eval_n": 1000,
+        "clean_head_to_head": "yes (control)"
+      }
+    ],
+    "adapted_reduced_pool": {
+      "surviving_v5_reduced_phyla": [
+        "Aenigmatarchaeota",
+        "Bdellovibrionota",
+        "Dependentiae",
+        "Diapherotrites",
+        "Huberarchaeota",
+        "Nanoarchaeota",
+        "Nanohaloarchaeota",
+        "Undinarchaeota",
+        "Woesearchaeota"
+      ],
+      "n_from_surviving_phyla": 103,
+      "size_cutoff_bp": 1500000,
+      "n_small_nonpanel": 1519,
+      "n_total_adapted": 1622,
+      "n_v5_pool": 1453
+    },
+    "kmer_selection_leakage": {
+      "bacterial": {
+        "n_reps": 1000,
+        "n_panel": 187,
+        "pct_panel": 18.7,
+        "by_phylum": {
+          "Bacteroidota": 76,
+          "Campylobacterota": 60,
+          "Patescibacteriota": 31,
+          "Bacteroidota_A": 20
+        }
+      },
+      "archaeal": {
+        "n_reps": 1000,
+        "n_panel": 426,
+        "pct_panel": 42.6,
+        "by_phylum": {
+          "Halobacteriota": 362,
+          "Nanobdellota": 55,
+          "Micrarchaeota": 4,
+          "Nanohalarchaeota": 3,
+          "Iainarchaeota": 1,
+          "Altiarchaeota": 1
+        }
+      }
+    },
+    "v5_metadata_fields": [
+      "completeness",
+      "contamination",
+      "dominant_phylum",
+      "sample_type",
+      "quality_tier",
+      "dominant_accession",
+      "genome_full_length",
+      "n_contaminants",
+      "batch_id"
+    ],
+    "v5_records_contaminant_taxonomy": false,
+    "v5_train_panel_dominant_fraction": 23.464
+  },
+  "training": {
+    "wall_hours": 5.721,
+    "best_metrics": {
+      "best_epoch": 66,
+      "best_val_loss": 105.59217484143315,
+      "comp_mae": 3.432084321975708,
+      "cont_mae": 3.692643404006958,
+      "comp_rmse": 5.849865436553955,
+      "cont_rmse": 6.100029468536377,
+      "comp_r2": 0.8619898855686188,
+      "cont_r2": 0.9454820603132248,
+      "total_time_min": 343.23224722941717
+    },
+    "seeding": {
+      "seed": 42,
+      "seeded": [
+        "PYTHONHASHSEED",
+        "random.seed",
+        "numpy.random.seed",
+        "torch.manual_seed",
+        "torch.cuda.manual_seed",
+        "torch.cuda.manual_seed_all",
+        "DataLoader generator (torch.Generator, seed)",
+        "DataLoader worker_init_fn (numpy + random + torch per worker)"
+      ],
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": false,
+      "deterministic_algorithms": false,
+      "residual_nondeterminism": [
+        "torch.backends.cudnn.deterministic=False and torch.use_deterministic_algorithms=False: cuDNN/cuBLAS may pick non-deterministic kernels, so results are not guaranteed bit-identical (cudnn.benchmark=False)",
+        "non-deterministic CUDA atomics in some backward kernels",
+        "FP16 AMP GradScaler loss-scale trajectory depends on observed overflow timing",
+        "DataLoader completion order with num_workers>0 does not affect batch contents (a seeded sampler fixes the permutation) but can affect floating-point reduction order on the host"
+      ],
+      "note": "Given identical data, identical hardware and this seed, runs are statistically reproducible (val metrics within run-to-run noise) but not guaranteed bit-identical. Production V5 was trained with no seed at all, so it is not reproducible even to this degree."
+    },
+    "config": {
+      "arch": "MAGICCModel V2 (no attention)",
+      "params": 42400946,
+      "lr": 0.001,
+      "weight_decay": 0.0005,
+      "batch_size": 512,
+      "comp_weight": 2.0,
+      "cont_weight": 1.0,
+      "scheduler": "CosineAnnealingWarmRestarts T_0=10 T_mult=2",
+      "mask_rate": 0.02,
+      "noise_std": 0.01,
+      "patience": 20,
+      "max_epochs": 150,
+      "amp": "fp16",
+      "grad_checkpointing": true
+    },
+    "data": "/path/to/magicc/data/features/holdout_phylum_features.h5",
+    "panel_phyla": [
+      "Altiarchaeota",
+      "Bacteroidota",
+      "Bacteroidota_A",
+      "Campylobacterota",
+      "Halobacteriota",
+      "Iainarchaeota",
+      "Micrarchaeota",
+      "Nanobdellota",
+      "Nanohalarchaeota",
+      "Patescibacteriota"
+    ],
+    "onnx": {
+      "onnx_path": "/path/to/magicc/models/magicc_holdout_phylum.onnx",
+      "max_abs_diff_random": 4.57763671875e-05,
+      "max_abs_diff_real": 2.6702880859375e-05,
+      "verified": true,
+      "size_mb": 169.7
+    }
+  },
+  "onnx_export": null,
+  "kmer_reselection": {
+    "production_n_kmers": 9249,
+    "panel_phyla": [
+      "Altiarchaeota",
+      "Bacteroidota",
+      "Bacteroidota_A",
+      "Campylobacterota",
+      "Halobacteriota",
+      "Iainarchaeota",
+      "Micrarchaeota",
+      "Nanobdellota",
+      "Nanohalarchaeota",
+      "Patescibacteriota"
+    ],
+    "domains": {
+      "bacterial": {
+        "spearman_rho_prevalence": 0.986462,
+        "prevalence_rate_lost": {
+          "all_reps": 0.5479,
+          "nonpanel_reps": 0.5168,
+          "panel_reps": 0.6831,
+          "panel_minus_nonpanel": 0.1663
+        },
+        "prevalence_rate_retained": {
+          "all_reps": 0.6137,
+          "nonpanel_reps": 0.6207,
+          "panel_reps": 0.5833,
+          "panel_minus_nonpanel": -0.0374
+        },
+        "retention_by_production_rank": [
+          {
+            "rank_range": "1-1000",
+            "n": 1000,
+            "retained_frac": 1.0,
+            "prevalence_rate_all_reps": 0.7481
+          },
+          {
+            "rank_range": "1001-3000",
+            "n": 2000,
+            "retained_frac": 1.0,
+            "prevalence_rate_all_reps": 0.6455
+          },
+          {
+            "rank_range": "3001-6000",
+            "n": 3000,
+            "retained_frac": 0.9153,
+            "prevalence_rate_all_reps": 0.5856
+          },
+          {
+            "rank_range": "6001-9000",
+            "n": 3000,
+            "retained_frac": 0.6077,
+            "prevalence_rate_all_reps": 0.5445
+          }
+        ],
+        "n_representatives": 1000,
+        "n_panel_representatives": 187,
+        "pct_panel_representatives": 18.7,
+        "panel_by_phylum": {
+          "Bacteroidota": 76,
+          "Campylobacterota": 60,
+          "Patescibacteriota": 31,
+          "Bacteroidota_A": 20
+        },
+        "n_nonpanel_representatives": 813,
+        "validation_vs_stored": {
+          "n_compared": 131072,
+          "exact_match": 131072,
+          "pct_exact": 100.0,
+          "pearson_r": 1.0,
+          "max_abs_diff": 0
+        },
+        "top_n": 9000,
+        "prevalence_cutoff_all": 529,
+        "prevalence_cutoff_nonpanel": 437,
+        "within_domain_jaccard": 0.7256,
+        "within_domain_shared": 7569,
+        "lost": 1431,
+        "gained": 1431
+      },
+      "archaeal": {
+        "spearman_rho_prevalence": 0.789235,
+        "prevalence_rate_lost": {
+          "all_reps": 0.8218,
+          "nonpanel_reps": 0.8011,
+          "panel_reps": 0.8498,
+          "panel_minus_nonpanel": 0.0487
+        },
+        "prevalence_rate_retained": {
+          "all_reps": 0.868,
+          "nonpanel_reps": 0.9098,
+          "panel_reps": 0.8116,
+          "panel_minus_nonpanel": -0.0982
+        },
+        "retention_by_production_rank": [
+          {
+            "rank_range": "1-1000",
+            "n": 1000,
+            "retained_frac": 0.534,
+            "prevalence_rate_all_reps": 0.8465
+          }
+        ],
+        "n_representatives": 1000,
+        "n_panel_representatives": 426,
+        "pct_panel_representatives": 42.6,
+        "panel_by_phylum": {
+          "Halobacteriota": 362,
+          "Nanobdellota": 55,
+          "Micrarchaeota": 4,
+          "Nanohalarchaeota": 3,
+          "Iainarchaeota": 1,
+          "Altiarchaeota": 1
+        },
+        "n_nonpanel_representatives": 574,
+        "validation_vs_stored": {
+          "n_compared": 131072,
+          "exact_match": 131072,
+          "pct_exact": 100.0,
+          "pearson_r": 1.0,
+          "max_abs_diff": 0
+        },
+        "top_n": 1000,
+        "prevalence_cutoff_all": 791,
+        "prevalence_cutoff_nonpanel": 488,
+        "within_domain_jaccard": 0.3643,
+        "within_domain_shared": 534,
+        "lost": 466,
+        "gained": 466
+      }
+    },
+    "merged": {
+      "n_production": 9249,
+      "n_reproduced_all_reps": 9249,
+      "n_reselected_nonpanel": 9333,
+      "jaccard_production_vs_reselected": 0.7112,
+      "jaccard_production_vs_reproduced_control": 1.0,
+      "jaccard_reproduced_vs_reselected": 0.7112,
+      "shared": 7723,
+      "lost": 1526,
+      "gained": 1610,
+      "pct_production_retained": 83.5
+    },
+    "interpretation": "High Jaccard means the 9-mer set was chosen for near-universal prevalence across core genes and is not driven by the panel lineages, so feature-level leakage is negligible and the holdout retrain is valid with the production feature set. Low Jaccard would mean the holdout retrain should be repeated with the reselected features."
+  },
+  "evaluation": {
+    "holdout_onnx": "/path/to/magicc/models/magicc_holdout_phylum.onnx",
+    "v5_onnx": "/path/to/magicc/models/magicc_v5.onnx",
+    "provenance_audit": {
+      "holdout_train_val_dominant_phyla": 100,
+      "panel_phyla_in_holdout_train_val": [],
+      "holdout_train_val_dominant_accessions": 72290,
+      "eval_dominant_accessions": 621,
+      "eval_dominants_also_in_holdout_training": 0,
+      "overlap_examples": []
+    },
+    "eval_manifest": {
+      "created": "2026-07-26 09:57:47",
+      "seed_base": 20260726,
+      "panel_phyla": [
+        "Altiarchaeota",
+        "Bacteroidota",
+        "Bacteroidota_A",
+        "Campylobacterota",
+        "Halobacteriota",
+        "Iainarchaeota",
+        "Micrarchaeota",
+        "Nanobdellota",
+        "Nanohalarchaeota",
+        "Patescibacteriota"
+      ],
+      "contaminant_pool": {
+        "source": "panel-free TEST split",
+        "n": 8034,
+        "n_phyla": 67
+      },
+      "groups": {
+        "Bacteroidota": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test",
+          "n_samples": 1000,
+          "n_refs_used": 100,
+          "dominant_splits": {
+            "test": 1000
+          },
+          "dominant_phyla": {
+            "Bacteroidota": 1000
+          },
+          "mean_true_completeness": 75.545,
+          "mean_true_contamination": 44.113,
+          "contaminant_phyla_used": [
+            "ARS69",
+            "Acidobacteriota",
+            "Actinomycetota",
+            "Aquificota",
+            "Armatimonadota",
+            "Atribacterota",
+            "BMS3Abin14",
+            "Bacillota",
+            "Bdellovibrionota",
+            "Bdellovibrionota_B",
+            "Chlamydiota",
+            "Chloroflexota",
+            "Chrysiogenota",
+            "Cloacimonadota",
+            "Cyanobacteriota",
+            "Deinococcota",
+            "Desulfobacterota",
+            "Desulfobacterota_I",
+            "Elusimicrobiota",
+            "Fermentibacterota",
+            "Fibrobacterota",
+            "Fusobacteriota",
+            "Gemmatimonadota",
+            "JAMCPX01",
+            "Marinisomatota",
+            "Methanobacteriota",
+            "Methanobacteriota_B",
+            "Myxococcota",
+            "Nitrospirota",
+            "Planctomycetota",
+            "Pseudomonadota",
+            "Spirochaetota",
+            "Synergistota",
+            "Sysuimicrobiota",
+            "Thermoplasmatota",
+            "Thermoproteota",
+            "Thermotogota",
+            "UBA10199",
+            "UBP6",
+            "Verrucomicrobiota",
+            "WOR-3",
+            "Zhuqueibacterota"
+          ],
+          "constraint_violations": 0,
+          "n_errors": 0
+        },
+        "Bacteroidota_A": {
+          "n_refs": 66,
+          "sims": 15,
+          "ref_source": "test",
+          "n_samples": 990,
+          "n_refs_used": 66,
+          "dominant_splits": {
+            "test": 990
+          },
+          "dominant_phyla": {
+            "Bacteroidota_A": 990
+          },
+          "mean_true_completeness": 75.742,
+          "mean_true_contamination": 44.872,
+          "contaminant_phyla_used": [
+            "ARS69",
+            "Acidobacteriota",
+            "Actinomycetota",
+            "Aquificota",
+            "Armatimonadota",
+            "Bacillota",
+            "Bdellovibrionota",
+            "Chlamydiota",
+            "Chloroflexota",
+            "Chrysiogenota",
+            "Cloacimonadota",
+            "Cyanobacteriota",
+            "Deinococcota",
+            "Desulfobacterota",
+            "Desulfobacterota_I",
+            "Elusimicrobiota",
+            "Fibrobacterota",
+            "Fusobacteriota",
+            "Gemmatimonadota",
+            "Krumholzibacteriota",
+            "Margulisbacteria",
+            "Marinisomatota",
+            "Methanobacteriota",
+            "Methanobacteriota_B",
+            "Myxococcota",
+            "Nitrospinota",
+            "Nitrospirota",
+            "Planctomycetota",
+            "Pseudomonadota",
+            "Spirochaetota",
+            "Synergistota",
+            "Thermoplasmatota",
+            "Thermoproteota",
+            "Thermotogota",
+            "UBP6",
+            "Verrucomicrobiota",
+            "Zhuqueibacterota"
+          ],
+          "constraint_violations": 0,
+          "n_errors": 0
+        },
+        "Campylobacterota": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test",
+          "n_samples": 1000,
+          "n_refs_used": 100,
+          "dominant_splits": {
+            "test": 1000
+          },
+          "dominant_phyla": {
+            "Campylobacterota": 1000
+          },
+          "mean_true_completeness": 79.767,
+          "mean_true_contamination": 45.055,
+          "contaminant_phyla_used": [
+            "Acidobacteriota",
+            "Actinomycetota",
+            "Aquificota",
+            "Armatimonadota",
+            "Atribacterota",
+            "Auribacterota",
+            "Bacillota",
+            "Bdellovibrionota",
+            "Chlamydiota",
+            "Chloroflexota",
+            "Chrysiogenota",
+            "Cloacimonadota",
+            "Cyanobacteriota",
+            "Deinococcota",
+            "Desulfobacterota",
+            "Desulfobacterota_D",
+            "Desulfobacterota_I",
+            "Elusimicrobiota",
+            "Fermentibacterota",
+            "Fibrobacterota",
+            "Fusobacteriota",
+            "Goldbacteria",
+            "Krumholzibacteriota",
+            "Marinisomatota",
+            "Methanobacteriota",
+            "Myxococcota",
+            "Nitrospinota",
+            "Nitrospirota",
+            "Nitrospirota_A",
+            "Planctomycetota",
+            "Pseudomonadota",
+            "Spirochaetota",
+            "Synergistota",
+            "Thermoplasmatota",
+            "Thermoproteota",
+            "Thermotogota",
+            "UBA10199",
+            "Verrucomicrobiota",
+            "WOR-3"
+          ],
+          "constraint_violations": 0,
+          "n_errors": 0
+        },
+        "Patescibacteriota": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test",
+          "n_samples": 1000,
+          "n_refs_used": 100,
+          "dominant_splits": {
+            "test": 1000
+          },
+          "dominant_phyla": {
+            "Patescibacteriota": 1000
+          },
+          "mean_true_completeness": 83.215,
+          "mean_true_contamination": 46.874,
+          "contaminant_phyla_used": [
+            "Acidobacteriota",
+            "Actinomycetota",
+            "Aquificota",
+            "Armatimonadota",
+            "Atribacterota",
+            "Auribacterota",
+            "BMS3Abin14",
+            "Bacillota",
+            "Bdellovibrionota",
+            "Bdellovibrionota_B",
+            "Chlamydiota",
+            "Chloroflexota",
+            "Chrysiogenota",
+            "Cloacimonadota",
+            "Cyanobacteriota",
+            "Deinococcota",
+            "Desulfobacterota",
+            "Desulfobacterota_G",
+            "Desulfobacterota_I",
+            "Electryoneota",
+            "Elusimicrobiota",
+            "Fermentibacterota",
+            "Fibrobacterota",
+            "Fusobacteriota",
+            "Gemmatimonadota",
+            "Korarchaeota",
+            "Margulisbacteria",
+            "Methanobacteriota",
+            "Methanobacteriota_B",
+            "Myxococcota",
+            "Nitrospinota",
+            "Nitrospirota",
+            "Nitrospirota_A",
+            "Omnitrophota",
+            "Planctomycetota",
+            "Pseudomonadota",
+            "SZUA-79",
+            "Spirochaetota",
+            "Synergistota",
+            "Thermodesulfobiota",
+            "Thermoplasmatota",
+            "Thermoproteota",
+            "Thermotogota",
+            "Verrucomicrobiota",
+            "Zhuqueibacterota",
+            "Zixibacteria"
+          ],
+          "constraint_violations": 0,
+          "n_errors": 0
+        },
+        "Halobacteriota": {
+          "n_refs": 72,
+          "sims": 14,
+          "ref_source": "test",
+          "n_samples": 1008,
+          "n_refs_used": 72,
+          "dominant_splits": {
+            "test": 1008
+          },
+          "dominant_phyla": {
+            "Halobacteriota": 1008
+          },
+          "mean_true_completeness": 75.587,
+          "mean_true_contamination": 44.376,
+          "contaminant_phyla_used": [
+            "Acidobacteriota",
+            "Actinomycetota",
+            "Aquificota",
+            "Armatimonadota",
+            "Bacillota",
+            "Bdellovibrionota",
+            "Bdellovibrionota_B",
+            "Caldisericota",
+            "Chlamydiota",
+            "Chloroflexota",
+            "Chrysiogenota",
+            "Cloacimonadota",
+            "Cyanobacteriota",
+            "Deinococcota",
+            "Desulfobacterota",
+            "Desulfobacterota_D",
+            "Desulfobacterota_G",
+            "Desulfobacterota_I",
+            "Dictyoglomota",
+            "Edwardsbacteria",
+            "Elusimicrobiota",
+            "Fibrobacterota",
+            "Fusobacteriota",
+            "Gemmatimonadota",
+            "Krumholzibacteriota",
+            "Methanobacteriota",
+            "Methanobacteriota_B",
+            "Methylomirabilota",
+            "Myxococcota",
+            "Nitrospirota",
+            "Planctomycetota",
+            "Pseudomonadota",
+            "SZUA-79",
+            "Spirochaetota",
+            "Synergistota",
+            "Thermoplasmatota",
+            "Thermoproteota",
+            "Thermotogota",
+            "UBA10199",
+            "UBP6",
+            "Verrucomicrobiota",
+            "WOR-3"
+          ],
+          "constraint_violations": 0,
+          "n_errors": 0
+        },
+        "DPANN": {
+          "n_refs": 83,
+          "sims": 12,
+          "ref_source": "all",
+          "n_samples": 996,
+          "n_refs_used": 83,
+          "dominant_splits": {
+            "train": 768,
+            "val": 120,
+            "test": 108
+          },
+          "dominant_phyla": {
+            "Nanobdellota": 828,
+            "Micrarchaeota": 72,
+            "Nanohalarchaeota": 60,
+            "Iainarchaeota": 24,
+            "Altiarchaeota": 12
+          },
+          "mean_true_completeness": 82.83,
+          "mean_true_contamination": 45.291,
+          "contaminant_phyla_used": [
+            "Acidobacteriota",
+            "Actinomycetota",
+            "Armatimonadota",
+            "Bacillota",
+            "Bdellovibrionota",
+            "CLD3",
+            "Caldisericota",
+            "Chlamydiota",
+            "Chloroflexota",
+            "Chrysiogenota",
+            "Cyanobacteriota",
+            "Deinococcota",
+            "Desulfobacterota",
+            "Desulfobacterota_D",
+            "Desulfobacterota_G",
+            "Desulfobacterota_I",
+            "Edwardsbacteria",
+            "Elusimicrobiota",
+            "Fermentibacterota",
+            "Fibrobacterota",
+            "Fusobacteriota",
+            "Gemmatimonadota",
+            "Methanobacteriota",
+            "Methanobacteriota_B",
+            "Methylomirabilota",
+            "Myxococcota",
+            "Nitrospirota",
+            "Planctomycetota",
+            "Pseudomonadota",
+            "Spirochaetota",
+            "Synergistota",
+            "Thermoplasmatota",
+            "Thermoproteota",
+            "Thermotogota",
+            "UBA10199",
+            "Verrucomicrobiota",
+            "Vulcanimicrobiota",
+            "WOR-3",
+            "Zhuqueibacterota",
+            "Zixibacteria"
+          ],
+          "constraint_violations": 0,
+          "n_errors": 0
+        },
+        "in_distribution": {
+          "n_refs": 100,
+          "sims": 10,
+          "ref_source": "test",
+          "n_samples": 1000,
+          "n_refs_used": 100,
+          "dominant_splits": {
+            "test": 1000
+          },
+          "dominant_phyla": {
+            "Pseudomonadota": 180,
+            "Bacillota": 160,
+            "Actinomycetota": 110,
+            "Cyanobacteriota": 40,
+            "Verrucomicrobiota": 40,
+            "Spirochaetota": 30,
+            "Desulfobacterota_I": 30,
+            "Thermoproteota": 30,
+            "Fusobacteriota": 20,
+            "Chlamydiota": 20,
+            "Acidobacteriota": 20,
+            "Desulfobacterota": 20,
+            "Methanobacteriota": 20,
+            "Planctomycetota": 20,
+            "Deinococcota": 20,
+            "Chloroflexota": 20,
+            "Nitrospirota": 20,
+            "Elusimicrobiota": 10,
+            "Chrysiogenota": 10,
+            "Thermoplasmatota": 10,
+            "Thermotogota": 10,
+            "Bdellovibrionota": 10,
+            "Synergistota": 10,
+            "Myxococcota": 10,
+            "Armatimonadota": 10,
+            "Fibrobacterota": 10,
+            "Methanobacteriota_B": 10,
+            "Aquificota": 10,
+            "Gemmatimonadota": 10,
+            "Cloacimonadota": 10,
+            "WOR-3": 10,
+            "Margulisbacteria": 10,
+            "Vulcanimicrobiota": 10,
+            "Zixibacteria": 10,
+            "Zhuqueibacterota": 10,
+            "UBA10199": 10,
+            "Desulfobacterota_D": 10
+          },
+          "mean_true_completeness": 76.018,
+          "mean_true_contamination": 45.811,
+          "contaminant_phyla_used": [
+            "Acidobacteriota",
+            "Actinomycetota",
+            "Aquificota",
+            "Armatimonadota",
+            "Atribacterota",
+            "BMS3Abin14",
+            "Bacillota",
+            "Calditrichota",
+            "Chlamydiota",
+            "Chloroflexota",
+            "Chrysiogenota",
+            "Cloacimonadota",
+            "Cyanobacteriota",
+            "Deinococcota",
+            "Desulfobacterota",
+            "Desulfobacterota_I",
+            "Elusimicrobiota",
+            "Fermentibacterota",
+            "Fibrobacterota",
+            "Fusobacteriota",
+            "Gemmatimonadota",
+            "JAMCPX01",
+            "Krumholzibacteriota",
+            "Margulisbacteria",
+            "Methanobacteriota",
+            "Methanobacteriota_B",
+            "Myxococcota",
+            "Nitrospirota",
+            "Planctomycetota",
+            "Pseudomonadota",
+            "Schekmanbacteria",
+            "Spirochaetota",
+            "Synergistota",
+            "Thermoplasmatota",
+            "Thermoproteota",
+            "Thermotogota",
+            "Verrucomicrobiota",
+            "Vulcanimicrobiota",
+            "WOR-3",
+            "Zhuqueibacterota"
+          ],
+          "constraint_violations": 0,
+          "n_errors": 0
+        }
+      }
+    },
+    "group_metrics": {
+      "Bacteroidota": {
+        "holdout": {
+          "completeness": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 13.442536051926513,
+            "rmse": 16.862329327523685,
+            "r2": -0.41024294741784106,
+            "r2_pearson": 0.11650354520940161,
+            "bias": -0.5585655476804198,
+            "median_signed": -1.195756473388677,
+            "p90_abs": 27.799479935058596,
+            "true_mean": 75.54540974400001,
+            "pred_mean": 74.98684419631958,
+            "mae_ci95": [
+              12.5123,
+              14.4239
+            ]
+          },
+          "contamination": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 15.855638435569938,
+            "rmse": 20.671291868434096,
+            "r2": 0.34295560482171483,
+            "r2_pearson": 0.49142784687528457,
+            "bias": 6.949218435590371,
+            "median_signed": 4.854016376953126,
+            "p90_abs": 34.704135791528316,
+            "true_mean": 44.11340224200001,
+            "pred_mean": 51.06262067759037,
+            "mae_ci95": [
+              14.2908,
+              17.4682
+            ]
+          }
+        },
+        "V5": {
+          "completeness": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 5.484061669164551,
+            "rmse": 8.070742668216122,
+            "r2": 0.6769380552666502,
+            "r2_pearson": 0.7185282927103465,
+            "bias": 2.648189758563477,
+            "median_signed": 1.3531726450195265,
+            "p90_abs": 12.79288933388672,
+            "true_mean": 75.54540974400001,
+            "pred_mean": 78.19359950256347,
+            "mae_ci95": [
+              4.9641,
+              6.0512
+            ]
+          },
+          "contamination": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 5.68464038543441,
+            "rmse": 8.132910402952607,
+            "r2": 0.8982928575458438,
+            "r2_pearson": 0.9081524365526096,
+            "bias": -2.519300633604423,
+            "median_signed": -1.6292067783927908,
+            "p90_abs": 13.30603678479004,
+            "true_mean": 44.11340224200001,
+            "pred_mean": 41.594101608395576,
+            "mae_ci95": [
+              5.1413,
+              6.2975
+            ]
+          }
+        },
+        "paired": {
+          "completeness": {
+            "delta_mae": 7.9585,
+            "ci95": [
+              6.8876,
+              9.0202
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 100
+          },
+          "contamination": {
+            "delta_mae": 10.171,
+            "ci95": [
+              8.4291,
+              11.9579
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 100
+          }
+        }
+      },
+      "Bacteroidota_A": {
+        "holdout": {
+          "completeness": {
+            "n": 990,
+            "n_refs": 66,
+            "mae": 12.450729493415848,
+            "rmse": 15.698974001227116,
+            "r2": -0.21746307131062848,
+            "r2_pearson": 0.18355087846207077,
+            "bias": -1.131853672101139,
+            "median_signed": -1.6657435419921853,
+            "p90_abs": 26.093075405883788,
+            "true_mean": 75.74162356262627,
+            "pred_mean": 74.60976989052513,
+            "mae_ci95": [
+              11.4778,
+              13.4031
+            ]
+          },
+          "contamination": {
+            "n": 990,
+            "n_refs": 66,
+            "mae": 14.299676254250334,
+            "rmse": 18.392251125856724,
+            "r2": 0.431261401343783,
+            "r2_pearson": 0.5377746676049067,
+            "bias": 2.7357783983131716,
+            "median_signed": 3.0998370294494633,
+            "p90_abs": 31.050324146557617,
+            "true_mean": 44.872418650505054,
+            "pred_mean": 47.60819704881822,
+            "mae_ci95": [
+              12.9412,
+              15.7374
+            ]
+          }
+        },
+        "V5": {
+          "completeness": {
+            "n": 990,
+            "n_refs": 66,
+            "mae": 7.104950312345871,
+            "rmse": 9.65778105128243,
+            "r2": 0.5392472168674138,
+            "r2_pearson": 0.5754811133157391,
+            "bias": 0.4704548439677537,
+            "median_signed": -0.249934852539063,
+            "p90_abs": 16.298454078662115,
+            "true_mean": 75.74162356262627,
+            "pred_mean": 76.21207840659402,
+            "mae_ci95": [
+              6.4186,
+              7.8141
+            ]
+          },
+          "contamination": {
+            "n": 990,
+            "n_refs": 66,
+            "mae": 6.804884100183999,
+            "rmse": 9.422540181658757,
+            "r2": 0.850727803419441,
+            "r2_pearson": 0.8532128735841081,
+            "bias": -0.5330264043646765,
+            "median_signed": -0.32741027540588474,
+            "p90_abs": 15.369571143115236,
+            "true_mean": 44.872418650505054,
+            "pred_mean": 44.33939224614038,
+            "mae_ci95": [
+              6.2594,
+              7.3681
+            ]
+          }
+        },
+        "paired": {
+          "completeness": {
+            "delta_mae": 5.3458,
+            "ci95": [
+              4.2988,
+              6.4938
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 66
+          },
+          "contamination": {
+            "delta_mae": 7.4948,
+            "ci95": [
+              6.279,
+              8.7329
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 66
+          }
+        }
+      },
+      "Campylobacterota": {
+        "holdout": {
+          "completeness": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 6.581695485765136,
+            "rmse": 9.275823712680934,
+            "r2": 0.6477384288552496,
+            "r2_pearson": 0.6549200404491143,
+            "bias": 0.7411403815449218,
+            "median_signed": -0.06382369995117188,
+            "p90_abs": 15.411565637792972,
+            "true_mean": 79.766712127,
+            "pred_mean": 80.50785250854493,
+            "mae_ci95": [
+              6.0095,
+              7.2008
+            ]
+          },
+          "contamination": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 12.283397933590372,
+            "rmse": 16.21270670587374,
+            "r2": 0.5916586628835548,
+            "r2_pearson": 0.7946611103483533,
+            "bias": -11.38904591888796,
+            "median_signed": -8.862076609741209,
+            "p90_abs": 27.872925485693358,
+            "true_mean": 45.055288189,
+            "pred_mean": 33.666242270112036,
+            "mae_ci95": [
+              11.0645,
+              13.5304
+            ]
+          }
+        },
+        "V5": {
+          "completeness": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 2.8248900835271,
+            "rmse": 4.579587214147105,
+            "r2": 0.9141356347756455,
+            "r2_pearson": 0.9161115789244294,
+            "bias": 0.6868780028522949,
+            "median_signed": -0.0930938720703125,
+            "p90_abs": 6.560018338281249,
+            "true_mean": 79.766712127,
+            "pred_mean": 80.4535901298523,
+            "mae_ci95": [
+              2.5777,
+              3.1115
+            ]
+          },
+          "contamination": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 5.088491124654556,
+            "rmse": 7.296812801151355,
+            "r2": 0.917286060983641,
+            "r2_pearson": 0.9519454549726917,
+            "bias": -4.340260993546355,
+            "median_signed": -3.0452333576660173,
+            "p90_abs": 11.49532571574707,
+            "true_mean": 45.055288189,
+            "pred_mean": 40.715027195453644,
+            "mae_ci95": [
+              4.692,
+              5.4551
+            ]
+          }
+        },
+        "paired": {
+          "completeness": {
+            "delta_mae": 3.7568,
+            "ci95": [
+              3.282,
+              4.2697
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 100
+          },
+          "contamination": {
+            "delta_mae": 7.1949,
+            "ci95": [
+              6.053,
+              8.3614
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 100
+          }
+        }
+      },
+      "Patescibacteriota": {
+        "holdout": {
+          "completeness": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 30.014587782117427,
+            "rmse": 33.88866457145043,
+            "r2": -3.095045854758264,
+            "r2_pearson": 0.13449184417936996,
+            "bias": -29.999856496351807,
+            "median_signed": -31.482925986083984,
+            "p90_abs": 48.07411613464355,
+            "true_mean": 83.214714067,
+            "pred_mean": 53.21485757064819,
+            "mae_ci95": [
+              28.9414,
+              31.0913
+            ]
+          },
+          "contamination": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 20.752199677495188,
+            "rmse": 25.905611446173634,
+            "r2": 0.007827012690415414,
+            "r2_pearson": 0.4677420451333928,
+            "bias": -17.340519897215373,
+            "median_signed": -16.566583608879093,
+            "p90_abs": 43.32795897191162,
+            "true_mean": 46.874311328999994,
+            "pred_mean": 29.53379143178463,
+            "mae_ci95": [
+              19.4378,
+              22.0897
+            ]
+          }
+        },
+        "V5": {
+          "completeness": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 7.2497365001333005,
+            "rmse": 10.910891193687133,
+            "r2": 0.5755072193945798,
+            "r2_pearson": 0.6275526796358024,
+            "bias": -2.2686763472734373,
+            "median_signed": -0.5128669738769531,
+            "p90_abs": 18.593947092041013,
+            "true_mean": 83.214714067,
+            "pred_mean": 80.94603771972656,
+            "mae_ci95": [
+              6.1428,
+              8.471
+            ]
+          },
+          "contamination": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 8.878273785828071,
+            "rmse": 11.837924167933979,
+            "r2": 0.7928185771039953,
+            "r2_pearson": 0.8025914951899369,
+            "bias": -2.510602039091591,
+            "median_signed": -2.4345381473388663,
+            "p90_abs": 19.02568589754639,
+            "true_mean": 46.874311328999994,
+            "pred_mean": 44.36370928990841,
+            "mae_ci95": [
+              8.117,
+              9.7073
+            ]
+          }
+        },
+        "paired": {
+          "completeness": {
+            "delta_mae": 22.7649,
+            "ci95": [
+              21.3671,
+              24.259
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 100
+          },
+          "contamination": {
+            "delta_mae": 11.8739,
+            "ci95": [
+              10.4678,
+              13.3289
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 100
+          }
+        }
+      },
+      "Halobacteriota": {
+        "holdout": {
+          "completeness": {
+            "n": 1008,
+            "n_refs": 72,
+            "mae": 10.838795079987298,
+            "rmse": 13.919938804340537,
+            "r2": 0.12282631731422822,
+            "r2_pearson": 0.3144174836914985,
+            "bias": -0.7346133987496998,
+            "median_signed": -0.3295745849609375,
+            "p90_abs": 22.881636915209963,
+            "true_mean": 75.5868405,
+            "pred_mean": 74.8522271012503,
+            "mae_ci95": [
+              9.9587,
+              11.7247
+            ]
+          },
+          "contamination": {
+            "n": 1008,
+            "n_refs": 72,
+            "mae": 12.281123606097607,
+            "rmse": 16.902731357706493,
+            "r2": 0.5427114632675406,
+            "r2_pearson": 0.5638480798680788,
+            "bias": 1.170649020056157,
+            "median_signed": 1.3658315373840315,
+            "p90_abs": 29.01285151345215,
+            "true_mean": 44.37582466269841,
+            "pred_mean": 45.546473682754566,
+            "mae_ci95": [
+              10.8573,
+              13.8033
+            ]
+          }
+        },
+        "V5": {
+          "completeness": {
+            "n": 1008,
+            "n_refs": 72,
+            "mae": 6.198780439203171,
+            "rmse": 8.693862135036762,
+            "r2": 0.6578343258186352,
+            "r2_pearson": 0.6657431073011025,
+            "bias": -0.082017859808059,
+            "median_signed": -0.19344081347656328,
+            "p90_abs": 15.040173029931642,
+            "true_mean": 75.5868405,
+            "pred_mean": 75.50482264019195,
+            "mae_ci95": [
+              5.4952,
+              6.9584
+            ]
+          },
+          "contamination": {
+            "n": 1008,
+            "n_refs": 72,
+            "mae": 6.900014981019451,
+            "rmse": 9.683296376411219,
+            "r2": 0.8499199431769658,
+            "r2_pearson": 0.8630112057952241,
+            "bias": -2.8293871445890084,
+            "median_signed": -1.61756971006775,
+            "p90_abs": 16.327054530224615,
+            "true_mean": 44.37582466269841,
+            "pred_mean": 41.54643751810941,
+            "mae_ci95": [
+              6.3855,
+              7.4119
+            ]
+          }
+        },
+        "paired": {
+          "completeness": {
+            "delta_mae": 4.64,
+            "ci95": [
+              3.8556,
+              5.489
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 72
+          },
+          "contamination": {
+            "delta_mae": 5.3811,
+            "ci95": [
+              3.9185,
+              6.954
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 72
+          }
+        }
+      },
+      "DPANN": {
+        "holdout": {
+          "completeness": {
+            "n": 996,
+            "n_refs": 83,
+            "mae": 23.947056824560693,
+            "rmse": 27.824784160739007,
+            "r2": -1.879379657645622,
+            "r2_pearson": 0.21052551430875502,
+            "bias": -23.646334600358706,
+            "median_signed": -23.590869903564453,
+            "p90_abs": 44.877647399902344,
+            "true_mean": 82.83020089056225,
+            "pred_mean": 59.18386629020354,
+            "mae_ci95": [
+              22.2281,
+              25.6005
+            ]
+          },
+          "contamination": {
+            "n": 996,
+            "n_refs": 83,
+            "mae": 18.40651201123814,
+            "rmse": 23.852175270373223,
+            "r2": 0.11239433194042414,
+            "r2_pearson": 0.5289486515742431,
+            "bias": -16.330268637780748,
+            "median_signed": -13.46624599926758,
+            "p90_abs": 40.26763745455932,
+            "true_mean": 45.29065613855422,
+            "pred_mean": 28.96038750077347,
+            "mae_ci95": [
+              16.4288,
+              20.3199
+            ]
+          }
+        },
+        "V5": {
+          "completeness": {
+            "n": 996,
+            "n_refs": 83,
+            "mae": 4.6036740590148675,
+            "rmse": 7.661587094374206,
+            "r2": 0.7816904122612285,
+            "r2_pearson": 0.7895165335421647,
+            "bias": -1.1192557305275792,
+            "median_signed": -0.4335142524414053,
+            "p90_abs": 11.139432006103519,
+            "true_mean": 82.83020089056225,
+            "pred_mean": 81.71094516003467,
+            "mae_ci95": [
+              3.823,
+              5.5372
+            ]
+          },
+          "contamination": {
+            "n": 996,
+            "n_refs": 83,
+            "mae": 6.741766940463852,
+            "rmse": 9.711646953602168,
+            "r2": 0.852853527524686,
+            "r2_pearson": 0.8766101498587475,
+            "bias": -3.5500421916012437,
+            "median_signed": -2.511397903808593,
+            "p90_abs": 15.82436947192383,
+            "true_mean": 45.29065613855422,
+            "pred_mean": 41.740613946952976,
+            "mae_ci95": [
+              5.9903,
+              7.6236
+            ]
+          }
+        },
+        "paired": {
+          "completeness": {
+            "delta_mae": 19.3434,
+            "ci95": [
+              17.5008,
+              21.1658
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 83
+          },
+          "contamination": {
+            "delta_mae": 11.6647,
+            "ci95": [
+              9.8101,
+              13.5164
+            ],
+            "p_value": 0.0005,
+            "n_clusters": 83
+          }
+        }
+      },
+      "in_distribution": {
+        "holdout": {
+          "completeness": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 6.19552343194165,
+            "rmse": 8.89647671215866,
+            "r2": 0.6199038345603656,
+            "r2_pearson": 0.6499930903394836,
+            "bias": 0.788768164123779,
+            "median_signed": 0.70417564648438,
+            "p90_abs": 14.521573142919928,
+            "true_mean": 76.01754031899999,
+            "pred_mean": 76.80630848312379,
+            "mae_ci95": [
+              5.4926,
+              6.939
+            ]
+          },
+          "contamination": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 6.973296964945015,
+            "rmse": 9.773203253917897,
+            "r2": 0.8404172043344659,
+            "r2_pearson": 0.847489574160679,
+            "bias": -1.9880531308277205,
+            "median_signed": -1.8585924169921881,
+            "p90_abs": 16.260382596215823,
+            "true_mean": 45.81105095800001,
+            "pred_mean": 43.82299782717228,
+            "mae_ci95": [
+              6.2762,
+              7.686
+            ]
+          }
+        },
+        "V5": {
+          "completeness": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 6.242107128320068,
+            "rmse": 9.037554981267233,
+            "r2": 0.6077532981451857,
+            "r2_pearson": 0.6375402567535922,
+            "bias": 0.7579745163576661,
+            "median_signed": 0.44779273632812533,
+            "p90_abs": 15.708346702539066,
+            "true_mean": 76.01754031899999,
+            "pred_mean": 76.77551483535767,
+            "mae_ci95": [
+              5.5103,
+              6.9788
+            ]
+          },
+          "contamination": {
+            "n": 1000,
+            "n_refs": 100,
+            "mae": 7.327718233358299,
+            "rmse": 10.461181673974393,
+            "r2": 0.817158954538417,
+            "r2_pearson": 0.8258190579847132,
+            "bias": -2.160557311497505,
+            "median_signed": -1.9421036200561517,
+            "p90_abs": 17.36736587900391,
+            "true_mean": 45.81105095800001,
+            "pred_mean": 43.6504936465025,
+            "mae_ci95": [
+              6.5633,
+              8.1473
+            ]
+          }
+        },
+        "paired": {
+          "completeness": {
+            "delta_mae": -0.0466,
+            "ci95": [
+              -0.316,
+              0.2321
+            ],
+            "p_value": 0.738,
+            "n_clusters": 100
+          },
+          "contamination": {
+            "delta_mae": -0.3544,
+            "ci95": [
+              -0.7061,
+              -0.0398
+            ],
+            "p_value": 0.048,
+            "n_clusters": 100
+          }
+        }
+      }
+    },
+    "n_bootstrap": 2000,
+    "bootstrap": "cluster bootstrap by reference genome"
+  },
+  "head_to_head_table": [
+    {
+      "group": "Bacteroidota",
+      "lineage_seen_by_holdout": "NO",
+      "n": 1000,
+      "n_refs": 100,
+      "true_comp_mean": 75.55,
+      "true_cont_mean": 44.11,
+      "HO_comp_mae": 13.443,
+      "V5_comp_mae": 5.484,
+      "d_comp_mae": 7.958,
+      "HO_comp_bias": -0.559,
+      "V5_comp_bias": 2.648,
+      "HO_comp_rmse": 16.862,
+      "V5_comp_rmse": 8.071,
+      "HO_comp_r2": -0.4102,
+      "V5_comp_r2": 0.6769,
+      "HO_cont_mae": 15.856,
+      "V5_cont_mae": 5.685,
+      "d_cont_mae": 10.171,
+      "HO_cont_bias": 6.949,
+      "V5_cont_bias": -2.519,
+      "HO_cont_rmse": 20.671,
+      "V5_cont_rmse": 8.133,
+      "HO_cont_r2": 0.343,
+      "V5_cont_r2": 0.8983,
+      "HO_comp_r2_pearson": 0.1165,
+      "V5_comp_r2_pearson": 0.7185,
+      "HO_cont_r2_pearson": 0.4914,
+      "V5_cont_r2_pearson": 0.9082,
+      "HO_comp_mae_ci95": [
+        12.5123,
+        14.4239
+      ],
+      "HO_cont_mae_ci95": [
+        14.2908,
+        17.4682
+      ],
+      "V5_comp_mae_ci95": [
+        4.9641,
+        6.0512
+      ],
+      "V5_cont_mae_ci95": [
+        5.1413,
+        6.2975
+      ],
+      "paired_d_comp_ci95": [
+        6.8876,
+        9.0202
+      ],
+      "paired_d_comp_p": 0.0005,
+      "paired_d_cont_ci95": [
+        8.4291,
+        11.9579
+      ],
+      "paired_d_cont_p": 0.0005,
+      "paired_d_comp_q_bh": 0.00058,
+      "paired_d_cont_q_bh": 0.00058
+    },
+    {
+      "group": "Bacteroidota_A",
+      "lineage_seen_by_holdout": "NO",
+      "n": 990,
+      "n_refs": 66,
+      "true_comp_mean": 75.74,
+      "true_cont_mean": 44.87,
+      "HO_comp_mae": 12.451,
+      "V5_comp_mae": 7.105,
+      "d_comp_mae": 5.346,
+      "HO_comp_bias": -1.132,
+      "V5_comp_bias": 0.47,
+      "HO_comp_rmse": 15.699,
+      "V5_comp_rmse": 9.658,
+      "HO_comp_r2": -0.2175,
+      "V5_comp_r2": 0.5392,
+      "HO_cont_mae": 14.3,
+      "V5_cont_mae": 6.805,
+      "d_cont_mae": 7.495,
+      "HO_cont_bias": 2.736,
+      "V5_cont_bias": -0.533,
+      "HO_cont_rmse": 18.392,
+      "V5_cont_rmse": 9.423,
+      "HO_cont_r2": 0.4313,
+      "V5_cont_r2": 0.8507,
+      "HO_comp_r2_pearson": 0.1836,
+      "V5_comp_r2_pearson": 0.5755,
+      "HO_cont_r2_pearson": 0.5378,
+      "V5_cont_r2_pearson": 0.8532,
+      "HO_comp_mae_ci95": [
+        11.4778,
+        13.4031
+      ],
+      "HO_cont_mae_ci95": [
+        12.9412,
+        15.7374
+      ],
+      "V5_comp_mae_ci95": [
+        6.4186,
+        7.8141
+      ],
+      "V5_cont_mae_ci95": [
+        6.2594,
+        7.3681
+      ],
+      "paired_d_comp_ci95": [
+        4.2988,
+        6.4938
+      ],
+      "paired_d_comp_p": 0.0005,
+      "paired_d_cont_ci95": [
+        6.279,
+        8.7329
+      ],
+      "paired_d_cont_p": 0.0005,
+      "paired_d_comp_q_bh": 0.00058,
+      "paired_d_cont_q_bh": 0.00058
+    },
+    {
+      "group": "Campylobacterota",
+      "lineage_seen_by_holdout": "NO",
+      "n": 1000,
+      "n_refs": 100,
+      "true_comp_mean": 79.77,
+      "true_cont_mean": 45.06,
+      "HO_comp_mae": 6.582,
+      "V5_comp_mae": 2.825,
+      "d_comp_mae": 3.757,
+      "HO_comp_bias": 0.741,
+      "V5_comp_bias": 0.687,
+      "HO_comp_rmse": 9.276,
+      "V5_comp_rmse": 4.58,
+      "HO_comp_r2": 0.6477,
+      "V5_comp_r2": 0.9141,
+      "HO_cont_mae": 12.283,
+      "V5_cont_mae": 5.088,
+      "d_cont_mae": 7.195,
+      "HO_cont_bias": -11.389,
+      "V5_cont_bias": -4.34,
+      "HO_cont_rmse": 16.213,
+      "V5_cont_rmse": 7.297,
+      "HO_cont_r2": 0.5917,
+      "V5_cont_r2": 0.9173,
+      "HO_comp_r2_pearson": 0.6549,
+      "V5_comp_r2_pearson": 0.9161,
+      "HO_cont_r2_pearson": 0.7947,
+      "V5_cont_r2_pearson": 0.9519,
+      "HO_comp_mae_ci95": [
+        6.0095,
+        7.2008
+      ],
+      "HO_cont_mae_ci95": [
+        11.0645,
+        13.5304
+      ],
+      "V5_comp_mae_ci95": [
+        2.5777,
+        3.1115
+      ],
+      "V5_cont_mae_ci95": [
+        4.692,
+        5.4551
+      ],
+      "paired_d_comp_ci95": [
+        3.282,
+        4.2697
+      ],
+      "paired_d_comp_p": 0.0005,
+      "paired_d_cont_ci95": [
+        6.053,
+        8.3614
+      ],
+      "paired_d_cont_p": 0.0005,
+      "paired_d_comp_q_bh": 0.00058,
+      "paired_d_cont_q_bh": 0.00058
+    },
+    {
+      "group": "Patescibacteriota",
+      "lineage_seen_by_holdout": "NO",
+      "n": 1000,
+      "n_refs": 100,
+      "true_comp_mean": 83.21,
+      "true_cont_mean": 46.87,
+      "HO_comp_mae": 30.015,
+      "V5_comp_mae": 7.25,
+      "d_comp_mae": 22.765,
+      "HO_comp_bias": -30.0,
+      "V5_comp_bias": -2.269,
+      "HO_comp_rmse": 33.889,
+      "V5_comp_rmse": 10.911,
+      "HO_comp_r2": -3.095,
+      "V5_comp_r2": 0.5755,
+      "HO_cont_mae": 20.752,
+      "V5_cont_mae": 8.878,
+      "d_cont_mae": 11.874,
+      "HO_cont_bias": -17.341,
+      "V5_cont_bias": -2.511,
+      "HO_cont_rmse": 25.906,
+      "V5_cont_rmse": 11.838,
+      "HO_cont_r2": 0.0078,
+      "V5_cont_r2": 0.7928,
+      "HO_comp_r2_pearson": 0.1345,
+      "V5_comp_r2_pearson": 0.6276,
+      "HO_cont_r2_pearson": 0.4677,
+      "V5_cont_r2_pearson": 0.8026,
+      "HO_comp_mae_ci95": [
+        28.9414,
+        31.0913
+      ],
+      "HO_cont_mae_ci95": [
+        19.4378,
+        22.0897
+      ],
+      "V5_comp_mae_ci95": [
+        6.1428,
+        8.471
+      ],
+      "V5_cont_mae_ci95": [
+        8.117,
+        9.7073
+      ],
+      "paired_d_comp_ci95": [
+        21.3671,
+        24.259
+      ],
+      "paired_d_comp_p": 0.0005,
+      "paired_d_cont_ci95": [
+        10.4678,
+        13.3289
+      ],
+      "paired_d_cont_p": 0.0005,
+      "paired_d_comp_q_bh": 0.00058,
+      "paired_d_cont_q_bh": 0.00058
+    },
+    {
+      "group": "Halobacteriota",
+      "lineage_seen_by_holdout": "NO",
+      "n": 1008,
+      "n_refs": 72,
+      "true_comp_mean": 75.59,
+      "true_cont_mean": 44.38,
+      "HO_comp_mae": 10.839,
+      "V5_comp_mae": 6.199,
+      "d_comp_mae": 4.64,
+      "HO_comp_bias": -0.735,
+      "V5_comp_bias": -0.082,
+      "HO_comp_rmse": 13.92,
+      "V5_comp_rmse": 8.694,
+      "HO_comp_r2": 0.1228,
+      "V5_comp_r2": 0.6578,
+      "HO_cont_mae": 12.281,
+      "V5_cont_mae": 6.9,
+      "d_cont_mae": 5.381,
+      "HO_cont_bias": 1.171,
+      "V5_cont_bias": -2.829,
+      "HO_cont_rmse": 16.903,
+      "V5_cont_rmse": 9.683,
+      "HO_cont_r2": 0.5427,
+      "V5_cont_r2": 0.8499,
+      "HO_comp_r2_pearson": 0.3144,
+      "V5_comp_r2_pearson": 0.6657,
+      "HO_cont_r2_pearson": 0.5638,
+      "V5_cont_r2_pearson": 0.863,
+      "HO_comp_mae_ci95": [
+        9.9587,
+        11.7247
+      ],
+      "HO_cont_mae_ci95": [
+        10.8573,
+        13.8033
+      ],
+      "V5_comp_mae_ci95": [
+        5.4952,
+        6.9584
+      ],
+      "V5_cont_mae_ci95": [
+        6.3855,
+        7.4119
+      ],
+      "paired_d_comp_ci95": [
+        3.8556,
+        5.489
+      ],
+      "paired_d_comp_p": 0.0005,
+      "paired_d_cont_ci95": [
+        3.9185,
+        6.954
+      ],
+      "paired_d_cont_p": 0.0005,
+      "paired_d_comp_q_bh": 0.00058,
+      "paired_d_cont_q_bh": 0.00058
+    },
+    {
+      "group": "DPANN",
+      "lineage_seen_by_holdout": "NO",
+      "n": 996,
+      "n_refs": 83,
+      "true_comp_mean": 82.83,
+      "true_cont_mean": 45.29,
+      "HO_comp_mae": 23.947,
+      "V5_comp_mae": 4.604,
+      "d_comp_mae": 19.343,
+      "HO_comp_bias": -23.646,
+      "V5_comp_bias": -1.119,
+      "HO_comp_rmse": 27.825,
+      "V5_comp_rmse": 7.662,
+      "HO_comp_r2": -1.8794,
+      "V5_comp_r2": 0.7817,
+      "HO_cont_mae": 18.407,
+      "V5_cont_mae": 6.742,
+      "d_cont_mae": 11.665,
+      "HO_cont_bias": -16.33,
+      "V5_cont_bias": -3.55,
+      "HO_cont_rmse": 23.852,
+      "V5_cont_rmse": 9.712,
+      "HO_cont_r2": 0.1124,
+      "V5_cont_r2": 0.8529,
+      "HO_comp_r2_pearson": 0.2105,
+      "V5_comp_r2_pearson": 0.7895,
+      "HO_cont_r2_pearson": 0.5289,
+      "V5_cont_r2_pearson": 0.8766,
+      "HO_comp_mae_ci95": [
+        22.2281,
+        25.6005
+      ],
+      "HO_cont_mae_ci95": [
+        16.4288,
+        20.3199
+      ],
+      "V5_comp_mae_ci95": [
+        3.823,
+        5.5372
+      ],
+      "V5_cont_mae_ci95": [
+        5.9903,
+        7.6236
+      ],
+      "paired_d_comp_ci95": [
+        17.5008,
+        21.1658
+      ],
+      "paired_d_comp_p": 0.0005,
+      "paired_d_cont_ci95": [
+        9.8101,
+        13.5164
+      ],
+      "paired_d_cont_p": 0.0005,
+      "paired_d_comp_q_bh": 0.00058,
+      "paired_d_cont_q_bh": 0.00058
+    },
+    {
+      "group": "in_distribution",
+      "lineage_seen_by_holdout": "yes",
+      "n": 1000,
+      "n_refs": 100,
+      "true_comp_mean": 76.02,
+      "true_cont_mean": 45.81,
+      "HO_comp_mae": 6.196,
+      "V5_comp_mae": 6.242,
+      "d_comp_mae": -0.047,
+      "HO_comp_bias": 0.789,
+      "V5_comp_bias": 0.758,
+      "HO_comp_rmse": 8.896,
+      "V5_comp_rmse": 9.038,
+      "HO_comp_r2": 0.6199,
+      "V5_comp_r2": 0.6078,
+      "HO_cont_mae": 6.973,
+      "V5_cont_mae": 7.328,
+      "d_cont_mae": -0.354,
+      "HO_cont_bias": -1.988,
+      "V5_cont_bias": -2.161,
+      "HO_cont_rmse": 9.773,
+      "V5_cont_rmse": 10.461,
+      "HO_cont_r2": 0.8404,
+      "V5_cont_r2": 0.8172,
+      "HO_comp_r2_pearson": 0.65,
+      "V5_comp_r2_pearson": 0.6375,
+      "HO_cont_r2_pearson": 0.8475,
+      "V5_cont_r2_pearson": 0.8258,
+      "HO_comp_mae_ci95": [
+        5.4926,
+        6.939
+      ],
+      "HO_cont_mae_ci95": [
+        6.2762,
+        7.686
+      ],
+      "V5_comp_mae_ci95": [
+        5.5103,
+        6.9788
+      ],
+      "V5_cont_mae_ci95": [
+        6.5633,
+        8.1473
+      ],
+      "paired_d_comp_ci95": [
+        -0.316,
+        0.2321
+      ],
+      "paired_d_comp_p": 0.738,
+      "paired_d_cont_ci95": [
+        -0.7061,
+        -0.0398
+      ],
+      "paired_d_cont_p": 0.048,
+      "paired_d_comp_q_bh": 0.738,
+      "paired_d_cont_q_bh": 0.05169
+    }
+  ],
+  "clean_sets": [
+    {
+      "set": "set_C_clean",
+      "stratum": "ALL",
+      "holdout_status": "n/a",
+      "model": "holdout",
+      "n": 1000,
+      "n_refs": 100,
+      "comp_mae": 30.331,
+      "comp_bias": -30.246,
+      "comp_rmse": 33.978,
+      "comp_r2": -3.3882,
+      "comp_r2_pearson": 0.0892,
+      "cont_mae": 20.562,
+      "cont_bias": -17.136,
+      "cont_rmse": 25.974,
+      "cont_r2": -0.0211,
+      "cont_r2_pearson": 0.4315,
+      "comp_mae_ci95": [
+        29.1642,
+        31.4749
+      ],
+      "cont_mae_ci95": [
+        19.092,
+        22.0972
+      ]
+    },
+    {
+      "set": "set_C_clean",
+      "stratum": "ALL",
+      "holdout_status": "n/a",
+      "model": "V5",
+      "n": 1000,
+      "n_refs": 100,
+      "comp_mae": 6.824,
+      "comp_bias": -2.312,
+      "comp_rmse": 10.125,
+      "comp_r2": 0.6104,
+      "comp_r2_pearson": 0.6561,
+      "cont_mae": 9.075,
+      "cont_bias": -3.544,
+      "cont_rmse": 12.312,
+      "cont_r2": 0.7706,
+      "cont_r2_pearson": 0.7917,
+      "comp_mae_ci95": [
+        5.8082,
+        7.9093
+      ],
+      "cont_mae_ci95": [
+        8.1469,
+        10.0334
+      ]
+    },
+    {
+      "set": "set_C_clean",
+      "stratum": "Patescibacteriota",
+      "holdout_status": "HELD OUT",
+      "model": "holdout",
+      "n": 1000,
+      "n_refs": 100,
+      "comp_mae": 30.331,
+      "comp_bias": -30.246,
+      "comp_rmse": 33.978,
+      "comp_r2": -3.3882,
+      "comp_r2_pearson": 0.0892,
+      "cont_mae": 20.562,
+      "cont_bias": -17.136,
+      "cont_rmse": 25.974,
+      "cont_r2": -0.0211,
+      "cont_r2_pearson": 0.4315,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_C_clean",
+      "stratum": "Patescibacteriota",
+      "holdout_status": "HELD OUT",
+      "model": "V5",
+      "n": 1000,
+      "n_refs": 100,
+      "comp_mae": 6.824,
+      "comp_bias": -2.312,
+      "comp_rmse": 10.125,
+      "comp_r2": 0.6104,
+      "comp_r2_pearson": 0.6561,
+      "cont_mae": 9.075,
+      "cont_bias": -3.544,
+      "cont_rmse": 12.312,
+      "cont_r2": 0.7706,
+      "cont_r2_pearson": 0.7917,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "ALL",
+      "holdout_status": "n/a",
+      "model": "holdout",
+      "n": 1000,
+      "n_refs": 100,
+      "comp_mae": 7.26,
+      "comp_bias": -0.98,
+      "comp_rmse": 10.441,
+      "comp_r2": 0.5358,
+      "comp_r2_pearson": 0.5798,
+      "cont_mae": 8.65,
+      "cont_bias": -2.906,
+      "cont_rmse": 12.374,
+      "cont_r2": 0.7489,
+      "cont_r2_pearson": 0.7637,
+      "comp_mae_ci95": [
+        6.4143,
+        8.201
+      ],
+      "cont_mae_ci95": [
+        7.6761,
+        9.7529
+      ]
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "ALL",
+      "holdout_status": "n/a",
+      "model": "V5",
+      "n": 1000,
+      "n_refs": 100,
+      "comp_mae": 5.632,
+      "comp_bias": -0.256,
+      "comp_rmse": 8.32,
+      "comp_r2": 0.7053,
+      "comp_r2_pearson": 0.7124,
+      "cont_mae": 6.518,
+      "cont_bias": -3.823,
+      "cont_rmse": 9.432,
+      "cont_r2": 0.8541,
+      "cont_r2_pearson": 0.8787,
+      "comp_mae_ci95": [
+        5.0225,
+        6.3498
+      ],
+      "cont_mae_ci95": [
+        5.9815,
+        7.1098
+      ]
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Halobacteriota",
+      "holdout_status": "HELD OUT",
+      "model": "holdout",
+      "n": 350,
+      "n_refs": 35,
+      "comp_mae": 9.421,
+      "comp_bias": -1.555,
+      "comp_rmse": 11.946,
+      "comp_r2": 0.3265,
+      "comp_r2_pearson": 0.4377,
+      "cont_mae": 12.09,
+      "cont_bias": -0.588,
+      "cont_rmse": 16.136,
+      "cont_r2": 0.5667,
+      "cont_r2_pearson": 0.5847,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Halobacteriota",
+      "holdout_status": "HELD OUT",
+      "model": "V5",
+      "n": 350,
+      "n_refs": 35,
+      "comp_mae": 5.632,
+      "comp_bias": 0.243,
+      "comp_rmse": 7.629,
+      "comp_r2": 0.7253,
+      "comp_r2_pearson": 0.7288,
+      "cont_mae": 6.617,
+      "cont_bias": -3.516,
+      "cont_rmse": 9.264,
+      "cont_r2": 0.8572,
+      "cont_r2_pearson": 0.8779,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Methanobacteriota",
+      "holdout_status": "in-dist",
+      "model": "holdout",
+      "n": 190,
+      "n_refs": 19,
+      "comp_mae": 4.022,
+      "comp_bias": 0.359,
+      "comp_rmse": 6.146,
+      "comp_r2": 0.844,
+      "comp_r2_pearson": 0.8447,
+      "cont_mae": 5.935,
+      "cont_bias": -4.605,
+      "cont_rmse": 8.379,
+      "cont_r2": 0.8983,
+      "cont_r2_pearson": 0.9323,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Methanobacteriota",
+      "holdout_status": "in-dist",
+      "model": "V5",
+      "n": 190,
+      "n_refs": 19,
+      "comp_mae": 4.272,
+      "comp_bias": -0.052,
+      "comp_rmse": 6.29,
+      "comp_r2": 0.8366,
+      "comp_r2_pearson": 0.8367,
+      "cont_mae": 6.232,
+      "cont_bias": -4.564,
+      "cont_rmse": 9.004,
+      "cont_r2": 0.8826,
+      "cont_r2_pearson": 0.9158,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Methanobacteriota_B",
+      "holdout_status": "in-dist",
+      "model": "holdout",
+      "n": 40,
+      "n_refs": 4,
+      "comp_mae": 5.569,
+      "comp_bias": -0.985,
+      "comp_rmse": 9.522,
+      "comp_r2": 0.5578,
+      "comp_r2_pearson": 0.6084,
+      "cont_mae": 6.193,
+      "cont_bias": 0.188,
+      "cont_rmse": 9.61,
+      "cont_r2": 0.8714,
+      "cont_r2_pearson": 0.8776,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Methanobacteriota_B",
+      "holdout_status": "in-dist",
+      "model": "V5",
+      "n": 40,
+      "n_refs": 4,
+      "comp_mae": 5.833,
+      "comp_bias": -1.249,
+      "comp_rmse": 9.878,
+      "comp_r2": 0.5242,
+      "comp_r2_pearson": 0.5981,
+      "cont_mae": 5.238,
+      "cont_bias": 0.351,
+      "cont_rmse": 8.621,
+      "cont_r2": 0.8965,
+      "cont_r2_pearson": 0.9,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Nanobdellota",
+      "holdout_status": "HELD OUT",
+      "model": "holdout",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 18.181,
+      "comp_bias": -17.681,
+      "comp_rmse": 22.601,
+      "comp_r2": -0.5726,
+      "comp_r2_pearson": 0.3929,
+      "cont_mae": 14.772,
+      "cont_bias": -12.436,
+      "cont_rmse": 20.042,
+      "cont_r2": 0.4525,
+      "cont_r2_pearson": 0.664,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Nanobdellota",
+      "holdout_status": "HELD OUT",
+      "model": "V5",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 2.927,
+      "comp_bias": 1.241,
+      "comp_rmse": 4.971,
+      "comp_r2": 0.9239,
+      "comp_r2_pearson": 0.9291,
+      "cont_mae": 5.833,
+      "cont_bias": -5.44,
+      "cont_rmse": 7.797,
+      "cont_r2": 0.9171,
+      "cont_r2_pearson": 0.971,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Thermoplasmatota",
+      "holdout_status": "in-dist",
+      "model": "holdout",
+      "n": 70,
+      "n_refs": 7,
+      "comp_mae": 4.155,
+      "comp_bias": 0.078,
+      "comp_rmse": 5.562,
+      "comp_r2": 0.8925,
+      "comp_r2_pearson": 0.8943,
+      "cont_mae": 5.352,
+      "cont_bias": -3.466,
+      "cont_rmse": 6.867,
+      "cont_r2": 0.916,
+      "cont_r2_pearson": 0.9394,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Thermoplasmatota",
+      "holdout_status": "in-dist",
+      "model": "V5",
+      "n": 70,
+      "n_refs": 7,
+      "comp_mae": 3.769,
+      "comp_bias": -0.03,
+      "comp_rmse": 5.285,
+      "comp_r2": 0.9029,
+      "comp_r2_pearson": 0.9032,
+      "cont_mae": 5.577,
+      "cont_bias": -3.568,
+      "cont_rmse": 7.246,
+      "cont_r2": 0.9065,
+      "cont_r2_pearson": 0.9292,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Thermoproteota",
+      "holdout_status": "in-dist",
+      "model": "holdout",
+      "n": 330,
+      "n_refs": 33,
+      "comp_mae": 7.033,
+      "comp_bias": -0.352,
+      "comp_rmse": 10.427,
+      "comp_r2": 0.5389,
+      "comp_r2_pearson": 0.5759,
+      "cont_mae": 7.189,
+      "cont_bias": -4.066,
+      "cont_rmse": 10.094,
+      "cont_r2": 0.8142,
+      "cont_r2_pearson": 0.8444,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    },
+    {
+      "set": "set_D_clean",
+      "stratum": "Thermoproteota",
+      "holdout_status": "in-dist",
+      "model": "V5",
+      "n": 330,
+      "n_refs": 33,
+      "comp_mae": 6.949,
+      "comp_bias": -0.92,
+      "comp_rmse": 10.295,
+      "comp_r2": 0.5505,
+      "comp_r2_pearson": 0.5836,
+      "cont_mae": 6.974,
+      "cont_bias": -4.185,
+      "cont_rmse": 10.396,
+      "cont_r2": 0.8029,
+      "cont_r2_pearson": 0.8349,
+      "comp_mae_ci95": null,
+      "cont_mae_ci95": null
+    }
+  ],
+  "r2_convention": "All fields named r2 are the coefficient of determination 1 - SSres/SStot. Fields named r2_pearson are squared Pearson correlation and must not be labelled R2.",
+  "mimag_threshold": [
+    {
+      "group": "Bacteroidota",
+      "model": "holdout",
+      "n": 1000,
+      "mimag_agreement": 0.903,
+      "true_HQ": 12,
+      "pred_HQ": 10,
+      "HQ_recall": 0.0833,
+      "HQ_precision": 0.1,
+      "cont5_false_clean": 23,
+      "cont5_false_dirty": 26,
+      "cont10_false_clean": 23,
+      "cont10_false_dirty": 62,
+      "comp90_false_high": 176,
+      "comp90_false_low": 102
+    },
+    {
+      "group": "Bacteroidota",
+      "model": "V5",
+      "n": 1000,
+      "mimag_agreement": 0.971,
+      "true_HQ": 12,
+      "pred_HQ": 14,
+      "HQ_recall": 0.75,
+      "HQ_precision": 0.6429,
+      "cont5_false_clean": 9,
+      "cont5_false_dirty": 5,
+      "cont10_false_clean": 9,
+      "cont10_false_dirty": 15,
+      "comp90_false_high": 76,
+      "comp90_false_low": 24
+    },
+    {
+      "group": "Bacteroidota_A",
+      "model": "holdout",
+      "n": 990,
+      "mimag_agreement": 0.9212,
+      "true_HQ": 10,
+      "pred_HQ": 13,
+      "HQ_recall": 0.2,
+      "HQ_precision": 0.1538,
+      "cont5_false_clean": 33,
+      "cont5_false_dirty": 19,
+      "cont10_false_clean": 29,
+      "cont10_false_dirty": 36,
+      "comp90_false_high": 151,
+      "comp90_false_low": 101
+    },
+    {
+      "group": "Bacteroidota_A",
+      "model": "V5",
+      "n": 990,
+      "mimag_agreement": 0.9586,
+      "true_HQ": 10,
+      "pred_HQ": 20,
+      "HQ_recall": 0.8,
+      "HQ_precision": 0.4,
+      "cont5_false_clean": 22,
+      "cont5_false_dirty": 14,
+      "cont10_false_clean": 14,
+      "cont10_false_dirty": 18,
+      "comp90_false_high": 91,
+      "comp90_false_low": 53
+    },
+    {
+      "group": "Campylobacterota",
+      "model": "holdout",
+      "n": 1000,
+      "mimag_agreement": 0.91,
+      "true_HQ": 23,
+      "pred_HQ": 44,
+      "HQ_recall": 0.8261,
+      "HQ_precision": 0.4318,
+      "cont5_false_clean": 75,
+      "cont5_false_dirty": 0,
+      "cont10_false_clean": 74,
+      "cont10_false_dirty": 0,
+      "comp90_false_high": 84,
+      "comp90_false_low": 82
+    },
+    {
+      "group": "Campylobacterota",
+      "model": "V5",
+      "n": 1000,
+      "mimag_agreement": 0.974,
+      "true_HQ": 23,
+      "pred_HQ": 25,
+      "HQ_recall": 0.9565,
+      "HQ_precision": 0.88,
+      "cont5_false_clean": 7,
+      "cont5_false_dirty": 4,
+      "cont10_false_clean": 14,
+      "cont10_false_dirty": 8,
+      "comp90_false_high": 33,
+      "comp90_false_low": 24
+    },
+    {
+      "group": "Patescibacteriota",
+      "model": "holdout",
+      "n": 1000,
+      "mimag_agreement": 0.898,
+      "true_HQ": 18,
+      "pred_HQ": 0,
+      "HQ_recall": 0.0,
+      "HQ_precision": NaN,
+      "cont5_false_clean": 51,
+      "cont5_false_dirty": 19,
+      "cont10_false_clean": 63,
+      "cont10_false_dirty": 29,
+      "comp90_false_high": 0,
+      "comp90_false_low": 456
+    },
+    {
+      "group": "Patescibacteriota",
+      "model": "V5",
+      "n": 1000,
+      "mimag_agreement": 0.93,
+      "true_HQ": 18,
+      "pred_HQ": 18,
+      "HQ_recall": 0.3889,
+      "HQ_precision": 0.3889,
+      "cont5_false_clean": 18,
+      "cont5_false_dirty": 17,
+      "cont10_false_clean": 36,
+      "cont10_false_dirty": 25,
+      "comp90_false_high": 60,
+      "comp90_false_low": 119
+    },
+    {
+      "group": "Halobacteriota",
+      "model": "holdout",
+      "n": 1008,
+      "mimag_agreement": 0.9206,
+      "true_HQ": 13,
+      "pred_HQ": 5,
+      "HQ_recall": 0.1538,
+      "HQ_precision": 0.4,
+      "cont5_false_clean": 8,
+      "cont5_false_dirty": 40,
+      "cont10_false_clean": 13,
+      "cont10_false_dirty": 62,
+      "comp90_false_high": 126,
+      "comp90_false_low": 101
+    },
+    {
+      "group": "Halobacteriota",
+      "model": "V5",
+      "n": 1008,
+      "mimag_agreement": 0.9554,
+      "true_HQ": 13,
+      "pred_HQ": 10,
+      "HQ_recall": 0.5385,
+      "HQ_precision": 0.7,
+      "cont5_false_clean": 11,
+      "cont5_false_dirty": 11,
+      "cont10_false_clean": 18,
+      "cont10_false_dirty": 20,
+      "comp90_false_high": 59,
+      "comp90_false_low": 64
+    },
+    {
+      "group": "DPANN",
+      "model": "holdout",
+      "n": 996,
+      "mimag_agreement": 0.8434,
+      "true_HQ": 19,
+      "pred_HQ": 2,
+      "HQ_recall": 0.0,
+      "HQ_precision": 0.0,
+      "cont5_false_clean": 88,
+      "cont5_false_dirty": 7,
+      "cont10_false_clean": 119,
+      "cont10_false_dirty": 19,
+      "comp90_false_high": 3,
+      "comp90_false_low": 412
+    },
+    {
+      "group": "DPANN",
+      "model": "V5",
+      "n": 996,
+      "mimag_agreement": 0.9598,
+      "true_HQ": 19,
+      "pred_HQ": 21,
+      "HQ_recall": 0.7895,
+      "HQ_precision": 0.7143,
+      "cont5_false_clean": 15,
+      "cont5_false_dirty": 9,
+      "cont10_false_clean": 13,
+      "cont10_false_dirty": 19,
+      "comp90_false_high": 35,
+      "comp90_false_low": 59
+    },
+    {
+      "group": "in_distribution",
+      "model": "holdout",
+      "n": 1000,
+      "mimag_agreement": 0.961,
+      "true_HQ": 5,
+      "pred_HQ": 11,
+      "HQ_recall": 0.6,
+      "HQ_precision": 0.2727,
+      "cont5_false_clean": 17,
+      "cont5_false_dirty": 7,
+      "cont10_false_clean": 21,
+      "cont10_false_dirty": 11,
+      "comp90_false_high": 88,
+      "comp90_false_low": 47
+    },
+    {
+      "group": "in_distribution",
+      "model": "V5",
+      "n": 1000,
+      "mimag_agreement": 0.963,
+      "true_HQ": 5,
+      "pred_HQ": 9,
+      "HQ_recall": 0.8,
+      "HQ_precision": 0.4444,
+      "cont5_false_clean": 16,
+      "cont5_false_dirty": 8,
+      "cont10_false_clean": 20,
+      "cont10_false_dirty": 13,
+      "comp90_false_high": 82,
+      "comp90_false_low": 52
+    }
+  ],
+  "sub_phylum_breakdown": [
+    {
+      "group": "DPANN",
+      "dominant_phylum": "Altiarchaeota",
+      "model": "holdout",
+      "n": 12,
+      "n_refs": 1,
+      "comp_mae": 25.37,
+      "comp_bias": -23.96,
+      "cont_mae": 14.657,
+      "cont_bias": 0.068
+    },
+    {
+      "group": "DPANN",
+      "dominant_phylum": "Altiarchaeota",
+      "model": "V5",
+      "n": 12,
+      "n_refs": 1,
+      "comp_mae": 12.071,
+      "comp_bias": -8.643,
+      "cont_mae": 9.708,
+      "cont_bias": -7.38
+    },
+    {
+      "group": "DPANN",
+      "dominant_phylum": "Iainarchaeota",
+      "model": "holdout",
+      "n": 24,
+      "n_refs": 2,
+      "comp_mae": 18.707,
+      "comp_bias": -18.687,
+      "cont_mae": 22.76,
+      "cont_bias": -22.76
+    },
+    {
+      "group": "DPANN",
+      "dominant_phylum": "Iainarchaeota",
+      "model": "V5",
+      "n": 24,
+      "n_refs": 2,
+      "comp_mae": 9.472,
+      "comp_bias": -6.154,
+      "cont_mae": 10.198,
+      "cont_bias": 0.583
+    },
+    {
+      "group": "DPANN",
+      "dominant_phylum": "Micrarchaeota",
+      "model": "holdout",
+      "n": 72,
+      "n_refs": 6,
+      "comp_mae": 27.247,
+      "comp_bias": -27.172,
+      "cont_mae": 26.293,
+      "cont_bias": -25.217
+    },
+    {
+      "group": "DPANN",
+      "dominant_phylum": "Micrarchaeota",
+      "model": "V5",
+      "n": 72,
+      "n_refs": 6,
+      "comp_mae": 5.426,
+      "comp_bias": -2.725,
+      "cont_mae": 8.988,
+      "cont_bias": -7.164
+    },
+    {
+      "group": "DPANN",
+      "dominant_phylum": "Nanobdellota",
+      "model": "holdout",
+      "n": 828,
+      "n_refs": 69,
+      "comp_mae": 23.833,
+      "comp_bias": -23.498,
+      "cont_mae": 16.836,
+      "cont_bias": -14.645
+    },
+    {
+      "group": "DPANN",
+      "dominant_phylum": "Nanobdellota",
+      "model": "V5",
+      "n": 828,
+      "n_refs": 69,
+      "comp_mae": 4.259,
+      "comp_bias": -0.576,
+      "cont_mae": 6.381,
+      "cont_bias": -3.467
+    },
+    {
+      "group": "DPANN",
+      "dominant_phylum": "Nanohalarchaeota",
+      "model": "holdout",
+      "n": 60,
+      "n_refs": 5,
+      "comp_mae": 23.377,
+      "comp_bias": -23.377,
+      "cont_mae": 29.626,
+      "cont_bias": -29.626
+    },
+    {
+      "group": "DPANN",
+      "dominant_phylum": "Nanohalarchaeota",
+      "model": "V5",
+      "n": 60,
+      "n_refs": 5,
+      "comp_mae": 4.932,
+      "comp_bias": -3.166,
+      "cont_mae": 7.05,
+      "cont_bias": -1.24
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Acidobacteriota",
+      "model": "holdout",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 5.308,
+      "comp_bias": 2.703,
+      "cont_mae": 7.77,
+      "cont_bias": -4.029
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Acidobacteriota",
+      "model": "V5",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 7.001,
+      "comp_bias": 1.283,
+      "cont_mae": 8.349,
+      "cont_bias": -6.519
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Actinomycetota",
+      "model": "holdout",
+      "n": 110,
+      "n_refs": 11,
+      "comp_mae": 5.864,
+      "comp_bias": 0.555,
+      "cont_mae": 5.925,
+      "cont_bias": -3.994
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Actinomycetota",
+      "model": "V5",
+      "n": 110,
+      "n_refs": 11,
+      "comp_mae": 5.775,
+      "comp_bias": -0.457,
+      "cont_mae": 6.141,
+      "cont_bias": -3.672
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Aquificota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 5.131,
+      "comp_bias": -4.375,
+      "cont_mae": 5.006,
+      "cont_bias": -3.194
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Aquificota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 3.927,
+      "comp_bias": -3.335,
+      "cont_mae": 4.603,
+      "cont_bias": -4.026
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Armatimonadota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 11.177,
+      "comp_bias": -6.159,
+      "cont_mae": 9.105,
+      "cont_bias": -2.031
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Armatimonadota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 10.229,
+      "comp_bias": -5.698,
+      "cont_mae": 9.389,
+      "cont_bias": -5.609
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Bacillota",
+      "model": "holdout",
+      "n": 160,
+      "n_refs": 16,
+      "comp_mae": 3.512,
+      "comp_bias": 2.641,
+      "cont_mae": 5.175,
+      "cont_bias": -4.581
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Bacillota",
+      "model": "V5",
+      "n": 160,
+      "n_refs": 16,
+      "comp_mae": 3.279,
+      "comp_bias": 2.206,
+      "cont_mae": 5.05,
+      "cont_bias": -4.651
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Bdellovibrionota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 4.742,
+      "comp_bias": 0.715,
+      "cont_mae": 8.325,
+      "cont_bias": -5.802
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Bdellovibrionota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 4.964,
+      "comp_bias": 0.654,
+      "cont_mae": 6.894,
+      "cont_bias": -3.986
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Chlamydiota",
+      "model": "holdout",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 2.314,
+      "comp_bias": 0.337,
+      "cont_mae": 5.765,
+      "cont_bias": -5.727
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Chlamydiota",
+      "model": "V5",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 2.864,
+      "comp_bias": -0.643,
+      "cont_mae": 5.646,
+      "cont_bias": -4.813
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Chloroflexota",
+      "model": "holdout",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 10.579,
+      "comp_bias": -0.363,
+      "cont_mae": 10.38,
+      "cont_bias": -1.407
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Chloroflexota",
+      "model": "V5",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 8.348,
+      "comp_bias": -1.441,
+      "cont_mae": 9.501,
+      "cont_bias": -3.071
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Chrysiogenota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 5.809,
+      "comp_bias": -2.839,
+      "cont_mae": 4.369,
+      "cont_bias": -4.219
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Chrysiogenota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 5.478,
+      "comp_bias": -0.58,
+      "cont_mae": 6.002,
+      "cont_bias": -5.451
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Cloacimonadota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 7.466,
+      "comp_bias": 3.545,
+      "cont_mae": 7.139,
+      "cont_bias": -0.521
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Cloacimonadota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 7.377,
+      "comp_bias": 5.989,
+      "cont_mae": 7.701,
+      "cont_bias": -3.229
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Cyanobacteriota",
+      "model": "holdout",
+      "n": 40,
+      "n_refs": 4,
+      "comp_mae": 6.654,
+      "comp_bias": -2.613,
+      "cont_mae": 6.291,
+      "cont_bias": -4.436
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Cyanobacteriota",
+      "model": "V5",
+      "n": 40,
+      "n_refs": 4,
+      "comp_mae": 6.636,
+      "comp_bias": -3.653,
+      "cont_mae": 6.627,
+      "cont_bias": -3.271
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Deinococcota",
+      "model": "holdout",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 8.35,
+      "comp_bias": -6.596,
+      "cont_mae": 8.531,
+      "cont_bias": -1.019
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Deinococcota",
+      "model": "V5",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 8.039,
+      "comp_bias": -6.9,
+      "cont_mae": 8.995,
+      "cont_bias": -0.361
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Desulfobacterota",
+      "model": "holdout",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 8.277,
+      "comp_bias": -2.245,
+      "cont_mae": 16.199,
+      "cont_bias": 10.829
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Desulfobacterota",
+      "model": "V5",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 8.639,
+      "comp_bias": -3.504,
+      "cont_mae": 15.77,
+      "cont_bias": 10.257
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Desulfobacterota_D",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 5.369,
+      "comp_bias": -2.488,
+      "cont_mae": 14.232,
+      "cont_bias": 9.024
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Desulfobacterota_D",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 8.186,
+      "comp_bias": -5.688,
+      "cont_mae": 12.323,
+      "cont_bias": 7.254
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Desulfobacterota_I",
+      "model": "holdout",
+      "n": 30,
+      "n_refs": 3,
+      "comp_mae": 6.377,
+      "comp_bias": -2.682,
+      "cont_mae": 6.759,
+      "cont_bias": -2.019
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Desulfobacterota_I",
+      "model": "V5",
+      "n": 30,
+      "n_refs": 3,
+      "comp_mae": 6.162,
+      "comp_bias": -1.125,
+      "cont_mae": 7.626,
+      "cont_bias": -3.313
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Elusimicrobiota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 3.024,
+      "comp_bias": -0.388,
+      "cont_mae": 3.812,
+      "cont_bias": -2.992
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Elusimicrobiota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 3.249,
+      "comp_bias": -0.253,
+      "cont_mae": 5.75,
+      "cont_bias": -4.988
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Fibrobacterota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 11.06,
+      "comp_bias": 10.826,
+      "cont_mae": 7.154,
+      "cont_bias": 0.717
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Fibrobacterota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 9.792,
+      "comp_bias": 9.675,
+      "cont_mae": 6.232,
+      "cont_bias": 0.75
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Fusobacteriota",
+      "model": "holdout",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 5.004,
+      "comp_bias": -0.344,
+      "cont_mae": 5.297,
+      "cont_bias": -2.109
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Fusobacteriota",
+      "model": "V5",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 5.445,
+      "comp_bias": -1.101,
+      "cont_mae": 4.722,
+      "cont_bias": -2.589
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Gemmatimonadota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 7.742,
+      "comp_bias": 6.5,
+      "cont_mae": 6.758,
+      "cont_bias": 2.37
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Gemmatimonadota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 9.904,
+      "comp_bias": 7.444,
+      "cont_mae": 7.954,
+      "cont_bias": 6.862
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Margulisbacteria",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 12.686,
+      "comp_bias": -12.059,
+      "cont_mae": 14.845,
+      "cont_bias": 14.639
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Margulisbacteria",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 14.396,
+      "comp_bias": 11.064,
+      "cont_mae": 26.1,
+      "cont_bias": 25.402
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Methanobacteriota",
+      "model": "holdout",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 4.106,
+      "comp_bias": 0.871,
+      "cont_mae": 4.806,
+      "cont_bias": -1.28
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Methanobacteriota",
+      "model": "V5",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 4.395,
+      "comp_bias": 1.872,
+      "cont_mae": 5.832,
+      "cont_bias": -2.061
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Methanobacteriota_B",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 3.679,
+      "comp_bias": -0.535,
+      "cont_mae": 7.254,
+      "cont_bias": 2.975
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Methanobacteriota_B",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 3.799,
+      "comp_bias": 1.709,
+      "cont_mae": 5.897,
+      "cont_bias": 0.761
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Myxococcota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 15.97,
+      "comp_bias": -11.686,
+      "cont_mae": 25.038,
+      "cont_bias": -25.038
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Myxococcota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 14.47,
+      "comp_bias": -12.072,
+      "cont_mae": 27.965,
+      "cont_bias": -27.965
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Nitrospirota",
+      "model": "holdout",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 13.629,
+      "comp_bias": -8.368,
+      "cont_mae": 10.959,
+      "cont_bias": -1.985
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Nitrospirota",
+      "model": "V5",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 13.867,
+      "comp_bias": -8.187,
+      "cont_mae": 9.846,
+      "cont_bias": 0.906
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Planctomycetota",
+      "model": "holdout",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 8.209,
+      "comp_bias": 4.245,
+      "cont_mae": 7.962,
+      "cont_bias": 2.265
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Planctomycetota",
+      "model": "V5",
+      "n": 20,
+      "n_refs": 2,
+      "comp_mae": 8.583,
+      "comp_bias": 4.869,
+      "cont_mae": 8.513,
+      "cont_bias": 2.584
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Pseudomonadota",
+      "model": "holdout",
+      "n": 180,
+      "n_refs": 18,
+      "comp_mae": 6.586,
+      "comp_bias": 5.025,
+      "cont_mae": 5.374,
+      "cont_bias": -1.452
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Pseudomonadota",
+      "model": "V5",
+      "n": 180,
+      "n_refs": 18,
+      "comp_mae": 6.015,
+      "comp_bias": 3.924,
+      "cont_mae": 5.808,
+      "cont_bias": -2.457
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Spirochaetota",
+      "model": "holdout",
+      "n": 30,
+      "n_refs": 3,
+      "comp_mae": 8.798,
+      "comp_bias": 2.486,
+      "cont_mae": 6.776,
+      "cont_bias": 2.802
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Spirochaetota",
+      "model": "V5",
+      "n": 30,
+      "n_refs": 3,
+      "comp_mae": 8.86,
+      "comp_bias": 4.545,
+      "cont_mae": 7.529,
+      "cont_bias": 1.218
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Synergistota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 8.944,
+      "comp_bias": -0.144,
+      "cont_mae": 4.82,
+      "cont_bias": -2.868
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Synergistota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 7.942,
+      "comp_bias": -0.579,
+      "cont_mae": 6.632,
+      "cont_bias": -3.484
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Thermoplasmatota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 3.649,
+      "comp_bias": -0.208,
+      "cont_mae": 5.81,
+      "cont_bias": 5.156
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Thermoplasmatota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 3.556,
+      "comp_bias": 0.655,
+      "cont_mae": 6.908,
+      "cont_bias": 6.908
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Thermoproteota",
+      "model": "holdout",
+      "n": 30,
+      "n_refs": 3,
+      "comp_mae": 5.919,
+      "comp_bias": -3.836,
+      "cont_mae": 5.893,
+      "cont_bias": -5.147
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Thermoproteota",
+      "model": "V5",
+      "n": 30,
+      "n_refs": 3,
+      "comp_mae": 5.867,
+      "comp_bias": -3.617,
+      "cont_mae": 7.132,
+      "cont_bias": -6.201
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Thermotogota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 4.195,
+      "comp_bias": 1.422,
+      "cont_mae": 6.781,
+      "cont_bias": -6.67
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Thermotogota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 5.893,
+      "comp_bias": 1.516,
+      "cont_mae": 7.423,
+      "cont_bias": -5.581
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "UBA10199",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 6.513,
+      "comp_bias": -3.532,
+      "cont_mae": 14.52,
+      "cont_bias": 11.332
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "UBA10199",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 7.706,
+      "comp_bias": -1.059,
+      "cont_mae": 17.659,
+      "cont_bias": 14.145
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Verrucomicrobiota",
+      "model": "holdout",
+      "n": 40,
+      "n_refs": 4,
+      "comp_mae": 4.007,
+      "comp_bias": 0.602,
+      "cont_mae": 6.505,
+      "cont_bias": -1.258
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Verrucomicrobiota",
+      "model": "V5",
+      "n": 40,
+      "n_refs": 4,
+      "comp_mae": 4.897,
+      "comp_bias": 3.666,
+      "cont_mae": 6.334,
+      "cont_bias": -2.769
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Vulcanimicrobiota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 2.987,
+      "comp_bias": -0.332,
+      "cont_mae": 7.247,
+      "cont_bias": -5.377
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Vulcanimicrobiota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 4.837,
+      "comp_bias": -1.068,
+      "cont_mae": 5.983,
+      "cont_bias": -1.982
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "WOR-3",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 7.619,
+      "comp_bias": -6.402,
+      "cont_mae": 9.212,
+      "cont_bias": 1.774
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "WOR-3",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 7.949,
+      "comp_bias": -7.369,
+      "cont_mae": 12.409,
+      "cont_bias": 0.605
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Zhuqueibacterota",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 9.867,
+      "comp_bias": 9.728,
+      "cont_mae": 12.473,
+      "cont_bias": 11.783
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Zhuqueibacterota",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 11.99,
+      "comp_bias": 9.864,
+      "cont_mae": 11.69,
+      "cont_bias": 11.69
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Zixibacteria",
+      "model": "holdout",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 5.21,
+      "comp_bias": -1.856,
+      "cont_mae": 13.909,
+      "cont_bias": -11.709
+    },
+    {
+      "group": "in_distribution",
+      "dominant_phylum": "Zixibacteria",
+      "model": "V5",
+      "n": 10,
+      "n_refs": 1,
+      "comp_mae": 11.144,
+      "comp_bias": -7.924,
+      "cont_mae": 11.291,
+      "cont_bias": -4.716
+    }
+  ],
+  "lineage_novelty_did": [
+    {
+      "group": "Bacteroidota",
+      "comp_delta": 7.958,
+      "comp_did": 8.0051,
+      "comp_did_ci95": [
+        6.961,
+        9.1024
+      ],
+      "comp_did_p": 0.0005,
+      "cont_delta": 10.171,
+      "cont_did": 10.5254,
+      "cont_did_ci95": [
+        8.8698,
+        12.2378
+      ],
+      "cont_did_p": 0.0005
+    },
+    {
+      "group": "Bacteroidota_A",
+      "comp_delta": 5.346,
+      "comp_did": 5.3924,
+      "comp_did_ci95": [
+        4.2763,
+        6.5988
+      ],
+      "comp_did_p": 0.0005,
+      "cont_delta": 7.495,
+      "cont_did": 7.8492,
+      "cont_did_ci95": [
+        6.5572,
+        9.1625
+      ],
+      "cont_did_p": 0.0005
+    },
+    {
+      "group": "Campylobacterota",
+      "comp_delta": 3.757,
+      "comp_did": 3.8034,
+      "comp_did_ci95": [
+        3.2658,
+        4.382
+      ],
+      "comp_did_p": 0.0005,
+      "cont_delta": 7.195,
+      "cont_did": 7.5493,
+      "cont_did_ci95": [
+        6.3975,
+        8.6541
+      ],
+      "cont_did_p": 0.0005
+    },
+    {
+      "group": "Patescibacteriota",
+      "comp_delta": 22.765,
+      "comp_did": 22.8114,
+      "comp_did_ci95": [
+        21.3574,
+        24.3282
+      ],
+      "comp_did_p": 0.0005,
+      "cont_delta": 11.874,
+      "cont_did": 12.2283,
+      "cont_did_ci95": [
+        10.796,
+        13.6582
+      ],
+      "cont_did_p": 0.0005
+    },
+    {
+      "group": "Halobacteriota",
+      "comp_delta": 4.64,
+      "comp_did": 4.6866,
+      "comp_did_ci95": [
+        3.8184,
+        5.5147
+      ],
+      "comp_did_p": 0.0005,
+      "cont_delta": 5.381,
+      "cont_did": 5.7355,
+      "cont_did_ci95": [
+        4.2705,
+        7.3504
+      ],
+      "cont_did_p": 0.0005
+    },
+    {
+      "group": "DPANN",
+      "comp_delta": 19.343,
+      "comp_did": 19.39,
+      "comp_did_ci95": [
+        17.5844,
+        21.1614
+      ],
+      "comp_did_p": 0.0005,
+      "cont_delta": 11.665,
+      "cont_did": 12.0192,
+      "cont_did_ci95": [
+        10.2037,
+        13.9852
+      ],
+      "cont_did_p": 0.0005
+    }
+  ],
+  "primary_estimator": "difference-in-differences: (MAE_holdout - MAE_V5) on the held-out phylum minus the same quantity on the in_distribution control. Raw cross-group MAE comparisons are confounded by phylum composition of the control.",
+  "files": {
+    "head_to_head": "/path/to/magicc/results/revision/holdout/head_to_head_by_group.tsv",
+    "lineage_novelty_did": "/path/to/magicc/results/revision/holdout/lineage_novelty_effect_did.tsv",
+    "mimag_threshold": "/path/to/magicc/results/revision/holdout/mimag_threshold_by_group.tsv",
+    "mimag_confusion": "/path/to/magicc/results/revision/holdout/mimag_confusion_by_group.tsv",
+    "stratified_error": "/path/to/magicc/results/revision/holdout/stratified_error_by_band.tsv",
+    "sub_phylum": "/path/to/magicc/results/revision/holdout/sub_phylum_breakdown.tsv",
+    "per_sample": "/path/to/magicc/results/revision/holdout/per_sample_predictions.tsv.gz",
+    "per_reference_ws1_8": "/path/to/magicc/results/revision/holdout/per_reference_errors.tsv",
+    "degradation": "/path/to/magicc/results/revision/holdout/degradation_vs_in_distribution.tsv",
+    "dpann": "/path/to/magicc/results/revision/holdout/dpann_split_stratified.tsv",
+    "eval_sets": "/path/to/magicc/data/holdout/eval_sets",
+    "holdout_features_h5": "/path/to/magicc/data/features/holdout_phylum_features.h5",
+    "holdout_onnx": "/path/to/magicc/models/magicc_holdout_phylum.onnx",
+    "holdout_norm_params": "/path/to/magicc/data/holdout/holdout_normalization_params.json",
+    "training_history": "/path/to/magicc/models/training_history_holdout_phylum.json"
+  }
+}

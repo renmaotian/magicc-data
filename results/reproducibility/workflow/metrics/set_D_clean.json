@@ -1,0 +1,64 @@
+{
+  "schema": "magicc-workflow-evaluation/1.0",
+  "generated_utc": "2026-08-25T16:48:29.986847+00:00",
+  "set_name": "set_D_clean",
+  "sets_included": [
+    "set_D_clean"
+  ],
+  "n_genomes": 1000,
+  "cluster_column": "dominant_accession",
+  "cluster_scope": "(set, reference genome) pair",
+  "r2_convention": "coefficient of determination, 1 - SS_res/SS_tot (protocol 4.4d)",
+  "metrics": {
+    "completeness": {
+      "n": 1000,
+      "mae": 5.633002878999999,
+      "rmse": 8.319820108431967,
+      "bias": -0.26235099699999975,
+      "true_variance": 234.85001367674175,
+      "r2": 0.7052612194779531,
+      "r2_omitted_reason": null,
+      "r_pearson_sq": 0.7124093978079299,
+      "n_clusters": 100,
+      "n_iterations": 2000,
+      "seed": 20260726,
+      "mae_ci": [
+        5.024744747000001,
+        6.35217498645
+      ],
+      "bias_ci": [
+        -1.336573571325,
+        0.7132031872499996
+      ],
+      "r2_ci": [
+        0.6222213248716836,
+        0.7707315564036419
+      ]
+    },
+    "contamination": {
+      "n": 1000,
+      "mae": 6.5229055119999995,
+      "rmse": 9.438965228925303,
+      "bias": -3.8341166280000003,
+      "true_variance": 609.7318663296475,
+      "r2": 0.8538799273700863,
+      "r2_omitted_reason": null,
+      "r_pearson_sq": 0.8786566623413716,
+      "n_clusters": 100,
+      "n_iterations": 2000,
+      "seed": 20260726,
+      "mae_ci": [
+        5.985985896225,
+        7.114610037649999
+      ],
+      "bias_ci": [
+        -4.690833923999999,
+        -3.013465806425
+      ],
+      "r2_ci": [
+        0.8227751957423499,
+        0.8796940831700228
+      ]
+    }
+  }
+}

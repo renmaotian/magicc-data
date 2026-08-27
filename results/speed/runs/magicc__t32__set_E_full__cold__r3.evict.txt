@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/path/to/magicc/scripts/162_ws8_drop_file_cache.py", line 138, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/path/to/magicc/scripts/162_ws8_drop_file_cache.py", line 113, in main
+    r, t = resident_pages(p)
+           ^^^^^^^^^^^^^^^^^
+  File "/path/to/magicc/scripts/162_ws8_drop_file_cache.py", line 70, in resident_pages
+    addr = ctypes.addressof(ctypes.c_char.from_buffer(mm))
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: underlying buffer is not writable

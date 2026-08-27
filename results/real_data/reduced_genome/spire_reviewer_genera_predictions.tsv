@@ -1,0 +1,592 @@
+genome_id	genus	genome_size	n_contigs	n50	n_genes	completeness	contamination	gunc_pass	classification	magicc_completeness	magicc_contamination
+spire_mag_00004141	Caccenecus	1512230.0	82.0	26720.0	1671	93.57	0.93	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp910585045	72.5248	23.9230
+spire_mag_00009235	Caccenecus	445902.0	98.0	4727.0	492	55.42	0.0	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp910585045	50.4845	1.3535
+spire_mag_00009358	Caccenecus	1494610.0	87.0	22806.0	1628	92.6	0.19	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp910585045	74.5427	30.7366
+spire_mag_00074760	UMGS1491	1116812.0	67.0	34275.0	1098	94.43	0.72	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	51.3263	14.1516
+spire_mag_00092636	Faecimonas	1547908.0	143.0	17022.0	1733	89.95	7.59	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	86.6531	28.3744
+spire_mag_00092784	Faecimonas	1768331.0	132.0	20424.0	1939	69.65	4.62	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	98.4267	26.7108
+spire_mag_00093325	Faecimonas	1458012.0	106.0	21412.0	1606	92.2	2.26	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	98.1841	11.5303
+spire_mag_00093476	Faecimonas	1734759.0	210.0	11123.0	2054	85.66	9.53	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	97.7510	31.3802
+spire_mag_00093652	Faecimonas	1290001.0	49.0	40075.0	1335	68.74	6.86	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	99.5523	0.4236
+spire_mag_00093694	Faecimonas	846323.0	49.0	23320.0	862	72.93	0.93	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp905209745	61.1494	4.3009
+spire_mag_00093874	Faecimonas	1894728.0	163.0	16135.0	2087	92.3	7.94	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	98.6272	32.9906
+spire_mag_00094003	Faecimonas	808040.0	127.0	7499.0	894	55.67	3.12	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp905209745	58.0170	6.7671
+spire_mag_00094109	Faecimonas	1426140.0	115.0	19670.0	1570	76.08	2.88	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	95.6978	14.0125
+spire_mag_00094169	Faecimonas	1414021.0	46.0	51887.0	1514	90.28	2.96	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.2206	6.7526
+spire_mag_00094269	Faecimonas	1156294.0	64.0	32344.0	1221	86.41	6.29	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	77.6096	11.1804
+spire_mag_00094277	UMGS1491	1185622.0	202.0	6985.0	1339	86.88	0.21	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp905211185	61.4596	34.8236
+spire_mag_00094395	Faecimonas	1307480.0	287.0	4667.0	1638	77.96	6.28	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	75.0027	20.9659
+spire_mag_00115929	CAG-557	1128408.0	31.0	75737.0	1163	99.61	0.1	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.9494	30.6904
+spire_mag_00139348	HGM10766	650823.0	120.0	5880.0	731	70.49	1.39	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__	55.5201	0.3064
+spire_mag_00223861	CAG-557	569379.0	127.0	4794.0	652	58.19	0.02	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__	50.7242	0.0053
+spire_mag_00226835	UMGS1491	389256.0	90.0	4350.0	489	54.12	0.33	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	50.1228	1.1566
+spire_mag_00236439	UMGS1491	864981.0	97.0	11816.0	906	94.43	0.01	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.2468	4.5170
+spire_mag_00238104	UMGS1491	406299.0	110.0	3510.0	473	55.5	3.77	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	50.1004	2.9339
+spire_mag_00250300	Faecimonas	1382350.0	169.0	9937.0	1560	86.18	8.18	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	80.6518	29.1210
+spire_mag_00256529	Faecimonas	2187535.0	138.0	32441.0	2455	91.97	2.98	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	98.3217	51.8246
+spire_mag_00274376	UMGS1491	326853.0	76.0	4397.0	400	63.73	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	50.0210	0.0312
+spire_mag_00303114	CAG-557	1137255.0	30.0	82590.0	1166	99.26	0.11	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.7141	18.4640
+spire_mag_00303457	HGM10766	1446415.0	141.0	15295.0	1656	85.52	4.47	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	74.4784	29.2013
+spire_mag_00313231	Faecimonas	1140180.0	4.0	764815.0	1155	95.11	3.45	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp015059435	92.9627	4.5449
+spire_mag_00365854	Faecimonas	1483858.0	24.0	104823.0	1569	95.6	4.3	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.1972	13.3436
+spire_mag_00372454	Faecimonas	481665.0	120.0	3965.0	539	53.13	2.35	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	51.0083	3.0235
+spire_mag_00373105	Faecimonas	1470792.0	63.0	33818.0	1577	94.66	4.64	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.2109	12.6426
+spire_mag_00375497	Faecimonas	1308746.0	197.0	9014.0	1494	92.52	3.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	82.6649	18.7337
+spire_mag_00388813	UMGS1491	957933.0	131.0	8406.0	982	90.58	0.84	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	51.7800	26.1521
+spire_mag_00390696	CAG-557	1090527.0	109.0	13386.0	1150	98.77	0.11	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.9578	22.2379
+spire_mag_00430403	UMGS1491	682803.0	132.0	5404.0	735	78.17	0.1	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	52.8835	1.6659
+spire_mag_00433540	UMGS1491	1140057.0	47.0	42914.0	1140	96.91	0.67	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	54.1591	35.3346
+spire_mag_00435626	CAG-557	1079209.0	115.0	12424.0	1136	97.32	0.13	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.8419	23.9326
+spire_mag_00441830	Faecimonas	1505459.0	33.0	78218.0	1627	96.26	6.91	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.3603	15.0402
+spire_mag_00443901	Faecimonas	1067308.0	47.0	36514.0	1142	91.08	3.5	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	80.3314	5.7281
+spire_mag_00501722	Faecimonas	1487862.0	21.0	142009.0	1556	92.87	5.62	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.2641	10.9339
+spire_mag_00502821	Faecimonas	1498949.0	25.0	142009.0	1564	92.77	6.08	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.2023	12.2327
+spire_mag_00503590	Faecimonas	1971595.0	155.0	21833.0	2174	85.81	9.51	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas gallistercoris	92.1386	45.4139
+spire_mag_00505846	Faecimonas	1311717.0	76.0	28411.0	1408	90.59	3.67	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas gallistercoris	99.7126	0.9381
+spire_mag_00506711	Faecimonas	1501120.0	97.0	24491.0	1604	92.43	6.13	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas gallistercoris	99.8197	3.6432
+spire_mag_00506881	Caccenecus	1249161.0	69.0	25562.0	1329	89.09	0.92	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus avistercoris	77.2690	7.9013
+spire_mag_00507377	Faecimonas	1252124.0	74.0	26085.0	1307	84.92	0.54	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas gallistercoris	95.3988	3.7407
+spire_mag_00507740	Faecimonas	1313228.0	69.0	31523.0	1394	90.01	3.08	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas gallistercoris	99.5346	1.7416
+spire_mag_00508248	Faecimonas	1234711.0	66.0	27150.0	1290	86.63	1.48	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas gallistercoris	98.8874	0.6127
+spire_mag_00508760	Caccenecus	1375607.0	75.0	26266.0	1465	90.04	2.22	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus avistercoris	79.4935	11.0067
+spire_mag_00508782	Faecimonas	1389975.0	81.0	28415.0	1475	90.63	0.73	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas gallistercoris	99.8621	1.7026
+spire_mag_00527490	UMGS1491	916506.0	65.0	19508.0	919	88.78	0.02	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	54.3389	27.7140
+spire_mag_00538372	CAG-557	690569.0	147.0	4962.0	805	61.04	1.19	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.7654	7.8571
+spire_mag_00538565	CAG-557	1119379.0	81.0	23622.0	1164	99.39	0.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.9085	25.3231
+spire_mag_00538902	Caccenecus	1373506.0	41.0	52640.0	1487	97.2	7.91	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	69.1272	29.5555
+spire_mag_00539492	CAG-557	1032960.0	27.0	65887.0	1044	99.85	0.15	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.3286	23.7725
+spire_mag_00540417	CAG-557	1086824.0	31.0	79779.0	1116	99.63	0.24	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.8513	20.2801
+spire_mag_00541120	Faecimonas	1544530.0	31.0	83031.0	1675	94.69	4.04	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.5193	12.8761
+spire_mag_00542511	Caccenecus	1412910.0	24.0	119072.0	1549	94.14	1.61	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	62.5207	18.7139
+spire_mag_00543181	CAG-557	938107.0	136.0	7986.0	1027	84.16	0.94	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	55.9742	19.2675
+spire_mag_00543835	HGM10766	1146836.0	62.0	27685.0	1244	92.99	0.34	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	64.0119	22.9969
+spire_mag_00547189	CAG-557	1100831.0	109.0	14199.0	1164	96.81	1.55	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.0446	23.9834
+spire_mag_00547712	CAG-557	1062199.0	45.0	43068.0	1091	96.53	0.19	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.7465	19.1337
+spire_mag_00552598	Caccenecus	1290983.0	89.0	21112.0	1381	67.04	3.92	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus avistercoris	76.7549	10.7565
+spire_mag_00567543	CAG-557	1136864.0	71.0	31082.0	1188	97.07	1.85	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.1776	22.8021
+spire_mag_00571697	CAG-557	962970.0	26.0	86212.0	990	89.34	0.17	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	55.7490	16.2514
+spire_mag_00573574	CAG-557	1087508.0	28.0	73652.0	1104	99.84	0.17	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.7086	30.8419
+spire_mag_00574369	CAG-557	1077252.0	142.0	9641.0	1180	95.77	1.98	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.9770	31.5673
+spire_mag_00574685	Caccenecus	1245284.0	38.0	45720.0	1322	96.1	0.23	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	65.1214	23.2143
+spire_mag_00574947	CAG-557	1069650.0	88.0	17664.0	1133	97.73	1.74	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.6620	17.4398
+spire_mag_00576553	CAG-557	668843.0	152.0	4750.0	785	66.78	0.06	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	51.1391	6.6139
+spire_mag_00578261	CAG-557	721048.0	153.0	4697.0	844	57.31	0.01	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	51.7910	14.7668
+spire_mag_00578312	CAG-557	1091061.0	36.0	65254.0	1139	94.24	0.17	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.3495	17.0825
+spire_mag_00579120	CAG-557	1089122.0	25.0	70974.0	1102	99.38	0.04	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.5816	25.3520
+spire_mag_00582277	HGM10766	766586.0	98.0	9842.0	895	67.55	0.69	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	53.1137	10.4654
+spire_mag_00583004	CAG-557	1067066.0	30.0	85616.0	1090	99.28	0.13	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.9211	24.1144
+spire_mag_00583135	CAG-557	1053465.0	32.0	62721.0	1089	94.22	0.69	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.9252	24.5422
+spire_mag_00585797	CAG-557	1033313.0	51.0	36974.0	1074	97.8	0.09	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.7990	25.3228
+spire_mag_00586007	HGM10766	1105468.0	12.0	98085.0	1180	91.79	0.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	62.5513	20.5580
+spire_mag_00586102	HGM10766	1378386.0	65.0	31099.0	1471	96.72	1.27	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__	85.8772	3.9360
+spire_mag_00586640	HGM10766	1098050.0	23.0	105511.0	1133	95.13	0.36	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__	76.1249	6.3614
+spire_mag_00587035	Faecimonas	1310253.0	29.0	118991.0	1398	93.67	1.53	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	90.8279	16.3908
+spire_mag_00587118	UMGS1491	899736.0	117.0	9335.0	928	88.67	0.5	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	52.2384	29.5715
+spire_mag_00587153	Faecimonas	1257072.0	25.0	81953.0	1360	89.67	1.5	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	80.5192	21.7900
+spire_mag_00588466	UMGS1491	861397.0	149.0	6261.0	977	74.2	2.28	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	52.0659	27.6133
+spire_mag_00589368	Faecimonas	1042361.0	28.0	50031.0	1109	90.32	1.2	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	72.1280	15.5517
+spire_mag_00590952	Faecimonas	1405930.0	26.0	77934.0	1528	95.54	1.63	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	93.9142	19.6940
+spire_mag_00591966	Faecimonas	1317958.0	44.0	54378.0	1428	94.15	7.11	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	80.7842	27.4258
+spire_mag_00592941	Faecimonas	1563379.0	28.0	125430.0	1875	87.73	2.35	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	91.0340	30.7830
+spire_mag_00593291	Faecimonas	1560459.0	37.0	94162.0	1694	81.52	1.95	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	96.2844	25.8352
+spire_mag_00593607	Faecimonas	1323514.0	37.0	77987.0	1430	93.3	1.86	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	82.1795	24.6786
+spire_mag_00593926	Faecimonas	1203593.0	39.0	46733.0	1312	90.46	0.85	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	78.3761	21.3643
+spire_mag_00594223	Faecimonas	1408140.0	77.0	30827.0	1509	94.2	5.47	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	80.9566	32.5252
+spire_mag_00595129	Faecimonas	1476873.0	45.0	70866.0	1605	93.94	2.93	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	93.7819	23.9810
+spire_mag_00595704	Faecimonas	1340529.0	16.0	131486.0	1413	97.37	1.53	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	91.5085	17.8999
+spire_mag_00595747	Faecimonas	1368396.0	18.0	124839.0	1462	94.73	1.68	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	89.1819	22.9387
+spire_mag_00597957	CAG-557	918091.0	139.0	7985.0	1020	90.66	1.87	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__	55.3467	2.5688
+spire_mag_00598628	Faecimonas	1344658.0	25.0	126310.0	1422	94.75	1.62	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	86.1343	22.9599
+spire_mag_00599179	Faecimonas	1712079.0	102.0	35451.0	2003	92.92	5.26	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	92.7426	38.3874
+spire_mag_00599502	Faecimonas	1636362.0	41.0	73676.0	1913	96.88	1.64	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	86.0469	35.5110
+spire_mag_00601393	Faecimonas	1392181.0	28.0	100973.0	1477	93.32	3.33	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	87.1170	27.3651
+spire_mag_00601405	UMGS1491	873743.0	168.0	5609.0	980	75.61	0.24	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	51.5739	26.7008
+spire_mag_00603256	Faecimonas	967623.0	12.0	150851.0	1023	87.98	0.42	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	66.6892	13.0849
+spire_mag_00603704	Faecimonas	1198081.0	36.0	69235.0	1280	90.65	5.74	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	79.1493	19.1262
+spire_mag_00603800	Faecimonas	1460000.0	24.0	100660.0	1572	74.29	2.32	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	95.2255	20.2685
+spire_mag_00604227	Faecimonas	678871.0	16.0	77689.0	718	52.94	1.75	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	55.3438	6.1820
+spire_mag_00604664	Faecimonas	1415227.0	33.0	77507.0	1548	92.81	3.16	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	87.7164	23.8419
+spire_mag_00604788	Faecimonas	1056405.0	18.0	91946.0	1118	86.1	1.1	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	65.4624	23.8675
+spire_mag_00606287	Faecimonas	1315543.0	25.0	76840.0	1401	92.4	3.93	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	87.2489	19.2854
+spire_mag_00607417	Faecimonas	1465766.0	51.0	63391.0	1612	96.18	1.7	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	94.1439	25.1993
+spire_mag_00607763	Faecimonas	1349237.0	32.0	68225.0	1439	93.28	9.67	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	87.0147	21.3789
+spire_mag_00608227	Faecimonas	1442550.0	42.0	64186.0	1569	96.16	1.91	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	95.0359	19.5131
+spire_mag_00610247	Faecimonas	961255.0	23.0	59753.0	1018	89.27	0.63	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	66.2176	13.8734
+spire_mag_00610357	UMGS1491	1100217.0	203.0	5690.0	1290	85.52	5.07	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	52.2397	30.9582
+spire_mag_00611181	Faecimonas	1212609.0	28.0	50874.0	1305	93.01	4.0	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	78.1283	20.7740
+spire_mag_00612414	Faecimonas	1203746.0	28.0	82720.0	1284	92.19	1.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	79.1850	21.6931
+spire_mag_00612549	UMGS1491	1037036.0	194.0	5658.0	1215	80.75	9.34	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	56.8461	18.8540
+spire_mag_00613062	UMGS1491	1000961.0	148.0	7457.0	1077	87.89	1.57	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.0590	31.5590
+spire_mag_00613575	Faecimonas	1300427.0	43.0	50237.0	1390	94.19	1.78	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	86.2795	21.9741
+spire_mag_00613872	Faecimonas	1292866.0	21.0	103203.0	1377	94.06	1.59	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	78.7028	28.2711
+spire_mag_00614734	UMGS1491	1043707.0	25.0	89806.0	1071	97.05	0.39	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	64.3367	7.7188
+spire_mag_00615089	Faecimonas	1462921.0	50.0	64326.0	1610	94.78	1.81	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	86.6455	28.0535
+spire_mag_00616319	Faecimonas	460180.0	7.0	111394.0	496	59.57	0.0	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	50.7828	4.8497
+spire_mag_00616714	Faecimonas	1517119.0	37.0	64660.0	1623	96.28	6.17	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	96.4269	27.1372
+spire_mag_00617585	Faecimonas	1378709.0	42.0	81254.0	1469	92.74	2.25	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	90.8579	20.5391
+spire_mag_00617604	Faecimonas	1317778.0	30.0	88308.0	1415	93.92	1.96	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	81.9857	23.4301
+spire_mag_00619154	Faecimonas	1335263.0	38.0	65000.0	1411	95.71	1.3	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	87.3247	23.6451
+spire_mag_00619382	Faecimonas	1329193.0	37.0	60774.0	1456	94.32	1.44	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	88.8127	19.8760
+spire_mag_00619694	Faecimonas	1260416.0	20.0	96558.0	1335	92.21	2.2	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	80.0325	22.9540
+spire_mag_00620854	Faecimonas	1439545.0	23.0	97352.0	1542	95.86	2.39	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	94.0380	22.0806
+spire_mag_00621116	Faecimonas	1429165.0	33.0	52402.0	1569	88.09	4.7	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	94.3094	19.0184
+spire_mag_00622862	Faecimonas	1485274.0	23.0	161795.0	1561	94.53	7.04	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	94.4510	26.7028
+spire_mag_00624607	Faecimonas	1459549.0	20.0	142558.0	1556	95.15	5.29	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	97.3662	17.7567
+spire_mag_00625486	Faecimonas	1409049.0	17.0	151181.0	1518	94.29	2.5	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	96.0211	17.5789
+spire_mag_00626645	Faecimonas	1296004.0	44.0	52305.0	1422	91.6	1.93	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	79.9488	26.9833
+spire_mag_00626979	Faecimonas	1471553.0	26.0	89469.0	1580	93.62	7.69	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	93.3658	25.2207
+spire_mag_00627561	Faecimonas	1284517.0	24.0	91172.0	1381	93.33	3.2	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	84.6506	21.1529
+spire_mag_00627633	Faecimonas	1394938.0	28.0	110224.0	1511	94.7	7.91	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	87.1738	27.9886
+spire_mag_00627851	Faecimonas	1338130.0	32.0	78588.0	1422	94.46	1.67	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	85.7844	23.4864
+spire_mag_00628544	Faecimonas	859588.0	20.0	79734.0	942	89.47	0.49	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	61.5368	13.7144
+spire_mag_00628921	Faecimonas	1239422.0	26.0	84222.0	1340	96.8	2.5	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	81.8637	20.4303
+spire_mag_00629891	Faecimonas	1451923.0	28.0	97569.0	1572	91.87	4.27	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	95.0425	19.1279
+spire_mag_00630459	Faecimonas	1478098.0	24.0	157055.0	1582	78.9	7.94	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	94.2604	28.0303
+spire_mag_00632252	Faecimonas	1398638.0	36.0	65431.0	1495	93.45	3.92	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	92.8413	20.8592
+spire_mag_00633751	Faecimonas	1492070.0	50.0	54472.0	1648	94.67	2.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	92.9555	26.0091
+spire_mag_00634218	UMGS1491	962731.0	151.0	7502.0	1012	82.53	2.6	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.3052	36.1736
+spire_mag_00634736	Faecimonas	1176658.0	27.0	67792.0	1277	70.07	2.86	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	75.3748	19.3120
+spire_mag_00636819	Faecimonas	1442707.0	77.0	31465.0	1605	90.87	1.6		d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	76.4397	32.2085
+spire_mag_00637119	Faecimonas	1483290.0	17.0	143693.0	1611	95.29	5.8	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	96.2698	21.7601
+spire_mag_00637540	Faecimonas	1373731.0	26.0	75601.0	1483	91.88	3.75	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	90.3642	19.3670
+spire_mag_00637636	Faecimonas	1630279.0	26.0	117911.0	1750	96.24	8.43	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	94.8053	32.2272
+spire_mag_00637731	Faecimonas	1369390.0	45.0	78335.0	1496	95.77	2.03	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	88.6816	23.4137
+spire_mag_00638270	Faecimonas	1242814.0	20.0	100295.0	1359	72.13	2.22	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	85.0114	17.2858
+spire_mag_00638307	UMGS1491	1007353.0	30.0	50374.0	990	92.5	0.13	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	52.9788	33.6635
+spire_mag_00639005	Faecimonas	1244385.0	30.0	66123.0	1342	91.55	1.39	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	83.8977	17.9577
+spire_mag_00639689	Faecimonas	1077056.0	7.0	267313.0	1139	69.94	1.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	68.0841	17.3375
+spire_mag_00641387	UMGS1491	627990.0	144.0	4294.0	686	53.21	0.26	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	50.7887	19.9675
+spire_mag_00641390	Faecimonas	1611517.0	33.0	84294.0	1747	97.32	5.48	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	95.2517	28.8568
+spire_mag_00641527	Faecimonas	1762071.0	42.0	92847.0	1887	95.76	9.65	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	98.1672	38.9359
+spire_mag_00642027	Faecimonas	1395117.0	47.0	48445.0	1522	97.11	1.97	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	89.7812	23.6805
+spire_mag_00644419	Faecimonas	1250408.0	19.0	127349.0	1344	92.95	0.91	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	83.5487	19.5856
+spire_mag_00644422	CAG-557	1093975.0	110.0	12008.0	1162	93.08	1.23	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__	60.7070	2.3799
+spire_mag_00644877	Faecimonas	1705779.0	38.0	69227.0	2032	94.14	2.24	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	95.7794	37.6228
+spire_mag_00645024	Faecimonas	1310219.0	17.0	124416.0	1400	92.39	1.6	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	89.3284	18.0671
+spire_mag_00645850	UMGS1491	913792.0	162.0	6647.0	1029	81.89	1.17	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	51.5763	27.0400
+spire_mag_00645949	Faecimonas	1467253.0	36.0	91694.0	1600	96.64	2.32	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	90.1395	26.8923
+spire_mag_00646546	Faecimonas	1385630.0	30.0	122828.0	1489	96.13	2.39	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	91.3354	19.7476
+spire_mag_00646724	Faecimonas	1506898.0	24.0	115823.0	1614	94.19	2.1	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	94.1517	26.0724
+spire_mag_00647613	Faecimonas	1081031.0	17.0	95965.0	1156	72.13	1.67	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	72.5162	17.4855
+spire_mag_00648133	Faecimonas	1367047.0	24.0	79335.0	1453	94.32	1.72	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	92.5801	17.3530
+spire_mag_00649161	CAG-557	619390.0	145.0	4280.0	750	56.85	0.26	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__	51.0816	0.5385
+spire_mag_00649796	Faecimonas	1131269.0	18.0	97264.0	1196	70.73	2.74	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	73.4285	20.2791
+spire_mag_00650201	UMGS1491	614590.0	23.0	60000.0	653	59.34	0.2	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	50.7328	6.7758
+spire_mag_00650703	Faecimonas	1263953.0	41.0	61676.0	1361	88.87	3.84	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	80.5223	22.1804
+spire_mag_00653208	Faecimonas	1350491.0	14.0	199536.0	1418	92.59	1.69	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	89.6117	18.2552
+spire_mag_00663144	UMGS1491	1028014.0	58.0	29704.0	1034	94.83	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	72.0832	34.0986
+spire_mag_00687717	Faecimonas	1533731.0	61.0	33609.0	1699	90.0	3.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	96.1402	20.5898
+spire_mag_00687770	Faecimonas	1360615.0	31.0	72573.0	1440	95.89	3.64	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp900548695	92.3456	37.2027
+spire_mag_00754431	UMGS1491	947253.0	92.0	13878.0	1004	91.92	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	59.1433	11.8958
+spire_mag_00801874	UMGS1491	435151.0	114.0	3847.0	543	52.32	0.45	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	50.1589	1.1767
+spire_mag_00820592	CAG-557	588512.0	102.0	6138.0	653	69.84	0.53	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.8683	9.7155
+spire_mag_00884248	UMGS1491	1047586.0	8.0	192637.0	1033	93.28	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	61.3526	24.8220
+spire_mag_00885050	Faecimonas	1363097.0	18.0	111194.0	1425	90.18	0.6	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.3770	4.1405
+spire_mag_00885775	Caccenecus	1214617.0	175.0	7643.0	1428	89.62	0.05	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900758895	61.8354	30.6118
+spire_mag_00887172	Caccenecus	1003217.0	13.0	151495.0	1063	57.01	0.39	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	55.3870	17.1330
+spire_mag_00934713	Faecimonas	1354621.0	9.0	324816.0	1386	91.35	5.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp900554315	94.5253	22.9514
+spire_mag_00936212	CAG-557	520715.0	129.0	4079.0	606	53.51	0.06	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.4013	0.6791
+spire_mag_00941575	CAG-557	897880.0	152.0	6603.0	1012	87.32	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.1917	16.8159
+spire_mag_00941626	CAG-557	658913.0	138.0	4951.0	735	74.82	1.33	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	52.0456	7.2177
+spire_mag_00949420	CAG-557	1097954.0	74.0	22549.0	1134	99.63	0.23	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.1621	16.8730
+spire_mag_00950176	CAG-557	1162352.0	36.0	63295.0	1174	99.6	2.2		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.0212	27.4744
+spire_mag_00952111	CAG-557	961668.0	154.0	7018.0	1047	88.1	0.07	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.4517	18.0804
+spire_mag_00954050	CAG-557	1035298.0	73.0	24887.0	1079	96.53	0.75	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.3713	17.9756
+spire_mag_00960996	UMGS1491	904493.0	144.0	7305.0	948	90.15	0.04	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	53.1928	3.9718
+spire_mag_00968653	Faecimonas	1523550.0	17.0	98009.0	1648	93.46	3.22	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.6861	10.1822
+spire_mag_00971046	CAG-557	1157398.0	90.0	20018.0	1218	98.74	1.76	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.5980	27.5455
+spire_mag_00972201	HGM10766	1203508.0	78.0	26158.0	1320	92.45	1.31	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	63.0544	27.1470
+spire_mag_01018894	CAG-557	654726.0	14.0	79825.0	682	67.08	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	51.3423	9.8400
+spire_mag_01019190	HGM10766	1127998.0	25.0	122107.0	1211	89.96	0.06	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	63.3497	22.4831
+spire_mag_01020957	HGM10766	993823.0	10.0	169900.0	1072	87.87	0.0	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	57.9381	20.5183
+spire_mag_01036112	Caccenecus	938180.0	45.0	28208.0	1045	84.87	1.28	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900758895	54.0635	21.3407
+spire_mag_01042675	CAG-557	1067858.0	46.0	44062.0	1091	99.39	0.17	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__	56.0818	12.0835
+spire_mag_01073504	UMGS1491	1062536.0	42.0	53015.0	1060	98.07	0.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	55.8154	3.1323
+spire_mag_01080900	Caccenecus	1293168.0	64.0	32198.0	1402	91.67	1.52	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus avistercoris	73.1557	12.4027
+spire_mag_01084258	Faecimonas	1561305.0	39.0	67414.0	1670	95.5	5.55	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	98.3819	20.3574
+spire_mag_01084681	UMGS1491	936348.0	148.0	8206.0	1043	64.95	0.21	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp905211185	57.9640	24.6167
+spire_mag_01088190	CAG-557	448316.0	113.0	4097.0	501	62.28	0.14	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.1977	0.5249
+spire_mag_01088532	CAG-557	743657.0	125.0	6698.0	768	84.49	0.38	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	52.5284	4.4420
+spire_mag_01089300	CAG-557	911794.0	178.0	5730.0	1011	75.39	1.13		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	54.8162	34.7699
+spire_mag_01095681	UMGS1491	809140.0	163.0	5126.0	930	81.03	3.47	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	50.9575	4.6705
+spire_mag_01096907	UMGS1491	670541.0	152.0	4460.0	764	51.58	2.41	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	50.4248	2.4672
+spire_mag_01098251	Faecimonas	1035182.0	195.0	5880.0	1214	55.85	1.39	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	66.1792	14.0099
+spire_mag_01129165	UMGS1491	807949.0	130.0	7054.0	883	74.52	0.93	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	58.0372	6.8491
+spire_mag_01132367	UMGS1491	965695.0	65.0	22154.0	997	94.78	1.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	54.1024	3.2536
+spire_mag_01132404	UMGS1491	1055994.0	6.0	571810.0	1016	95.1	0.02	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	67.0607	22.1127
+spire_mag_01134380	UMGS1491	983007.0	129.0	9849.0	1050	94.83	0.93	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	54.6528	8.0366
+spire_mag_01137056	UMGS1491	587767.0	137.0	4547.0	678	62.48	0.85	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	50.2796	1.6637
+spire_mag_01137610	CAG-557	1010648.0	97.0	13780.0	1059	95.84	0.4	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.1063	21.4994
+spire_mag_01140304	UMGS1491	726022.0	131.0	6384.0	786	73.18	0.06	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	52.8575	1.3483
+spire_mag_01141148	CAG-557	982190.0	22.0	73542.0	983	99.63	0.07	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.8743	16.9296
+spire_mag_01144873	UMGS1491	1219152.0	24.0	78077.0	1203	96.91	0.49	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	69.7544	20.6002
+spire_mag_01180017	UMGS1491	561418.0	119.0	5242.0	630	51.93	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	51.7708	2.9934
+spire_mag_01182908	UMGS1491	664860.0	6.0	178047.0	648	81.33	0.14	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	53.4039	6.2762
+spire_mag_01207914	Faecimonas	1565179.0	292.0	5805.0	1865	80.35	3.49	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	92.0908	19.2773
+spire_mag_01252810	UMGS1491	969738.0	168.0	6872.0	1028	81.08	0.6	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900757335	53.2180	10.0204
+spire_mag_01264871	HGM10766	1301168.0	142.0	12354.0	1484	94.68	3.96	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	71.5486	27.2396
+spire_mag_01282509	UMGS1491	1123200.0	10.0	309315.0	1121	97.58	0.3	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	56.1416	5.8431
+spire_mag_01282777	UMGS1491	888776.0	182.0	5283.0	1044	55.04	1.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	51.2609	13.6796
+spire_mag_01305341	CAG-557	1130357.0	63.0	30397.0	1163	99.75	0.88	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.2364	24.5879
+spire_mag_01307007	Faecimonas	1468695.0	24.0	92351.0	1556	78.7	3.66	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.4160	10.4629
+spire_mag_01307029	Faecimonas	1225093.0	53.0	50269.0	1275	73.36	1.62	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	86.7033	22.7150
+spire_mag_01311328	CAG-557	703265.0	151.0	4862.0	795	76.83	0.91	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	52.0307	13.6945
+spire_mag_01312572	CAG-557	796507.0	154.0	5614.0	886	81.48	0.2	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	53.0754	12.1336
+spire_mag_01315943	Caccenecus	654811.0	113.0	6670.0	751	72.66	0.19		d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	50.7736	6.9158
+spire_mag_01316071	CAG-557	901996.0	149.0	6481.0	948	74.3	0.32	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.9752	19.5471
+spire_mag_01318988	HGM10766	1082919.0	71.0	24370.0	1192	88.43	0.22	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	59.6987	21.5378
+spire_mag_01321364	UMGS1491	864857.0	74.0	17071.0	908	86.39	1.31	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	56.1674	5.0464
+spire_mag_01321906	Faecimonas	1286916.0	29.0	81831.0	1340	98.59	8.31	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp905216155	99.8669	2.2713
+spire_mag_01363693	HGM10766	1149331.0	65.0	24936.0	1253	91.03	1.05	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	61.7679	23.6626
+spire_mag_01417984	CAG-557	1007096.0	41.0	64866.0	1027	99.3	0.2	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.7973	22.4779
+spire_mag_01418459	UMGS1491	986030.0	85.0	14052.0	1011	76.92	0.62	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	63.2897	15.4625
+spire_mag_01419687	HGM10766	1204720.0	16.0	125762.0	1291	90.16	0.65	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	63.8429	24.7103
+spire_mag_01420102	Faecimonas	1450678.0	19.0	125118.0	1521	92.79	1.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.8291	2.8282
+spire_mag_01420362	CAG-557	852563.0	41.0	33909.0	891	74.34	0.06	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	55.5276	17.4950
+spire_mag_01421307	CAG-557	933505.0	152.0	6975.0	1071	82.18	2.71	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.6287	31.3720
+spire_mag_01421745	CAG-557	984496.0	132.0	9105.0	1078	77.27	0.18	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.8986	25.1906
+spire_mag_01422147	Faecimonas	1260240.0	58.0	37804.0	1353	92.57	3.26	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	78.3602	27.6971
+spire_mag_01425946	CAG-557	1053514.0	159.0	7727.0	1196	76.07	3.18		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	55.0312	21.7879
+spire_mag_01427719	CAG-557	1102817.0	113.0	13827.0	1187	93.54	2.41	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.4786	26.9881
+spire_mag_01427801	CAG-557	1099774.0	59.0	37778.0	1150	93.39	0.9	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.7617	22.7454
+spire_mag_01432814	CAG-557	1062169.0	101.0	16042.0	1145	94.27	0.98	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.4712	19.3086
+spire_mag_01433423	CAG-557	1123836.0	64.0	31958.0	1183	98.69	0.35	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.8016	24.3792
+spire_mag_01436297	CAG-557	1070691.0	72.0	24057.0	1150	94.94	0.52	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.6785	12.4203
+spire_mag_01436872	CAG-557	1128648.0	30.0	73614.0	1154	99.55	0.1	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.3358	31.0609
+spire_mag_01437812	UMGS1491	941130.0	112.0	10390.0	1011	90.11	0.03	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	58.6164	16.1529
+spire_mag_01438331	CAG-557	909497.0	150.0	7251.0	1034	70.18	3.21	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.5084	26.5437
+spire_mag_01438533	CAG-557	1005799.0	106.0	11141.0	1084	88.94	1.53	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.7427	19.1500
+spire_mag_01438892	CAG-557	1031666.0	48.0	46071.0	1061	96.93	1.69	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.9579	20.9715
+spire_mag_01438975	CAG-557	952980.0	127.0	8417.0	1057	78.02	1.56	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.0172	26.0429
+spire_mag_01439332	CAG-557	634008.0	145.0	4473.0	751	56.97	0.82	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.7239	2.0159
+spire_mag_01440284	CAG-557	913088.0	143.0	7200.0	1020	89.04	0.78		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.1351	19.0149
+spire_mag_01441210	CAG-557	1056101.0	34.0	58550.0	1094	94.11	0.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.9634	17.5104
+spire_mag_01441385	CAG-557	1045019.0	29.0	87702.0	1071	99.48	0.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.5302	22.7262
+spire_mag_01442429	CAG-557	1077307.0	61.0	32100.0	1122	94.43	0.16	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.0773	23.6920
+spire_mag_01443490	CAG-557	1068179.0	58.0	29457.0	1113	99.14	0.22	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.4179	24.1771
+spire_mag_01444167	CAG-557	1130461.0	57.0	36783.0	1186	99.75	0.11	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.5647	25.2908
+spire_mag_01446253	CAG-557	1016536.0	29.0	75245.0	1032	96.86	0.19	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.8905	29.0597
+spire_mag_01446663	CAG-557	767531.0	152.0	5520.0	895	61.75	1.28		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	51.8669	16.3703
+spire_mag_01448038	CAG-557	1088413.0	48.0	51150.0	1131	87.43	0.89	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.1597	23.4614
+spire_mag_01449285	CAG-557	596954.0	141.0	4321.0	700	52.86	0.36	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.4011	1.6344
+spire_mag_01451782	CAG-557	1012546.0	111.0	11577.0	1094	86.93	0.4	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.8443	28.9383
+spire_mag_01452322	CAG-557	1011056.0	68.0	25388.0	1037	95.21	0.07	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.3665	20.3894
+spire_mag_01454408	CAG-557	1070543.0	125.0	11173.0	1186	95.53	0.15	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.4977	24.4159
+spire_mag_01471653	CAG-557	626909.0	129.0	5161.0	683	71.17	0.14	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	51.4642	9.0811
+spire_mag_01475406	CAG-557	1029160.0	36.0	51705.0	1063	99.89	0.26	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.3869	15.1749
+spire_mag_01497642	Caccenecus	1357430.0	23.0	140506.0	1472	93.64	1.9	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	58.4921	14.2309
+spire_mag_01501842	Faecimonas	1409431.0	88.0	22114.0	1528	94.6	2.47	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.4843	6.3841
+spire_mag_01514534	Faecimonas	766101.0	162.0	4857.0	848	74.06	3.52	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	57.8549	0.9467
+spire_mag_01548286	CAG-557	615566.0	22.0	70295.0	642	69.41	0.24		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.5874	11.5498
+spire_mag_01553296	CAG-557	782593.0	164.0	5028.0	893	69.64	0.33	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	52.1805	7.9596
+spire_mag_01557632	Caccenecus	1269306.0	40.0	50324.0	1351	98.53	2.35	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	68.0379	26.2339
+spire_mag_01558131	HGM10766	601707.0	147.0	4077.0	736	56.15	0.63	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	50.9536	7.5787
+spire_mag_01559494	UMGS1491	739592.0	153.0	5286.0	884	64.73	2.47	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	50.7862	2.6275
+spire_mag_01560382	CAG-557	1164533.0	54.0	50343.0	1219	99.45	0.13	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.0622	26.9748
+spire_mag_01562314	CAG-557	1046187.0	70.0	24066.0	1092	96.2	0.16	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.6298	23.9019
+spire_mag_01563975	HGM10766	1102759.0	71.0	22890.0	1202	90.31	0.21	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	61.2579	24.6268
+spire_mag_01565892	HGM10766	1053683.0	214.0	5153.0	1267	71.54	0.81	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	61.6792	15.4164
+spire_mag_01571056	HGM10766	1210233.0	29.0	75411.0	1323	88.64	0.75	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	65.1025	26.3817
+spire_mag_01638183	CAG-557	928175.0	153.0	6981.0	1079	77.59	1.49	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.2094	31.5356
+spire_mag_01666840	Faecimonas	1376717.0	48.0	44981.0	1381	95.51	1.27	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp905209745	86.4881	9.2849
+spire_mag_01666905	Faecimonas	1337987.0	99.0	20081.0	1439	93.4	4.56	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	82.7293	17.0270
+spire_mag_01697141	UMGS1491	954100.0	73.0	22029.0	1030	93.29	0.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	58.8868	48.6258
+spire_mag_01736643	UMGS1491	1179562.0	12.0	150557.0	1192	98.3	0.3	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp905211185	70.3208	35.6792
+spire_mag_01739101	Faecimonas	1364496.0	208.0	8126.0	1574	71.63	4.2	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	77.9596	25.7699
+spire_mag_01739880	CAG-557	629812.0	153.0	4159.0	749	59.1	0.28	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.9993	10.6289
+spire_mag_01761956	UMGS1491	901015.0	99.0	11433.0	923	91.85	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	57.6022	8.1452
+spire_mag_01762307	HGM10766	827093.0	21.0	63322.0	893	85.43	0.27	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__	66.2895	15.4285
+spire_mag_01789196	CAG-557	1074407.0	25.0	82457.0	1093	99.54	0.09	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.9774	21.9632
+spire_mag_01789561	UMGS1491	990117.0	13.0	148565.0	939	90.48	0.23	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	64.9233	39.1552
+spire_mag_01789586	UMGS1491	1196724.0	25.0	104666.0	1145	95.58	0.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	62.9874	6.3342
+spire_mag_01857790	CAG-557	1058628.0	89.0	18660.0	1097	96.41	0.17		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.5910	28.8528
+spire_mag_01858206	Faecimonas	1452565.0	14.0	164601.0	1509	94.49	4.76	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.6133	6.4162
+spire_mag_01862795	Faecimonas	1025122.0	16.0	125794.0	1038	58.63	0.75	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	68.6238	10.1751
+spire_mag_01875697	Faecimonas	1410496.0	12.0	365158.0	1510	97.0	2.93	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp900548695	96.3061	34.3387
+spire_mag_01876226	Faecimonas	1229061.0	128.0	12623.0	1392	91.02	3.4	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp900548695	81.9146	35.8826
+spire_mag_01880599	CAG-557	1004552.0	114.0	13239.0	1081	88.25	0.28	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.7403	25.4615
+spire_mag_01933508	Faecimonas	1165451.0	43.0	40227.0	1221	76.9	2.65	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp905216155	86.9873	2.3444
+spire_mag_01967411	Faecimonas	399940.0	99.0	4064.0	435	53.1	0.08	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	50.2391	2.9471
+spire_mag_02010630	UMGS1491	485426.0	113.0	4480.0	511	53.53	0.02	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	50.2177	0.8146
+spire_mag_02049653	UMGS1491	903212.0	149.0	6798.0	989	87.21	1.59	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	52.0044	25.6740
+spire_mag_02067526	CAG-557	1053787.0	34.0	75106.0	1093	97.15	0.21	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.9909	20.8430
+spire_mag_02069414	HGM10766	1007328.0	104.0	15290.0	1120	85.45	0.19	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	58.8775	18.3072
+spire_mag_02070614	UMGS1491	560153.0	115.0	5419.0	641	63.12	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	52.1433	3.7738
+spire_mag_02071783	Caccenecus	1441017.0	116.0	20793.0	1581	91.3	3.34	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__	72.6431	23.3496
+spire_mag_02084048	Caccenecus	1301764.0	45.0	41717.0	1416	96.76	4.01		d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	64.6975	28.7596
+spire_mag_02084197	CAG-557	1069476.0	26.0	73766.0	1083	99.46	0.06	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.5528	30.2527
+spire_mag_02085170	Caccenecus	1264886.0	39.0	52768.0	1352	97.16	4.54	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	66.2820	21.7266
+spire_mag_02183279	UMGS1491	654205.0	128.0	5655.0	637	80.59	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554335	51.5176	0.7980
+spire_mag_02208684	UMGS1491	1044061.0	6.0	256458.0	1030	96.43	2.7	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	54.0370	11.9134
+spire_mag_02210613	UMGS1491	1007403.0	19.0	87516.0	988	95.8	0.02	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	60.0257	26.3942
+spire_mag_02210650	UMGS1491	999545.0	8.0	196485.0	987	95.76	0.12	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	54.7578	12.4749
+spire_mag_02212177	CAG-557	600085.0	144.0	4217.0	661	60.49	1.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__	50.7618	0.2113
+spire_mag_02219533	Faecimonas	1328370.0	38.0	68147.0	1379	94.97	2.16	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	83.0606	17.5613
+spire_mag_02221015	UMGS1491	801509.0	47.0	26933.0	820	70.43	0.59	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp017431755	51.9028	19.5037
+spire_mag_02222599	Faecimonas	643890.0	21.0	55913.0	691	76.65	0.68	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp017510225	61.0108	1.1824
+spire_mag_02233625	UMGS1491	1176379.0	79.0	21752.0	1185	86.0	0.03	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	55.6096	20.1145
+spire_mag_02278568	UMGS1491	1069083.0	99.0	14458.0	1117	93.81	1.33	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.7149	15.6407
+spire_mag_02280455	UMGS1491	863112.0	84.0	13752.0	890	88.52	0.73	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	60.3863	9.2845
+spire_mag_02281186	UMGS1491	994640.0	13.0	132667.0	1002	92.87	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	61.5457	13.3583
+spire_mag_02281900	UMGS1491	1054429.0	13.0	135851.0	1034	94.3	0.06	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	54.8286	2.1476
+spire_mag_02283854	UMGS1491	952687.0	117.0	9668.0	988	91.36	1.38	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	64.5734	21.8367
+spire_mag_02324862	UMGS1491	1010632.0	78.0	19037.0	1049	90.7	0.18	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	63.1683	16.0844
+spire_mag_02326395	UMGS1491	959255.0	160.0	6677.0	1041	83.23	9.17	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	61.8277	17.0516
+spire_mag_02329350	UMGS1491	1080861.0	12.0	129778.0	1072	95.37	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	66.7486	21.9816
+spire_mag_02334652	UMGS1491	365799.0	92.0	3924.0	359	56.01	0.39	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	50.0821	2.2754
+spire_mag_02337884	UMGS1491	599743.0	123.0	5194.0	608	69.43	0.32	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	51.4118	1.2829
+spire_mag_02353184	UMGS1491	781380.0	131.0	6711.0	880	86.02	1.5	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	56.1433	5.3063
+spire_mag_02354344	CAG-557	1055930.0	134.0	9912.0	1164	92.98	0.35	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.1527	27.7355
+spire_mag_02355212	CAG-557	1107556.0	53.0	52886.0	1151	97.66	0.1	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.0895	18.7016
+spire_mag_02355369	CAG-557	1134726.0	44.0	50193.0	1185	99.47	0.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.7789	26.0666
+spire_mag_02356265	CAG-557	1093428.0	25.0	76608.0	1124	99.73	0.61	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.1499	22.5924
+spire_mag_02356755	CAG-557	983556.0	141.0	8263.0	1088	93.43	1.65	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.2629	16.6933
+spire_mag_02357556	CAG-557	673760.0	15.0	73937.0	686	78.16	0.29	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	52.3083	16.3163
+spire_mag_02361968	CAG-557	1020201.0	80.0	23603.0	1088	99.7	0.7	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.3754	18.2628
+spire_mag_02365233	CAG-557	855598.0	172.0	5404.0	997	79.14	0.66	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.1030	26.9357
+spire_mag_02365435	CAG-557	664221.0	18.0	75287.0	680	78.79	0.38	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	51.8673	14.1347
+spire_mag_02367047	CAG-557	1067569.0	134.0	11967.0	1178	93.25	3.84	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.9056	27.9279
+spire_mag_02367788	UMGS1491	1095866.0	140.0	10079.0	1155	89.22	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	54.2328	40.8788
+spire_mag_02367860	CAG-557	1076138.0	43.0	42462.0	1125	98.67	0.33	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.1881	31.9647
+spire_mag_02371210	Faecimonas	1517949.0	84.0	23977.0	1667	94.12	5.07	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	87.7744	1.0993
+spire_mag_02373216	UMGS1491	981079.0	88.0	18752.0	1048	95.45	1.46	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	60.0105	46.5621
+spire_mag_02415702	UMGS1491	1038522.0	41.0	54379.0	1091	98.17	0.01	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	58.4135	4.1705
+spire_mag_02416988	Faecimonas	1545847.0	52.0	58315.0	1745	94.63	7.5	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	91.5652	30.0030
+spire_mag_02426377	UMGS1491	1090701.0	9.0	187417.0	1057	96.84	0.09	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.7603	28.3213
+spire_mag_02442265	UMGS1491	455398.0	101.0	4580.0	498	53.24	0.28	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	50.1827	1.0012
+spire_mag_02442962	UMGS1491	383208.0	92.0	4249.0	397	53.62	0.13	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	50.1533	0.0478
+spire_mag_02454736	UMGS1491	521814.0	119.0	4530.0	559	72.68	0.37	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	50.5870	0.4446
+spire_mag_02462315	UMGS1491	1119204.0	45.0	57179.0	1127	99.05	0.03	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.3855	30.6792
+spire_mag_02466002	UMGS1491	1340771.0	96.0	26964.0	1361	96.73	1.24	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	64.8979	38.7045
+spire_mag_02466234	UMGS1491	1315093.0	66.0	34060.0	1294	95.0	1.51	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	67.2062	30.8258
+spire_mag_02467107	UMGS1491	1055473.0	37.0	49488.0	1033	96.59	0.09	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.8576	37.3805
+spire_mag_02467210	UMGS1491	1023187.0	54.0	27309.0	985	80.67	0.25	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	54.7239	23.5749
+spire_mag_02468448	UMGS1491	1064605.0	44.0	38592.0	1065	96.45	0.51	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.6997	34.5687
+spire_mag_02469968	UMGS1491	1091922.0	19.0	87427.0	1071	96.59	0.9	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.5204	30.1630
+spire_mag_02472314	UMGS1491	857683.0	102.0	9965.0	881	73.0	2.26	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	51.7160	16.7968
+spire_mag_02472402	UMGS1491	1056462.0	53.0	28691.0	1046	94.55	0.11	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	67.7303	15.1634
+spire_mag_02472593	UMGS1491	1133811.0	7.0	295000.0	1088	97.02	0.18	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.5073	30.4866
+spire_mag_02472644	UMGS1491	1083119.0	8.0	286147.0	1058	95.04	0.03	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	69.2196	25.9227
+spire_mag_02474859	UMGS1491	1567202.0	78.0	39353.0	1563	95.78	0.57	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	76.1916	36.9962
+spire_mag_02476093	UMGS1491	837194.0	6.0	279227.0	841	79.22	0.1	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	56.8180	20.4759
+spire_mag_02476300	UMGS1491	860131.0	92.0	12340.0	856	60.18	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	52.9591	14.9529
+spire_mag_02476438	CAG-557	967036.0	136.0	8768.0	1037	78.5	1.99	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__	54.1898	1.7159
+spire_mag_02498127	UMGS1491	1336911.0	27.0	86258.0	1362	98.42	0.43	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp905211185	77.6353	40.2925
+spire_mag_02503725	UMGS1491	764399.0	162.0	5291.0	904	55.96	1.62	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	51.9685	7.3990
+spire_mag_02511646	CAG-557	711971.0	127.0	6034.0	689	64.17	0.22	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__	50.9185	1.3786
+spire_mag_02516629	UMGS1491	1082517.0	119.0	10731.0	1157	87.97	1.12	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	60.4015	49.2476
+spire_mag_02517319	UMGS1491	966757.0	111.0	10149.0	1035	91.81	1.01	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	65.5714	30.5555
+spire_mag_02518272	UMGS1491	1062723.0	18.0	92429.0	1049	94.13	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	65.8454	27.1477
+spire_mag_02523536	UMGS1491	1036388.0	78.0	19315.0	1061	92.38	0.16	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	57.8845	38.0581
+spire_mag_02529461	CAG-557	990322.0	135.0	8443.0	986	89.07	0.68	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__	52.9925	0.4505
+spire_mag_02539141	UMGS1491	376879.0	93.0	4167.0	366	60.72	1.65	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	50.3226	0.1196
+spire_mag_02546911	CAG-557	1010671.0	23.0	96303.0	1032	98.59	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.5137	24.5015
+spire_mag_02554609	Faecimonas	1481873.0	54.0	50765.0	1602	97.04	5.46	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	86.0530	34.6937
+spire_mag_02604656	HGM10766	1190137.0	19.0	103311.0	1265	92.78	0.69	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	68.0191	31.8384
+spire_mag_02605363	CAG-557	1085472.0	27.0	75641.0	1114	99.54	0.09	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.6034	23.0257
+spire_mag_02605733	Faecimonas	1532757.0	42.0	58959.0	1637	73.07	1.64	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.4621	8.4749
+spire_mag_02605936	HGM10766	1181358.0	24.0	87722.0	1263	92.43	0.7	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	61.6093	23.1563
+spire_mag_02608408	CAG-557	940532.0	156.0	7077.0	1064	77.31	1.27	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	54.5879	24.4937
+spire_mag_02608902	Faecimonas	1227471.0	27.0	74871.0	1318	92.37	4.85	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	79.3563	18.9926
+spire_mag_02609113	CAG-557	996313.0	18.0	98407.0	1004	99.65	0.07	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.5214	23.7085
+spire_mag_02612976	CAG-557	1090291.0	83.0	17156.0	1155	99.31	0.22	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.7313	20.7643
+spire_mag_02613344	CAG-557	1081368.0	30.0	75299.0	1099	99.94	0.17	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.0987	19.2695
+spire_mag_02614851	CAG-557	545133.0	125.0	4622.0	643	60.05	0.54	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.5548	6.7169
+spire_mag_02615556	HGM10766	1151157.0	20.0	100210.0	1216	92.05	3.33	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	63.0950	27.2574
+spire_mag_02617695	CAG-557	1127983.0	37.0	85666.0	1164	99.52	1.54	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.7417	25.3935
+spire_mag_02617819	CAG-557	1019305.0	49.0	36070.0	1045	89.34	0.55	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.7453	20.0060
+spire_mag_02618031	CAG-557	1009784.0	27.0	75737.0	1041	86.38	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.1810	26.1320
+spire_mag_02618508	Faecimonas	1396580.0	25.0	100417.0	1460	73.52	2.26	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas sp900554315	98.1850	8.6301
+spire_mag_02618757	CAG-557	1136387.0	54.0	29705.0	1191	99.1	0.11	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.9672	29.3119
+spire_mag_02619003	Caccenecus	1096672.0	38.0	50575.0	1186	88.15	9.12	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	62.3969	24.1209
+spire_mag_02619047	Caccenecus	1309980.0	62.0	29309.0	1381	78.36	3.42	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus avistercoris	75.4367	11.7412
+spire_mag_02621104	Faecimonas	1364188.0	53.0	37451.0	1418	68.29	2.03	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	92.6974	12.3991
+spire_mag_02621320	CAG-557	1163794.0	60.0	32826.0	1215	99.08	0.16	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.8428	28.6375
+spire_mag_02621374	CAG-557	1066846.0	27.0	73642.0	1085	99.46	0.06	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.3290	21.4471
+spire_mag_02623452	CAG-557	1016675.0	75.0	20723.0	1083	93.82	1.18	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.2657	18.5003
+spire_mag_02625222	CAG-557	545975.0	130.0	4137.0	614	54.62	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.4851	3.1816
+spire_mag_02626798	CAG-557	1147567.0	44.0	63056.0	1204	99.32	0.16	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.5204	28.7786
+spire_mag_02627310	CAG-557	1109508.0	35.0	75095.0	1138	100.0	0.16	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.9174	27.4839
+spire_mag_02628159	Caccenecus	1230758.0	32.0	56022.0	1336	94.99	0.19	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	64.0102	22.0473
+spire_mag_02628560	HGM10766	870064.0	64.0	17794.0	968	84.25	0.09	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	55.7577	19.8571
+spire_mag_02629347	Caccenecus	1153401.0	26.0	55917.0	1210	96.82	0.12	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	62.8913	17.4219
+spire_mag_02629613	CAG-557	799239.0	166.0	4838.0	917	80.65	0.38	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	53.9967	16.1309
+spire_mag_02635372	UMGS1491	903715.0	6.0	249230.0	909	93.17	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	57.9526	6.8969
+spire_mag_02636312	CAG-557	1100741.0	65.0	36754.0	1155	96.48	1.13	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.9297	28.5230
+spire_mag_02637101	CAG-557	1016068.0	95.0	16689.0	1093	95.87	0.57	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.2882	18.6602
+spire_mag_02641330	Caccenecus	1205302.0	27.0	75749.0	1302	95.43	0.15	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	64.6446	17.8466
+spire_mag_02641878	Caccenecus	1134210.0	29.0	76503.0	1222	86.11	0.09	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	58.4814	18.5390
+spire_mag_02642981	Caccenecus	1314295.0	39.0	56022.0	1424	97.56	0.54	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	67.6819	19.5919
+spire_mag_02643088	Caccenecus	1055933.0	23.0	77187.0	1148	82.11	3.15	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	59.6209	15.6416
+spire_mag_02643465	Caccenecus	1128843.0	25.0	62187.0	1220	94.18	0.09	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	62.7911	20.8740
+spire_mag_02644731	Caccenecus	1187354.0	31.0	72128.0	1271	97.57	0.18	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	62.8551	19.9636
+spire_mag_02644846	Caccenecus	1253015.0	28.0	59140.0	1354	97.04	3.42	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	65.9242	20.3407
+spire_mag_02645442	Caccenecus	1310572.0	37.0	48548.0	1428	97.11	0.84	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	67.9624	23.5152
+spire_mag_02645912	Caccenecus	1195248.0	24.0	72128.0	1294	93.07	0.17	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	63.3257	22.8245
+spire_mag_02646426	Caccenecus	1210477.0	25.0	77279.0	1309	97.37	0.17	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	65.1160	20.3460
+spire_mag_02675914	UMGS1491	841394.0	3.0	520639.0	842	76.79	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	57.2953	11.5796
+spire_mag_02714241	HGM10766	1057607.0	143.0	8475.0	1205	81.99	5.09	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	58.9424	24.9014
+spire_mag_02716474	UMGS1491	1076204.0	38.0	47627.0	1086	98.26	0.46	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	56.5441	3.5120
+spire_mag_02718598	UMGS1491	1323354.0	50.0	46936.0	1300	97.16	0.92	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	63.4612	19.5060
+spire_mag_02732178	UMGS1491	921200.0	121.0	9084.0	920	71.19	0.12	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	52.6913	21.8557
+spire_mag_02745654	UMGS1491	1194326.0	37.0	62130.0	1188	95.38	0.7	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.1598	14.7343
+spire_mag_02748130	Caccenecus	1069840.0	56.0	27580.0	1151	93.84	0.02	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	59.8376	17.0660
+spire_mag_02753893	Caccenecus	1243811.0	32.0	52726.0	1303	97.74	0.2	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	65.2307	24.1204
+spire_mag_02771021	CAG-557	587094.0	138.0	4427.0	687	58.45	0.27	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.7469	8.9322
+spire_mag_02777782	CAG-557	1107798.0	34.0	65282.0	1148	99.55	0.1	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.3923	27.0716
+spire_mag_02777917	HGM10766	766910.0	33.0	31998.0	839	69.71	0.09	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	52.0159	16.7673
+spire_mag_02779895	UMGS1491	979473.0	20.0	55867.0	960	91.88	0.38	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	60.8714	11.7101
+spire_mag_02780055	CAG-557	1071597.0	40.0	52483.0	1109	98.7	0.21	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.9564	34.2906
+spire_mag_02781094	Caccenecus	1355233.0	21.0	131960.0	1442	92.31	1.47		d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	63.1916	12.9475
+spire_mag_02783241	Caccenecus	1194083.0	29.0	56372.0	1272	97.62	0.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	63.9459	20.0810
+spire_mag_02784114	CAG-557	1069897.0	107.0	13907.0	1166	89.32	2.73	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.8538	22.1778
+spire_mag_02784117	CAG-557	1096052.0	49.0	41624.0	1127	97.96	0.6	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.3718	22.6177
+spire_mag_02785562	UMGS1491	966667.0	28.0	57184.0	966	94.32	0.03	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	58.3993	7.2325
+spire_mag_02788110	CAG-557	1149849.0	29.0	73891.0	1191	98.42	0.03	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.5339	20.8002
+spire_mag_02788687	CAG-557	1139767.0	32.0	79608.0	1185	99.34	0.04	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.5786	23.0876
+spire_mag_02789431	UMGS1491	1383773.0	18.0	160941.0	1433	98.11	0.22	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp905211185	76.3407	39.7003
+spire_mag_02789946	CAG-557	679416.0	145.0	4762.0	801	54.48	0.85	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	51.5353	13.7183
+spire_mag_02791481	HGM10766	1046758.0	33.0	45679.0	1111	93.35	1.6	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	61.6136	21.6416
+spire_mag_02791564	UMGS1491	594538.0	2.0	367527.0	572	71.11	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900757335	50.4209	3.6029
+spire_mag_02791723	CAG-557	1044798.0	82.0	21905.0	1103	93.27	0.88	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.3139	21.9059
+spire_mag_02792457	CAG-557	1128021.0	31.0	73937.0	1162	99.61	0.1	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.0499	30.4762
+spire_mag_02795383	CAG-557	995423.0	133.0	9190.0	1087	84.65	0.15		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.1614	21.3496
+spire_mag_02796356	UMGS1491	1096429.0	47.0	37928.0	1081	94.08	1.24	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554335	64.6012	10.1944
+spire_mag_02797177	CAG-557	1075258.0	30.0	73696.0	1114	94.74	1.15	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.8586	20.7865
+spire_mag_02797630	CAG-557	678690.0	145.0	5141.0	785	52.28	1.54		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	51.0296	12.3980
+spire_mag_02803237	UMGS1491	876023.0	176.0	5324.0	983	79.7	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	51.1398	5.1335
+spire_mag_02803475	UMGS1491	762950.0	146.0	5748.0	837	65.92	0.23	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	51.0184	1.7830
+spire_mag_02803930	UMGS1491	1059497.0	6.0	293777.0	1024	95.1	0.02	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	65.0133	23.8098
+spire_mag_02805627	UMGS1491	1124023.0	13.0	168424.0	1121	97.34	0.1	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	57.1765	6.5246
+spire_mag_02821209	UMGS1491	1162580.0	8.0	243432.0	1126	98.05	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	70.5929	35.3396
+spire_mag_02822344	CAG-557	1021838.0	96.0	15251.0	1104	93.82	0.09	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.0223	16.8750
+spire_mag_02823488	CAG-557	1153410.0	34.0	75301.0	1181	99.48	0.15	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.2815	29.8502
+spire_mag_02823821	Caccenecus	1198514.0	39.0	40702.0	1278	97.91	0.76	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	64.4935	18.9163
+spire_mag_02823875	CAG-557	832380.0	182.0	4790.0	975	61.65	3.81		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	52.5716	21.7624
+spire_mag_02824237	CAG-557	1051387.0	25.0	82501.0	1081	99.09	0.15	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.1921	24.6252
+spire_mag_02825026	CAG-557	1031142.0	137.0	8882.0	1149	85.66	0.27	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.9415	19.8598
+spire_mag_02825151	CAG-557	1152027.0	83.0	21584.0	1201	95.07	0.2	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.7076	33.5563
+spire_mag_02825473	Faecimonas	1300102.0	23.0	105064.0	1387	73.54	4.41	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	80.1851	21.7830
+spire_mag_02825673	CAG-557	1122620.0	31.0	65873.0	1161	99.53	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.3180	21.7973
+spire_mag_02827299	UMGS1491	1065159.0	8.0	242933.0	1039	93.6	0.03	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	53.4945	2.2610
+spire_mag_02827864	CAG-557	1134674.0	56.0	48614.0	1181	99.33	0.07	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	55.8598	9.3384
+spire_mag_02828759	Caccenecus	1320674.0	42.0	69586.0	1422	89.73	3.28		d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	61.8358	15.2225
+spire_mag_02829583	HGM10766	1203075.0	82.0	25035.0	1347	90.08	0.77	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	62.0572	25.8052
+spire_mag_02830218	CAG-557	1016408.0	138.0	9517.0	1125	70.56	1.31	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.3305	36.9717
+spire_mag_02838866	UMGS1491	1005109.0	42.0	44393.0	985	83.53	0.24	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	64.3733	25.9635
+spire_mag_02843881	CAG-557	860510.0	173.0	5232.0	1017	75.68	0.8		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	52.7711	19.7233
+spire_mag_02845814	CAG-557	1108153.0	30.0	73778.0	1135	99.74	0.1	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.8176	31.2600
+spire_mag_02845936	UMGS1491	1037950.0	10.0	282576.0	1012	96.79	0.07	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	52.7844	26.4918
+spire_mag_02846120	CAG-557	1037800.0	26.0	85981.0	1049	99.48	0.07	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.4284	18.3905
+spire_mag_02848492	Caccenecus	1298964.0	54.0	43690.0	1376	92.51	0.77	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__	67.8473	20.3338
+spire_mag_02849331	CAG-557	1134442.0	32.0	85669.0	1177	99.69	0.09	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.8087	24.0155
+spire_mag_02850280	CAG-557	1039480.0	27.0	75097.0	1050	99.81	0.11	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.5500	22.5470
+spire_mag_02850354	CAG-557	1103728.0	29.0	85899.0	1143	99.66	0.12	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.6574	23.7681
+spire_mag_02851831	CAG-557	1090816.0	68.0	32629.0	1156	97.55	0.07	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.4710	29.1414
+spire_mag_02853109	Caccenecus	1320937.0	25.0	130079.0	1404	94.34	1.54	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	60.1295	15.7935
+spire_mag_02864978	CAG-557	1148460.0	96.0	17871.0	1262	74.05	0.41	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__	51.3568	14.2210
+spire_mag_02865221	CAG-557	996465.0	165.0	6805.0	1074	87.91	1.69		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.7601	34.7182
+spire_mag_02865781	UMGS1491	938313.0	68.0	19019.0	968	91.97	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	58.8768	8.0211
+spire_mag_02866649	Caccenecus	1194246.0	28.0	60033.0	1265	97.62	0.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	64.2432	17.5824
+spire_mag_02866681	Caccenecus	972012.0	84.0	13559.0	1087	78.84	0.27	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	55.7994	14.2587
+spire_mag_02866695	Caccenecus	1154758.0	26.0	56041.0	1218	96.99	0.29	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	63.3783	16.4781
+spire_mag_02867826	UMGS1491	1041843.0	103.0	16118.0	1099	97.95	0.28	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	53.7861	7.7494
+spire_mag_02869653	Caccenecus	1424710.0	74.0	25921.0	1565	93.4	1.04	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900758895	74.1589	28.1418
+spire_mag_02869955	CAG-557	998842.0	84.0	17413.0	1059	95.53	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.4263	22.7208
+spire_mag_02870356	Caccenecus	1266161.0	38.0	55914.0	1366	97.54	1.29	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	65.1160	27.9174
+spire_mag_02871031	CAG-557	1105380.0	34.0	85655.0	1141	99.61	0.13	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.5924	21.8923
+spire_mag_02871137	CAG-557	1001440.0	42.0	42633.0	1047	92.18	0.31	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	55.8546	29.1823
+spire_mag_02874030	CAG-557	547809.0	135.0	4054.0	669	66.7	1.7		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.7996	4.3475
+spire_mag_02875974	CAG-557	1034843.0	25.0	79616.0	1061	91.67	0.04	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.8799	26.5230
+spire_mag_02886019	CAG-557	1105081.0	59.0	41422.0	1155	97.23	0.1	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.7799	27.0883
+spire_mag_02887349	Faecimonas	1222081.0	15.0	187685.0	1318	92.41	0.91	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	78.1692	22.4699
+spire_mag_02887932	Faecimonas	1417231.0	20.0	108663.0	1523	95.25	7.83	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	87.1948	27.5893
+spire_mag_02888034	HGM10766	1139103.0	15.0	140694.0	1198	92.51	0.52	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	65.7749	27.5924
+spire_mag_02889177	CAG-557	1100762.0	42.0	49744.0	1145	99.61	0.9	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.7150	23.7134
+spire_mag_02890236	CAG-557	1051937.0	33.0	53237.0	1081	99.46	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.1187	19.3863
+spire_mag_02891665	CAG-557	1096719.0	31.0	79824.0	1131	99.55	0.26	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.3437	23.2036
+spire_mag_02892702	CAG-557	1025513.0	27.0	75309.0	1034	99.8	0.16	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.2634	21.6089
+spire_mag_02892884	Caccenecus	1255970.0	38.0	52779.0	1367	90.96	0.65	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus avistercoris	65.8724	7.0445
+spire_mag_02892903	HGM10766	915362.0	20.0	112471.0	988	85.31	0.21	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	53.7184	22.6143
+spire_mag_02893036	Caccenecus	1070996.0	65.0	23269.0	1194	87.28	0.25	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	59.0653	15.1261
+spire_mag_02893328	CAG-557	990048.0	25.0	73693.0	1026	86.52	0.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.8294	19.9920
+spire_mag_02894102	CAG-557	621774.0	151.0	4191.0	773	54.71	0.13		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.7661	8.9697
+spire_mag_02894229	Caccenecus	1319976.0	21.0	148911.0	1392	93.17	1.37	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	60.5070	13.6465
+spire_mag_02895092	CAG-557	1098508.0	28.0	86032.0	1119	99.7	0.12	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.3248	24.1500
+spire_mag_02895273	CAG-557	627192.0	147.0	4284.0	753	58.59	0.24		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	51.1401	9.8690
+spire_mag_02897317	HGM10766	1064427.0	145.0	10356.0	1241	59.06	2.67	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	58.6822	20.4598
+spire_mag_02897353	CAG-557	1100504.0	29.0	78146.0	1127	99.41	0.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.7161	21.9424
+spire_mag_02897357	Faecimonas	1487893.0	57.0	39497.0	1657	92.18	4.47	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	98.5001	12.3083
+spire_mag_02898296	CAG-557	1062331.0	25.0	65146.0	1078	99.49	0.05	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.7368	25.3377
+spire_mag_02898820	CAG-557	1026432.0	28.0	79824.0	1056	92.54	0.12	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	55.8297	15.2884
+spire_mag_02900077	CAG-557	1117105.0	30.0	88015.0	1147	99.71	0.1	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.2088	22.7438
+spire_mag_02900529	Caccenecus	758491.0	204.0	3633.0	912	51.2	8.81	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__	53.5777	19.1097
+spire_mag_02900726	CAG-557	676374.0	144.0	4926.0	790	63.1	0.46	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	51.1098	5.1799
+spire_mag_02902857	CAG-557	1097452.0	32.0	85854.0	1117	99.64	0.17	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.0243	17.6410
+spire_mag_02905370	CAG-557	1020153.0	162.0	7511.0	1146	86.29	2.61	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.1152	35.3102
+spire_mag_02905417	CAG-557	1084102.0	30.0	75285.0	1108	99.68	0.13	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.7604	26.4396
+spire_mag_02907185	UMGS1491	1294600.0	12.0	185700.0	1262	97.11	0.03	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	59.7579	18.4882
+spire_mag_02908078	HGM10766	1189572.0	21.0	84904.0	1252	90.03	3.8	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	62.9061	29.5341
+spire_mag_02908317	Caccenecus	1315648.0	23.0	132264.0	1403	94.5	3.21	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	59.5558	14.8928
+spire_mag_02909556	UMGS1491	589375.0	7.0	133225.0	574	70.16	0.0	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__	50.3930	11.1997
+spire_mag_02910137	CAG-557	1122790.0	32.0	75414.0	1145	99.63	0.11	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.7050	31.3344
+spire_mag_02910338	CAG-557	1085177.0	30.0	73643.0	1114	99.47	0.06	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.7692	24.2563
+spire_mag_02911495	Caccenecus	1323343.0	22.0	139621.0	1409	93.42	3.29	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	63.3110	15.3288
+spire_mag_02911974	HGM10766	1257454.0	248.0	5098.0	1513	68.77	3.36		d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	60.6227	32.8918
+spire_mag_02912309	Faecimonas	1393221.0	8.0	225261.0	1499	97.26	1.7	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__	82.6857	30.8293
+spire_mag_02912812	Faecimonas	1499541.0	20.0	122932.0	1586	95.18	1.77	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.5808	8.6985
+spire_mag_02913183	Caccenecus	1159232.0	49.0	35182.0	1232	95.6	0.63	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	61.7378	16.9670
+spire_mag_02914905	CAG-557	1046269.0	80.0	18291.0	1125	96.06	0.92	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.0935	19.7176
+spire_mag_02915030	Caccenecus	1175546.0	27.0	55985.0	1244	94.95	0.15	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	63.5340	19.4897
+spire_mag_02915421	CAG-557	819262.0	153.0	5745.0	930	73.17	0.83	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	52.7688	16.5522
+spire_mag_02915975	HGM10766	1128901.0	21.0	92238.0	1208	89.39	0.05	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	62.1512	26.1111
+spire_mag_02916800	Caccenecus	1207904.0	32.0	56014.0	1287	97.29	0.24	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	64.0995	17.2074
+spire_mag_02917010	Faecimonas	1433838.0	23.0	89540.0	1531	94.64	1.02	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.5293	7.7821
+spire_mag_02917698	CAG-557	1115456.0	71.0	29017.0	1176	99.28	0.28	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.0579	26.2757
+spire_mag_02918281	UMGS1491	995193.0	81.0	17567.0	1029	92.09	1.82	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554775	63.9672	12.9318
+spire_mag_02918753	CAG-557	1086852.0	34.0	79824.0	1121	99.55	0.26	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.4047	22.3722
+spire_mag_02919498	HGM10766	1217059.0	22.0	83487.0	1318	92.02	0.27	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	67.5223	23.2097
+spire_mag_02919676	CAG-557	1073291.0	48.0	45758.0	1098	98.09	1.33	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.4496	17.9146
+spire_mag_02921968	CAG-557	1120977.0	31.0	65696.0	1165	100.0	0.8	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	63.6206	27.5795
+spire_mag_02923164	HGM10766	1171176.0	10.0	314820.0	1241	92.59	0.15	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	62.4972	24.8178
+spire_mag_02923166	Caccenecus	1306870.0	26.0	100042.0	1383	93.46	1.76	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	59.0878	14.3196
+spire_mag_02923625	CAG-557	1157653.0	56.0	55642.0	1205	99.91	0.11	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.2929	22.3099
+spire_mag_02923927	HGM10766	1057273.0	83.0	22050.0	1176	89.44	0.61	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	58.5406	24.9555
+spire_mag_02924855	UMGS1491	1119685.0	13.0	272272.0	1120	97.34	0.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900552265	54.4773	9.0341
+spire_mag_02926611	UMGS1491	1211104.0	111.0	16700.0	1265	75.68	1.2	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp905211185	66.1111	32.7124
+spire_mag_02927293	CAG-557	908955.0	156.0	6358.0	1028	86.34	0.07	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	56.2011	23.7772
+spire_mag_02929400	HGM10766	1210045.0	236.0	5473.0	1443	82.47	6.74	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	62.8077	30.2768
+spire_mag_02929729	CAG-557	1115087.0	75.0	24902.0	1180	98.61	0.13	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.2696	26.2804
+spire_mag_02930546	CAG-557	1131923.0	51.0	35579.0	1182	99.48	0.16	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	63.8578	28.8125
+spire_mag_02931399	CAG-557	1079718.0	26.0	79824.0	1105	99.55	0.27	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.6332	21.5362
+spire_mag_02931764	CAG-557	1109569.0	31.0	85674.0	1138	99.69	0.08	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.9695	22.7955
+spire_mag_02932662	Caccenecus	1188561.0	33.0	55931.0	1258	97.0	0.12	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	63.1879	17.0019
+spire_mag_02932945	HGM10766	1122553.0	239.0	4762.0	1363	56.52	1.91	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	59.8620	20.0777
+spire_mag_02933118	CAG-557	492771.0	121.0	3984.0	584	54.16	0.31	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	50.7213	4.3519
+spire_mag_02935296	CAG-557	1165975.0	41.0	63509.0	1209	98.95	0.4	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.7845	25.0763
+spire_mag_02935892	CAG-557	1075186.0	89.0	15899.0	1153	95.06	1.28	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.3769	16.9130
+spire_mag_02937153	CAG-557	1087364.0	20.0	79614.0	1106	99.35	0.02	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.0051	25.0156
+spire_mag_02973700	Caccenecus	1318408.0	21.0	152222.0	1402	91.81	1.58	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	61.4615	15.1969
+spire_mag_02977473	Caccenecus	1231966.0	30.0	75802.0	1338	97.76	0.33	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	65.2556	22.3074
+spire_mag_02977788	Caccenecus	1237505.0	31.0	56022.0	1344	97.62	0.2	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	64.6325	20.1189
+spire_mag_02991149	HGM10766	1222316.0	14.0	138900.0	1307	91.67	0.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	63.7380	25.1558
+spire_mag_02991165	Faecimonas	1492362.0	16.0	124800.0	1601	94.5	1.04	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Faecimonas;s__Faecimonas intestinavium	99.5187	9.2588
+spire_mag_02991749	CAG-557	973062.0	148.0	7900.0	1098	79.16	1.16	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	55.0796	18.4105
+spire_mag_02991924	CAG-557	1168452.0	33.0	73651.0	1212	99.71	0.16		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.8245	37.0660
+spire_mag_02992294	Caccenecus	1313748.0	25.0	148797.0	1382	93.17	1.38	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	58.9496	13.5426
+spire_mag_02995061	CAG-557	1198960.0	44.0	96886.0	1236	100.0	1.14	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	59.6700	25.3750
+spire_mag_02996694	Caccenecus	1243244.0	29.0	68566.0	1345	92.23	0.22	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp900549285	66.7363	21.0632
+spire_mag_02996752	CAG-557	1222213.0	69.0	26225.0	1274	100.0	3.2	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__	53.6174	16.5898
+spire_mag_02999480	CAG-557	1114511.0	33.0	75178.0	1143	99.71	0.61	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.7587	25.3944
+spire_mag_03000841	Caccenecus	1317198.0	22.0	141511.0	1391	93.97	1.81	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__Caccenecus;s__Caccenecus sp000438195	60.8105	14.5801
+spire_mag_03000847	CAG-557	1106145.0	32.0	85666.0	1144	99.87	0.14		d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	61.5581	32.0896
+spire_mag_03002849	CAG-557	985653.0	90.0	15142.0	1061	91.99	0.35	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	57.7664	25.8283
+spire_mag_03006452	CAG-557	1054089.0	24.0	111777.0	1066	99.94	0.06	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	58.5477	15.5971
+spire_mag_03006571	CAG-557	1068779.0	26.0	85734.0	1101	99.64	0.09	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	60.9360	25.8641
+spire_mag_03009996	HGM10766	1131653.0	17.0	159484.0	1196	92.02	0.14	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	62.3227	24.9402
+spire_mag_03010227	CAG-557	1130627.0	57.0	33663.0	1175	99.56	0.15	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	62.0650	25.9176
+spire_mag_03012008	HGM10766	1135862.0	18.0	84650.0	1228	90.0	0.09	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	60.7441	26.4891
+spire_mag_03013688	CAG-557	853733.0	151.0	5941.0	971	80.22	0.3	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	55.4118	25.1410
+spire_mag_03013782	CAG-557	899456.0	98.0	12641.0	960	83.4	0.32	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__CAG-557;s__CAG-557 sp000435275	54.7071	12.4173
+spire_mag_03014878	UMGS1491	964916.0	8.0	176926.0	944	92.39	0.03	1.0	d__Bacteria;p__Firmicutes_A;c__Clostridia;o__Oscillospirales;f__Acutalibacteraceae;g__UMGS1491;s__UMGS1491 sp900554335	57.5219	1.6787
+spire_mag_03020330	HGM10766	1220531.0	25.0	99730.0	1273	92.33	0.44	1.0	d__Bacteria;p__Firmicutes;c__Bacilli;o__RF39;f__UBA660;g__HGM10766;s__HGM10766 sp900757295	68.4172	26.8880

@@ -1,0 +1,111 @@
+phylum	train	val	test	total	domain	median_Mbp	panel_group
+Pseudomonadota	25960	3245	3244	32449	Bacteria	4.892	
+Bacillota	20301	2537	2536	25374	Bacteria	2.777	
+Actinomycetota	9581	1196	1197	11974	Bacteria	4.346	
+Bacteroidota	8279	1033	1035	10347	Bacteria	3.184	Bacteroidota
+Campylobacterota	4973	622	622	6217	Bacteria	1.682	Campylobacterota
+Cyanobacteriota	1317	164	164	1645	Bacteria	2.46	
+Patescibacteriota	1286	161	161	1608	Bacteria	0.88	Patescibacteriota
+Verrucomicrobiota	1242	155	155	1552	Bacteria	2.756	
+Spirochaetota	890	111	111	1112	Bacteria	3.038	
+Halobacteriota	573	72	72	717	Archaea	3.285	Halobacteriota
+Bacteroidota_A	528	66	66	660	Bacteria	3.539	Bacteroidota_A
+Desulfobacterota_I	518	65	65	648	Bacteria	2.382	
+Thermoproteota	474	59	59	592	Archaea	1.829	
+Fusobacteriota	457	57	57	571	Bacteria	2.341	
+Chlamydiota	443	55	55	553	Bacteria	1.094	
+Acidobacteriota	332	41	41	414	Bacteria	4.309	
+Desulfobacterota	320	40	40	400	Bacteria	3.28	
+Methanobacteriota	265	33	33	331	Archaea	1.806	
+Planctomycetota	180	22	22	224	Bacteria	5.151	
+Deinococcota	171	21	21	213	Bacteria	3.138	
+Chloroflexota	158	20	20	198	Bacteria	2.518	
+Nitrospirota	156	20	20	196	Bacteria	2.977	
+Elusimicrobiota	145	18	18	181	Bacteria	1.663	
+Chrysiogenota	133	17	17	167	Bacteria	2.273	
+Thermoplasmatota	123	15	15	153	Archaea	1.775	
+Thermotogota	112	14	14	140	Bacteria	2.067	
+Bdellovibrionota	103	13	13	129	Bacteria	3.451	
+Synergistota	101	13	13	127	Bacteria	2.215	
+Myxococcota	93	12	12	117	Bacteria	9.078	
+Armatimonadota	80	10	10	100	Bacteria	3.216	
+Fibrobacterota	72	9	9	90	Bacteria	3.347	
+Methanobacteriota_B	72	9	9	90	Archaea	1.959	
+Aquificota	60	7	7	74	Bacteria	1.622	
+Nanobdellota	55	7	7	69	Archaea	1.028	DPANN
+Gemmatimonadota	54	7	7	68	Bacteria	3.594	
+Cloacimonadota	43	6	6	55	Bacteria	2.283	
+WOR-3	20	3	3	26	Bacteria	1.671	
+Vulcanimicrobiota	17	2	2	21	Bacteria	2.641	
+Zhuqueibacterota	16	2	2	20	Bacteria	5.876	
+Margulisbacteria	15	2	2	19	Bacteria	1.699	
+Zixibacteria	15	2	2	19	Bacteria	3.039	
+UBA10199	15	2	2	19	Bacteria	2.226	
+Edwardsbacteria	12	1	1	14	Bacteria	2.723	
+Marinisomatota	11	1	1	13	Bacteria	2.116	
+Nitrospirota_A	11	1	1	13	Bacteria	2.476	
+Desulfobacterota_B	10	1	1	12	Bacteria	4.114	
+Dictyoglomota	10	1	1	12	Bacteria	1.817	
+Fermentibacterota	10	1	1	12	Bacteria	2.302	
+Nitrospinota	9	1	1	11	Bacteria	2.903	
+Omnitrophota	9	1	1	11	Bacteria	1.909	
+Sysuimicrobiota	8	1	1	10	Bacteria	2.351	
+Calditrichota	7	1	1	9	Bacteria	5.32	
+Babelota	7	1	1	9	Bacteria	1.156	
+Desulfobacterota_G	6	1	1	8	Bacteria	2.534	
+SZUA-79	6	1	1	8	Bacteria	2.021	
+Korarchaeota	5	1	1	7	Archaea	1.672	
+UBP6	5	1	1	7	Bacteria	2.599	
+Methylomirabilota	5	1	1	7	Bacteria	2.811	
+Micrarchaeota	4	1	1	6	Archaea	1.02	DPANN
+Caldisericota	4	1	1	6	Bacteria	1.482	
+Bdellovibrionota_B	4	1	1	6	Bacteria	3.646	
+Desulfobacterota_D	3	1	1	5	Bacteria	2.207	
+Nanohalarchaeota	3	1	1	5	Archaea	0.999	DPANN
+JAMCPX01	2	1	1	4	Bacteria	2.574	
+Krumholzibacteriota	2	1	1	4	Bacteria	3.088	
+Auribacterota	2	1	1	4	Bacteria	3.697	
+Atribacterota	2	1	1	4	Bacteria	1.933	
+RBG-13-66-14	1	1	0	2	Bacteria	2.013	
+SAR324	1	0	0	1	Bacteria	2.694	
+UBP14	1	0	0	1	Bacteria	2.503	
+Schekmanbacteria	1	1	1	3	Bacteria	2.747	
+Bipolaricaulota	1	0	0	1	Bacteria	1.702	
+CAIWAD01	1	1	0	2	Bacteria	3.979	
+Altiarchaeota	1	0	0	1	Archaea	1.195	DPANN
+UBP13	1	1	0	2	Bacteria	2.262	
+Asgardarchaeota	1	1	0	2	Archaea	2.177	
+UBA9089	1	0	0	1	Bacteria	1.695	
+UBA4055	1	1	0	2	Bacteria	2.667	
+UBA6262	1	0	0	1	Bacteria	1.868	
+CG2-30-53-67	1	0	0	1	Bacteria	2.621	
+CLD3	1	1	1	3	Bacteria	3.749	
+ARS69	1	1	1	3	Bacteria	2.671	
+Thermosulfidibacterota	1	0	0	1	Bacteria	1.817	
+BMS3Abin14	1	1	1	3	Bacteria	2.283	
+Thermodesulfobiota	1	1	1	3	Bacteria	1.899	
+Bdellovibrionota_G	1	0	0	1	Bacteria	2.922	
+RUG730	1	0	0	1	Bacteria	1.208	
+Iainarchaeota	1	1	0	2	Archaea	1.272	DPANN
+JAAXVQ01	1	0	0	1	Bacteria	3.221	
+JAJVIF01	1	0	0	1	Bacteria	3.261	
+JAKLEM01	1	0	0	1	Bacteria	2.571	
+JANLFM01	1	0	0	1	Bacteria	1.579	
+JAWLBW01	1	0	0	1	Bacteria	4.641	
+Joyebacterota	1	0	0	1	Bacteria	2.631	
+Hydrothermarchaeota	1	0	0	1	Archaea	1.993	
+Hydrogenedentota	1	1	0	2	Bacteria	5.156	
+Goldbacteria	1	1	1	3	Bacteria	2.863	
+Desulfobacterota_C	1	1	0	2	Bacteria	3.56	
+DUMJ01	1	0	0	1	Bacteria	2.094	
+Firestonebacteria	1	0	0	1	Bacteria	3.132	
+Mcinerneyibacteriota	1	1	0	2	Bacteria	1.882	
+FCPU426	1	0	0	1	Bacteria	2.892	
+Electryoneota	1	1	1	3	Bacteria	2.902	
+Eisenbacteria	1	1	0	2	Bacteria	3.833	
+Muiribacteriota	1	0	0	1	Bacteria	4.983	
+Myxococcota_A	1	1	1	3	Bacteria	5.959	
+Desulfobacterota_E	1	1	0	2	Bacteria	2.894	
+Nitrospirota_B	1	1	0	2	Bacteria	2.634	
+UBP4	1	0	0	1	Bacteria	2.958	
+Coprothermobacterota	1	0	0	1	Bacteria	1.425	

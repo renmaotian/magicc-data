@@ -1,0 +1,71 @@
+{
+  "magicc_model_download": {
+    "url": "https://github.com/renmaotian/magicc/raw/main/models/magicc_v5.onnx",
+    "measured": true,
+    "trials": [
+      {
+        "repeat": 1,
+        "seconds": 7.04,
+        "bytes": 169658949,
+        "ok": true,
+        "MB_per_s": 24.1,
+        "stderr": ""
+      },
+      {
+        "repeat": 2,
+        "seconds": 6.39,
+        "bytes": 169658949,
+        "ok": true,
+        "MB_per_s": 26.6,
+        "stderr": ""
+      },
+      {
+        "repeat": 3,
+        "seconds": 6.7,
+        "bytes": 169658949,
+        "ok": true,
+        "MB_per_s": 25.3,
+        "stderr": ""
+      }
+    ],
+    "median_seconds": 6.7,
+    "median_MB_per_s": 25.3,
+    "note": "This is MAGICC's ENTIRE first-run setup: the CLI auto-downloads the ONNX model once to ~/.magicc/ and there is no database to fetch, build or index."
+  },
+  "competitor_downloads": {
+    "measured": false,
+    "reason": "Databases are already installed; re-downloading would overwrite a working installation (the environments must not be modified) and the seconds would measure this site's network, not the tool. Volumes are exact; times are projections at the throughput measured above and are labelled as such.",
+    "projections": {
+      "MAGICC v0.3.0 (V5)": {
+        "download_bytes": 172178963,
+        "download_GB": 0.172,
+        "projected_seconds_at_measured_throughput": 6.8,
+        "projected_minutes": 0.1
+      },
+      "CheckM2 1.0.1": {
+        "download_bytes": 3082500605,
+        "download_GB": 3.083,
+        "projected_seconds_at_measured_throughput": 121.8,
+        "projected_minutes": 2.0
+      },
+      "CoCoPyE 0.5.0": {
+        "download_bytes": 17044746129,
+        "download_GB": 17.045,
+        "projected_seconds_at_measured_throughput": 673.7,
+        "projected_minutes": 11.2
+      },
+      "DeepCheck": {
+        "download_bytes": 89605258,
+        "download_GB": 0.09,
+        "projected_seconds_at_measured_throughput": 3.5,
+        "projected_minutes": 0.1
+      }
+    }
+  },
+  "one_time_local_setup_beyond_download": {
+    "MAGICC": "none",
+    "CheckM2": "none beyond the download (the .dmnd is shipped pre-formatted)",
+    "CoCoPyE": "`cocopye toolbox download-dependencies` fetches and unpacks the UProC binaries, two Pfam databases and the CoCoPyE database; unpacking cost not separately measured",
+    "DeepCheck": "no installer; the repository is cloned and the model is used in place, but a complete CheckM2 install is a hard prerequisite"
+  }
+}

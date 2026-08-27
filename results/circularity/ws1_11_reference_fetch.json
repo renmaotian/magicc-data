@@ -1,0 +1,15 @@
+{
+  "generated_utc": "2026-08-01T18:38:22.067593+00:00",
+  "generated_by": "scripts/186_ws1_11_fetch_refs.py",
+  "n_requested": 400,
+  "n_downloaded": 400,
+  "n_accepted": 400,
+  "n_pairs_dropped": 0,
+  "size_tolerance_rel": 0.02,
+  "n_final_references": 400,
+  "n_final_pairs": 200,
+  "bp_rel_deviation": {
+    "median": 0.0,
+    "max": 0.0
+  }
+}

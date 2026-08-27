@@ -1,0 +1,29 @@
+utc	cell	gate	threshold	load1_at_decision	waited_s	decision
+2026-08-26T16:41:41Z	magicc__t32__set_E_100__warm__r4	load1	4.0	0.44	0	PROCEED
+2026-08-26T16:41:45Z	deepcheck__t32__set_E_100__warm__r4	load1	4.0	0.56	0	PROCEED
+2026-08-26T16:41:53Z	cocopye__t32__set_E_100__warm__r4	load1	4.0	3.08	0	PROCEED
+2026-08-26T16:47:19Z	checkm2__t32__set_E_100__warm__r4	load1	4.0	39.96	0	PROCEED_FLAGGED_OVER_THRESHOLD
+2026-08-26T17:02:25Z	magicc__t1__set_E_full__warm__r11	load1	1.5	1.19	240	PROCEED	210.2
+2026-08-26T17:04:17Z	magicc_dir__t1__set_E_full_dir__warm__r11	load1	1.5	1.31	60	PROCEED	209.2
+2026-08-26T17:08:09Z	magicc_v5code__t1__set_E_full_dir__warm__r11	load1	1.5	1.40	180	PROCEED	209.2
+2026-08-26T17:10:02Z	magicc_v3code_nostats__t1__set_E_full_dir__warm__r11	load1	1.5	1.35	60	PROCEED	133.6
+2026-08-26T17:11:54Z	magicc_v3code__t1__set_E_full_dir__warm__r11	load1	1.5	1.07	60	PROCEED	9.5
+2026-08-26T17:13:10Z	magicc__t1__set_E_full__warm__r12	load1	1.5	1.31	0	PROCEED	9.7
+2026-08-26T17:25:03Z	magicc_dir__t1__set_E_full_dir__warm__r12	load1	1.5	1.39	660	PROCEED	111.0
+2026-08-26T17:27:56Z	magicc_v5code__t1__set_E_full_dir__warm__r12	load1	1.5	1.48	120	PROCEED	232.6
+2026-08-26T17:30:48Z	magicc_v3code_nostats__t1__set_E_full_dir__warm__r12	load1	1.5	1.48	120	PROCEED	311.7
+2026-08-26T17:34:40Z	magicc_v3code__t1__set_E_full_dir__warm__r12	load1	1.5	0.63	180	PROCEED	111.9
+2026-08-26T17:35:54Z	magicc__t1__set_E_full__warm__r13	load1	1.5	0.89	0	PROCEED	11.8
+2026-08-26T17:36:45Z	magicc_dir__t1__set_E_full_dir__warm__r13	load1	1.5	0.95	0	PROCEED	211.7
+2026-08-26T17:37:36Z	magicc_v5code__t1__set_E_full_dir__warm__r13	load1	1.5	0.98	0	PROCEED	111.6
+2026-08-26T17:38:28Z	magicc_v3code_nostats__t1__set_E_full_dir__warm__r13	load1	1.5	0.99	0	PROCEED	11.5
+2026-08-26T17:39:19Z	magicc_v3code__t1__set_E_full_dir__warm__r13	load1	1.5	1.00	0	PROCEED	111.4
+2026-08-26T17:40:34Z	checkm2__t32__set_E_100__warm__r5	load1	4.0	0.98	0	PROCEED	11.3
+2026-08-26T17:51:35Z	magicc__t32__set_E_full__warm__r4	load1	4.0	3.35	120	PROCEED	10.5
+2026-08-26T17:52:14Z	deepcheck__t32__set_E_full__warm__r4	load1	4.0	3.33	30	PROCEED	110.5
+2026-08-26T17:54:15Z	checkm2__t32__set_E_full__warm__r2	load1	4.0	3.12	90	PROCEED	10.3
+2026-08-26T19:06:44Z	cocopye__t32__set_E_full__warm__r2	load1	4.0	3.50	60	PROCEED	207.2
+2026-08-26T19:58:30Z	magicc__t32__set_E_full__warm__r5	load1	4.0	2.73	180	PROCEED	105.9
+2026-08-26T19:58:38Z	deepcheck__t32__set_E_full__warm__r5	load1	4.0	2.47	0	PROCEED	105.9
+2026-08-26T20:00:10Z	checkm2__t32__set_E_full__warm__r3	load1	4.0	3.66	60	PROCEED	105.9
+2026-08-26T21:13:11Z	cocopye__t32__set_E_full__warm__r3	load1	4.0	2.81	90	PROCEED	106.2

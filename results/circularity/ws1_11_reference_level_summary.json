@@ -1,0 +1,121 @@
+{
+  "generated_utc": "2026-08-02T15:34:03.074426+00:00",
+  "generated_by": "scripts/192_ws1_11_reference_level_scores.py",
+  "n_references": 400,
+  "arm_difference": [
+    {
+      "estimate": "gtdb_checkm2_completeness",
+      "n_pairs": 200,
+      "mean_H_pass": 99.8725,
+      "mean_H_fail": 93.9611,
+      "median_H_pass": 100.0,
+      "median_H_fail": 96.645,
+      "D_fail_minus_pass": -5.9114,
+      "ci_lo": -7.0806,
+      "ci_hi": -4.8029,
+      "p_two_sided": 0.0009995002498750624,
+      "uses_checkm2": true
+    },
+    {
+      "estimate": "gtdb_checkm2_contamination",
+      "n_pairs": 200,
+      "mean_H_pass": 0.5872,
+      "mean_H_fail": 3.0394,
+      "median_H_pass": 0.385,
+      "median_H_fail": 2.69,
+      "D_fail_minus_pass": 2.4522,
+      "ci_lo": 2.158,
+      "ci_hi": 2.7758,
+      "p_two_sided": 0.0009995002498750624,
+      "uses_checkm2": true
+    },
+    {
+      "estimate": "magicc_v5_completeness",
+      "n_pairs": 200,
+      "mean_H_pass": 99.0917,
+      "mean_H_fail": 97.9737,
+      "median_H_pass": 99.8983,
+      "median_H_fail": 99.86,
+      "D_fail_minus_pass": -1.1179,
+      "ci_lo": -1.7741,
+      "ci_hi": -0.5308,
+      "p_two_sided": 0.0009995002498750624,
+      "uses_checkm2": false
+    },
+    {
+      "estimate": "magicc_v5_contamination",
+      "n_pairs": 200,
+      "mean_H_pass": 1.5049,
+      "mean_H_fail": 3.0977,
+      "median_H_pass": 0.5068,
+      "median_H_fail": 0.5775,
+      "D_fail_minus_pass": 1.5928,
+      "ci_lo": 0.4686,
+      "ci_hi": 3.0432,
+      "p_two_sided": 0.0009995002498750624,
+      "uses_checkm2": false
+    },
+    {
+      "estimate": "checkm2_local_completeness",
+      "n_pairs": 200,
+      "mean_H_pass": 99.8677,
+      "mean_H_fail": 94.0161,
+      "median_H_pass": 100.0,
+      "median_H_fail": 96.57,
+      "D_fail_minus_pass": -5.8516,
+      "ci_lo": -7.0941,
+      "ci_hi": -4.7342,
+      "p_two_sided": 0.0009995002498750624,
+      "uses_checkm2": true
+    },
+    {
+      "estimate": "checkm2_local_contamination",
+      "n_pairs": 200,
+      "mean_H_pass": 0.6078,
+      "mean_H_fail": 3.0429,
+      "median_H_pass": 0.4,
+      "median_H_fail": 2.625,
+      "D_fail_minus_pass": 2.435,
+      "ci_lo": 2.1391,
+      "ci_hi": 2.7647,
+      "p_two_sided": 0.0009995002498750624,
+      "uses_checkm2": true
+    },
+    {
+      "estimate": "cocopye_completeness",
+      "n_pairs": 200,
+      "mean_H_pass": 99.2995,
+      "mean_H_fail": 98.5353,
+      "median_H_pass": 100.0,
+      "median_H_fail": 99.998,
+      "D_fail_minus_pass": -0.7643,
+      "ci_lo": -1.1231,
+      "ci_hi": -0.4478,
+      "p_two_sided": 0.0009995002498750624,
+      "uses_checkm2": false
+    },
+    {
+      "estimate": "cocopye_contamination",
+      "n_pairs": 200,
+      "mean_H_pass": 1.4146,
+      "mean_H_fail": 7.7533,
+      "median_H_pass": 0.0,
+      "median_H_fail": 2.7907,
+      "D_fail_minus_pass": 6.3387,
+      "ci_lo": 5.1704,
+      "ci_hi": 7.6141,
+      "p_two_sided": 0.0009995002498750624,
+      "uses_checkm2": false
+    }
+  ],
+  "checkm2_local_vs_gtdb": {
+    "n": 400,
+    "completeness_mean_abs_diff": 0.2325,
+    "completeness_median_abs_diff": 0.0,
+    "completeness_pearson_r": 0.995,
+    "contamination_mean_abs_diff": 0.1271,
+    "n_refs_local_would_now_pass_filter": 9,
+    "n_H_fail": 200
+  },
+  "note": "Scores on the unmodified deposited assemblies. No simulation, therefore no ground truth: this table shows whether independent estimators reproduce the CheckM2 deficit that caused the H_fail genomes to be excluded, not which estimator is correct."
+}

@@ -1,0 +1,10 @@
+palette_group	key	hex	deuteranopia	protanopia	tritanopia
+tools	magicc_v5	#0072B2	#3B67B1	#5375B5	#008289
+tools	magicc_v4	#56B4E9	#87A4E8	#9BB3EC	#00C2C6
+tools	magicc_v3	#999999	#999999	#999999	#999999
+tools	checkm2	#D55E00	#9E8C00	#817100	#EB4050
+tools	cocopye	#F0E442	#FCE34E	#F8DC23	#FFD4C5
+tools	deepcheck	#000000	#000000	#000000	#000000
+mimag	high	#08306B	#002E6A	#04376D	#003F48
+mimag	medium	#4292C6	#6885C5	#7A92C8	#009FA4
+mimag	low	#BDD7E7	#CAD1E7	#D0D6E8	#B2DBDC

@@ -1,0 +1,1 @@
+threads=8 n=1000 model_load_s=0.15 feature_load_s=1.08 inference_s=74.81 total_s=76.05

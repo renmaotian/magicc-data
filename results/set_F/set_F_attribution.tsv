@@ -1,0 +1,64 @@
+competitor	distance	arm	n_reference_pairs	mean_advantage_redundant	mean_advantage_arm	hl_diff_arm_minus_redundant	diff_ci_lo	diff_ci_hi	rank_biserial	p_wilcoxon_paired_by_reference	q_bh	verdict
+checkm2	ALL	NON_REDUNDANT(replaced+single)	100	-0.8659	2.73	3.2043	2.0936	4.4415	0.6408	2.6485745381729024e-08	4.635005441802579e-08	MAGICC advantage LARGER on this non-redundant arm
+checkm2	ALL	replaced	100	-0.8659	3.0064	3.545	2.3867	4.8804	0.6737	4.957557153988046e-09	1.0075035506491836e-08	MAGICC advantage LARGER on this non-redundant arm
+checkm2	ALL	single	100	-0.8659	2.4537	2.8396	1.8103	3.9979	0.6095	1.2126284110596416e-07	2.010410260440985e-07	MAGICC advantage LARGER on this non-redundant arm
+checkm2	species	NON_REDUNDANT(replaced+single)	100	-6.364	-0.0632	6.0226	4.8791	7.2469	0.8966	7.0062856931374904e-15	5.5174499833457734e-14	MAGICC advantage LARGER on this non-redundant arm
+checkm2	species	replaced	100	-6.364	-0.2805	5.8946	4.5876	7.0805	0.8851	1.534086101076588e-14	9.664742436782505e-14	MAGICC advantage LARGER on this non-redundant arm
+checkm2	species	single	100	-6.364	0.154	6.131	4.8148	7.3701	0.9057	3.7369878171040194e-15	3.363289035393617e-14	MAGICC advantage LARGER on this non-redundant arm
+checkm2	genus	NON_REDUNDANT(replaced+single)	100	-5.4139	0.4295	5.545	4.2229	6.954	0.836	3.9197457473169017e-13	1.54339988800603e-12	MAGICC advantage LARGER on this non-redundant arm
+checkm2	genus	replaced	100	-5.4139	0.2836	5.4685	4.0937	6.874	0.8131	1.6784884860821076e-12	4.806580664689671e-12	MAGICC advantage LARGER on this non-redundant arm
+checkm2	genus	single	100	-5.4139	0.5755	5.6292	4.3876	6.9371	0.836	3.9197457473169017e-13	1.54339988800603e-12	MAGICC advantage LARGER on this non-redundant arm
+checkm2	family	NON_REDUNDANT(replaced+single)	100	-2.423	1.9376	4.3282	3.0325	5.4464	0.7117	6.464396115495318e-10	1.4544891259864465e-09	MAGICC advantage LARGER on this non-redundant arm
+checkm2	family	replaced	100	-2.423	2.2819	4.6492	3.3442	5.95	0.7259	2.929781311502822e-10	6.836156393506585e-10	MAGICC advantage LARGER on this non-redundant arm
+checkm2	family	single	100	-2.423	1.5933	3.782	2.5453	5.0518	0.6729	5.166648052934121e-09	1.017183835421405e-08	MAGICC advantage LARGER on this non-redundant arm
+checkm2	order	NON_REDUNDANT(replaced+single)	100	0.9375	3.9611	2.3813	1.1505	3.7541	0.4697	4.5453436621012654e-05	6.225144580703907e-05	MAGICC advantage LARGER on this non-redundant arm
+checkm2	order	replaced	100	0.9375	4.479	2.9299	1.5626	4.285	0.5366	3.1785700721120267e-06	5.0062478635764425e-06	MAGICC advantage LARGER on this non-redundant arm
+checkm2	order	single	100	0.9375	3.4432	1.8444	0.7603	3.0057	0.3945	0.000615769688999271	0.0008081977168115433	MAGICC advantage LARGER on this non-redundant arm
+checkm2	class	NON_REDUNDANT(replaced+single)	100	2.7911	5.2096	1.9406	0.9457	3.2907	0.4071	0.0004083960555564732	0.00054742450000123	MAGICC advantage LARGER on this non-redundant arm
+checkm2	class	replaced	100	2.7911	5.8581	2.3679	1.2124	3.8244	0.4907	2.0434964969944978e-05	2.9259154388784853e-05	MAGICC advantage LARGER on this non-redundant arm
+checkm2	class	single	100	2.7911	4.561	1.4697	0.4185	2.642	0.3184	0.0057025281218700844	0.00653198675777846	MAGICC advantage LARGER on this non-redundant arm
+checkm2	phylum	NON_REDUNDANT(replaced+single)	100	5.2769	4.9055	0.1869	-0.7524	1.3881	0.0451	0.695081095368113	0.717870639478543	uniform (no type specificity)
+checkm2	phylum	replaced	100	5.2769	5.416	0.596	-0.4239	1.8911	0.1149	0.3187090789328131	0.35225740303100395	uniform (no type specificity)
+checkm2	phylum	single	100	5.2769	4.3951	-0.0634	-1.0209	0.9543	-0.0162	0.8878926004885652	0.9022134488835422	uniform (no type specificity)
+cocopye	ALL	NON_REDUNDANT(replaced+single)	100	0.4992	1.9223	1.2018	0.3557	2.0885	0.3354	0.0035882251228733166	0.004265248730962621	MAGICC advantage LARGER on this non-redundant arm
+cocopye	ALL	replaced	100	0.4992	3.0159	2.1249	1.1152	3.3808	0.5061	1.11192093310351e-05	1.7085614337931983e-05	MAGICC advantage LARGER on this non-redundant arm
+cocopye	ALL	single	100	0.4992	0.8287	0.2134	-0.4717	0.8813	0.065	0.5728322123507377	0.622214299622353	uniform (no type specificity)
+cocopye	species	NON_REDUNDANT(replaced+single)	100	-4.8706	0.1306	4.6997	3.4878	5.8601	0.8186	1.1857744591583673e-12	4.1502106070542854e-12	MAGICC advantage LARGER on this non-redundant arm
+cocopye	species	replaced	100	-4.8706	-0.3205	4.3512	3.1946	5.4993	0.7608	3.974582501006171e-11	1.0433279065141198e-10	MAGICC advantage LARGER on this non-redundant arm
+cocopye	species	single	100	-4.8706	0.5817	5.0102	3.8178	6.3477	0.815	1.48297268301825e-12	4.44891804905475e-12	MAGICC advantage LARGER on this non-redundant arm
+cocopye	genus	NON_REDUNDANT(replaced+single)	100	-3.3883	0.2508	3.3647	2.2218	4.5821	0.6756	4.4702031274545934e-09	9.387426567654646e-09	MAGICC advantage LARGER on this non-redundant arm
+cocopye	genus	replaced	100	-3.3883	0.2785	3.4666	2.3392	4.6378	0.6543	1.3460606544893094e-08	2.494171212730191e-08	MAGICC advantage LARGER on this non-redundant arm
+cocopye	genus	single	100	-3.3883	0.2231	3.2794	2.1817	4.478	0.6491	1.746378554002198e-08	3.1434813972039565e-08	MAGICC advantage LARGER on this non-redundant arm
+cocopye	family	NON_REDUNDANT(replaced+single)	100	-0.2248	1.3517	1.3112	0.4888	2.3412	0.341	0.0030724215044493825	0.003795344211378649	MAGICC advantage LARGER on this non-redundant arm
+cocopye	family	replaced	100	-0.2248	2.296	2.273	1.2532	3.5136	0.4828	2.7733863482427985e-05	3.882740887539918e-05	MAGICC advantage LARGER on this non-redundant arm
+cocopye	family	single	100	-0.2248	0.4075	0.46	-0.3733	1.3357	0.1188	0.3023076019657809	0.3400960522115035	uniform (no type specificity)
+cocopye	order	NON_REDUNDANT(replaced+single)	100	2.5231	2.6606	0.0183	-0.8036	0.8772	0.0044	0.9698299436867753	0.9698299436867753	uniform (no type specificity)
+cocopye	order	replaced	100	2.5231	4.4418	1.5228	0.4765	2.7226	0.3402	0.0031417119072237707	0.0038063048106749533	MAGICC advantage LARGER on this non-redundant arm
+cocopye	order	single	100	2.5231	0.8795	-1.5029	-2.416	-0.5273	-0.364	0.001578663478814218	0.0020297101870468516	MAGICC advantage LARGER on redundant
+cocopye	class	NON_REDUNDANT(replaced+single)	100	3.9193	3.6772	-0.2119	-1.1882	0.6494	-0.0618	0.5916968660875195	0.6318119078561649	uniform (no type specificity)
+cocopye	class	replaced	100	3.9193	5.8874	1.6848	0.5166	2.999	0.3224	0.0051293465137661285	0.005984237599393817	MAGICC advantage LARGER on this non-redundant arm
+cocopye	class	single	100	3.9193	1.4671	-2.318	-3.3311	-1.4934	-0.5034	1.2418346489695e-05	1.86275197345425e-05	MAGICC advantage LARGER on redundant
+cocopye	phylum	NON_REDUNDANT(replaced+single)	100	5.0366	3.4629	-1.4962	-2.5235	-0.6555	-0.3505	0.002342965676631893	0.0029521367525561855	MAGICC advantage LARGER on redundant
+cocopye	phylum	replaced	100	5.0366	5.5124	0.2788	-0.855	1.4816	0.0491	0.6698511676891292	0.7033437260735856	uniform (no type specificity)
+cocopye	phylum	single	100	5.0366	1.4134	-3.3884	-4.4129	-2.4735	-0.7477	8.495358469771918e-11	2.1408303343825235e-10	MAGICC advantage LARGER on redundant
+deepcheck	ALL	NON_REDUNDANT(replaced+single)	100	-2.0254	3.0482	4.6961	3.617	6.0398	0.8745	3.154399659417182e-14	1.8066107140298405e-13	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	ALL	replaced	100	-2.0254	3.2776	4.9421	3.8665	6.2056	0.8919	9.701591089505214e-15	6.791113762653649e-14	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	ALL	single	100	-2.0254	2.8187	4.394	3.377	5.7279	0.8459	2.0689769896103186e-13	9.310396453246433e-13	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	species	NON_REDUNDANT(replaced+single)	100	-6.2535	0.1011	5.9417	4.9801	6.9787	0.9564	1.0104199612316775e-16	3.4653789963881145e-15	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	species	replaced	100	-6.2535	-0.132	5.8243	4.9418	6.8824	0.9497	1.6501804744705308e-16	3.4653789963881145e-15	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	species	single	100	-6.2535	0.3342	6.0267	5.0283	7.1877	0.9533	1.273307953842098e-16	3.4653789963881145e-15	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	genus	NON_REDUNDANT(replaced+single)	100	-5.7116	0.6116	5.9475	4.6235	7.3852	0.9362	4.3571215496604904e-16	6.862466440715272e-15	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	genus	replaced	100	-5.7116	0.4791	5.9185	4.5055	7.2004	0.9259	9.071993454725491e-16	1.143071175295412e-14	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	genus	single	100	-5.7116	0.7441	6.0622	4.7133	7.406	0.9232	1.1037454355187327e-15	1.1589327072946693e-14	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	family	NON_REDUNDANT(replaced+single)	100	-3.4522	2.2168	5.3286	3.9806	7.1113	0.8471	1.9153290110443258e-13	9.281979053522502e-13	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	family	replaced	100	-3.4522	2.5992	5.8453	4.1698	7.4629	0.8539	1.2344747158137792e-13	6.48099225802234e-13	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	family	single	100	-3.4522	1.8344	4.9953	3.3442	6.4426	0.8166	1.342808921407084e-12	4.229848102432315e-12	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	order	NON_REDUNDANT(replaced+single)	100	-0.7457	4.2496	4.4595	3.2477	5.8118	0.817	1.309850946596449e-12	4.229848102432315e-12	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	order	replaced	100	-0.7457	4.7471	5.0247	3.5224	6.3291	0.8345	4.338759045761872e-13	1.607893058135282e-12	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	order	single	100	-0.7457	3.752	3.9292	2.7318	5.1839	0.7798	1.287275601175499e-11	3.526015777132889e-11	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	class	NON_REDUNDANT(replaced+single)	100	1.3861	5.5696	3.7231	2.3218	5.1436	0.699	1.289952484451443e-09	2.8023105696703762e-09	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	class	replaced	100	1.3861	6.097	4.1197	2.8794	5.7444	0.7378	1.4977997686776422e-10	3.6292840548727487e-10	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	class	single	100	1.3861	5.0423	3.1397	2.0267	4.3785	0.6356	3.418833474830966e-08	5.821256997685158e-08	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	phylum	NON_REDUNDANT(replaced+single)	100	2.6248	5.5403	2.8906	1.6839	4.5953	0.5889	3.174367354586667e-07	5.127824188178462e-07	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	phylum	replaced	100	2.6248	5.8756	3.2418	2.1355	4.6606	0.6558	1.2419461244164134e-08	2.370988055704062e-08	MAGICC advantage LARGER on this non-redundant arm
+deepcheck	phylum	single	100	2.6248	5.205	2.5826	1.2302	4.059	0.4947	1.7511294892273265e-05	2.5656083214260826e-05	MAGICC advantage LARGER on this non-redundant arm

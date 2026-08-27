@@ -1,0 +1,38 @@
+{
+  "tool": "cocopye",
+  "threads": 32,
+  "repeat": 1,
+  "input_set": "set_E_full",
+  "cache": "warm",
+  "n_genomes": 1000,
+  "n_output_rows": 1000,
+  "return_code": 0,
+  "t_start_utc": "2026-07-31T06:37:26Z",
+  "t_end_utc": "2026-07-31T07:30:23Z",
+  "loadavg_before": [
+    0.98,
+    14.98,
+    22.89
+  ],
+  "loadavg_after": [
+    116.27,
+    83.8,
+    51.51
+  ],
+  "sum_pcpu_all_processes_before": 1.9,
+  "wall_clock_s": 3177.54,
+  "elapsed_raw": "52:57.54",
+  "max_rss_kb": 16672328,
+  "major_faults": 0,
+  "minor_faults": 84968610,
+  "fs_inputs": 0,
+  "fs_outputs": 1280,
+  "vol_ctx": 16512003,
+  "invol_ctx": 4271487,
+  "exit_status": 0,
+  "user_s": 69315.78,
+  "sys_s": 1006.29,
+  "pct_cpu": 2213.0,
+  "peak_rss_gb": 15.9,
+  "genomes_per_min": 18.88
+}

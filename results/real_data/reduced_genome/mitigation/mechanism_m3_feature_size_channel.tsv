@@ -1,0 +1,8 @@
+analysis	feature	n	pearson_r_vs_log10_assembly_bp	pearson_r_vs_true_completeness	pearson_r_vs_log10_reference_bp
+M3_summary_feature_size_channel	log10_total_kmer_count	40000	0.9792	0.258	0.835
+M3_summary_feature_size_channel	total_kmer_sum	40000	0.9792	0.258	0.835
+M3_summary_feature_size_channel	unique_kmer_count	40000	0.2817	0.0994	0.176
+M3_summary_feature_size_channel	duplicate_kmer_count	40000	0.3654	0.1167	0.2459
+M3_summary_feature_size_channel	kmer_entropy	40000	0.2282	0.0418	0.1308
+M3_summary_feature_size_channel	unique_kmer_ratio	40000	0.2817	0.0994	0.176
+M3_summary_feature_size_channel	duplicate_kmer_ratio	40000	0.4265	0.1275	0.3

@@ -1,0 +1,7 @@
+colour_a	colour_b	hex_a	hex_b	delta_e_normal	delta_e_deuteranopia	delta_e_protanopia	delta_e_tritanopia	min_delta_e	flag_too_similar
+pass	mild	#C6DBEF	#6BAED6	24.57	24.95	20.89	29.53	20.89	False
+mild	moderate	#6BAED6	#2171B5	29.33	27.79	26.71	20.94	20.94	False
+moderate	severe	#2171B5	#08306B	27.97	25.25	26.45	27.93	25.25	False
+pass	moderate	#C6DBEF	#2171B5	50.59	52.72	47.61	41.46	41.46	False
+mild	severe	#6BAED6	#08306B	53.47	48.07	49.23	48.66	48.07	False
+pass	severe	#C6DBEF	#08306B	72.02	71.29	68.96	63.34	63.34	False

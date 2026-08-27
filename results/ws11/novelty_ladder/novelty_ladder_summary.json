@@ -1,0 +1,721 @@
+{
+  "workstream": "WS11.N",
+  "title": "Taxonomic-novelty ladder on the five leakage-free benchmark sets",
+  "design": "OBSERVATIONAL stratification of frozen-model predictions by the deepest GTDB rank at which the dominant reference genome is novel relative to the training split. NOT a retrained holdout: no genome was removed from training for this analysis.",
+  "generated_utc": "2026-08-26T17:33:48.019101+00:00",
+  "sets": [
+    "set_A_v2",
+    "set_B_v2",
+    "set_C_clean",
+    "set_D_clean",
+    "set_E"
+  ],
+  "trap_T1_guard": "set_F / set_G are excluded by an explicit name whitelist",
+  "eda": {
+    "generated_utc": "2026-08-26T17:14:08.878563+00:00",
+    "pythonhashseed": "0",
+    "n_boot": 2000,
+    "sets_allowed": [
+      "set_A_v2",
+      "set_B_v2",
+      "set_C_clean",
+      "set_D_clean",
+      "set_E"
+    ],
+    "issues": [],
+    "sets": {
+      "set_A_v2": {
+        "n_rows": 1000,
+        "available_tools": [
+          "magicc_v5",
+          "magicc_v4",
+          "magicc_v3",
+          "checkm2",
+          "cocopye",
+          "deepcheck"
+        ],
+        "n_clusters": 798,
+        "dominant_split_counts": {
+          "test": 1000
+        },
+        "magicc_v5_n_rows": 1000,
+        "magicc_v5_n_matched": 1000,
+        "checkm2_n_rows": 1000,
+        "checkm2_n_matched": 1000,
+        "cocopye_n_rows": 1000,
+        "cocopye_n_matched": 1000,
+        "deepcheck_n_rows": 1000,
+        "deepcheck_n_matched": 1000
+      },
+      "set_B_v2": {
+        "n_rows": 1000,
+        "available_tools": [
+          "magicc_v5",
+          "magicc_v4",
+          "magicc_v3",
+          "checkm2",
+          "cocopye",
+          "deepcheck"
+        ],
+        "n_clusters": 803,
+        "dominant_split_counts": {
+          "test": 1000
+        },
+        "magicc_v5_n_rows": 1000,
+        "magicc_v5_n_matched": 1000,
+        "checkm2_n_rows": 1000,
+        "checkm2_n_matched": 1000,
+        "cocopye_n_rows": 1000,
+        "cocopye_n_matched": 1000,
+        "deepcheck_n_rows": 1000,
+        "deepcheck_n_matched": 1000
+      },
+      "set_C_clean": {
+        "n_rows": 1000,
+        "available_tools": [
+          "magicc_v5",
+          "checkm2",
+          "cocopye",
+          "deepcheck"
+        ],
+        "n_clusters": 100,
+        "dominant_split_counts": {
+          "test": 1000
+        },
+        "magicc_v5_n_rows": 1000,
+        "magicc_v5_n_matched": 1000,
+        "checkm2_n_rows": 1000,
+        "checkm2_n_matched": 1000,
+        "cocopye_n_rows": 1000,
+        "cocopye_n_matched": 1000,
+        "deepcheck_n_rows": 1000,
+        "deepcheck_n_matched": 1000
+      },
+      "set_D_clean": {
+        "n_rows": 1000,
+        "available_tools": [
+          "magicc_v5",
+          "checkm2",
+          "cocopye",
+          "deepcheck"
+        ],
+        "n_clusters": 100,
+        "dominant_split_counts": {
+          "test": 1000
+        },
+        "magicc_v5_n_rows": 1000,
+        "magicc_v5_n_matched": 1000,
+        "checkm2_n_rows": 1000,
+        "checkm2_n_matched": 1000,
+        "cocopye_n_rows": 1000,
+        "cocopye_n_matched": 1000,
+        "deepcheck_n_rows": 1000,
+        "deepcheck_n_matched": 1000
+      },
+      "set_E": {
+        "n_rows": 1000,
+        "available_tools": [
+          "magicc_v5",
+          "magicc_v4",
+          "magicc_v3",
+          "checkm2",
+          "cocopye",
+          "deepcheck"
+        ],
+        "n_clusters": 785,
+        "dominant_split_counts": {
+          "test": 1000
+        },
+        "magicc_v5_n_rows": 1000,
+        "magicc_v5_n_matched": 1000,
+        "checkm2_n_rows": 1000,
+        "checkm2_n_matched": 1000,
+        "cocopye_n_rows": 1000,
+        "cocopye_n_matched": 1000,
+        "deepcheck_n_rows": 1000,
+        "deepcheck_n_matched": 1000
+      }
+    },
+    "pooled": {
+      "n_genomes": 5000,
+      "n_clusters_set_x_ref": 2586,
+      "n_distinct_reference_accessions": 1648
+    },
+    "crossmap_stats": {
+      "filtered_genomes_rows": 277183,
+      "distinct_accession_strings_mapped": 503511,
+      "distinct_canonical_assemblies": 277183,
+      "rows_with_inconsistent_assembly_numbers": 0,
+      "mean_strings_per_assembly": 1.817
+    },
+    "crossmap_matches_ws1_4_audit": true,
+    "train_split_rows": 79948,
+    "val_split_rows": 10010,
+    "train_distinct_taxa_per_rank": {
+      "domain": 2,
+      "phylum": 110,
+      "class": 253,
+      "order": 705,
+      "family": 1620,
+      "genus": 5648,
+      "species": 19246
+    },
+    "dominants_resolved": 1648,
+    "dominants_unresolved": 0,
+    "dominants_unresolved_list": [],
+    "class_balance_clusters": {
+      "set_A_v2": {
+        "lineage_represented": 643,
+        "species_novel": 129,
+        "genus_novel": 21,
+        "family_novel": 3,
+        "order_novel": 1,
+        "class_novel": 1,
+        "phylum_novel": 0
+      },
+      "set_B_v2": {
+        "lineage_represented": 625,
+        "species_novel": 146,
+        "genus_novel": 28,
+        "family_novel": 2,
+        "order_novel": 2,
+        "class_novel": 0,
+        "phylum_novel": 0
+      },
+      "set_C_clean": {
+        "lineage_represented": 32,
+        "species_novel": 33,
+        "genus_novel": 21,
+        "family_novel": 10,
+        "order_novel": 4,
+        "class_novel": 0,
+        "phylum_novel": 0
+      },
+      "set_D_clean": {
+        "lineage_represented": 64,
+        "species_novel": 29,
+        "genus_novel": 5,
+        "family_novel": 1,
+        "order_novel": 1,
+        "class_novel": 0,
+        "phylum_novel": 0
+      },
+      "set_E": {
+        "lineage_represented": 631,
+        "species_novel": 132,
+        "genus_novel": 18,
+        "family_novel": 2,
+        "order_novel": 2,
+        "class_novel": 0,
+        "phylum_novel": 0
+      }
+    },
+    "class_balance_genomes": {
+      "set_A_v2": {
+        "lineage_represented": 799,
+        "species_novel": 170,
+        "genus_novel": 25,
+        "family_novel": 3,
+        "order_novel": 2,
+        "class_novel": 1,
+        "phylum_novel": 0
+      },
+      "set_B_v2": {
+        "lineage_represented": 775,
+        "species_novel": 186,
+        "genus_novel": 32,
+        "family_novel": 5,
+        "order_novel": 2,
+        "class_novel": 0,
+        "phylum_novel": 0
+      },
+      "set_C_clean": {
+        "lineage_represented": 320,
+        "species_novel": 330,
+        "genus_novel": 210,
+        "family_novel": 100,
+        "order_novel": 40,
+        "class_novel": 0,
+        "phylum_novel": 0
+      },
+      "set_D_clean": {
+        "lineage_represented": 640,
+        "species_novel": 290,
+        "genus_novel": 50,
+        "family_novel": 10,
+        "order_novel": 10,
+        "class_novel": 0,
+        "phylum_novel": 0
+      },
+      "set_E": {
+        "lineage_represented": 807,
+        "species_novel": 165,
+        "genus_novel": 22,
+        "family_novel": 4,
+        "order_novel": 2,
+        "class_novel": 0,
+        "phylum_novel": 0
+      }
+    },
+    "sensitivity_suffix_stripped_clusters_changed": 47,
+    "sensitivity_train_plus_val_clusters_changed": 47
+  },
+  "class_balance_clusters": {
+    "set_A_v2": {
+      "lineage_represented": 643,
+      "species_novel": 129,
+      "genus_novel": 21,
+      "family_novel": 3,
+      "order_novel": 1,
+      "class_novel": 1,
+      "phylum_novel": 0
+    },
+    "set_B_v2": {
+      "lineage_represented": 625,
+      "species_novel": 146,
+      "genus_novel": 28,
+      "family_novel": 2,
+      "order_novel": 2,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_C_clean": {
+      "lineage_represented": 32,
+      "species_novel": 33,
+      "genus_novel": 21,
+      "family_novel": 10,
+      "order_novel": 4,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_D_clean": {
+      "lineage_represented": 64,
+      "species_novel": 29,
+      "genus_novel": 5,
+      "family_novel": 1,
+      "order_novel": 1,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_E": {
+      "lineage_represented": 631,
+      "species_novel": 132,
+      "genus_novel": 18,
+      "family_novel": 2,
+      "order_novel": 2,
+      "class_novel": 0,
+      "phylum_novel": 0
+    }
+  },
+  "class_balance_genomes": {
+    "set_A_v2": {
+      "lineage_represented": 799,
+      "species_novel": 170,
+      "genus_novel": 25,
+      "family_novel": 3,
+      "order_novel": 2,
+      "class_novel": 1,
+      "phylum_novel": 0
+    },
+    "set_B_v2": {
+      "lineage_represented": 775,
+      "species_novel": 186,
+      "genus_novel": 32,
+      "family_novel": 5,
+      "order_novel": 2,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_C_clean": {
+      "lineage_represented": 320,
+      "species_novel": 330,
+      "genus_novel": 210,
+      "family_novel": 100,
+      "order_novel": 40,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_D_clean": {
+      "lineage_represented": 640,
+      "species_novel": 290,
+      "genus_novel": 50,
+      "family_novel": 10,
+      "order_novel": 10,
+      "class_novel": 0,
+      "phylum_novel": 0
+    },
+    "set_E": {
+      "lineage_represented": 807,
+      "species_novel": 165,
+      "genus_novel": 22,
+      "family_novel": 4,
+      "order_novel": 2,
+      "class_novel": 0,
+      "phylum_novel": 0
+    }
+  },
+  "pooled_cluster_totals": {
+    "lineage_represented": {
+      "clusters": 1995,
+      "genomes": 3341
+    },
+    "species_novel": {
+      "clusters": 469,
+      "genomes": 1141
+    },
+    "genus_novel": {
+      "clusters": 93,
+      "genomes": 339
+    },
+    "family_novel": {
+      "clusters": 18,
+      "genomes": 122
+    },
+    "order_novel": {
+      "clusters": 10,
+      "genomes": 56
+    },
+    "class_novel": {
+      "clusters": 1,
+      "genomes": 1
+    },
+    "phylum_novel": {
+      "clusters": 0,
+      "genomes": 0
+    }
+  },
+  "min_clusters_for_claim": 20,
+  "classes_too_thin_for_a_claim": [
+    "family_novel",
+    "order_novel",
+    "class_novel"
+  ],
+  "classes_absent": [
+    "phylum_novel"
+  ],
+  "magicc_pooled_by_class": {
+    "lineage_represented": {
+      "n_genomes": 3341,
+      "n_clusters": 1995,
+      "completeness_mae": 3.1716,
+      "completeness_mae_ci": [
+        2.9814,
+        3.3491
+      ],
+      "completeness_bias": 0.3035,
+      "contamination_mae": 4.0167,
+      "contamination_mae_ci": [
+        3.7805,
+        4.2506
+      ],
+      "contamination_bias": -2.0454,
+      "false_fail_rate_cont5": 0.0058,
+      "false_fail_denominator": "7/1212 genomes whose TRUE contamination is < 5%",
+      "false_pass_rate_cont5": 0.0127,
+      "false_pass_denominator": "27/2129 genomes whose TRUE contamination is >= 5%",
+      "supports_claim": true
+    },
+    "species_novel": {
+      "n_genomes": 1141,
+      "n_clusters": 469,
+      "completeness_mae": 6.3267,
+      "completeness_mae_ci": [
+        5.7106,
+        6.9305
+      ],
+      "completeness_bias": -1.8834,
+      "contamination_mae": 6.9965,
+      "contamination_mae_ci": [
+        6.3128,
+        7.6938
+      ],
+      "contamination_bias": -1.7969,
+      "false_fail_rate_cont5": 0.1298,
+      "false_fail_denominator": "37/285 genomes whose TRUE contamination is < 5%",
+      "false_pass_rate_cont5": 0.0093,
+      "false_pass_denominator": "8/856 genomes whose TRUE contamination is >= 5%",
+      "supports_claim": true
+    },
+    "genus_novel": {
+      "n_genomes": 339,
+      "n_clusters": 93,
+      "completeness_mae": 10.2727,
+      "completeness_mae_ci": [
+        8.3255,
+        12.2981
+      ],
+      "completeness_bias": -6.1422,
+      "contamination_mae": 9.8583,
+      "contamination_mae_ci": [
+        7.9849,
+        11.7817
+      ],
+      "contamination_bias": -2.6419,
+      "false_fail_rate_cont5": 0.2745,
+      "false_fail_denominator": "14/51 genomes whose TRUE contamination is < 5%",
+      "false_pass_rate_cont5": 0.0174,
+      "false_pass_denominator": "5/288 genomes whose TRUE contamination is >= 5%",
+      "supports_claim": true
+    },
+    "family_novel": {
+      "n_genomes": 122,
+      "n_clusters": 18,
+      "completeness_mae": 10.499,
+      "completeness_mae_ci": [
+        6.9279,
+        13.597
+      ],
+      "completeness_bias": -7.3814,
+      "contamination_mae": 11.8143,
+      "contamination_mae_ci": [
+        10.2711,
+        13.7632
+      ],
+      "contamination_bias": 0.6411,
+      "false_fail_rate_cont5": 0.75,
+      "false_fail_denominator": "9/12 genomes whose TRUE contamination is < 5%",
+      "false_pass_rate_cont5": 0.0273,
+      "false_pass_denominator": "3/110 genomes whose TRUE contamination is >= 5%",
+      "supports_claim": false
+    },
+    "order_novel": {
+      "n_genomes": 56,
+      "n_clusters": 10,
+      "completeness_mae": 9.0872,
+      "completeness_mae_ci": [
+        7.1294,
+        11.3139
+      ],
+      "completeness_bias": -3.9135,
+      "contamination_mae": 6.367,
+      "contamination_mae_ci": [
+        5.1238,
+        8.1393
+      ],
+      "contamination_bias": -1.9971,
+      "false_fail_rate_cont5": 0.2,
+      "false_fail_denominator": "1/5 genomes whose TRUE contamination is < 5%",
+      "false_pass_rate_cont5": 0.0196,
+      "false_pass_denominator": "1/51 genomes whose TRUE contamination is >= 5%",
+      "supports_claim": false
+    },
+    "class_novel": {
+      "n_genomes": 1,
+      "n_clusters": 1,
+      "completeness_mae": 2.3663,
+      "completeness_mae_ci": [
+        2.3663,
+        2.3663
+      ],
+      "completeness_bias": 2.3663,
+      "contamination_mae": 0.1621,
+      "contamination_mae_ci": [
+        0.1621,
+        0.1621
+      ],
+      "contamination_bias": 0.1621,
+      "false_fail_rate_cont5": 0.0,
+      "false_fail_denominator": "0/1 genomes whose TRUE contamination is < 5%",
+      "false_pass_rate_cont5": null,
+      "false_pass_denominator": "0/0 genomes whose TRUE contamination is >= 5%",
+      "supports_claim": false
+    },
+    "family_novel_or_deeper (pooled)": {
+      "n_genomes": 179,
+      "n_clusters": 29,
+      "completeness_mae": 10.0119,
+      "completeness_mae_ci": [
+        7.4547,
+        12.4203
+      ],
+      "completeness_bias": -6.242,
+      "contamination_mae": 10.045,
+      "contamination_mae_ci": [
+        8.4714,
+        11.7654
+      ],
+      "contamination_bias": -0.1869,
+      "false_fail_rate_cont5": 0.5556,
+      "false_fail_denominator": "10/18 genomes whose TRUE contamination is < 5%",
+      "false_pass_rate_cont5": 0.0248,
+      "false_pass_denominator": "4/161 genomes whose TRUE contamination is >= 5%",
+      "supports_claim": true
+    },
+    "ALL (any novelty)": {
+      "n_genomes": 5000,
+      "n_clusters": 2586,
+      "completeness_mae": 4.6179,
+      "completeness_mae_ci": [
+        4.3286,
+        4.9233
+      ],
+      "completeness_bias": -0.8669,
+      "contamination_mae": 5.3086,
+      "contamination_mae_ci": [
+        5.008,
+        5.6169
+      ],
+      "contamination_bias": -1.9626,
+      "false_fail_rate_cont5": 0.0434,
+      "false_fail_denominator": "68/1566 genomes whose TRUE contamination is < 5%",
+      "false_pass_rate_cont5": 0.0128,
+      "false_pass_denominator": "44/3434 genomes whose TRUE contamination is >= 5%",
+      "supports_claim": true
+    }
+  },
+  "trend": [
+    {
+      "tool": "magicc_v5",
+      "tool_label": "MAGICC v5 (released, v0.3.0)",
+      "metric": "completeness",
+      "unit": "cluster-mean absolute error (pp)",
+      "n_clusters": 2586,
+      "spearman_rho_depth_vs_error": 0.2965651020293311,
+      "spearman_rho_ci_lo": 0.2601168570643522,
+      "spearman_rho_ci_hi": 0.330975726690493,
+      "p_spearman_two_sided": 1.1627094059083042e-53,
+      "monotone_nondecreasing_all_classes": false,
+      "monotone_nondecreasing_powered_classes": true,
+      "powered_classes": "lineage_represented;species_novel;genus_novel",
+      "min_clusters_for_powered": 20,
+      "ordered_class_means": "lineage_represented=2.850(k=1995);species_novel=5.786(k=469);genus_novel=10.359(k=93);family_novel=9.667(k=18);order_novel=10.494(k=10);class_novel=2.366(k=1)",
+      "seed": 20307020,
+      "q_bh_spearman": 9.301675247266434e-53
+    },
+    {
+      "tool": "magicc_v5",
+      "tool_label": "MAGICC v5 (released, v0.3.0)",
+      "metric": "contamination",
+      "unit": "cluster-mean absolute error (pp)",
+      "n_clusters": 2586,
+      "spearman_rho_depth_vs_error": 0.2076798966875689,
+      "spearman_rho_ci_lo": 0.16800939109294152,
+      "spearman_rho_ci_hi": 0.24768477629062588,
+      "p_spearman_two_sided": 1.3682141181997812e-26,
+      "monotone_nondecreasing_all_classes": false,
+      "monotone_nondecreasing_powered_classes": true,
+      "powered_classes": "lineage_represented;species_novel;genus_novel",
+      "min_clusters_for_powered": 20,
+      "ordered_class_means": "lineage_represented=3.231(k=1995);species_novel=5.640(k=469);genus_novel=8.345(k=93);family_novel=13.044(k=18);order_novel=8.061(k=10);class_novel=0.162(k=1)",
+      "seed": 20344476,
+      "q_bh_spearman": 3.648570981866083e-26
+    },
+    {
+      "tool": "checkm2",
+      "tool_label": "CheckM2 1.0.1",
+      "metric": "completeness",
+      "unit": "cluster-mean absolute error (pp)",
+      "n_clusters": 2586,
+      "spearman_rho_depth_vs_error": 0.08179424117873037,
+      "spearman_rho_ci_lo": 0.04421512957846293,
+      "spearman_rho_ci_hi": 0.12130543028670385,
+      "p_spearman_two_sided": 3.121334055786283e-05,
+      "monotone_nondecreasing_all_classes": false,
+      "monotone_nondecreasing_powered_classes": true,
+      "powered_classes": "lineage_represented;species_novel;genus_novel",
+      "min_clusters_for_powered": 20,
+      "ordered_class_means": "lineage_represented=4.204(k=1995);species_novel=4.390(k=469);genus_novel=5.823(k=93);family_novel=5.824(k=18);order_novel=6.026(k=10);class_novel=3.071(k=1)",
+      "seed": 20341101,
+      "q_bh_spearman": 3.121334055786283e-05
+    },
+    {
+      "tool": "checkm2",
+      "tool_label": "CheckM2 1.0.1",
+      "metric": "contamination",
+      "unit": "cluster-mean absolute error (pp)",
+      "n_clusters": 2586,
+      "spearman_rho_depth_vs_error": 0.10327753530450146,
+      "spearman_rho_ci_lo": 0.06727311271710773,
+      "spearman_rho_ci_hi": 0.14195586170736596,
+      "p_spearman_two_sided": 1.4135001464277328e-07,
+      "monotone_nondecreasing_all_classes": false,
+      "monotone_nondecreasing_powered_classes": true,
+      "powered_classes": "lineage_represented;species_novel;genus_novel",
+      "min_clusters_for_powered": 20,
+      "ordered_class_means": "lineage_represented=13.173(k=1995);species_novel=15.426(k=469);genus_novel=22.009(k=93);family_novel=25.236(k=18);order_novel=24.118(k=10);class_novel=0.070(k=1)",
+      "seed": 20277491,
+      "q_bh_spearman": 1.8846668619036437e-07
+    },
+    {
+      "tool": "cocopye",
+      "tool_label": "CoCoPyE 0.5.0",
+      "metric": "completeness",
+      "unit": "cluster-mean absolute error (pp)",
+      "n_clusters": 2586,
+      "spearman_rho_depth_vs_error": 0.23149993818642067,
+      "spearman_rho_ci_lo": 0.19365077985027235,
+      "spearman_rho_ci_hi": 0.2669102091459534,
+      "p_spearman_two_sided": 8.345439524183762e-33,
+      "monotone_nondecreasing_all_classes": false,
+      "monotone_nondecreasing_powered_classes": true,
+      "powered_classes": "lineage_represented;species_novel;genus_novel",
+      "min_clusters_for_powered": 20,
+      "ordered_class_means": "lineage_represented=3.667(k=1995);species_novel=5.811(k=469);genus_novel=9.448(k=93);family_novel=11.869(k=18);order_novel=6.418(k=10);class_novel=10.871(k=1)",
+      "seed": 20290666,
+      "q_bh_spearman": 3.338175809673505e-32
+    },
+    {
+      "tool": "cocopye",
+      "tool_label": "CoCoPyE 0.5.0",
+      "metric": "contamination",
+      "unit": "cluster-mean absolute error (pp)",
+      "n_clusters": 2586,
+      "spearman_rho_depth_vs_error": 0.10838720510899727,
+      "spearman_rho_ci_lo": 0.06903211135141249,
+      "spearman_rho_ci_hi": 0.14570942800480594,
+      "p_spearman_two_sided": 3.287271965248418e-08,
+      "monotone_nondecreasing_all_classes": false,
+      "monotone_nondecreasing_powered_classes": true,
+      "powered_classes": "lineage_represented;species_novel;genus_novel",
+      "min_clusters_for_powered": 20,
+      "ordered_class_means": "lineage_represented=13.914(k=1995);species_novel=16.866(k=469);genus_novel=20.969(k=93);family_novel=20.923(k=18);order_novel=19.075(k=10);class_novel=4.281(k=1)",
+      "seed": 20337007,
+      "q_bh_spearman": 5.2596351443974694e-08
+    },
+    {
+      "tool": "deepcheck",
+      "tool_label": "DeepCheck",
+      "metric": "completeness",
+      "unit": "cluster-mean absolute error (pp)",
+      "n_clusters": 2586,
+      "spearman_rho_depth_vs_error": 0.12136393957497942,
+      "spearman_rho_ci_lo": 0.08247491569137316,
+      "spearman_rho_ci_hi": 0.15814911444780133,
+      "p_spearman_two_sided": 5.955562679111307e-10,
+      "monotone_nondecreasing_all_classes": false,
+      "monotone_nondecreasing_powered_classes": true,
+      "powered_classes": "lineage_represented;species_novel;genus_novel",
+      "min_clusters_for_powered": 20,
+      "ordered_class_means": "lineage_represented=7.498(k=1995);species_novel=8.860(k=469);genus_novel=11.716(k=93);family_novel=13.690(k=18);order_novel=10.441(k=10);class_novel=4.239(k=1)",
+      "seed": 20333416,
+      "q_bh_spearman": 1.1911125358222614e-09
+    },
+    {
+      "tool": "deepcheck",
+      "tool_label": "DeepCheck",
+      "metric": "contamination",
+      "unit": "cluster-mean absolute error (pp)",
+      "n_clusters": 2586,
+      "spearman_rho_depth_vs_error": 0.09154624329477512,
+      "spearman_rho_ci_lo": 0.05329169690359784,
+      "spearman_rho_ci_hi": 0.12854876207560953,
+      "p_spearman_two_sided": 3.1175482609004993e-06,
+      "monotone_nondecreasing_all_classes": false,
+      "monotone_nondecreasing_powered_classes": true,
+      "powered_classes": "lineage_represented;species_novel;genus_novel",
+      "min_clusters_for_powered": 20,
+      "ordered_class_means": "lineage_represented=17.796(k=1995);species_novel=21.275(k=469);genus_novel=25.050(k=93);family_novel=28.104(k=18);order_novel=27.699(k=10);class_novel=0.068(k=1)",
+      "seed": 20339611,
+      "q_bh_spearman": 3.562912298171999e-06
+    }
+  ],
+  "outputs": [
+    "dominant_novelty_classification.tsv",
+    "novelty_ladder_metrics.tsv",
+    "novelty_ladder_paired_tests.tsv",
+    "novelty_ladder_trend.tsv",
+    "novelty_ladder_eda.json",
+    "novelty_ladder_summary.json",
+    "WS11_N_REPORT.md"
+  ]
+}

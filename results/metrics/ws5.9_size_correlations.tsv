@@ -1,0 +1,129 @@
+scope	tool	tool_label	metric	error_kind	covariate	n	n_clusters	spearman_rho	rho_ci_lo	rho_ci_hi	p_cluster_bootstrap
+POOLED_leakage_free_5_sets	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	abs	log10_dominant_genome_size_mbp	5000	1648	-0.13489579850191058	-0.1787651045285569	-0.08893483460684261	0.0009995002498750624
+POOLED_leakage_free_5_sets	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	signed	log10_dominant_genome_size_mbp	5000	1648	0.09762549833161221	0.04342536568628961	0.14936762748642687	0.0009995002498750624
+POOLED_leakage_free_5_sets	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	abs	log10_dominant_genome_size_mbp	5000	1648	-0.3300049147673153	-0.36244292280146256	-0.29408663851300604	0.0009995002498750624
+POOLED_leakage_free_5_sets	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	signed	log10_dominant_genome_size_mbp	5000	1648	0.19067796937554876	0.138237296939688	0.24268109336771357	0.0009995002498750624
+POOLED_leakage_free_5_sets	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	completeness	abs	log10_dominant_genome_size_mbp	3000	1648	0.1567244385871634			
+POOLED_leakage_free_5_sets	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	completeness	signed	log10_dominant_genome_size_mbp	3000	1648	0.03972389796097997			
+POOLED_leakage_free_5_sets	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	contamination	abs	log10_dominant_genome_size_mbp	3000	1648	-0.00187104132249066			
+POOLED_leakage_free_5_sets	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	contamination	signed	log10_dominant_genome_size_mbp	3000	1648	0.10717266765862542			
+POOLED_leakage_free_5_sets	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	completeness	abs	log10_dominant_genome_size_mbp	3000	1648	0.005643334993476136			
+POOLED_leakage_free_5_sets	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	completeness	signed	log10_dominant_genome_size_mbp	3000	1648	0.15728865321068236			
+POOLED_leakage_free_5_sets	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	contamination	abs	log10_dominant_genome_size_mbp	3000	1648	0.04324554310511252			
+POOLED_leakage_free_5_sets	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	contamination	signed	log10_dominant_genome_size_mbp	3000	1648	0.09345144096856262			
+POOLED_leakage_free_5_sets	checkm2	CheckM2 1.0.1	completeness	abs	log10_dominant_genome_size_mbp	5000	1648	-0.27325140085181976	-0.3066830037368619	-0.23978143398784693	0.0009995002498750624
+POOLED_leakage_free_5_sets	checkm2	CheckM2 1.0.1	completeness	signed	log10_dominant_genome_size_mbp	5000	1648	0.37039356384552036	0.33124864419811995	0.4078166288534498	0.0009995002498750624
+POOLED_leakage_free_5_sets	checkm2	CheckM2 1.0.1	contamination	abs	log10_dominant_genome_size_mbp	5000	1648	-0.47292757417365744	-0.49885729954768815	-0.44449989864806044	0.0009995002498750624
+POOLED_leakage_free_5_sets	checkm2	CheckM2 1.0.1	contamination	signed	log10_dominant_genome_size_mbp	5000	1648	0.5455384894119234	0.5196859001316019	0.569464756194731	0.0009995002498750624
+POOLED_leakage_free_5_sets	cocopye	CoCoPyE 0.5.0	completeness	abs	log10_dominant_genome_size_mbp	5000	1648	-0.39220298810199306	-0.4357505774031981	-0.3468122312210996	0.0009995002498750624
+POOLED_leakage_free_5_sets	cocopye	CoCoPyE 0.5.0	completeness	signed	log10_dominant_genome_size_mbp	5000	1648	0.3651242795505318	0.3224181194035246	0.4045941894536643	0.0009995002498750624
+POOLED_leakage_free_5_sets	cocopye	CoCoPyE 0.5.0	contamination	abs	log10_dominant_genome_size_mbp	5000	1648	-0.3400837660412836	-0.36935083735091306	-0.3073451692180414	0.0009995002498750624
+POOLED_leakage_free_5_sets	cocopye	CoCoPyE 0.5.0	contamination	signed	log10_dominant_genome_size_mbp	5000	1648	0.2592944343638056	0.22594344276927997	0.29126773740191747	0.0009995002498750624
+POOLED_leakage_free_5_sets	deepcheck	DeepCheck	completeness	abs	log10_dominant_genome_size_mbp	5000	1648	-0.19620741812255496	-0.24643032037482474	-0.14394460874887313	0.0009995002498750624
+POOLED_leakage_free_5_sets	deepcheck	DeepCheck	completeness	signed	log10_dominant_genome_size_mbp	5000	1648	0.5815921315715161	0.5412247411790745	0.619566004983837	0.0009995002498750624
+POOLED_leakage_free_5_sets	deepcheck	DeepCheck	contamination	abs	log10_dominant_genome_size_mbp	5000	1648	-0.37933109452192193	-0.40694146163942985	-0.35028491718834837	0.0009995002498750624
+POOLED_leakage_free_5_sets	deepcheck	DeepCheck	contamination	signed	log10_dominant_genome_size_mbp	5000	1648	0.46325557483134894	0.4367574787309726	0.4885498884169021	0.0009995002498750624
+set_A_v2	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	abs	log10_dominant_genome_size_mbp	1000	798	0.10529372463402889	0.04003879814766607	0.17009690453430604	0.00399800099950025
+set_A_v2	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	signed	log10_dominant_genome_size_mbp	1000	798	0.11974102465362045	0.05404372913679305	0.1838349972545471	0.0009995002498750624
+set_A_v2	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	abs	log10_dominant_genome_size_mbp	1000	798	-0.12137601296236261	-0.190878064586107	-0.05429471388058766	0.001999000499750125
+set_A_v2	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	signed	log10_dominant_genome_size_mbp	1000	798	-0.12137601296236261	-0.190878064586107	-0.05429471388058766	0.001999000499750125
+set_A_v2	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	completeness	abs	log10_dominant_genome_size_mbp	1000	798	0.1774786017038844	0.11401971911541908	0.2376271141376459	0.0009995002498750624
+set_A_v2	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	completeness	signed	log10_dominant_genome_size_mbp	1000	798	0.08447581764782681	0.018280425519262174	0.15121671329240374	0.012993503248375811
+set_A_v2	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	contamination	abs	log10_dominant_genome_size_mbp	1000	798	-0.10202348615071657	-0.16988769163931147	-0.037444491320433336	0.00399800099950025
+set_A_v2	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	contamination	signed	log10_dominant_genome_size_mbp	1000	798	-0.10202348615071657	-0.16988769163931147	-0.037444491320433336	0.00399800099950025
+set_A_v2	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	completeness	abs	log10_dominant_genome_size_mbp	1000	798	0.09313167189198393	0.02613076190725507	0.157096800827171	0.004997501249375313
+set_A_v2	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	completeness	signed	log10_dominant_genome_size_mbp	1000	798	0.16370529235993295	0.10162463077171259	0.22601819923801947	0.0009995002498750624
+set_A_v2	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	contamination	abs	log10_dominant_genome_size_mbp	1000	798	0.037087786685220885	-0.031196215034441647	0.10632658135779141	0.2938530734632684
+set_A_v2	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	contamination	signed	log10_dominant_genome_size_mbp	1000	798	0.037087786685220885	-0.031196215034441647	0.10632658135779141	0.2938530734632684
+set_A_v2	checkm2	CheckM2 1.0.1	completeness	abs	log10_dominant_genome_size_mbp	1000	798	0.11808324999751083	0.05380346094082035	0.1751094767302682	0.0009995002498750624
+set_A_v2	checkm2	CheckM2 1.0.1	completeness	signed	log10_dominant_genome_size_mbp	1000	798	0.3056485870613284	0.24487248734991457	0.3611468024006329	0.0009995002498750624
+set_A_v2	checkm2	CheckM2 1.0.1	contamination	abs	log10_dominant_genome_size_mbp	1000	798	0.022450508184563858	-0.04722185287627067	0.09131745925511228	0.526736631684158
+set_A_v2	checkm2	CheckM2 1.0.1	contamination	signed	log10_dominant_genome_size_mbp	1000	798	0.022450508184563858	-0.04722185287627067	0.09131745925511228	0.526736631684158
+set_A_v2	cocopye	CoCoPyE 0.5.0	completeness	abs	log10_dominant_genome_size_mbp	1000	798	0.021623283327511848	-0.0443139739359431	0.09064078154430083	0.5247376311844077
+set_A_v2	cocopye	CoCoPyE 0.5.0	completeness	signed	log10_dominant_genome_size_mbp	1000	798	0.1121326874349357	0.05062639614671273	0.17206473408775524	0.001999000499750125
+set_A_v2	cocopye	CoCoPyE 0.5.0	contamination	abs	log10_dominant_genome_size_mbp	1000	798	-0.2920433316864032	-0.3516071008450409	-0.2262934625463369	0.0009995002498750624
+set_A_v2	cocopye	CoCoPyE 0.5.0	contamination	signed	log10_dominant_genome_size_mbp	1000	798	-0.2920433316864032	-0.3516071008450409	-0.2262934625463369	0.0009995002498750624
+set_A_v2	deepcheck	DeepCheck	completeness	abs	log10_dominant_genome_size_mbp	1000	798	0.03850801500637443	-0.02310046626611288	0.09995093986821052	0.24087956021989004
+set_A_v2	deepcheck	DeepCheck	completeness	signed	log10_dominant_genome_size_mbp	1000	798	0.12863161450789173	0.06727701972936587	0.19062492953133606	0.0009995002498750624
+set_A_v2	deepcheck	DeepCheck	contamination	abs	log10_dominant_genome_size_mbp	1000	798	0.06291762455964933	-0.00177091460142476	0.12529975903958154	0.06196901549225387
+set_A_v2	deepcheck	DeepCheck	contamination	signed	log10_dominant_genome_size_mbp	1000	798	0.14627867769259856	0.07998213152891835	0.21146036516250435	0.0009995002498750624
+set_B_v2	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	abs	log10_dominant_genome_size_mbp	1000	803	0.11217084732762853	0.046333296600392475	0.1754752637357666	0.0009995002498750624
+set_B_v2	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	signed	log10_dominant_genome_size_mbp	1000	803	-0.11217084732762853	-0.17547526373576663	-0.04633329660039253	0.0009995002498750624
+set_B_v2	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	abs	log10_dominant_genome_size_mbp	1000	803	0.025135088514249233	-0.03692968835474018	0.08751387845772289	0.4127936031984008
+set_B_v2	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	signed	log10_dominant_genome_size_mbp	1000	803	0.17554799289554762	0.110232027051351	0.23511183236167346	0.0009995002498750624
+set_B_v2	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	completeness	abs	log10_dominant_genome_size_mbp	1000	803	0.12753377198396457	0.05661449084458745	0.19335919821473163	0.0009995002498750624
+set_B_v2	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	completeness	signed	log10_dominant_genome_size_mbp	1000	803	-0.12753377198396457	-0.19335919821473166	-0.056614490844587514	0.0009995002498750624
+set_B_v2	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	contamination	abs	log10_dominant_genome_size_mbp	1000	803	0.10108734532898045	0.03574605000637316	0.1634997918209442	0.004997501249375313
+set_B_v2	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	contamination	signed	log10_dominant_genome_size_mbp	1000	803	0.2567801995281497	0.19143205396801863	0.315415819245523	0.0009995002498750624
+set_B_v2	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	completeness	abs	log10_dominant_genome_size_mbp	1000	803	-0.23653593487028832	-0.2965316558936546	-0.17348723245342185	0.0009995002498750624
+set_B_v2	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	completeness	signed	log10_dominant_genome_size_mbp	1000	803	0.23653593487028832	0.1734872324534218	0.2965316558936546	0.0009995002498750624
+set_B_v2	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	contamination	abs	log10_dominant_genome_size_mbp	1000	803	0.09687732086039579	0.03311747057938413	0.16144032587038715	0.00399800099950025
+set_B_v2	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	contamination	signed	log10_dominant_genome_size_mbp	1000	803	0.11637194944387266	0.04639228203213107	0.1826225470905443	0.001999000499750125
+set_B_v2	checkm2	CheckM2 1.0.1	completeness	abs	log10_dominant_genome_size_mbp	1000	803	-0.4534226273015834	-0.5119098462138327	-0.3960458367010998	0.0009995002498750624
+set_B_v2	checkm2	CheckM2 1.0.1	completeness	signed	log10_dominant_genome_size_mbp	1000	803	0.4534226273015834	0.3960458367010997	0.5119098462138327	0.0009995002498750624
+set_B_v2	checkm2	CheckM2 1.0.1	contamination	abs	log10_dominant_genome_size_mbp	1000	803	-0.33609234922074127	-0.3915394233599028	-0.2744421648479338	0.0009995002498750624
+set_B_v2	checkm2	CheckM2 1.0.1	contamination	signed	log10_dominant_genome_size_mbp	1000	803	0.5525783211591253	0.5050201799361773	0.596939852079543	0.0009995002498750624
+set_B_v2	cocopye	CoCoPyE 0.5.0	completeness	abs	log10_dominant_genome_size_mbp	1000	803	0.016341851719029958	-0.04860949116358421	0.08014414082794749	0.6426786606696652
+set_B_v2	cocopye	CoCoPyE 0.5.0	completeness	signed	log10_dominant_genome_size_mbp	1000	803	-0.016341851719029958	-0.08014414082794759	0.048609491163584144	0.6426786606696652
+set_B_v2	cocopye	CoCoPyE 0.5.0	contamination	abs	log10_dominant_genome_size_mbp	1000	803	-0.03400608051633567	-0.09065865332739263	0.028375307262724997	0.2698650674662669
+set_B_v2	cocopye	CoCoPyE 0.5.0	contamination	signed	log10_dominant_genome_size_mbp	1000	803	0.03980256448083523	-0.02136219783342153	0.0974920283759995	0.20589705147426288
+set_B_v2	deepcheck	DeepCheck	completeness	abs	log10_dominant_genome_size_mbp	1000	803	0.30919173250622467	0.24993600559887907	0.366652629598921	0.0009995002498750624
+set_B_v2	deepcheck	DeepCheck	completeness	signed	log10_dominant_genome_size_mbp	1000	803	0.5268645690773085	0.47829739192049947	0.5733846977723225	0.0009995002498750624
+set_B_v2	deepcheck	DeepCheck	contamination	abs	log10_dominant_genome_size_mbp	1000	803	-0.19590784095284458	-0.2521133470339151	-0.13292944411296187	0.0009995002498750624
+set_B_v2	deepcheck	DeepCheck	contamination	signed	log10_dominant_genome_size_mbp	1000	803	0.3356680144681534	0.27780689647725426	0.3880069662635457	0.0009995002498750624
+set_C_clean	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	abs	log10_dominant_genome_size_mbp	1000	100	-0.061291055273384305	-0.19496626096494682	0.0725717751983343	0.3888055972013993
+set_C_clean	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	signed	log10_dominant_genome_size_mbp	1000	100	0.29872760611010574	0.14519204373109365	0.43131712287976	0.0009995002498750624
+set_C_clean	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	abs	log10_dominant_genome_size_mbp	1000	100	-0.11814728658272496	-0.22522325660728396	-1.1351440736874367e-05	0.050974512743628186
+set_C_clean	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	signed	log10_dominant_genome_size_mbp	1000	100	0.28982459649721243	0.17663453271552343	0.398318089126943	0.0009995002498750624
+set_C_clean	checkm2	CheckM2 1.0.1	completeness	abs	log10_dominant_genome_size_mbp	1000	100	0.029044661025540503	-0.04255759559854555	0.09620169940836813	0.39080459770114945
+set_C_clean	checkm2	CheckM2 1.0.1	completeness	signed	log10_dominant_genome_size_mbp	1000	100	0.0647872374230596	-0.013615401213809603	0.14190357056267836	0.10694652673663169
+set_C_clean	checkm2	CheckM2 1.0.1	contamination	abs	log10_dominant_genome_size_mbp	1000	100	-0.03255176390395915	-0.09749400810154332	0.032242719296350725	0.33483258370814595
+set_C_clean	checkm2	CheckM2 1.0.1	contamination	signed	log10_dominant_genome_size_mbp	1000	100	0.03288202058232603	-0.0320686156761925	0.09775734223634143	0.33183408295852074
+set_C_clean	cocopye	CoCoPyE 0.5.0	completeness	abs	log10_dominant_genome_size_mbp	1000	100	-0.0591849489124327	-0.12499319077632971	0.013329212795807227	0.111944027986007
+set_C_clean	cocopye	CoCoPyE 0.5.0	completeness	signed	log10_dominant_genome_size_mbp	1000	100	0.07017666400751192	0.0007149481352628997	0.13388343188737414	0.04697651174412794
+set_C_clean	cocopye	CoCoPyE 0.5.0	contamination	abs	log10_dominant_genome_size_mbp	1000	100	-0.028921700581313846	-0.09409562454812503	0.03570312665804494	0.39480259870064965
+set_C_clean	cocopye	CoCoPyE 0.5.0	contamination	signed	log10_dominant_genome_size_mbp	1000	100	0.023696276691005266	-0.03943600901028221	0.08839958498860757	0.4867566216891554
+set_C_clean	deepcheck	DeepCheck	completeness	abs	log10_dominant_genome_size_mbp	1000	100	-0.14853846137428678	-0.24491375209851388	-0.052972342593637256	0.0009995002498750624
+set_C_clean	deepcheck	DeepCheck	completeness	signed	log10_dominant_genome_size_mbp	1000	100	0.15281223720520243	0.05869609032135922	0.24833315941341988	0.0029985007496251873
+set_C_clean	deepcheck	DeepCheck	contamination	abs	log10_dominant_genome_size_mbp	1000	100	-0.03257552510392886	-0.09885456223019075	0.03277126887109415	0.33183408295852074
+set_C_clean	deepcheck	DeepCheck	contamination	signed	log10_dominant_genome_size_mbp	1000	100	0.032508561722196044	-0.032824740792841034	0.09885314288364479	0.33183408295852074
+set_D_clean	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	abs	log10_dominant_genome_size_mbp	1000	100	0.007375692481506918	-0.10427868334054294	0.12271615398916379	0.8785607196401799
+set_D_clean	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	signed	log10_dominant_genome_size_mbp	1000	100	0.200474444205051	0.07245350667550476	0.3315376389966604	0.005997001499250375
+set_D_clean	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	abs	log10_dominant_genome_size_mbp	1000	100	-0.145515868729655	-0.22522053470995823	-0.06202742085032485	0.001999000499750125
+set_D_clean	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	signed	log10_dominant_genome_size_mbp	1000	100	0.1667475809571353	0.060307170677296	0.26835179315080815	0.00399800099950025
+set_D_clean	checkm2	CheckM2 1.0.1	completeness	abs	log10_dominant_genome_size_mbp	1000	100	0.2617836511620835	0.19777935252603768	0.3170291448349231	0.0009995002498750624
+set_D_clean	checkm2	CheckM2 1.0.1	completeness	signed	log10_dominant_genome_size_mbp	1000	100	0.3677020168388383	0.2899384759974904	0.4341975848037615	0.0009995002498750624
+set_D_clean	checkm2	CheckM2 1.0.1	contamination	abs	log10_dominant_genome_size_mbp	1000	100	-0.19542782934481753	-0.2577629709433743	-0.12573678197870497	0.0009995002498750624
+set_D_clean	checkm2	CheckM2 1.0.1	contamination	signed	log10_dominant_genome_size_mbp	1000	100	0.19600757862286639	0.12651078476039893	0.25849508814331024	0.0009995002498750624
+set_D_clean	cocopye	CoCoPyE 0.5.0	completeness	abs	log10_dominant_genome_size_mbp	1000	100	-0.09331702494133155	-0.19263866887728706	0.0051530896319561615	0.06596701649175413
+set_D_clean	cocopye	CoCoPyE 0.5.0	completeness	signed	log10_dominant_genome_size_mbp	1000	100	0.14921979114095674	0.06393668960969953	0.22968888710864874	0.0009995002498750624
+set_D_clean	cocopye	CoCoPyE 0.5.0	contamination	abs	log10_dominant_genome_size_mbp	1000	100	-0.11756009692892802	-0.17745663301782902	-0.053649901913894946	0.0009995002498750624
+set_D_clean	cocopye	CoCoPyE 0.5.0	contamination	signed	log10_dominant_genome_size_mbp	1000	100	0.12951306056823642	0.061860297268683015	0.19060035344239135	0.0009995002498750624
+set_D_clean	deepcheck	DeepCheck	completeness	abs	log10_dominant_genome_size_mbp	1000	100	0.18237092995540125	0.07918386328253704	0.27137142887929416	0.004997501249375313
+set_D_clean	deepcheck	DeepCheck	completeness	signed	log10_dominant_genome_size_mbp	1000	100	0.4099446627077256	0.3264463384278387	0.4829970395821034	0.0009995002498750624
+set_D_clean	deepcheck	DeepCheck	contamination	abs	log10_dominant_genome_size_mbp	1000	100	-0.12720246388027276	-0.1885396628647756	-0.06302967654820392	0.0009995002498750624
+set_D_clean	deepcheck	DeepCheck	contamination	signed	log10_dominant_genome_size_mbp	1000	100	0.12842772575749875	0.06451804802389584	0.1893416344790473	0.0009995002498750624
+set_E	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	abs	log10_dominant_genome_size_mbp	1000	785	0.13159986774900315	0.07038128635210329	0.19607000498616167	0.0009995002498750624
+set_E	magicc_v5	MAGICC v5 (released, v0.3.0)	completeness	signed	log10_dominant_genome_size_mbp	1000	785	0.0701402728477058	0.006376297254620008	0.13272479966636613	0.030984507746126936
+set_E	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	abs	log10_dominant_genome_size_mbp	1000	785	-0.05611219024644957	-0.11489826636166972	0.005682692821244777	0.06896551724137931
+set_E	magicc_v5	MAGICC v5 (released, v0.3.0)	contamination	signed	log10_dominant_genome_size_mbp	1000	785	0.09204679036612629	0.030664685776494414	0.15236554501531277	0.001999000499750125
+set_E	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	completeness	abs	log10_dominant_genome_size_mbp	1000	785	0.1603040084403429	0.09752618467064561	0.22316194334847891	0.0009995002498750624
+set_E	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	completeness	signed	log10_dominant_genome_size_mbp	1000	785	0.12418025786425814	0.06091015933983039	0.18218440539140862	0.0009995002498750624
+set_E	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	contamination	abs	log10_dominant_genome_size_mbp	1000	785	-0.036641161419749754	-0.0995447345746371	0.026531087676571516	0.23788105947026486
+set_E	magicc_v4	MAGICC v4 (numbers in submitted manuscript)	contamination	signed	log10_dominant_genome_size_mbp	1000	785	0.11253276906033421	0.05159694779209611	0.17193444842379504	0.001999000499750125
+set_E	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	completeness	abs	log10_dominant_genome_size_mbp	1000	785	0.07033685741984211	0.006464697889222378	0.1306692375666114	0.02798600699650175
+set_E	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	completeness	signed	log10_dominant_genome_size_mbp	1000	785	0.12603047789612315	0.06231812698110319	0.18977648718977172	0.0009995002498750624
+set_E	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	contamination	abs	log10_dominant_genome_size_mbp	1000	785	0.007339549482754971	-0.05275440369422496	0.07027816325725901	0.8125937031484258
+set_E	magicc_v3	MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)	contamination	signed	log10_dominant_genome_size_mbp	1000	785	0.110742887434723	0.04896985114355631	0.17267384327363075	0.001999000499750125
+set_E	checkm2	CheckM2 1.0.1	completeness	abs	log10_dominant_genome_size_mbp	1000	785	0.17526728307535244	0.1185499816873428	0.23222132947235577	0.0009995002498750624
+set_E	checkm2	CheckM2 1.0.1	completeness	signed	log10_dominant_genome_size_mbp	1000	785	0.3059416358880517	0.2450370687818506	0.36137885419117877	0.0009995002498750624
+set_E	checkm2	CheckM2 1.0.1	contamination	abs	log10_dominant_genome_size_mbp	1000	785	-0.21863709203159704	-0.2819767843784284	-0.15556323176643785	0.0009995002498750624
+set_E	checkm2	CheckM2 1.0.1	contamination	signed	log10_dominant_genome_size_mbp	1000	785	0.33719766521023276	0.2767155579502943	0.39332978927088513	0.0009995002498750624
+set_E	cocopye	CoCoPyE 0.5.0	completeness	abs	log10_dominant_genome_size_mbp	1000	785	0.06388068701459668	0.0026572544571005744	0.12653942158258158	0.0399800099950025
+set_E	cocopye	CoCoPyE 0.5.0	completeness	signed	log10_dominant_genome_size_mbp	1000	785	0.08354830527241518	0.01637796616187117	0.14730094872984342	0.013993003498250875
+set_E	cocopye	CoCoPyE 0.5.0	contamination	abs	log10_dominant_genome_size_mbp	1000	785	-0.04203246573066314	-0.09896824393202812	0.0149501496507001	0.14492753623188406
+set_E	cocopye	CoCoPyE 0.5.0	contamination	signed	log10_dominant_genome_size_mbp	1000	785	0.005028659888378239	-0.05484747287544953	0.06613270505161577	0.9115442278860569
+set_E	deepcheck	DeepCheck	completeness	abs	log10_dominant_genome_size_mbp	1000	785	0.3118751909148349	0.2584176045633163	0.36311213202859416	0.0009995002498750624
+set_E	deepcheck	DeepCheck	completeness	signed	log10_dominant_genome_size_mbp	1000	785	0.35393397817684186	0.2938908287852366	0.4109377720845479	0.0009995002498750624
+set_E	deepcheck	DeepCheck	contamination	abs	log10_dominant_genome_size_mbp	1000	785	-0.08999535332149558	-0.15088023038340592	-0.02822469600808637	0.00399800099950025
+set_E	deepcheck	DeepCheck	contamination	signed	log10_dominant_genome_size_mbp	1000	785	0.25379586422309147	0.19085674319257961	0.31426257730099827	0.0009995002498750624

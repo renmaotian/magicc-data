@@ -1,0 +1,9 @@
+{
+  "generated_utc": "2026-07-26T22:13:03.239977+00:00",
+  "n_flagged": 300,
+  "n_control": 300,
+  "n_species": 134,
+  "n_fail": 4,
+  "seed": 1460,
+  "framing": "BINARY DETECTION ONLY \u2014 NCBI's Foreign Contamination Screen uses a different operational definition from the bp-based contamination quantified in Track A."
+}

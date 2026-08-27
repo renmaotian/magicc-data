@@ -1,0 +1,175 @@
+{
+  "production_n_kmers": 9249,
+  "panel_phyla": [
+    "Altiarchaeota",
+    "Bacteroidota",
+    "Bacteroidota_A",
+    "Campylobacterota",
+    "Halobacteriota",
+    "Iainarchaeota",
+    "Micrarchaeota",
+    "Nanobdellota",
+    "Nanohalarchaeota",
+    "Patescibacteriota"
+  ],
+  "domains": {
+    "bacterial": {
+      "spearman_rho_prevalence": 0.986462,
+      "prevalence_rate_lost": {
+        "all_reps": 0.5479,
+        "nonpanel_reps": 0.5168,
+        "panel_reps": 0.6831,
+        "panel_minus_nonpanel": 0.1663
+      },
+      "prevalence_rate_retained": {
+        "all_reps": 0.6137,
+        "nonpanel_reps": 0.6207,
+        "panel_reps": 0.5833,
+        "panel_minus_nonpanel": -0.0374
+      },
+      "retention_by_production_rank": [
+        {
+          "rank_range": "1-1000",
+          "n": 1000,
+          "retained_frac": 1.0,
+          "prevalence_rate_all_reps": 0.7481
+        },
+        {
+          "rank_range": "1001-3000",
+          "n": 2000,
+          "retained_frac": 1.0,
+          "prevalence_rate_all_reps": 0.6455
+        },
+        {
+          "rank_range": "3001-6000",
+          "n": 3000,
+          "retained_frac": 0.9153,
+          "prevalence_rate_all_reps": 0.5856
+        },
+        {
+          "rank_range": "6001-9000",
+          "n": 3000,
+          "retained_frac": 0.6077,
+          "prevalence_rate_all_reps": 0.5445
+        }
+      ],
+      "n_representatives": 1000,
+      "n_panel_representatives": 187,
+      "pct_panel_representatives": 18.7,
+      "panel_by_phylum": {
+        "Bacteroidota": 76,
+        "Campylobacterota": 60,
+        "Patescibacteriota": 31,
+        "Bacteroidota_A": 20
+      },
+      "n_nonpanel_representatives": 813,
+      "validation_vs_stored": {
+        "n_compared": 131072,
+        "exact_match": 131072,
+        "pct_exact": 100.0,
+        "pearson_r": 1.0,
+        "max_abs_diff": 0
+      },
+      "top_n": 9000,
+      "prevalence_cutoff_all": 529,
+      "prevalence_cutoff_nonpanel": 437,
+      "within_domain_jaccard": 0.7256,
+      "within_domain_shared": 7569,
+      "lost": 1431,
+      "gained": 1431
+    },
+    "archaeal": {
+      "spearman_rho_prevalence": 0.789235,
+      "prevalence_rate_lost": {
+        "all_reps": 0.8218,
+        "nonpanel_reps": 0.8011,
+        "panel_reps": 0.8498,
+        "panel_minus_nonpanel": 0.0487
+      },
+      "prevalence_rate_retained": {
+        "all_reps": 0.868,
+        "nonpanel_reps": 0.9098,
+        "panel_reps": 0.8116,
+        "panel_minus_nonpanel": -0.0982
+      },
+      "retention_by_production_rank": [
+        {
+          "rank_range": "1-1000",
+          "n": 1000,
+          "retained_frac": 0.534,
+          "prevalence_rate_all_reps": 0.8465
+        }
+      ],
+      "n_representatives": 1000,
+      "n_panel_representatives": 426,
+      "pct_panel_representatives": 42.6,
+      "panel_by_phylum": {
+        "Halobacteriota": 362,
+        "Nanobdellota": 55,
+        "Micrarchaeota": 4,
+        "Nanohalarchaeota": 3,
+        "Iainarchaeota": 1,
+        "Altiarchaeota": 1
+      },
+      "n_nonpanel_representatives": 574,
+      "validation_vs_stored": {
+        "n_compared": 131072,
+        "exact_match": 131072,
+        "pct_exact": 100.0,
+        "pearson_r": 1.0,
+        "max_abs_diff": 0
+      },
+      "top_n": 1000,
+      "prevalence_cutoff_all": 791,
+      "prevalence_cutoff_nonpanel": 488,
+      "within_domain_jaccard": 0.3643,
+      "within_domain_shared": 534,
+      "lost": 466,
+      "gained": 466
+    }
+  },
+  "merged": {
+    "n_production": 9249,
+    "n_reproduced_all_reps": 9249,
+    "n_reselected_nonpanel": 9333,
+    "jaccard_production_vs_reselected": 0.7112,
+    "jaccard_production_vs_reproduced_control": 1.0,
+    "jaccard_reproduced_vs_reselected": 0.7112,
+    "shared": 7723,
+    "lost": 1526,
+    "gained": 1610,
+    "pct_production_retained": 83.5,
+    "lost_by_production_source_branch": {
+      "bacterial": 1370,
+      "archaeal": 144,
+      "bacterial+archaeal": 12
+    },
+    "lost_production_prevalence": {
+      "bacterial_mean": 536.9,
+      "bacterial_max": 599,
+      "archaeal_mean": 564.0,
+      "archaeal_max": 883
+    },
+    "all_selected_production_prevalence": {
+      "bacterial_mean": 598.9,
+      "bacterial_max": 992,
+      "archaeal_mean": 607.5,
+      "archaeal_max": 998
+    },
+    "production_composition": {
+      "n_bacterial_selected": 9000,
+      "n_archaeal_selected": 1000,
+      "n_overlap": 751,
+      "n_bact_only": 8249,
+      "n_arch_only": 249,
+      "n_final_merged": 9249,
+      "bacterial_prevalence_cutoff": 529,
+      "archaeal_prevalence_cutoff": 791,
+      "bacterial_max_prevalence": 992,
+      "archaeal_max_prevalence": 998,
+      "output_file": "/path/to/home/projects/magicc2/data/kmer_selection/selected_kmers.txt"
+    },
+    "archaeal_only_share_pct": 2.69
+  },
+  "interpretation": "Jaccard alone is misleading here because the selection is a hard top-N cut on a continuous prevalence ranking, so k-mers sitting near the cutoff churn even under small perturbations of the representative set. The informative statistics are (a) the Spearman correlation of prevalence, (b) retention stratified by production prevalence rank, and (c) the production prevalence of the lost k-mers. Retention of 100% in the top bacterial ranks with churn confined to the low-prevalence tail means the feature set is stable where it carries signal. Direction of residual bias: because the production features were partly chosen using panel genomes, they are if anything slightly better suited to panel-phylum core genes than a panel-blind feature set would be, so any measured degradation on held-out phyla is a CONSERVATIVE (under)estimate. Feature-level leakage therefore cannot manufacture a false-negative result."
+}

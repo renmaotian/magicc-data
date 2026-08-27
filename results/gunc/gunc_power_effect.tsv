@@ -1,0 +1,25 @@
+set	db	db_label	threshold_pct	detector	n_powered	n_unpowered	sensitivity_powered	sensitivity_unpowered	delta_sensitivity_powered_minus_unpowered	delta_ci_lo	delta_ci_hi	specificity_powered	specificity_unpowered
+set_C_clean	progenomes_2.1	proGenomes 2.1	5.0	GUNC 1.1.1 (pass.GUNC == False)	681	319	0.97	0.734	0.2359	0.1518	0.3273	0.7333	0.8649
+set_C_clean	progenomes_2.1	proGenomes 2.1	5.0	MAGICC V5 (pred >= 5 %)	681	319	0.994	0.9468	0.0472	0.0238	0.073	0.6	0.5405
+set_C_clean	progenomes_2.1	proGenomes 2.1	5.0	CheckM2 (pred >= 5 %)	681	319	0.5195	0.3865	0.133	0.0574	0.2074	1.0	1.0
+set_C_clean	progenomes_2.1	proGenomes 2.1	10.0	GUNC 1.1.1 (pass.GUNC == False)	681	319	0.9753	0.7888	0.1865	0.104	0.2803	0.4688	0.7941
+set_C_clean	progenomes_2.1	proGenomes 2.1	10.0	MAGICC V5 (pred >= 10 %)	681	319	0.9892	0.9442	0.045	0.0149	0.0811	0.625	0.6618
+set_C_clean	progenomes_2.1	proGenomes 2.1	10.0	CheckM2 (pred >= 10 %)	681	319	0.1757	0.1873	-0.0116	-0.0746	0.0474	1.0	1.0
+set_C_clean	gtdb_95	GTDB r95	5.0	GUNC 1.1.1 (pass.GUNC == False)	880	120	0.9988	1.0	-0.0012	-0.0036	0.0	0.5484	0.619
+set_C_clean	gtdb_95	GTDB r95	5.0	MAGICC V5 (pred >= 5 %)	880	120	0.9859	0.9293	0.0566	0.0113	0.1067	0.5806	0.5238
+set_C_clean	gtdb_95	GTDB r95	5.0	CheckM2 (pred >= 5 %)	880	120	0.4912	0.3838	0.1073	0.0126	0.1969	1.0	1.0
+set_C_clean	gtdb_95	GTDB r95	10.0	GUNC 1.1.1 (pass.GUNC == False)	880	120	1.0	1.0	0.0	0.0	0.0	0.2769	0.3714
+set_C_clean	gtdb_95	GTDB r95	10.0	MAGICC V5 (pred >= 10 %)	880	120	0.984	0.9059	0.0782	0.0205	0.1424	0.6462	0.6571
+set_C_clean	gtdb_95	GTDB r95	10.0	CheckM2 (pred >= 10 %)	880	120	0.1791	0.1765	0.0027	-0.0795	0.0936	1.0	1.0
+set_D_clean	progenomes_2.1	proGenomes 2.1	5.0	GUNC 1.1.1 (pass.GUNC == False)	945	55	1.0	0.88	0.12	0.0303	0.1818	0.3158	1.0
+set_D_clean	progenomes_2.1	proGenomes 2.1	5.0	MAGICC V5 (pred >= 5 %)	945	55	0.9887	0.98	0.0087	-0.0166	0.0426	0.8596	0.8
+set_D_clean	progenomes_2.1	proGenomes 2.1	5.0	CheckM2 (pred >= 5 %)	945	55	0.7016	0.38	0.3216	0.1235	0.5099	1.0	1.0
+set_D_clean	progenomes_2.1	proGenomes 2.1	10.0	GUNC 1.1.1 (pass.GUNC == False)	945	55	1.0	0.9348	0.0652	0.0163	0.1034	0.1731	0.8889
+set_D_clean	progenomes_2.1	proGenomes 2.1	10.0	MAGICC V5 (pred >= 10 %)	945	55	0.9798	0.913	0.0667	0.0101	0.1051	0.9135	0.6667
+set_D_clean	progenomes_2.1	proGenomes 2.1	10.0	CheckM2 (pred >= 10 %)	945	55	0.4423	0.1739	0.2684	0.0764	0.4227	1.0	1.0
+set_D_clean	gtdb_95	GTDB r95	5.0	GUNC 1.1.1 (pass.GUNC == False)	974	26	1.0	1.0	0.0	0.0	0.0	0.322	1.0
+set_D_clean	gtdb_95	GTDB r95	5.0	MAGICC V5 (pred >= 5 %)	974	26	0.9891	0.9565	0.0325	-0.0161	0.147	0.8475	1.0
+set_D_clean	gtdb_95	GTDB r95	5.0	CheckM2 (pred >= 5 %)	974	26	0.6929	0.3478	0.3451	-0.0558	0.5241	1.0	1.0
+set_D_clean	gtdb_95	GTDB r95	10.0	GUNC 1.1.1 (pass.GUNC == False)	974	26	1.0	1.0	0.0	0.0	0.0	0.1759	0.6
+set_D_clean	gtdb_95	GTDB r95	10.0	MAGICC V5 (pred >= 10 %)	974	26	0.9792	0.8571	0.1221	0.0279	0.2403	0.8889	1.0
+set_D_clean	gtdb_95	GTDB r95	10.0	CheckM2 (pred >= 10 %)	974	26	0.4353	0.1429	0.2925	0.0091	0.4207	1.0	1.0

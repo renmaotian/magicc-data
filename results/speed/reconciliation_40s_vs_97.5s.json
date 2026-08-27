@@ -1,0 +1,113 @@
+{
+  "question": "R1-m11: reconcile '1,000 genomes in 40 seconds' (main text) with '97.5 s for 1,000 genomes' (Table S4).",
+  "verdict_summary": "The two numbers were never measurements of the same thing, and they were never even measurements of the same experiment. 97.5 s is a real end-to-end wall-clock measurement of one process. 40 s is not a measurement at all: it is 1,000 divided by the 1,451 genomes/min/thread figure printed in the same table, and 1,451 is the arithmetic mean of five per-benchmark-set throughput rates computed from MAGICC's own internal compute-phase timer. Table S4 therefore places, in a single row, a wall-clock column and a throughput column that disagree with each other by 2.36x.",
+  "figure_97_5_s": {
+    "value_s": 97.52000000000001,
+    "what_it_measured": "END-TO-END wall clock of one OS process: interpreter start, imports, Numba JIT warm-up, ONNX model load, FASTA read, k-mer counting, normalization, inference, output write, process exit.",
+    "instrument": "/usr/bin/time -v",
+    "threads": 1,
+    "input": "Set E, 1,000 genomes",
+    "model": "/path/to/home/projects/magicc2/models/magicc_v3.onnx",
+    "batch_size": 64,
+    "file_io": "uncompressed .fasta read from a directory on /dev/sdb (ext4); page-cache state at the time not recorded",
+    "command": "conda run -n magicc2 python -m magicc predict --input /path/to/home/projects/magicc2/data/benchmarks/set_E/fasta --output /path/to/home/projects/magicc2/results/memory_benchmarks/magicc_predictions.tsv --threads 1 --batch-size 64 --extension .fasta",
+    "peak_rss_gb": 0.6581,
+    "pct_cpu": 105,
+    "date": "2026-02-15",
+    "magicc_internal_total_time_s": 94.6,
+    "magicc_internal_breakdown_s": {
+      "feature_extraction_s": 91.7,
+      "normalization_s": 0.251,
+      "onnx_inference_s": 1.81
+    },
+    "process_overhead_outside_internal_timer_s": 2.92,
+    "status": "SURVIVES as a correctly-labelled end-to-end measurement, but it was made with magicc_v3.onnx, which is neither the model the manuscript reports (V4) nor the released model (V5). Superseded by the WS8.1 V5 re-measurement."
+  },
+  "figure_1451_genomes_per_min_per_thread": {
+    "value": 1450.9,
+    "how_it_was_computed": "scripts/30_benchmark_analysis.py:623 and :834 -- speed_per_thread = (n / wall_clock_s * 60) / n_threads, evaluated once per benchmark set and then arithmetically AVERAGED over the five sets.",
+    "wall_clock_s_source": "the `wall_clock_s` column of each set's magicc_predictions.tsv, written by scripts/26_benchmark_run_magicc.py:180 as total_time = feat_time + infer_time",
+    "what_that_timer_excludes": [
+      "interpreter start and imports (numpy, onnxruntime, numba)",
+      "Numba JIT compilation of the k-mer counter",
+      "ONNX model load / session creation",
+      "feature normalization (computed between the two timers, so counted nowhere)",
+      "reading the benchmark metadata table",
+      "writing the predictions TSV"
+    ],
+    "model": "magicc_v3.onnx (scripts/26 line 37 and scripts/35 line 36)",
+    "threads": 1,
+    "per_set": [
+      {
+        "set": "A_v2",
+        "n_genomes": 1000,
+        "internal_timer_s": 42.8183,
+        "threads": 1.0,
+        "genomes_per_min_per_thread": 1401.2694
+      },
+      {
+        "set": "B_v2",
+        "n_genomes": 1000,
+        "internal_timer_s": 78.1316,
+        "threads": 1.0,
+        "genomes_per_min_per_thread": 767.9352
+      },
+      {
+        "set": "C",
+        "n_genomes": 1000,
+        "internal_timer_s": 19.4318,
+        "threads": 1.0,
+        "genomes_per_min_per_thread": 3087.7187
+      },
+      {
+        "set": "D",
+        "n_genomes": 1000,
+        "internal_timer_s": 43.3448,
+        "threads": 1.0,
+        "genomes_per_min_per_thread": 1384.2491
+      },
+      {
+        "set": "E",
+        "n_genomes": 1000,
+        "internal_timer_s": 97.8069,
+        "threads": 1.0,
+        "genomes_per_min_per_thread": 613.4534
+      }
+    ],
+    "defect_1_mean_of_ratios": {
+      "explanation": "Averaging five throughput RATES gives each set equal weight regardless of how much work it represents. The five sets differ ~5-fold in per-genome cost (Set C is Patescibacteriota, median genome 0.88 Mbp, and reaches 3,088 genomes/min; Set E is finished genomes and reaches 614). The correct pooled figure is total genomes / total time.",
+      "mean_of_rates": 1450.9,
+      "pooled_total_genomes_over_total_time": 1065.6,
+      "inflation_factor": 1.362
+    },
+    "defect_2_wrong_timer": "Even the pooled 1,066 genomes/min/thread is a compute-phase figure, not wall clock.",
+    "status": "RETIRED. Not reported in the revision in this form."
+  },
+  "figure_40_s": {
+    "value_s": 40,
+    "provenance": "NOT A MEASUREMENT. No run of any length near 40 s for 1,000 genomes exists anywhere in the repository's logs or result files. The number is 1,000 genomes / 1,451 genomes-per-minute = 41.4 s, rounded down to '40 seconds'.",
+    "arithmetic_check_s": 41.35,
+    "status": "RETIRED. It inherits both defects of the 1,451 figure (mean of ratios; compute-phase timer rather than wall clock) and was never measured. It is withdrawn rather than re-explained."
+  },
+  "figure_74_4_s_and_7_9_s": {
+    "source": "scripts/40_test_cli_set_e.py -> results/phase7_set_e_test/",
+    "what_it_measured": "END-TO-END wall clock of `python -m magicc predict` as a subprocess (time.time() around subprocess.run), i.e. the same definition as the 97.5 s figure but WITHOUT the `conda run` wrapper.",
+    "one_thread_s": 74.36382985115051,
+    "forty_three_thread_s": 7.937110662460327,
+    "threads": [
+      1,
+      43
+    ],
+    "model": "magicc_v3.onnx",
+    "input": "Set E, 1,000 genomes, directory input, .fasta, batch size 64",
+    "status": "SURVIVES as an end-to-end measurement, but it is a V3 measurement and it disagrees with the 97.5 s figure by 23 s for nominally the same configuration on the same day. The two differ in wrapper (`conda run` vs direct) and in unrecorded machine state; neither run recorded load average or page-cache state, so the 23 s cannot be attributed from the archive. Both are superseded by the WS8.1 re-measurement, which records load average and repeats 3 times.",
+    "note_43_threads": "7.9 s at 43 threads corresponds to 176 genomes/min/thread, not 1,451 -- per-thread throughput FALLS with thread count because the fixed startup cost is amortised over a shorter run. Any per-thread ratio must therefore carry its thread count, which is exactly R1-m20's complaint."
+  },
+  "table_S4_internal_inconsistency": {
+    "row": "MAGICC | 1 thread | 0.66 GB | 97.5 s | 1,451 genomes/min/thread",
+    "problem": "1,000 genomes in 97.5 s is 615 genomes/min/thread, not 1,451. The wall-clock column and the throughput column of the same row come from two different experiments run with two different timers.",
+    "ratio": 2.358,
+    "same_defect_in_competitor_rows": "The competitor throughput column is derived the same way. CheckM2's row states 32 threads and 86 min 37 s, which is 0.361 genomes/min/thread, but the table prints 0.82. So the published 1,700x and 2,100x speed ratios divide one tool's mean-of-ratios by another tool's mean-of-ratios, and neither numerator nor denominator is the wall clock printed beside it."
+  },
+  "what_the_revision_reports_instead": "One uniformly defined metric: end-to-end wall clock from process start to results written, including model and database load, measured with /usr/bin/time -v, repeated 3 times per cell on a verified-idle host with the load average recorded alongside every run, at 1/8/16/32 threads, on an identical input set for every tool. Per-thread throughput is reported only as a secondary quantity, always with its thread count."
+}

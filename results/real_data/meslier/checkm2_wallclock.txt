@@ -1,0 +1,9 @@
+tool=checkm2
+version=CheckM2 1.0.1
+set=meslier
+wall_clock_s=1489
+threads=12
+started=2026-07-26T16:50:32-05:00
+finished=2026-07-26T17:15:21-05:00
+n_genomes=394
+note=ACCURACY RUN, not the controlled speed benchmark (WS8.1). Shared, concurrently loaded 48-core machine; wall-clock indicative only.

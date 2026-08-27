@@ -1,0 +1,5131 @@
+{
+  "generated_by": "scripts/160_ws8_prepare_inputs.py",
+  "source": "/path/to/magicc/data/benchmarks/set_E/fasta",
+  "subsample_seed_string": "magicc-ws8-speed-subsample-v1",
+  "subsample_seed_crc32": 3017395416,
+  "subsample_rng": "numpy.random.default_rng(crc32_seed).choice(n, size=100, replace=False)",
+  "set_E_full": {
+    "n_genomes": 1000,
+    "total_sequence_bp": 4806980767,
+    "total_file_bytes": 4870577419,
+    "mean_bp_per_genome": 4806980.767,
+    "median_bp_per_genome": 4313155.0,
+    "min_bp": 510246,
+    "max_bp": 18250187,
+    "path_list": "/path/to/magicc/results/revision/speed/inputs/set_E_full.txt",
+    "directory": "/path/to/magicc/data/benchmarks/set_E/fasta"
+  },
+  "set_E_100": {
+    "n_genomes": 100,
+    "total_sequence_bp": 478109066,
+    "total_file_bytes": 484419015,
+    "mean_bp_per_genome": 4781090.66,
+    "fraction_of_full_bp": 0.0994614060622473,
+    "path_list": "/path/to/magicc/results/revision/speed/inputs/set_E_100.txt",
+    "directory": "/path/to/magicc/results/revision/speed/inputs/set_E_100",
+    "members": [
+      "genome_108.fasta",
+      "genome_121.fasta",
+      "genome_122.fasta",
+      "genome_151.fasta",
+      "genome_187.fasta",
+      "genome_209.fasta",
+      "genome_21.fasta",
+      "genome_218.fasta",
+      "genome_221.fasta",
+      "genome_245.fasta",
+      "genome_246.fasta",
+      "genome_250.fasta",
+      "genome_251.fasta",
+      "genome_254.fasta",
+      "genome_257.fasta",
+      "genome_26.fasta",
+      "genome_267.fasta",
+      "genome_281.fasta",
+      "genome_306.fasta",
+      "genome_309.fasta",
+      "genome_315.fasta",
+      "genome_317.fasta",
+      "genome_343.fasta",
+      "genome_348.fasta",
+      "genome_355.fasta",
+      "genome_358.fasta",
+      "genome_37.fasta",
+      "genome_372.fasta",
+      "genome_375.fasta",
+      "genome_4.fasta",
+      "genome_403.fasta",
+      "genome_412.fasta",
+      "genome_416.fasta",
+      "genome_426.fasta",
+      "genome_431.fasta",
+      "genome_469.fasta",
+      "genome_471.fasta",
+      "genome_48.fasta",
+      "genome_481.fasta",
+      "genome_485.fasta",
+      "genome_51.fasta",
+      "genome_525.fasta",
+      "genome_529.fasta",
+      "genome_542.fasta",
+      "genome_543.fasta",
+      "genome_552.fasta",
+      "genome_568.fasta",
+      "genome_590.fasta",
+      "genome_600.fasta",
+      "genome_603.fasta",
+      "genome_622.fasta",
+      "genome_635.fasta",
+      "genome_659.fasta",
+      "genome_664.fasta",
+      "genome_670.fasta",
+      "genome_673.fasta",
+      "genome_679.fasta",
+      "genome_683.fasta",
+      "genome_689.fasta",
+      "genome_700.fasta",
+      "genome_727.fasta",
+      "genome_74.fasta",
+      "genome_742.fasta",
+      "genome_750.fasta",
+      "genome_773.fasta",
+      "genome_775.fasta",
+      "genome_78.fasta",
+      "genome_780.fasta",
+      "genome_783.fasta",
+      "genome_789.fasta",
+      "genome_8.fasta",
+      "genome_802.fasta",
+      "genome_808.fasta",
+      "genome_811.fasta",
+      "genome_814.fasta",
+      "genome_815.fasta",
+      "genome_833.fasta",
+      "genome_836.fasta",
+      "genome_838.fasta",
+      "genome_841.fasta",
+      "genome_842.fasta",
+      "genome_843.fasta",
+      "genome_864.fasta",
+      "genome_867.fasta",
+      "genome_873.fasta",
+      "genome_874.fasta",
+      "genome_886.fasta",
+      "genome_891.fasta",
+      "genome_898.fasta",
+      "genome_909.fasta",
+      "genome_914.fasta",
+      "genome_918.fasta",
+      "genome_921.fasta",
+      "genome_927.fasta",
+      "genome_935.fasta",
+      "genome_945.fasta",
+      "genome_973.fasta",
+      "genome_975.fasta",
+      "genome_985.fasta",
+      "genome_991.fasta"
+    ]
+  },
+  "per_file": {
+    "genome_0.fasta": {
+      "bytes": 4912046,
+      "bp": 4851040,
+      "n_contigs": 12
+    },
+    "genome_1.fasta": {
+      "bytes": 5164602,
+      "bp": 5100629,
+      "n_contigs": 7
+    },
+    "genome_10.fasta": {
+      "bytes": 3826988,
+      "bp": 3772970,
+      "n_contigs": 219
+    },
+    "genome_100.fasta": {
+      "bytes": 5096381,
+      "bp": 5029663,
+      "n_contigs": 118
+    },
+    "genome_101.fasta": {
+      "bytes": 8142613,
+      "bp": 8039869,
+      "n_contigs": 69
+    },
+    "genome_102.fasta": {
+      "bytes": 2478170,
+      "bp": 2447125,
+      "n_contigs": 14
+    },
+    "genome_103.fasta": {
+      "bytes": 1245375,
+      "bp": 1229073,
+      "n_contigs": 30
+    },
+    "genome_104.fasta": {
+      "bytes": 2331506,
+      "bp": 2301880,
+      "n_contigs": 27
+    },
+    "genome_105.fasta": {
+      "bytes": 5258723,
+      "bp": 5191581,
+      "n_contigs": 69
+    },
+    "genome_106.fasta": {
+      "bytes": 3404172,
+      "bp": 3360829,
+      "n_contigs": 41
+    },
+    "genome_107.fasta": {
+      "bytes": 1286210,
+      "bp": 1270234,
+      "n_contigs": 3
+    },
+    "genome_108.fasta": {
+      "bytes": 3569179,
+      "bp": 3524890,
+      "n_contigs": 7
+    },
+    "genome_109.fasta": {
+      "bytes": 3838638,
+      "bp": 3790958,
+      "n_contigs": 9
+    },
+    "genome_11.fasta": {
+      "bytes": 1529531,
+      "bp": 1510064,
+      "n_contigs": 19
+    },
+    "genome_110.fasta": {
+      "bytes": 5358299,
+      "bp": 5284776,
+      "n_contigs": 233
+    },
+    "genome_111.fasta": {
+      "bytes": 6338965,
+      "bp": 6256824,
+      "n_contigs": 123
+    },
+    "genome_112.fasta": {
+      "bytes": 4631444,
+      "bp": 4573781,
+      "n_contigs": 15
+    },
+    "genome_113.fasta": {
+      "bytes": 3143631,
+      "bp": 3104143,
+      "n_contigs": 21
+    },
+    "genome_114.fasta": {
+      "bytes": 4514783,
+      "bp": 4457154,
+      "n_contigs": 59
+    },
+    "genome_115.fasta": {
+      "bytes": 4391128,
+      "bp": 4332982,
+      "n_contigs": 122
+    },
+    "genome_116.fasta": {
+      "bytes": 5816101,
+      "bp": 5743492,
+      "n_contigs": 25
+    },
+    "genome_117.fasta": {
+      "bytes": 9684637,
+      "bp": 9562825,
+      "n_contigs": 70
+    },
+    "genome_118.fasta": {
+      "bytes": 3693455,
+      "bp": 3647759,
+      "n_contigs": 3
+    },
+    "genome_119.fasta": {
+      "bytes": 2140015,
+      "bp": 2113308,
+      "n_contigs": 9
+    },
+    "genome_12.fasta": {
+      "bytes": 6114417,
+      "bp": 6038341,
+      "n_contigs": 19
+    },
+    "genome_120.fasta": {
+      "bytes": 3686168,
+      "bp": 3634683,
+      "n_contigs": 184
+    },
+    "genome_121.fasta": {
+      "bytes": 1629760,
+      "bp": 1602362,
+      "n_contigs": 229
+    },
+    "genome_122.fasta": {
+      "bytes": 6036521,
+      "bp": 5955186,
+      "n_contigs": 209
+    },
+    "genome_123.fasta": {
+      "bytes": 7323804,
+      "bp": 7226800,
+      "n_contigs": 208
+    },
+    "genome_124.fasta": {
+      "bytes": 11360749,
+      "bp": 11200481,
+      "n_contigs": 620
+    },
+    "genome_125.fasta": {
+      "bytes": 1703645,
+      "bp": 1682389,
+      "n_contigs": 7
+    },
+    "genome_126.fasta": {
+      "bytes": 4405074,
+      "bp": 4342520,
+      "n_contigs": 257
+    },
+    "genome_127.fasta": {
+      "bytes": 7761390,
+      "bp": 7652709,
+      "n_contigs": 398
+    },
+    "genome_128.fasta": {
+      "bytes": 4488646,
+      "bp": 4432909,
+      "n_contigs": 10
+    },
+    "genome_129.fasta": {
+      "bytes": 4300911,
+      "bp": 4236593,
+      "n_contigs": 348
+    },
+    "genome_13.fasta": {
+      "bytes": 5976958,
+      "bp": 5884269,
+      "n_contigs": 606
+    },
+    "genome_130.fasta": {
+      "bytes": 3099780,
+      "bp": 3061352,
+      "n_contigs": 5
+    },
+    "genome_131.fasta": {
+      "bytes": 8024265,
+      "bp": 7906554,
+      "n_contigs": 579
+    },
+    "genome_132.fasta": {
+      "bytes": 2657138,
+      "bp": 2623722,
+      "n_contigs": 19
+    },
+    "genome_133.fasta": {
+      "bytes": 3347615,
+      "bp": 3303437,
+      "n_contigs": 89
+    },
+    "genome_134.fasta": {
+      "bytes": 6286622,
+      "bp": 6208501,
+      "n_contigs": 16
+    },
+    "genome_135.fasta": {
+      "bytes": 12409045,
+      "bp": 12249595,
+      "n_contigs": 195
+    },
+    "genome_136.fasta": {
+      "bytes": 3435663,
+      "bp": 3392252,
+      "n_contigs": 31
+    },
+    "genome_137.fasta": {
+      "bytes": 4274748,
+      "bp": 4221876,
+      "n_contigs": 3
+    },
+    "genome_138.fasta": {
+      "bytes": 2739742,
+      "bp": 2705820,
+      "n_contigs": 3
+    },
+    "genome_139.fasta": {
+      "bytes": 2568389,
+      "bp": 2536555,
+      "n_contigs": 4
+    },
+    "genome_14.fasta": {
+      "bytes": 1333021,
+      "bp": 1316410,
+      "n_contigs": 5
+    },
+    "genome_140.fasta": {
+      "bytes": 3214485,
+      "bp": 3173235,
+      "n_contigs": 49
+    },
+    "genome_141.fasta": {
+      "bytes": 3534370,
+      "bp": 3490511,
+      "n_contigs": 7
+    },
+    "genome_142.fasta": {
+      "bytes": 8634147,
+      "bp": 8524278,
+      "n_contigs": 102
+    },
+    "genome_143.fasta": {
+      "bytes": 4369921,
+      "bp": 4315875,
+      "n_contigs": 3
+    },
+    "genome_144.fasta": {
+      "bytes": 6876423,
+      "bp": 6789622,
+      "n_contigs": 59
+    },
+    "genome_145.fasta": {
+      "bytes": 3474035,
+      "bp": 3430576,
+      "n_contigs": 18
+    },
+    "genome_146.fasta": {
+      "bytes": 1170440,
+      "bp": 1155865,
+      "n_contigs": 4
+    },
+    "genome_147.fasta": {
+      "bytes": 4095379,
+      "bp": 4042144,
+      "n_contigs": 84
+    },
+    "genome_148.fasta": {
+      "bytes": 4190897,
+      "bp": 4137454,
+      "n_contigs": 53
+    },
+    "genome_149.fasta": {
+      "bytes": 2748227,
+      "bp": 2714171,
+      "n_contigs": 4
+    },
+    "genome_15.fasta": {
+      "bytes": 7954743,
+      "bp": 7830397,
+      "n_contigs": 843
+    },
+    "genome_150.fasta": {
+      "bytes": 2522527,
+      "bp": 2491224,
+      "n_contigs": 5
+    },
+    "genome_151.fasta": {
+      "bytes": 4865581,
+      "bp": 4792174,
+      "n_contigs": 415
+    },
+    "genome_152.fasta": {
+      "bytes": 2233622,
+      "bp": 2205500,
+      "n_contigs": 17
+    },
+    "genome_153.fasta": {
+      "bytes": 1398721,
+      "bp": 1381357,
+      "n_contigs": 3
+    },
+    "genome_154.fasta": {
+      "bytes": 5198373,
+      "bp": 5120729,
+      "n_contigs": 419
+    },
+    "genome_155.fasta": {
+      "bytes": 5727113,
+      "bp": 5652478,
+      "n_contigs": 122
+    },
+    "genome_156.fasta": {
+      "bytes": 902177,
+      "bp": 889604,
+      "n_contigs": 45
+    },
+    "genome_157.fasta": {
+      "bytes": 2498572,
+      "bp": 2464263,
+      "n_contigs": 108
+    },
+    "genome_158.fasta": {
+      "bytes": 8122054,
+      "bp": 8000392,
+      "n_contigs": 664
+    },
+    "genome_159.fasta": {
+      "bytes": 3086470,
+      "bp": 3048173,
+      "n_contigs": 6
+    },
+    "genome_16.fasta": {
+      "bytes": 3229232,
+      "bp": 3188592,
+      "n_contigs": 25
+    },
+    "genome_160.fasta": {
+      "bytes": 4112698,
+      "bp": 4061602,
+      "n_contigs": 10
+    },
+    "genome_161.fasta": {
+      "bytes": 5767322,
+      "bp": 5694098,
+      "n_contigs": 63
+    },
+    "genome_162.fasta": {
+      "bytes": 5964732,
+      "bp": 5890811,
+      "n_contigs": 9
+    },
+    "genome_163.fasta": {
+      "bytes": 7003332,
+      "bp": 6911390,
+      "n_contigs": 171
+    },
+    "genome_164.fasta": {
+      "bytes": 1923290,
+      "bp": 1899449,
+      "n_contigs": 3
+    },
+    "genome_165.fasta": {
+      "bytes": 6119032,
+      "bp": 6036431,
+      "n_contigs": 221
+    },
+    "genome_166.fasta": {
+      "bytes": 8552087,
+      "bp": 8445523,
+      "n_contigs": 30
+    },
+    "genome_167.fasta": {
+      "bytes": 4700045,
+      "bp": 4640570,
+      "n_contigs": 46
+    },
+    "genome_168.fasta": {
+      "bytes": 10955621,
+      "bp": 10800364,
+      "n_contigs": 615
+    },
+    "genome_169.fasta": {
+      "bytes": 1364504,
+      "bp": 1343547,
+      "n_contigs": 131
+    },
+    "genome_17.fasta": {
+      "bytes": 7516417,
+      "bp": 7421468,
+      "n_contigs": 69
+    },
+    "genome_170.fasta": {
+      "bytes": 3054684,
+      "bp": 3016305,
+      "n_contigs": 21
+    },
+    "genome_171.fasta": {
+      "bytes": 1262578,
+      "bp": 1246164,
+      "n_contigs": 26
+    },
+    "genome_172.fasta": {
+      "bytes": 11761082,
+      "bp": 11613255,
+      "n_contigs": 82
+    },
+    "genome_173.fasta": {
+      "bytes": 3429587,
+      "bp": 3384232,
+      "n_contigs": 97
+    },
+    "genome_174.fasta": {
+      "bytes": 7433054,
+      "bp": 7337323,
+      "n_contigs": 126
+    },
+    "genome_175.fasta": {
+      "bytes": 3014668,
+      "bp": 2972087,
+      "n_contigs": 167
+    },
+    "genome_176.fasta": {
+      "bytes": 7533649,
+      "bp": 7430928,
+      "n_contigs": 304
+    },
+    "genome_177.fasta": {
+      "bytes": 5358075,
+      "bp": 5280272,
+      "n_contigs": 362
+    },
+    "genome_178.fasta": {
+      "bytes": 7076963,
+      "bp": 6988969,
+      "n_contigs": 20
+    },
+    "genome_179.fasta": {
+      "bytes": 1030036,
+      "bp": 1017223,
+      "n_contigs": 3
+    },
+    "genome_18.fasta": {
+      "bytes": 4446529,
+      "bp": 4386856,
+      "n_contigs": 152
+    },
+    "genome_180.fasta": {
+      "bytes": 5219499,
+      "bp": 5153967,
+      "n_contigs": 34
+    },
+    "genome_181.fasta": {
+      "bytes": 6158826,
+      "bp": 6079345,
+      "n_contigs": 107
+    },
+    "genome_182.fasta": {
+      "bytes": 2851039,
+      "bp": 2815616,
+      "n_contigs": 7
+    },
+    "genome_183.fasta": {
+      "bytes": 2619190,
+      "bp": 2585479,
+      "n_contigs": 43
+    },
+    "genome_184.fasta": {
+      "bytes": 1075572,
+      "bp": 1062136,
+      "n_contigs": 5
+    },
+    "genome_185.fasta": {
+      "bytes": 10435843,
+      "bp": 10303916,
+      "n_contigs": 96
+    },
+    "genome_186.fasta": {
+      "bytes": 4723565,
+      "bp": 4640203,
+      "n_contigs": 782
+    },
+    "genome_187.fasta": {
+      "bytes": 3338841,
+      "bp": 3294223,
+      "n_contigs": 106
+    },
+    "genome_188.fasta": {
+      "bytes": 8832452,
+      "bp": 8718995,
+      "n_contigs": 138
+    },
+    "genome_189.fasta": {
+      "bytes": 3094134,
+      "bp": 3055650,
+      "n_contigs": 9
+    },
+    "genome_19.fasta": {
+      "bytes": 1059352,
+      "bp": 1046149,
+      "n_contigs": 4
+    },
+    "genome_190.fasta": {
+      "bytes": 5466460,
+      "bp": 5379196,
+      "n_contigs": 616
+    },
+    "genome_191.fasta": {
+      "bytes": 7615800,
+      "bp": 7520638,
+      "n_contigs": 35
+    },
+    "genome_192.fasta": {
+      "bytes": 3893970,
+      "bp": 3837555,
+      "n_contigs": 262
+    },
+    "genome_193.fasta": {
+      "bytes": 3426527,
+      "bp": 3383944,
+      "n_contigs": 9
+    },
+    "genome_194.fasta": {
+      "bytes": 2777518,
+      "bp": 2742432,
+      "n_contigs": 25
+    },
+    "genome_195.fasta": {
+      "bytes": 8253641,
+      "bp": 8150175,
+      "n_contigs": 49
+    },
+    "genome_196.fasta": {
+      "bytes": 1270714,
+      "bp": 1254899,
+      "n_contigs": 4
+    },
+    "genome_197.fasta": {
+      "bytes": 2110414,
+      "bp": 2081450,
+      "n_contigs": 91
+    },
+    "genome_198.fasta": {
+      "bytes": 932675,
+      "bp": 919473,
+      "n_contigs": 53
+    },
+    "genome_199.fasta": {
+      "bytes": 5350973,
+      "bp": 5282002,
+      "n_contigs": 92
+    },
+    "genome_2.fasta": {
+      "bytes": 6327901,
+      "bp": 6239191,
+      "n_contigs": 352
+    },
+    "genome_20.fasta": {
+      "bytes": 6912395,
+      "bp": 6825799,
+      "n_contigs": 40
+    },
+    "genome_200.fasta": {
+      "bytes": 6071385,
+      "bp": 5995053,
+      "n_contigs": 43
+    },
+    "genome_201.fasta": {
+      "bytes": 4264035,
+      "bp": 4201223,
+      "n_contigs": 316
+    },
+    "genome_202.fasta": {
+      "bytes": 6597960,
+      "bp": 6497307,
+      "n_contigs": 596
+    },
+    "genome_203.fasta": {
+      "bytes": 3710896,
+      "bp": 3656127,
+      "n_contigs": 280
+    },
+    "genome_204.fasta": {
+      "bytes": 1977903,
+      "bp": 1953389,
+      "n_contigs": 3
+    },
+    "genome_205.fasta": {
+      "bytes": 7723582,
+      "bp": 7619404,
+      "n_contigs": 272
+    },
+    "genome_206.fasta": {
+      "bytes": 2560776,
+      "bp": 2528514,
+      "n_contigs": 21
+    },
+    "genome_207.fasta": {
+      "bytes": 6449458,
+      "bp": 6344717,
+      "n_contigs": 780
+    },
+    "genome_208.fasta": {
+      "bytes": 4793476,
+      "bp": 4734168,
+      "n_contigs": 4
+    },
+    "genome_209.fasta": {
+      "bytes": 4286656,
+      "bp": 4230400,
+      "n_contigs": 104
+    },
+    "genome_21.fasta": {
+      "bytes": 8609058,
+      "bp": 8483764,
+      "n_contigs": 608
+    },
+    "genome_210.fasta": {
+      "bytes": 1427977,
+      "bp": 1410252,
+      "n_contigs": 3
+    },
+    "genome_211.fasta": {
+      "bytes": 2072511,
+      "bp": 2046668,
+      "n_contigs": 8
+    },
+    "genome_212.fasta": {
+      "bytes": 6105538,
+      "bp": 6027786,
+      "n_contigs": 74
+    },
+    "genome_213.fasta": {
+      "bytes": 4710580,
+      "bp": 4647743,
+      "n_contigs": 145
+    },
+    "genome_214.fasta": {
+      "bytes": 4694994,
+      "bp": 4625481,
+      "n_contigs": 360
+    },
+    "genome_215.fasta": {
+      "bytes": 7320799,
+      "bp": 7230005,
+      "n_contigs": 13
+    },
+    "genome_216.fasta": {
+      "bytes": 3363208,
+      "bp": 3321654,
+      "n_contigs": 1
+    },
+    "genome_217.fasta": {
+      "bytes": 1164480,
+      "bp": 1149598,
+      "n_contigs": 16
+    },
+    "genome_218.fasta": {
+      "bytes": 8895241,
+      "bp": 8783437,
+      "n_contigs": 63
+    },
+    "genome_219.fasta": {
+      "bytes": 2895912,
+      "bp": 2858257,
+      "n_contigs": 60
+    },
+    "genome_22.fasta": {
+      "bytes": 1630817,
+      "bp": 1610498,
+      "n_contigs": 6
+    },
+    "genome_220.fasta": {
+      "bytes": 3227902,
+      "bp": 3187225,
+      "n_contigs": 26
+    },
+    "genome_221.fasta": {
+      "bytes": 516689,
+      "bp": 510246,
+      "n_contigs": 2
+    },
+    "genome_222.fasta": {
+      "bytes": 4243280,
+      "bp": 4190475,
+      "n_contigs": 13
+    },
+    "genome_223.fasta": {
+      "bytes": 5915146,
+      "bp": 5841474,
+      "n_contigs": 20
+    },
+    "genome_224.fasta": {
+      "bytes": 2096958,
+      "bp": 2069120,
+      "n_contigs": 61
+    },
+    "genome_225.fasta": {
+      "bytes": 6729508,
+      "bp": 6645970,
+      "n_contigs": 14
+    },
+    "genome_226.fasta": {
+      "bytes": 7187547,
+      "bp": 7097001,
+      "n_contigs": 56
+    },
+    "genome_227.fasta": {
+      "bytes": 1701444,
+      "bp": 1680374,
+      "n_contigs": 2
+    },
+    "genome_228.fasta": {
+      "bytes": 7037080,
+      "bp": 6949532,
+      "n_contigs": 21
+    },
+    "genome_229.fasta": {
+      "bytes": 5454486,
+      "bp": 5374259,
+      "n_contigs": 400
+    },
+    "genome_23.fasta": {
+      "bytes": 6612360,
+      "bp": 6521476,
+      "n_contigs": 295
+    },
+    "genome_230.fasta": {
+      "bytes": 1650451,
+      "bp": 1628914,
+      "n_contigs": 37
+    },
+    "genome_231.fasta": {
+      "bytes": 1686173,
+      "bp": 1665259,
+      "n_contigs": 3
+    },
+    "genome_232.fasta": {
+      "bytes": 2566912,
+      "bp": 2531267,
+      "n_contigs": 123
+    },
+    "genome_233.fasta": {
+      "bytes": 4801592,
+      "bp": 4741299,
+      "n_contigs": 32
+    },
+    "genome_234.fasta": {
+      "bytes": 6235425,
+      "bp": 6158378,
+      "n_contigs": 2
+    },
+    "genome_235.fasta": {
+      "bytes": 4311034,
+      "bp": 4249293,
+      "n_contigs": 267
+    },
+    "genome_236.fasta": {
+      "bytes": 2162453,
+      "bp": 2135596,
+      "n_contigs": 5
+    },
+    "genome_237.fasta": {
+      "bytes": 1824792,
+      "bp": 1801943,
+      "n_contigs": 10
+    },
+    "genome_238.fasta": {
+      "bytes": 3213113,
+      "bp": 3171906,
+      "n_contigs": 48
+    },
+    "genome_239.fasta": {
+      "bytes": 10961829,
+      "bp": 10820895,
+      "n_contigs": 172
+    },
+    "genome_24.fasta": {
+      "bytes": 7832616,
+      "bp": 7735225,
+      "n_contigs": 22
+    },
+    "genome_240.fasta": {
+      "bytes": 1557673,
+      "bp": 1538122,
+      "n_contigs": 10
+    },
+    "genome_241.fasta": {
+      "bytes": 5362777,
+      "bp": 5295578,
+      "n_contigs": 31
+    },
+    "genome_242.fasta": {
+      "bytes": 1474734,
+      "bp": 1456218,
+      "n_contigs": 10
+    },
+    "genome_243.fasta": {
+      "bytes": 8265734,
+      "bp": 8143244,
+      "n_contigs": 635
+    },
+    "genome_244.fasta": {
+      "bytes": 4150391,
+      "bp": 4093068,
+      "n_contigs": 192
+    },
+    "genome_245.fasta": {
+      "bytes": 2148255,
+      "bp": 2120855,
+      "n_contigs": 28
+    },
+    "genome_246.fasta": {
+      "bytes": 4442792,
+      "bp": 4386085,
+      "n_contigs": 58
+    },
+    "genome_247.fasta": {
+      "bytes": 6480194,
+      "bp": 6396547,
+      "n_contigs": 114
+    },
+    "genome_248.fasta": {
+      "bytes": 5220615,
+      "bp": 5152597,
+      "n_contigs": 111
+    },
+    "genome_249.fasta": {
+      "bytes": 7750402,
+      "bp": 7649552,
+      "n_contigs": 164
+    },
+    "genome_25.fasta": {
+      "bytes": 4082196,
+      "bp": 4026663,
+      "n_contigs": 168
+    },
+    "genome_250.fasta": {
+      "bytes": 2344013,
+      "bp": 2313240,
+      "n_contigs": 58
+    },
+    "genome_251.fasta": {
+      "bytes": 6572880,
+      "bp": 6470849,
+      "n_contigs": 650
+    },
+    "genome_252.fasta": {
+      "bytes": 8168126,
+      "bp": 8066536,
+      "n_contigs": 23
+    },
+    "genome_253.fasta": {
+      "bytes": 2122503,
+      "bp": 2095759,
+      "n_contigs": 17
+    },
+    "genome_254.fasta": {
+      "bytes": 4911859,
+      "bp": 4850479,
+      "n_contigs": 23
+    },
+    "genome_255.fasta": {
+      "bytes": 3350460,
+      "bp": 3308575,
+      "n_contigs": 16
+    },
+    "genome_256.fasta": {
+      "bytes": 3906821,
+      "bp": 3854927,
+      "n_contigs": 116
+    },
+    "genome_257.fasta": {
+      "bytes": 3768020,
+      "bp": 3720527,
+      "n_contigs": 31
+    },
+    "genome_258.fasta": {
+      "bytes": 7264894,
+      "bp": 7168627,
+      "n_contigs": 207
+    },
+    "genome_259.fasta": {
+      "bytes": 2703854,
+      "bp": 2669040,
+      "n_contigs": 45
+    },
+    "genome_26.fasta": {
+      "bytes": 4283409,
+      "bp": 4225218,
+      "n_contigs": 174
+    },
+    "genome_260.fasta": {
+      "bytes": 3554650,
+      "bp": 3510668,
+      "n_contigs": 3
+    },
+    "genome_261.fasta": {
+      "bytes": 5242113,
+      "bp": 5173233,
+      "n_contigs": 129
+    },
+    "genome_262.fasta": {
+      "bytes": 6079671,
+      "bp": 6003510,
+      "n_contigs": 34
+    },
+    "genome_263.fasta": {
+      "bytes": 5629087,
+      "bp": 5559333,
+      "n_contigs": 8
+    },
+    "genome_264.fasta": {
+      "bytes": 2452944,
+      "bp": 2421431,
+      "n_contigs": 39
+    },
+    "genome_265.fasta": {
+      "bytes": 4013913,
+      "bp": 3945226,
+      "n_contigs": 597
+    },
+    "genome_266.fasta": {
+      "bytes": 4618733,
+      "bp": 4556631,
+      "n_contigs": 160
+    },
+    "genome_267.fasta": {
+      "bytes": 1241151,
+      "bp": 1225795,
+      "n_contigs": 1
+    },
+    "genome_268.fasta": {
+      "bytes": 3678994,
+      "bp": 3626820,
+      "n_contigs": 213
+    },
+    "genome_269.fasta": {
+      "bytes": 7676826,
+      "bp": 7580994,
+      "n_contigs": 33
+    },
+    "genome_27.fasta": {
+      "bytes": 2461462,
+      "bp": 2430917,
+      "n_contigs": 5
+    },
+    "genome_270.fasta": {
+      "bytes": 2314317,
+      "bp": 2285712,
+      "n_contigs": 1
+    },
+    "genome_271.fasta": {
+      "bytes": 8382984,
+      "bp": 8270595,
+      "n_contigs": 272
+    },
+    "genome_272.fasta": {
+      "bytes": 8401248,
+      "bp": 8296917,
+      "n_contigs": 19
+    },
+    "genome_273.fasta": {
+      "bytes": 9307251,
+      "bp": 9184742,
+      "n_contigs": 236
+    },
+    "genome_274.fasta": {
+      "bytes": 2006084,
+      "bp": 1980694,
+      "n_contigs": 20
+    },
+    "genome_275.fasta": {
+      "bytes": 2673415,
+      "bp": 2640218,
+      "n_contigs": 6
+    },
+    "genome_276.fasta": {
+      "bytes": 4675813,
+      "bp": 4617836,
+      "n_contigs": 8
+    },
+    "genome_277.fasta": {
+      "bytes": 2501088,
+      "bp": 2465051,
+      "n_contigs": 162
+    },
+    "genome_278.fasta": {
+      "bytes": 6760577,
+      "bp": 6674806,
+      "n_contigs": 72
+    },
+    "genome_279.fasta": {
+      "bytes": 2328476,
+      "bp": 2299474,
+      "n_contigs": 8
+    },
+    "genome_28.fasta": {
+      "bytes": 6559187,
+      "bp": 6464500,
+      "n_contigs": 437
+    },
+    "genome_280.fasta": {
+      "bytes": 3936329,
+      "bp": 3873900,
+      "n_contigs": 434
+    },
+    "genome_281.fasta": {
+      "bytes": 1008052,
+      "bp": 995511,
+      "n_contigs": 3
+    },
+    "genome_282.fasta": {
+      "bytes": 9820010,
+      "bp": 9697242,
+      "n_contigs": 48
+    },
+    "genome_283.fasta": {
+      "bytes": 3716894,
+      "bp": 3670973,
+      "n_contigs": 1
+    },
+    "genome_284.fasta": {
+      "bytes": 8410210,
+      "bp": 8304907,
+      "n_contigs": 46
+    },
+    "genome_285.fasta": {
+      "bytes": 8968443,
+      "bp": 8835926,
+      "n_contigs": 677
+    },
+    "genome_286.fasta": {
+      "bytes": 4328107,
+      "bp": 4273544,
+      "n_contigs": 35
+    },
+    "genome_287.fasta": {
+      "bytes": 3591517,
+      "bp": 3545643,
+      "n_contigs": 48
+    },
+    "genome_288.fasta": {
+      "bytes": 3640219,
+      "bp": 3594999,
+      "n_contigs": 9
+    },
+    "genome_289.fasta": {
+      "bytes": 6248557,
+      "bp": 6170964,
+      "n_contigs": 14
+    },
+    "genome_29.fasta": {
+      "bytes": 2892484,
+      "bp": 2855473,
+      "n_contigs": 42
+    },
+    "genome_290.fasta": {
+      "bytes": 7175973,
+      "bp": 7086256,
+      "n_contigs": 35
+    },
+    "genome_291.fasta": {
+      "bytes": 5631516,
+      "bp": 5560932,
+      "n_contigs": 33
+    },
+    "genome_292.fasta": {
+      "bytes": 2068947,
+      "bp": 2040931,
+      "n_contigs": 79
+    },
+    "genome_293.fasta": {
+      "bytes": 4525607,
+      "bp": 4467043,
+      "n_contigs": 84
+    },
+    "genome_294.fasta": {
+      "bytes": 4472179,
+      "bp": 4414403,
+      "n_contigs": 81
+    },
+    "genome_295.fasta": {
+      "bytes": 2639131,
+      "bp": 2606326,
+      "n_contigs": 7
+    },
+    "genome_296.fasta": {
+      "bytes": 1402947,
+      "bp": 1385371,
+      "n_contigs": 8
+    },
+    "genome_297.fasta": {
+      "bytes": 1548007,
+      "bp": 1527046,
+      "n_contigs": 58
+    },
+    "genome_298.fasta": {
+      "bytes": 9090123,
+      "bp": 8977545,
+      "n_contigs": 11
+    },
+    "genome_299.fasta": {
+      "bytes": 4558572,
+      "bp": 4482229,
+      "n_contigs": 626
+    },
+    "genome_3.fasta": {
+      "bytes": 11182777,
+      "bp": 11043443,
+      "n_contigs": 42
+    },
+    "genome_30.fasta": {
+      "bytes": 3760253,
+      "bp": 3713305,
+      "n_contigs": 17
+    },
+    "genome_300.fasta": {
+      "bytes": 3486481,
+      "bp": 3442855,
+      "n_contigs": 18
+    },
+    "genome_301.fasta": {
+      "bytes": 3294174,
+      "bp": 3253030,
+      "n_contigs": 15
+    },
+    "genome_302.fasta": {
+      "bytes": 2609372,
+      "bp": 2576650,
+      "n_contigs": 16
+    },
+    "genome_303.fasta": {
+      "bytes": 5521923,
+      "bp": 5452515,
+      "n_contigs": 39
+    },
+    "genome_304.fasta": {
+      "bytes": 3622368,
+      "bp": 3577197,
+      "n_contigs": 14
+    },
+    "genome_305.fasta": {
+      "bytes": 3378752,
+      "bp": 3335335,
+      "n_contigs": 54
+    },
+    "genome_306.fasta": {
+      "bytes": 4100424,
+      "bp": 4048592,
+      "n_contigs": 38
+    },
+    "genome_307.fasta": {
+      "bytes": 8844656,
+      "bp": 8732828,
+      "n_contigs": 82
+    },
+    "genome_308.fasta": {
+      "bytes": 2797559,
+      "bp": 2762892,
+      "n_contigs": 4
+    },
+    "genome_309.fasta": {
+      "bytes": 4247809,
+      "bp": 4194922,
+      "n_contigs": 14
+    },
+    "genome_31.fasta": {
+      "bytes": 10537719,
+      "bp": 10397302,
+      "n_contigs": 326
+    },
+    "genome_310.fasta": {
+      "bytes": 5386929,
+      "bp": 5318334,
+      "n_contigs": 65
+    },
+    "genome_311.fasta": {
+      "bytes": 3273073,
+      "bp": 3232215,
+      "n_contigs": 14
+    },
+    "genome_312.fasta": {
+      "bytes": 9097218,
+      "bp": 8982275,
+      "n_contigs": 82
+    },
+    "genome_313.fasta": {
+      "bytes": 2203471,
+      "bp": 2174417,
+      "n_contigs": 58
+    },
+    "genome_314.fasta": {
+      "bytes": 1523323,
+      "bp": 1504292,
+      "n_contigs": 7
+    },
+    "genome_315.fasta": {
+      "bytes": 2914861,
+      "bp": 2878842,
+      "n_contigs": 1
+    },
+    "genome_316.fasta": {
+      "bytes": 8355562,
+      "bp": 8246723,
+      "n_contigs": 178
+    },
+    "genome_317.fasta": {
+      "bytes": 1809665,
+      "bp": 1787229,
+      "n_contigs": 3
+    },
+    "genome_318.fasta": {
+      "bytes": 7539755,
+      "bp": 7445468,
+      "n_contigs": 37
+    },
+    "genome_319.fasta": {
+      "bytes": 4366698,
+      "bp": 4307496,
+      "n_contigs": 164
+    },
+    "genome_32.fasta": {
+      "bytes": 4494608,
+      "bp": 4433768,
+      "n_contigs": 171
+    },
+    "genome_320.fasta": {
+      "bytes": 2567600,
+      "bp": 2535148,
+      "n_contigs": 24
+    },
+    "genome_321.fasta": {
+      "bytes": 2443277,
+      "bp": 2412663,
+      "n_contigs": 14
+    },
+    "genome_322.fasta": {
+      "bytes": 3422243,
+      "bp": 3378455,
+      "n_contigs": 48
+    },
+    "genome_323.fasta": {
+      "bytes": 3038019,
+      "bp": 2999835,
+      "n_contigs": 21
+    },
+    "genome_324.fasta": {
+      "bytes": 8581676,
+      "bp": 8471154,
+      "n_contigs": 141
+    },
+    "genome_325.fasta": {
+      "bytes": 5070668,
+      "bp": 5006914,
+      "n_contigs": 36
+    },
+    "genome_326.fasta": {
+      "bytes": 1942423,
+      "bp": 1916552,
+      "n_contigs": 59
+    },
+    "genome_327.fasta": {
+      "bytes": 3765539,
+      "bp": 3714895,
+      "n_contigs": 130
+    },
+    "genome_328.fasta": {
+      "bytes": 5073184,
+      "bp": 5009522,
+      "n_contigs": 32
+    },
+    "genome_329.fasta": {
+      "bytes": 4504350,
+      "bp": 4447974,
+      "n_contigs": 24
+    },
+    "genome_33.fasta": {
+      "bytes": 935106,
+      "bp": 923469,
+      "n_contigs": 3
+    },
+    "genome_330.fasta": {
+      "bytes": 8818053,
+      "bp": 8708196,
+      "n_contigs": 31
+    },
+    "genome_331.fasta": {
+      "bytes": 3497286,
+      "bp": 3452983,
+      "n_contigs": 35
+    },
+    "genome_332.fasta": {
+      "bytes": 3743967,
+      "bp": 3695855,
+      "n_contigs": 59
+    },
+    "genome_333.fasta": {
+      "bytes": 8486306,
+      "bp": 8381405,
+      "n_contigs": 4
+    },
+    "genome_334.fasta": {
+      "bytes": 1619954,
+      "bp": 1599921,
+      "n_contigs": 1
+    },
+    "genome_335.fasta": {
+      "bytes": 1101643,
+      "bp": 1087978,
+      "n_contigs": 2
+    },
+    "genome_336.fasta": {
+      "bytes": 3277475,
+      "bp": 3235957,
+      "n_contigs": 33
+    },
+    "genome_337.fasta": {
+      "bytes": 3004621,
+      "bp": 2966945,
+      "n_contigs": 18
+    },
+    "genome_338.fasta": {
+      "bytes": 3569629,
+      "bp": 3524435,
+      "n_contigs": 35
+    },
+    "genome_339.fasta": {
+      "bytes": 7058544,
+      "bp": 6968672,
+      "n_contigs": 85
+    },
+    "genome_34.fasta": {
+      "bytes": 2313486,
+      "bp": 2283269,
+      "n_contigs": 55
+    },
+    "genome_340.fasta": {
+      "bytes": 3949872,
+      "bp": 3899728,
+      "n_contigs": 43
+    },
+    "genome_341.fasta": {
+      "bytes": 1559765,
+      "bp": 1540413,
+      "n_contigs": 3
+    },
+    "genome_342.fasta": {
+      "bytes": 4663999,
+      "bp": 4606193,
+      "n_contigs": 7
+    },
+    "genome_343.fasta": {
+      "bytes": 7004976,
+      "bp": 6918014,
+      "n_contigs": 15
+    },
+    "genome_344.fasta": {
+      "bytes": 4217752,
+      "bp": 4164522,
+      "n_contigs": 36
+    },
+    "genome_345.fasta": {
+      "bytes": 7135388,
+      "bp": 7046083,
+      "n_contigs": 38
+    },
+    "genome_346.fasta": {
+      "bytes": 8701183,
+      "bp": 8592960,
+      "n_contigs": 25
+    },
+    "genome_347.fasta": {
+      "bytes": 7589607,
+      "bp": 7487699,
+      "n_contigs": 254
+    },
+    "genome_348.fasta": {
+      "bytes": 4015997,
+      "bp": 3966257,
+      "n_contigs": 5
+    },
+    "genome_349.fasta": {
+      "bytes": 1607484,
+      "bp": 1587574,
+      "n_contigs": 2
+    },
+    "genome_35.fasta": {
+      "bytes": 7019755,
+      "bp": 6927578,
+      "n_contigs": 178
+    },
+    "genome_350.fasta": {
+      "bytes": 7956126,
+      "bp": 7852346,
+      "n_contigs": 173
+    },
+    "genome_351.fasta": {
+      "bytes": 4904550,
+      "bp": 4841914,
+      "n_contigs": 65
+    },
+    "genome_352.fasta": {
+      "bytes": 8271501,
+      "bp": 8130535,
+      "n_contigs": 1204
+    },
+    "genome_353.fasta": {
+      "bytes": 5023364,
+      "bp": 4954223,
+      "n_contigs": 219
+    },
+    "genome_354.fasta": {
+      "bytes": 4771342,
+      "bp": 4707125,
+      "n_contigs": 165
+    },
+    "genome_355.fasta": {
+      "bytes": 2463548,
+      "bp": 2432658,
+      "n_contigs": 15
+    },
+    "genome_356.fasta": {
+      "bytes": 5350796,
+      "bp": 5282265,
+      "n_contigs": 77
+    },
+    "genome_357.fasta": {
+      "bytes": 5631406,
+      "bp": 5559793,
+      "n_contigs": 65
+    },
+    "genome_358.fasta": {
+      "bytes": 6468383,
+      "bp": 6388174,
+      "n_contigs": 11
+    },
+    "genome_359.fasta": {
+      "bytes": 3794444,
+      "bp": 3747314,
+      "n_contigs": 9
+    },
+    "genome_36.fasta": {
+      "bytes": 9194525,
+      "bp": 9075414,
+      "n_contigs": 178
+    },
+    "genome_360.fasta": {
+      "bytes": 1792534,
+      "bp": 1770275,
+      "n_contigs": 4
+    },
+    "genome_361.fasta": {
+      "bytes": 1474378,
+      "bp": 1456049,
+      "n_contigs": 4
+    },
+    "genome_362.fasta": {
+      "bytes": 8712644,
+      "bp": 8600874,
+      "n_contigs": 130
+    },
+    "genome_363.fasta": {
+      "bytes": 5511518,
+      "bp": 5442550,
+      "n_contigs": 29
+    },
+    "genome_364.fasta": {
+      "bytes": 4539262,
+      "bp": 4476529,
+      "n_contigs": 210
+    },
+    "genome_365.fasta": {
+      "bytes": 2963207,
+      "bp": 2925173,
+      "n_contigs": 46
+    },
+    "genome_366.fasta": {
+      "bytes": 2464084,
+      "bp": 2431914,
+      "n_contigs": 55
+    },
+    "genome_367.fasta": {
+      "bytes": 2061893,
+      "bp": 2036372,
+      "n_contigs": 2
+    },
+    "genome_368.fasta": {
+      "bytes": 8100528,
+      "bp": 7999226,
+      "n_contigs": 40
+    },
+    "genome_369.fasta": {
+      "bytes": 1403622,
+      "bp": 1386228,
+      "n_contigs": 2
+    },
+    "genome_37.fasta": {
+      "bytes": 3138901,
+      "bp": 3099995,
+      "n_contigs": 5
+    },
+    "genome_370.fasta": {
+      "bytes": 6202351,
+      "bp": 6112243,
+      "n_contigs": 420
+    },
+    "genome_371.fasta": {
+      "bytes": 4061466,
+      "bp": 4011035,
+      "n_contigs": 9
+    },
+    "genome_372.fasta": {
+      "bytes": 4353890,
+      "bp": 4298626,
+      "n_contigs": 48
+    },
+    "genome_373.fasta": {
+      "bytes": 3968994,
+      "bp": 3919833,
+      "n_contigs": 5
+    },
+    "genome_374.fasta": {
+      "bytes": 4795770,
+      "bp": 4729618,
+      "n_contigs": 214
+    },
+    "genome_375.fasta": {
+      "bytes": 2595925,
+      "bp": 2561992,
+      "n_contigs": 59
+    },
+    "genome_376.fasta": {
+      "bytes": 6325329,
+      "bp": 6246252,
+      "n_contigs": 31
+    },
+    "genome_377.fasta": {
+      "bytes": 729284,
+      "bp": 720187,
+      "n_contigs": 3
+    },
+    "genome_378.fasta": {
+      "bytes": 8420832,
+      "bp": 8312870,
+      "n_contigs": 124
+    },
+    "genome_379.fasta": {
+      "bytes": 914648,
+      "bp": 903195,
+      "n_contigs": 5
+    },
+    "genome_38.fasta": {
+      "bytes": 2345248,
+      "bp": 2315890,
+      "n_contigs": 13
+    },
+    "genome_380.fasta": {
+      "bytes": 4836038,
+      "bp": 4775924,
+      "n_contigs": 13
+    },
+    "genome_381.fasta": {
+      "bytes": 771836,
+      "bp": 762150,
+      "n_contigs": 5
+    },
+    "genome_382.fasta": {
+      "bytes": 763106,
+      "bp": 753589,
+      "n_contigs": 3
+    },
+    "genome_383.fasta": {
+      "bytes": 6381433,
+      "bp": 6301808,
+      "n_contigs": 26
+    },
+    "genome_384.fasta": {
+      "bytes": 11661750,
+      "bp": 11510100,
+      "n_contigs": 238
+    },
+    "genome_385.fasta": {
+      "bytes": 9688436,
+      "bp": 9567843,
+      "n_contigs": 30
+    },
+    "genome_386.fasta": {
+      "bytes": 5820830,
+      "bp": 5739667,
+      "n_contigs": 287
+    },
+    "genome_387.fasta": {
+      "bytes": 8553039,
+      "bp": 8436786,
+      "n_contigs": 328
+    },
+    "genome_388.fasta": {
+      "bytes": 7916008,
+      "bp": 7811789,
+      "n_contigs": 205
+    },
+    "genome_389.fasta": {
+      "bytes": 2733633,
+      "bp": 2699787,
+      "n_contigs": 3
+    },
+    "genome_39.fasta": {
+      "bytes": 3983188,
+      "bp": 3928775,
+      "n_contigs": 167
+    },
+    "genome_390.fasta": {
+      "bytes": 8637548,
+      "bp": 8527348,
+      "n_contigs": 111
+    },
+    "genome_391.fasta": {
+      "bytes": 1346917,
+      "bp": 1330224,
+      "n_contigs": 2
+    },
+    "genome_392.fasta": {
+      "bytes": 3493650,
+      "bp": 3447921,
+      "n_contigs": 81
+    },
+    "genome_393.fasta": {
+      "bytes": 1741720,
+      "bp": 1720120,
+      "n_contigs": 3
+    },
+    "genome_394.fasta": {
+      "bytes": 5080200,
+      "bp": 5017172,
+      "n_contigs": 10
+    },
+    "genome_395.fasta": {
+      "bytes": 5777688,
+      "bp": 5701075,
+      "n_contigs": 166
+    },
+    "genome_396.fasta": {
+      "bytes": 3083571,
+      "bp": 3045310,
+      "n_contigs": 6
+    },
+    "genome_397.fasta": {
+      "bytes": 1876517,
+      "bp": 1853190,
+      "n_contigs": 5
+    },
+    "genome_398.fasta": {
+      "bytes": 2320007,
+      "bp": 2286590,
+      "n_contigs": 151
+    },
+    "genome_399.fasta": {
+      "bytes": 6196168,
+      "bp": 6118066,
+      "n_contigs": 51
+    },
+    "genome_4.fasta": {
+      "bytes": 4460030,
+      "bp": 4400715,
+      "n_contigs": 142
+    },
+    "genome_40.fasta": {
+      "bytes": 5118423,
+      "bp": 5046106,
+      "n_contigs": 291
+    },
+    "genome_400.fasta": {
+      "bytes": 1966813,
+      "bp": 1942276,
+      "n_contigs": 8
+    },
+    "genome_401.fasta": {
+      "bytes": 7560970,
+      "bp": 7466236,
+      "n_contigs": 43
+    },
+    "genome_402.fasta": {
+      "bytes": 1634542,
+      "bp": 1614299,
+      "n_contigs": 2
+    },
+    "genome_403.fasta": {
+      "bytes": 1865704,
+      "bp": 1842638,
+      "n_contigs": 1
+    },
+    "genome_404.fasta": {
+      "bytes": 2873609,
+      "bp": 2838068,
+      "n_contigs": 2
+    },
+    "genome_405.fasta": {
+      "bytes": 6703403,
+      "bp": 6608438,
+      "n_contigs": 379
+    },
+    "genome_406.fasta": {
+      "bytes": 3088443,
+      "bp": 3049863,
+      "n_contigs": 14
+    },
+    "genome_407.fasta": {
+      "bytes": 4595773,
+      "bp": 4536563,
+      "n_contigs": 79
+    },
+    "genome_408.fasta": {
+      "bytes": 8128712,
+      "bp": 8019235,
+      "n_contigs": 286
+    },
+    "genome_409.fasta": {
+      "bytes": 3095383,
+      "bp": 3055697,
+      "n_contigs": 46
+    },
+    "genome_41.fasta": {
+      "bytes": 3556768,
+      "bp": 3512259,
+      "n_contigs": 19
+    },
+    "genome_410.fasta": {
+      "bytes": 5528776,
+      "bp": 5442839,
+      "n_contigs": 551
+    },
+    "genome_411.fasta": {
+      "bytes": 1376620,
+      "bp": 1358988,
+      "n_contigs": 20
+    },
+    "genome_412.fasta": {
+      "bytes": 6886481,
+      "bp": 6800827,
+      "n_contigs": 20
+    },
+    "genome_413.fasta": {
+      "bytes": 3296677,
+      "bp": 3254793,
+      "n_contigs": 38
+    },
+    "genome_414.fasta": {
+      "bytes": 4017866,
+      "bp": 3963876,
+      "n_contigs": 139
+    },
+    "genome_415.fasta": {
+      "bytes": 2984412,
+      "bp": 2945068,
+      "n_contigs": 79
+    },
+    "genome_416.fasta": {
+      "bytes": 5324731,
+      "bp": 5252494,
+      "n_contigs": 201
+    },
+    "genome_417.fasta": {
+      "bytes": 3107595,
+      "bp": 3062840,
+      "n_contigs": 200
+    },
+    "genome_418.fasta": {
+      "bytes": 8725287,
+      "bp": 8615431,
+      "n_contigs": 67
+    },
+    "genome_419.fasta": {
+      "bytes": 8263329,
+      "bp": 8151863,
+      "n_contigs": 291
+    },
+    "genome_42.fasta": {
+      "bytes": 4214498,
+      "bp": 4161819,
+      "n_contigs": 21
+    },
+    "genome_420.fasta": {
+      "bytes": 3126783,
+      "bp": 3087860,
+      "n_contigs": 10
+    },
+    "genome_421.fasta": {
+      "bytes": 3190149,
+      "bp": 3148176,
+      "n_contigs": 81
+    },
+    "genome_422.fasta": {
+      "bytes": 1494177,
+      "bp": 1475666,
+      "n_contigs": 2
+    },
+    "genome_423.fasta": {
+      "bytes": 14873236,
+      "bp": 14682252,
+      "n_contigs": 225
+    },
+    "genome_424.fasta": {
+      "bytes": 3347389,
+      "bp": 3301861,
+      "n_contigs": 132
+    },
+    "genome_425.fasta": {
+      "bytes": 3482969,
+      "bp": 3439583,
+      "n_contigs": 12
+    },
+    "genome_426.fasta": {
+      "bytes": 2695391,
+      "bp": 2658796,
+      "n_contigs": 105
+    },
+    "genome_427.fasta": {
+      "bytes": 6331357,
+      "bp": 6253096,
+      "n_contigs": 3
+    },
+    "genome_428.fasta": {
+      "bytes": 2193131,
+      "bp": 2164966,
+      "n_contigs": 34
+    },
+    "genome_429.fasta": {
+      "bytes": 1976426,
+      "bp": 1951554,
+      "n_contigs": 15
+    },
+    "genome_43.fasta": {
+      "bytes": 12648012,
+      "bp": 12489310,
+      "n_contigs": 82
+    },
+    "genome_430.fasta": {
+      "bytes": 3974849,
+      "bp": 3924305,
+      "n_contigs": 46
+    },
+    "genome_431.fasta": {
+      "bytes": 3623182,
+      "bp": 3578030,
+      "n_contigs": 13
+    },
+    "genome_432.fasta": {
+      "bytes": 5705752,
+      "bp": 5610754,
+      "n_contigs": 764
+    },
+    "genome_433.fasta": {
+      "bytes": 9612420,
+      "bp": 9476668,
+      "n_contigs": 527
+    },
+    "genome_434.fasta": {
+      "bytes": 9188720,
+      "bp": 9074992,
+      "n_contigs": 9
+    },
+    "genome_435.fasta": {
+      "bytes": 8180255,
+      "bp": 8079003,
+      "n_contigs": 8
+    },
+    "genome_436.fasta": {
+      "bytes": 2573529,
+      "bp": 2541629,
+      "n_contigs": 4
+    },
+    "genome_437.fasta": {
+      "bytes": 3114245,
+      "bp": 3075019,
+      "n_contigs": 25
+    },
+    "genome_438.fasta": {
+      "bytes": 3814920,
+      "bp": 3765995,
+      "n_contigs": 57
+    },
+    "genome_439.fasta": {
+      "bytes": 2228006,
+      "bp": 2200181,
+      "n_contigs": 10
+    },
+    "genome_44.fasta": {
+      "bytes": 9404162,
+      "bp": 9278540,
+      "n_contigs": 307
+    },
+    "genome_440.fasta": {
+      "bytes": 607070,
+      "bp": 598942,
+      "n_contigs": 20
+    },
+    "genome_441.fasta": {
+      "bytes": 2690341,
+      "bp": 2656871,
+      "n_contigs": 8
+    },
+    "genome_442.fasta": {
+      "bytes": 9759072,
+      "bp": 9625481,
+      "n_contigs": 411
+    },
+    "genome_443.fasta": {
+      "bytes": 4855332,
+      "bp": 4794907,
+      "n_contigs": 15
+    },
+    "genome_444.fasta": {
+      "bytes": 3890672,
+      "bp": 3840749,
+      "n_contigs": 59
+    },
+    "genome_445.fasta": {
+      "bytes": 4713135,
+      "bp": 4645616,
+      "n_contigs": 293
+    },
+    "genome_446.fasta": {
+      "bytes": 11215024,
+      "bp": 11063723,
+      "n_contigs": 397
+    },
+    "genome_447.fasta": {
+      "bytes": 2171521,
+      "bp": 2143886,
+      "n_contigs": 26
+    },
+    "genome_448.fasta": {
+      "bytes": 6744763,
+      "bp": 6656609,
+      "n_contigs": 151
+    },
+    "genome_449.fasta": {
+      "bytes": 1743176,
+      "bp": 1721500,
+      "n_contigs": 5
+    },
+    "genome_45.fasta": {
+      "bytes": 4690585,
+      "bp": 4630098,
+      "n_contigs": 83
+    },
+    "genome_450.fasta": {
+      "bytes": 1594507,
+      "bp": 1574725,
+      "n_contigs": 3
+    },
+    "genome_451.fasta": {
+      "bytes": 3987100,
+      "bp": 3936876,
+      "n_contigs": 31
+    },
+    "genome_452.fasta": {
+      "bytes": 1629962,
+      "bp": 1609774,
+      "n_contigs": 2
+    },
+    "genome_453.fasta": {
+      "bytes": 5928533,
+      "bp": 5854798,
+      "n_contigs": 17
+    },
+    "genome_454.fasta": {
+      "bytes": 3362588,
+      "bp": 3320913,
+      "n_contigs": 5
+    },
+    "genome_455.fasta": {
+      "bytes": 5923974,
+      "bp": 5850356,
+      "n_contigs": 15
+    },
+    "genome_456.fasta": {
+      "bytes": 6911868,
+      "bp": 6826117,
+      "n_contigs": 13
+    },
+    "genome_457.fasta": {
+      "bytes": 2181113,
+      "bp": 2154088,
+      "n_contigs": 3
+    },
+    "genome_458.fasta": {
+      "bytes": 3821956,
+      "bp": 3773930,
+      "n_contigs": 26
+    },
+    "genome_459.fasta": {
+      "bytes": 1928310,
+      "bp": 1904313,
+      "n_contigs": 6
+    },
+    "genome_46.fasta": {
+      "bytes": 2101502,
+      "bp": 2075309,
+      "n_contigs": 8
+    },
+    "genome_460.fasta": {
+      "bytes": 3681073,
+      "bp": 3635530,
+      "n_contigs": 3
+    },
+    "genome_461.fasta": {
+      "bytes": 1106571,
+      "bp": 1092087,
+      "n_contigs": 26
+    },
+    "genome_462.fasta": {
+      "bytes": 7335252,
+      "bp": 7239114,
+      "n_contigs": 174
+    },
+    "genome_463.fasta": {
+      "bytes": 8057019,
+      "bp": 7956427,
+      "n_contigs": 35
+    },
+    "genome_464.fasta": {
+      "bytes": 8728877,
+      "bp": 8614397,
+      "n_contigs": 209
+    },
+    "genome_465.fasta": {
+      "bytes": 5482741,
+      "bp": 5413685,
+      "n_contigs": 42
+    },
+    "genome_466.fasta": {
+      "bytes": 11926346,
+      "bp": 11725494,
+      "n_contigs": 1652
+    },
+    "genome_467.fasta": {
+      "bytes": 8222274,
+      "bp": 8120151,
+      "n_contigs": 19
+    },
+    "genome_468.fasta": {
+      "bytes": 5344736,
+      "bp": 5276157,
+      "n_contigs": 83
+    },
+    "genome_469.fasta": {
+      "bytes": 4967360,
+      "bp": 4904945,
+      "n_contigs": 34
+    },
+    "genome_47.fasta": {
+      "bytes": 783708,
+      "bp": 773940,
+      "n_contigs": 3
+    },
+    "genome_470.fasta": {
+      "bytes": 6178209,
+      "bp": 6083101,
+      "n_contigs": 587
+    },
+    "genome_471.fasta": {
+      "bytes": 6428669,
+      "bp": 6340954,
+      "n_contigs": 260
+    },
+    "genome_472.fasta": {
+      "bytes": 2983600,
+      "bp": 2943102,
+      "n_contigs": 116
+    },
+    "genome_473.fasta": {
+      "bytes": 4832189,
+      "bp": 4771822,
+      "n_contigs": 22
+    },
+    "genome_474.fasta": {
+      "bytes": 8593606,
+      "bp": 8487383,
+      "n_contigs": 4
+    },
+    "genome_475.fasta": {
+      "bytes": 4579471,
+      "bp": 4522283,
+      "n_contigs": 20
+    },
+    "genome_476.fasta": {
+      "bytes": 1962739,
+      "bp": 1938091,
+      "n_contigs": 13
+    },
+    "genome_477.fasta": {
+      "bytes": 3259182,
+      "bp": 3218816,
+      "n_contigs": 4
+    },
+    "genome_478.fasta": {
+      "bytes": 3551631,
+      "bp": 3507176,
+      "n_contigs": 19
+    },
+    "genome_479.fasta": {
+      "bytes": 4830921,
+      "bp": 4766572,
+      "n_contigs": 146
+    },
+    "genome_48.fasta": {
+      "bytes": 7328398,
+      "bp": 7237420,
+      "n_contigs": 16
+    },
+    "genome_480.fasta": {
+      "bytes": 7053188,
+      "bp": 6964276,
+      "n_contigs": 57
+    },
+    "genome_481.fasta": {
+      "bytes": 5248183,
+      "bp": 5182314,
+      "n_contigs": 33
+    },
+    "genome_482.fasta": {
+      "bytes": 6993741,
+      "bp": 6906437,
+      "n_contigs": 30
+    },
+    "genome_483.fasta": {
+      "bytes": 3933771,
+      "bp": 3884918,
+      "n_contigs": 9
+    },
+    "genome_484.fasta": {
+      "bytes": 2931645,
+      "bp": 2894839,
+      "n_contigs": 19
+    },
+    "genome_485.fasta": {
+      "bytes": 9663964,
+      "bp": 9534857,
+      "n_contigs": 305
+    },
+    "genome_486.fasta": {
+      "bytes": 3077483,
+      "bp": 3037878,
+      "n_contigs": 52
+    },
+    "genome_487.fasta": {
+      "bytes": 7833396,
+      "bp": 7724774,
+      "n_contigs": 369
+    },
+    "genome_488.fasta": {
+      "bytes": 955471,
+      "bp": 943233,
+      "n_contigs": 14
+    },
+    "genome_489.fasta": {
+      "bytes": 5285638,
+      "bp": 5212685,
+      "n_contigs": 236
+    },
+    "genome_49.fasta": {
+      "bytes": 4833984,
+      "bp": 4773465,
+      "n_contigs": 27
+    },
+    "genome_490.fasta": {
+      "bytes": 2778587,
+      "bp": 2739757,
+      "n_contigs": 141
+    },
+    "genome_491.fasta": {
+      "bytes": 7580991,
+      "bp": 7484928,
+      "n_contigs": 77
+    },
+    "genome_492.fasta": {
+      "bytes": 9981326,
+      "bp": 9856961,
+      "n_contigs": 35
+    },
+    "genome_493.fasta": {
+      "bytes": 3477223,
+      "bp": 3433707,
+      "n_contigs": 18
+    },
+    "genome_494.fasta": {
+      "bytes": 2471760,
+      "bp": 2440866,
+      "n_contigs": 12
+    },
+    "genome_495.fasta": {
+      "bytes": 3827490,
+      "bp": 3776642,
+      "n_contigs": 112
+    },
+    "genome_496.fasta": {
+      "bytes": 4699774,
+      "bp": 4635904,
+      "n_contigs": 181
+    },
+    "genome_497.fasta": {
+      "bytes": 3007960,
+      "bp": 2970505,
+      "n_contigs": 10
+    },
+    "genome_498.fasta": {
+      "bytes": 3827586,
+      "bp": 3779229,
+      "n_contigs": 35
+    },
+    "genome_499.fasta": {
+      "bytes": 2164418,
+      "bp": 2136314,
+      "n_contigs": 44
+    },
+    "genome_5.fasta": {
+      "bytes": 5160829,
+      "bp": 5095962,
+      "n_contigs": 38
+    },
+    "genome_50.fasta": {
+      "bytes": 5549969,
+      "bp": 5465129,
+      "n_contigs": 524
+    },
+    "genome_500.fasta": {
+      "bytes": 2740839,
+      "bp": 2706488,
+      "n_contigs": 16
+    },
+    "genome_501.fasta": {
+      "bytes": 6088210,
+      "bp": 6010944,
+      "n_contigs": 66
+    },
+    "genome_502.fasta": {
+      "bytes": 2610728,
+      "bp": 2578305,
+      "n_contigs": 6
+    },
+    "genome_503.fasta": {
+      "bytes": 1532527,
+      "bp": 1513574,
+      "n_contigs": 1
+    },
+    "genome_504.fasta": {
+      "bytes": 9371621,
+      "bp": 9253225,
+      "n_contigs": 86
+    },
+    "genome_505.fasta": {
+      "bytes": 2658845,
+      "bp": 2625763,
+      "n_contigs": 8
+    },
+    "genome_506.fasta": {
+      "bytes": 1830612,
+      "bp": 1807852,
+      "n_contigs": 5
+    },
+    "genome_507.fasta": {
+      "bytes": 4495662,
+      "bp": 4439479,
+      "n_contigs": 21
+    },
+    "genome_508.fasta": {
+      "bytes": 2997670,
+      "bp": 2960564,
+      "n_contigs": 3
+    },
+    "genome_509.fasta": {
+      "bytes": 16171913,
+      "bp": 15968049,
+      "n_contigs": 130
+    },
+    "genome_51.fasta": {
+      "bytes": 15705218,
+      "bp": 15509360,
+      "n_contigs": 63
+    },
+    "genome_510.fasta": {
+      "bytes": 2672711,
+      "bp": 2634903,
+      "n_contigs": 150
+    },
+    "genome_511.fasta": {
+      "bytes": 3461189,
+      "bp": 3418298,
+      "n_contigs": 5
+    },
+    "genome_512.fasta": {
+      "bytes": 4162296,
+      "bp": 4109206,
+      "n_contigs": 53
+    },
+    "genome_513.fasta": {
+      "bytes": 6136775,
+      "bp": 6056035,
+      "n_contigs": 154
+    },
+    "genome_514.fasta": {
+      "bytes": 1056278,
+      "bp": 1043173,
+      "n_contigs": 2
+    },
+    "genome_515.fasta": {
+      "bytes": 4614605,
+      "bp": 4552712,
+      "n_contigs": 155
+    },
+    "genome_516.fasta": {
+      "bytes": 3799831,
+      "bp": 3750838,
+      "n_contigs": 65
+    },
+    "genome_517.fasta": {
+      "bytes": 2372876,
+      "bp": 2338959,
+      "n_contigs": 145
+    },
+    "genome_518.fasta": {
+      "bytes": 8593347,
+      "bp": 8486743,
+      "n_contigs": 16
+    },
+    "genome_519.fasta": {
+      "bytes": 5310556,
+      "bp": 5244768,
+      "n_contigs": 7
+    },
+    "genome_52.fasta": {
+      "bytes": 10336822,
+      "bp": 10200694,
+      "n_contigs": 269
+    },
+    "genome_520.fasta": {
+      "bytes": 8947344,
+      "bp": 8822305,
+      "n_contigs": 450
+    },
+    "genome_521.fasta": {
+      "bytes": 8264952,
+      "bp": 8136343,
+      "n_contigs": 824
+    },
+    "genome_522.fasta": {
+      "bytes": 8253273,
+      "bp": 8138124,
+      "n_contigs": 413
+    },
+    "genome_523.fasta": {
+      "bytes": 13254975,
+      "bp": 13083916,
+      "n_contigs": 231
+    },
+    "genome_524.fasta": {
+      "bytes": 3575057,
+      "bp": 3530760,
+      "n_contigs": 5
+    },
+    "genome_525.fasta": {
+      "bytes": 9733461,
+      "bp": 9612491,
+      "n_contigs": 25
+    },
+    "genome_526.fasta": {
+      "bytes": 3152542,
+      "bp": 3109032,
+      "n_contigs": 146
+    },
+    "genome_527.fasta": {
+      "bytes": 3765232,
+      "bp": 3705050,
+      "n_contigs": 429
+    },
+    "genome_528.fasta": {
+      "bytes": 7304107,
+      "bp": 7209970,
+      "n_contigs": 125
+    },
+    "genome_529.fasta": {
+      "bytes": 1789932,
+      "bp": 1765558,
+      "n_contigs": 73
+    },
+    "genome_53.fasta": {
+      "bytes": 7893847,
+      "bp": 7796203,
+      "n_contigs": 6
+    },
+    "genome_530.fasta": {
+      "bytes": 996632,
+      "bp": 984012,
+      "n_contigs": 10
+    },
+    "genome_531.fasta": {
+      "bytes": 916050,
+      "bp": 904677,
+      "n_contigs": 2
+    },
+    "genome_532.fasta": {
+      "bytes": 6997103,
+      "bp": 6910132,
+      "n_contigs": 18
+    },
+    "genome_533.fasta": {
+      "bytes": 8689528,
+      "bp": 8574946,
+      "n_contigs": 225
+    },
+    "genome_534.fasta": {
+      "bytes": 1081366,
+      "bp": 1067887,
+      "n_contigs": 4
+    },
+    "genome_535.fasta": {
+      "bytes": 7532504,
+      "bp": 7432614,
+      "n_contigs": 215
+    },
+    "genome_536.fasta": {
+      "bytes": 7032088,
+      "bp": 6913763,
+      "n_contigs": 983
+    },
+    "genome_537.fasta": {
+      "bytes": 4467747,
+      "bp": 4411020,
+      "n_contigs": 49
+    },
+    "genome_538.fasta": {
+      "bytes": 974140,
+      "bp": 952239,
+      "n_contigs": 311
+    },
+    "genome_539.fasta": {
+      "bytes": 7915281,
+      "bp": 7807654,
+      "n_contigs": 308
+    },
+    "genome_54.fasta": {
+      "bytes": 9415874,
+      "bp": 9299378,
+      "n_contigs": 8
+    },
+    "genome_540.fasta": {
+      "bytes": 3835073,
+      "bp": 3778037,
+      "n_contigs": 304
+    },
+    "genome_541.fasta": {
+      "bytes": 3478012,
+      "bp": 3431607,
+      "n_contigs": 108
+    },
+    "genome_542.fasta": {
+      "bytes": 2174787,
+      "bp": 2147776,
+      "n_contigs": 5
+    },
+    "genome_543.fasta": {
+      "bytes": 8794684,
+      "bp": 8683466,
+      "n_contigs": 82
+    },
+    "genome_544.fasta": {
+      "bytes": 8254536,
+      "bp": 8144349,
+      "n_contigs": 258
+    },
+    "genome_545.fasta": {
+      "bytes": 2351050,
+      "bp": 2321768,
+      "n_contigs": 8
+    },
+    "genome_546.fasta": {
+      "bytes": 6479832,
+      "bp": 6395391,
+      "n_contigs": 141
+    },
+    "genome_547.fasta": {
+      "bytes": 5441981,
+      "bp": 5374221,
+      "n_contigs": 18
+    },
+    "genome_548.fasta": {
+      "bytes": 4041282,
+      "bp": 3987720,
+      "n_contigs": 115
+    },
+    "genome_549.fasta": {
+      "bytes": 6290680,
+      "bp": 6207594,
+      "n_contigs": 169
+    },
+    "genome_55.fasta": {
+      "bytes": 9680151,
+      "bp": 9560423,
+      "n_contigs": 7
+    },
+    "genome_550.fasta": {
+      "bytes": 6978382,
+      "bp": 6889019,
+      "n_contigs": 102
+    },
+    "genome_551.fasta": {
+      "bytes": 1579845,
+      "bp": 1560216,
+      "n_contigs": 4
+    },
+    "genome_552.fasta": {
+      "bytes": 7827917,
+      "bp": 7730668,
+      "n_contigs": 19
+    },
+    "genome_553.fasta": {
+      "bytes": 7943405,
+      "bp": 7837231,
+      "n_contigs": 252
+    },
+    "genome_554.fasta": {
+      "bytes": 6969195,
+      "bp": 6878828,
+      "n_contigs": 136
+    },
+    "genome_555.fasta": {
+      "bytes": 5233949,
+      "bp": 5167846,
+      "n_contigs": 46
+    },
+    "genome_556.fasta": {
+      "bytes": 8031561,
+      "bp": 7928280,
+      "n_contigs": 130
+    },
+    "genome_557.fasta": {
+      "bytes": 6726919,
+      "bp": 6635392,
+      "n_contigs": 263
+    },
+    "genome_558.fasta": {
+      "bytes": 4389690,
+      "bp": 4317902,
+      "n_contigs": 548
+    },
+    "genome_559.fasta": {
+      "bytes": 5164683,
+      "bp": 5100185,
+      "n_contigs": 23
+    },
+    "genome_56.fasta": {
+      "bytes": 4995201,
+      "bp": 4924577,
+      "n_contigs": 288
+    },
+    "genome_560.fasta": {
+      "bytes": 4156602,
+      "bp": 4105128,
+      "n_contigs": 5
+    },
+    "genome_561.fasta": {
+      "bytes": 1955760,
+      "bp": 1931550,
+      "n_contigs": 2
+    },
+    "genome_562.fasta": {
+      "bytes": 7431136,
+      "bp": 7338778,
+      "n_contigs": 19
+    },
+    "genome_563.fasta": {
+      "bytes": 3127664,
+      "bp": 3088805,
+      "n_contigs": 8
+    },
+    "genome_564.fasta": {
+      "bytes": 4187078,
+      "bp": 4124759,
+      "n_contigs": 334
+    },
+    "genome_565.fasta": {
+      "bytes": 5459600,
+      "bp": 5378731,
+      "n_contigs": 421
+    },
+    "genome_566.fasta": {
+      "bytes": 3622599,
+      "bp": 3577682,
+      "n_contigs": 6
+    },
+    "genome_567.fasta": {
+      "bytes": 4433988,
+      "bp": 4376685,
+      "n_contigs": 81
+    },
+    "genome_568.fasta": {
+      "bytes": 9249232,
+      "bp": 9117052,
+      "n_contigs": 556
+    },
+    "genome_569.fasta": {
+      "bytes": 6680896,
+      "bp": 6597622,
+      "n_contigs": 25
+    },
+    "genome_57.fasta": {
+      "bytes": 7684474,
+      "bp": 7585803,
+      "n_contigs": 123
+    },
+    "genome_570.fasta": {
+      "bytes": 5519346,
+      "bp": 5450980,
+      "n_contigs": 7
+    },
+    "genome_571.fasta": {
+      "bytes": 8117074,
+      "bp": 8014236,
+      "n_contigs": 82
+    },
+    "genome_572.fasta": {
+      "bytes": 8288566,
+      "bp": 8184211,
+      "n_contigs": 63
+    },
+    "genome_573.fasta": {
+      "bytes": 9001272,
+      "bp": 8879093,
+      "n_contigs": 341
+    },
+    "genome_574.fasta": {
+      "bytes": 6621142,
+      "bp": 6538617,
+      "n_contigs": 24
+    },
+    "genome_575.fasta": {
+      "bytes": 12904834,
+      "bp": 12734305,
+      "n_contigs": 348
+    },
+    "genome_576.fasta": {
+      "bytes": 1586368,
+      "bp": 1566496,
+      "n_contigs": 9
+    },
+    "genome_577.fasta": {
+      "bytes": 1313556,
+      "bp": 1297214,
+      "n_contigs": 4
+    },
+    "genome_578.fasta": {
+      "bytes": 3147483,
+      "bp": 3108465,
+      "n_contigs": 5
+    },
+    "genome_579.fasta": {
+      "bytes": 7776753,
+      "bp": 7675484,
+      "n_contigs": 165
+    },
+    "genome_58.fasta": {
+      "bytes": 1416264,
+      "bp": 1398716,
+      "n_contigs": 2
+    },
+    "genome_580.fasta": {
+      "bytes": 3537685,
+      "bp": 3492636,
+      "n_contigs": 43
+    },
+    "genome_581.fasta": {
+      "bytes": 1458335,
+      "bp": 1440266,
+      "n_contigs": 2
+    },
+    "genome_582.fasta": {
+      "bytes": 2675011,
+      "bp": 2640961,
+      "n_contigs": 32
+    },
+    "genome_583.fasta": {
+      "bytes": 4373358,
+      "bp": 4319049,
+      "n_contigs": 10
+    },
+    "genome_584.fasta": {
+      "bytes": 4731551,
+      "bp": 4653386,
+      "n_contigs": 616
+    },
+    "genome_585.fasta": {
+      "bytes": 4349642,
+      "bp": 4295587,
+      "n_contigs": 11
+    },
+    "genome_586.fasta": {
+      "bytes": 2328601,
+      "bp": 2299630,
+      "n_contigs": 7
+    },
+    "genome_587.fasta": {
+      "bytes": 10751217,
+      "bp": 10617623,
+      "n_contigs": 27
+    },
+    "genome_588.fasta": {
+      "bytes": 7654281,
+      "bp": 7539608,
+      "n_contigs": 624
+    },
+    "genome_589.fasta": {
+      "bytes": 6666685,
+      "bp": 6583180,
+      "n_contigs": 37
+    },
+    "genome_59.fasta": {
+      "bytes": 3673384,
+      "bp": 3627696,
+      "n_contigs": 11
+    },
+    "genome_590.fasta": {
+      "bytes": 2105131,
+      "bp": 2078407,
+      "n_contigs": 23
+    },
+    "genome_591.fasta": {
+      "bytes": 8423948,
+      "bp": 8318137,
+      "n_contigs": 58
+    },
+    "genome_592.fasta": {
+      "bytes": 3628020,
+      "bp": 3583101,
+      "n_contigs": 4
+    },
+    "genome_593.fasta": {
+      "bytes": 3357016,
+      "bp": 3315126,
+      "n_contigs": 14
+    },
+    "genome_594.fasta": {
+      "bytes": 2029036,
+      "bp": 2003859,
+      "n_contigs": 4
+    },
+    "genome_595.fasta": {
+      "bytes": 9655402,
+      "bp": 9533782,
+      "n_contigs": 75
+    },
+    "genome_596.fasta": {
+      "bytes": 3748235,
+      "bp": 3701617,
+      "n_contigs": 11
+    },
+    "genome_597.fasta": {
+      "bytes": 4273380,
+      "bp": 4219819,
+      "n_contigs": 25
+    },
+    "genome_598.fasta": {
+      "bytes": 7665235,
+      "bp": 7550388,
+      "n_contigs": 628
+    },
+    "genome_599.fasta": {
+      "bytes": 8094535,
+      "bp": 7994181,
+      "n_contigs": 13
+    },
+    "genome_6.fasta": {
+      "bytes": 4803141,
+      "bp": 4742603,
+      "n_contigs": 41
+    },
+    "genome_60.fasta": {
+      "bytes": 3659374,
+      "bp": 3613436,
+      "n_contigs": 25
+    },
+    "genome_600.fasta": {
+      "bytes": 5665857,
+      "bp": 5595619,
+      "n_contigs": 9
+    },
+    "genome_601.fasta": {
+      "bytes": 9830893,
+      "bp": 9709270,
+      "n_contigs": 8
+    },
+    "genome_602.fasta": {
+      "bytes": 2003392,
+      "bp": 1977894,
+      "n_contigs": 24
+    },
+    "genome_603.fasta": {
+      "bytes": 8541459,
+      "bp": 8434860,
+      "n_contigs": 35
+    },
+    "genome_604.fasta": {
+      "bytes": 3993324,
+      "bp": 3942355,
+      "n_contigs": 52
+    },
+    "genome_605.fasta": {
+      "bytes": 3144680,
+      "bp": 3105632,
+      "n_contigs": 7
+    },
+    "genome_606.fasta": {
+      "bytes": 7412679,
+      "bp": 7307075,
+      "n_contigs": 436
+    },
+    "genome_607.fasta": {
+      "bytes": 10131206,
+      "bp": 10005202,
+      "n_contigs": 29
+    },
+    "genome_608.fasta": {
+      "bytes": 2307048,
+      "bp": 2278438,
+      "n_contigs": 4
+    },
+    "genome_609.fasta": {
+      "bytes": 5712306,
+      "bp": 5639225,
+      "n_contigs": 80
+    },
+    "genome_61.fasta": {
+      "bytes": 7747543,
+      "bp": 7644811,
+      "n_contigs": 225
+    },
+    "genome_610.fasta": {
+      "bytes": 4371248,
+      "bp": 4310435,
+      "n_contigs": 216
+    },
+    "genome_611.fasta": {
+      "bytes": 6461221,
+      "bp": 6379762,
+      "n_contigs": 53
+    },
+    "genome_612.fasta": {
+      "bytes": 1903073,
+      "bp": 1873897,
+      "n_contigs": 179
+    },
+    "genome_613.fasta": {
+      "bytes": 6753874,
+      "bp": 6660678,
+      "n_contigs": 306
+    },
+    "genome_614.fasta": {
+      "bytes": 2495186,
+      "bp": 2459944,
+      "n_contigs": 140
+    },
+    "genome_615.fasta": {
+      "bytes": 3921643,
+      "bp": 3872884,
+      "n_contigs": 11
+    },
+    "genome_616.fasta": {
+      "bytes": 6578913,
+      "bp": 6489509,
+      "n_contigs": 256
+    },
+    "genome_617.fasta": {
+      "bytes": 7875944,
+      "bp": 7775793,
+      "n_contigs": 91
+    },
+    "genome_618.fasta": {
+      "bytes": 3252526,
+      "bp": 3210292,
+      "n_contigs": 65
+    },
+    "genome_619.fasta": {
+      "bytes": 1514976,
+      "bp": 1496240,
+      "n_contigs": 1
+    },
+    "genome_62.fasta": {
+      "bytes": 3186083,
+      "bp": 3143198,
+      "n_contigs": 114
+    },
+    "genome_620.fasta": {
+      "bytes": 3599726,
+      "bp": 3554930,
+      "n_contigs": 11
+    },
+    "genome_621.fasta": {
+      "bytes": 2146908,
+      "bp": 2120240,
+      "n_contigs": 5
+    },
+    "genome_622.fasta": {
+      "bytes": 1751761,
+      "bp": 1729945,
+      "n_contigs": 6
+    },
+    "genome_623.fasta": {
+      "bytes": 10047867,
+      "bp": 9922370,
+      "n_contigs": 45
+    },
+    "genome_624.fasta": {
+      "bytes": 9745626,
+      "bp": 9623085,
+      "n_contigs": 69
+    },
+    "genome_625.fasta": {
+      "bytes": 3647884,
+      "bp": 3602495,
+      "n_contigs": 11
+    },
+    "genome_626.fasta": {
+      "bytes": 4357784,
+      "bp": 4302997,
+      "n_contigs": 31
+    },
+    "genome_627.fasta": {
+      "bytes": 3910844,
+      "bp": 3861053,
+      "n_contigs": 47
+    },
+    "genome_628.fasta": {
+      "bytes": 1295118,
+      "bp": 1279002,
+      "n_contigs": 4
+    },
+    "genome_629.fasta": {
+      "bytes": 2102783,
+      "bp": 2076757,
+      "n_contigs": 2
+    },
+    "genome_63.fasta": {
+      "bytes": 2441523,
+      "bp": 2410169,
+      "n_contigs": 40
+    },
+    "genome_630.fasta": {
+      "bytes": 5821195,
+      "bp": 5748223,
+      "n_contigs": 34
+    },
+    "genome_631.fasta": {
+      "bytes": 4193738,
+      "bp": 4137631,
+      "n_contigs": 136
+    },
+    "genome_632.fasta": {
+      "bytes": 2923009,
+      "bp": 2886698,
+      "n_contigs": 7
+    },
+    "genome_633.fasta": {
+      "bytes": 1360632,
+      "bp": 1343801,
+      "n_contigs": 1
+    },
+    "genome_634.fasta": {
+      "bytes": 5079150,
+      "bp": 5007626,
+      "n_contigs": 275
+    },
+    "genome_635.fasta": {
+      "bytes": 6843872,
+      "bp": 6756335,
+      "n_contigs": 96
+    },
+    "genome_636.fasta": {
+      "bytes": 5377986,
+      "bp": 5309938,
+      "n_contigs": 53
+    },
+    "genome_637.fasta": {
+      "bytes": 3336015,
+      "bp": 3294764,
+      "n_contigs": 2
+    },
+    "genome_638.fasta": {
+      "bytes": 5951515,
+      "bp": 5875481,
+      "n_contigs": 80
+    },
+    "genome_639.fasta": {
+      "bytes": 8712788,
+      "bp": 8605029,
+      "n_contigs": 6
+    },
+    "genome_64.fasta": {
+      "bytes": 7876016,
+      "bp": 7776450,
+      "n_contigs": 75
+    },
+    "genome_640.fasta": {
+      "bytes": 10486684,
+      "bp": 10357152,
+      "n_contigs": 2
+    },
+    "genome_641.fasta": {
+      "bytes": 2912914,
+      "bp": 2876727,
+      "n_contigs": 7
+    },
+    "genome_642.fasta": {
+      "bytes": 4181545,
+      "bp": 4129727,
+      "n_contigs": 6
+    },
+    "genome_643.fasta": {
+      "bytes": 4981353,
+      "bp": 4919537,
+      "n_contigs": 10
+    },
+    "genome_644.fasta": {
+      "bytes": 7272860,
+      "bp": 7167627,
+      "n_contigs": 480
+    },
+    "genome_645.fasta": {
+      "bytes": 7931684,
+      "bp": 7831020,
+      "n_contigs": 85
+    },
+    "genome_646.fasta": {
+      "bytes": 9570710,
+      "bp": 9446475,
+      "n_contigs": 190
+    },
+    "genome_647.fasta": {
+      "bytes": 1147904,
+      "bp": 1133603,
+      "n_contigs": 4
+    },
+    "genome_648.fasta": {
+      "bytes": 1425834,
+      "bp": 1408040,
+      "n_contigs": 6
+    },
+    "genome_649.fasta": {
+      "bytes": 5246038,
+      "bp": 5180218,
+      "n_contigs": 33
+    },
+    "genome_65.fasta": {
+      "bytes": 7812457,
+      "bp": 7710510,
+      "n_contigs": 178
+    },
+    "genome_650.fasta": {
+      "bytes": 4920349,
+      "bp": 4858931,
+      "n_contigs": 21
+    },
+    "genome_651.fasta": {
+      "bytes": 5849017,
+      "bp": 5771048,
+      "n_contigs": 181
+    },
+    "genome_652.fasta": {
+      "bytes": 5581304,
+      "bp": 5506556,
+      "n_contigs": 184
+    },
+    "genome_653.fasta": {
+      "bytes": 4436221,
+      "bp": 4378051,
+      "n_contigs": 108
+    },
+    "genome_654.fasta": {
+      "bytes": 3704541,
+      "bp": 3657043,
+      "n_contigs": 55
+    },
+    "genome_655.fasta": {
+      "bytes": 5838467,
+      "bp": 5762746,
+      "n_contigs": 113
+    },
+    "genome_656.fasta": {
+      "bytes": 9897002,
+      "bp": 9774561,
+      "n_contigs": 8
+    },
+    "genome_657.fasta": {
+      "bytes": 3739198,
+      "bp": 3691398,
+      "n_contigs": 51
+    },
+    "genome_658.fasta": {
+      "bytes": 5628071,
+      "bp": 5552280,
+      "n_contigs": 196
+    },
+    "genome_659.fasta": {
+      "bytes": 1558458,
+      "bp": 1538774,
+      "n_contigs": 14
+    },
+    "genome_66.fasta": {
+      "bytes": 4873513,
+      "bp": 4812397,
+      "n_contigs": 31
+    },
+    "genome_660.fasta": {
+      "bytes": 2517544,
+      "bp": 2486306,
+      "n_contigs": 5
+    },
+    "genome_661.fasta": {
+      "bytes": 5203722,
+      "bp": 5131867,
+      "n_contigs": 236
+    },
+    "genome_662.fasta": {
+      "bytes": 2577435,
+      "bp": 2543920,
+      "n_contigs": 53
+    },
+    "genome_663.fasta": {
+      "bytes": 8045517,
+      "bp": 7928659,
+      "n_contigs": 542
+    },
+    "genome_664.fasta": {
+      "bytes": 9454853,
+      "bp": 9332472,
+      "n_contigs": 174
+    },
+    "genome_665.fasta": {
+      "bytes": 4087992,
+      "bp": 4036765,
+      "n_contigs": 24
+    },
+    "genome_666.fasta": {
+      "bytes": 3895437,
+      "bp": 3847090,
+      "n_contigs": 8
+    },
+    "genome_667.fasta": {
+      "bytes": 3534089,
+      "bp": 3488083,
+      "n_contigs": 76
+    },
+    "genome_668.fasta": {
+      "bytes": 7673098,
+      "bp": 7557721,
+      "n_contigs": 645
+    },
+    "genome_669.fasta": {
+      "bytes": 5191203,
+      "bp": 5125650,
+      "n_contigs": 46
+    },
+    "genome_67.fasta": {
+      "bytes": 5992000,
+      "bp": 5916952,
+      "n_contigs": 34
+    },
+    "genome_670.fasta": {
+      "bytes": 7213256,
+      "bp": 7106308,
+      "n_contigs": 556
+    },
+    "genome_671.fasta": {
+      "bytes": 4586005,
+      "bp": 4523890,
+      "n_contigs": 173
+    },
+    "genome_672.fasta": {
+      "bytes": 5494850,
+      "bp": 5426849,
+      "n_contigs": 5
+    },
+    "genome_673.fasta": {
+      "bytes": 3261716,
+      "bp": 3221193,
+      "n_contigs": 8
+    },
+    "genome_674.fasta": {
+      "bytes": 2468070,
+      "bp": 2437504,
+      "n_contigs": 3
+    },
+    "genome_675.fasta": {
+      "bytes": 9943512,
+      "bp": 9820561,
+      "n_contigs": 6
+    },
+    "genome_676.fasta": {
+      "bytes": 732935,
+      "bp": 723791,
+      "n_contigs": 3
+    },
+    "genome_677.fasta": {
+      "bytes": 3650161,
+      "bp": 3604744,
+      "n_contigs": 11
+    },
+    "genome_678.fasta": {
+      "bytes": 3908503,
+      "bp": 3853336,
+      "n_contigs": 214
+    },
+    "genome_679.fasta": {
+      "bytes": 3626839,
+      "bp": 3562460,
+      "n_contigs": 613
+    },
+    "genome_68.fasta": {
+      "bytes": 4256657,
+      "bp": 4201186,
+      "n_contigs": 95
+    },
+    "genome_680.fasta": {
+      "bytes": 2940262,
+      "bp": 2903673,
+      "n_contigs": 9
+    },
+    "genome_681.fasta": {
+      "bytes": 7327415,
+      "bp": 7235765,
+      "n_contigs": 37
+    },
+    "genome_682.fasta": {
+      "bytes": 1638573,
+      "bp": 1618119,
+      "n_contigs": 7
+    },
+    "genome_683.fasta": {
+      "bytes": 2915157,
+      "bp": 2878979,
+      "n_contigs": 6
+    },
+    "genome_684.fasta": {
+      "bytes": 1102118,
+      "bp": 1088264,
+      "n_contigs": 8
+    },
+    "genome_685.fasta": {
+      "bytes": 5629690,
+      "bp": 5557492,
+      "n_contigs": 84
+    },
+    "genome_686.fasta": {
+      "bytes": 10465498,
+      "bp": 10333201,
+      "n_contigs": 96
+    },
+    "genome_687.fasta": {
+      "bytes": 6585750,
+      "bp": 6503929,
+      "n_contigs": 16
+    },
+    "genome_688.fasta": {
+      "bytes": 6589780,
+      "bp": 6505847,
+      "n_contigs": 80
+    },
+    "genome_689.fasta": {
+      "bytes": 3703571,
+      "bp": 3657293,
+      "n_contigs": 17
+    },
+    "genome_69.fasta": {
+      "bytes": 2392301,
+      "bp": 2360721,
+      "n_contigs": 66
+    },
+    "genome_690.fasta": {
+      "bytes": 5004766,
+      "bp": 4933797,
+      "n_contigs": 288
+    },
+    "genome_691.fasta": {
+      "bytes": 2284691,
+      "bp": 2256197,
+      "n_contigs": 9
+    },
+    "genome_692.fasta": {
+      "bytes": 1634096,
+      "bp": 1613569,
+      "n_contigs": 11
+    },
+    "genome_693.fasta": {
+      "bytes": 7454577,
+      "bp": 7359933,
+      "n_contigs": 82
+    },
+    "genome_694.fasta": {
+      "bytes": 3259981,
+      "bp": 3204418,
+      "n_contigs": 479
+    },
+    "genome_695.fasta": {
+      "bytes": 5423191,
+      "bp": 5350718,
+      "n_contigs": 175
+    },
+    "genome_696.fasta": {
+      "bytes": 4659596,
+      "bp": 4601973,
+      "n_contigs": 3
+    },
+    "genome_697.fasta": {
+      "bytes": 3769408,
+      "bp": 3715157,
+      "n_contigs": 242
+    },
+    "genome_698.fasta": {
+      "bytes": 5784315,
+      "bp": 5709990,
+      "n_contigs": 91
+    },
+    "genome_699.fasta": {
+      "bytes": 8299900,
+      "bp": 8193597,
+      "n_contigs": 120
+    },
+    "genome_7.fasta": {
+      "bytes": 4467304,
+      "bp": 4412003,
+      "n_contigs": 5
+    },
+    "genome_70.fasta": {
+      "bytes": 2541937,
+      "bp": 2509376,
+      "n_contigs": 38
+    },
+    "genome_700.fasta": {
+      "bytes": 5384375,
+      "bp": 5310777,
+      "n_contigs": 219
+    },
+    "genome_701.fasta": {
+      "bytes": 1826101,
+      "bp": 1802570,
+      "n_contigs": 31
+    },
+    "genome_702.fasta": {
+      "bytes": 4006446,
+      "bp": 3956562,
+      "n_contigs": 13
+    },
+    "genome_703.fasta": {
+      "bytes": 4861845,
+      "bp": 4800985,
+      "n_contigs": 26
+    },
+    "genome_704.fasta": {
+      "bytes": 7506289,
+      "bp": 7407997,
+      "n_contigs": 176
+    },
+    "genome_705.fasta": {
+      "bytes": 7397158,
+      "bp": 7299171,
+      "n_contigs": 209
+    },
+    "genome_706.fasta": {
+      "bytes": 7624206,
+      "bp": 7530013,
+      "n_contigs": 2
+    },
+    "genome_707.fasta": {
+      "bytes": 9288159,
+      "bp": 9163018,
+      "n_contigs": 323
+    },
+    "genome_708.fasta": {
+      "bytes": 3900482,
+      "bp": 3852037,
+      "n_contigs": 9
+    },
+    "genome_709.fasta": {
+      "bytes": 5450257,
+      "bp": 5377993,
+      "n_contigs": 158
+    },
+    "genome_71.fasta": {
+      "bytes": 3118094,
+      "bp": 3078725,
+      "n_contigs": 28
+    },
+    "genome_710.fasta": {
+      "bytes": 2833264,
+      "bp": 2797486,
+      "n_contigs": 25
+    },
+    "genome_711.fasta": {
+      "bytes": 6034245,
+      "bp": 5959462,
+      "n_contigs": 9
+    },
+    "genome_712.fasta": {
+      "bytes": 5653870,
+      "bp": 5583875,
+      "n_contigs": 6
+    },
+    "genome_713.fasta": {
+      "bytes": 4198491,
+      "bp": 4145081,
+      "n_contigs": 49
+    },
+    "genome_714.fasta": {
+      "bytes": 6699671,
+      "bp": 6613001,
+      "n_contigs": 126
+    },
+    "genome_715.fasta": {
+      "bytes": 5672207,
+      "bp": 5601726,
+      "n_contigs": 14
+    },
+    "genome_716.fasta": {
+      "bytes": 2834563,
+      "bp": 2798734,
+      "n_contigs": 26
+    },
+    "genome_717.fasta": {
+      "bytes": 2102251,
+      "bp": 2076137,
+      "n_contigs": 5
+    },
+    "genome_718.fasta": {
+      "bytes": 2010180,
+      "bp": 1985268,
+      "n_contigs": 3
+    },
+    "genome_719.fasta": {
+      "bytes": 5607030,
+      "bp": 5536233,
+      "n_contigs": 49
+    },
+    "genome_72.fasta": {
+      "bytes": 1220434,
+      "bp": 1205212,
+      "n_contigs": 5
+    },
+    "genome_720.fasta": {
+      "bytes": 1678490,
+      "bp": 1657448,
+      "n_contigs": 10
+    },
+    "genome_721.fasta": {
+      "bytes": 5022296,
+      "bp": 4958597,
+      "n_contigs": 53
+    },
+    "genome_722.fasta": {
+      "bytes": 4059836,
+      "bp": 4008303,
+      "n_contigs": 44
+    },
+    "genome_723.fasta": {
+      "bytes": 4082815,
+      "bp": 4031036,
+      "n_contigs": 43
+    },
+    "genome_724.fasta": {
+      "bytes": 7650573,
+      "bp": 7545949,
+      "n_contigs": 319
+    },
+    "genome_725.fasta": {
+      "bytes": 2745320,
+      "bp": 2710564,
+      "n_contigs": 27
+    },
+    "genome_726.fasta": {
+      "bytes": 2289358,
+      "bp": 2260518,
+      "n_contigs": 18
+    },
+    "genome_727.fasta": {
+      "bytes": 2898490,
+      "bp": 2862577,
+      "n_contigs": 4
+    },
+    "genome_728.fasta": {
+      "bytes": 3620611,
+      "bp": 3572014,
+      "n_contigs": 121
+    },
+    "genome_729.fasta": {
+      "bytes": 4267131,
+      "bp": 4214192,
+      "n_contigs": 8
+    },
+    "genome_73.fasta": {
+      "bytes": 3967337,
+      "bp": 3916928,
+      "n_contigs": 46
+    },
+    "genome_730.fasta": {
+      "bytes": 10473932,
+      "bp": 10343234,
+      "n_contigs": 43
+    },
+    "genome_731.fasta": {
+      "bytes": 1907739,
+      "bp": 1884058,
+      "n_contigs": 4
+    },
+    "genome_732.fasta": {
+      "bytes": 5548229,
+      "bp": 5478098,
+      "n_contigs": 51
+    },
+    "genome_733.fasta": {
+      "bytes": 2749378,
+      "bp": 2713801,
+      "n_contigs": 51
+    },
+    "genome_734.fasta": {
+      "bytes": 7625208,
+      "bp": 7510361,
+      "n_contigs": 647
+    },
+    "genome_735.fasta": {
+      "bytes": 3369378,
+      "bp": 3327034,
+      "n_contigs": 23
+    },
+    "genome_736.fasta": {
+      "bytes": 2293891,
+      "bp": 2264971,
+      "n_contigs": 19
+    },
+    "genome_737.fasta": {
+      "bytes": 3418943,
+      "bp": 3376669,
+      "n_contigs": 2
+    },
+    "genome_738.fasta": {
+      "bytes": 4593042,
+      "bp": 4531257,
+      "n_contigs": 158
+    },
+    "genome_739.fasta": {
+      "bytes": 3056935,
+      "bp": 3018024,
+      "n_contigs": 37
+    },
+    "genome_74.fasta": {
+      "bytes": 4320088,
+      "bp": 4265050,
+      "n_contigs": 55
+    },
+    "genome_740.fasta": {
+      "bytes": 18488796,
+      "bp": 18250187,
+      "n_contigs": 320
+    },
+    "genome_741.fasta": {
+      "bytes": 2951779,
+      "bp": 2914518,
+      "n_contigs": 26
+    },
+    "genome_742.fasta": {
+      "bytes": 10079734,
+      "bp": 9926750,
+      "n_contigs": 887
+    },
+    "genome_743.fasta": {
+      "bytes": 2452885,
+      "bp": 2421100,
+      "n_contigs": 47
+    },
+    "genome_744.fasta": {
+      "bytes": 3659570,
+      "bp": 3595094,
+      "n_contigs": 603
+    },
+    "genome_745.fasta": {
+      "bytes": 9588113,
+      "bp": 9449701,
+      "n_contigs": 620
+    },
+    "genome_746.fasta": {
+      "bytes": 5691193,
+      "bp": 5620191,
+      "n_contigs": 23
+    },
+    "genome_747.fasta": {
+      "bytes": 2987970,
+      "bp": 2950983,
+      "n_contigs": 3
+    },
+    "genome_748.fasta": {
+      "bytes": 3233122,
+      "bp": 3192926,
+      "n_contigs": 9
+    },
+    "genome_749.fasta": {
+      "bytes": 3242674,
+      "bp": 3202383,
+      "n_contigs": 8
+    },
+    "genome_75.fasta": {
+      "bytes": 9334163,
+      "bp": 9218676,
+      "n_contigs": 8
+    },
+    "genome_750.fasta": {
+      "bytes": 5063093,
+      "bp": 4999037,
+      "n_contigs": 48
+    },
+    "genome_751.fasta": {
+      "bytes": 3890545,
+      "bp": 3834351,
+      "n_contigs": 255
+    },
+    "genome_752.fasta": {
+      "bytes": 3578425,
+      "bp": 3529957,
+      "n_contigs": 133
+    },
+    "genome_753.fasta": {
+      "bytes": 4034944,
+      "bp": 3982857,
+      "n_contigs": 71
+    },
+    "genome_754.fasta": {
+      "bytes": 3830147,
+      "bp": 3777700,
+      "n_contigs": 161
+    },
+    "genome_755.fasta": {
+      "bytes": 2356683,
+      "bp": 2327492,
+      "n_contigs": 3
+    },
+    "genome_756.fasta": {
+      "bytes": 7603974,
+      "bp": 7498091,
+      "n_contigs": 377
+    },
+    "genome_757.fasta": {
+      "bytes": 5543928,
+      "bp": 5475290,
+      "n_contigs": 6
+    },
+    "genome_758.fasta": {
+      "bytes": 9236926,
+      "bp": 9117214,
+      "n_contigs": 174
+    },
+    "genome_759.fasta": {
+      "bytes": 6627500,
+      "bp": 6545327,
+      "n_contigs": 11
+    },
+    "genome_76.fasta": {
+      "bytes": 2008402,
+      "bp": 1983300,
+      "n_contigs": 10
+    },
+    "genome_760.fasta": {
+      "bytes": 3581322,
+      "bp": 3535323,
+      "n_contigs": 56
+    },
+    "genome_761.fasta": {
+      "bytes": 7597560,
+      "bp": 7503576,
+      "n_contigs": 6
+    },
+    "genome_762.fasta": {
+      "bytes": 1868269,
+      "bp": 1845043,
+      "n_contigs": 5
+    },
+    "genome_763.fasta": {
+      "bytes": 6358531,
+      "bp": 6278356,
+      "n_contigs": 52
+    },
+    "genome_764.fasta": {
+      "bytes": 6560853,
+      "bp": 6479050,
+      "n_contigs": 25
+    },
+    "genome_765.fasta": {
+      "bytes": 2796638,
+      "bp": 2758842,
+      "n_contigs": 104
+    },
+    "genome_766.fasta": {
+      "bytes": 1172826,
+      "bp": 1158282,
+      "n_contigs": 2
+    },
+    "genome_767.fasta": {
+      "bytes": 5974308,
+      "bp": 5900356,
+      "n_contigs": 6
+    },
+    "genome_768.fasta": {
+      "bytes": 14257448,
+      "bp": 14074600,
+      "n_contigs": 209
+    },
+    "genome_769.fasta": {
+      "bytes": 6848667,
+      "bp": 6763362,
+      "n_contigs": 23
+    },
+    "genome_77.fasta": {
+      "bytes": 2519295,
+      "bp": 2486769,
+      "n_contigs": 46
+    },
+    "genome_770.fasta": {
+      "bytes": 3225148,
+      "bp": 3181298,
+      "n_contigs": 128
+    },
+    "genome_771.fasta": {
+      "bytes": 1154200,
+      "bp": 1139886,
+      "n_contigs": 2
+    },
+    "genome_772.fasta": {
+      "bytes": 3943657,
+      "bp": 3883864,
+      "n_contigs": 348
+    },
+    "genome_773.fasta": {
+      "bytes": 5181180,
+      "bp": 5117052,
+      "n_contigs": 5
+    },
+    "genome_774.fasta": {
+      "bytes": 4546480,
+      "bp": 4484058,
+      "n_contigs": 194
+    },
+    "genome_775.fasta": {
+      "bytes": 7932762,
+      "bp": 7832270,
+      "n_contigs": 80
+    },
+    "genome_776.fasta": {
+      "bytes": 6125448,
+      "bp": 6048367,
+      "n_contigs": 45
+    },
+    "genome_777.fasta": {
+      "bytes": 4927803,
+      "bp": 4863727,
+      "n_contigs": 101
+    },
+    "genome_778.fasta": {
+      "bytes": 3732071,
+      "bp": 3685446,
+      "n_contigs": 17
+    },
+    "genome_779.fasta": {
+      "bytes": 3487146,
+      "bp": 3430072,
+      "n_contigs": 439
+    },
+    "genome_78.fasta": {
+      "bytes": 3844137,
+      "bp": 3796336,
+      "n_contigs": 11
+    },
+    "genome_780.fasta": {
+      "bytes": 3234048,
+      "bp": 3194057,
+      "n_contigs": 2
+    },
+    "genome_781.fasta": {
+      "bytes": 4462152,
+      "bp": 4385963,
+      "n_contigs": 659
+    },
+    "genome_782.fasta": {
+      "bytes": 3625464,
+      "bp": 3580097,
+      "n_contigs": 19
+    },
+    "genome_783.fasta": {
+      "bytes": 3882055,
+      "bp": 3833999,
+      "n_contigs": 4
+    },
+    "genome_784.fasta": {
+      "bytes": 3029801,
+      "bp": 2979529,
+      "n_contigs": 403
+    },
+    "genome_785.fasta": {
+      "bytes": 4617378,
+      "bp": 4559932,
+      "n_contigs": 14
+    },
+    "genome_786.fasta": {
+      "bytes": 4272154,
+      "bp": 4218496,
+      "n_contigs": 28
+    },
+    "genome_787.fasta": {
+      "bytes": 7474698,
+      "bp": 7382036,
+      "n_contigs": 12
+    },
+    "genome_788.fasta": {
+      "bytes": 7112209,
+      "bp": 7018810,
+      "n_contigs": 173
+    },
+    "genome_789.fasta": {
+      "bytes": 3191739,
+      "bp": 3152077,
+      "n_contigs": 8
+    },
+    "genome_79.fasta": {
+      "bytes": 3303581,
+      "bp": 3245689,
+      "n_contigs": 552
+    },
+    "genome_790.fasta": {
+      "bytes": 4150555,
+      "bp": 4099153,
+      "n_contigs": 5
+    },
+    "genome_791.fasta": {
+      "bytes": 6446748,
+      "bp": 6365261,
+      "n_contigs": 59
+    },
+    "genome_792.fasta": {
+      "bytes": 2631240,
+      "bp": 2598508,
+      "n_contigs": 8
+    },
+    "genome_793.fasta": {
+      "bytes": 4218811,
+      "bp": 4165581,
+      "n_contigs": 37
+    },
+    "genome_794.fasta": {
+      "bytes": 9862495,
+      "bp": 9739997,
+      "n_contigs": 23
+    },
+    "genome_795.fasta": {
+      "bytes": 6586417,
+      "bp": 6503156,
+      "n_contigs": 61
+    },
+    "genome_796.fasta": {
+      "bytes": 7633686,
+      "bp": 7525518,
+      "n_contigs": 434
+    },
+    "genome_797.fasta": {
+      "bytes": 3219657,
+      "bp": 3172818,
+      "n_contigs": 222
+    },
+    "genome_798.fasta": {
+      "bytes": 2955589,
+      "bp": 2918844,
+      "n_contigs": 8
+    },
+    "genome_799.fasta": {
+      "bytes": 9160056,
+      "bp": 9041051,
+      "n_contigs": 186
+    },
+    "genome_8.fasta": {
+      "bytes": 4872329,
+      "bp": 4811558,
+      "n_contigs": 21
+    },
+    "genome_80.fasta": {
+      "bytes": 2813398,
+      "bp": 2777818,
+      "n_contigs": 28
+    },
+    "genome_800.fasta": {
+      "bytes": 3290191,
+      "bp": 3246849,
+      "n_contigs": 85
+    },
+    "genome_801.fasta": {
+      "bytes": 1807537,
+      "bp": 1784107,
+      "n_contigs": 35
+    },
+    "genome_802.fasta": {
+      "bytes": 8725698,
+      "bp": 8613466,
+      "n_contigs": 139
+    },
+    "genome_803.fasta": {
+      "bytes": 6373355,
+      "bp": 6279802,
+      "n_contigs": 459
+    },
+    "genome_804.fasta": {
+      "bytes": 4481568,
+      "bp": 4426141,
+      "n_contigs": 3
+    },
+    "genome_805.fasta": {
+      "bytes": 2518375,
+      "bp": 2486810,
+      "n_contigs": 15
+    },
+    "genome_806.fasta": {
+      "bytes": 10859099,
+      "bp": 10713212,
+      "n_contigs": 368
+    },
+    "genome_807.fasta": {
+      "bytes": 1684683,
+      "bp": 1657555,
+      "n_contigs": 200
+    },
+    "genome_808.fasta": {
+      "bytes": 1535375,
+      "bp": 1516355,
+      "n_contigs": 2
+    },
+    "genome_809.fasta": {
+      "bytes": 4231288,
+      "bp": 4178793,
+      "n_contigs": 8
+    },
+    "genome_81.fasta": {
+      "bytes": 13250333,
+      "bp": 13084722,
+      "n_contigs": 64
+    },
+    "genome_810.fasta": {
+      "bytes": 1811435,
+      "bp": 1789006,
+      "n_contigs": 2
+    },
+    "genome_811.fasta": {
+      "bytes": 8315706,
+      "bp": 8207738,
+      "n_contigs": 167
+    },
+    "genome_812.fasta": {
+      "bytes": 2435352,
+      "bp": 2405002,
+      "n_contigs": 9
+    },
+    "genome_813.fasta": {
+      "bytes": 8120576,
+      "bp": 8008823,
+      "n_contigs": 354
+    },
+    "genome_814.fasta": {
+      "bytes": 8832200,
+      "bp": 8707260,
+      "n_contigs": 495
+    },
+    "genome_815.fasta": {
+      "bytes": 10034000,
+      "bp": 9905084,
+      "n_contigs": 159
+    },
+    "genome_816.fasta": {
+      "bytes": 1871677,
+      "bp": 1848474,
+      "n_contigs": 3
+    },
+    "genome_817.fasta": {
+      "bytes": 2003785,
+      "bp": 1978855,
+      "n_contigs": 6
+    },
+    "genome_818.fasta": {
+      "bytes": 11160823,
+      "bp": 11021848,
+      "n_contigs": 37
+    },
+    "genome_819.fasta": {
+      "bytes": 1639943,
+      "bp": 1619226,
+      "n_contigs": 15
+    },
+    "genome_82.fasta": {
+      "bytes": 7431881,
+      "bp": 7337700,
+      "n_contigs": 78
+    },
+    "genome_820.fasta": {
+      "bytes": 3519836,
+      "bp": 3474588,
+      "n_contigs": 56
+    },
+    "genome_821.fasta": {
+      "bytes": 2359822,
+      "bp": 2330270,
+      "n_contigs": 13
+    },
+    "genome_822.fasta": {
+      "bytes": 3655072,
+      "bp": 3609077,
+      "n_contigs": 27
+    },
+    "genome_823.fasta": {
+      "bytes": 4608913,
+      "bp": 4548177,
+      "n_contigs": 119
+    },
+    "genome_824.fasta": {
+      "bytes": 3266503,
+      "bp": 3224703,
+      "n_contigs": 46
+    },
+    "genome_825.fasta": {
+      "bytes": 3427755,
+      "bp": 3382715,
+      "n_contigs": 85
+    },
+    "genome_826.fasta": {
+      "bytes": 2033854,
+      "bp": 1999997,
+      "n_contigs": 275
+    },
+    "genome_827.fasta": {
+      "bytes": 3703658,
+      "bp": 3655884,
+      "n_contigs": 64
+    },
+    "genome_828.fasta": {
+      "bytes": 3711704,
+      "bp": 3663229,
+      "n_contigs": 85
+    },
+    "genome_829.fasta": {
+      "bytes": 4399071,
+      "bp": 4339774,
+      "n_contigs": 158
+    },
+    "genome_83.fasta": {
+      "bytes": 2314890,
+      "bp": 2286190,
+      "n_contigs": 4
+    },
+    "genome_830.fasta": {
+      "bytes": 6778953,
+      "bp": 6692308,
+      "n_contigs": 92
+    },
+    "genome_831.fasta": {
+      "bytes": 2554092,
+      "bp": 2522073,
+      "n_contigs": 15
+    },
+    "genome_832.fasta": {
+      "bytes": 8062379,
+      "bp": 7958506,
+      "n_contigs": 138
+    },
+    "genome_833.fasta": {
+      "bytes": 6482081,
+      "bp": 6401893,
+      "n_contigs": 5
+    },
+    "genome_834.fasta": {
+      "bytes": 8811623,
+      "bp": 8702317,
+      "n_contigs": 16
+    },
+    "genome_835.fasta": {
+      "bytes": 5993546,
+      "bp": 5918449,
+      "n_contigs": 34
+    },
+    "genome_836.fasta": {
+      "bytes": 3625021,
+      "bp": 3576784,
+      "n_contigs": 109
+    },
+    "genome_837.fasta": {
+      "bytes": 776201,
+      "bp": 766554,
+      "n_contigs": 2
+    },
+    "genome_838.fasta": {
+      "bytes": 2634804,
+      "bp": 2601599,
+      "n_contigs": 21
+    },
+    "genome_839.fasta": {
+      "bytes": 1153921,
+      "bp": 1139611,
+      "n_contigs": 2
+    },
+    "genome_84.fasta": {
+      "bytes": 1768101,
+      "bp": 1746088,
+      "n_contigs": 6
+    },
+    "genome_840.fasta": {
+      "bytes": 3905416,
+      "bp": 3852541,
+      "n_contigs": 144
+    },
+    "genome_841.fasta": {
+      "bytes": 1317968,
+      "bp": 1301353,
+      "n_contigs": 11
+    },
+    "genome_842.fasta": {
+      "bytes": 2244223,
+      "bp": 2216356,
+      "n_contigs": 5
+    },
+    "genome_843.fasta": {
+      "bytes": 7778117,
+      "bp": 7677398,
+      "n_contigs": 146
+    },
+    "genome_844.fasta": {
+      "bytes": 5803949,
+      "bp": 5731680,
+      "n_contigs": 19
+    },
+    "genome_845.fasta": {
+      "bytes": 811251,
+      "bp": 801203,
+      "n_contigs": 1
+    },
+    "genome_846.fasta": {
+      "bytes": 10472973,
+      "bp": 10308598,
+      "n_contigs": 1087
+    },
+    "genome_847.fasta": {
+      "bytes": 4724892,
+      "bp": 4666463,
+      "n_contigs": 3
+    },
+    "genome_848.fasta": {
+      "bytes": 8458367,
+      "bp": 8344486,
+      "n_contigs": 294
+    },
+    "genome_849.fasta": {
+      "bytes": 2860662,
+      "bp": 2825057,
+      "n_contigs": 9
+    },
+    "genome_85.fasta": {
+      "bytes": 3052331,
+      "bp": 3014523,
+      "n_contigs": 4
+    },
+    "genome_850.fasta": {
+      "bytes": 926529,
+      "bp": 915027,
+      "n_contigs": 2
+    },
+    "genome_851.fasta": {
+      "bytes": 2928136,
+      "bp": 2888470,
+      "n_contigs": 110
+    },
+    "genome_852.fasta": {
+      "bytes": 4952842,
+      "bp": 4887378,
+      "n_contigs": 135
+    },
+    "genome_853.fasta": {
+      "bytes": 2851443,
+      "bp": 2813690,
+      "n_contigs": 81
+    },
+    "genome_854.fasta": {
+      "bytes": 6487492,
+      "bp": 6406816,
+      "n_contigs": 18
+    },
+    "genome_855.fasta": {
+      "bytes": 4816667,
+      "bp": 4757010,
+      "n_contigs": 6
+    },
+    "genome_856.fasta": {
+      "bytes": 8415804,
+      "bp": 8302683,
+      "n_contigs": 286
+    },
+    "genome_857.fasta": {
+      "bytes": 4603367,
+      "bp": 4539517,
+      "n_contigs": 216
+    },
+    "genome_858.fasta": {
+      "bytes": 4005840,
+      "bp": 3956094,
+      "n_contigs": 9
+    },
+    "genome_859.fasta": {
+      "bytes": 2397792,
+      "bp": 2363454,
+      "n_contigs": 149
+    },
+    "genome_86.fasta": {
+      "bytes": 3087631,
+      "bp": 3049233,
+      "n_contigs": 9
+    },
+    "genome_860.fasta": {
+      "bytes": 1467246,
+      "bp": 1448973,
+      "n_contigs": 5
+    },
+    "genome_861.fasta": {
+      "bytes": 4645305,
+      "bp": 4582676,
+      "n_contigs": 166
+    },
+    "genome_862.fasta": {
+      "bytes": 4602488,
+      "bp": 4542464,
+      "n_contigs": 100
+    },
+    "genome_863.fasta": {
+      "bytes": 3285555,
+      "bp": 3243401,
+      "n_contigs": 50
+    },
+    "genome_864.fasta": {
+      "bytes": 5528710,
+      "bp": 5460136,
+      "n_contigs": 10
+    },
+    "genome_865.fasta": {
+      "bytes": 3808043,
+      "bp": 3760964,
+      "n_contigs": 2
+    },
+    "genome_866.fasta": {
+      "bytes": 2099573,
+      "bp": 2072536,
+      "n_contigs": 36
+    },
+    "genome_867.fasta": {
+      "bytes": 8677032,
+      "bp": 8556943,
+      "n_contigs": 402
+    },
+    "genome_868.fasta": {
+      "bytes": 2261993,
+      "bp": 2234002,
+      "n_contigs": 2
+    },
+    "genome_869.fasta": {
+      "bytes": 3457952,
+      "bp": 3414972,
+      "n_contigs": 9
+    },
+    "genome_87.fasta": {
+      "bytes": 4751267,
+      "bp": 4688837,
+      "n_contigs": 121
+    },
+    "genome_870.fasta": {
+      "bytes": 5971151,
+      "bp": 5896376,
+      "n_contigs": 34
+    },
+    "genome_871.fasta": {
+      "bytes": 6133171,
+      "bp": 6052955,
+      "n_contigs": 143
+    },
+    "genome_872.fasta": {
+      "bytes": 5183856,
+      "bp": 5117375,
+      "n_contigs": 78
+    },
+    "genome_873.fasta": {
+      "bytes": 2762879,
+      "bp": 2723349,
+      "n_contigs": 171
+    },
+    "genome_874.fasta": {
+      "bytes": 6518886,
+      "bp": 6438023,
+      "n_contigs": 12
+    },
+    "genome_875.fasta": {
+      "bytes": 6132044,
+      "bp": 6049392,
+      "n_contigs": 213
+    },
+    "genome_876.fasta": {
+      "bytes": 6208494,
+      "bp": 6114383,
+      "n_contigs": 542
+    },
+    "genome_877.fasta": {
+      "bytes": 7232789,
+      "bp": 7138829,
+      "n_contigs": 144
+    },
+    "genome_878.fasta": {
+      "bytes": 3514524,
+      "bp": 3469760,
+      "n_contigs": 43
+    },
+    "genome_879.fasta": {
+      "bytes": 1270455,
+      "bp": 1254585,
+      "n_contigs": 6
+    },
+    "genome_88.fasta": {
+      "bytes": 7763204,
+      "bp": 7667051,
+      "n_contigs": 10
+    },
+    "genome_880.fasta": {
+      "bytes": 3410653,
+      "bp": 3368027,
+      "n_contigs": 16
+    },
+    "genome_881.fasta": {
+      "bytes": 9477735,
+      "bp": 9342863,
+      "n_contigs": 558
+    },
+    "genome_882.fasta": {
+      "bytes": 1564323,
+      "bp": 1544820,
+      "n_contigs": 6
+    },
+    "genome_883.fasta": {
+      "bytes": 6347006,
+      "bp": 6268583,
+      "n_contigs": 2
+    },
+    "genome_884.fasta": {
+      "bytes": 4049215,
+      "bp": 3998724,
+      "n_contigs": 16
+    },
+    "genome_885.fasta": {
+      "bytes": 6489926,
+      "bp": 6408641,
+      "n_contigs": 36
+    },
+    "genome_886.fasta": {
+      "bytes": 1927516,
+      "bp": 1903591,
+      "n_contigs": 4
+    },
+    "genome_887.fasta": {
+      "bytes": 3902658,
+      "bp": 3854058,
+      "n_contigs": 13
+    },
+    "genome_888.fasta": {
+      "bytes": 6098487,
+      "bp": 6022106,
+      "n_contigs": 34
+    },
+    "genome_889.fasta": {
+      "bytes": 8426095,
+      "bp": 8313892,
+      "n_contigs": 256
+    },
+    "genome_89.fasta": {
+      "bytes": 4608842,
+      "bp": 4551821,
+      "n_contigs": 4
+    },
+    "genome_890.fasta": {
+      "bytes": 5154258,
+      "bp": 5090559,
+      "n_contigs": 2
+    },
+    "genome_891.fasta": {
+      "bytes": 1729134,
+      "bp": 1707693,
+      "n_contigs": 3
+    },
+    "genome_892.fasta": {
+      "bytes": 7855182,
+      "bp": 7757226,
+      "n_contigs": 30
+    },
+    "genome_893.fasta": {
+      "bytes": 2134843,
+      "bp": 2105940,
+      "n_contigs": 82
+    },
+    "genome_894.fasta": {
+      "bytes": 4955001,
+      "bp": 4891681,
+      "n_contigs": 67
+    },
+    "genome_895.fasta": {
+      "bytes": 11123467,
+      "bp": 10984891,
+      "n_contigs": 39
+    },
+    "genome_896.fasta": {
+      "bytes": 1403715,
+      "bp": 1385626,
+      "n_contigs": 24
+    },
+    "genome_897.fasta": {
+      "bytes": 1277018,
+      "bp": 1261064,
+      "n_contigs": 6
+    },
+    "genome_898.fasta": {
+      "bytes": 4968707,
+      "bp": 4906299,
+      "n_contigs": 33
+    },
+    "genome_899.fasta": {
+      "bytes": 4695424,
+      "bp": 4635657,
+      "n_contigs": 56
+    },
+    "genome_9.fasta": {
+      "bytes": 1051698,
+      "bp": 1038683,
+      "n_contigs": 1
+    },
+    "genome_90.fasta": {
+      "bytes": 2993287,
+      "bp": 2956086,
+      "n_contigs": 8
+    },
+    "genome_900.fasta": {
+      "bytes": 4361289,
+      "bp": 4304084,
+      "n_contigs": 106
+    },
+    "genome_901.fasta": {
+      "bytes": 5661747,
+      "bp": 5583713,
+      "n_contigs": 254
+    },
+    "genome_902.fasta": {
+      "bytes": 2129847,
+      "bp": 2101671,
+      "n_contigs": 60
+    },
+    "genome_903.fasta": {
+      "bytes": 8470687,
+      "bp": 8357803,
+      "n_contigs": 261
+    },
+    "genome_904.fasta": {
+      "bytes": 6222670,
+      "bp": 6145362,
+      "n_contigs": 15
+    },
+    "genome_905.fasta": {
+      "bytes": 4715453,
+      "bp": 4655317,
+      "n_contigs": 60
+    },
+    "genome_906.fasta": {
+      "bytes": 5591737,
+      "bp": 5517555,
+      "n_contigs": 160
+    },
+    "genome_907.fasta": {
+      "bytes": 5330441,
+      "bp": 5264375,
+      "n_contigs": 8
+    },
+    "genome_908.fasta": {
+      "bytes": 2741899,
+      "bp": 2707595,
+      "n_contigs": 14
+    },
+    "genome_909.fasta": {
+      "bytes": 1462271,
+      "bp": 1443997,
+      "n_contigs": 7
+    },
+    "genome_91.fasta": {
+      "bytes": 4561708,
+      "bp": 4500213,
+      "n_contigs": 168
+    },
+    "genome_910.fasta": {
+      "bytes": 6193240,
+      "bp": 6078894,
+      "n_contigs": 1177
+    },
+    "genome_911.fasta": {
+      "bytes": 6846628,
+      "bp": 6753423,
+      "n_contigs": 267
+    },
+    "genome_912.fasta": {
+      "bytes": 4414878,
+      "bp": 4359853,
+      "n_contigs": 16
+    },
+    "genome_913.fasta": {
+      "bytes": 1939165,
+      "bp": 1914906,
+      "n_contigs": 10
+    },
+    "genome_914.fasta": {
+      "bytes": 1102943,
+      "bp": 1089293,
+      "n_contigs": 1
+    },
+    "genome_915.fasta": {
+      "bytes": 5341793,
+      "bp": 5275291,
+      "n_contigs": 17
+    },
+    "genome_916.fasta": {
+      "bytes": 2612379,
+      "bp": 2576372,
+      "n_contigs": 117
+    },
+    "genome_917.fasta": {
+      "bytes": 5002216,
+      "bp": 4939874,
+      "n_contigs": 18
+    },
+    "genome_918.fasta": {
+      "bytes": 3074707,
+      "bp": 3036463,
+      "n_contigs": 9
+    },
+    "genome_919.fasta": {
+      "bytes": 6067549,
+      "bp": 5992448,
+      "n_contigs": 6
+    },
+    "genome_92.fasta": {
+      "bytes": 7529518,
+      "bp": 7430741,
+      "n_contigs": 189
+    },
+    "genome_920.fasta": {
+      "bytes": 4164563,
+      "bp": 4112024,
+      "n_contigs": 35
+    },
+    "genome_921.fasta": {
+      "bytes": 3564107,
+      "bp": 3519654,
+      "n_contigs": 14
+    },
+    "genome_922.fasta": {
+      "bytes": 5062571,
+      "bp": 4999781,
+      "n_contigs": 9
+    },
+    "genome_923.fasta": {
+      "bytes": 1940961,
+      "bp": 1916807,
+      "n_contigs": 6
+    },
+    "genome_924.fasta": {
+      "bytes": 9052784,
+      "bp": 8937388,
+      "n_contigs": 113
+    },
+    "genome_925.fasta": {
+      "bytes": 4634064,
+      "bp": 4563184,
+      "n_contigs": 424
+    },
+    "genome_926.fasta": {
+      "bytes": 5310110,
+      "bp": 5241447,
+      "n_contigs": 99
+    },
+    "genome_927.fasta": {
+      "bytes": 1449626,
+      "bp": 1431540,
+      "n_contigs": 6
+    },
+    "genome_928.fasta": {
+      "bytes": 7197609,
+      "bp": 7107400,
+      "n_contigs": 42
+    },
+    "genome_929.fasta": {
+      "bytes": 5698680,
+      "bp": 5617457,
+      "n_contigs": 338
+    },
+    "genome_93.fasta": {
+      "bytes": 8450724,
+      "bp": 8336129,
+      "n_contigs": 327
+    },
+    "genome_930.fasta": {
+      "bytes": 2311527,
+      "bp": 2278665,
+      "n_contigs": 137
+    },
+    "genome_931.fasta": {
+      "bytes": 1256773,
+      "bp": 1240686,
+      "n_contigs": 18
+    },
+    "genome_932.fasta": {
+      "bytes": 3668097,
+      "bp": 3620826,
+      "n_contigs": 62
+    },
+    "genome_933.fasta": {
+      "bytes": 9648637,
+      "bp": 9528303,
+      "n_contigs": 38
+    },
+    "genome_934.fasta": {
+      "bytes": 1879694,
+      "bp": 1855501,
+      "n_contigs": 31
+    },
+    "genome_935.fasta": {
+      "bytes": 1651809,
+      "bp": 1629949,
+      "n_contigs": 46
+    },
+    "genome_936.fasta": {
+      "bytes": 5924901,
+      "bp": 5851528,
+      "n_contigs": 7
+    },
+    "genome_937.fasta": {
+      "bytes": 2572225,
+      "bp": 2540276,
+      "n_contigs": 6
+    },
+    "genome_938.fasta": {
+      "bytes": 5671161,
+      "bp": 5595327,
+      "n_contigs": 183
+    },
+    "genome_939.fasta": {
+      "bytes": 4533400,
+      "bp": 4473736,
+      "n_contigs": 115
+    },
+    "genome_94.fasta": {
+      "bytes": 5405461,
+      "bp": 5338602,
+      "n_contigs": 4
+    },
+    "genome_940.fasta": {
+      "bytes": 9477752,
+      "bp": 9360070,
+      "n_contigs": 21
+    },
+    "genome_941.fasta": {
+      "bytes": 7188021,
+      "bp": 7098357,
+      "n_contigs": 29
+    },
+    "genome_942.fasta": {
+      "bytes": 3608372,
+      "bp": 3563307,
+      "n_contigs": 16
+    },
+    "genome_943.fasta": {
+      "bytes": 5121252,
+      "bp": 5057738,
+      "n_contigs": 9
+    },
+    "genome_944.fasta": {
+      "bytes": 5624623,
+      "bp": 5554186,
+      "n_contigs": 32
+    },
+    "genome_945.fasta": {
+      "bytes": 5727127,
+      "bp": 5655431,
+      "n_contigs": 31
+    },
+    "genome_946.fasta": {
+      "bytes": 3176809,
+      "bp": 3136993,
+      "n_contigs": 19
+    },
+    "genome_947.fasta": {
+      "bytes": 6227577,
+      "bp": 6137308,
+      "n_contigs": 415
+    },
+    "genome_948.fasta": {
+      "bytes": 2499451,
+      "bp": 2465773,
+      "n_contigs": 88
+    },
+    "genome_949.fasta": {
+      "bytes": 2433777,
+      "bp": 2403512,
+      "n_contigs": 7
+    },
+    "genome_95.fasta": {
+      "bytes": 5308423,
+      "bp": 5240868,
+      "n_contigs": 65
+    },
+    "genome_950.fasta": {
+      "bytes": 3370114,
+      "bp": 3322894,
+      "n_contigs": 174
+    },
+    "genome_951.fasta": {
+      "bytes": 4934141,
+      "bp": 4872772,
+      "n_contigs": 14
+    },
+    "genome_952.fasta": {
+      "bytes": 3711543,
+      "bp": 3665336,
+      "n_contigs": 12
+    },
+    "genome_953.fasta": {
+      "bytes": 4731796,
+      "bp": 4672065,
+      "n_contigs": 41
+    },
+    "genome_954.fasta": {
+      "bytes": 6150125,
+      "bp": 6072263,
+      "n_contigs": 60
+    },
+    "genome_955.fasta": {
+      "bytes": 3894760,
+      "bp": 3819697,
+      "n_contigs": 843
+    },
+    "genome_956.fasta": {
+      "bytes": 3309182,
+      "bp": 3268071,
+      "n_contigs": 8
+    },
+    "genome_957.fasta": {
+      "bytes": 2595496,
+      "bp": 2563295,
+      "n_contigs": 5
+    },
+    "genome_958.fasta": {
+      "bytes": 4648357,
+      "bp": 4576294,
+      "n_contigs": 457
+    },
+    "genome_959.fasta": {
+      "bytes": 8838727,
+      "bp": 8729159,
+      "n_contigs": 14
+    },
+    "genome_96.fasta": {
+      "bytes": 3112922,
+      "bp": 3074335,
+      "n_contigs": 5
+    },
+    "genome_960.fasta": {
+      "bytes": 5025969,
+      "bp": 4958514,
+      "n_contigs": 167
+    },
+    "genome_961.fasta": {
+      "bytes": 8262185,
+      "bp": 8152409,
+      "n_contigs": 241
+    },
+    "genome_962.fasta": {
+      "bytes": 9256628,
+      "bp": 9124697,
+      "n_contigs": 552
+    },
+    "genome_963.fasta": {
+      "bytes": 4071822,
+      "bp": 4020660,
+      "n_contigs": 28
+    },
+    "genome_964.fasta": {
+      "bytes": 6115780,
+      "bp": 6040080,
+      "n_contigs": 6
+    },
+    "genome_965.fasta": {
+      "bytes": 13185461,
+      "bp": 13020089,
+      "n_contigs": 81
+    },
+    "genome_966.fasta": {
+      "bytes": 3086603,
+      "bp": 3047566,
+      "n_contigs": 29
+    },
+    "genome_967.fasta": {
+      "bytes": 6861050,
+      "bp": 6776313,
+      "n_contigs": 1
+    },
+    "genome_968.fasta": {
+      "bytes": 5112038,
+      "bp": 5047319,
+      "n_contigs": 50
+    },
+    "genome_969.fasta": {
+      "bytes": 1877503,
+      "bp": 1854228,
+      "n_contigs": 3
+    },
+    "genome_97.fasta": {
+      "bytes": 2644796,
+      "bp": 2601789,
+      "n_contigs": 334
+    },
+    "genome_970.fasta": {
+      "bytes": 7045996,
+      "bp": 6956978,
+      "n_contigs": 63
+    },
+    "genome_971.fasta": {
+      "bytes": 5135441,
+      "bp": 5070628,
+      "n_contigs": 45
+    },
+    "genome_972.fasta": {
+      "bytes": 2385542,
+      "bp": 2348970,
+      "n_contigs": 225
+    },
+    "genome_973.fasta": {
+      "bytes": 4773599,
+      "bp": 4713994,
+      "n_contigs": 21
+    },
+    "genome_974.fasta": {
+      "bytes": 3101416,
+      "bp": 3061567,
+      "n_contigs": 49
+    },
+    "genome_975.fasta": {
+      "bytes": 6763566,
+      "bp": 6666539,
+      "n_contigs": 423
+    },
+    "genome_976.fasta": {
+      "bytes": 14072865,
+      "bp": 13888890,
+      "n_contigs": 312
+    },
+    "genome_977.fasta": {
+      "bytes": 2243735,
+      "bp": 2215108,
+      "n_contigs": 29
+    },
+    "genome_978.fasta": {
+      "bytes": 3676176,
+      "bp": 3630630,
+      "n_contigs": 5
+    },
+    "genome_979.fasta": {
+      "bytes": 1195604,
+      "bp": 1180180,
+      "n_contigs": 21
+    },
+    "genome_98.fasta": {
+      "bytes": 4037741,
+      "bp": 3978731,
+      "n_contigs": 297
+    },
+    "genome_980.fasta": {
+      "bytes": 8189612,
+      "bp": 8085235,
+      "n_contigs": 103
+    },
+    "genome_981.fasta": {
+      "bytes": 10366733,
+      "bp": 10225286,
+      "n_contigs": 421
+    },
+    "genome_982.fasta": {
+      "bytes": 9410486,
+      "bp": 9284080,
+      "n_contigs": 316
+    },
+    "genome_983.fasta": {
+      "bytes": 7108253,
+      "bp": 7019955,
+      "n_contigs": 17
+    },
+    "genome_984.fasta": {
+      "bytes": 7543727,
+      "bp": 7445721,
+      "n_contigs": 150
+    },
+    "genome_985.fasta": {
+      "bytes": 5030513,
+      "bp": 4968215,
+      "n_contigs": 6
+    },
+    "genome_986.fasta": {
+      "bytes": 7456904,
+      "bp": 7364715,
+      "n_contigs": 4
+    },
+    "genome_987.fasta": {
+      "bytes": 3142995,
+      "bp": 3103293,
+      "n_contigs": 28
+    },
+    "genome_988.fasta": {
+      "bytes": 4523720,
+      "bp": 4467808,
+      "n_contigs": 2
+    },
+    "genome_989.fasta": {
+      "bytes": 2127880,
+      "bp": 2089115,
+      "n_contigs": 392
+    },
+    "genome_99.fasta": {
+      "bytes": 4488453,
+      "bp": 4433008,
+      "n_contigs": 1
+    },
+    "genome_990.fasta": {
+      "bytes": 4773764,
+      "bp": 4714087,
+      "n_contigs": 23
+    },
+    "genome_991.fasta": {
+      "bytes": 10305070,
+      "bp": 10177583,
+      "n_contigs": 8
+    },
+    "genome_992.fasta": {
+      "bytes": 1715348,
+      "bp": 1694074,
+      "n_contigs": 3
+    },
+    "genome_993.fasta": {
+      "bytes": 5458177,
+      "bp": 5385343,
+      "n_contigs": 168
+    },
+    "genome_994.fasta": {
+      "bytes": 5438511,
+      "bp": 5370126,
+      "n_contigs": 39
+    },
+    "genome_995.fasta": {
+      "bytes": 1421561,
+      "bp": 1403946,
+      "n_contigs": 2
+    },
+    "genome_996.fasta": {
+      "bytes": 9849222,
+      "bp": 9722892,
+      "n_contigs": 146
+    },
+    "genome_997.fasta": {
+      "bytes": 3643635,
+      "bp": 3598587,
+      "n_contigs": 2
+    },
+    "genome_998.fasta": {
+      "bytes": 7701407,
+      "bp": 7603722,
+      "n_contigs": 81
+    },
+    "genome_999.fasta": {
+      "bytes": 3107173,
+      "bp": 3068683,
+      "n_contigs": 4
+    }
+  }
+}

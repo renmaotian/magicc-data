@@ -1,0 +1,7 @@
+distance	n_pairs	mean_pct_orthologous	median_pct_orthologous	p05	p95
+species	129	87.96	88.81	68.5	99.07
+genus	105	66.85	66.57	43.75	85.43
+family	100	45.04	48.87	23.1	60.69
+order	100	30.14	29.34	16.02	46.7
+class	101	21.36	21.51	5.49	35.93
+phylum	107	15.67	15.42	5.36	24.62

@@ -1,0 +1,7 @@
+group	comp_delta	comp_did	comp_did_ci95	comp_did_p	cont_delta	cont_did	cont_did_ci95	cont_did_p	comp_did_q_bh	cont_did_q_bh
+Bacteroidota_Muribaculaceae	0.0	0.0	[0.0, 0.0]	1.0	0.0	0.0	[0.0, 0.0]	1.0	1.0	1.0
+Bacteroidota_Flavobacteriaceae	0.0	0.0	[0.0, 0.0]	1.0	0.0	0.0	[0.0, 0.0]	1.0	1.0	1.0
+Campylobacterota_Helicobacteraceae	0.0	0.0	[0.0, 0.0]	1.0	0.0	0.0	[0.0, 0.0]	1.0	1.0	1.0
+Campylobacterota_Arcobacteraceae	0.0	0.0	[0.0, 0.0]	1.0	0.0	0.0	[0.0, 0.0]	1.0	1.0	1.0
+Halobacteriota_halophilic	0.0	0.0	[0.0, 0.0]	1.0	0.0	0.0	[0.0, 0.0]	1.0	1.0	1.0
+Patescibacteriota_families	0.0	0.0	[0.0, 0.0]	1.0	0.0	0.0	[0.0, 0.0]	1.0	1.0	1.0

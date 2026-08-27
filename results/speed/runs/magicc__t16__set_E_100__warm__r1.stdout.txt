@@ -1,0 +1,25 @@
+2026-07-30 19:34:11 [INFO] Reading genome list: /path/to/magicc/results/revision/speed/inputs/set_E_100.txt
+2026-07-30 19:34:11 [INFO] Found 100 genome(s)
+2026-07-30 19:34:11 [INFO] Loading ONNX model: /path/to/magicc/models/magicc_v5.onnx
+2026-07-30 19:34:12 [INFO] Loading normalization parameters: /path/to/magicc/magicc/data/normalization_params.json
+2026-07-30 19:34:12 [INFO] Extracting features for 100 genomes using 16 thread(s)...
+2026-07-30 19:34:13 [INFO]   Feature extraction: 100/100 (87.9 genomes/s, 11.4 ms/genome)
+2026-07-30 19:34:13 [INFO] Feature extraction complete: 100 genomes in 1.2s (11.7 ms/genome)
+2026-07-30 19:34:13 [INFO] Normalizing features...
+2026-07-30 19:34:13 [INFO] Normalization: 0.039s
+2026-07-30 19:34:13 [INFO] Running ONNX inference (batch_size=64)...
+2026-07-30 19:34:13 [INFO] Inference complete: 0.152s (1.52 ms/genome)
+2026-07-30 19:34:13 [INFO] Writing predictions to /path/to/magicc/results/revision/speed/scratch/magicc__t16__set_E_100__warm__r1/magicc_predictions.tsv
+2026-07-30 19:34:13 [INFO] ============================================================
+2026-07-30 19:34:13 [INFO] MAGICC Prediction Summary
+2026-07-30 19:34:13 [INFO] ============================================================
+2026-07-30 19:34:13 [INFO]   Genomes processed: 100
+2026-07-30 19:34:13 [INFO]   Threads:           16
+2026-07-30 19:34:13 [INFO]   Feature extraction: 1.2s
+2026-07-30 19:34:13 [INFO]   Normalization:      0.039s
+2026-07-30 19:34:13 [INFO]   ONNX inference:     0.152s
+2026-07-30 19:34:13 [INFO]   Total time:         1.9s
+2026-07-30 19:34:13 [INFO]   Speed:              3172 genomes/min
+2026-07-30 19:34:13 [INFO]   Speed/thread:       198 genomes/min/thread
+2026-07-30 19:34:13 [INFO]   Output:             /path/to/magicc/results/revision/speed/scratch/magicc__t16__set_E_100__warm__r1/magicc_predictions.tsv
+2026-07-30 19:34:13 [INFO] ============================================================

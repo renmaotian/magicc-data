@@ -1,0 +1,46 @@
+# WS3.9 — cross-dataset real-data synthesis, including CAMI II (WS3.8)
+
+**Denominator (identical for truth and every tool, R1-M5):** completeness = retained dominant bp / FULL reference length of the dominant genome x 100; contamination = total contaminant bp / the SAME denominator x 100.
+
+**R2 = coefficient of determination** (1 - SS_res/SS_tot), omitted where the true value has (near-)zero variance (R1-m19). MIMAG thresholds are MIMAG-inspired throughout.
+
+**CAMI II is the only cohort here with full procedural independence**: genome selection, read simulation, assembly and gold standard were all produced by a third party.
+
+| dataset                                                                  | tool          | n    | n_clusters | comp_MAE | comp_MAE_95CI      | comp_bias | cont_MAE | cont_MAE_95CI      | cont_bias | comp_R2_CoD | cont_R2_CoD |
+|--------------------------------------------------------------------------|---------------|------|------------|----------|--------------------|-----------|----------|--------------------|-----------|-------------|-------------|
+| Meslier MOCK1 (leakage-free, >=50 %, ORF-intact assemblies)              | MAGICC V5     | 93   | 18         | 3.955    | [2.6956, 5.2865]   | 2.775     | 0.866    | [0.4418, 1.3409]   | 0.6919    | 0.7331      |             |
+| Meslier MOCK1 (leakage-free, >=50 %, ORF-intact assemblies)              | CheckM2 1.0.1 | 93   | 18         | 4.534    | [3.1893, 6.138]    | -2.182    | 2.478    | [1.7305, 3.2614]   | 2.462     | 0.5797      |             |
+| Meslier MOCK1 (leakage-free, >=50 %, ORF-intact assemblies)              | CoCoPyE 0.5.0 | 93   | 18         | 4.218    | [2.7305, 5.9553]   | 4.11      | 8.197    | [5.1715, 11.5311]  | 8.167     | 0.6145      |             |
+| Meslier MOCK1 (leakage-free, >=50 %, ORF-intact assemblies)              | DeepCheck     | 93   | 18         | 5.657    | [3.5243, 8.2106]   | -4.772    | 1.684    | [1.1243, 2.3044]   | 1.559     | 0.255       |             |
+| Meslier MOCK1 (leakage-free, >=50 %, all 7 assemblies)                   | MAGICC V5     | 108  | 18         | 4.196    | [3.0508, 5.4291]   | 1.96      | 0.8793   | [0.465, 1.3233]    | 0.6912    | 0.6538      |             |
+| Meslier MOCK1 (leakage-free, >=50 %, all 7 assemblies)                   | CheckM2 1.0.1 | 108  | 18         | 11.01    | [9.2807, 12.9716]  | -8.982    | 2.635    | [1.9963, 3.3101]   | 2.62      | -3.337      |             |
+| Meslier MOCK1 (leakage-free, >=50 %, all 7 assemblies)                   | CoCoPyE 0.5.0 | 108  | 18         | 3.939    | [2.5859, 5.502]    | 3.352     | 10.07    | [7.5058, 12.8157]  | 10.05     | 0.6336      |             |
+| Meslier MOCK1 (leakage-free, >=50 %, all 7 assemblies)                   | DeepCheck     | 108  | 18         | 13.25    | [10.7154, 16.0897] | -12.49    | 1.863    | [1.4322, 2.3328]   | 1.719     | -4.956      |             |
+| Meslier MOCK1 (indel-dense MinION assembly only)                         | MAGICC V5     | 39   | 39         | 4.905    | [2.8494, 7.4549]   | -2.92     | 1.572    | [0.7579, 2.5755]   | 1.34      | 0.4043      |             |
+| Meslier MOCK1 (indel-dense MinION assembly only)                         | CheckM2 1.0.1 | 39   | 39         | 50.69    | [45.5215, 55.3439] | -50.69    | 3.45     | [2.8736, 4.0496]   | 3.412     | -20.69      |             |
+| Meslier MOCK1 (indel-dense MinION assembly only)                         | CoCoPyE 0.5.0 | 39   | 39         | 3.115    | [2.2177, 4.1123]   | -1.834    | 22.17    | [20.6778, 23.7017] | 22.17     | 0.8591      |             |
+| Meslier MOCK1 (indel-dense MinION assembly only)                         | DeepCheck     | 39   | 39         | 56.83    | [51.7475, 61.7072] | -56.83    | 4.195    | [3.24, 5.2562]     | 4.095     | -25.76      |             |
+| Meslier MOCK1 (all organisms, >=50 %, all 7 assemblies)                  | MAGICC V5     | 308  | 52         | 4.135    | [2.877, 5.9859]    | 1.272     | 1.377    | [0.7935, 2.2583]   | 1.221     | 0.5903      |             |
+| Meslier MOCK1 (all organisms, >=50 %, all 7 assemblies)                  | CheckM2 1.0.1 | 308  | 52         | 11.96    | [10.563, 13.4025]  | -10.25    | 1.891    | [1.5366, 2.2878]   | 1.837     | -2.36       |             |
+| Meslier MOCK1 (all organisms, >=50 %, all 7 assemblies)                  | CoCoPyE 0.5.0 | 308  | 52         | 4.651    | [3.5881, 5.7676]   | 2.4       | 10.23    | [8.5202, 12.0357]  | 10.22     | 0.626       |             |
+| Meslier MOCK1 (all organisms, >=50 %, all 7 assemblies)                  | DeepCheck     | 308  | 52         | 13.98    | [12.3291, 15.6535] | -13.17    | 1.85     | [1.5451, 2.1565]   | 1.694     | -3.294      |             |
+| Zymo isolate drafts (n=8)                                                | MAGICC V5     | 8    | 8          | 1.752    | [1.0462, 2.8506]   | 1.752     | 0.4317   | [0.277, 0.5801]    | 0.4317    | -1.706      |             |
+| Zymo isolate drafts (n=8)                                                | CheckM2 1.0.1 | 8    | 8          | 1.851    | [1.1712, 2.9119]   | 1.851     | 0.1669   | [0.0402, 0.3747]   | 0.1625    | -1.852      |             |
+| Zymo isolate drafts (n=8)                                                | CoCoPyE 0.5.0 | 8    | 8          | 1.742    | [1.0765, 2.8103]   | 1.742     | 0.4713   | [0.0544, 1.147]    | 0.4412    | -1.665      |             |
+| Zymo isolate drafts (n=8)                                                | DeepCheck     | 8    | 8          | 0.9794   | [0.3292, 1.9789]   | 0.961     | 0.2836   | [0.2214, 0.3528]   | -0.1272   | -0.3892     |             |
+| CAMI II marine, gold-standard pure bins (leakage-free, >=50 %)           | MAGICC V5     | 409  | 231        | 9.733    | [7.7114, 11.8831]  | -6.856    | 1.049    | [0.6024, 1.6284]   | 1.049     | -0.0596     |             |
+| CAMI II marine, gold-standard pure bins (leakage-free, >=50 %)           | CheckM2 1.0.1 | 409  | 231        | 25.27    | [21.1284, 29.6933] | -25.17    | 2.143    | [1.8937, 2.4045]   | 2.143     | -3.924      |             |
+| CAMI II marine, gold-standard pure bins (leakage-free, >=50 %)           | CoCoPyE 0.5.0 | 409  | 231        | 12.76    | [11.3572, 14.3558] | 3.283     | 14.73    | [13.2093, 16.1826] | 14.73     | 0.0629      |             |
+| CAMI II marine, gold-standard pure bins (leakage-free, >=50 %)           | DeepCheck     | 409  | 231        | 26.32    | [22.9916, 29.7023] | -26.32    | 2.946    | [2.7350, 3.1793]   | 2.913     | -3.116      |             |
+| CAMI II marine, constructed mixed bins (leakage-free, in-domain)         | MAGICC V5     | 986  | 253        | 10.17    | [9.0734, 11.3014]  | -0.1832   | 7.613    | [7.0111, 8.2377]   | -5.632    | -0.1482     | -0.1524     |
+| CAMI II marine, constructed mixed bins (leakage-free, in-domain)         | CheckM2 1.0.1 | 986  | 253        | 15.74    | [12.9854, 18.9870] | -12.59    | 7.132    | [6.6198, 7.6868]   | -6.283    | -3.311      | -0.0374     |
+| CAMI II marine, constructed mixed bins (leakage-free, in-domain)         | CoCoPyE 0.5.0 | 986  | 253        | 8.418    | [7.5051, 9.4888]   | 2.877     | 11.85    | [11.1276, 12.6316] | 6.701     | 0.2611      | -1.21       |
+| CAMI II marine, constructed mixed bins (leakage-free, in-domain)         | DeepCheck     | 986  | 253        | 15.64    | [13.4014, 18.3394] | -13.03    | 7.126    | [6.6833, 7.6151]   | -6.452    | -2.309      | 0.003       |
+| CAMI II strain-madness, gold-standard pure bins (leakage-free, >=50 %)   | MAGICC V5     | 700  | 330        | 1.296    | [1.1615, 1.4628]   | -0.0519   | 0.5028   | [0.4013, 0.6606]   | 0.5028    | 0.9847      |             |
+| CAMI II strain-madness, gold-standard pure bins (leakage-free, >=50 %)   | CheckM2 1.0.1 | 700  | 330        | 13.96    | [13.1869, 14.6878] | -13.85    | 3.015    | [2.8520, 3.1842]   | 3.015     | -0.0857     |             |
+| CAMI II strain-madness, gold-standard pure bins (leakage-free, >=50 %)   | CoCoPyE 0.5.0 | 700  | 330        | 8.942    | [8.4288, 9.4296]   | 8.928     | 20.06    | [19.2667, 20.9358] | 20.06     | 0.5498      |             |
+| CAMI II strain-madness, gold-standard pure bins (leakage-free, >=50 %)   | DeepCheck     | 700  | 330        | 17.47    | [16.6759, 18.2488] | -17.47    | 3.179    | [3.0357, 3.3172]   | 3.15      | -0.547      |             |
+| CAMI II strain-madness, constructed mixed bins (leakage-free, in-domain) | MAGICC V5     | 2250 | 335        | 4.218    | [4.0029, 4.4469]   | 2.7       | 4.441    | [4.2359, 4.6668]   | -3.654    | 0.7402      | 0.0223      |
+| CAMI II strain-madness, constructed mixed bins (leakage-free, in-domain) | CheckM2 1.0.1 | 2250 | 335        | 7.156    | [6.7495, 7.5768]   | -4.178    | 5.918    | [5.7039, 6.1308]   | -5.247    | 0.4067      | -0.2745     |
+| CAMI II strain-madness, constructed mixed bins (leakage-free, in-domain) | CoCoPyE 0.5.0 | 2250 | 335        | 6.079    | [5.7390, 6.4487]   | 5.719     | 11.88    | [11.4125, 12.3509] | 11.6      | 0.569       | -3.216      |
+| CAMI II strain-madness, constructed mixed bins (leakage-free, in-domain) | DeepCheck     | 2250 | 335        | 8.501    | [8.0008, 9.0306]   | -6.544    | 6.294    | [6.0794, 6.4993]   | -5.79     | 0.1647      | -0.4202     |

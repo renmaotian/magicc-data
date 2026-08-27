@@ -1,0 +1,92 @@
+accession	organism	strain	kingdom	gtdb_phylum	genome_status	gc_pct	mock1_pct	mock2_pct	mock3_pct	ref_len	ref_nseq	ref_label	split	in_mock1	leakage_free
+GCA_000005845.2	Escherichia coli	K-12 MG1655	Bacteria	Proteobacteria (g)	Complete	50.8		0.0432581610889968		4641652	1	Escherichia_coli_K-12_MG1655	none	False	True
+GCA_000006805.1	Halobacterium salinarum	NRC-1	Archaea	Halobacteriota	Complete	67.9	2.5322931915107527	2.49649088871823	2.49410009834753	2571010	3	Halobacterium_salinarum_NRC-1	val	True	False
+GCA_000006985.1	Chlorobaculum tepidum	TLS	Bacteria	Bacteroidota	Complete	56.5	0.2432820526872879	0.2398424597746279	0.6001950991907292	2154946	1	Chlorobium_tepidum_TLS	test	True	True
+GCA_000007105.1	Zymomonas mobilis subsp. mobilis	ZM4	Bacteria	Proteobacteria (a)	Complete	46.3			0.0487574276651805	2056363	1	Zymomonas_mobilis_subsp._mobilis_ZM4	train	False	False
+GCA_000007185.1	Methanopyrus kandleri	AV19	Archaea	Methanobacteriota_A	Complete	61.2	0.2102064650380613	0.2072345044706718	0.2602738841370118	1694969	1	Methanopyrus_kandleri_AV19	train	True	False
+GCA_000007225.1	Pyrobaculum aerophilum	IM2	Archaea	Thermoproteota	Complete	51.4	0.2290245053808944	0.2257864898477628	0.1127851315379682	2222430	1	Pyrobaculum_aerophilum_IM2	train	True	False
+GCA_000007265.1	Streptococcus agalactiae	2603V/R	Bacteria	Firmicutes	Complete	35.6		0.0929249386356229		2160267	1	Streptococcus_agalactiae_sv._V_V_2603V_R	test	False	True
+GCA_000007305.1	Pyrococcus furiosus	DSM 3638	Archaea	Methanobacteriota_B	Complete	40.8	0.4018349459160483	0.3961536857623924		1908256	1	Pyrococcus_furiosus_DSM_3638	train	True	False
+GCA_000007345.1	Methanosarcina acetivorans	C2A	Archaea	Halobacteriota	Complete	42.7	0.1769944593465906	0.1744920598427063	0.1743249557133381	5751492	1	Methanosarcina_acetivorans_C2A	train	True	False
+GCA_000007565.2	Pseudomonas putida	KT2440	Bacteria	Proteobacteria (g)	Complete	61.5	1.4824978587194015	1.4615378698030008	1.1843343282541523	6181873	1	Pseudomonas_putida_KT2440	none	True	True
+GCA_000007645.1	Staphylococcus epidermidis	ATCC 12228	Bacteria	Firmicutes	Complete	32.0		0.0784054169738068		2564615	7	Staphylococcus_epidermidis_ATCC_12228	none	False	True
+GCA_000007985.2	Geobacter sulfurreducens	PCA	Bacteria	Desulfobacterota	Complete	60.9	0.5871731729158559	0.5788715466275353	0.1012055072511114	3814128	1	Geobacter_sulfurreducens_PCA	train	True	False
+GCA_000008005.1	Bacillus cereus	ATCC 10987	Bacteria	Firmicutes	Complete	35.3		0.037101269399805		5432652	2	Bacillus_cereus_ATCC_10987	none	False	True
+GCA_000008085.1	Nanoarchaeum equitans	Kin4-M	Archaea	Nanoarchaeota	Complete	31.6	0.9556564428044254	0.9421450921260708	0.6240849246089604	490885	1	Nanoarchaeum_equitans_Kin4-M	train	True	False
+GCA_000008185.1	Treponema denticola	ATCC 35405	Bacteria	Spirochaetota	Complete	37.9	1.267464756251801	1.249544968316381	1.5604354107855598	2843201	1	Treponema_denticola_ATCC_35405	train	True	False
+GCA_000008525.1	Helicobacter pylori	ATCC 700392 = 26695	Bacteria	Campylobacterota	Complete	38.9		0.1209143779837021		1667867	1	Helicobacter_pylori_ATCC_700392	train	False	False
+GCA_000008565.1	Deinococcus radiodurans	R1	Bacteria	Deinococcota	Complete	66.6	0.6198437959638331	0.6712624099360986	0.4578712916190391	3284156	4	Deinococcus_radiodurans_R1	train	True	False
+GCA_000008665.1	Archaeoglobus fulgidus	DSM 4304	Archaea	Halobacteriota	Complete	48.6	1.168267837618576	1.1517505247713085	0.9205180311565432	2178400	1	Archaeoglobus_fulgidus_DSM_4304	train	True	False
+GCA_000008805.1	Neisseria meningitidis	MC58	Bacteria	Proteobacteria (g)	Complete	51.5		0.0884219680409451		2272360	1	Neisseria_meningitidis_MC58	none	False	True
+GCA_000009145.1	Nitrosomonas europaea	ATCC 19718	Bacteria	Proteobacteria (g)	Complete	50.7	5.683429495108962	5.60307550436018	2.7988548305193994	2812094	1	Nitrosomonas_europaea_ATCC_19718	none	True	True
+GCA_000009225.1	Pseudomonas fluorescens	SBW25	Bacteria	Proteobacteria (g)	Complete	60.0	1.069308679608532	1.0541904803200917	0.3510603079606817	6722539	1	Pseudomonas_fluorescens_SBW25	none	True	True
+GCA_000009705.1	Trichormus sp000009705	sp. PCC 7120	Bacteria	Cyanobacteria	Complete	41.3	1.3714630261137666	1.3520728801803152	2.026167080362634	7211789	7	Nostoc_sp._PCC_7120	train	True	False
+GCA_000010305.1	Gemmatimonas aurantiaca	T-27	Bacteria	Gemmatimonadota	Complete	64.3	2.414901248417184	2.38075866729754	2.378478709088018	4636964	1	Gemmatimonas_aurantiaca_T-27	train	True	False
+GCA_000010425.1	Bifidobacterium adolescentis	ATCC 15703	Bacteria	Actinobacteriota	Complete	59.2		0.0960372571545193		2089645	1	Bifidobacterium_adolescentis_ATCC_15703	train	False	False
+GCA_000010505.1	Porphyromonas gingivalis	ATCC 33277	Bacteria	Bacteroidota	Complete	48.4	2.1700669467348197	2.227719839171095	4.274674199193379	2354886	1	Porphyromonas_gingivalis_ATCC_33277	train	True	False
+GCA_000011065.1	Bacteroides thetaiotaomicron	VPI-5482	Bacteria	Bacteroidota	Complete	42.9	0.3235098144670962	0.3189359379615109	0.1991440660346196	6293399	2	Bacteroides_thetaiotaomicron_VPI-5482	none	True	True
+GCA_000011105.1	Pyrococcus horikoshii	OT3	Archaea	Methanobacteriota_B	Complete	41.9	5.855518337574474	5.772731304370017	7.209003735517018	1738505	1	Pyrococcus_horikoshii_OT3	train	True	False
+GCA_000011205.1	Sulfurisphaera tokodaii	str. 7	Archaea	Thermoproteota	Complete	32.8	0.0754060639249868	0.0743399509084983	0.0742687584841264	2694756	1	Sulfolobus_tokodaii_str._7	train	True	False
+GCA_000011585.1	Methanococcus maripaludis	S2	Archaea	Methanobacteriota_A	Complete	33.1	0.4596159247507687	0.453117740195616	0.3017892048640412	1661137	1	Methanococcus_maripaludis_S2	train	True	False
+GCA_000011965.2	Ruegeria pomeroyi	DSS-3	Bacteria	Proteobacteria (a)	Complete	64.1	0.0665347622867531	0.0655940743310279		4601048	2	Ruegeria_pomeroyi_DSS-3	none	True	True
+GCA_000012825.1	Phocaeicola vulgatus	ATCC 8482	Bacteria	Bacteroidota	Complete	42.2	0.4692441753857262	0.5006600257610403	1.3865005220193225	5163189	1	Bacteroides_vulgatus_ATCC_8482	none	True	True
+GCA_000013465.1	Staphylococcus aureus	USA300_FPR3757	Bacteria	Firmicutes	Complete	32.7		0.0692130577423949		2917469	4	Staphylococcus_aureus_USA300_FPR3757	none	False	True
+GCA_000013645.1	Paraburkholderia xenovorans	LB400	Bacteria	Proteobacteria (g)	Complete	62.6	0.5751132729787753	0.566982153087835	0.2832195883766493	9731138	3	Paraburkholderia_xenovorans_LB400	none	True	True
+GCA_000014425.1	Lactobacillus gasseri ATCC 33323	ATCC 33323	Bacteria	Firmicutes	Complete	35.2		0.1061999298692833		1894360	1	Lactobacillus_gasseri_ATCC_33323	train	False	False
+GCA_000015125.1	Chlorobium phaeobacteroides	DSM 266	Bacteria	Bacteroidota	Complete	48.4	0.6902618012215004	0.6805026777138854	0.6798509872725285	3133902	1	Chlorobium_phaeobacteroides_DSM_266	test	True	True
+GCA_000015425.1	Acinetobacter baumannii	ATCC 17978	Bacteria	Proteobacteria (g)	Complete	39.0		0.0462483565559782		4001457	3	Acinetobacter_baumannii_ATCC_17978	none	False	True
+GCA_000015805.1	Pyrobaculum calidifontis	JCM 11548	Archaea	Thermoproteota	Complete	57.2	2.5449546574683057	2.508973343161818	0.5013141197678534	2009313	1	Pyrobaculum_calidifontis_JCM_11548	val	True	False
+GCA_000015865.1	Ruminiclostridium thermocellum	ATCC 27405	Bacteria	Firmicutes_A	Complete	39.0	0.2688448965555986	0.2650438886695543	0.1591349168987019	3843301	1	Ruminiclostridium_thermocellum_ATCC_27405	train	True	False
+GCA_000015985.1	Cereibacter A sphaeroides	ATCC 17029	Bacteria	Proteobacteria (a)	Complete	69.0		0.0447033112367361		4489380	3	Rhodobacter_sphaeroides_ATCC_17029	train	False	False
+GCA_000016065.1	Shewanella loihica	PV-4	Bacteria	Proteobacteria (g)	Complete	53.7	0.55325101249311	0.5454289876438736	0.7628693126902119	4602594	1	Shewanella_loihica_PV-4	train	True	False
+GCA_000016085.1	Chlorobium phaeovibrioides	DSM 265	Bacteria	Bacteroidota	Complete	53.0	1.2939175424119185	1.2756237572383484	1.9116032143919244	1966858	1	Chlorobium_phaeovibrioides_DSM_265	none	True	True
+GCA_000016125.1	Methanococcus maripaludis	C5	Archaea	Methanobacteriota_A	Complete	33.0	1.1540467948482065	1.137730543268645	1.1366409838235907	1789046	2	Methanococcus_maripaludis_C5	train	True	False
+GCA_000016385.1	Pyrobaculum arsenaticum	DSM 13514	Archaea	Thermoproteota	Complete	55.1	0.0479935628541743	0.0473150158063216		2121076	1	Pyrobaculum_arsenaticum_DSM_13514	train	True	False
+GCA_000016425.1	Micromonospora tropica	CNB-440	Bacteria	Actinobacteriota	Complete	69.5	0.4909911943102475	0.4840494170049617	0.3868686896516531	5183331	1	Salinispora_tropica_CNB-440	train	True	False
+GCA_000016545.1	Caldicellulosiruptor saccharolyticus	DSM 8903	Bacteria	Firmicutes_A	Complete	35.3	0.8910815662438224	0.8784831940827907	1.3164628583223938	2970275	1	Caldicellulosiruptor_saccharolyticus_DSM_8903	none	True	True
+GCA_000016785.1	Thermotoga petrophila	RKU-1	Bacteria	Thermotogota	Complete	46.1	6.950263060905706	6.85199820617702		1823511	1	Thermotoga_petrophila_RKU-1	train	True	False
+GCA_000017325.1	Shewanella baltica	OS185	Bacteria	Proteobacteria (g)	Complete	46.3	1.3566218977486435	1.337441580034647	1.781547686994173	5312910	2	Shewanella_baltica_OS185	train	True	False
+GCA_000017945.1	Ignicoccus hospitalis	KIN4/I	Archaea	Thermoproteota	Complete	56.5	2.8386032717915723	2.798470267372797	4.1917572937512055	1297538	1	Ignicoccus_hospitalis_KIN4_I	train	True	False
+GCA_000018265.1	Micromonospora arenicola	CNS-205	Bacteria	Actinobacteriota	Complete	69.5	0.3905638725665548	0.3850419661489545	0.3118972108539606	5786361	1	Salinispora_arenicola_CNS-205	none	True	True
+GCA_000018565.1	Herpetosiphon aurantiacus	DSM 785	Bacteria	Chloroflexota	Complete	50.9	1.650232403204518	1.6269009341725629	2.600548665013424	6785430	3	Herpetosiphon_aurantiacus_DSM_785	train	True	False
+GCA_000018865.1	Chloroflexus aurantiacus	J-10-fl	Bacteria	Chloroflexota	Complete	56.7	0.2032657270148536	0.2003918966344201	0.1000999946289742	5258541	1	Chloroflexus_aurantiacus_J-10-fl	val	True	False
+GCA_000018945.1	Thermotoga neapolitana	DSM 4359	Bacteria	Thermotogota	Complete	46.9	1.6074819757894294	1.5847549248208943	3.166474535688672	1884562	1	Thermotoga_neapolitana_DSM_4359	test	True	True
+GCA_000019085.1	Thermoanaerobacter pseudethanolicus	ATCC 33223	Bacteria	Firmicutes_A	Complete	34.5	2.4816006004718845	2.446515004378171	1.8331290554482584	2362816	1	Thermoanaerobacter_pseudethanolicus_ATCC_33223	train	True	False
+GCA_000019625.1	Thermotoga maritima	RQ2	Bacteria	Thermotogota	Complete	46.2			6.1406434260504295	1877693	1	Thermotoga_sp._RQ2	train	False	False
+GCA_000019785.1	Leptothrix cholodnii	SP-6	Bacteria	Proteobacteria (g)	Complete	68.9	0.0497648384369662	0.0490612485761577		4909403	1	Leptothrix_cholodnii_SP-6	test	True	True
+GCA_000020225.1	Akkermansia muciniphila	ATCC BAA-835	Bacteria	Verrucomicrobiota	Complete	55.8	0.9075135785424312	0.89468288577896	1.2513565168185226	2664102	1	Akkermansia_muciniphila_ATCC_BAA-835	test	True	True
+GCA_000020325.1	Sulfurihydrogenibium sp000020325	YO3AOP1	Bacteria	Aquificota	Complete	32.0	0.6921505889417947	0.6823647612002073	0.5453690300122424	1838442	1	Sulfurihydrogenibium_sp._YO3AOP1	train	True	False
+GCA_000020465.1	Chlorobium limicola	DSM 245	Bacteria	Bacteroidota	Complete	51.3	2.320980079770457	2.2881653836405094	1.3715844590091748	2763181	1	Chlorobium_limicola_DSM_245	val	True	False
+GCA_000020645.1	Pelodictyon phaeoclathratiforme	BU-1	Bacteria	Bacteroidota	Complete	48.1			0.1029788751768644	3018238	1	Pelodictyon_phaeoclathratiforme_BU-1	train	False	False
+GCA_000020725.1	Geobacter bemidjiensis	Bem	Bacteria	Desulfobacterota	Complete	60.3	0.0033123054110216	0.0032654750670218		4615150	1	Geobacter_bemidjiensis_Bem	train	True	False
+GCA_000020785.1	Hydrogenobaculum sp000020785	Y04AAS1	Bacteria	Aquificota	Complete	34.8	1.6318937727031608	1.6088215806002002	1.285824700753066	1559514	1	Hydrogenobaculum_sp._Y04AAS1	train	True	False
+GCA_000021565.1	Persephonella marina	EX-H1	Bacteria	Aquificota	Complete	37.1	2.806237421402552	2.766562014855797	1.5158569952865126	1983966	2	Persephonella_marina_EX-H1	val	True	False
+GCA_000021645.1	Dictyoglomus turgidum	DSM 6724	Bacteria	Dictyoglomota	Complete	34.0	0.6857645825164118	0.6760690420039821	0.5403372779838468	1855560	1	Dictyoglomus_turgidum_DSM_6724	val	True	False
+GCA_000021665.1	Shewanella baltica OS223	OS223	Bacteria	Proteobacteria (g)	Complete	46.3	2.536452317303562	2.5005912115724644	2.9978357933821127	5358884	4	Shewanella_baltica_OS223	none	True	True
+GCA_000022325.1	Caldicellulosiruptor bescii	DSM 6725	Bacteria	Firmicutes_A	Complete	35.2	0.214992735486677	0.2119531052258954	0.2117501261382073	2931662	3	Caldicellulosiruptor_bescii_DSM_6725	none	True	True
+GCA_000022565.1	Acidobacterium capsulatum	ATCC 51196	Bacteria	Acidobacteriota	Complete	60.5	0.1997803218085485	0.1969557691077175	0.1214612051693705	4127356	1	Acidobacterium_capsulatum_ATCC_51196	train	True	False
+GCA_000023225.1	Desulfomicrobium baculatum	DSM 4028	Bacteria	Desulfobacterota_I	Complete	58.6			0.0381711258706487	3942657	1	Desulfomicrobium_baculatum_DSM_4028	train	False	False
+GCA_000025665.1	Aciduliprofundum boonei	T469	Archaea	Thermoplasmatota	Complete	39.2	0.0342524180009193	0.0337681472834699		1486778	1	Aciduliprofundum_boonei_T469	val	True	False
+GCA_000025685.1	Haloferax volcanii	DS2	Archaea	Halobacteriota	Complete	65.5	0.0482710050942355	0.0475885354867362	0.0475429618325677	4012900	5	Haloferax_volcanii_DS2	train	True	False
+GCA_000091665.1	Methanocaldococcus jannaschii	DSM 2661	Archaea	Methanobacteriota_A	Complete	31.3	5.645801351648397	5.565979358612287	11.121298081598615	1739927	3	Methanocaldococcus_jannaschii_DSM_2661	train	True	False
+GCA_000144915.1	Acidilobus saccharovorans	345-15	Archaea	Thermoproteota	Complete	57.2	0.0341604652009168	0.0336774945390848	0.0336452429374398	1496453	1	Acidilobus_saccharovorans_345-15	train	True	False
+GCA_000154225.1	Pauljensenia odontolytica_A	ATCC 17982	Bacteria	Actinobacteriota	Draft	65.5		0.083982371319224		2393958	2	Actinomyces_odontolyticus_ATCC_17982	train	False	False
+GCA_000156375.1	Desulfovibrio piger	ATCC 29098	Bacteria	Desulfobacterota_I	Draft	63.0	4.387852857703976	4.325816108899687	6.482510169411898	2867216	47	Desulfovibrio_piger_ATCC_29098	none	True	True
+GCA_000166095.1	Methanothermus fervidus	DSM 2088	Archaea	Methanobacteriota	Complete	31.6	7.183339758983122	7.081779597634164	5.659998126411249	1243342	1	Methanothermus_fervidus_DSM_2088	val	True	False
+GCA_000172575.2	Enterococcus faecalis	OG1RF	Bacteria	Firmicutes	Complete	37.4	0.1523040304414984	0.2093009917219985	0.3000138361358094	2739625	1	Enterococcus_faecalis_OG1RF	none	True	True
+GCA_000189295.2	Desulfovibrio mercurii ND 132	ND132	Bacteria	Desulfobacterota_I	Complete	65.2	0.0528821747006401	0.052134511026739	0.0325528649199904	3858580	1	Desulfovibrio_desulfuricans_ND132	train	True	False
+GCA_000195675.1	Bordetella pertussis	RB50	Bacteria	Proteobacteria (g)	Complete	68.1	0.4766564636270562	0.4699173549424853	0.4694673337177745	5339179	1	Bordetella_bronchiseptica_RB50	train	True	False
+GCA_000195755.1	Nitratidesulfovibrio vulgaris	Hildenborough	Bacteria	Desulfobacterota_I	Complete	63.2	0.0271461830129952	0.0267623823270593	0.053473506108571	3773159	2	Desulfovibrio_vulgaris_Hildenborough	train	True	False
+GCA_000196115.1	Rhodopirellula baltica	SH 1	Bacteria	Planctomycetota	Complete	55.4	1.3177841732417428	1.2991529546515088	0.7787452844168247	7145576	1	Rhodopirellula_baltica_SH_1	none	True	True
+GCA_000196135.1	Wolinella succinogenes	DSM 1740	Bacteria	Campylobacterota	Complete	48.5	0.6560466917797272	0.6467713115102256	0.5392517897327523	2110355	1	Wolinella_succinogenes_DSM_1740	train	True	False
+GCA_000231215.1	Cutibacterium acnes	ATCC 11828	Bacteria	Actinobacteriota	Complete	60.0		0.0809346239729618		2488626	1	Propionibacterium_acnes_ATCC_11828	none	False	True
+GCA_000243155.3	Desulfitobacterium dehalogenans	ATCC 51507	Bacteria	Firmicutes_B	Complete	45.0	0.0035346592464837	0.0034846851988358		4321753	1	Desulfitobacterium_dehalogenans_ATCC_51507	none	True	True
+GCA_000308215.1	Methanomassiliicoccus luminyensis	B10	Archaea	Thermoplasmatota	Draft	60.5	0.0582814043695031	0.0574574048052324		2620233	26	Methanomassiliicoccus_luminyensis_B10	none	True	True
+GCA_000328665.1	Methanomethylovorans hollandica	DSM 15978	Archaea	Halobacteriota	Complete	41.8	0.04695488297912	0.0462910210915464		2714013	2	Methanomethylovorans_hollandica_DSM_15978	test	True	True
+GCA_000767745.1	Clostridium beijerinckii ATCC 35702	ATCC 35702	Bacteria	Firmicutes_A	Complete	29.6		0.0341356917436982		5999050	1	Clostridium_beijerinckii_ATCC_35702	train	False	False
+GCA_000817065.1	Streptococcus mutans UA159-FR	UA159-FR	Bacteria	Firmicutes	Complete	36.8		0.0988757967748499		2031692	1	Streptococcus_mutans_UA159-FR	none	False	True
+GCA_001481685.1	Ignicoccus islandicus	DSM 13165	Archaea	Thermoproteota	Complete	44.9	1.095389379111179	1.0799024432547282	2.6971706587223108	1394664	1	Ignicoccus_islandicus_DSM_13165	train	True	False
+GCA_001639275.1	Methanobrevibacter oralis DSM 7256	DSM 7256	Archaea	Methanobacteriota	Draft	28.0	0.7611079349437925	0.7503471680483942		2140433	136	Methanobrevibacter_oralis_DSM_7256	none	True	True
+GCA_002563335.1	Pseudomonas aeruginosa ATCC 9027	ATCC 9027	Bacteria	Proteobacteria (g)	Draft	66.6		0.031859978960785		6342489	59	Pseudomonas_aeruginosa_ATCC_9027	none	False	True
+GCA_002952055.1	Desulfobulbus oralis	sp. ONRL	Bacteria	Desulfobacterota	Complete	59.8	7.350049552255035	7.246132399023302	3.6195965326198807	2774417	1	Desulfobulbus_oralis_sp._ONRL	train	True	False
+GCA_003019295.1	Fusobacterium nucleatum subsp. nucleatum	ATCC 25586	Bacteria	Fusobacteriota	Complete	27.2	2.808871546527448	2.7691588979482016	1.383253492116404	2180101	1	Fusobacterium_nucleatum_subsp._nucleatum_ATCC_25586	train	True	False

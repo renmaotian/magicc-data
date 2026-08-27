@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-08-25T16:45:15.306997+00:00",
+  "model": "/path/to/magicc/models/magicc_v5.onnx",
+  "model_sha256": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+  "model_version": "V5",
+  "kmer_list_sha256": "02a2857d5dffa6bfe6b26f624c78aa7a72a619e0e2a08919f3dc7fbe5d5a0eae",
+  "n_kmers": 9249,
+  "normalization_sha256": "b1e3f211a43560d8bed1dd8264921c7ec8ce0529c9bdbdbdc000894c9ce1d7d9",
+  "checks": [
+    {
+      "check": "model_sha256_matches_config",
+      "result": "PASS",
+      "detail": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096 vs config b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096"
+    },
+    {
+      "check": "model_sha256_matches_model_card",
+      "result": "PASS",
+      "detail": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096 vs card b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096"
+    },
+    {
+      "check": "kmer_list_sha256_matches_model_card",
+      "result": "PASS",
+      "detail": "02a2857d5dffa6bfe6b26f624c78aa7a72a619e0e2a08919f3dc7fbe5d5a0eae vs card 02a2857d5dffa6bfe6b26f624c78aa7a72a619e0e2a08919f3dc7fbe5d5a0eae"
+    },
+    {
+      "check": "normalization_sha256_matches_model_card",
+      "result": "PASS",
+      "detail": "b1e3f211a43560d8bed1dd8264921c7ec8ce0529c9bdbdbdc000894c9ce1d7d9 vs card b1e3f211a43560d8bed1dd8264921c7ec8ce0529c9bdbdbdc000894c9ce1d7d9"
+    },
+    {
+      "check": "kmer_count_is_9249",
+      "result": "PASS",
+      "detail": "9249 vs card 9249"
+    }
+  ],
+  "overall": "PASS"
+}

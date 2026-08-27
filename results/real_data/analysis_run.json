@@ -1,0 +1,11 @@
+{
+  "generated_utc": "2026-07-26T23:32:48.731183+00:00",
+  "tracks": {
+    "meslier": 394
+  },
+  "n_bootstrap": 2000,
+  "seed": 1430,
+  "r2_convention": "coefficient of determination (1 - SS_res/SS_tot)",
+  "mimag": "HQ >=90% comp AND <5% cont; MQ >=50% AND <10% (MIMAG-inspired; rRNA/tRNA criteria not evaluable)",
+  "denominator": "completeness = retained dominant bp / dominant reference FULL length x 100; contamination = contaminant bp / dominant reference FULL length x 100 (MAGICC convention; identical denominator for truth and for every tool's target quantity)"
+}

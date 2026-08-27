@@ -1,0 +1,221 @@
+{
+  "created": "2026-07-26T09:11:44.740100",
+  "panel_groups": {
+    "Bacteroidota": {
+      "phyla": [
+        "Bacteroidota"
+      ],
+      "rationale": "Large, GC-distinct, 4th most abundant phylum (10.4% of training genomes)",
+      "train": 8279,
+      "val": 1033,
+      "test": 1035
+    },
+    "Bacteroidota_A": {
+      "phyla": [
+        "Bacteroidota_A"
+      ],
+      "rationale": "GTDB polyphyly split of Bacteroidota; excluded so the Bacteroidota holdout is not undermined by a sister lineage, and evaluated separately",
+      "train": 528,
+      "val": 66,
+      "test": 66
+    },
+    "Campylobacterota": {
+      "phyla": [
+        "Campylobacterota"
+      ],
+      "rationale": "Mid-size bacteria (median 1.68 Mbp), well populated (6.2% of training genomes)",
+      "train": 4973,
+      "val": 622,
+      "test": 622
+    },
+    "Patescibacteriota": {
+      "phyla": [
+        "Patescibacteriota"
+      ],
+      "rationale": "Reduced genomes (median 0.88 Mbp), the hardest case and the lineage both reviewers singled out; directly comparable to Set C_clean",
+      "train": 1286,
+      "val": 161,
+      "test": 161
+    },
+    "Halobacteriota": {
+      "phyla": [
+        "Halobacteriota"
+      ],
+      "rationale": "Largest archaeal phylum in the training set (573 genomes); domain-level generalization",
+      "train": 573,
+      "val": 72,
+      "test": 72
+    },
+    "DPANN": {
+      "phyla": [
+        "Nanobdellota",
+        "Micrarchaeota",
+        "Nanohalarchaeota",
+        "Altiarchaeota",
+        "Iainarchaeota"
+      ],
+      "rationale": "DPANN superphylum (candidate/uncultured archaea, median <1.1 Mbp): extreme taxonomic novelty. Pooled because no single DPANN phylum has enough genomes for an independent evaluation set",
+      "train": 64,
+      "val": 10,
+      "test": 9
+    }
+  },
+  "panel_phyla": [
+    "Altiarchaeota",
+    "Bacteroidota",
+    "Bacteroidota_A",
+    "Campylobacterota",
+    "Halobacteriota",
+    "Iainarchaeota",
+    "Micrarchaeota",
+    "Nanobdellota",
+    "Nanohalarchaeota",
+    "Patescibacteriota"
+  ],
+  "n_removed": {
+    "train": 15703,
+    "val": 1964,
+    "test": 1965
+  },
+  "pct_removed": {
+    "train": 19.642,
+    "val": 19.62,
+    "test": 19.652
+  },
+  "surviving": {
+    "train": 64245,
+    "val": 8046,
+    "test": 8034,
+    "train_phyla": 100,
+    "train_archaea": 941
+  },
+  "eval_capacity": [
+    {
+      "group": "Bacteroidota",
+      "test_refs_available": 1035,
+      "all_split_refs": 10347,
+      "ref_source": "test",
+      "refs_used": 100,
+      "sims_per_ref": 10,
+      "eval_n": 1000,
+      "clean_head_to_head": "yes"
+    },
+    {
+      "group": "Bacteroidota_A",
+      "test_refs_available": 66,
+      "all_split_refs": 660,
+      "ref_source": "test",
+      "refs_used": 66,
+      "sims_per_ref": 15,
+      "eval_n": 990,
+      "clean_head_to_head": "yes"
+    },
+    {
+      "group": "Campylobacterota",
+      "test_refs_available": 622,
+      "all_split_refs": 6217,
+      "ref_source": "test",
+      "refs_used": 100,
+      "sims_per_ref": 10,
+      "eval_n": 1000,
+      "clean_head_to_head": "yes"
+    },
+    {
+      "group": "Patescibacteriota",
+      "test_refs_available": 161,
+      "all_split_refs": 1608,
+      "ref_source": "test",
+      "refs_used": 100,
+      "sims_per_ref": 10,
+      "eval_n": 1000,
+      "clean_head_to_head": "yes"
+    },
+    {
+      "group": "Halobacteriota",
+      "test_refs_available": 72,
+      "all_split_refs": 717,
+      "ref_source": "test",
+      "refs_used": 72,
+      "sims_per_ref": 14,
+      "eval_n": 1008,
+      "clean_head_to_head": "yes"
+    },
+    {
+      "group": "DPANN",
+      "test_refs_available": 9,
+      "all_split_refs": 83,
+      "ref_source": "all",
+      "refs_used": 83,
+      "sims_per_ref": 12,
+      "eval_n": 996,
+      "clean_head_to_head": "test-subset only (n_refs=9)"
+    },
+    {
+      "group": "in_distribution",
+      "test_refs_available": 8034,
+      "all_split_refs": 80325,
+      "ref_source": "test",
+      "refs_used": 100,
+      "sims_per_ref": 10,
+      "eval_n": 1000,
+      "clean_head_to_head": "yes (control)"
+    }
+  ],
+  "adapted_reduced_pool": {
+    "surviving_v5_reduced_phyla": [
+      "Aenigmatarchaeota",
+      "Bdellovibrionota",
+      "Dependentiae",
+      "Diapherotrites",
+      "Huberarchaeota",
+      "Nanoarchaeota",
+      "Nanohaloarchaeota",
+      "Undinarchaeota",
+      "Woesearchaeota"
+    ],
+    "n_from_surviving_phyla": 103,
+    "size_cutoff_bp": 1500000,
+    "n_small_nonpanel": 1519,
+    "n_total_adapted": 1622,
+    "n_v5_pool": 1453
+  },
+  "kmer_selection_leakage": {
+    "bacterial": {
+      "n_reps": 1000,
+      "n_panel": 187,
+      "pct_panel": 18.7,
+      "by_phylum": {
+        "Bacteroidota": 76,
+        "Campylobacterota": 60,
+        "Patescibacteriota": 31,
+        "Bacteroidota_A": 20
+      }
+    },
+    "archaeal": {
+      "n_reps": 1000,
+      "n_panel": 426,
+      "pct_panel": 42.6,
+      "by_phylum": {
+        "Halobacteriota": 362,
+        "Nanobdellota": 55,
+        "Micrarchaeota": 4,
+        "Nanohalarchaeota": 3,
+        "Iainarchaeota": 1,
+        "Altiarchaeota": 1
+      }
+    }
+  },
+  "v5_metadata_fields": [
+    "completeness",
+    "contamination",
+    "dominant_phylum",
+    "sample_type",
+    "quality_tier",
+    "dominant_accession",
+    "genome_full_length",
+    "n_contaminants",
+    "batch_id"
+  ],
+  "v5_records_contaminant_taxonomy": false,
+  "v5_train_panel_dominant_fraction": 23.464
+}

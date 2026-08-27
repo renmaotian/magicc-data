@@ -1,0 +1,23 @@
+	Command being timed: "env CHECKM2DB=/path/to/magicc/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd PATH=/path/to/conda/envs/checkm2_py39/bin:/path/to/home/.local/bin:/path/to/home/bin:/path/to/home/.npm-global/bin:/path/to/home/.local/bin:/path/to/home/bin:/path/to/home/.npm-global/bin:/path/to/conda/bin:/path/to/conda/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/context7/unknown/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/code-review/unknown/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/superpowers/6.2.0/bin:/path/to/home/.claude/plugins/cache/anthropic-agent-skills/document-skills/b29e7cf65e5c/bin:/path/to/home/.claude/plugins/cache/claude-plugins-official/code-simplifier/1.0.0/bin OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 TF_CPP_MIN_LOG_LEVEL=3 /path/to/conda/envs/checkm2_py39/bin/checkm2 predict --input /path/to/magicc/results/revision/speed/inputs/set_E_100 --output-directory /path/to/magicc/results/revision/speed/scratch/checkm2__t1__set_E_100__warm__r2/checkm2_out --threads 1 --extension .fasta --force --remove_intermediates"
+	User time (seconds): 7813.54
+	System time (seconds): 121.96
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:11:40
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 11123004
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 84916351
+	Voluntary context switches: 392794
+	Involuntary context switches: 77128
+	Swaps: 0
+	File system inputs: 496
+	File system outputs: 23103696
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

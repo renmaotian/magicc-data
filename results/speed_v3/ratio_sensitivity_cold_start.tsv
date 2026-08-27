@@ -1,0 +1,5 @@
+comparison	numerator_median_s	denominator_basis	n_den	den_median_s	den_min_s	den_max_s	ratio_of_medians	ratio_min_envelope	ratio_max_envelope	note
+CheckM2 1.0.1 / MAGICC	4286.00	ALL repeats (nothing dropped; includes the archived 39.06 s first-touch cold-cache run)	5	5.980	5.83	39.06	716.7	107.7	735.5	1,000 genomes @ 32 threads
+CheckM2 1.0.1 / MAGICC	4286.00	warm repeats only (the 39.06 s run is the documented WS8 cold-start observation, fs_inputs=8,570,352 blocks)	4	5.905	5.83	6.04	725.8	696.7	735.5	1,000 genomes @ 32 threads
+CoCoPyE 0.5.0 / MAGICC	2971.68	ALL repeats (nothing dropped; includes the archived 39.06 s first-touch cold-cache run)	5	5.980	5.83	39.06	496.9	74.9	545.0	1,000 genomes @ 32 threads
+CoCoPyE 0.5.0 / MAGICC	2971.68	warm repeats only (the 39.06 s run is the documented WS8 cold-start observation, fs_inputs=8,570,352 blocks)	4	5.905	5.83	6.04	503.2	484.2	545.0	1,000 genomes @ 32 threads

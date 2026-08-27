@@ -1,0 +1,38 @@
+{
+  "tool": "checkm2_vectors",
+  "threads": 32,
+  "repeat": 1,
+  "input_set": "set_E_100",
+  "cache": "warm",
+  "n_genomes": 100,
+  "n_output_rows": 100,
+  "return_code": 0,
+  "t_start_utc": "2026-07-29T19:37:41Z",
+  "t_end_utc": "2026-07-29T19:46:48Z",
+  "loadavg_before": [
+    0.83,
+    12.81,
+    13.12
+  ],
+  "loadavg_after": [
+    24.54,
+    22.76,
+    17.69
+  ],
+  "sum_pcpu_all_processes_before": 104.0,
+  "wall_clock_s": 547.44,
+  "elapsed_raw": "9:07.44",
+  "max_rss_kb": 11070360,
+  "major_faults": 0,
+  "minor_faults": 47168755,
+  "fs_inputs": 0,
+  "fs_outputs": 23137096,
+  "vol_ctx": 1878707,
+  "invol_ctx": 147326,
+  "exit_status": 0,
+  "user_s": 12051.74,
+  "sys_s": 205.61,
+  "pct_cpu": 2239.0,
+  "peak_rss_gb": 10.5575,
+  "genomes_per_min": 10.96
+}

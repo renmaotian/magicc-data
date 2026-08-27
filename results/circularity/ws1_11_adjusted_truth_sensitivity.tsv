@@ -1,0 +1,9 @@
+tool	arm	n	comp_mae_raw_truth	comp_mae_adjusted_truth	cont_mae_raw_truth	cont_mae_adjusted_truth	mean_reference_foreign_fraction_phi	mean_ref_checkm2_completeness
+magicc_v5	H_pass	2000	5.5373	5.5583	5.6262	5.7687	0.00581	99.873
+magicc_v5	H_fail	2000	6.3054	9.4103	6.4486	6.7987	0.03124	93.961
+checkm2	H_pass	2000	13.8873	13.8826	23.135	23.5568	0.00581	99.873
+checkm2	H_fail	2000	13.9443	16.2784	23.3533	23.5397	0.03124	93.961
+cocopye	H_pass	2000	5.1606	5.1649	22.2065	22.7272	0.00581	99.873
+cocopye	H_fail	2000	5.8113	8.6636	22.5215	22.7525	0.03124	93.961
+deepcheck	H_pass	2000	16.2487	16.2676	31.6594	32.1565	0.00581	99.873
+deepcheck	H_fail	2000	15.4116	17.5223	32.1433	32.7288	0.03124	93.961

@@ -1,0 +1,38 @@
+{
+  "tool": "checkm2",
+  "threads": 1,
+  "repeat": 3,
+  "input_set": "set_E_100",
+  "cache": "warm",
+  "n_genomes": 100,
+  "n_output_rows": 100,
+  "return_code": 0,
+  "t_start_utc": "2026-07-31T13:52:23Z",
+  "t_end_utc": "2026-07-31T16:04:19Z",
+  "loadavg_before": [
+    0.78,
+    0.95,
+    0.98
+  ],
+  "loadavg_after": [
+    1.13,
+    1.07,
+    1.01
+  ],
+  "sum_pcpu_all_processes_before": 1.5,
+  "wall_clock_s": 7915.0,
+  "elapsed_raw": "2:11:55",
+  "max_rss_kb": 11122372,
+  "major_faults": 0,
+  "minor_faults": 86706158,
+  "fs_inputs": 4584,
+  "fs_outputs": 23103720,
+  "vol_ctx": 393648,
+  "invol_ctx": 76561,
+  "exit_status": 0,
+  "user_s": 7827.67,
+  "sys_s": 121.81,
+  "pct_cpu": 100.0,
+  "peak_rss_gb": 10.6071,
+  "genomes_per_min": 0.76
+}

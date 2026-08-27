@@ -1,0 +1,91 @@
+{
+ "measured_on": "2026-08-01T00:59:45Z",
+ "why": "The environment-size column of tco.json charged MAGICC, CoCoPyE and DeepCheck the same shared analysis environment. This file replaces it.",
+ "distinction": {
+  "analysis_environment": "The conda environment used to DEVELOP this paper (training, plotting, running competitors). It is not what a user installs and must never be reported as a tool's install cost.",
+  "install_footprint": "What a user installs to RUN the released tool: the package plus its declared runtime dependencies."
+ },
+ "magicc_declared_runtime_dependencies": [
+  "numpy>=1.20",
+  "numba>=0.53",
+  "scipy>=1.7",
+  "h5py>=3.0",
+  "onnxruntime>=1.10"
+ ],
+ "magicc_minimal_env_probe": {
+  "conda_create_rc": 0,
+  "conda_create_s": 64.2,
+  "bytes_python_only": 241295533,
+  "n_conda_pkgs_python_only": 28,
+  "pip_install_rc": 0,
+  "pip_install_s": 23.9,
+  "bytes_total": 749469902,
+  "bytes_added_by_magicc_and_deps": 508174369,
+  "n_pip_pkgs": 13,
+  "pip_packages": [
+   "flatbuffers==25.12.19",
+   "h5py==3.16.0",
+   "llvmlite==0.48.0",
+   "magicc==0.3.0",
+   "numba==0.66.0",
+   "numpy==2.4.6",
+   "onnxruntime==1.28.0",
+   "packaging==26.2",
+   "pip==26.2",
+   "protobuf==7.35.1",
+   "scipy==1.17.1",
+   "setuptools==83.0.0",
+   "wheel==0.47.0"
+  ],
+  "site_packages_breakdown_bytes": {
+   "llvmlite": 180401829,
+   "scipy": 111808115,
+   "onnxruntime": 58650327,
+   "numpy": 42703052,
+   "numba": 32200984,
+   "pip": 10993245,
+   "h5py": 10360022,
+   "setuptools": 7419627,
+   "magicc": 2899176
+  },
+  "magicc_help_rc": 0,
+  "import_check_rc": 0,
+  "import_check_stdout": "0.3.0",
+  "probe_deleted_after_measurement": true
+ },
+ "environments_on_this_host": {
+  "magicc2 (shared analysis environment)": {
+   "path": "/path/to/conda/envs/magicc2",
+   "bytes": 8182289570,
+   "n_conda_packages": 65,
+   "n_pip_packages": 133,
+   "contains_non_magicc_packages": [
+    "cocopye==0.5.0",
+    "lightgbm==4.6.0",
+    "matplotlib==3.10.8",
+    "optuna==4.7.0",
+    "pandas==3.0.0",
+    "scikit-learn==1.3.1",
+    "torch==2.5.1+cu121",
+    "xgboost==3.1.3"
+   ]
+  },
+  "checkm2_py39 (dedicated CheckM2 environment)": {
+   "path": "/path/to/conda/envs/checkm2_py39",
+   "bytes": 2769191551,
+   "n_conda_packages": 29,
+   "n_pip_packages": 58
+  }
+ },
+ "containers_from_WS7": {
+  "docker_image_tag": "magicc:0.3.0",
+  "docker_image_bytes": 1059062945,
+  "apptainer_sif_bytes": 384008192,
+  "n_pinned_pip_packages": 13,
+  "caveat": "Container sizes include a base-OS layer and the bundled ONNX model, so they are NOT directly comparable with a bare conda environment; they are the most reproducible figure because every layer is pinned."
+ },
+ "not_separately_measurable": {
+  "CoCoPyE 0.5.0": "installed into the shared analysis environment on this host; its environment size cannot be isolated without a clean reinstall, so no number is reported. Its reference data (17.045 GB) is exact and is reported.",
+  "DeepCheck": "no installer; run from a git checkout inside the shared analysis environment, and it additionally requires a complete CheckM2 installation to produce its input. No isolated environment size is reported. Its model files (0.090 GB) are exact."
+ }
+}

@@ -1,0 +1,130 @@
+{
+  "wall_hours": 5.955,
+  "best_metrics": {
+    "best_epoch": 70,
+    "best_val_loss": 131.47555744404696,
+    "comp_mae": 3.852145195007324,
+    "cont_mae": 4.1570353507995605,
+    "comp_rmse": 6.500288963317871,
+    "cont_rmse": 6.853860855102539,
+    "comp_r2": 0.8309982717037201,
+    "cont_r2": 0.9312222301959991,
+    "total_time_min": 357.3017125805219
+  },
+  "seeding": {
+    "seed": 42,
+    "seeded": [
+      "PYTHONHASHSEED",
+      "random.seed",
+      "numpy.random.seed",
+      "torch.manual_seed",
+      "torch.cuda.manual_seed",
+      "torch.cuda.manual_seed_all",
+      "DataLoader generator (torch.Generator, seed)",
+      "DataLoader worker_init_fn (numpy + random + torch per worker)"
+    ],
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "deterministic_algorithms": false,
+    "residual_nondeterminism": [
+      "torch.backends.cudnn.deterministic=False and torch.use_deterministic_algorithms=False: cuDNN/cuBLAS may pick non-deterministic kernels, so results are not guaranteed bit-identical (cudnn.benchmark=False)",
+      "non-deterministic CUDA atomics in some backward kernels",
+      "FP16 AMP GradScaler loss-scale trajectory depends on observed overflow timing",
+      "DataLoader completion order with num_workers>0 does not affect batch contents (a seeded sampler fixes the permutation) but can affect floating-point reduction order on the host"
+    ],
+    "note": "Given identical data, identical hardware and this seed, runs are statistically reproducible (val metrics within run-to-run noise) but not guaranteed bit-identical. Production V5 was trained with no seed at all, so it is not reproducible even to this degree."
+  },
+  "config": {
+    "arch": "MAGICCModel V2 (no attention)",
+    "params": 42400946,
+    "lr": 0.001,
+    "weight_decay": 0.0005,
+    "batch_size": 512,
+    "comp_weight": 2.0,
+    "cont_weight": 1.0,
+    "scheduler": "CosineAnnealingWarmRestarts T_0=10 T_mult=2",
+    "mask_rate": 0.02,
+    "noise_std": 0.01,
+    "patience": 20,
+    "max_epochs": 150,
+    "amp": "fp16",
+    "grad_checkpointing": true
+  },
+  "data": "/path/to/magicc/data/features/holdout_family_features.h5",
+  "panel_level": "family",
+  "panel_taxa": [
+    "2-12-FULL-60-25",
+    "Arcobacteraceae",
+    "Flavobacteriaceae",
+    "GWA2-37-8",
+    "GWC2-37-13",
+    "Haloarculaceae",
+    "Haloferacaceae",
+    "Helicobacteraceae",
+    "Minisyncoccaceae",
+    "Muribaculaceae",
+    "Nanoperiomorbaceae",
+    "Nanosynbacteraceae",
+    "Nanosyncoccaceae",
+    "PJMF01",
+    "Peribacteraceae",
+    "Saccharimonadaceae",
+    "Staskawiczbacteraceae",
+    "UBA1547",
+    "UBA2103",
+    "UBA2206",
+    "UBA4665",
+    "UBA8517",
+    "UBA918",
+    "UBA922",
+    "UBA9973"
+  ],
+  "panel_phyla": [],
+  "panel_groups": {
+    "Bacteroidota_Muribaculaceae": [
+      "Muribaculaceae"
+    ],
+    "Bacteroidota_Flavobacteriaceae": [
+      "Flavobacteriaceae"
+    ],
+    "Campylobacterota_Helicobacteraceae": [
+      "Helicobacteraceae"
+    ],
+    "Campylobacterota_Arcobacteraceae": [
+      "Arcobacteraceae"
+    ],
+    "Halobacteriota_halophilic": [
+      "Haloferacaceae",
+      "Haloarculaceae"
+    ],
+    "Patescibacteriota_families": [
+      "2-12-FULL-60-25",
+      "GWA2-37-8",
+      "GWC2-37-13",
+      "Minisyncoccaceae",
+      "Nanoperiomorbaceae",
+      "Nanosynbacteraceae",
+      "Nanosyncoccaceae",
+      "PJMF01",
+      "Peribacteraceae",
+      "Saccharimonadaceae",
+      "Staskawiczbacteraceae",
+      "UBA1547",
+      "UBA2103",
+      "UBA2206",
+      "UBA4665",
+      "UBA8517",
+      "UBA918",
+      "UBA922",
+      "UBA9973"
+    ]
+  },
+  "status": "VALIDATION ARTIFACT ONLY - the released MAGICC model remains trained on all data",
+  "onnx": {
+    "onnx_path": "/path/to/magicc/models/magicc_holdout_family.onnx",
+    "max_abs_diff_random": 2.288818359375e-05,
+    "max_abs_diff_real": 2.288818359375e-05,
+    "verified": true,
+    "size_mb": 169.7
+  }
+}

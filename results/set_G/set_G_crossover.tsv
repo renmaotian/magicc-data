@@ -1,0 +1,31 @@
+comparator	error_type	metric	delta_mae_at_zero_error	winner_at_zero_error	crossover_rate_pct_magicc_becomes_worse	highest_rate_pct_magicc_still_better	delta_mae_at_max_rate	delta_mae_at_max_rate_ci	winner_at_max_rate
+checkm2	substitution	completeness	-0.7098	tie		5.0	-18.8823	[-21.657, -16.069]	MAGICC
+checkm2	substitution	contamination	-1.6074	MAGICC	5.0		2.9346	[1.112, 4.778]	checkm2
+checkm2	substitution_titv	completeness	-0.7098	tie		5.0	-12.1335	[-14.796, -9.459]	MAGICC
+checkm2	substitution_titv	contamination	-1.6074	MAGICC	5.0		3.5184	[1.587, 5.381]	checkm2
+checkm2	indel	completeness	-0.7098	tie		5.0	-42.704	[-47.716, -37.651]	MAGICC
+checkm2	indel	contamination	-1.6074	MAGICC		2.0	-1.4137	[-3.284, 0.475]	tie
+checkm2	chimera	completeness	-0.7098	tie			-0.7801	[-2.537, 1.141]	tie
+checkm2	chimera	contamination	-1.6074	MAGICC			-1.6009	[-2.869, -0.374]	MAGICC
+checkm2	uneven_coverage	completeness	-0.7098	tie	10.0		10.4657	[8.522, 12.509]	checkm2
+checkm2	uneven_coverage	contamination	-1.6074	MAGICC		20.0	-3.4968	[-6.939, 0.169]	tie
+cocopye	substitution	completeness	0.1651	tie	2.0		6.0746	[4.018, 8.306]	cocopye
+cocopye	substitution	contamination	0.0006	tie		5.0	-10.364	[-12.287, -8.408]	MAGICC
+cocopye	substitution_titv	completeness	0.1651	tie	2.0		5.9397	[3.912, 8.051]	cocopye
+cocopye	substitution_titv	contamination	0.0006	tie		5.0	-8.6368	[-10.700, -6.490]	MAGICC
+cocopye	indel	completeness	0.1651	tie			0.6235	[-1.708, 2.746]	tie
+cocopye	indel	contamination	0.0006	tie		5.0	-14.4027	[-16.679, -12.172]	MAGICC
+cocopye	chimera	completeness	0.1651	tie			0.1646	[-1.291, 1.705]	tie
+cocopye	chimera	contamination	0.0006	tie			-0.0044	[-0.893, 0.944]	tie
+cocopye	uneven_coverage	completeness	0.1651	tie	10.0		11.096	[8.735, 13.288]	cocopye
+cocopye	uneven_coverage	contamination	0.0006	tie		20.0	0.1945	[-4.014, 4.650]	tie
+deepcheck	substitution	completeness	-1.5094	tie		5.0	-21.1007	[-24.071, -18.377]	MAGICC
+deepcheck	substitution	contamination	-2.4566	MAGICC	5.0	1.0	2.4912	[0.707, 4.265]	deepcheck
+deepcheck	substitution_titv	completeness	-1.5094	tie		5.0	-13.9059	[-16.357, -11.464]	MAGICC
+deepcheck	substitution_titv	contamination	-2.4566	MAGICC	5.0	1.0	3.2779	[1.436, 5.176]	deepcheck
+deepcheck	indel	completeness	-1.5094	tie		5.0	-24.4946	[-28.477, -20.550]	MAGICC
+deepcheck	indel	contamination	-2.4566	MAGICC		5.0	-5.4107	[-7.530, -3.069]	MAGICC
+deepcheck	chimera	completeness	-1.5094	tie			-1.49	[-3.022, 0.164]	tie
+deepcheck	chimera	contamination	-2.4566	MAGICC		40.0	-2.472	[-3.920, -1.181]	MAGICC
+deepcheck	uneven_coverage	completeness	-1.5094	tie	20.0		9.8787	[7.660, 12.120]	deepcheck
+deepcheck	uneven_coverage	contamination	-2.4566	MAGICC		40.0	-7.8311	[-11.733, -3.522]	MAGICC

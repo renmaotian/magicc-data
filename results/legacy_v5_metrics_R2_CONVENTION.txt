@@ -1,0 +1,15 @@
+Rewritten 2026-07-26T15:57:13.978784+00:00 by scripts/92b_fix_legacy_r2_convention.py.
+
+comp_r2 / cont_r2      = coefficient of determination, 1 - SS_res/SS_tot,
+                         identical to sklearn.metrics.r2_score. THIS is R2.
+                         It may be negative (worse than predicting the mean).
+comp_pearson_r         = Pearson correlation coefficient r (a different
+                         statistic; never call it R2).
+comp_r2_pearson_sq      = r**2. Legacy traceability only: this is the number
+                         scripts 29/30/56/71/75 printed under the name "R2".
+*_r2_omitted_reason    = why R2 is blank (true value has zero variance:
+                         set_*_v2 A contamination is 0 % throughout,
+                         B completeness is 100 % throughout).
+
+The pre-correction file is preserved at
+/path/to/magicc/results/revision/benchmark/legacy_v5_metrics_ORIGINAL_pearson_r2.tsv

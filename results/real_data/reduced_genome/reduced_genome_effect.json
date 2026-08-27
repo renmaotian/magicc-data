@@ -1,0 +1,1102 @@
+{
+  "script": "scripts/134_analyze_reduced_genome_effect.py",
+  "hypothesis": "MAGICC over-calls contamination and under-calls completeness on reduced genomes; this explains the reviewer's disagreements",
+  "comparator": "GTDB published CheckM2",
+  "n_genomes_scored": 1368,
+  "sign_convention": "all deltas are MAGICC minus CheckM2 (positive = MAGICC higher)",
+  "reviewer_genera": [
+    {
+      "label": "CAG-557",
+      "n": 60,
+      "genome_size_median_bp": 981187,
+      "magicc_completeness_median": 84.32,
+      "checkm2_completeness_median": 97.36,
+      "magicc_contamination_median": 7.33,
+      "checkm2_contamination_median": 0.81,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -6.52,
+      "delta_completeness_ci95": [
+        -12.17,
+        -3.63
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 6.25,
+      "delta_contamination_ci95": [
+        4.27,
+        8.95
+      ],
+      "pct_magicc_cont_gt_5": 63.3,
+      "pct_checkm2_cont_gt_5": 0.0,
+      "pct_magicc_comp_ge_90": 36.7,
+      "pct_checkm2_comp_ge_90": 73.3,
+      "n_scg_detected_median": 82,
+      "contig_count_median": 59,
+      "log2_size_vs_phylum_median": -1.386
+    },
+    {
+      "label": "UMGS1491",
+      "n": 61,
+      "genome_size_median_bp": 1095451,
+      "magicc_completeness_median": 57.27,
+      "checkm2_completeness_median": 94.52,
+      "magicc_contamination_median": 17.08,
+      "checkm2_contamination_median": 0.27,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -33.19,
+      "delta_completeness_ci95": [
+        -36.7,
+        -31.2
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 16.68,
+      "delta_contamination_ci95": [
+        10.26,
+        27.69
+      ],
+      "pct_magicc_cont_gt_5": 85.2,
+      "pct_checkm2_cont_gt_5": 1.6,
+      "pct_magicc_comp_ge_90": 0.0,
+      "pct_checkm2_comp_ge_90": 73.8,
+      "n_scg_detected_median": 81,
+      "contig_count_median": 51,
+      "log2_size_vs_phylum_median": -1.244
+    },
+    {
+      "label": "Caccenecus",
+      "n": 101,
+      "genome_size_median_bp": 1286632,
+      "magicc_completeness_median": 71.15,
+      "checkm2_completeness_median": 92.41,
+      "magicc_contamination_median": 16.61,
+      "checkm2_contamination_median": 0.82,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -17.17,
+      "delta_completeness_ci95": [
+        -20.99,
+        -12.92
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 15.79,
+      "delta_contamination_ci95": [
+        13.78,
+        20.53
+      ],
+      "pct_magicc_cont_gt_5": 88.1,
+      "pct_checkm2_cont_gt_5": 0.0,
+      "pct_magicc_comp_ge_90": 3.0,
+      "pct_checkm2_comp_ge_90": 59.4,
+      "n_scg_detected_median": 79,
+      "contig_count_median": 87,
+      "log2_size_vs_phylum_median": -0.922
+    },
+    {
+      "label": "HGM10766",
+      "n": 15,
+      "genome_size_median_bp": 1091647,
+      "magicc_completeness_median": 66.81,
+      "checkm2_completeness_median": 89.05,
+      "magicc_contamination_median": 21.01,
+      "checkm2_contamination_median": 1.27,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -20.36,
+      "delta_completeness_ci95": [
+        -23.74,
+        -8.41
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 18.44,
+      "delta_contamination_ci95": [
+        4.26,
+        21.26
+      ],
+      "pct_magicc_cont_gt_5": 80.0,
+      "pct_checkm2_cont_gt_5": 6.7,
+      "pct_magicc_comp_ge_90": 13.3,
+      "pct_checkm2_comp_ge_90": 33.3,
+      "n_scg_detected_median": 77,
+      "contig_count_median": 85,
+      "log2_size_vs_phylum_median": -1.131
+    },
+    {
+      "label": "Faecimonas",
+      "n": 61,
+      "genome_size_median_bp": 1410926,
+      "magicc_completeness_median": 97.92,
+      "checkm2_completeness_median": 92.84,
+      "magicc_contamination_median": 11.71,
+      "checkm2_contamination_median": 2.54,
+      "delta_completeness_MAGICC_minus_CheckM2_median": 3.31,
+      "delta_completeness_ci95": [
+        2.86,
+        5.65
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 9.18,
+      "delta_contamination_ci95": [
+        6.83,
+        12.07
+      ],
+      "pct_magicc_cont_gt_5": 75.4,
+      "pct_checkm2_cont_gt_5": 13.1,
+      "pct_magicc_comp_ge_90": 73.8,
+      "pct_checkm2_comp_ge_90": 60.7,
+      "n_scg_detected_median": 81,
+      "contig_count_median": 70,
+      "log2_size_vs_phylum_median": -0.796
+    },
+    {
+      "label": "ALL five reviewer genera",
+      "n": 298,
+      "genome_size_median_bp": 1187415,
+      "magicc_completeness_median": 71.32,
+      "checkm2_completeness_median": 93.14,
+      "magicc_contamination_median": 14.55,
+      "checkm2_contamination_median": 0.95,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -14.75,
+      "delta_completeness_ci95": [
+        -17.71,
+        -12.06
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 12.87,
+      "delta_contamination_ci95": [
+        10.76,
+        14.52
+      ],
+      "pct_magicc_cont_gt_5": 79.5,
+      "pct_checkm2_cont_gt_5": 3.4,
+      "pct_magicc_comp_ge_90": 24.2,
+      "pct_checkm2_comp_ge_90": 64.1,
+      "n_scg_detected_median": 81,
+      "contig_count_median": 72,
+      "log2_size_vs_phylum_median": -1.041
+    }
+  ],
+  "size_bins": [
+    {
+      "label": "size_stratified:<1Mb",
+      "n": 150,
+      "genome_size_median_bp": 813894,
+      "magicc_completeness_median": 66.69,
+      "checkm2_completeness_median": 87.62,
+      "magicc_contamination_median": 1.09,
+      "checkm2_contamination_median": 0.36,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -12.6,
+      "delta_completeness_ci95": [
+        -14.96,
+        -9.81
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 0.61,
+      "delta_contamination_ci95": [
+        0.44,
+        1.19
+      ],
+      "pct_magicc_cont_gt_5": 23.3,
+      "pct_checkm2_cont_gt_5": 0.7,
+      "pct_magicc_comp_ge_90": 16.7,
+      "pct_checkm2_comp_ge_90": 41.3,
+      "n_scg_detected_median": 65,
+      "contig_count_median": 55,
+      "log2_size_vs_phylum_median": -0.34
+    },
+    {
+      "label": "size_stratified:1-2Mb",
+      "n": 150,
+      "genome_size_median_bp": 1643827,
+      "magicc_completeness_median": 79.31,
+      "checkm2_completeness_median": 87.0,
+      "magicc_contamination_median": 0.3,
+      "checkm2_contamination_median": 0.66,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -2.42,
+      "delta_completeness_ci95": [
+        -4.85,
+        -0.35
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": -0.07,
+      "delta_contamination_ci95": [
+        -0.34,
+        0.02
+      ],
+      "pct_magicc_cont_gt_5": 7.3,
+      "pct_checkm2_cont_gt_5": 0.7,
+      "pct_magicc_comp_ge_90": 28.7,
+      "pct_checkm2_comp_ge_90": 42.0,
+      "n_scg_detected_median": 76,
+      "contig_count_median": 127,
+      "log2_size_vs_phylum_median": -0.594
+    },
+    {
+      "label": "size_stratified:2-3Mb",
+      "n": 150,
+      "genome_size_median_bp": 2413585,
+      "magicc_completeness_median": 94.33,
+      "checkm2_completeness_median": 91.1,
+      "magicc_contamination_median": 0.26,
+      "checkm2_contamination_median": 0.76,
+      "delta_completeness_MAGICC_minus_CheckM2_median": 0.28,
+      "delta_completeness_ci95": [
+        -0.02,
+        1.83
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": -0.2,
+      "delta_contamination_ci95": [
+        -0.43,
+        -0.04
+      ],
+      "pct_magicc_cont_gt_5": 9.3,
+      "pct_checkm2_cont_gt_5": 2.7,
+      "pct_magicc_comp_ge_90": 54.7,
+      "pct_checkm2_comp_ge_90": 52.7,
+      "n_scg_detected_median": 78,
+      "contig_count_median": 152,
+      "log2_size_vs_phylum_median": -0.187
+    },
+    {
+      "label": "size_stratified:3-5Mb",
+      "n": 150,
+      "genome_size_median_bp": 3591790,
+      "magicc_completeness_median": 98.42,
+      "checkm2_completeness_median": 94.97,
+      "magicc_contamination_median": 0.47,
+      "checkm2_contamination_median": 1.46,
+      "delta_completeness_MAGICC_minus_CheckM2_median": 0.65,
+      "delta_completeness_ci95": [
+        -0.02,
+        1.46
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": -0.12,
+      "delta_contamination_ci95": [
+        -0.29,
+        0.02
+      ],
+      "pct_magicc_cont_gt_5": 16.0,
+      "pct_checkm2_cont_gt_5": 8.7,
+      "pct_magicc_comp_ge_90": 66.7,
+      "pct_checkm2_comp_ge_90": 70.0,
+      "n_scg_detected_median": 79,
+      "contig_count_median": 147,
+      "log2_size_vs_phylum_median": 0.131
+    },
+    {
+      "label": "size_stratified:>5Mb",
+      "n": 150,
+      "genome_size_median_bp": 5798017,
+      "magicc_completeness_median": 99.37,
+      "checkm2_completeness_median": 96.38,
+      "magicc_contamination_median": 1.28,
+      "checkm2_contamination_median": 2.08,
+      "delta_completeness_MAGICC_minus_CheckM2_median": 0.64,
+      "delta_completeness_ci95": [
+        -0.05,
+        1.7
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 0.31,
+      "delta_contamination_ci95": [
+        -0.08,
+        0.59
+      ],
+      "pct_magicc_cont_gt_5": 31.3,
+      "pct_checkm2_cont_gt_5": 14.0,
+      "pct_magicc_comp_ge_90": 84.0,
+      "pct_checkm2_comp_ge_90": 91.3,
+      "n_scg_detected_median": 81,
+      "contig_count_median": 206,
+      "log2_size_vs_phylum_median": 0.719
+    }
+  ],
+  "control_genera": [
+    {
+      "label": "Alistipes",
+      "n": 40,
+      "genome_size_median_bp": 1974073,
+      "magicc_completeness_median": 99.91,
+      "checkm2_completeness_median": 97.88,
+      "magicc_contamination_median": 0.17,
+      "checkm2_contamination_median": 0.59,
+      "delta_completeness_MAGICC_minus_CheckM2_median": 1.05,
+      "delta_completeness_ci95": [
+        0.24,
+        6.04
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": -0.31,
+      "delta_contamination_ci95": [
+        -1.02,
+        -0.03
+      ],
+      "pct_magicc_cont_gt_5": 0.0,
+      "pct_checkm2_cont_gt_5": 0.0,
+      "pct_magicc_comp_ge_90": 80.0,
+      "pct_checkm2_comp_ge_90": 70.0,
+      "n_scg_detected_median": 84,
+      "contig_count_median": 49,
+      "log2_size_vs_phylum_median": -0.508
+    },
+    {
+      "label": "Bacteroides",
+      "n": 40,
+      "genome_size_median_bp": 4177212,
+      "magicc_completeness_median": 98.79,
+      "checkm2_completeness_median": 93.55,
+      "magicc_contamination_median": 0.32,
+      "checkm2_contamination_median": 0.58,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -0.06,
+      "delta_completeness_ci95": [
+        -0.3,
+        1.38
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": -0.32,
+      "delta_contamination_ci95": [
+        -0.76,
+        0.02
+      ],
+      "pct_magicc_cont_gt_5": 7.5,
+      "pct_checkm2_cont_gt_5": 2.5,
+      "pct_magicc_comp_ge_90": 52.5,
+      "pct_checkm2_comp_ge_90": 62.5,
+      "n_scg_detected_median": 64,
+      "contig_count_median": 158,
+      "log2_size_vs_phylum_median": 0.613
+    },
+    {
+      "label": "Bifidobacterium",
+      "n": 40,
+      "genome_size_median_bp": 2136639,
+      "magicc_completeness_median": 99.91,
+      "checkm2_completeness_median": 99.91,
+      "magicc_contamination_median": 0.36,
+      "checkm2_contamination_median": 0.38,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -0.04,
+      "delta_completeness_ci95": [
+        -0.06,
+        -0.01
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 0.02,
+      "delta_contamination_ci95": [
+        -0.21,
+        0.15
+      ],
+      "pct_magicc_cont_gt_5": 0.0,
+      "pct_checkm2_cont_gt_5": 2.5,
+      "pct_magicc_comp_ge_90": 90.0,
+      "pct_checkm2_comp_ge_90": 92.5,
+      "n_scg_detected_median": 83,
+      "contig_count_median": 45,
+      "log2_size_vs_phylum_median": -0.967
+    },
+    {
+      "label": "Blautia",
+      "n": 40,
+      "genome_size_median_bp": 3084835,
+      "magicc_completeness_median": 99.19,
+      "checkm2_completeness_median": 94.33,
+      "magicc_contamination_median": 0.28,
+      "checkm2_contamination_median": 0.91,
+      "delta_completeness_MAGICC_minus_CheckM2_median": 0.11,
+      "delta_completeness_ci95": [
+        -0.09,
+        3.56
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": -0.19,
+      "delta_contamination_ci95": [
+        -0.62,
+        0.06
+      ],
+      "pct_magicc_cont_gt_5": 22.5,
+      "pct_checkm2_cont_gt_5": 2.5,
+      "pct_magicc_comp_ge_90": 65.0,
+      "pct_checkm2_comp_ge_90": 70.0,
+      "n_scg_detected_median": 78,
+      "contig_count_median": 139,
+      "log2_size_vs_phylum_median": 0.275
+    },
+    {
+      "label": "Escherichia",
+      "n": 40,
+      "genome_size_median_bp": 4660476,
+      "magicc_completeness_median": 99.86,
+      "checkm2_completeness_median": 100.0,
+      "magicc_contamination_median": 0.46,
+      "checkm2_contamination_median": 0.17,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -0.12,
+      "delta_completeness_ci95": [
+        -0.14,
+        -0.11
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 0.27,
+      "delta_contamination_ci95": [
+        -0.1,
+        0.39
+      ],
+      "pct_magicc_cont_gt_5": 0.0,
+      "pct_checkm2_cont_gt_5": 0.0,
+      "pct_magicc_comp_ge_90": 90.0,
+      "pct_checkm2_comp_ge_90": 92.5,
+      "n_scg_detected_median": 85,
+      "contig_count_median": 119,
+      "log2_size_vs_phylum_median": -0.074
+    },
+    {
+      "label": "Faecalibacterium",
+      "n": 40,
+      "genome_size_median_bp": 2331023,
+      "magicc_completeness_median": 98.27,
+      "checkm2_completeness_median": 87.91,
+      "magicc_contamination_median": 0.09,
+      "checkm2_contamination_median": 0.96,
+      "delta_completeness_MAGICC_minus_CheckM2_median": 2.99,
+      "delta_completeness_ci95": [
+        0.88,
+        5.68
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": -0.77,
+      "delta_contamination_ci95": [
+        -1.66,
+        -0.39
+      ],
+      "pct_magicc_cont_gt_5": 0.0,
+      "pct_checkm2_cont_gt_5": 2.5,
+      "pct_magicc_comp_ge_90": 62.5,
+      "pct_checkm2_comp_ge_90": 37.5,
+      "n_scg_detected_median": 55,
+      "contig_count_median": 117,
+      "log2_size_vs_phylum_median": -0.098
+    },
+    {
+      "label": "Prevotella",
+      "n": 40,
+      "genome_size_median_bp": 2718795,
+      "magicc_completeness_median": 90.36,
+      "checkm2_completeness_median": 88.84,
+      "magicc_contamination_median": 0.15,
+      "checkm2_contamination_median": 0.17,
+      "delta_completeness_MAGICC_minus_CheckM2_median": 2.08,
+      "delta_completeness_ci95": [
+        -0.1,
+        4.53
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 0.02,
+      "delta_contamination_ci95": [
+        -0.08,
+        0.1
+      ],
+      "pct_magicc_cont_gt_5": 2.5,
+      "pct_checkm2_cont_gt_5": 2.5,
+      "pct_magicc_comp_ge_90": 55.0,
+      "pct_checkm2_comp_ge_90": 47.5,
+      "n_scg_detected_median": 66,
+      "contig_count_median": 136,
+      "log2_size_vs_phylum_median": 0.019
+    },
+    {
+      "label": "Ruminococcus",
+      "n": 40,
+      "genome_size_median_bp": 2445747,
+      "magicc_completeness_median": 98.26,
+      "checkm2_completeness_median": 92.09,
+      "magicc_contamination_median": 0.08,
+      "checkm2_contamination_median": 0.91,
+      "delta_completeness_MAGICC_minus_CheckM2_median": 1.51,
+      "delta_completeness_ci95": [
+        -0.11,
+        4.35
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": -0.61,
+      "delta_contamination_ci95": [
+        -1.05,
+        -0.33
+      ],
+      "pct_magicc_cont_gt_5": 7.5,
+      "pct_checkm2_cont_gt_5": 7.5,
+      "pct_magicc_comp_ge_90": 60.0,
+      "pct_checkm2_comp_ge_90": 62.5,
+      "n_scg_detected_median": 82,
+      "contig_count_median": 158,
+      "log2_size_vs_phylum_median": -0.046
+    },
+    {
+      "label": "ALL non-reduced control genera",
+      "n": 320,
+      "genome_size_median_bp": 2582071,
+      "magicc_completeness_median": 99.66,
+      "checkm2_completeness_median": 94.98,
+      "magicc_contamination_median": 0.23,
+      "checkm2_contamination_median": 0.55,
+      "delta_completeness_MAGICC_minus_CheckM2_median": 0.15,
+      "delta_completeness_ci95": [
+        0.01,
+        0.72
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": -0.2,
+      "delta_contamination_ci95": [
+        -0.34,
+        -0.11
+      ],
+      "pct_magicc_cont_gt_5": 5.0,
+      "pct_checkm2_cont_gt_5": 2.5,
+      "pct_magicc_comp_ge_90": 69.4,
+      "pct_checkm2_comp_ge_90": 66.9,
+      "n_scg_detected_median": 80,
+      "contig_count_median": 113,
+      "log2_size_vs_phylum_median": -0.063
+    }
+  ],
+  "mechanism": [
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_contamination",
+      "predictor": "genome_size",
+      "rho": -0.3068,
+      "p": "3.4e-31",
+      "controlling_for": ""
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_completeness",
+      "predictor": "genome_size",
+      "rho": 0.4095,
+      "p": "1.87e-56",
+      "controlling_for": ""
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_contamination",
+      "predictor": "contig_count",
+      "rho": -0.2916,
+      "p": "3.23e-28",
+      "controlling_for": ""
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_contamination",
+      "predictor": "contig_count",
+      "rho": -0.2016,
+      "p": "5.3e-14",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_completeness",
+      "predictor": "contig_count",
+      "rho": 0.2396,
+      "p": "2.56e-19",
+      "controlling_for": ""
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_completeness",
+      "predictor": "contig_count",
+      "rho": 0.1043,
+      "p": "0.000112",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1363,
+      "target": "delta_contamination",
+      "predictor": "log2_size_vs_phylum",
+      "rho": -0.2778,
+      "p": "1.39e-25",
+      "controlling_for": ""
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1363,
+      "target": "delta_contamination",
+      "predictor": "log2_size_vs_phylum",
+      "rho": -0.0716,
+      "p": "0.00825",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1363,
+      "target": "delta_contamination",
+      "predictor": "genome_size",
+      "rho": -0.1546,
+      "p": "9.66e-09",
+      "controlling_for": "log2_size_vs_phylum"
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1363,
+      "target": "delta_completeness",
+      "predictor": "log2_size_vs_phylum",
+      "rho": 0.388,
+      "p": "3.39e-50",
+      "controlling_for": ""
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1363,
+      "target": "delta_completeness",
+      "predictor": "log2_size_vs_phylum",
+      "rho": 0.1291,
+      "p": "1.74e-06",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1363,
+      "target": "delta_completeness",
+      "predictor": "genome_size",
+      "rho": 0.1926,
+      "p": "7.5e-13",
+      "controlling_for": "log2_size_vs_phylum"
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "n_scg_detected",
+      "predictor": "genome_size",
+      "rho": 0.1978,
+      "p": "1.56e-13",
+      "controlling_for": ""
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_contamination",
+      "predictor": "n_scg_detected",
+      "rho": 0.1506,
+      "p": "2.2e-08",
+      "controlling_for": ""
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_contamination",
+      "predictor": "n_scg_detected",
+      "rho": 0.2264,
+      "p": "2.39e-17",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_contamination",
+      "predictor": "genome_size",
+      "rho": -0.3473,
+      "p": "5.01e-40",
+      "controlling_for": "n_scg_detected"
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_completeness",
+      "predictor": "n_scg_detected",
+      "rho": -0.1954,
+      "p": "3.07e-13",
+      "controlling_for": ""
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_completeness",
+      "predictor": "n_scg_detected",
+      "rho": -0.3091,
+      "p": "1.21e-31",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "all_cohorts",
+      "n": 1368,
+      "target": "delta_completeness",
+      "predictor": "genome_size",
+      "rho": 0.4662,
+      "p": "1.08e-74",
+      "controlling_for": "n_scg_detected"
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_contamination",
+      "predictor": "genome_size",
+      "rho": -0.1071,
+      "p": "0.00331",
+      "controlling_for": ""
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_completeness",
+      "predictor": "genome_size",
+      "rho": 0.3815,
+      "p": "2.18e-27",
+      "controlling_for": ""
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_contamination",
+      "predictor": "contig_count",
+      "rho": -0.2281,
+      "p": "2.62e-10",
+      "controlling_for": ""
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_contamination",
+      "predictor": "contig_count",
+      "rho": -0.2044,
+      "p": "1.67e-08",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_completeness",
+      "predictor": "contig_count",
+      "rho": 0.2216,
+      "p": "8.56e-10",
+      "controlling_for": ""
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_completeness",
+      "predictor": "contig_count",
+      "rho": 0.098,
+      "p": "0.00726",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 745,
+      "target": "delta_contamination",
+      "predictor": "log2_size_vs_phylum",
+      "rho": 0.0163,
+      "p": "0.658",
+      "controlling_for": ""
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 745,
+      "target": "delta_contamination",
+      "predictor": "log2_size_vs_phylum",
+      "rho": 0.1314,
+      "p": "0.000327",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 745,
+      "target": "delta_contamination",
+      "predictor": "genome_size",
+      "rho": -0.1682,
+      "p": "3.98e-06",
+      "controlling_for": "log2_size_vs_phylum"
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 745,
+      "target": "delta_completeness",
+      "predictor": "log2_size_vs_phylum",
+      "rho": 0.3015,
+      "p": "4.01e-17",
+      "controlling_for": ""
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 745,
+      "target": "delta_completeness",
+      "predictor": "log2_size_vs_phylum",
+      "rho": 0.0484,
+      "p": "0.187",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 745,
+      "target": "delta_completeness",
+      "predictor": "genome_size",
+      "rho": 0.2487,
+      "p": "5.92e-12",
+      "controlling_for": "log2_size_vs_phylum"
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "n_scg_detected",
+      "predictor": "genome_size",
+      "rho": 0.2562,
+      "p": "1.05e-12",
+      "controlling_for": ""
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_contamination",
+      "predictor": "n_scg_detected",
+      "rho": 0.0856,
+      "p": "0.0191",
+      "controlling_for": ""
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_contamination",
+      "predictor": "n_scg_detected",
+      "rho": 0.1176,
+      "p": "0.00126",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_contamination",
+      "predictor": "genome_size",
+      "rho": -0.134,
+      "p": "0.000235",
+      "controlling_for": "n_scg_detected"
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_completeness",
+      "predictor": "n_scg_detected",
+      "rho": -0.1355,
+      "p": "0.000198",
+      "controlling_for": ""
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_completeness",
+      "predictor": "n_scg_detected",
+      "rho": -0.261,
+      "p": "3.95e-13",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "size_stratified_only",
+      "n": 750,
+      "target": "delta_completeness",
+      "predictor": "genome_size",
+      "rho": 0.4345,
+      "p": "7.58e-36",
+      "controlling_for": "n_scg_detected"
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_contamination",
+      "predictor": "genome_size",
+      "rho": -0.0554,
+      "p": "0.0702",
+      "controlling_for": ""
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_completeness",
+      "predictor": "genome_size",
+      "rho": 0.2774,
+      "p": "2.34e-20",
+      "controlling_for": ""
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_contamination",
+      "predictor": "contig_count",
+      "rho": -0.2599,
+      "p": "5.58e-18",
+      "controlling_for": ""
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_contamination",
+      "predictor": "contig_count",
+      "rho": -0.2556,
+      "p": "2.11e-17",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_completeness",
+      "predictor": "contig_count",
+      "rho": 0.1925,
+      "p": "2.15e-10",
+      "controlling_for": ""
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_completeness",
+      "predictor": "contig_count",
+      "rho": 0.1179,
+      "p": "0.000111",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1065,
+      "target": "delta_contamination",
+      "predictor": "log2_size_vs_phylum",
+      "rho": 0.0134,
+      "p": "0.663",
+      "controlling_for": ""
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1065,
+      "target": "delta_contamination",
+      "predictor": "log2_size_vs_phylum",
+      "rho": 0.0763,
+      "p": "0.0128",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1065,
+      "target": "delta_contamination",
+      "predictor": "genome_size",
+      "rho": -0.0928,
+      "p": "0.00244",
+      "controlling_for": "log2_size_vs_phylum"
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1065,
+      "target": "delta_completeness",
+      "predictor": "log2_size_vs_phylum",
+      "rho": 0.2428,
+      "p": "9.27e-16",
+      "controlling_for": ""
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1065,
+      "target": "delta_completeness",
+      "predictor": "log2_size_vs_phylum",
+      "rho": 0.0671,
+      "p": "0.0287",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1065,
+      "target": "delta_completeness",
+      "predictor": "genome_size",
+      "rho": 0.1486,
+      "p": "1.12e-06",
+      "controlling_for": "log2_size_vs_phylum"
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "n_scg_detected",
+      "predictor": "genome_size",
+      "rho": 0.233,
+      "p": "1.18e-14",
+      "controlling_for": ""
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_contamination",
+      "predictor": "n_scg_detected",
+      "rho": 0.1633,
+      "p": "7.74e-08",
+      "controlling_for": ""
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_contamination",
+      "predictor": "n_scg_detected",
+      "rho": 0.1815,
+      "p": "2.27e-09",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_contamination",
+      "predictor": "genome_size",
+      "rho": -0.0974,
+      "p": "0.00143",
+      "controlling_for": "n_scg_detected"
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_completeness",
+      "predictor": "n_scg_detected",
+      "rho": -0.1876,
+      "p": "6.29e-10",
+      "controlling_for": ""
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_completeness",
+      "predictor": "n_scg_detected",
+      "rho": -0.2699,
+      "p": "2.66e-19",
+      "controlling_for": "genome_size"
+    },
+    {
+      "pool": "excluding_reviewer_genera",
+      "n": 1070,
+      "target": "delta_completeness",
+      "predictor": "genome_size",
+      "rho": 0.3362,
+      "p": "1.19e-29",
+      "controlling_for": "n_scg_detected"
+    }
+  ],
+  "leakage_sensitivity": [
+    {
+      "label": "ALL genomes",
+      "n": 1368,
+      "genome_size_median_bp": 2107263,
+      "magicc_completeness_median": 89.23,
+      "checkm2_completeness_median": 93.25,
+      "magicc_contamination_median": 0.7,
+      "checkm2_contamination_median": 0.78,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -0.16,
+      "delta_completeness_ci95": [
+        -0.36,
+        -0.1
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 0.17,
+      "delta_contamination_ci95": [
+        0.1,
+        0.29
+      ],
+      "pct_magicc_cont_gt_5": 28.1,
+      "pct_checkm2_cont_gt_5": 4.2,
+      "pct_magicc_comp_ge_90": 49.0,
+      "pct_checkm2_comp_ge_90": 62.2,
+      "n_scg_detected_median": 79,
+      "contig_count_median": 100,
+      "log2_size_vs_phylum_median": -0.267
+    },
+    {
+      "label": "excluding TRAIN/VAL genomes",
+      "n": 1298,
+      "genome_size_median_bp": 2082051,
+      "magicc_completeness_median": 87.31,
+      "checkm2_completeness_median": 92.83,
+      "magicc_contamination_median": 0.76,
+      "checkm2_contamination_median": 0.82,
+      "delta_completeness_MAGICC_minus_CheckM2_median": -0.33,
+      "delta_completeness_ci95": [
+        -1.11,
+        -0.13
+      ],
+      "delta_contamination_MAGICC_minus_CheckM2_median": 0.18,
+      "delta_contamination_ci95": [
+        0.11,
+        0.32
+      ],
+      "pct_magicc_cont_gt_5": 29.6,
+      "pct_checkm2_cont_gt_5": 4.5,
+      "pct_magicc_comp_ge_90": 46.2,
+      "pct_checkm2_comp_ge_90": 60.2,
+      "n_scg_detected_median": 78,
+      "contig_count_median": 109,
+      "log2_size_vs_phylum_median": -0.271
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+analysis	subset	n	n_reference_clusters	spearman_rho_err_comp_vs_err_cont	rho_ci95	mean_comp_error_pp	mean_cont_error_pp	cont_error_intercept_at_zero_comp_error_pp	intercept_ci95	slope_cont_per_comp_error	R2_CoD
+M5_completeness_contamination_coupling	clean & near-complete, ref <2 Mbp	153	124	-0.4918	[-0.647, -0.302]	-3.15	2.418	0.604	[0.228, 0.981]	-0.5758	0.6274
+M5_completeness_contamination_coupling	clean & near-complete, ref >=2 Mbp	390	358	-0.1879	[-0.305, -0.067]	-0.936	1.15	0.765	[0.498, 1.032]	-0.4113	0.1863
+M5_completeness_contamination_coupling	clean & near-complete, ALL	543	482	-0.2867	[-0.381, -0.188]	-1.56	1.507	0.686	[0.464, 0.908]	-0.5267	0.4372

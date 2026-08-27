@@ -1,0 +1,183 @@
+{
+ "question": "Why does MAGICC set_E_full / warm / 32 threads show median 6.04 s but max 39.06 s, while the cold 32-thread repeats are tightly clustered?",
+ "method": "Every run's `/usr/bin/time -v` 'File system inputs' (ru_inblock, 512-byte blocks) converts to bytes actually fetched from the block device. A warm-cache run reads 0. This is checked for all 92 runs, not only the outlier.",
+ "answer": {
+  "cause": "COLD PAGE CACHE, not contention and not JIT.",
+  "detail": "magicc__t32__set_E_full__warm__r1 was the 3rd timed run of the campaign block, started 94 s after the block began (00:23:30Z -> 00:25:04Z) on a host rebooted on 2026-07-30, so the page cache was empty. The two runs before it had touched only the 100-genome subsample, so 900 of the 1,000 Set E FASTA files were not resident. That run therefore fetched 4.388 GB from disk (90.1% of the 4.871 GB input set); every other repeat of the same cell fetched 0 bytes. The cell is labelled 'warm' but the page cache was cold for that input set.",
+  "independent_evidence": [
+   "Disk reads: 8,570,352 x 512 B = 4.388 GB in the slow run vs 0 B in both other repeats of the same cell.",
+   "CPU utilisation: 341% in the slow run vs 1683% and 1752% in the others - the process was blocked on I/O, not computing. Wall clock rose 6.5x while CPU-seconds rose only 1.3x.",
+   "MAGICC's own phase timers isolate it to the only phase that reads FASTA: feature extraction 36.7 s vs 3.5 s, while normalisation (0.301 vs 0.247 s) and ONNX inference (1.358 vs 1.592 s) are unchanged. Inference was actually FASTER in the slow run, which rules out first-run JIT/model-load as the explanation.",
+   "The in-run progress log shows a disk-warming ramp: 6.9 genomes/s over the first 100 genomes rising to 27.3 genomes/s cumulative by genome 1,000, against 65.9 -> 293.4 genomes/s in the warm repeat.",
+   "The pattern generalises: every outlier in the campaign, in every tool, is the first run that touched that tool's database or that input set, and every one of them is the only run in its group with non-zero disk reads. There is no outlier with zero disk reads."
+  ],
+  "load_average_ruled_out": "The slow run's 1-min load average before start was 0.83, LOWER than the 0.86 and 0.83 of the two fast repeats. Contention does not explain it."
+ },
+ "all_outliers": [
+  {
+   "cell_group": "magicc/set_E_full/warm/32t",
+   "slow_run": "magicc__t32__set_E_full__warm__r1",
+   "slow_wall_s": 39.06,
+   "median_of_group_s": 6.04,
+   "other_repeats_s": [
+    5.83,
+    6.04
+   ],
+   "ratio_slow_over_median": 6.47,
+   "slow_disk_read_GB": 4.388,
+   "other_disk_read_GB": [
+    0.0,
+    0.0
+   ],
+   "slow_pct_cpu": 341.0,
+   "other_pct_cpu": [
+    1683.0,
+    1752.0
+   ],
+   "slow_loadavg_1min_before": 0.83,
+   "other_loadavg_1min_before": [
+    0.86,
+    0.83
+   ],
+   "slow_t_start_utc": "2026-07-31T00:25:04Z",
+   "rank_in_campaign_by_start_time": 4,
+   "verdict": "COLD PAGE CACHE (first touch of this input set / database). The slow run is the only repeat in its group that read from the block device; the others read 0 bytes.",
+   "slow_internal_phases_s": {
+    "feature_extraction": 36.7,
+    "normalization": 0.301,
+    "onnx_inference": 1.358
+   },
+   "other_internal_phases_s": {
+    "feature_extraction": [
+     3.5,
+     3.5
+    ],
+    "normalization": [
+     0.247,
+     0.238
+    ],
+    "onnx_inference": [
+     1.592,
+     1.366
+    ]
+   }
+  },
+  {
+   "cell_group": "magicc/set_E_100/warm/32t",
+   "slow_run": "magicc__t32__set_E_100__warm__r1",
+   "slow_wall_s": 13.25,
+   "median_of_group_s": 2.23,
+   "other_repeats_s": [
+    2.15,
+    2.23
+   ],
+   "ratio_slow_over_median": 5.94,
+   "slow_disk_read_GB": 0.9637,
+   "other_disk_read_GB": [
+    0.0,
+    0.0
+   ],
+   "slow_pct_cpu": 642.0,
+   "other_pct_cpu": [
+    1681.0,
+    1662.0
+   ],
+   "slow_loadavg_1min_before": 0.29,
+   "other_loadavg_1min_before": [
+    0.86,
+    0.98
+   ],
+   "slow_t_start_utc": "2026-07-31T00:23:30Z",
+   "rank_in_campaign_by_start_time": 2,
+   "verdict": "COLD PAGE CACHE (first touch of this input set / database). The slow run is the only repeat in its group that read from the block device; the others read 0 bytes.",
+   "slow_internal_phases_s": {
+    "feature_extraction": 8.7,
+    "normalization": 0.02,
+    "onnx_inference": 0.139
+   },
+   "other_internal_phases_s": {
+    "feature_extraction": [
+     1.3,
+     1.3
+    ],
+    "normalization": [
+     0.02,
+     0.02
+    ],
+    "onnx_inference": [
+     0.169,
+     0.139
+    ]
+   }
+  },
+  {
+   "cell_group": "cocopye/set_E_100/warm/32t",
+   "slow_run": "cocopye__t32__set_E_100__warm__r1",
+   "slow_wall_s": 495.09,
+   "median_of_group_s": 353.9,
+   "other_repeats_s": [
+    339.44,
+    353.9
+   ],
+   "ratio_slow_over_median": 1.4,
+   "slow_disk_read_GB": 17.0907,
+   "other_disk_read_GB": [
+    0.0,
+    0.0
+   ],
+   "slow_pct_cpu": 1427.0,
+   "other_pct_cpu": [
+    2004.0,
+    2059.0
+   ],
+   "slow_loadavg_1min_before": 0.81,
+   "other_loadavg_1min_before": [
+    0.8,
+    0.93
+   ],
+   "slow_t_start_utc": "2026-07-31T02:18:02Z",
+   "rank_in_campaign_by_start_time": 52,
+   "verdict": "COLD PAGE CACHE (first touch of this input set / database). The slow run is the only repeat in its group that read from the block device; the others read 0 bytes."
+  },
+  {
+   "cell_group": "deepcheck/set_E_full/warm/32t",
+   "slow_run": "deepcheck__t32__set_E_full__warm__r1",
+   "slow_wall_s": 39.84,
+   "median_of_group_s": 29.48,
+   "other_repeats_s": [
+    29.24,
+    29.48
+   ],
+   "ratio_slow_over_median": 1.35,
+   "slow_disk_read_GB": 1.025,
+   "other_disk_read_GB": [
+    0.0,
+    0.0
+   ],
+   "slow_pct_cpu": 1958.0,
+   "other_pct_cpu": [
+    2603.0,
+    2601.0
+   ],
+   "slow_loadavg_1min_before": 0.84,
+   "other_loadavg_1min_before": [
+    0.94,
+    0.82
+   ],
+   "slow_t_start_utc": "2026-07-31T00:28:29Z",
+   "rank_in_campaign_by_start_time": 5,
+   "verdict": "COLD PAGE CACHE (first touch of this input set / database). The slow run is the only repeat in its group that read from the block device; the others read 0 bytes."
+  }
+ ],
+ "cold_arm_defect": {
+  "finding": "The campaign's `cache=cold` cells did not have a cold cache.",
+  "evidence": [
+   "All 11 of the 11 *.evict.txt files contain the identical traceback `TypeError: underlying buffer is not writable` from scripts/162_ws8_drop_file_cache.py:70. The exception is raised on the FIRST file inspected and only OSError is caught, so the process exited before a single posix_fadvise(DONTNEED) call was made.",
+   "Independent confirmation: every `cache=cold` run recorded File system inputs = 0, i.e. it read nothing from disk.",
+   "Consequence: cold and warm medians agree to within 3% everywhere (e.g. MAGICC set_E_full 1 thread 49.07 s cold vs 49.02 s warm), which is what two warm measurements look like."
+  ],
+  "n_cold_cells_invalidated": 11,
+  "remedy": "scripts/176_ws8_evict_fixed.py maps through libc mmap so mincore(2) works, and reports the residency it actually achieved; scripts/177_ws8_cold_verified.sh re-ran the arm as `cache=cold_verified`.",
+  "n_cold_verified_runs": 0
+ }
+}

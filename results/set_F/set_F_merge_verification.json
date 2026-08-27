@@ -1,0 +1,109 @@
+{
+  "generated_utc": "2026-07-27T21:11:27.798581+00:00",
+  "project_dir": "/path/to/magicc",
+  "sets": {
+    "set_F": {
+      "n_metadata_rows": 1900,
+      "tools": {
+        "checkm2": {
+          "label": "checkm2",
+          "checks": {
+            "metadata_rows": 1900,
+            "metadata_ids_unique": true,
+            "tool_rows": 1900,
+            "tool_ids_unique": true,
+            "n_missing_from_tool": 0,
+            "n_extra_in_tool": 0,
+            "missing_examples": [],
+            "extra_examples": [],
+            "merged_rows": 1900,
+            "order_preserved": true,
+            "true_completeness_preserved": true,
+            "true_contamination_preserved": true,
+            "nan_predictions": {
+              "pred_completeness": 0,
+              "pred_contamination": 0
+            },
+            "complete": true,
+            "pred_completeness_range": [
+              57.19,
+              100.0
+            ],
+            "pred_completeness_n_distinct": 1166,
+            "pred_contamination_range": [
+              0.0,
+              60.92
+            ],
+            "pred_contamination_n_distinct": 800,
+            "size_probe": {
+              "column": "Genome_Size",
+              "n_compared": 1900,
+              "identical_to_metadata_total_length": true,
+              "max_abs_diff": 0.0
+            }
+          },
+          "status": "ok",
+          "output": "/path/to/magicc/data/benchmarks/set_F/checkm2_predictions.tsv",
+          "wall_clock_s": 15595.0,
+          "threads": 8,
+          "comp_mae": 4.999601268633632,
+          "cont_mae": 6.561171719546745,
+          "model_used_counts": {
+            "Neural Network (Specific Model)": 1765,
+            "Gradient Boost (General Model)": 135
+          }
+        },
+        "deepcheck": {
+          "label": "deepcheck",
+          "checks": {
+            "metadata_rows": 1900,
+            "metadata_ids_unique": true,
+            "tool_rows": 1900,
+            "tool_ids_unique": true,
+            "n_missing_from_tool": 0,
+            "n_extra_in_tool": 0,
+            "missing_examples": [],
+            "extra_examples": [],
+            "merged_rows": 1900,
+            "order_preserved": true,
+            "true_completeness_preserved": true,
+            "true_contamination_preserved": true,
+            "nan_predictions": {
+              "pred_completeness": 0,
+              "pred_contamination": 0
+            },
+            "complete": true,
+            "pred_completeness_range": [
+              56.99949264526367,
+              116.447509765625
+            ],
+            "pred_completeness_n_distinct": 1900,
+            "pred_contamination_range": [
+              -1.4012612104415894,
+              72.96343994140625
+            ],
+            "pred_contamination_n_distinct": 1899,
+            "size_probe": {
+              "column": "Genome_Size",
+              "n_compared": 1900,
+              "identical_to_metadata_total_length": true,
+              "max_abs_diff": 0.0
+            }
+          },
+          "n_pkl_files": 8,
+          "feature_matrix_shape": [
+            1900,
+            21241
+          ],
+          "status": "ok",
+          "output": "/path/to/magicc/data/benchmarks/set_F/deepcheck_predictions.tsv",
+          "wall_clock_s": 324.91,
+          "threads": 4,
+          "wall_clock_note": "inference only, excludes CheckM2 feature extraction",
+          "comp_mae": 6.066350149980735,
+          "cont_mae": 6.39836281985308
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+set	stratum	holdout_status	model	n	n_refs	comp_mae	comp_bias	comp_rmse	comp_r2	comp_r2_pearson	cont_mae	cont_bias	cont_rmse	cont_r2	cont_r2_pearson	comp_mae_ci95	cont_mae_ci95
+set_C_clean	ALL	n/a	holdout	1000	100	9.191	-4.73	13.004	0.3573	0.5077	10.28	-2.036	13.772	0.7129	0.7193	[7.9332, 10.5576]	[9.3122, 11.411]
+set_C_clean	ALL	n/a	V5	1000	100	6.824	-2.312	10.125	0.6104	0.6561	9.075	-3.544	12.312	0.7706	0.7917	[5.8082, 7.9093]	[8.1469, 10.0334]
+set_C_clean	Patescibacteriota	partially held out (some families in panel)	holdout	1000	100	9.191	-4.73	13.004	0.3573	0.5077	10.28	-2.036	13.772	0.7129	0.7193		
+set_C_clean	Patescibacteriota	partially held out (some families in panel)	V5	1000	100	6.824	-2.312	10.125	0.6104	0.6561	9.075	-3.544	12.312	0.7706	0.7917		
+set_D_clean	ALL	n/a	holdout	1000	100	5.854	-0.076	8.546	0.689	0.6994	6.692	-4.044	9.452	0.8535	0.8809	[5.1595, 6.656]	[6.112, 7.3306]
+set_D_clean	ALL	n/a	V5	1000	100	5.632	-0.256	8.32	0.7053	0.7124	6.518	-3.823	9.432	0.8541	0.8787	[5.0225, 6.3498]	[5.9815, 7.1098]
+set_D_clean	Halobacteriota	partially held out (some families in panel)	holdout	350	35	6.695	-0.067	8.928	0.6238	0.6411	7.644	-4.167	10.31	0.8231	0.8521		
+set_D_clean	Halobacteriota	partially held out (some families in panel)	V5	350	35	5.632	0.243	7.629	0.7253	0.7288	6.617	-3.516	9.264	0.8572	0.8779		
+set_D_clean	Methanobacteriota	in-dist	holdout	190	19	3.985	0.072	5.706	0.8656	0.8658	5.765	-4.138	8.193	0.9028	0.9294		
+set_D_clean	Methanobacteriota	in-dist	V5	190	19	4.272	-0.052	6.29	0.8366	0.8367	6.232	-4.564	9.004	0.8826	0.9158		
+set_D_clean	Methanobacteriota_B	in-dist	holdout	40	4	4.85	-0.633	8.452	0.6517	0.6887	4.955	-0.013	7.445	0.9228	0.9316		
+set_D_clean	Methanobacteriota_B	in-dist	V5	40	4	5.833	-1.249	9.878	0.5242	0.5981	5.238	0.351	8.621	0.8965	0.9		
+set_D_clean	Nanobdellota	in-dist	holdout	20	2	3.918	3.22	6.514	0.8694	0.9018	5.16	-4.509	7.443	0.9245	0.9559		
+set_D_clean	Nanobdellota	in-dist	V5	20	2	2.927	1.241	4.971	0.9239	0.9291	5.833	-5.44	7.797	0.9171	0.971		
+set_D_clean	Thermoplasmatota	in-dist	holdout	70	7	3.962	0.1	5.453	0.8967	0.8978	5.507	-4.195	7.111	0.9099	0.9419		
+set_D_clean	Thermoplasmatota	in-dist	V5	70	7	3.769	-0.03	5.285	0.9029	0.9032	5.577	-3.568	7.246	0.9065	0.9292		
+set_D_clean	Thermoproteota	in-dist	holdout	330	33	6.677	-0.339	10.024	0.5739	0.6049	6.77	-4.287	9.926	0.8203	0.854		
+set_D_clean	Thermoproteota	in-dist	V5	330	33	6.949	-0.92	10.295	0.5505	0.5836	6.974	-4.185	10.396	0.8029	0.8349		

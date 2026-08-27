@@ -1,0 +1,154 @@
+{
+  "generated_utc": "2026-08-02T01:00:14.318472+00:00",
+  "project_dir": "/path/to/magicc",
+  "sets": {
+    "set_H_ncbi": {
+      "n_metadata_rows": 4000,
+      "tools": {
+        "checkm2": {
+          "label": "checkm2",
+          "checks": {
+            "metadata_rows": 4000,
+            "metadata_ids_unique": true,
+            "tool_rows": 4000,
+            "tool_ids_unique": true,
+            "n_missing_from_tool": 0,
+            "n_extra_in_tool": 0,
+            "missing_examples": [],
+            "extra_examples": [],
+            "merged_rows": 4000,
+            "order_preserved": true,
+            "true_completeness_preserved": true,
+            "true_contamination_preserved": true,
+            "nan_predictions": {
+              "pred_completeness": 0,
+              "pred_contamination": 0
+            },
+            "complete": true,
+            "pred_completeness_range": [
+              33.83,
+              100.0
+            ],
+            "pred_completeness_n_distinct": 2136,
+            "pred_contamination_range": [
+              0.0,
+              322.43
+            ],
+            "pred_contamination_n_distinct": 2840,
+            "size_probe": {
+              "column": "Genome_Size",
+              "n_compared": 4000,
+              "identical_to_metadata_total_length": true,
+              "max_abs_diff": 0.0
+            }
+          },
+          "status": "ok",
+          "output": "/path/to/magicc/data/benchmarks/set_H_ncbi/checkm2_predictions.tsv",
+          "wall_clock_s": 15991.0,
+          "threads": 24,
+          "comp_mae": 13.915822777999997,
+          "cont_mae": 23.24415236875,
+          "model_used_counts": {
+            "Gradient Boost (General Model)": 2082,
+            "Neural Network (Specific Model)": 1918
+          }
+        },
+        "cocopye": {
+          "label": "cocopye",
+          "checks": {
+            "metadata_rows": 4000,
+            "metadata_ids_unique": true,
+            "tool_rows": 4000,
+            "tool_ids_unique": true,
+            "n_missing_from_tool": 0,
+            "n_extra_in_tool": 0,
+            "missing_examples": [],
+            "extra_examples": [],
+            "merged_rows": 4000,
+            "order_preserved": true,
+            "true_completeness_preserved": true,
+            "true_contamination_preserved": true,
+            "nan_predictions": {
+              "pred_completeness": 0,
+              "pred_contamination": 0
+            },
+            "complete": true,
+            "pred_completeness_range": [
+              45.38636924880436,
+              100.0
+            ],
+            "pred_completeness_n_distinct": 3892,
+            "pred_contamination_range": [
+              0.0,
+              46.56278565087609
+            ],
+            "pred_contamination_n_distinct": 3967,
+            "size_probe": "CoCoPyE emits no genome-size field; set equality + 1:1 join only"
+          },
+          "stage_used": "stage3 (stage2 fallback)",
+          "n_rows_with_stage3": 4000,
+          "cocopye_recommended_stage_counts": {
+            "2": 2349,
+            "3": 1651
+          },
+          "status": "ok",
+          "output": "/path/to/magicc/data/benchmarks/set_H_ncbi/cocopye_predictions.tsv",
+          "wall_clock_s": 6485.0,
+          "threads": 24,
+          "comp_mae": 5.4859614053499355,
+          "cont_mae": 22.363954083468272
+        },
+        "deepcheck": {
+          "label": "deepcheck",
+          "checks": {
+            "metadata_rows": 4000,
+            "metadata_ids_unique": true,
+            "tool_rows": 4000,
+            "tool_ids_unique": true,
+            "n_missing_from_tool": 0,
+            "n_extra_in_tool": 0,
+            "missing_examples": [],
+            "extra_examples": [],
+            "merged_rows": 4000,
+            "order_preserved": true,
+            "true_completeness_preserved": true,
+            "true_contamination_preserved": true,
+            "nan_predictions": {
+              "pred_completeness": 0,
+              "pred_contamination": 0
+            },
+            "complete": true,
+            "pred_completeness_range": [
+              35.57136154174805,
+              157.65606689453125
+            ],
+            "pred_completeness_n_distinct": 3999,
+            "pred_contamination_range": [
+              -1.3106085062026978,
+              424.918212890625
+            ],
+            "pred_contamination_n_distinct": 4000,
+            "size_probe": {
+              "column": "Genome_Size",
+              "n_compared": 4000,
+              "identical_to_metadata_total_length": true,
+              "max_abs_diff": 0.0
+            }
+          },
+          "n_pkl_files": 16,
+          "feature_matrix_shape": [
+            4000,
+            21241
+          ],
+          "status": "ok",
+          "output": "/path/to/magicc/data/benchmarks/set_H_ncbi/deepcheck_predictions.tsv",
+          "wall_clock_s": 587.35,
+          "threads": 4,
+          "wall_clock_note": "inference only, excludes CheckM2 feature extraction",
+          "comp_mae": 15.830139827747804,
+          "cont_mae": 31.90138400854203
+        }
+      }
+    }
+  }
+}

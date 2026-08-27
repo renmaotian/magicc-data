@@ -1,0 +1,490 @@
+{
+  "generated": "2026-07-28T06:28:53.512104",
+  "estimator": "paired difference-in-differences on identical samples; cluster bootstrap over reference genomes, 2000 iterations, BH-corrected across groups x 2 metrics",
+  "r2_convention": "coefficient of determination (1 - SSres/SStot)",
+  "models": {
+    "V5": "/path/to/magicc/models/magicc_v5.onnx",
+    "familyHO": "/path/to/magicc/models/magicc_holdout_family.onnx",
+    "phylumHO": "/path/to/magicc/models/magicc_holdout_phylum.onnx"
+  },
+  "holdout_model_status": "VALIDATION ARTIFACTS ONLY - the released MAGICC model remains trained on all data",
+  "common_control": {
+    "n_samples": 800,
+    "n_refs": 80,
+    "n_dropped": 200,
+    "restriction": "dominant phylum outside the WS1.6 panel",
+    "deltas_vs_v5": {
+      "familyHO_comp": 0.0348,
+      "familyHO_cont": -0.2353,
+      "phylumHO_comp": 0.0135,
+      "phylumHO_cont": -0.3147
+    }
+  },
+  "family_vs_phylum": [
+    {
+      "group": "Bacteroidota_Muribaculaceae",
+      "parent_phylum": "Bacteroidota",
+      "families_held_out": "Muribaculaceae",
+      "n": 1000,
+      "n_refs": 100,
+      "median_Mbp": 2.607,
+      "comp_did_family": 3.8866,
+      "comp_did_phylum": 6.3697,
+      "comp_attenuation": 2.4831,
+      "comp_ci95_family": [
+        3.1856,
+        4.6558
+      ],
+      "comp_ci95_phylum": [
+        5.278,
+        7.3404
+      ],
+      "comp_ci95_attenuation": [
+        1.7115,
+        3.1749
+      ],
+      "comp_p_family": 0.0005,
+      "comp_p_attenuation": 0.0005,
+      "comp_pct_of_phylum_effect": 61.0,
+      "cont_did_family": 3.1883,
+      "cont_did_phylum": 4.9158,
+      "cont_attenuation": 1.7274,
+      "cont_ci95_family": [
+        2.5359,
+        3.871
+      ],
+      "cont_ci95_phylum": [
+        4.0579,
+        5.8119
+      ],
+      "cont_ci95_attenuation": [
+        1.01,
+        2.404
+      ],
+      "cont_p_family": 0.0005,
+      "cont_p_attenuation": 0.0005,
+      "cont_pct_of_phylum_effect": 64.9,
+      "comp_q_family_bh": 0.0005,
+      "cont_q_family_bh": 0.0005,
+      "comp_q_attenuation_bh": 0.0006,
+      "cont_q_attenuation_bh": 0.0006
+    },
+    {
+      "group": "Bacteroidota_Flavobacteriaceae",
+      "parent_phylum": "Bacteroidota",
+      "families_held_out": "Flavobacteriaceae",
+      "n": 1000,
+      "n_refs": 100,
+      "median_Mbp": 3.634,
+      "comp_did_family": 4.1652,
+      "comp_did_phylum": 7.3191,
+      "comp_attenuation": 3.1539,
+      "comp_ci95_family": [
+        3.5327,
+        4.8496
+      ],
+      "comp_ci95_phylum": [
+        6.3879,
+        8.2376
+      ],
+      "comp_ci95_attenuation": [
+        2.2934,
+        4.0927
+      ],
+      "comp_p_family": 0.0005,
+      "comp_p_attenuation": 0.0005,
+      "comp_pct_of_phylum_effect": 56.9,
+      "cont_did_family": 4.2396,
+      "cont_did_phylum": 15.1791,
+      "cont_attenuation": 10.9394,
+      "cont_ci95_family": [
+        3.1867,
+        5.3094
+      ],
+      "cont_ci95_phylum": [
+        13.2228,
+        17.1834
+      ],
+      "cont_ci95_attenuation": [
+        9.2732,
+        12.6713
+      ],
+      "cont_p_family": 0.0005,
+      "cont_p_attenuation": 0.0005,
+      "cont_pct_of_phylum_effect": 27.9,
+      "comp_q_family_bh": 0.0005,
+      "cont_q_family_bh": 0.0005,
+      "comp_q_attenuation_bh": 0.0006,
+      "cont_q_attenuation_bh": 0.0006
+    },
+    {
+      "group": "Campylobacterota_Helicobacteraceae",
+      "parent_phylum": "Campylobacterota",
+      "families_held_out": "Helicobacteraceae",
+      "n": 1000,
+      "n_refs": 100,
+      "median_Mbp": 1.637,
+      "comp_did_family": 5.2007,
+      "comp_did_phylum": 4.8062,
+      "comp_attenuation": -0.3945,
+      "comp_ci95_family": [
+        4.5708,
+        5.8153
+      ],
+      "comp_ci95_phylum": [
+        4.1799,
+        5.4366
+      ],
+      "comp_ci95_attenuation": [
+        -1.0532,
+        0.2391
+      ],
+      "comp_p_family": 0.0005,
+      "comp_p_attenuation": 0.228,
+      "comp_pct_of_phylum_effect": 108.2,
+      "cont_did_family": 12.3525,
+      "cont_did_phylum": 14.7472,
+      "cont_attenuation": 2.3946,
+      "cont_ci95_family": [
+        11.2308,
+        13.4781
+      ],
+      "cont_ci95_phylum": [
+        13.8134,
+        15.6473
+      ],
+      "cont_ci95_attenuation": [
+        1.5042,
+        3.3307
+      ],
+      "cont_p_family": 0.0005,
+      "cont_p_attenuation": 0.0005,
+      "cont_pct_of_phylum_effect": 83.8,
+      "comp_q_family_bh": 0.0005,
+      "cont_q_family_bh": 0.0005,
+      "comp_q_attenuation_bh": 0.24873,
+      "cont_q_attenuation_bh": 0.0006
+    },
+    {
+      "group": "Campylobacterota_Arcobacteraceae",
+      "parent_phylum": "Campylobacterota",
+      "families_held_out": "Arcobacteraceae",
+      "n": 1000,
+      "n_refs": 40,
+      "median_Mbp": 2.233,
+      "comp_did_family": 5.007,
+      "comp_did_phylum": 7.9759,
+      "comp_attenuation": 2.9688,
+      "comp_ci95_family": [
+        4.1324,
+        5.8967
+      ],
+      "comp_ci95_phylum": [
+        6.5582,
+        9.4358
+      ],
+      "comp_ci95_attenuation": [
+        1.834,
+        4.0137
+      ],
+      "comp_p_family": 0.0005,
+      "comp_p_attenuation": 0.0005,
+      "comp_pct_of_phylum_effect": 62.8,
+      "cont_did_family": 1.8182,
+      "cont_did_phylum": 2.0211,
+      "cont_attenuation": 0.2029,
+      "cont_ci95_family": [
+        1.0761,
+        2.5673
+      ],
+      "cont_ci95_phylum": [
+        1.0809,
+        3.1042
+      ],
+      "cont_ci95_attenuation": [
+        -0.4729,
+        0.8598
+      ],
+      "cont_p_family": 0.0005,
+      "cont_p_attenuation": 0.552,
+      "cont_pct_of_phylum_effect": 90.0,
+      "comp_q_family_bh": 0.0005,
+      "cont_q_family_bh": 0.0005,
+      "comp_q_attenuation_bh": 0.0006,
+      "cont_q_attenuation_bh": 0.552
+    },
+    {
+      "group": "Halobacteriota_halophilic",
+      "parent_phylum": "Halobacteriota",
+      "families_held_out": "Haloarculaceae,Haloferacaceae",
+      "n": 1008,
+      "n_refs": 28,
+      "median_Mbp": 3.58,
+      "comp_did_family": 2.9483,
+      "comp_did_phylum": 4.532,
+      "comp_attenuation": 1.5837,
+      "comp_ci95_family": [
+        1.9189,
+        3.9739
+      ],
+      "comp_ci95_phylum": [
+        3.5782,
+        5.498
+      ],
+      "comp_ci95_attenuation": [
+        0.6834,
+        2.423
+      ],
+      "comp_p_family": 0.0005,
+      "comp_p_attenuation": 0.0005,
+      "comp_pct_of_phylum_effect": 65.1,
+      "cont_did_family": 1.5338,
+      "cont_did_phylum": 3.2522,
+      "cont_attenuation": 1.7184,
+      "cont_ci95_family": [
+        0.71,
+        2.3377
+      ],
+      "cont_ci95_phylum": [
+        2.3762,
+        4.0942
+      ],
+      "cont_ci95_attenuation": [
+        0.9779,
+        2.4504
+      ],
+      "cont_p_family": 0.0005,
+      "cont_p_attenuation": 0.0005,
+      "cont_pct_of_phylum_effect": 47.2,
+      "comp_q_family_bh": 0.0005,
+      "cont_q_family_bh": 0.0005,
+      "comp_q_attenuation_bh": 0.0006,
+      "cont_q_attenuation_bh": 0.0006
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "parent_phylum": "Patescibacteriota",
+      "families_held_out": "2-12-FULL-60-25,GWA2-37-8,GWC2-37-13,Minisyncoccaceae,Nanoperiomorbaceae,Nanosynbacteraceae,Nanosyncoccaceae,PJMF01,Peribacteraceae,Saccharimonadaceae,Staskawiczbacteraceae,UBA1547,UBA2103,UBA2206,UBA4665,UBA8517,UBA918,UBA922,UBA9973",
+      "n": 990,
+      "n_refs": 66,
+      "median_Mbp": 0.91,
+      "comp_did_family": 5.0284,
+      "comp_did_phylum": 24.6008,
+      "comp_attenuation": 19.5724,
+      "comp_ci95_family": [
+        3.5416,
+        6.7233
+      ],
+      "comp_ci95_phylum": [
+        22.9984,
+        26.2058
+      ],
+      "comp_ci95_attenuation": [
+        17.8695,
+        21.2659
+      ],
+      "comp_p_family": 0.0005,
+      "comp_p_attenuation": 0.0005,
+      "comp_pct_of_phylum_effect": 20.4,
+      "cont_did_family": 3.6593,
+      "cont_did_phylum": 13.7339,
+      "cont_attenuation": 10.0746,
+      "cont_ci95_family": [
+        2.3706,
+        5.1399
+      ],
+      "cont_ci95_phylum": [
+        12.187,
+        15.2964
+      ],
+      "cont_ci95_attenuation": [
+        8.6269,
+        11.5799
+      ],
+      "cont_p_family": 0.0005,
+      "cont_p_attenuation": 0.0005,
+      "cont_pct_of_phylum_effect": 26.6,
+      "comp_q_family_bh": 0.0005,
+      "cont_q_family_bh": 0.0005,
+      "comp_q_attenuation_bh": 0.0006,
+      "cont_q_attenuation_bh": 0.0006
+    }
+  ],
+  "three_model_head_to_head": [
+    {
+      "group": "Bacteroidota_Muribaculaceae",
+      "n": 1000,
+      "n_refs": 100,
+      "true_comp_mean": 76.52,
+      "true_cont_mean": 45.36,
+      "V5_comp_mae": 4.523,
+      "V5_comp_bias": 2.499,
+      "V5_comp_r2": 0.802,
+      "V5_cont_mae": 5.229,
+      "V5_cont_bias": -2.827,
+      "V5_cont_r2": 0.907,
+      "familyHO_comp_mae": 8.445,
+      "familyHO_comp_bias": -2.056,
+      "familyHO_comp_r2": 0.4743,
+      "familyHO_cont_mae": 8.182,
+      "familyHO_cont_bias": -1.843,
+      "familyHO_cont_r2": 0.7907,
+      "phylumHO_comp_mae": 10.907,
+      "phylumHO_comp_bias": -7.106,
+      "phylumHO_comp_r2": 0.1554,
+      "phylumHO_cont_mae": 9.83,
+      "phylumHO_cont_bias": -2.93,
+      "phylumHO_cont_r2": 0.686
+    },
+    {
+      "group": "Bacteroidota_Flavobacteriaceae",
+      "n": 1000,
+      "n_refs": 100,
+      "true_comp_mean": 75.71,
+      "true_cont_mean": 45.11,
+      "V5_comp_mae": 6.297,
+      "V5_comp_bias": 3.389,
+      "V5_comp_r2": 0.6231,
+      "V5_cont_mae": 6.375,
+      "V5_cont_bias": -2.816,
+      "V5_cont_r2": 0.8746,
+      "familyHO_comp_mae": 10.497,
+      "familyHO_comp_bias": 4.075,
+      "familyHO_comp_r2": 0.1212,
+      "familyHO_cont_mae": 10.379,
+      "familyHO_cont_bias": 3.352,
+      "familyHO_cont_r2": 0.7122,
+      "phylumHO_comp_mae": 13.63,
+      "phylumHO_comp_bias": 4.782,
+      "phylumHO_comp_r2": -0.4141,
+      "phylumHO_cont_mae": 21.239,
+      "phylumHO_cont_bias": 16.169,
+      "phylumHO_cont_r2": -0.1142
+    },
+    {
+      "group": "Campylobacterota_Helicobacteraceae",
+      "n": 1000,
+      "n_refs": 100,
+      "true_comp_mean": 79.39,
+      "true_cont_mean": 44.38,
+      "V5_comp_mae": 2.648,
+      "V5_comp_bias": 1.033,
+      "V5_comp_r2": 0.9292,
+      "V5_cont_mae": 4.742,
+      "V5_cont_bias": -4.187,
+      "V5_cont_r2": 0.9251,
+      "familyHO_comp_mae": 7.883,
+      "familyHO_comp_bias": -0.708,
+      "familyHO_comp_r2": 0.5458,
+      "familyHO_cont_mae": 16.859,
+      "familyHO_cont_bias": -16.2,
+      "familyHO_cont_r2": 0.3364,
+      "phylumHO_comp_mae": 7.467,
+      "phylumHO_comp_bias": 0.672,
+      "phylumHO_comp_r2": 0.5788,
+      "phylumHO_cont_mae": 19.174,
+      "phylumHO_cont_bias": -19.072,
+      "phylumHO_cont_r2": 0.1887
+    },
+    {
+      "group": "Campylobacterota_Arcobacteraceae",
+      "n": 1000,
+      "n_refs": 40,
+      "true_comp_mean": 77.21,
+      "true_cont_mean": 44.46,
+      "V5_comp_mae": 4.511,
+      "V5_comp_bias": 0.073,
+      "V5_comp_r2": 0.8014,
+      "V5_cont_mae": 6.968,
+      "V5_cont_bias": -5.898,
+      "V5_cont_r2": 0.8252,
+      "familyHO_comp_mae": 9.553,
+      "familyHO_comp_bias": 5.286,
+      "familyHO_comp_r2": 0.3365,
+      "familyHO_cont_mae": 8.551,
+      "familyHO_cont_bias": -5.667,
+      "familyHO_cont_r2": 0.7589,
+      "phylumHO_comp_mae": 12.501,
+      "phylumHO_comp_bias": 8.858,
+      "phylumHO_comp_r2": -0.0651,
+      "phylumHO_cont_mae": 8.674,
+      "phylumHO_cont_bias": -4.982,
+      "phylumHO_cont_r2": 0.7589
+    },
+    {
+      "group": "Halobacteriota_halophilic",
+      "n": 1008,
+      "n_refs": 28,
+      "true_comp_mean": 74.97,
+      "true_cont_mean": 45.9,
+      "V5_comp_mae": 5.214,
+      "V5_comp_bias": 0.872,
+      "V5_comp_r2": 0.7566,
+      "V5_cont_mae": 6.098,
+      "V5_cont_bias": -3.015,
+      "V5_cont_r2": 0.8687,
+      "familyHO_comp_mae": 8.197,
+      "familyHO_comp_bias": 1.118,
+      "familyHO_comp_r2": 0.4982,
+      "familyHO_cont_mae": 7.397,
+      "familyHO_cont_bias": -4.551,
+      "familyHO_cont_r2": 0.8087,
+      "phylumHO_comp_mae": 9.759,
+      "phylumHO_comp_bias": 1.753,
+      "phylumHO_comp_r2": 0.2579,
+      "phylumHO_cont_mae": 9.036,
+      "phylumHO_cont_bias": -4.458,
+      "phylumHO_cont_r2": 0.7221
+    },
+    {
+      "group": "Patescibacteriota_families",
+      "n": 990,
+      "n_refs": 66,
+      "true_comp_mean": 83.45,
+      "true_cont_mean": 45.16,
+      "V5_comp_mae": 5.334,
+      "V5_comp_bias": -0.933,
+      "V5_comp_r2": 0.7544,
+      "V5_cont_mae": 7.643,
+      "V5_cont_bias": -2.932,
+      "V5_cont_r2": 0.8442,
+      "familyHO_comp_mae": 10.397,
+      "familyHO_comp_bias": -6.667,
+      "familyHO_comp_r2": 0.2214,
+      "familyHO_cont_mae": 11.067,
+      "familyHO_cont_bias": -1.51,
+      "familyHO_cont_r2": 0.6611,
+      "phylumHO_comp_mae": 29.948,
+      "phylumHO_comp_bias": -29.913,
+      "phylumHO_comp_r2": -3.3107,
+      "phylumHO_cont_mae": 21.063,
+      "phylumHO_cont_bias": -17.447,
+      "phylumHO_cont_r2": -0.0159
+    },
+    {
+      "group": "in_distribution",
+      "n": 1000,
+      "n_refs": 100,
+      "true_comp_mean": 76.88,
+      "true_cont_mean": 45.62,
+      "V5_comp_mae": 6.532,
+      "V5_comp_bias": 1.662,
+      "V5_comp_r2": 0.5966,
+      "V5_cont_mae": 7.374,
+      "V5_cont_bias": -0.908,
+      "V5_cont_r2": 0.8121,
+      "familyHO_comp_mae": 6.561,
+      "familyHO_comp_bias": 1.889,
+      "familyHO_comp_r2": 0.5974,
+      "familyHO_cont_mae": 7.267,
+      "familyHO_cont_bias": -1.103,
+      "familyHO_cont_r2": 0.8152,
+      "phylumHO_comp_mae": 8.212,
+      "phylumHO_comp_bias": 1.275,
+      "phylumHO_comp_r2": 0.2954,
+      "phylumHO_cont_mae": 9.044,
+      "phylumHO_cont_bias": -0.071,
+      "phylumHO_cont_r2": 0.6989
+    }
+  ]
+}

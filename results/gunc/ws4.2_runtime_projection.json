@@ -1,0 +1,35 @@
+{
+  "generated_utc": "2026-07-26T22:29:32.406654+00:00",
+  "measurement": {
+    "pilot_n_genomes": 20,
+    "threads": 8,
+    "gene_calls_reused": true,
+    "progenomes_2.1_wall_s": 804.0,
+    "gtdb_95_wall_s": 1840.0,
+    "gtdb95_over_progenomes_cost_factor": 2.289,
+    "database_size_ratio": 2.769,
+    "peak_rss_gb_progenomes_pilot": 8.7,
+    "completed_reference_runs_16threads_s": {
+      "set_C_clean_diamond": 4380.0,
+      "set_D_clean_diamond": 8139.0
+    },
+    "assumed_16to8_thread_penalty": 1.85,
+    "fitted_fixed_cost_s_per_diamond_invocation_progenomes": 655.0,
+    "fitted_marginal_s_per_genome_progenomes_setC_volume": 7.448
+  },
+  "projection_hours_8_threads_2_batches": {
+    "set_C_clean:gtdb_95": 5.57,
+    "set_D_clean:gtdb_95": 12.06,
+    "set_E:progenomes_2.1": 9.6,
+    "set_E:gtdb_95": 21.07,
+    "set_A_v2:progenomes_2.1": 6.44,
+    "set_B_v2:progenomes_2.1": 10.71
+  },
+  "caveats": [
+    "Measured on a shared 48-core host under heavy concurrent load (load average ~50); an idle host would be materially faster. These are scheduling estimates, not a speed benchmark -- WS8.1 owns matched-hardware timing.",
+    "Batching into 2 balanced halves adds one extra diamond fixed cost per set (~7 %).",
+    "Prodigal is skipped for set_C_clean/set_D_clean because deterministic gene calls from the completed proGenomes runs are reused (verified bit-identical)."
+  ],
+  "projection_hours_priority1_cleanCD_gtdb95": 17.63,
+  "projection_hours_all_six_jobs": 65.45
+}

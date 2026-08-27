@@ -1,0 +1,76 @@
+{
+  "generated_utc": "2026-07-26T14:09:12.605377+00:00",
+  "generated_by": "scripts/72_select_clean_cd_refs.py",
+  "source": "data/splits/test_genomes.tsv",
+  "n_test_split_genomes": 9999,
+  "sampling": "numpy.random.default_rng(seed).choice(n_candidates, size=100, replace=False) over candidates sorted by gtdb_accession",
+  "sets": {
+    "set_C_clean": {
+      "seed": 7001,
+      "n_selected": 100,
+      "n_candidates_in_test_split": 161,
+      "selection_criterion": "phylum == Patescibacteriota",
+      "output": "data/benchmarks/set_C_clean/reference_selection.tsv",
+      "genome_size_bp": {
+        "median": 880683.0,
+        "min": 575572.0,
+        "max": 1518044.0,
+        "mean": 899072.63
+      },
+      "contig_count": {
+        "median": 17.0,
+        "min": 1,
+        "max": 79
+      },
+      "n50_contigs": {
+        "median": 102207.0,
+        "min": 22729,
+        "max": 1256494
+      },
+      "phylum_counts": {
+        "Patescibacteriota": 100
+      },
+      "n_unique_classes": 9,
+      "n_unique_orders": 38,
+      "n_unique_families": 72,
+      "n_unique_genera": 86,
+      "n_unique_species": 96
+    },
+    "set_D_clean": {
+      "seed": 7002,
+      "n_selected": 100,
+      "n_candidates_in_test_split": 198,
+      "selection_criterion": "domain == Archaea",
+      "output": "data/benchmarks/set_D_clean/reference_selection.tsv",
+      "genome_size_bp": {
+        "median": 2032343.5,
+        "min": 913915.0,
+        "max": 4416299.0,
+        "mean": 2276105.83
+      },
+      "contig_count": {
+        "median": 15.0,
+        "min": 1,
+        "max": 93
+      },
+      "n50_contigs": {
+        "median": 299810.5,
+        "min": 36756,
+        "max": 3756275
+      },
+      "phylum_counts": {
+        "Halobacteriota": 35,
+        "Thermoproteota": 33,
+        "Methanobacteriota": 19,
+        "Thermoplasmatota": 7,
+        "Methanobacteriota_B": 4,
+        "Nanobdellota": 2
+      },
+      "n_unique_classes": 12,
+      "n_unique_orders": 16,
+      "n_unique_families": 36,
+      "n_unique_genera": 65,
+      "n_unique_species": 89
+    }
+  }
+}

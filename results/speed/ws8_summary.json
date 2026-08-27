@@ -1,0 +1,11 @@
+{
+  "n_runs": 92,
+  "max_loadavg_before_any_timed_run": 0.99,
+  "all_return_codes_zero": true,
+  "input_sets": {
+    "set_E_100": 100,
+    "set_E_full": 1000
+  },
+  "set_E_total_bp": 4806980767,
+  "set_E_100_total_bp": 478109066
+}

@@ -1,0 +1,1253 @@
+{
+  "generated": "2026-07-26T17:30:07",
+  "definition_notes": {
+    "r2": "coefficient of determination, 1 - SS_res/SS_tot (protocol 4.4d); squared Pearson reported separately and never labelled R^2; omitted where the true value has zero variance",
+    "ci": "95% percentile cluster bootstrap over the dominant reference genome",
+    "bias": "mean(predicted - true) in percentage points; negative = under-estimate",
+    "mimag": "MIMAG-inspired (completeness/contamination only): high >=90% completeness AND <5% contamination; medium >=50% AND <10%",
+    "denominators": "completeness (%) = retained dominant-genome bp / full reference length of the dominant genome x 100; contamination (%) = total contaminant bp / full reference length of the dominant genome x 100. Both percentages share the same denominator and are independent measures."
+  },
+  "definitive_leakage_free_5_sets": [
+    "set_A_v2",
+    "set_B_v2",
+    "set_C_clean",
+    "set_D_clean",
+    "set_E"
+  ],
+  "pooled_leakage_free_5_sets": {
+    "magicc_v5": {
+      "completeness": {
+        "mae": 4.6179,
+        "mae_ci95": [
+          4.3236,
+          4.9207
+        ],
+        "r2_coefficient_of_determination": 0.7853,
+        "r2_ci95": [
+          0.7559,
+          0.8114
+        ],
+        "pearson_r_squared_NOT_R2": 0.7894,
+        "signed_bias": -0.8669,
+        "signed_bias_ci95": [
+          -1.2622,
+          -0.4606
+        ],
+        "n": 5000,
+        "n_clusters": 2586
+      },
+      "contamination": {
+        "mae": 5.3086,
+        "mae_ci95": [
+          4.9993,
+          5.626
+        ],
+        "r2_coefficient_of_determination": 0.9149,
+        "r2_ci95": [
+          0.9043,
+          0.9246
+        ],
+        "pearson_r_squared_NOT_R2": 0.9213,
+        "signed_bias": -1.9626,
+        "signed_bias_ci95": [
+          -2.3841,
+          -1.5646
+        ],
+        "n": 5000,
+        "n_clusters": 2586
+      }
+    },
+    "checkm2": {
+      "completeness": {
+        "mae": 5.8031,
+        "mae_ci95": [
+          5.5173,
+          6.096
+        ],
+        "r2_coefficient_of_determination": 0.6659,
+        "r2_ci95": [
+          0.6395,
+          0.6911
+        ],
+        "pearson_r_squared_NOT_R2": 0.6929,
+        "signed_bias": 2.5281,
+        "signed_bias_ci95": [
+          2.0845,
+          2.9429
+        ],
+        "n": 5000,
+        "n_clusters": 2586
+      },
+      "contamination": {
+        "mae": 22.1447,
+        "mae_ci95": [
+          21.0782,
+          23.199
+        ],
+        "r2_coefficient_of_determination": -0.1185,
+        "r2_ci95": [
+          -0.1952,
+          -0.0467
+        ],
+        "pearson_r_squared_NOT_R2": 0.3643,
+        "signed_bias": -21.0297,
+        "signed_bias_ci95": [
+          -22.1623,
+          -19.8979
+        ],
+        "n": 5000,
+        "n_clusters": 2586
+      }
+    },
+    "cocopye": {
+      "completeness": {
+        "mae": 6.5901,
+        "mae_ci95": [
+          6.1564,
+          7.0064
+        ],
+        "r2_coefficient_of_determination": 0.6277,
+        "r2_ci95": [
+          0.5859,
+          0.6689
+        ],
+        "pearson_r_squared_NOT_R2": 0.6578,
+        "signed_bias": -2.78,
+        "signed_bias_ci95": [
+          -3.2877,
+          -2.2445
+        ],
+        "n": 5000,
+        "n_clusters": 2586
+      },
+      "contamination": {
+        "mae": 19.015,
+        "mae_ci95": [
+          18.1963,
+          19.7756
+        ],
+        "r2_coefficient_of_determination": 0.1415,
+        "r2_ci95": [
+          0.0991,
+          0.1854
+        ],
+        "pearson_r_squared_NOT_R2": 0.6831,
+        "signed_bias": -18.0579,
+        "signed_bias_ci95": [
+          -18.8348,
+          -17.2312
+        ],
+        "n": 5000,
+        "n_clusters": 2586
+      }
+    },
+    "deepcheck": {
+      "completeness": {
+        "mae": 9.831,
+        "mae_ci95": [
+          9.3525,
+          10.2977
+        ],
+        "r2_coefficient_of_determination": 0.3046,
+        "r2_ci95": [
+          0.2496,
+          0.3584
+        ],
+        "pearson_r_squared_NOT_R2": 0.4989,
+        "signed_bias": 0.7487,
+        "signed_bias_ci95": [
+          -0.0745,
+          1.5678
+        ],
+        "n": 5000,
+        "n_clusters": 2586
+      },
+      "contamination": {
+        "mae": 26.4331,
+        "mae_ci95": [
+          25.3717,
+          27.4845
+        ],
+        "r2_coefficient_of_determination": -0.5033,
+        "r2_ci95": [
+          -0.5919,
+          -0.4159
+        ],
+        "pearson_r_squared_NOT_R2": 0.2059,
+        "signed_bias": -23.7362,
+        "signed_bias_ci95": [
+          -24.932,
+          -22.4833
+        ],
+        "n": 5000,
+        "n_clusters": 2586
+      }
+    }
+  },
+  "pooled_submitted_manuscript_5_sets_leaky_CD": {
+    "magicc_v5": {
+      "completeness": {
+        "mae": 3.793,
+        "mae_ci95": [
+          3.6303,
+          3.9552
+        ],
+        "r2_coefficient_of_determination": 0.8375,
+        "r2_ci95": [
+          0.8214,
+          0.8523
+        ],
+        "pearson_r_squared_NOT_R2": 0.8376,
+        "signed_bias": 0.1298,
+        "signed_bias_ci95": [
+          -0.0511,
+          0.3269
+        ],
+        "n": 5000,
+        "n_clusters": 4386
+      },
+      "contamination": {
+        "mae": 5.3944,
+        "mae_ci95": [
+          5.1751,
+          5.6167
+        ],
+        "r2_coefficient_of_determination": 0.9154,
+        "r2_ci95": [
+          0.9093,
+          0.9217
+        ],
+        "pearson_r_squared_NOT_R2": 0.9317,
+        "signed_bias": -3.1068,
+        "signed_bias_ci95": [
+          -3.3505,
+          -2.8581
+        ],
+        "n": 5000,
+        "n_clusters": 4386
+      }
+    },
+    "checkm2": {
+      "completeness": {
+        "mae": 6.0028,
+        "mae_ci95": [
+          5.7781,
+          6.2423
+        ],
+        "r2_coefficient_of_determination": 0.6367,
+        "r2_ci95": [
+          0.6117,
+          0.6598
+        ],
+        "pearson_r_squared_NOT_R2": 0.6672,
+        "signed_bias": 2.5198,
+        "signed_bias_ci95": [
+          2.2517,
+          2.7909
+        ],
+        "n": 5000,
+        "n_clusters": 4386
+      },
+      "contamination": {
+        "mae": 23.1408,
+        "mae_ci95": [
+          22.4143,
+          23.8406
+        ],
+        "r2_coefficient_of_determination": -0.1359,
+        "r2_ci95": [
+          -0.1785,
+          -0.0931
+        ],
+        "pearson_r_squared_NOT_R2": 0.3373,
+        "signed_bias": -22.0319,
+        "signed_bias_ci95": [
+          -22.7577,
+          -21.2852
+        ],
+        "n": 5000,
+        "n_clusters": 4386
+      }
+    },
+    "cocopye": {
+      "completeness": {
+        "mae": 6.6244,
+        "mae_ci95": [
+          6.3832,
+          6.8452
+        ],
+        "r2_coefficient_of_determination": 0.6185,
+        "r2_ci95": [
+          0.594,
+          0.6447
+        ],
+        "pearson_r_squared_NOT_R2": 0.6505,
+        "signed_bias": -2.8571,
+        "signed_bias_ci95": [
+          -3.1308,
+          -2.5822
+        ],
+        "n": 5000,
+        "n_clusters": 4386
+      },
+      "contamination": {
+        "mae": 20.261,
+        "mae_ci95": [
+          19.6297,
+          20.8867
+        ],
+        "r2_coefficient_of_determination": 0.1024,
+        "r2_ci95": [
+          0.0761,
+          0.1297
+        ],
+        "pearson_r_squared_NOT_R2": 0.6512,
+        "signed_bias": -19.2415,
+        "signed_bias_ci95": [
+          -19.8855,
+          -18.5891
+        ],
+        "n": 5000,
+        "n_clusters": 4386
+      }
+    },
+    "deepcheck": {
+      "completeness": {
+        "mae": 10.1007,
+        "mae_ci95": [
+          9.8123,
+          10.388
+        ],
+        "r2_coefficient_of_determination": 0.2694,
+        "r2_ci95": [
+          0.2298,
+          0.3069
+        ],
+        "pearson_r_squared_NOT_R2": 0.4791,
+        "signed_bias": 0.7165,
+        "signed_bias_ci95": [
+          0.3291,
+          1.1144
+        ],
+        "n": 5000,
+        "n_clusters": 4386
+      },
+      "contamination": {
+        "mae": 27.574,
+        "mae_ci95": [
+          26.742,
+          28.3509
+        ],
+        "r2_coefficient_of_determination": -0.5076,
+        "r2_ci95": [
+          -0.5682,
+          -0.4448
+        ],
+        "pearson_r_squared_NOT_R2": 0.1843,
+        "signed_bias": -24.7389,
+        "signed_bias_ci95": [
+          -25.6138,
+          -23.8644
+        ],
+        "n": 5000,
+        "n_clusters": 4386
+      }
+    }
+  },
+  "per_set": {
+    "set_A_v2": {
+      "magicc_v5": {
+        "completeness": {
+          "mae": 2.1766,
+          "mae_ci95": [
+            1.9277,
+            2.4359
+          ],
+          "r2_coefficient_of_determination": 0.9369,
+          "r2_ci95": [
+            0.915,
+            0.9547
+          ],
+          "pearson_r_squared_NOT_R2": 0.9369,
+          "signed_bias": 0.0922,
+          "signed_bias_ci95": [
+            -0.2202,
+            0.3615
+          ],
+          "n": 1000,
+          "n_clusters": 798
+        },
+        "contamination": {
+          "mae": 0.8285,
+          "mae_ci95": [
+            0.643,
+            1.0595
+          ],
+          "r2_coefficient_of_determination": null,
+          "r2_ci95": null,
+          "pearson_r_squared_NOT_R2": null,
+          "signed_bias": 0.8285,
+          "signed_bias_ci95": [
+            0.643,
+            1.0595
+          ],
+          "n": 1000,
+          "n_clusters": 798
+        }
+      },
+      "checkm2": {
+        "completeness": {
+          "mae": 2.5423,
+          "mae_ci95": [
+            2.3619,
+            2.7139
+          ],
+          "r2_coefficient_of_determination": 0.9489,
+          "r2_ci95": [
+            0.9405,
+            0.9563
+          ],
+          "pearson_r_squared_NOT_R2": 0.9542,
+          "signed_bias": 1.2338,
+          "signed_bias_ci95": [
+            0.9959,
+            1.4617
+          ],
+          "n": 1000,
+          "n_clusters": 798
+        },
+        "contamination": {
+          "mae": 0.2739,
+          "mae_ci95": [
+            0.2495,
+            0.3
+          ],
+          "r2_coefficient_of_determination": null,
+          "r2_ci95": null,
+          "pearson_r_squared_NOT_R2": null,
+          "signed_bias": 0.2739,
+          "signed_bias_ci95": [
+            0.2495,
+            0.3
+          ],
+          "n": 1000,
+          "n_clusters": 798
+        }
+      },
+      "cocopye": {
+        "completeness": {
+          "mae": 3.6265,
+          "mae_ci95": [
+            3.3501,
+            3.9257
+          ],
+          "r2_coefficient_of_determination": 0.8959,
+          "r2_ci95": [
+            0.8779,
+            0.9122
+          ],
+          "pearson_r_squared_NOT_R2": 0.9085,
+          "signed_bias": 1.5985,
+          "signed_bias_ci95": [
+            1.2576,
+            1.9337
+          ],
+          "n": 1000,
+          "n_clusters": 798
+        },
+        "contamination": {
+          "mae": 0.7745,
+          "mae_ci95": [
+            0.6122,
+            0.9754
+          ],
+          "r2_coefficient_of_determination": null,
+          "r2_ci95": null,
+          "pearson_r_squared_NOT_R2": null,
+          "signed_bias": 0.7745,
+          "signed_bias_ci95": [
+            0.6122,
+            0.9754
+          ],
+          "n": 1000,
+          "n_clusters": 798
+        }
+      },
+      "deepcheck": {
+        "completeness": {
+          "mae": 4.2555,
+          "mae_ci95": [
+            3.9752,
+            4.539
+          ],
+          "r2_coefficient_of_determination": 0.8653,
+          "r2_ci95": [
+            0.8429,
+            0.8846
+          ],
+          "pearson_r_squared_NOT_R2": 0.8736,
+          "signed_bias": 1.4648,
+          "signed_bias_ci95": [
+            1.0945,
+            1.8453
+          ],
+          "n": 1000,
+          "n_clusters": 798
+        },
+        "contamination": {
+          "mae": 0.404,
+          "mae_ci95": [
+            0.3718,
+            0.4355
+          ],
+          "r2_coefficient_of_determination": null,
+          "r2_ci95": null,
+          "pearson_r_squared_NOT_R2": null,
+          "signed_bias": 0.2866,
+          "signed_bias_ci95": [
+            0.2492,
+            0.3229
+          ],
+          "n": 1000,
+          "n_clusters": 798
+        }
+      }
+    },
+    "set_B_v2": {
+      "magicc_v5": {
+        "completeness": {
+          "mae": 2.9724,
+          "mae_ci95": [
+            2.6474,
+            3.3182
+          ],
+          "r2_coefficient_of_determination": null,
+          "r2_ci95": null,
+          "pearson_r_squared_NOT_R2": null,
+          "signed_bias": -2.9724,
+          "signed_bias_ci95": [
+            -3.3182,
+            -2.6474
+          ],
+          "n": 1000,
+          "n_clusters": 803
+        },
+        "contamination": {
+          "mae": 4.4535,
+          "mae_ci95": [
+            4.1219,
+            4.792
+          ],
+          "r2_coefficient_of_determination": 0.9406,
+          "r2_ci95": [
+            0.9283,
+            0.9514
+          ],
+          "pearson_r_squared_NOT_R2": 0.9409,
+          "signed_bias": -0.1356,
+          "signed_bias_ci95": [
+            -0.595,
+            0.3005
+          ],
+          "n": 1000,
+          "n_clusters": 803
+        }
+      },
+      "checkm2": {
+        "completeness": {
+          "mae": 0.4511,
+          "mae_ci95": [
+            0.3191,
+            0.6001
+          ],
+          "r2_coefficient_of_determination": null,
+          "r2_ci95": null,
+          "pearson_r_squared_NOT_R2": null,
+          "signed_bias": -0.4511,
+          "signed_bias_ci95": [
+            -0.6001,
+            -0.3191
+          ],
+          "n": 1000,
+          "n_clusters": 803
+        },
+        "contamination": {
+          "mae": 17.6619,
+          "mae_ci95": [
+            16.5101,
+            18.7788
+          ],
+          "r2_coefficient_of_determination": 0.1754,
+          "r2_ci95": [
+            0.0864,
+            0.2595
+          ],
+          "pearson_r_squared_NOT_R2": 0.4757,
+          "signed_bias": -14.2617,
+          "signed_bias_ci95": [
+            -15.5938,
+            -12.9602
+          ],
+          "n": 1000,
+          "n_clusters": 803
+        }
+      },
+      "cocopye": {
+        "completeness": {
+          "mae": 2.6085,
+          "mae_ci95": [
+            2.2952,
+            2.9453
+          ],
+          "r2_coefficient_of_determination": null,
+          "r2_ci95": null,
+          "pearson_r_squared_NOT_R2": null,
+          "signed_bias": -2.6085,
+          "signed_bias_ci95": [
+            -2.9453,
+            -2.2952
+          ],
+          "n": 1000,
+          "n_clusters": 803
+        },
+        "contamination": {
+          "mae": 19.1407,
+          "mae_ci95": [
+            18.0425,
+            20.2917
+          ],
+          "r2_coefficient_of_determination": 0.0751,
+          "r2_ci95": [
+            0.0087,
+            0.1375
+          ],
+          "pearson_r_squared_NOT_R2": 0.7143,
+          "signed_bias": -18.4184,
+          "signed_bias_ci95": [
+            -19.6069,
+            -17.2766
+          ],
+          "n": 1000,
+          "n_clusters": 803
+        }
+      },
+      "deepcheck": {
+        "completeness": {
+          "mae": 6.6113,
+          "mae_ci95": [
+            6.0632,
+            7.1653
+          ],
+          "r2_coefficient_of_determination": null,
+          "r2_ci95": null,
+          "pearson_r_squared_NOT_R2": null,
+          "signed_bias": 4.4009,
+          "signed_bias_ci95": [
+            3.7648,
+            5.0545
+          ],
+          "n": 1000,
+          "n_clusters": 803
+        },
+        "contamination": {
+          "mae": 25.7049,
+          "mae_ci95": [
+            24.3472,
+            27.0959
+          ],
+          "r2_coefficient_of_determination": -0.4946,
+          "r2_ci95": [
+            -0.6528,
+            -0.3578
+          ],
+          "pearson_r_squared_NOT_R2": 0.2959,
+          "signed_bias": -20.5856,
+          "signed_bias_ci95": [
+            -22.2732,
+            -18.8736
+          ],
+          "n": 1000,
+          "n_clusters": 803
+        }
+      }
+    },
+    "set_C_clean": {
+      "magicc_v5": {
+        "completeness": {
+          "mae": 6.8216,
+          "mae_ci95": [
+            5.7766,
+            7.8624
+          ],
+          "r2_coefficient_of_determination": 0.6106,
+          "r2_ci95": [
+            0.4826,
+            0.714
+          ],
+          "pearson_r_squared_NOT_R2": 0.6564,
+          "signed_bias": -2.3197,
+          "signed_bias_ci95": [
+            -3.8319,
+            -0.8121
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        },
+        "contamination": {
+          "mae": 9.0801,
+          "mae_ci95": [
+            8.1934,
+            10.1041
+          ],
+          "r2_coefficient_of_determination": 0.7704,
+          "r2_ci95": [
+            0.7109,
+            0.8157
+          ],
+          "pearson_r_squared_NOT_R2": 0.7916,
+          "signed_bias": -3.5536,
+          "signed_bias_ci95": [
+            -5.1283,
+            -1.9963
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        }
+      },
+      "checkm2": {
+        "completeness": {
+          "mae": 7.7112,
+          "mae_ci95": [
+            7.3439,
+            8.1129
+          ],
+          "r2_coefficient_of_determination": 0.653,
+          "r2_ci95": [
+            0.6174,
+            0.6832
+          ],
+          "pearson_r_squared_NOT_R2": 0.7263,
+          "signed_bias": -4.2054,
+          "signed_bias_ci95": [
+            -4.8257,
+            -3.5922
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        },
+        "contamination": {
+          "mae": 39.6178,
+          "mae_ci95": [
+            37.9957,
+            41.2299
+          ],
+          "r2_coefficient_of_determination": -2.1953,
+          "r2_ci95": [
+            -2.4286,
+            -1.9813
+          ],
+          "pearson_r_squared_NOT_R2": 0.3207,
+          "signed_bias": -39.6042,
+          "signed_bias_ci95": [
+            -41.2221,
+            -37.9801
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        }
+      },
+      "cocopye": {
+        "completeness": {
+          "mae": 15.8029,
+          "mae_ci95": [
+            15.1227,
+            16.487
+          ],
+          "r2_coefficient_of_determination": -0.3131,
+          "r2_ci95": [
+            -0.4328,
+            -0.2039
+          ],
+          "pearson_r_squared_NOT_R2": 0.4627,
+          "signed_bias": -13.8834,
+          "signed_bias_ci95": [
+            -14.6892,
+            -13.0777
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        },
+        "contamination": {
+          "mae": 31.069,
+          "mae_ci95": [
+            29.5706,
+            32.591
+          ],
+          "r2_coefficient_of_determination": -1.1704,
+          "r2_ci95": [
+            -1.3399,
+            -1.0207
+          ],
+          "pearson_r_squared_NOT_R2": 0.3247,
+          "signed_bias": -30.2262,
+          "signed_bias_ci95": [
+            -31.8573,
+            -28.6682
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        }
+      },
+      "deepcheck": {
+        "completeness": {
+          "mae": 17.8115,
+          "mae_ci95": [
+            16.8631,
+            18.7865
+          ],
+          "r2_coefficient_of_determination": -0.5687,
+          "r2_ci95": [
+            -0.7507,
+            -0.4041
+          ],
+          "pearson_r_squared_NOT_R2": 0.5612,
+          "signed_bias": -17.0566,
+          "signed_bias_ci95": [
+            -18.0956,
+            -16.0193
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        },
+        "contamination": {
+          "mae": 41.6683,
+          "mae_ci95": [
+            39.9962,
+            43.3462
+          ],
+          "r2_coefficient_of_determination": -2.4962,
+          "r2_ci95": [
+            -2.7541,
+            -2.2656
+          ],
+          "pearson_r_squared_NOT_R2": 0.2369,
+          "signed_bias": -41.6664,
+          "signed_bias_ci95": [
+            -43.3449,
+            -39.9914
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        }
+      }
+    },
+    "set_D_clean": {
+      "magicc_v5": {
+        "completeness": {
+          "mae": 5.633,
+          "mae_ci95": [
+            4.9981,
+            6.3423
+          ],
+          "r2_coefficient_of_determination": 0.7053,
+          "r2_ci95": [
+            0.6167,
+            0.7737
+          ],
+          "pearson_r_squared_NOT_R2": 0.7124,
+          "signed_bias": -0.2624,
+          "signed_bias_ci95": [
+            -1.3195,
+            0.7784
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        },
+        "contamination": {
+          "mae": 6.5229,
+          "mae_ci95": [
+            5.9552,
+            7.1105
+          ],
+          "r2_coefficient_of_determination": 0.8539,
+          "r2_ci95": [
+            0.8227,
+            0.8806
+          ],
+          "pearson_r_squared_NOT_R2": 0.8787,
+          "signed_bias": -3.8341,
+          "signed_bias_ci95": [
+            -4.6515,
+            -2.9729
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        }
+      },
+      "checkm2": {
+        "completeness": {
+          "mae": 9.1712,
+          "mae_ci95": [
+            8.4935,
+            9.9118
+          ],
+          "r2_coefficient_of_determination": 0.3155,
+          "r2_ci95": [
+            0.2057,
+            0.4143
+          ],
+          "pearson_r_squared_NOT_R2": 0.5788,
+          "signed_bias": 7.7429,
+          "signed_bias_ci95": [
+            6.8454,
+            8.7037
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        },
+        "contamination": {
+          "mae": 34.698,
+          "mae_ci95": [
+            33.1986,
+            36.1359
+          ],
+          "r2_coefficient_of_determination": -1.6586,
+          "r2_ci95": [
+            -1.8986,
+            -1.4465
+          ],
+          "pearson_r_squared_NOT_R2": 0.3508,
+          "signed_bias": -34.661,
+          "signed_bias_ci95": [
+            -36.1019,
+            -33.1488
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        }
+      },
+      "cocopye": {
+        "completeness": {
+          "mae": 5.8909,
+          "mae_ci95": [
+            5.3154,
+            6.5597
+          ],
+          "r2_coefficient_of_determination": 0.7088,
+          "r2_ci95": [
+            0.6333,
+            0.7703
+          ],
+          "pearson_r_squared_NOT_R2": 0.7102,
+          "signed_bias": -0.5707,
+          "signed_bias_ci95": [
+            -1.4634,
+            0.2287
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        },
+        "contamination": {
+          "mae": 22.4943,
+          "mae_ci95": [
+            21.3555,
+            23.6282
+          ],
+          "r2_coefficient_of_determination": -0.3181,
+          "r2_ci95": [
+            -0.4319,
+            -0.217
+          ],
+          "pearson_r_squared_NOT_R2": 0.6276,
+          "signed_bias": -21.8151,
+          "signed_bias_ci95": [
+            -23.0564,
+            -20.5725
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        }
+      },
+      "deepcheck": {
+        "completeness": {
+          "mae": 8.782,
+          "mae_ci95": [
+            8.0249,
+            9.6258
+          ],
+          "r2_coefficient_of_determination": 0.3807,
+          "r2_ci95": [
+            0.2506,
+            0.4981
+          ],
+          "pearson_r_squared_NOT_R2": 0.5318,
+          "signed_bias": 4.7278,
+          "signed_bias_ci95": [
+            3.4307,
+            6.0009
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        },
+        "contamination": {
+          "mae": 38.9571,
+          "mae_ci95": [
+            37.4872,
+            40.4852
+          ],
+          "r2_coefficient_of_determination": -2.3114,
+          "r2_ci95": [
+            -2.5898,
+            -2.0703
+          ],
+          "pearson_r_squared_NOT_R2": 0.1686,
+          "signed_bias": -38.8386,
+          "signed_bias_ci95": [
+            -40.3699,
+            -37.3724
+          ],
+          "n": 1000,
+          "n_clusters": 100
+        }
+      }
+    },
+    "set_E": {
+      "magicc_v5": {
+        "completeness": {
+          "mae": 5.4859,
+          "mae_ci95": [
+            5.0367,
+            5.9501
+          ],
+          "r2_coefficient_of_determination": 0.7069,
+          "r2_ci95": [
+            0.6615,
+            0.752
+          ],
+          "pearson_r_squared_NOT_R2": 0.7119,
+          "signed_bias": 1.1277,
+          "signed_bias_ci95": [
+            0.5537,
+            1.6813
+          ],
+          "n": 1000,
+          "n_clusters": 785
+        },
+        "contamination": {
+          "mae": 5.6579,
+          "mae_ci95": [
+            5.1929,
+            6.1462
+          ],
+          "r2_coefficient_of_determination": 0.9132,
+          "r2_ci95": [
+            0.898,
+            0.9268
+          ],
+          "pearson_r_squared_NOT_R2": 0.9265,
+          "signed_bias": -3.1182,
+          "signed_bias_ci95": [
+            -3.682,
+            -2.5358
+          ],
+          "n": 1000,
+          "n_clusters": 785
+        }
+      },
+      "checkm2": {
+        "completeness": {
+          "mae": 9.1395,
+          "mae_ci95": [
+            8.4819,
+            9.8
+          ],
+          "r2_coefficient_of_determination": 0.249,
+          "r2_ci95": [
+            0.1651,
+            0.3266
+          ],
+          "pearson_r_squared_NOT_R2": 0.5131,
+          "signed_bias": 8.32,
+          "signed_bias_ci95": [
+            7.6258,
+            9.0377
+          ],
+          "n": 1000,
+          "n_clusters": 785
+        },
+        "contamination": {
+          "mae": 18.4721,
+          "mae_ci95": [
+            17.2528,
+            19.7514
+          ],
+          "r2_coefficient_of_determination": 0.3027,
+          "r2_ci95": [
+            0.2304,
+            0.3745
+          ],
+          "pearson_r_squared_NOT_R2": 0.5665,
+          "signed_bias": -16.8953,
+          "signed_bias_ci95": [
+            -18.2696,
+            -15.5157
+          ],
+          "n": 1000,
+          "n_clusters": 785
+        }
+      },
+      "cocopye": {
+        "completeness": {
+          "mae": 5.0216,
+          "mae_ci95": [
+            4.6706,
+            5.3687
+          ],
+          "r2_coefficient_of_determination": 0.8012,
+          "r2_ci95": [
+            0.7738,
+            0.8258
+          ],
+          "pearson_r_squared_NOT_R2": 0.8231,
+          "signed_bias": 1.5641,
+          "signed_bias_ci95": [
+            1.0961,
+            2.012
+          ],
+          "n": 1000,
+          "n_clusters": 785
+        },
+        "contamination": {
+          "mae": 21.5965,
+          "mae_ci95": [
+            20.305,
+            22.9706
+          ],
+          "r2_coefficient_of_determination": 0.102,
+          "r2_ci95": [
+            0.04,
+            0.157
+          ],
+          "pearson_r_squared_NOT_R2": 0.7285,
+          "signed_bias": -20.6041,
+          "signed_bias_ci95": [
+            -22.0408,
+            -19.2469
+          ],
+          "n": 1000,
+          "n_clusters": 785
+        }
+      },
+      "deepcheck": {
+        "completeness": {
+          "mae": 11.6947,
+          "mae_ci95": [
+            10.9851,
+            12.4104
+          ],
+          "r2_coefficient_of_determination": 0.0093,
+          "r2_ci95": [
+            -0.0976,
+            0.1085
+          ],
+          "pearson_r_squared_NOT_R2": 0.4809,
+          "signed_bias": 10.2067,
+          "signed_bias_ci95": [
+            9.4129,
+            10.9967
+          ],
+          "n": 1000,
+          "n_clusters": 785
+        },
+        "contamination": {
+          "mae": 25.4311,
+          "mae_ci95": [
+            23.8844,
+            27.101
+          ],
+          "r2_coefficient_of_determination": -0.2956,
+          "r2_ci95": [
+            -0.4949,
+            -0.1228
+          ],
+          "pearson_r_squared_NOT_R2": 0.315,
+          "signed_bias": -17.8767,
+          "signed_bias_ci95": [
+            -19.9136,
+            -15.7294
+          ],
+          "n": 1000,
+          "n_clusters": 785
+        }
+      }
+    }
+  },
+  "counter_finding_set_C_clean_false_fail_at_5pct_contamination": {
+    "description": "Fraction of genuinely clean (true contamination < 5%) Patescibacteriota wrongly flagged as contaminated. Reported for all four tools so MAGICC's value is contextualised rather than presented in isolation.",
+    "by_tool": {
+      "magicc_v5": {
+        "false_fail_rate": 0.4423076923076923,
+        "ci": [
+          0.2726887519260401,
+          0.6166666666666667
+        ],
+        "n_false_fail": 23,
+        "n_true_pass": 52
+      },
+      "checkm2": {
+        "false_fail_rate": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "n_false_fail": 0,
+        "n_true_pass": 52
+      },
+      "cocopye": {
+        "false_fail_rate": 0.7115384615384616,
+        "ci": [
+          0.58,
+          0.8297872340425532
+        ],
+        "n_false_fail": 37,
+        "n_true_pass": 52
+      },
+      "deepcheck": {
+        "false_fail_rate": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "n_false_fail": 0,
+        "n_true_pass": 52
+      }
+    }
+  },
+  "training_domain_restriction_sample_counts": {
+    "set_A_v2": {
+      "all": 1000,
+      "in_domain": 1000,
+      "out_of_domain": 0
+    },
+    "set_B_v2": {
+      "all": 1000,
+      "in_domain": 1000,
+      "out_of_domain": 0
+    },
+    "set_C_clean": {
+      "all": 1000,
+      "in_domain": 1000,
+      "out_of_domain": 0
+    },
+    "set_D_clean": {
+      "all": 1000,
+      "in_domain": 1000,
+      "out_of_domain": 0
+    },
+    "set_E": {
+      "all": 1000,
+      "in_domain": 868,
+      "out_of_domain": 132
+    }
+  }
+}

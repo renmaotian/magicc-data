@@ -1,0 +1,236 @@
+{
+  "script": "scripts/130_ncbi_draft_complete_pairs.py",
+  "input_stats": {
+    "summary_file": "/path/to/magicc/data/ncbi/assembly_summary_genbank.txt",
+    "groups_seen": {
+      "bacteria": 2987913,
+      "viral": 258675,
+      "archaea": 35986,
+      "metagenomes": 26889,
+      "fungi": 23945,
+      "invertebrate": 13243,
+      "other": 9150,
+      "plant": 8576,
+      "vertebrate_other": 7454,
+      "vertebrate_mammalian": 4724,
+      "protozoa": 2752
+    },
+    "data_lines_read": 3379307,
+    "assemblies_kept_latest_and_leveled": 3379307,
+    "contaminated_flag_by_level": {
+      "Chromosome": 117,
+      "Complete Genome": 387,
+      "Scaffold": 7907,
+      "Contig": 14637
+    },
+    "contaminated_flag_total": 23048,
+    "exclusion_tokens_co_occurring_with_contaminated": {
+      "contaminated": 23048,
+      "derived from metagenome": 13662,
+      "genus undefined": 6475,
+      "fragmented assembly": 6099,
+      "from large multi-isolate project": 2164,
+      "unverified source organism": 1196,
+      "genome length too small": 777,
+      "metagenome": 768,
+      "genome length too large": 657,
+      "annotation fails MAG completeness check": 486,
+      "not used as type": 330,
+      "derived from single cell": 121,
+      "many frameshifted proteins": 121,
+      "RefSeq annotation failed": 91,
+      "annotation fails completeness check": 91,
+      "partial": 62,
+      "low quality sequence": 50,
+      "abnormal gene to sequence ratio": 25,
+      "missing rRNA genes": 5,
+      "missing tRNA genes": 5,
+      "out of scope for the RefSeq project": 4,
+      "superseded by newer assembly for species": 3,
+      "mixed culture": 3,
+      "missing strain identifier": 2,
+      "hybrid": 1
+    }
+  },
+  "tier1": {
+    "label": "same BioSample (strongest match)",
+    "n_pairs": 4834,
+    "n_unique_drafts": 4834,
+    "n_unique_complete_refs": 4654,
+    "n_unique_species_taxid": 3666,
+    "size_ratio_quantiles": {
+      "p05": 0.3647,
+      "p25": 0.9098,
+      "p50": 0.9832,
+      "p75": 1.001,
+      "p95": 1.1926
+    },
+    "n_pairs_ratio_0.80_1.20": 4034,
+    "n_pairs_ratio_gt_1.20": 236,
+    "n_pairs_ratio_lt_0.80": 564,
+    "n_pairs_prokaryote_only": 1121,
+    "n_pairs_prokaryote_and_ratio_0.80_1.20": 1097,
+    "n_drafts_flagged_contaminated": 20,
+    "n_drafts_derived_from_metagenome": 2,
+    "n_drafts_derived_from_single_cell": 0,
+    "top_species": [
+      [
+        "562",
+        183
+      ],
+      [
+        "573",
+        133
+      ],
+      [
+        "1639",
+        130
+      ],
+      [
+        "158836",
+        115
+      ],
+      [
+        "485",
+        74
+      ],
+      [
+        "1313",
+        64
+      ],
+      [
+        "1402135",
+        45
+      ],
+      [
+        "408172",
+        38
+      ],
+      [
+        "9606",
+        36
+      ],
+      [
+        "1280",
+        30
+      ],
+      [
+        "9940",
+        30
+      ],
+      [
+        "28901",
+        27
+      ],
+      [
+        "624",
+        15
+      ],
+      [
+        "1352",
+        14
+      ],
+      [
+        "470",
+        13
+      ]
+    ]
+  },
+  "tier2": {
+    "label": "same species_taxid + same strain designation",
+    "n_pairs": 23327,
+    "n_unique_drafts": 23327,
+    "n_unique_complete_refs": 6755,
+    "n_unique_species_taxid": 1583,
+    "size_ratio_quantiles": {
+      "p05": 0.9117,
+      "p25": 0.97,
+      "p50": 0.9966,
+      "p75": 1.0316,
+      "p95": 1.1092
+    },
+    "n_pairs_ratio_0.80_1.20": 22643,
+    "n_pairs_ratio_gt_1.20": 540,
+    "n_pairs_ratio_lt_0.80": 144,
+    "n_pairs_prokaryote_only": 22748,
+    "n_pairs_prokaryote_and_ratio_0.80_1.20": 22146,
+    "n_drafts_flagged_contaminated": 125,
+    "n_drafts_derived_from_metagenome": 34,
+    "n_drafts_derived_from_single_cell": 11,
+    "top_species": [
+      [
+        "562",
+        5366
+      ],
+      [
+        "573",
+        4845
+      ],
+      [
+        "1639",
+        3014
+      ],
+      [
+        "28901",
+        2487
+      ],
+      [
+        "1280",
+        1642
+      ],
+      [
+        "1313",
+        503
+      ],
+      [
+        "287",
+        468
+      ],
+      [
+        "470",
+        366
+      ],
+      [
+        "1352",
+        315
+      ],
+      [
+        "1496",
+        287
+      ],
+      [
+        "9913",
+        166
+      ],
+      [
+        "666",
+        123
+      ],
+      [
+        "1311",
+        110
+      ],
+      [
+        "1351",
+        79
+      ],
+      [
+        "546",
+        76
+      ]
+    ]
+  },
+  "definitions": {
+    "complete_levels": [
+      "Chromosome",
+      "Complete Genome"
+    ],
+    "draft_levels": [
+      "Contig",
+      "Scaffold"
+    ],
+    "tier1": "identical BioSample accession => same physical DNA isolate",
+    "tier2": "identical species_taxid and normalised strain string, different BioSample",
+    "ground_truth_derivation": "completeness = reference bases covered by draft alignment / reference total bases; contamination = draft bases not alignable to the reference (minus accessory/plasmid content) / reference total bases. Requires whole-genome alignment (minimap2/nucmer) of draft vs complete."
+  }
+}

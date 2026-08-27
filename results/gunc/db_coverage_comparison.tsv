@@ -1,0 +1,5 @@
+database	taxonomy_file	n_reference_genomes	n_distinct_phyla	n_cpr_patescibacteria	n_archaea	n_genbank_prefixed	n_refseq_prefixed	available
+progenomes_2.1	genome2taxonomy_pg2.1ref.tsv	11223	149	104	457	0	0	True
+progenomes_3	genome2taxonomy_pg3ref.tsv	41171	148	138	1458	0	0	True
+gtdb_95	genome2taxonomy_gtdb95ref.tsv	31910	149	1131	1672	14566	17344	True
+gtdb_214	genome2taxonomy_gtdb214ref.tsv	65703	189	2485	3412	42580	23123	True

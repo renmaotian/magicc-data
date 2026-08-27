@@ -1,0 +1,5 @@
+cell	input_set	n_genomes	total_bp	threads	numerator	denominator	n_numerator	num_median_s	num_min_s	num_max_s	n_denominator	den_median_s	den_min_s	den_max_s	ratio_of_medians	ratio_min_envelope	ratio_max_envelope	published_ratio	change_abs	change_pct	campaigns
+set_E_full @ 32 threads	set_E_full	1000	4806980767	32	CheckM2 1.0.1	MAGICC v0.3.0 (V5)	3	4286.0	4208.0	4288.0	5	5.98	5.83	39.06	716.7	107.7	735.5	697.0	19.7	2.83	CheckM2 WS11.T+WS8; MAGICC WS11.T+WS8
+set_E_full @ 32 threads	set_E_full	1000	4806980767	32	CoCoPyE 0.5.0	MAGICC v0.3.0 (V5)	3	2971.68	2924.29	3177.54	5	5.98	5.83	39.06	496.9	74.9	545.0				CoCoPyE WS11.T+WS8; MAGICC WS11.T+WS8
+set_E_100 @ 32 threads	set_E_100	100	478109066	32	CheckM2 1.0.1	MAGICC v0.3.0 (V5)	5	559.66	539.44	597.56	4	2.21	2.15	13.25	253.2	40.7	277.9	251.0	2.2	0.89	CheckM2 WS11.T+WS8; MAGICC WS11.T+WS8
+set_E_100 @ 32 threads	set_E_100	100	478109066	32	CoCoPyE 0.5.0	MAGICC v0.3.0 (V5)	4	346.67	324.44	495.09	4	2.21	2.15	13.25	156.9	24.5	230.3				CoCoPyE WS11.T+WS8; MAGICC WS11.T+WS8

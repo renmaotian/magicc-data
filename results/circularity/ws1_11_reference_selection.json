@@ -1,0 +1,170 @@
+{
+  "generated_utc": "2026-08-01T18:35:29.282093+00:00",
+  "generated_by": "scripts/185_ws1_11_select_ncbi_refs.py",
+  "objection": "R1-m13 circularity: references were previously chosen with a CheckM2-based filter, so the benchmark cannot reveal CheckM2 failure modes on genomes that filter removed.",
+  "selector": "NCBI assembly_summary_{genbank,refseq}.txt assembly_level == \"Complete Genome\" AND version_status == latest",
+  "checkm2_used_for_selection": false,
+  "original_curation_filter": {
+    "completeness_min": 98.0,
+    "contamination_max": 2.0,
+    "contig_count_max": 100,
+    "n50_min": 20000,
+    "longest_contig_min": 100000
+  },
+  "ncbi_complete_prokaryotic_not_in_gtdb": 95272,
+  "gtdb_level_agrees_with_summary_file": 0.9999310502698693,
+  "seeds": {
+    "fail_sampling": 7011,
+    "control_matching": 7012
+  },
+  "filter_accounting": [
+    {
+      "stage": "GTDB genomes (bac120 + ar53)",
+      "n_remaining": 732475,
+      "note": ""
+    },
+    {
+      "stage": "NCBI assembly_level == \"Complete Genome\" (latest)",
+      "n_remaining": 47820,
+      "note": "selector = NCBI/submitter annotation; NO CheckM2 filter applied"
+    },
+    {
+      "stage": "has an NCBI ftp_path (downloadable)",
+      "n_remaining": 47820,
+      "note": ""
+    },
+    {
+      "stage": "taxonomic-consistency filter (GTDB<->NCBI genus + domain agree)",
+      "n_remaining": 39383,
+      "note": "dropped 0 no/placeholder GTDB assignment, 6623 no NCBI assignment, 1814 genus mismatch (of 47820)"
+    },
+    {
+      "stage": "excluded train / val / 9-mer-selection genomes",
+      "n_remaining": 28054,
+      "note": "references are absent from training entirely"
+    },
+    {
+      "stage": "FINAL selected references (both arms)",
+      "n_remaining": 400,
+      "note": "200 would-FAIL + 200 matched would-PASS"
+    }
+  ],
+  "candidate_pool": {
+    "n_total": 28054,
+    "n_would_pass": 25605,
+    "n_would_fail": 2449,
+    "would_fail_severity": {
+      "mild": 1298,
+      "moderate": 775,
+      "severe": 376
+    },
+    "would_fail_reason": {
+      "checkm2_completeness_lt_98": 1234,
+      "checkm2_contamination_gt_2": 1709,
+      "contig_count_ge_100": 6,
+      "n50_le_20kb": 0,
+      "longest_contig_le_100kb": 0
+    }
+  },
+  "severity_allocation": {
+    "strata_sizes": {
+      "mild": 1298,
+      "moderate": 775,
+      "severe": 376
+    },
+    "allocation": {
+      "mild": 87,
+      "moderate": 67,
+      "severe": 46
+    },
+    "scheme": "sqrt-proportional"
+  },
+  "match_level_counts": {
+    "species": 127,
+    "genus": 50,
+    "family": 13,
+    "class": 4,
+    "order": 4,
+    "phylum": 2
+  },
+  "arms": {
+    "H_fail": {
+      "n": 200,
+      "n_phyla": 13,
+      "n_classes": 18,
+      "n_orders": 42,
+      "n_families": 66,
+      "n_genera": 106,
+      "n_species": 135,
+      "domain_counts": {
+        "Bacteria": 192,
+        "Archaea": 8
+      },
+      "genome_size_Mbp": {
+        "median": 3.8226,
+        "min": 0.5111,
+        "max": 12.2758
+      },
+      "contig_count_median": 2.0,
+      "checkm2_completeness": {
+        "median": 96.64500000000001,
+        "min": 53.21,
+        "max": 100.0
+      },
+      "checkm2_contamination": {
+        "median": 2.69,
+        "min": 0.0,
+        "max": 15.06
+      },
+      "severity_counts": {
+        "mild": 87,
+        "moderate": 67,
+        "severe": 46
+      },
+      "in_test_split": 0,
+      "in_277k_pool": 0,
+      "genome_category": {
+        "none": 198,
+        "derived from metagenome": 2
+      }
+    },
+    "H_pass": {
+      "n": 200,
+      "n_phyla": 13,
+      "n_classes": 18,
+      "n_orders": 41,
+      "n_families": 64,
+      "n_genera": 103,
+      "n_species": 135,
+      "domain_counts": {
+        "Bacteria": 192,
+        "Archaea": 8
+      },
+      "genome_size_Mbp": {
+        "median": 3.8174,
+        "min": 0.6238,
+        "max": 13.0474
+      },
+      "contig_count_median": 2.0,
+      "checkm2_completeness": {
+        "median": 100.0,
+        "min": 98.0,
+        "max": 100.0
+      },
+      "checkm2_contamination": {
+        "median": 0.385,
+        "min": 0.0,
+        "max": 2.0
+      },
+      "severity_counts": {
+        "pass": 200
+      },
+      "in_test_split": 35,
+      "in_277k_pool": 200,
+      "genome_category": {
+        "none": 199,
+        "derived from metagenome": 1
+      }
+    }
+  }
+}
