@@ -13,7 +13,9 @@ These scripts generated the benchmark and motivating analysis datasets used in t
 > complete analysis code is at [`../scripts/`](../scripts/), where the numbers
 > were made unique for the deposition — for example `145_generate_set_F.py` here
 > is `155_generate_set_F.py` there. [`../scripts/SCRIPT_MAPPING.tsv`](../scripts/SCRIPT_MAPPING.tsv)
-> maps every name. The file contents are identical.
+> maps every name. The logic is identical; the only difference is that the
+> copies in `../scripts/` have their cross-references repointed at the deposited
+> numbers, so that set runs as it stands.
 
 > **`25_benchmark_generate.py` produced the WITHDRAWN sets C and D.** Its module
 > docstring states that dominants come from "ALL ... from train+val+test" — that

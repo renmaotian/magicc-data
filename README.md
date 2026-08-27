@@ -327,7 +327,7 @@ reported number; it is raw tool output that the deposited scripts regenerate.
 
 ## Analysis code
 
-[`scripts/`](scripts/) is the complete analysis code: 218 numbered scripts, the
+[`scripts/`](scripts/) is the complete analysis code: 227 numbered scripts, the
 frozen `holdout_lib/` module copy used by the holdout retrainings, and
 `manuscript_figures/` — the builders that draw every display item in the paper
 and the supplement.

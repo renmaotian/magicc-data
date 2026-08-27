@@ -9,139 +9,20 @@ scripts/06_verify_downloads.py	scripts/006_verify_downloads.py	zero-padded
 scripts/07_install_kmc_hmmer.sh	scripts/007_install_kmc_hmmer.sh	zero-padded	
 scripts/08_select_representative_genomes.py	scripts/008_select_representative_genomes.py	zero-padded	
 scripts/09_identify_core_genes.py	scripts/009_identify_core_genes.py	zero-padded	
-scripts/101_metrics_framework.py	scripts/101_metrics_framework.py	unchanged	
-scripts/102_mimag_and_thresholds.py	scripts/102_mimag_and_thresholds.py	unchanged	
-scripts/103_signed_errors.py	scripts/103_signed_errors.py	unchanged	
-scripts/104_clustered_statistics.py	scripts/104_clustered_statistics.py	unchanged	
-scripts/105_distribution_plots.py	scripts/105_distribution_plots.py	unchanged	
-scripts/106_domain_size_and_gunc.py	scripts/106_domain_size_and_gunc.py	unchanged	
-scripts/107_rerun_ws5_definitive.sh	scripts/107_rerun_ws5_definitive.sh	unchanged	
-scripts/108_definitive_results_table.py	scripts/108_definitive_results_table.py	unchanged	
 scripts/10_count_9mers.py	scripts/010_count_9mers.py	zero-padded	
-scripts/112_release_artifacts.py	scripts/112_release_artifacts.py	unchanged	
-scripts/115_determinism_check.py	scripts/115_determinism_check.py	unchanged	
 scripts/11_select_kmers.py	scripts/011_select_kmers.py	zero-padded	
-scripts/120_holdout_panel_eda.py	scripts/120_holdout_panel_eda.py	unchanged	
-scripts/121_build_holdout_training_data.py	scripts/121_build_holdout_training_data.py	unchanged	
-scripts/122_train_holdout_phylum.py	scripts/122_train_holdout_phylum.py	unchanged	
-scripts/123_generate_holdout_eval_sets.py	scripts/123_generate_holdout_eval_sets.py	unchanged	
-scripts/124_evaluate_holdout.py	scripts/124_evaluate_holdout.py	unchanged	
-scripts/125_kmer_reselection_control.py	scripts/125_kmer_reselection_control.py	unchanged	
-scripts/126_run_holdout_pipeline.sh	scripts/126_run_holdout_pipeline.sh	unchanged	
-scripts/127_holdout_family_panel_eda.py	scripts/127_holdout_family_panel_eda.py	unchanged	
-scripts/128_run_holdout_family_pipeline.sh	scripts/128_run_holdout_family_pipeline.sh	unchanged	
-scripts/128b_ws1.9_kmer_control.sh	scripts/128b_ws1.9_kmer_control.sh	unchanged	
-scripts/129_family_vs_phylum_comparison.py	scripts/129_family_vs_phylum_comparison.py	unchanged	
 scripts/12_fragmentation_module.py	scripts/012_fragmentation_module.py	zero-padded	
-scripts/130_ncbi_draft_complete_pairs.py	scripts/130_ncbi_draft_complete_pairs.py	unchanged	
-scripts/131_build_reduced_genome_cohorts.py	scripts/131_build_reduced_genome_cohorts.py	unchanged	
-scripts/132_fetch_reduced_genome_cohorts.py	scripts/132_fetch_reduced_genome_cohorts.py	unchanged	
-scripts/133_run_magicc_and_scg_census.py	scripts/133_run_magicc_and_scg_census.py	unchanged	
-scripts/134_analyze_reduced_genome_effect.py	scripts/134_analyze_reduced_genome_effect.py	unchanged	
-scripts/135_uhgg_reviewer_genera.py	scripts/135_uhgg_reviewer_genera.py	unchanged	
-scripts/136_meslier_align_and_truth.py	scripts/136_meslier_align_and_truth.py	unchanged	
-scripts/136_reduced_genome_mechanism_and_crosscheck.py	scripts/206_reduced_genome_mechanism_and_crosscheck.py	renumbered	WS3.10 reduced genome
-scripts/137_catalogue_baseline_reconciliation.py	scripts/207_catalogue_baseline_reconciliation.py	renumbered	WS3.10 reduced genome
-scripts/137_fetch_ncbi_pairs.py	scripts/137_fetch_ncbi_pairs.py	unchanged	
-scripts/138_run_magicc_v5_dir.py	scripts/138_run_magicc_v5_dir.py	unchanged	
-scripts/138_ws42_gunc_comparator.py	scripts/095_ws42_gunc_comparator.py	renumbered	WS4.2 GUNC comparator
-scripts/139_run_ws42_gunc_batches.sh	scripts/096_run_ws42_gunc_batches.sh	renumbered	WS4.2 GUNC comparator
-scripts/139_zymo_isolate_truth.py	scripts/139_zymo_isolate_truth.py	unchanged	
 scripts/13_contamination_module.py	scripts/013_contamination_module.py	zero-padded	
-scripts/140_mitigation_mechanism.py	scripts/212_mitigation_mechanism.py	renumbered	WS3.10 mitigation
-scripts/140_ncbi_pair_truth.py	scripts/140_ncbi_pair_truth.py	unchanged	
-scripts/141_run_competitors_realdata.sh	scripts/141_run_competitors_realdata.sh	unchanged	
-scripts/141_size_channel_intervention.py	scripts/213_size_channel_intervention.py	renumbered	WS3.10 mitigation
-scripts/142_collect_realdata_predictions.py	scripts/142_collect_realdata_predictions.py	unchanged	
-scripts/142_size_conditioned_recalibration.py	scripts/214_size_conditioned_recalibration.py	renumbered	WS3.10 mitigation
-scripts/143_realdata_analysis.py	scripts/143_realdata_analysis.py	unchanged	
-scripts/143_recalibration_generalization_ceiling.py	scripts/215_recalibration_generalization_ceiling.py	renumbered	WS3.10 mitigation
-scripts/144_contamination_type_module.py	scripts/154_contamination_type_module.py	renumbered	WS2 Set F
-scripts/144_mitigation_boundary_statement.py	scripts/216_mitigation_boundary_statement.py	renumbered	WS3.10 mitigation
-scripts/144_realdata_synthesis.py	scripts/144_realdata_synthesis.py	unchanged	
-scripts/145_generate_set_F.py	scripts/155_generate_set_F.py	renumbered	WS2 Set F
-scripts/145_realdata_report.py	scripts/145_realdata_report.py	unchanged	
-scripts/145b_setF_determinism_check.sh	scripts/155b_setF_determinism_check.sh	renumbered	WS2 Set F
-scripts/146_ncbi_contaminated_flag_cohort.py	scripts/146_ncbi_contaminated_flag_cohort.py	unchanged	
-scripts/146_run_tools_set_F.sh	scripts/156_run_tools_set_F.sh	renumbered	WS2 Set F
-scripts/147_analyze_contamination_types.py	scripts/157_analyze_contamination_types.py	renumbered	WS2 Set F
-scripts/147_meslier_per_base_accuracy.py	scripts/147_meslier_per_base_accuracy.py	unchanged	
-scripts/148_finish_ws2_set_F.sh	scripts/158_finish_ws2_set_F.sh	renumbered	WS2 Set F
-scripts/148_meslier_truth_sensitivity.py	scripts/148_meslier_truth_sensitivity.py	unchanged	
 scripts/14_assembly_stats_module.py	scripts/014_assembly_stats_module.py	zero-padded	
-scripts/150_error_injection_module.py	scripts/150_error_injection_module.py	unchanged	
-scripts/151_generate_set_G.py	scripts/151_generate_set_G.py	unchanged	
-scripts/152_run_tools_set_G.sh	scripts/152_run_tools_set_G.sh	unchanged	
-scripts/153_error_robustness_analysis.py	scripts/153_error_robustness_analysis.py	unchanged	
 scripts/15_normalization_module.py	scripts/015_normalization_module.py	zero-padded	
-scripts/160_ws8_prepare_inputs.py	scripts/160_ws8_prepare_inputs.py	unchanged	
-scripts/161_ws8_run_one.sh	scripts/161_ws8_run_one.sh	unchanged	
-scripts/162_ws8_drop_file_cache.py	scripts/162_ws8_drop_file_cache.py	unchanged	
-scripts/163_ws8_deepcheck_infer.py	scripts/163_ws8_deepcheck_infer.py	unchanged	
-scripts/164_ws8_parse_time.py	scripts/164_ws8_parse_time.py	unchanged	
-scripts/165_ws8_make_plan.py	scripts/165_ws8_make_plan.py	unchanged	
-scripts/166_ws8_campaign.sh	scripts/166_ws8_campaign.sh	unchanged	
-scripts/167_ws8_reconcile_40s.py	scripts/167_ws8_reconcile_40s.py	unchanged	
-scripts/168_ws8_tco.py	scripts/168_ws8_tco.py	unchanged	
-scripts/169_ws8_aggregate.py	scripts/169_ws8_aggregate.py	unchanged	
 scripts/16_storage_module.py	scripts/016_storage_module.py	zero-padded	
-scripts/170_ws8_figures.py	scripts/170_ws8_figures.py	unchanged	
-scripts/171_ws8_table_s4.py	scripts/171_ws8_table_s4.py	unchanged	
-scripts/172_ws8_magicc_phases.py	scripts/172_ws8_magicc_phases.py	unchanged	
-scripts/173_ws8_setup_cost.py	scripts/173_ws8_setup_cost.py	unchanged	
-scripts/174_ws8_report.py	scripts/174_ws8_report.py	unchanged	
-scripts/175_ws8_fixed_variable.py	scripts/175_ws8_fixed_variable.py	unchanged	
-scripts/176_ws8_evict_fixed.py	scripts/176_ws8_evict_fixed.py	unchanged	
-scripts/177_ws8_cold_verified.sh	scripts/177_ws8_cold_verified.sh	unchanged	
-scripts/178_ws8_cold_start_forensics.py	scripts/178_ws8_cold_start_forensics.py	unchanged	
-scripts/179_ws8_scaling_efficiency.py	scripts/179_ws8_scaling_efficiency.py	unchanged	
 scripts/17_kmer_counter_module.py	scripts/017_kmer_counter_module.py	zero-padded	
-scripts/180_ws8_env_footprint.py	scripts/180_ws8_env_footprint.py	unchanged	
-scripts/181_ws8_tco_table.py	scripts/181_ws8_tco_table.py	unchanged	
-scripts/185_ws1_11_select_ncbi_refs.py	scripts/185_ws1_11_select_ncbi_refs.py	unchanged	
-scripts/186_ws1_11_fetch_refs.py	scripts/186_ws1_11_fetch_refs.py	unchanged	
-scripts/187_ws1_11_generate_set_H.py	scripts/187_ws1_11_generate_set_H.py	unchanged	
-scripts/188_ws1_11_provenance_audit.py	scripts/188_ws1_11_provenance_audit.py	unchanged	
-scripts/189_ws1_11_run_magicc.py	scripts/189_ws1_11_run_magicc.py	unchanged	
 scripts/18_pipeline_integration.py	scripts/018_pipeline_integration.py	zero-padded	
-scripts/190_ws11t_run_magicc_codebase.py	scripts/250_ws11t_run_magicc_codebase.py	renumbered	WS11.T timing v3
-scripts/190_ws1_11_run_competitors.sh	scripts/190_ws1_11_run_competitors.sh	unchanged	
-scripts/191_ws11t_run_one.sh	scripts/251_ws11t_run_one.sh	renumbered	WS11.T timing v3
-scripts/191_ws1_11_analysis.py	scripts/191_ws1_11_analysis.py	unchanged	
-scripts/192_ws11t_parse_time.py	scripts/252_ws11t_parse_time.py	renumbered	WS11.T timing v3
-scripts/192_ws1_11_reference_level_scores.py	scripts/192_ws1_11_reference_level_scores.py	unchanged	
-scripts/193_ws11t_make_plan.py	scripts/253_ws11t_make_plan.py	renumbered	WS11.T timing v3
-scripts/193_ws1_11_report.py	scripts/193_ws1_11_report.py	unchanged	
-scripts/194_ws11t_campaign.sh	scripts/254_ws11t_campaign.sh	renumbered	WS11.T timing v3
-scripts/195_ws11t_aggregate.py	scripts/255_ws11t_aggregate.py	renumbered	WS11.T timing v3
-scripts/195_ws38_fetch_cami2.py	scripts/195_ws38_fetch_cami2.py	unchanged	
-scripts/196_ws11t_v3_attribution.py	scripts/256_ws11t_v3_attribution.py	renumbered	WS11.T timing v3
-scripts/196_ws38_cami2_truth_and_bins.py	scripts/196_ws38_cami2_truth_and_bins.py	unchanged	
-scripts/197_ws11t_assembly_stats_cost.py	scripts/257_ws11t_assembly_stats_cost.py	renumbered	WS11.T timing v3
-scripts/197_ws38_cami2_leakage_audit.py	scripts/197_ws38_cami2_leakage_audit.py	unchanged	
-scripts/198_ws11t_jit_probe.sh	scripts/258_ws11t_jit_probe.sh	renumbered	WS11.T timing v3
-scripts/198_ws38_run_magicc_cami2.py	scripts/198_ws38_run_magicc_cami2.py	unchanged	
-scripts/199_ws38_run_competitors_cami2.sh	scripts/199_ws38_run_competitors_cami2.sh	unchanged	
 scripts/19_batch_synthesis.py	scripts/019_batch_synthesis.py	zero-padded	
 scripts/19_batch_synthesis_v2.py	scripts/019b_batch_synthesis_v2.py	renumbered (variant suffix)	
-scripts/200_ws38_cami2_cohort_and_collect.py	scripts/200_ws38_cami2_cohort_and_collect.py	unchanged	
-scripts/201_ws38_cami2_analysis.py	scripts/201_ws38_cami2_analysis.py	unchanged	
-scripts/202_ws38_cami2_figures_and_report.py	scripts/202_ws38_cami2_figures_and_report.py	unchanged	
-scripts/203_ws38_cami2_pipeline.sh	scripts/203_ws38_cami2_pipeline.sh	unchanged	
-scripts/204_ws38_feed_ws39_synthesis.py	scripts/204_ws38_feed_ws39_synthesis.py	unchanged	
-scripts/205_pooled_cluster_definition_sensitivity.py	scripts/205_pooled_cluster_definition_sensitivity.py	unchanged	
 scripts/20_train_model.py	scripts/020_train_model.py	zero-padded	
-scripts/210_ws11n_novelty_ladder.py	scripts/210_ws11n_novelty_ladder.py	unchanged	
-scripts/211_ws11p_macro_f1_paired.py	scripts/211_ws11p_macro_f1_paired.py	unchanged	
 scripts/21_gradient_boosting.py	scripts/021_gradient_boosting.py	zero-padded	
-scripts/220_holdout_genus_panel_eda.py	scripts/220_holdout_genus_panel_eda.py	unchanged	
-scripts/221_run_holdout_genus_pipeline.sh	scripts/221_run_holdout_genus_pipeline.sh	unchanged	
-scripts/224_holdout_level_switch_reproduction.py	scripts/224_holdout_level_switch_reproduction.py	unchanged	
 scripts/22_export_onnx.py	scripts/022_export_onnx.py	zero-padded	
-scripts/230_ws11s_sampling_frame.py	scripts/230_ws11s_sampling_frame.py	unchanged	
-scripts/231_ws11s_fetch_and_score.py	scripts/231_ws11s_fetch_and_score.py	unchanged	
-scripts/232_ws11s_representatives.py	scripts/232_ws11s_representatives.py	unchanged	
-scripts/233_ws11s_analysis.py	scripts/233_ws11s_analysis.py	unchanged	
 scripts/23_train_model_v3.py	scripts/023_train_model_v3.py	zero-padded	
 scripts/24_train_model_v3_run2.py	scripts/024_train_model_v3_run2.py	zero-padded	
 scripts/25_benchmark_generate.py	scripts/025_benchmark_generate.py	zero-padded	
@@ -170,12 +51,11 @@ scripts/41_generate_motivating_set_c.py	scripts/041_generate_motivating_set_c.py
 scripts/42_run_magicc_set_c.py	scripts/042_run_magicc_set_c.py	zero-padded	
 scripts/43_update_motivating_figures_with_set_c.py	scripts/043_update_motivating_figures_with_set_c.py	zero-padded	
 scripts/44_memory_benchmark_deepcheck.py	scripts/044_memory_benchmark_deepcheck.py	zero-padded	
-scripts/45_pathogen_checkm2_comparison.py	scripts/048_pathogen_checkm2_comparison.py	renumbered	legacy pathogen analysis
 scripts/45_pathogen_genome_analysis.py	scripts/045_pathogen_genome_analysis.py	zero-padded	
-scripts/46_alignment_validation.py	scripts/049_alignment_validation.py	renumbered	legacy validation
-scripts/46_kraken2_case_study.py	scripts/063_kraken2_case_study.py	renumbered	legacy Kraken2 case study
 scripts/46_pathogen_gtdb_comparison.py	scripts/046_pathogen_gtdb_comparison.py	zero-padded	
 scripts/47_pathogen_analysis_v2.py	scripts/047_pathogen_analysis_v2.py	zero-padded	
+scripts/45_pathogen_checkm2_comparison.py	scripts/048_pathogen_checkm2_comparison.py	renumbered	legacy pathogen analysis
+scripts/46_alignment_validation.py	scripts/049_alignment_validation.py	renumbered	legacy validation
 scripts/50_generate_v5_training_data.py	scripts/050_generate_v5_training_data.py	zero-padded	
 scripts/51_train_v5_model.py	scripts/051_train_v5_model.py	zero-padded	
 scripts/52_train_v5_run2.py	scripts/052_train_v5_run2.py	zero-padded	
@@ -186,13 +66,14 @@ scripts/56_benchmark_v5.py	scripts/056_benchmark_v5.py	zero-padded
 scripts/57_pathogen_v5.py	scripts/057_pathogen_v5.py	zero-padded	
 scripts/58_pathogen_v5_exact.py	scripts/058_pathogen_v5_exact.py	zero-padded	
 scripts/59_checkm2_exact_pathogen.py	scripts/059_checkm2_exact_pathogen.py	zero-padded	
-scripts/60_gtdb_pure_mag_comparison.py	scripts/065_gtdb_pure_mag_comparison.py	renumbered	legacy GTDB pure-vs-MAG
-scripts/60_gtdb_pure_vs_mag.py	scripts/064_gtdb_pure_vs_mag.py	renumbered	legacy GTDB pure-vs-MAG
 scripts/60_ncbi_genome_comparison.py	scripts/060_ncbi_genome_comparison.py	zero-padded	
 scripts/60b_ncbi_comparison_analysis.py	scripts/060b_ncbi_comparison_analysis.py	zero-padded	
 scripts/61_kraken2_contamination_check.py	scripts/061_kraken2_contamination_check.py	zero-padded	
-scripts/62_kraken2_v5hq_mags.py	scripts/066_kraken2_v5hq_mags.py	renumbered	legacy Kraken2 MAG check
 scripts/62_pathogen_lm_dominant.py	scripts/062_pathogen_lm_dominant.py	zero-padded	
+scripts/46_kraken2_case_study.py	scripts/063_kraken2_case_study.py	renumbered	legacy Kraken2 case study
+scripts/60_gtdb_pure_vs_mag.py	scripts/064_gtdb_pure_vs_mag.py	renumbered	legacy GTDB pure-vs-MAG
+scripts/60_gtdb_pure_mag_comparison.py	scripts/065_gtdb_pure_mag_comparison.py	renumbered	legacy GTDB pure-vs-MAG
+scripts/62_kraken2_v5hq_mags.py	scripts/066_kraken2_v5hq_mags.py	renumbered	legacy Kraken2 MAG check
 scripts/70_freeze_model_version.py	scripts/070_freeze_model_version.py	zero-padded	
 scripts/71_audit_legacy_predictions.py	scripts/071_audit_legacy_predictions.py	zero-padded	
 scripts/72_select_clean_cd_refs.py	scripts/072_select_clean_cd_refs.py	zero-padded	
@@ -217,9 +98,136 @@ scripts/92b_fix_legacy_r2_convention.py	scripts/092b_fix_legacy_r2_convention.py
 scripts/93_leakage_specificity_control.py	scripts/093_leakage_specificity_control.py	zero-padded	
 scripts/94_revised_benchmark_table.py	scripts/094_revised_benchmark_table.py	zero-padded	
 scripts/94b_gunc_detection_comparison.py	scripts/094b_gunc_detection_comparison.py	zero-padded	
+scripts/138_ws42_gunc_comparator.py	scripts/095_ws42_gunc_comparator.py	renumbered	WS4.2 GUNC comparator
+scripts/139_run_ws42_gunc_batches.sh	scripts/096_run_ws42_gunc_batches.sh	renumbered	WS4.2 GUNC comparator
+scripts/101_metrics_framework.py	scripts/101_metrics_framework.py	unchanged	
+scripts/102_mimag_and_thresholds.py	scripts/102_mimag_and_thresholds.py	unchanged	
+scripts/103_signed_errors.py	scripts/103_signed_errors.py	unchanged	
+scripts/104_clustered_statistics.py	scripts/104_clustered_statistics.py	unchanged	
+scripts/105_distribution_plots.py	scripts/105_distribution_plots.py	unchanged	
+scripts/106_domain_size_and_gunc.py	scripts/106_domain_size_and_gunc.py	unchanged	
+scripts/107_rerun_ws5_definitive.sh	scripts/107_rerun_ws5_definitive.sh	unchanged	
+scripts/108_definitive_results_table.py	scripts/108_definitive_results_table.py	unchanged	
+scripts/112_release_artifacts.py	scripts/112_release_artifacts.py	unchanged	
+scripts/115_determinism_check.py	scripts/115_determinism_check.py	unchanged	
+scripts/120_holdout_panel_eda.py	scripts/120_holdout_panel_eda.py	unchanged	
+scripts/121_build_holdout_training_data.py	scripts/121_build_holdout_training_data.py	unchanged	
+scripts/122_train_holdout_phylum.py	scripts/122_train_holdout_phylum.py	unchanged	
+scripts/123_generate_holdout_eval_sets.py	scripts/123_generate_holdout_eval_sets.py	unchanged	
+scripts/124_evaluate_holdout.py	scripts/124_evaluate_holdout.py	unchanged	
+scripts/125_kmer_reselection_control.py	scripts/125_kmer_reselection_control.py	unchanged	
+scripts/126_run_holdout_pipeline.sh	scripts/126_run_holdout_pipeline.sh	unchanged	
+scripts/127_holdout_family_panel_eda.py	scripts/127_holdout_family_panel_eda.py	unchanged	
+scripts/128_run_holdout_family_pipeline.sh	scripts/128_run_holdout_family_pipeline.sh	unchanged	
+scripts/128b_ws1.9_kmer_control.sh	scripts/128b_ws1.9_kmer_control.sh	unchanged	
+scripts/129_family_vs_phylum_comparison.py	scripts/129_family_vs_phylum_comparison.py	unchanged	
+scripts/130_ncbi_draft_complete_pairs.py	scripts/130_ncbi_draft_complete_pairs.py	unchanged	
+scripts/131_build_reduced_genome_cohorts.py	scripts/131_build_reduced_genome_cohorts.py	unchanged	
+scripts/132_fetch_reduced_genome_cohorts.py	scripts/132_fetch_reduced_genome_cohorts.py	unchanged	
+scripts/133_run_magicc_and_scg_census.py	scripts/133_run_magicc_and_scg_census.py	unchanged	
+scripts/134_analyze_reduced_genome_effect.py	scripts/134_analyze_reduced_genome_effect.py	unchanged	
+scripts/135_uhgg_reviewer_genera.py	scripts/135_uhgg_reviewer_genera.py	unchanged	
+scripts/136_meslier_align_and_truth.py	scripts/136_meslier_align_and_truth.py	unchanged	
+scripts/137_fetch_ncbi_pairs.py	scripts/137_fetch_ncbi_pairs.py	unchanged	
+scripts/138_run_magicc_v5_dir.py	scripts/138_run_magicc_v5_dir.py	unchanged	
+scripts/139_zymo_isolate_truth.py	scripts/139_zymo_isolate_truth.py	unchanged	
+scripts/140_ncbi_pair_truth.py	scripts/140_ncbi_pair_truth.py	unchanged	
+scripts/141_run_competitors_realdata.sh	scripts/141_run_competitors_realdata.sh	unchanged	
+scripts/142_collect_realdata_predictions.py	scripts/142_collect_realdata_predictions.py	unchanged	
+scripts/143_realdata_analysis.py	scripts/143_realdata_analysis.py	unchanged	
+scripts/144_realdata_synthesis.py	scripts/144_realdata_synthesis.py	unchanged	
+scripts/145_realdata_report.py	scripts/145_realdata_report.py	unchanged	
+scripts/146_ncbi_contaminated_flag_cohort.py	scripts/146_ncbi_contaminated_flag_cohort.py	unchanged	
+scripts/147_meslier_per_base_accuracy.py	scripts/147_meslier_per_base_accuracy.py	unchanged	
+scripts/148_meslier_truth_sensitivity.py	scripts/148_meslier_truth_sensitivity.py	unchanged	
+scripts/150_error_injection_module.py	scripts/150_error_injection_module.py	unchanged	
+scripts/151_generate_set_G.py	scripts/151_generate_set_G.py	unchanged	
+scripts/152_run_tools_set_G.sh	scripts/152_run_tools_set_G.sh	unchanged	
+scripts/153_error_robustness_analysis.py	scripts/153_error_robustness_analysis.py	unchanged	
+scripts/144_contamination_type_module.py	scripts/154_contamination_type_module.py	renumbered	WS2 Set F
+scripts/145_generate_set_F.py	scripts/155_generate_set_F.py	renumbered	WS2 Set F
+scripts/145b_setF_determinism_check.sh	scripts/155b_setF_determinism_check.sh	renumbered	WS2 Set F
+scripts/146_run_tools_set_F.sh	scripts/156_run_tools_set_F.sh	renumbered	WS2 Set F
+scripts/147_analyze_contamination_types.py	scripts/157_analyze_contamination_types.py	renumbered	WS2 Set F
+scripts/148_finish_ws2_set_F.sh	scripts/158_finish_ws2_set_F.sh	renumbered	WS2 Set F
+scripts/160_ws8_prepare_inputs.py	scripts/160_ws8_prepare_inputs.py	unchanged	
+scripts/161_ws8_run_one.sh	scripts/161_ws8_run_one.sh	unchanged	
+scripts/162_ws8_drop_file_cache.py	scripts/162_ws8_drop_file_cache.py	unchanged	
+scripts/163_ws8_deepcheck_infer.py	scripts/163_ws8_deepcheck_infer.py	unchanged	
+scripts/164_ws8_parse_time.py	scripts/164_ws8_parse_time.py	unchanged	
+scripts/165_ws8_make_plan.py	scripts/165_ws8_make_plan.py	unchanged	
+scripts/166_ws8_campaign.sh	scripts/166_ws8_campaign.sh	unchanged	
+scripts/167_ws8_reconcile_40s.py	scripts/167_ws8_reconcile_40s.py	unchanged	
+scripts/168_ws8_tco.py	scripts/168_ws8_tco.py	unchanged	
+scripts/169_ws8_aggregate.py	scripts/169_ws8_aggregate.py	unchanged	
+scripts/170_ws8_figures.py	scripts/170_ws8_figures.py	unchanged	
+scripts/171_ws8_table_s4.py	scripts/171_ws8_table_s4.py	unchanged	
+scripts/172_ws8_magicc_phases.py	scripts/172_ws8_magicc_phases.py	unchanged	
+scripts/173_ws8_setup_cost.py	scripts/173_ws8_setup_cost.py	unchanged	
+scripts/174_ws8_report.py	scripts/174_ws8_report.py	unchanged	
+scripts/175_ws8_fixed_variable.py	scripts/175_ws8_fixed_variable.py	unchanged	
+scripts/176_ws8_evict_fixed.py	scripts/176_ws8_evict_fixed.py	unchanged	
+scripts/177_ws8_cold_verified.sh	scripts/177_ws8_cold_verified.sh	unchanged	
+scripts/178_ws8_cold_start_forensics.py	scripts/178_ws8_cold_start_forensics.py	unchanged	
+scripts/179_ws8_scaling_efficiency.py	scripts/179_ws8_scaling_efficiency.py	unchanged	
+scripts/180_ws8_env_footprint.py	scripts/180_ws8_env_footprint.py	unchanged	
+scripts/181_ws8_tco_table.py	scripts/181_ws8_tco_table.py	unchanged	
+scripts/185_ws1_11_select_ncbi_refs.py	scripts/185_ws1_11_select_ncbi_refs.py	unchanged	
+scripts/186_ws1_11_fetch_refs.py	scripts/186_ws1_11_fetch_refs.py	unchanged	
+scripts/187_ws1_11_generate_set_H.py	scripts/187_ws1_11_generate_set_H.py	unchanged	
+scripts/188_ws1_11_provenance_audit.py	scripts/188_ws1_11_provenance_audit.py	unchanged	
+scripts/189_ws1_11_run_magicc.py	scripts/189_ws1_11_run_magicc.py	unchanged	
+scripts/190_ws1_11_run_competitors.sh	scripts/190_ws1_11_run_competitors.sh	unchanged	
+scripts/191_ws1_11_analysis.py	scripts/191_ws1_11_analysis.py	unchanged	
+scripts/192_ws1_11_reference_level_scores.py	scripts/192_ws1_11_reference_level_scores.py	unchanged	
+scripts/193_ws1_11_report.py	scripts/193_ws1_11_report.py	unchanged	
+scripts/195_ws38_fetch_cami2.py	scripts/195_ws38_fetch_cami2.py	unchanged	
+scripts/196_ws38_cami2_truth_and_bins.py	scripts/196_ws38_cami2_truth_and_bins.py	unchanged	
+scripts/197_ws38_cami2_leakage_audit.py	scripts/197_ws38_cami2_leakage_audit.py	unchanged	
+scripts/198_ws38_run_magicc_cami2.py	scripts/198_ws38_run_magicc_cami2.py	unchanged	
+scripts/199_ws38_run_competitors_cami2.sh	scripts/199_ws38_run_competitors_cami2.sh	unchanged	
+scripts/200_ws38_cami2_cohort_and_collect.py	scripts/200_ws38_cami2_cohort_and_collect.py	unchanged	
+scripts/201_ws38_cami2_analysis.py	scripts/201_ws38_cami2_analysis.py	unchanged	
+scripts/202_ws38_cami2_figures_and_report.py	scripts/202_ws38_cami2_figures_and_report.py	unchanged	
+scripts/203_ws38_cami2_pipeline.sh	scripts/203_ws38_cami2_pipeline.sh	unchanged	
+scripts/204_ws38_feed_ws39_synthesis.py	scripts/204_ws38_feed_ws39_synthesis.py	unchanged	
+scripts/205_pooled_cluster_definition_sensitivity.py	scripts/205_pooled_cluster_definition_sensitivity.py	unchanged	
+scripts/136_reduced_genome_mechanism_and_crosscheck.py	scripts/206_reduced_genome_mechanism_and_crosscheck.py	renumbered	WS3.10 reduced genome
+scripts/137_catalogue_baseline_reconciliation.py	scripts/207_catalogue_baseline_reconciliation.py	renumbered	WS3.10 reduced genome
+scripts/210_ws11n_novelty_ladder.py	scripts/210_ws11n_novelty_ladder.py	unchanged	
+scripts/211_ws11p_macro_f1_paired.py	scripts/211_ws11p_macro_f1_paired.py	unchanged	
+scripts/140_mitigation_mechanism.py	scripts/212_mitigation_mechanism.py	renumbered	WS3.10 mitigation
+scripts/141_size_channel_intervention.py	scripts/213_size_channel_intervention.py	renumbered	WS3.10 mitigation
+scripts/142_size_conditioned_recalibration.py	scripts/214_size_conditioned_recalibration.py	renumbered	WS3.10 mitigation
+scripts/143_recalibration_generalization_ceiling.py	scripts/215_recalibration_generalization_ceiling.py	renumbered	WS3.10 mitigation
+scripts/144_mitigation_boundary_statement.py	scripts/216_mitigation_boundary_statement.py	renumbered	WS3.10 mitigation
+scripts/220_holdout_genus_panel_eda.py	scripts/220_holdout_genus_panel_eda.py	unchanged	
+scripts/221_run_holdout_genus_pipeline.sh	scripts/221_run_holdout_genus_pipeline.sh	unchanged	
+scripts/223_genus_family_phylum_ladder.py	scripts/223_genus_family_phylum_ladder.py	unchanged	WS11.G leave-genus-out
+scripts/224_holdout_level_switch_reproduction.py	scripts/224_holdout_level_switch_reproduction.py	unchanged	
+scripts/225_ws11g_report.py	scripts/225_ws11g_report.py	unchanged	WS11.G leave-genus-out
+scripts/230_ws11s_sampling_frame.py	scripts/230_ws11s_sampling_frame.py	unchanged	
+scripts/231_ws11s_fetch_and_score.py	scripts/231_ws11s_fetch_and_score.py	unchanged	
+scripts/232_ws11s_representatives.py	scripts/232_ws11s_representatives.py	unchanged	
+scripts/233_ws11s_analysis.py	scripts/233_ws11s_analysis.py	unchanged	
+scripts/234_ws11s_compare_and_report.py	scripts/234_ws11s_compare_and_report.py	unchanged	WS11.S catalogue-scale SPIRE
+scripts/235_ws11s_report.py	scripts/235_ws11s_report.py	unchanged	WS11.S catalogue-scale SPIRE
+scripts/236_ws11s_repair_reps.py	scripts/236_ws11s_repair_reps.py	unchanged	WS11.S catalogue-scale SPIRE
+scripts/190_ws11t_run_magicc_codebase.py	scripts/250_ws11t_run_magicc_codebase.py	renumbered	WS11.T timing v3
+scripts/191_ws11t_run_one.sh	scripts/251_ws11t_run_one.sh	renumbered	WS11.T timing v3
+scripts/192_ws11t_parse_time.py	scripts/252_ws11t_parse_time.py	renumbered	WS11.T timing v3
+scripts/193_ws11t_make_plan.py	scripts/253_ws11t_make_plan.py	renumbered	WS11.T timing v3
+scripts/194_ws11t_campaign.sh	scripts/254_ws11t_campaign.sh	renumbered	WS11.T timing v3
+scripts/195_ws11t_aggregate.py	scripts/255_ws11t_aggregate.py	renumbered	WS11.T timing v3
+scripts/196_ws11t_v3_attribution.py	scripts/256_ws11t_v3_attribution.py	renumbered	WS11.T timing v3
+scripts/197_ws11t_assembly_stats_cost.py	scripts/257_ws11t_assembly_stats_cost.py	renumbered	WS11.T timing v3
+scripts/198_ws11t_jit_probe.sh	scripts/258_ws11t_jit_probe.sh	renumbered	WS11.T timing v3
+scripts/200_ws11t_v033_run_one.sh	scripts/259_ws11t_v033_run_one.sh	renumbered	WS11.T timing v3 (v0.3.3 sub-campaign)
+scripts/201_ws11t_v033_campaign.sh	scripts/260_ws11t_v033_campaign.sh	renumbered	WS11.T timing v3 (v0.3.3 sub-campaign)
+scripts/202_ws11t_v033_sha_cost.py	scripts/261_ws11t_v033_sha_cost.py	renumbered	WS11.T timing v3 (v0.3.3 sub-campaign)
+scripts/203_ws11t_v033_aggregate.py	scripts/262_ws11t_v033_aggregate.py	renumbered	WS11.T timing v3 (v0.3.3 sub-campaign)
 scripts/config_revision_metrics.yaml	scripts/config_revision_metrics.yaml	unchanged	
 scripts/export_onnx_v3.py	scripts/export_onnx_v3.py	unchanged	
-scripts/stress_test_fixes.py	scripts/stress_test_fixes.py	unchanged	
 scripts/holdout_lib/FROZEN_SHA256.txt	scripts/holdout_lib/FROZEN_SHA256.txt	unchanged	holdout module
 scripts/holdout_lib/FROZEN_SHA256_SOURCE.txt	scripts/holdout_lib/FROZEN_SHA256_SOURCE.txt	unchanged	holdout module
 scripts/holdout_lib/FROZEN_SHA256_WS1.9.txt	scripts/holdout_lib/FROZEN_SHA256_WS1.9.txt	unchanged	holdout module
@@ -253,3 +261,4 @@ nature_communications/resubmission3/scripts/make_palette_cvd_check.py	scripts/ma
 nature_communications/resubmission3/scripts/make_supp_figures.py	scripts/manuscript_figures/make_supp_figures.py	unchanged	display items
 nature_communications/resubmission3/scripts/panels_realdata.py	scripts/manuscript_figures/panels_realdata.py	unchanged	display items
 nature_communications/resubmission3/scripts/panels_taxonomy.py	scripts/manuscript_figures/panels_taxonomy.py	unchanged	display items
+scripts/stress_test_fixes.py	scripts/stress_test_fixes.py	unchanged	
