@@ -8,7 +8,11 @@ analysis code.
 
 The software itself — the released model, the reproduction workflow and the
 containers — is at [github.com/renmaotian/magicc](https://github.com/renmaotian/magicc),
-release tag `v0.3.1`.
+current release tag `v0.3.3`. Every result deposited here was produced with the
+code of tag `v0.3.1` and model V5, SHA256
+`b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096`; `v0.3.2`
+and `v0.3.3` change only how that model is fetched and checksummed, and their
+predictions are byte-identical to `v0.3.1`'s.
 
 ---
 
@@ -52,7 +56,8 @@ release tag `v0.3.1`.
 
 The assemblies are far too large for git, so they ship as **GitHub Release
 assets** on tag [`v1.0.0`](https://github.com/renmaotian/magicc-data/releases/tag/v1.0.0).
-Sets whose archive exceeds GitHub's 2 GB per-asset limit are uploaded as parts.
+Any archive over 1.8 GB is uploaded as 1.5 GiB parts, safely under GitHub's
+2 GiB per-asset limit; `download_benchmarks.sh` concatenates them for you.
 
 ```bash
 git clone https://github.com/renmaotian/magicc-data
@@ -67,16 +72,27 @@ than restarting. Add `--full-verify` to check every one of the 12,820 assemblies
 against `provenance/assemblies/`. To verify by hand:
 
 ```bash
-sha256sum -c SHA256SUMS        # the assets exactly as uploaded
+cd benchmarks                          # wherever the assets were downloaded
+sha256sum -c ../SHA256SUMS             # the assets exactly as uploaded
 cat set_H.tar.gz.part?? > set_H.tar.gz
-sha256sum -c SHA256SUMS.tar    # the reassembled archives
+sha256sum -c ../SHA256SUMS.tar         # the reassembled archives
 tar -xzf set_H.tar.gz
-sha256sum -c ../provenance/assemblies/set_H_sha256.txt   # every one of its 4,000 assemblies
+sha256sum -c ../provenance/assemblies/set_H_sha256.txt   # all 4,000 of its assemblies
 ```
 
 ### Release v1.0.0 — asset inventory
 
-<!--ASSET_TABLE-->
+| Set | Assemblies | Release asset(s) | Size | Design |
+|---|---|---|---|---|
+| **set_A** | 1,000 | `set_A.tar.gz` | 914 MB | completeness gradient, 50-100 % in six levels, 0 % contamination |
+| **set_B** | 1,000 | `set_B.tar.gz` | 1.66 GB | contamination gradient, 0-80 % in five levels, 100 % completeness |
+| **set_C_clean** | 1,000 | `set_C_clean.tar.gz` | 355 MB | 100 test-split Patescibacteriota (CPR) references x 10 simulations |
+| **set_D_clean** | 1,000 | `set_D_clean.tar.gz` | 839 MB | 100 test-split archaeal references x 10 simulations |
+| **set_E** | 1,000 | `set_E.tar.gz` | 1.46 GB | realistic mixed: 200 pure, 200 complete-but-contaminated, 600 mixed |
+| **set_F** | 1,900 | `set_F.tar.gz.part00`<br>`set_F.tar.gz.part01` | 1.91 GB | contamination type x donor taxonomic distance factorial |
+| **set_G** | 1,920 | `set_G.tar.gz` | 1.62 GB | sequencing and assembly error-robustness gradient |
+| **set_H** | 4,000 | `set_H.tar.gz.part00`<br>`set_H.tar.gz.part01`<br>`set_H.tar.gz.part02`<br>`set_H.tar.gz.part03` | 5.99 GB | circularity safeguard: 400 NCBI references in 200 matched pairs |
+| | **12,820** | **12 assets** + `SHA256SUMS` + `SHA256SUMS.tar` | **14.75 GB** (from 49.13 GB of FASTA) | |
 
 Each archive expands to `<set>/metadata.tsv`, the generation metadata where it
 exists, and `<set>/fasta/` — one FASTA per simulated assembly.
@@ -85,9 +101,14 @@ exists, and `<set>/fasta/` — one FASTA per simulated assembly.
 
 `v0.1.0` (February 2026) predates the leakage audit. It is kept so that nothing
 that was ever downloadable disappears, but every asset is now labelled for what
-it is. Its two withdrawn assets carry a `WITHDRAWN_` prefix; the other six hold
-current data and are superseded only in *packaging* — `v1.0.0` re-ships the same
-assemblies with per-file checksums, split parts and a download script.
+it is. Its two withdrawn assets carry a `WITHDRAWN_` prefix. Of the other six,
+three (A, B, E) hold current data superseded only in *packaging* — `v1.0.0`
+re-ships the same assemblies with per-file checksums, split parts and a download
+script — and the three `motivating_*` assets are not superseded at all.
+
+Asset identity was established by evidence rather than by name: a ranged read of
+each archive was decompressed far enough to list its first members, whose exact
+byte sizes were matched against the analysis workspace.
 
 | `v0.1.0` asset | Contents | Status |
 |---|---|---|
@@ -123,6 +144,8 @@ Their per-sample metadata and predictions are in [`motivating/`](motivating/).
 | [`data_generating_scripts/`](data_generating_scripts/) | a convenience subset of `scripts/`: the generators and audits that built the benchmark sets |
 | [`download_benchmarks.sh`](download_benchmarks.sh) | fetch and verify the release assets |
 | `SHA256SUMS`, `SHA256SUMS.tar` | checksums of the release assets and of the reassembled archives |
+| `benchmark_release_manifest.tsv` | one row per set: workspace directory, assembly count, raw and archive bytes, asset names and the archive checksum |
+| [`DEPOSITION_STATUS.md`](DEPOSITION_STATUS.md) | **what is not here, and why** — outstanding items, deliberate non-deposition, and the known limitations of what is here |
 
 ---
 
@@ -141,9 +164,9 @@ absence invalidated the withdrawn sets, audited in
 | [`set_C_clean`](benchmark/set_C_clean) | 1,000 | **100** test-split Patescibacteriota (CPR) references × 10 simulations | uniform completeness 50–100 %, uniform contamination 0–100 % |
 | [`set_D_clean`](benchmark/set_D_clean) | 1,000 | **100** test-split archaeal references × 10 simulations | uniform completeness 50–100 %, uniform contamination 0–100 % |
 | [`set_E`](benchmark/set_E) | 1,000 | finished test-split genomes (785 unique) | realistic mixed: 200 pure, 200 complete-but-contaminated, 600 mixed |
-| [`set_F`](benchmark/set_F) | 1,900 | test-split references | contamination **type** × donor **taxonomic distance** factorial ([`design.tsv`](benchmark/set_F/design.tsv)) |
-| [`set_G`](benchmark/set_G) | 1,920 | test-split references | sequencing and assembly **error robustness** gradient ([`design.tsv`](benchmark/set_G/design.tsv)) |
-| [`set_H`](benchmark/set_H) | 4,000 | 400 NCBI-selected references in **200 matched pairs** | circularity safeguard on references never filtered by CheckM2 |
+| [`set_F`](benchmark/set_F) | 1,900 | **100** test-split references | contamination **type** × donor **taxonomic distance** factorial ([`design.tsv`](benchmark/set_F/design.tsv)) |
+| [`set_G`](benchmark/set_G) | 1,920 | **80** test-split references | sequencing and assembly **error robustness** gradient ([`design.tsv`](benchmark/set_G/design.tsv)) |
+| [`set_H`](benchmark/set_H) | 4,000 | **400** NCBI-selected references in **200 matched pairs** | circularity safeguard on references never filtered by CheckM2 |
 
 **12,820 assemblies in total.** Sets A, B, C-clean, D-clean and E form the
 **leakage-free five-set panel** (5,000 assemblies) on which the headline

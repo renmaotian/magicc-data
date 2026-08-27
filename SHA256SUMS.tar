@@ -1,0 +1,10 @@
+# SHA256 of each benchmark archive after any parts have been concatenated:
+#   cat set_H.tar.gz.part?? > set_H.tar.gz && sha256sum -c SHA256SUMS.tar
+c8e8a2f68218eff2aa51489c267a12ce98bb84dad7a17a0c60c9a3a21010815d  set_A.tar.gz
+76265ee66c566534e1637e5454426cf9302426f8056d1678a505ebf820027316  set_B.tar.gz
+447a313db8ae1379c8c0d6db0cb27a832ecd1a112b765f62dc9e08a18c406d5f  set_C_clean.tar.gz
+49289d78433687f3a414a99f36042225c8a1854ec9442420e7b8d1dfa3a15b02  set_D_clean.tar.gz
+fa802685b8b999a4101c8c18549b5919908105254d3643f86781b0c58e4b94d3  set_E.tar.gz
+09066963f47fd5cbdf77b7db398542f74dc14214a2c3cbf791fc36a46a15d43a  set_F.tar.gz
+3d375915a8c1724f80e5e873b6a1eebc8994f18400ba7ba5593627892cb33b9a  set_G.tar.gz
+f295c43ef676c840bbf697ed7597b69d3b7405dbfba18bd1d0c722def7caf00c  set_H.tar.gz

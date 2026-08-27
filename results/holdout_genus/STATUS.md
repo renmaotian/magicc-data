@@ -18,6 +18,13 @@ evaluation measures genus-level novelty inside a known family — not the
 family- or phylum-level novelty already measured in `../holdout_family/` and
 `../holdout_phylum/`.
 
+These four files are a snapshot taken on 2026-08-27 while the workstream was
+running; `level_switch_reproduction.json` in particular is rewritten by the
+pipeline as it progresses.
+
 The two completed taxonomic-holdout evaluations (phylum and family) are
 deposited in full. When the genus evaluation completes it belongs here, in the
-same file layout as `../holdout_family/`.
+same file layout as `../holdout_family/`: `per_sample_predictions.tsv.gz`,
+`per_reference_errors.tsv`, `metrics_full.json`, `lineage_novelty_effect_did.tsv`,
+`stratified_error_by_band.tsv`, `mimag_confusion_by_group.tsv`,
+`clean_sets_evaluation.tsv` and the k-mer re-selection control.
