@@ -31,7 +31,7 @@ ROOT = Path("/path/to/magicc")
 MES = ROOT / "data" / "real_data" / "meslier2022"
 WORK = MES / "work"
 OUT = ROOT / "results" / "revision" / "real_data" / "meslier"
-MINIMAP2 = "/path/to/conda/envs/magicc2/bin/minimap2"
+MINIMAP2 = "/path/to/anaconda3/envs/magicc2/bin/minimap2"
 MANUAL_ACC = {"Desulfovibrio_desulfuricans_ND132": "GCA_000189295.2",
               "Desulfovibrio_vulgaris_Hildenborough": "GCA_000195755.1"}
 

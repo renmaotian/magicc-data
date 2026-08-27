@@ -28,7 +28,7 @@ signal.signal(signal.SIGHUP, signal.SIG_IGN)
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = Path('/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc-legacy')
 DATA_DIR = PROJECT_DIR / 'data'
 
 SE_GENOME = DATA_DIR / 'genomes' / 'GCF_001302605.1' / 'GCF_001302605.1_ASM130260v1_genomic.fna'
@@ -38,7 +38,7 @@ OUTPUT_DIR = DATA_DIR / 'benchmarks' / 'pathogen_analysis_v5' / 'exact_synthetic
 FASTA_DIR = OUTPUT_DIR / 'checkm2_fasta_all'
 CHECKM2_OUTPUT_DIR = OUTPUT_DIR / 'checkm2_output'
 
-CHECKM2DB = '/path/to/home/projects/magicc2/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd'
+CHECKM2DB = '/path/to/magicc/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd'
 CHECKM2_CONDA_ENV = 'checkm2_py39'
 CHECKM2_THREADS = 32
 

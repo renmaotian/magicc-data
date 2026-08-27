@@ -28,7 +28,7 @@ from Bio.SeqRecord import SeqRecord
 # ============================================================================
 # Configuration
 # ============================================================================
-BASE_DIR = Path("/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2")
+BASE_DIR = Path("/path/to/magicc-legacy")
 DATA_DIR = BASE_DIR / "data"
 GENOME_DIR = DATA_DIR / "genomes"
 BENCHMARK_DIR = DATA_DIR / "benchmarks" / "pathogen_analysis_v2"
@@ -45,9 +45,9 @@ MAGICC_MODEL = BASE_DIR / "models" / "magicc_v4.onnx"
 NORM_PARAMS = DATA_DIR / "features" / "normalization_params.json"
 KMERS_FILE = DATA_DIR / "kmer_selection" / "selected_kmers.txt"
 
-CHECKM2_DB = Path("/path/to/home/projects/magicc2/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd")
+CHECKM2_DB = Path("/path/to/magicc/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd")
 CHECKM2_VERSION_CONTROL = Path(
-    "/path/to/conda/envs/checkm2_py39/lib/python3.9/site-packages/checkm2/versionControl.py"
+    "/path/to/anaconda3/envs/checkm2_py39/lib/python3.9/site-packages/checkm2/versionControl.py"
 )
 
 SEED = 123

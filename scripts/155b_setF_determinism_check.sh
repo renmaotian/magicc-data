@@ -14,7 +14,7 @@ PROJECT_DIR="/path/to/magicc"
 SET_NAME="${1:-set_F}"
 N="${2:-6}"
 SET_DIR="${PROJECT_DIR}/data/benchmarks/${SET_NAME}"
-PY=/path/to/conda/envs/magicc2/bin/python
+PY=/path/to/anaconda3/envs/magicc2/bin/python
 WORK=$(mktemp -d)
 trap 'rm -rf "${WORK}"' EXIT
 

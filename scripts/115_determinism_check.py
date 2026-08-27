@@ -255,7 +255,7 @@ def main() -> int:
                        "weights cannot be re-derived bit-exactly from the training data. "
                        "The released artefact is pinned by SHA256 instead. This report "
                        "establishes determinism of INFERENCE only."),
-            protocol_reference="project_design_and_protocol.md section 4.4b"),
+            protocol_reference="the internal design protocol section 4.4b"),
     )
     (out_dir / "determinism_report.json").write_text(json.dumps(result, indent=2) + "\n",
                                                      encoding="utf-8")

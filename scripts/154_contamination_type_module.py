@@ -240,8 +240,8 @@ PRODIGAL_BIN = os.environ.get("MAGICC_PRODIGAL", "prodigal")
 # diamond ships in the checkm2_py39 / gunc_env conda environments
 _DIAMOND_CANDIDATES = [
     os.environ.get("MAGICC_DIAMOND", ""),
-    "/path/to/conda/envs/gunc_env/bin/diamond",
-    "/path/to/conda/envs/checkm2_py39/bin/diamond",
+    "/path/to/anaconda3/envs/gunc_env/bin/diamond",
+    "/path/to/anaconda3/envs/checkm2_py39/bin/diamond",
     "diamond",
 ]
 
@@ -942,7 +942,7 @@ def _self_test() -> int:
     print("=" * 74)
     t = pd.read_csv(PROJECT_DIR / "data/splits/test_genomes.tsv", sep="\t")
     t["fasta_path"] = t["fasta_path"].str.replace(
-        "/path/to/home/projects/magicc2", str(PROJECT_DIR), regex=False)
+        "/path/to/magicc", str(PROJECT_DIR), regex=False)
     tax = t["gtdb_taxonomy"].str.split(";", expand=True)
     t["sp"] = tax[6].str.replace("^s__", "", regex=True)
     t["gn"] = tax[5].str.replace("^g__", "", regex=True)

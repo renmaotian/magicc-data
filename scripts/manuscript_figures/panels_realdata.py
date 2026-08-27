@@ -8,10 +8,10 @@ supplementary Figure S17, so they live here and both builders call them.
 
 The data-loading code (``load6``/``load7``) is lifted verbatim from
 ``make_figures_6_7.py``, including every ``check()`` of a plotted value against
-the value recorded in ``project_progress_and_results.md``: that is what
+the value recorded in `the internal project log`: that is what
 guarantees the recomposition changed no number.  The drawing code differs only
-in the palette (BUILD_CONTRACT 4.1, with line style as a second redundant cue)
-and in BUILD_CONTRACT 4.3 de-annotation -- every note box, banner, commentary
+in the palette (the internal build contract 4.1, with line style as a second redundant cue)
+and in the internal build contract 4.3 de-annotation -- every note box, banner, commentary
 paragraph and per-point annotation is deleted and its numbers handed to the
 caller for the caption.
 """
@@ -551,7 +551,7 @@ def load7():
 # ===========================================================================
 #  Panel painters
 #
-#  BUILD_CONTRACT 4.3: no note box, banner, commentary paragraph or per-point
+#  the internal build contract 4.3: no note box, banner, commentary paragraph or per-point
 #  annotation is drawn.  Each painter returns the numbers it no longer draws.
 # ===========================================================================
 def draw_fragmentation(ax, D, title="Meslier MOCK1 fragmentation gradient"):

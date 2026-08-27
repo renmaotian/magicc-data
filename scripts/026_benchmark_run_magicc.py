@@ -17,7 +17,7 @@ import pandas as pd
 from pathlib import Path
 from typing import List, Dict, Tuple
 
-sys.path.insert(0, '/path/to/home/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc')
 
 import onnxruntime as ort
 from magicc.kmer_counter import KmerCounter
@@ -28,7 +28,7 @@ from magicc.fragmentation import load_original_contigs
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = Path('/path/to/home/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc')
 DATA_DIR = PROJECT_DIR / 'data'
 BENCHMARK_DIR = DATA_DIR / 'benchmarks'
 

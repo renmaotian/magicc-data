@@ -25,8 +25,8 @@ prodigal -v 2>&1
 
 echo ""
 echo "--- HMM Profile Files ---"
-BCG_HMM="/path/to/home/projects/magicc2/85_bcg.hmm"
-UACG_HMM="/path/to/home/projects/magicc2/uacg.hmm"
+BCG_HMM="/path/to/magicc/85_bcg.hmm"
+UACG_HMM="/path/to/magicc/uacg.hmm"
 
 echo "85_bcg.hmm: $(wc -l < $BCG_HMM) lines, $(grep -c '^NAME ' $BCG_HMM) models"
 echo "uacg.hmm: $(wc -l < $UACG_HMM) lines, $(grep -c '^NAME ' $UACG_HMM) models"
@@ -34,7 +34,7 @@ echo "uacg.hmm: $(wc -l < $UACG_HMM) lines, $(grep -c '^NAME ' $UACG_HMM) models
 echo ""
 echo "--- Quick functional test: hmmsearch with 85_bcg.hmm ---"
 # Pick a random genome for testing
-TEST_GENOME=$(head -2 /path/to/home/projects/magicc2/data/splits/train_genomes.tsv | tail -1 | cut -f13)
+TEST_GENOME=$(head -2 /path/to/magicc/data/splits/train_genomes.tsv | tail -1 | cut -f13)
 echo "Test genome: $TEST_GENOME"
 
 TMPDIR=$(mktemp -d)

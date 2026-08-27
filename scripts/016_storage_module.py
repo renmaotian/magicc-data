@@ -16,7 +16,7 @@ import time
 import tempfile
 import numpy as np
 
-sys.path.insert(0, '/path/to/home/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc')
 from magicc.storage import FeatureStore, METADATA_DTYPE, DEFAULT_N_KMER, DEFAULT_N_ASSEMBLY
 
 
@@ -171,7 +171,7 @@ def test_real_storage_init():
     print("TEST 4: Initialize actual project storage")
     print("=" * 70)
 
-    storage_dir = '/path/to/home/projects/magicc2/data/features'
+    storage_dir = '/path/to/magicc/data/features'
     os.makedirs(storage_dir, exist_ok=True)
     storage_path = os.path.join(storage_dir, 'magicc_features.h5')
 

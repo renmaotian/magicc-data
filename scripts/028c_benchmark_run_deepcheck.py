@@ -27,7 +27,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 
-PROJECT_DIR = "/path/to/home/projects/magicc2"
+PROJECT_DIR = "/path/to/magicc"
 DEEPCHECK_DIR = os.path.join(PROJECT_DIR, "tools", "DeepCheck")
 BENCHMARK_DIR = os.path.join(PROJECT_DIR, "data", "benchmarks")
 

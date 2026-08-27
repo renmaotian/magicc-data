@@ -24,8 +24,8 @@ import sys
 np.random.seed(42)
 
 # Config
-INPUT_FILE = "/path/to/home/projects/magicc2/data/gtdb/filtered_genomes.tsv"
-OUTPUT_DIR = "/path/to/home/projects/magicc2/data/gtdb"
+INPUT_FILE = "/path/to/magicc/data/gtdb/filtered_genomes.tsv"
+OUTPUT_DIR = "/path/to/magicc/data/gtdb"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "selected_100k_genomes.tsv")
 TARGET_TOTAL = 100_000
 

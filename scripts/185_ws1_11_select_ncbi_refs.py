@@ -92,7 +92,7 @@ SEED_FAIL = 7011          # which would-have-failed references are drawn
 SEED_MATCH = 7012         # tie-breaking inside the matched control search
 
 # The project's ORIGINAL curation filter, reproduced verbatim from
-# scripts/02_filter_genomes.py / Phase 1 of project_progress_and_results.md.
+# scripts/02_filter_genomes.py / Phase 1 of the reference-curation protocol.
 FILTER = dict(completeness_min=98.0, contamination_max=2.0,
               contig_count_max=100, n50_min=20_000, longest_contig_min=100_000)
 

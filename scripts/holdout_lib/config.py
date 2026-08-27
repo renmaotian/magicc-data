@@ -5,7 +5,7 @@
   WS11.G                 leave-GENUS-out    (level='genus')
 
 Defines: project paths, the FASTA path remapping (the project tree was moved from
-/path/to/home/projects/magicc2 to /path/to/magicc after the
+/path/to/magicc to /path/to/magicc after the
 split TSVs were written), and the held-out taxon panel for the selected level.
 
 LEVEL SWITCH
@@ -83,7 +83,7 @@ def panel_mask(df):
 PROJECT_ROOT = Path('/path/to/magicc')
 
 # The split TSVs store fasta_path values rooted at the OLD project location.
-OLD_ROOT = '/path/to/home/projects/magicc2'
+OLD_ROOT = '/path/to/magicc'
 NEW_ROOT = str(PROJECT_ROOT)
 
 SPLITS_DIR = PROJECT_ROOT / 'data/splits'

@@ -29,7 +29,7 @@ DeepCheck along that ladder.
 Its value is that it measures the genome -> species -> genus ladder on exactly
 the panel the reviewer was reading, on identical genomes for all four tools.
 
-CONVENTIONS (project_progress_and_results.md section 2.2)
+CONVENTIONS (the internal project log section 2.2)
 ---------------------------------------------------------
 * clusters for every bootstrap = reference genomes (here: set x dominant
   accession, the WS5 pooled definition; the distinct-accession count is also

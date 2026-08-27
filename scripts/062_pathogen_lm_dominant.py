@@ -30,7 +30,7 @@ from typing import List, Tuple, Dict
 # Collapse-safe: ignore SIGHUP
 signal.signal(signal.SIGHUP, signal.SIG_IGN)
 
-sys.path.insert(0, '/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc-legacy')
 
 import onnxruntime as ort
 from magicc.kmer_counter import KmerCounter
@@ -40,7 +40,7 @@ from magicc.normalization import FeatureNormalizer
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = Path('/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc-legacy')
 DATA_DIR = PROJECT_DIR / 'data'
 
 SELECTED_KMERS_PATH = str(DATA_DIR / 'kmer_selection' / 'selected_kmers.txt')
@@ -54,7 +54,7 @@ SE_GENOME = DATA_DIR / 'genomes' / 'GCF_001302605.1' / 'GCF_001302605.1_ASM13026
 OUTPUT_DIR = DATA_DIR / 'benchmarks' / 'pathogen_analysis_v5' / 'exact_synthetic_lm_dominant'
 FASTA_DIR = OUTPUT_DIR / 'fastas'  # All 50 FASTAs for CheckM2 batch
 
-CHECKM2_DB = '/path/to/home/projects/magicc2/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd'
+CHECKM2_DB = '/path/to/magicc/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd'
 CHECKM2_ENV = 'checkm2_py39'
 CHECKM2_THREADS = 43
 

@@ -10,7 +10,7 @@
     "magicc/data (9-mer list + normalization params)": 2520014
    },
    "reference_data_note": "No sequence database of any kind. The 'database' is the ONNX model plus the selected 9-mer list; it ships with the package or auto-downloads once to ~/.magicc/.",
-   "env_path": "/path/to/conda/envs/magicc2",
+   "env_path": "/path/to/anaconda3/envs/magicc2",
    "env_note": "The magicc2 conda env on this host is a shared analysis environment (it also carries PyTorch+CUDA for training and CoCoPyE). The size a user actually installs is the pinned runtime environment, measured separately below as 'minimal_runtime_env'.",
    "setup": {
     "database_download": "none",
@@ -26,7 +26,7 @@
     "uniref100.KO.1.dmnd": 3082500605
    },
    "reference_data_note": "uniref100.KO.1.dmnd, a DIAMOND-formatted UniRef100 subset. Downloaded once via `checkm2 database --download`.",
-   "env_path": "/path/to/conda/envs/checkm2_py39",
+   "env_path": "/path/to/anaconda3/envs/checkm2_py39",
    "env_bytes_SUPERSEDED": 2769191551,
    "env_packages_SUPERSEDED": 29,
    "env_size_note": "SUPERSEDED 2026-08-01. This was the size of the conda environment this tool happened to be installed in on this host; for MAGICC, CoCoPyE and DeepCheck that was one shared analysis environment, so the same number was charged to three tools. Use env_footprint.json / tco_table.tsv instead."
@@ -40,7 +40,7 @@
     "uproc": 1524298
    },
    "reference_data_note": "UProC Pfam databases (v24 + v28), UProC model, and the CoCoPyE reference database, downloaded by `cocopye toolbox download-dependencies`.",
-   "env_path": "/path/to/conda/envs/magicc2",
+   "env_path": "/path/to/anaconda3/envs/magicc2",
    "env_note": "Installed into the same conda env as MAGICC on this host, so the env size is not separable; the reference data is.",
    "env_bytes_SUPERSEDED": 8182289570,
    "env_packages_SUPERSEDED": 65,
@@ -54,7 +54,7 @@
     "feature_names.pkl": 208989
    },
    "reference_data_note": "DeepCheck ships only a model; it has no sequence database. It cannot read FASTA at all: its input is CheckM2's pickled feature vectors, so in practice its true installed footprint is its own 86 MB PLUS the whole CheckM2 install and the 2.9 GB CheckM2 database.",
-   "env_path": "/path/to/conda/envs/magicc2",
+   "env_path": "/path/to/anaconda3/envs/magicc2",
    "requires": "CheckM2 (environment + database + a full CheckM2 run per input set)",
    "env_bytes_SUPERSEDED": 8182289570,
    "env_packages_SUPERSEDED": null,

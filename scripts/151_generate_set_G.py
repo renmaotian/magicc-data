@@ -183,7 +183,7 @@ ARMS = build_arms()
 def load_finished_test() -> pd.DataFrame:
     t = pd.read_csv(PROJECT_DIR / "data/splits/test_finished_genomes.tsv", sep="\t")
     t["fasta_path"] = t["fasta_path"].str.replace(
-        "/path/to/home/projects/magicc2", str(PROJECT_DIR), regex=False)
+        "/path/to/magicc", str(PROJECT_DIR), regex=False)
     t = t[(t.genome_size >= MIN_GENOME_BP) & (t.genome_size <= MAX_GENOME_BP)]
     t = t[t.fasta_path.map(os.path.exists)]
     return t.sort_values("gtdb_accession").reset_index(drop=True)

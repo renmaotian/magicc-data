@@ -16,7 +16,7 @@ import time
 import tempfile
 import numpy as np
 
-sys.path.insert(0, '/path/to/home/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc')
 from magicc.normalization import (
     FeatureNormalizer, RunningStats,
     LOG10_FEATURES, MINMAX_FEATURES, ROBUST_FEATURES, PASSTHROUGH_FEATURES,

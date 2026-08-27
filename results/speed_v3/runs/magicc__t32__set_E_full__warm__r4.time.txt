@@ -1,4 +1,4 @@
-	Command being timed: "/path/to/conda/envs/magicc2/bin/magicc predict --input-list /path/to/magicc/results/revision/speed/inputs/set_E_full.txt --output /path/to/magicc/results/revision/speed_v3/scratch/magicc__t32__set_E_full__warm__r4/magicc_predictions.tsv --threads 32 --model /path/to/magicc/models/magicc_v5.onnx"
+	Command being timed: "/path/to/anaconda3/envs/magicc2/bin/magicc predict --input-list /path/to/magicc/results/revision/speed/inputs/set_E_full.txt --output /path/to/magicc/results/revision/speed_v3/scratch/magicc__t32__set_E_full__warm__r4/magicc_predictions.tsv --threads 32 --model /path/to/magicc/models/magicc_v5.onnx"
 	User time (seconds): 85.96
 	System time (seconds): 14.56
 	Percent of CPU this job got: 1679%

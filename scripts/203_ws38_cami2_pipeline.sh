@@ -23,7 +23,7 @@ set -uo pipefail
 
 PROJECT_DIR="/path/to/magicc"
 cd "${PROJECT_DIR}" || exit 1
-source /path/to/conda/etc/profile.d/conda.sh
+source /path/to/anaconda3/etc/profile.d/conda.sh
 conda activate magicc2
 export PYTHONHASHSEED=0
 

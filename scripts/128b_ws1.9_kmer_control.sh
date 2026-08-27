@@ -14,7 +14,7 @@ set -u
 cd /path/to/magicc
 export MAGICC_HOLDOUT_LEVEL=family
 export PYTHONHASHSEED=0
-PY=/path/to/conda/envs/magicc2/bin/python
+PY=/path/to/anaconda3/envs/magicc2/bin/python
 LOG=logs/revision/ws1.9_pipeline.log
 say() { echo "[$(date '+%F %T')] [128b] $*" | tee -a "$LOG"; }
 

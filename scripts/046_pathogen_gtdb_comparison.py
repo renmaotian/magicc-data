@@ -31,7 +31,7 @@ import numpy as np
 # ============================================================
 # Configuration
 # ============================================================
-PROJECT_DIR = "/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2"
+PROJECT_DIR = "/path/to/magicc-legacy"
 GTDB_METADATA = os.path.join(PROJECT_DIR, "data/gtdb/bac120_metadata.tsv.gz")
 GENOME_DIR = os.path.join(PROJECT_DIR, "data/genomes")
 OUTPUT_DIR = os.path.join(PROJECT_DIR, "data/benchmarks/pathogen_analysis/gtdb_comparison")

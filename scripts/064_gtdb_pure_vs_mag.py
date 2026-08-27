@@ -34,7 +34,7 @@ from multiprocessing import Pool
 # --- Collapse-safe: ignore SIGHUP ---
 signal.signal(signal.SIGHUP, signal.SIG_IGN)
 
-sys.path.insert(0, '/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc-legacy')
 
 import onnxruntime as ort
 from magicc.kmer_counter import KmerCounter
@@ -44,7 +44,7 @@ from magicc.normalization import FeatureNormalizer
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = Path('/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc-legacy')
 DATA_DIR = PROJECT_DIR / 'data'
 GENOMES_DIR = DATA_DIR / 'genomes'
 OUTPUT_DIR = DATA_DIR / 'benchmarks' / 'gtdb_pure_vs_mag'

@@ -2,7 +2,7 @@
 """Main-text Figure 4 -- where MAGICC generalizes and where it fails: taxonomy.
 
 Five panels, all lifted from the previous round's Figures 4 and 5
-(BUILD_CONTRACT.md section 3):
+(the internal build contract section 3):
 
     a  leave-phylum-out difference-in-differences, six held-out phylum groups
        (previous Fig. 4a)
@@ -21,11 +21,11 @@ Every number is read from a file under ``results/revision/`` by
 ``panels_taxonomy``/``figledger`` and re-verified against its source TSV before
 this script exits.  Nothing is drawn on the canvas except axis labels, tick
 labels, panel letters, legends and one direct label in panel c
-(BUILD_CONTRACT 4.3); the numbers that used to be annotated are carried by the
+(the internal build contract 4.3); the numbers that used to be annotated are carried by the
 caption written to ``figures/caption_parts/Figure_4.md``.
 
-    /path/to/conda/bin/python make_figure_4.py
-    /path/to/conda/bin/python make_figure_4.py --draft
+    /path/to/anaconda3/bin/python make_figure_4.py
+    /path/to/anaconda3/bin/python make_figure_4.py --draft
 """
 
 from __future__ import annotations
@@ -77,7 +77,7 @@ def build(draft: bool = False):
 
 
 # ---------------------------------------------------------------------------
-# Caption -- carries every number removed from the canvas (BUILD_CONTRACT 4.3)
+# Caption -- carries every number removed from the canvas (the internal build contract 4.3)
 # ---------------------------------------------------------------------------
 def caption(d) -> str:
     a, b, c, dd, e = d["a"], d["b"], d["c"], d["d"], d["e"]

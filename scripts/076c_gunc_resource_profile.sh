@@ -18,7 +18,7 @@ SMALL=$PROJ/results/revision/gunc/controls/negative_fasta
 BATCH=$OUT/batch50_fasta
 mkdir -p "$OUT"
 
-source /path/to/conda/etc/profile.d/conda.sh
+source /path/to/anaconda3/etc/profile.d/conda.sh
 conda activate magicc2
 
 run_one () {   # run_one <label> <input_dir> <threads>

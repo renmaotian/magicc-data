@@ -5,11 +5,11 @@ Style continuity
 ----------------
 Panel layouts, schematic-drawing code, axis conventions and figure proportions
 are taken from the script that produced the submitted figures,
-`manuscript3/scripts/create_figures_v5.py` (its hard-coded `/mnt/5c77b453-.../`
+`manuscript3/scripts/create_figures_v5.py` (its hard-coded absolute workspace
 paths are repointed to `/path/to/magicc`).  Two deliberate
 deviations, both editorial requirements:
 
-  * E4 / BUILD_CONTRACT_V3 9.4 -- the tool palette is the ORIGINAL
+  * E4 / the internal build contract 9.4 -- the tool palette is the ORIGINAL
     submission's set, restored in `figstyle.py` (MAGICC #d62728 red,
     CheckM2 #1f77b4 blue, CoCoPyE #2ca02c green, DeepCheck #9467bd purple;
     pastel companions for box and bar fills).  The author's instruction is
@@ -29,7 +29,7 @@ deviations, both editorial requirements:
   * E9 -- bar charts of MAE are replaced by distribution-revealing plots
     (box: IQR, whiskers 5th-95th percentile, no fliers) with the MAE drawn as a
     point estimate with its 95 % cluster-bootstrap CI on top.
-  * BUILD_CONTRACT 4.3 -- no explanatory sentence, statistical annotation block
+  * the internal build contract 4.3 -- no explanatory sentence, statistical annotation block
     or per-point commentary is drawn onto the canvas.  Only axis labels, tick
     labels, panel letters, legends and at most one short direct label per panel
     survive; every number removed from a canvas is carried by the caption.
@@ -44,7 +44,7 @@ Figure 1  Existing tools underestimate contamination from divergent sources
              (the only panel in which MAGICC appears)
 
 Figure 2  MAGICC workflow schematic.  Box, arrow and label coordinates are
-          unchanged; recoloured to one accent per phase (BUILD_CONTRACT 4.2:
+          unchanged; recoloured to one accent per phase (the internal build contract 4.2:
           #4E79A7, #F28E2B, #59A14F, #4E79A7, #E15759) with light tinted fills,
           saturated same-hue borders, black in-box text and accent-filled phase
           header bands.  The prediction head is the only solid-filled box.  The
@@ -628,7 +628,7 @@ def make_figure1(store: dict):
     ax.set_ylabel("Contamination signed error (pp)\npredicted - true")
     ax.set_title("Set E", fontsize=7, pad=3)
 
-    # BUILD_CONTRACT 4.3: the within- -> cross-phylum mini table that used to be
+    # the internal build contract 4.3: the within- -> cross-phylum mini table that used to be
     # drawn here is deleted; its eight numbers are carried by the caption.
     ax.legend(handles=tool_handles(BENCH_TOOLS), loc="upper right", ncol=2,
               frameon=False, fontsize=6, handletextpad=0.4, columnspacing=1.0,
@@ -643,7 +643,7 @@ def make_figure1(store: dict):
 # Every box, arrow and label COORDINATE is unchanged from
 # manuscript3/scripts/create_figures_v5.py::make_figure2.  The scientific
 # content is unchanged from the previous round.  What changed here is colour
-# only (BUILD_CONTRACT.md 4.2):
+# only (the internal build contract 4.2):
 #
 #   1. One accent per phase, in phase order: #4E79A7, #F28E2B, #59A14F,
 #      #4E79A7, #E15759 (figstyle.PHASE_ACCENT).  Boxes are a 15 % tint of the
@@ -670,7 +670,7 @@ def make_figure1(store: dict):
 #
 # Carried over unchanged from the previous round:
 #   * the V5 synthetic stream (1,200,000 samples; train 1,000,000 / val 100,000
-#     / test 100,000), source project_progress_and_results.md sec. 3.0
+#     / test 100,000), source the internal project log sec. 3.0
 #     "Phase 4 -- Synthetic data" and data/features/magicc_v5_features.h5;
 #   * no GTDB release label, because none is asserted under results/revision/;
 #   * a 5 pt in-box type floor.
@@ -689,7 +689,7 @@ def make_figure2(store: dict):
     """Create Figure 2: MAGICC pipeline workflow diagram.
 
     Layout is that of manuscript3/scripts/create_figures_v5.py::make_figure2;
-    see the section header above for the colour rules of BUILD_CONTRACT 4.2.
+    see the section header above for the colour rules of the internal build contract 4.2.
     """
     print("Creating Figure 2: MAGICC workflow (one accent per phase) ...")
 
@@ -1079,8 +1079,8 @@ def make_figure3(store: dict):
 # Captions -- one file per figure under figures/caption_parts/, assembled into
 # figures/captions_main.md by make_captions_main.py.
 #
-# BUILD_CONTRACT 2.1: bold is allowed only for the leading "**Figure N.**" and
-# for panel letters.  BUILD_CONTRACT 4.3: every number deleted from a canvas is
+# the internal build contract 2.1: bold is allowed only for the leading "**Figure N.**" and
+# for panel letters.  the internal build contract 4.3: every number deleted from a canvas is
 # carried here.
 # =========================================================================
 CAPTION_PARTS = os.path.join(FIG_DIR, "caption_parts")

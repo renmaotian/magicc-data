@@ -87,8 +87,8 @@ BENCHMARK_DIR = DATA_DIR / 'benchmarks'
 SET_DIR = BENCHMARK_DIR / 'set_H_ncbi'
 RESULTS_DIR = PROJECT_DIR / 'results' / 'revision' / 'circularity'
 
-LEGACY_ROOTS = ['/path/to/home/projects/magicc2',
-                '/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2']
+LEGACY_ROOTS = ['/path/to/magicc',
+                '/path/to/magicc-legacy']
 
 N_WORKERS = 24
 N_SIMS = 10

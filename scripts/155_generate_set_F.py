@@ -127,7 +127,7 @@ RANK_COL = {"d": "domain", "p": "phylum", "c": "class", "o": "order",
 def load_test_split() -> pd.DataFrame:
     t = pd.read_csv(PROJECT_DIR / "data/splits/test_genomes.tsv", sep="\t")
     t["fasta_path"] = t["fasta_path"].str.replace(
-        "/path/to/home/projects/magicc2", str(PROJECT_DIR), regex=False)
+        "/path/to/magicc", str(PROJECT_DIR), regex=False)
     tax = t["gtdb_taxonomy"].str.split(";", expand=True)
     tax.columns = ["d", "p", "c", "o", "f", "g", "s"]
     for col in tax.columns:

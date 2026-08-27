@@ -1,7 +1,7 @@
 # Release verification — end-to-end acceptance test of the published MAGICC artefacts
 
 **Date:** 2026-08-26
-**Contract:** `nature_communications/resubmission3/BUILD_CONTRACT_V3.md` §8.1
+**Contract:** the internal build contract §8.1
 **Scope:** an acceptance test *from clean environments*, of what a reviewer actually
 receives from PyPI and from GitHub — not a test of the working tree.
 **Nothing was published, pushed, re-tagged or built. No file outside this directory was modified.**
@@ -64,7 +64,7 @@ environment, so an editable install could not mask a packaging defect.
 | Resolved | **magicc 0.3.1** ✅ matches Code availability |
 | Wheel | `magicc-0.3.1-py3-none-any.whl`, 653,983 B |
 | Wheel SHA256 (re-downloaded, `--no-cache-dir`) | `55ac58af1fed22610fd0a6613ebf1f0faf33b6814abd659835acb693b8c09244` |
-| Same as PyPI JSON API and `REPO_RELEASE_RECORD.md` §2 | ✅ identical |
+| Same as PyPI JSON API and the internal repository release record §2 | ✅ identical |
 | sdist on index | `magicc-0.3.1.tar.gz`, 661,376 B, `aa36d209…e2926c` ✅ matches the record |
 | Upload time (wheel) | **2026-08-25T17:00:28.522359Z** |
 | Versions on the index | 0.1.0, 0.2.0, 0.2.1, 0.3.0, **0.3.1**; none yanked |
@@ -167,7 +167,7 @@ git clone --depth 1 --branch v0.3.1 https://github.com/renmaotian/magicc.git
 
 | Item | Value |
 |---|---|
-| HEAD | **`ca1ddf04154e75c2e00ec453eec32bea4ed29cfe`** ✅ equals `REPO_RELEASE_RECORD.md` "main after" |
+| HEAD | **`ca1ddf04154e75c2e00ec453eec32bea4ed29cfe`** ✅ equals the internal repository release record "main after" |
 | `git describe` | `v0.3.1` |
 | Head commit | 2026-08-25 11:58:44 -0500, *fix(build): anchor `.gitignore` directory patterns…* |
 | `main` today | **`ca1ddf04…`** — identical to the tag |
@@ -204,7 +204,7 @@ produced **`bb7825ce…05ee5`**: **byte-identical to all eight PyPI runs.**
 ## D. Agreement with the paper — the working tree
 
 Conda env `magicc2`, **CPython 3.11.0**, console script
-`/path/to/conda/envs/magicc2/bin/magicc`, resolving to the editable working-tree
+`/path/to/anaconda3/envs/magicc2/bin/magicc`, resolving to the editable working-tree
 package at `/path/to/magicc/magicc/`, version 0.3.1.
 
 - Model loaded: `/path/to/magicc/models/magicc_v5.onnx`, SHA256
@@ -233,7 +233,7 @@ Full record in **`container_tag_facts.md`**. In brief:
 - **The only Apptainer artefact that exists is `containers/magicc_0.3.0.sif`** (384,008,192 B,
   sha256 `287e83d4…aa04`, built 2026-07-26 16:56). Its **own embedded labels say
   `org.opencontainers.image.version = 0.3.0`**, so it cannot be renamed into a 0.3.1
-  artefact. **`containers/magicc_0.3.1.sif` does not exist** — `REPO_RELEASE_RECORD.md`
+  artefact. **`containers/magicc_0.3.1.sif` does not exist** — the internal repository release record
   lists it at "367 MB", which is in fact the 0.3.0 SIF's size carried forward under the
   wrong name. That row must be corrected.
 - The tracked recipes (`containers/magicc.def`, `containers/build_containers.sh`) **already
@@ -300,7 +300,7 @@ Assets on `v0.1.0`:
 | 1 | PyPI package ships no model, so "v0.3.1 … containing model V5 (SHA256 b84346…)" does not describe the PyPI artefact | Either bundle the model, or state plainly that the pip package fetches it on first run | Bundling a 162 MB model exceeds PyPI's default per-file limit and would need an exemption — **the realistic fix is documentation plus item 2** |
 | 2 | `MODEL_URL` points at the **mutable `main`** branch and the download is **never checksummed** | Pin to `.../raw/v0.3.1/models/magicc_v5.onnx` (or the tag's LFS media URL) **and** verify SHA256 against `b84346…b3096` after download, failing loudly on mismatch | A code change ⇒ **a new release (0.3.2) on PyPI and GitHub**. Code availability's version string would move to 0.3.2 |
 | 3 | Code availability / Installation do not warn that `pip install magicc` needs network on first run | One sentence: the model is downloaded from the repository on first use; offline users should clone the tag or pre-place the file at `$HOME/.magicc/magicc_v5.onnx` | Text only — **no re-release** |
-| 4 | `REPO_RELEASE_RECORD.md` lists `containers/magicc_0.3.1.sif` (367 MB), which does not exist | Name `containers/magicc_0.3.0.sif` (366 MiB), or actually build the 0.3.1 SIF | Text only, or one build |
+| 4 | the internal repository release record lists `containers/magicc_0.3.1.sif` (367 MB), which does not exist | Name `containers/magicc_0.3.0.sif` (366 MiB), or actually build the 0.3.1 SIF | Text only, or one build |
 | 5 | `magicc-data` release `v0.1.0` still serves withdrawn Sets C and D | Delete or clearly re-label those two assets when the new data release is cut | Data-deposition agent's call |
 
 **Item 3 alone makes the manuscript truthful without any re-release.** Items 1-2 are the

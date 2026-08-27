@@ -39,7 +39,7 @@ ROOT = Path("/path/to/magicc")
 MES = ROOT / "data" / "real_data" / "meslier2022"
 WORK = MES / "work"
 OUT = ROOT / "results" / "revision" / "real_data" / "meslier"
-MINIMAP2 = "/path/to/conda/envs/magicc2/bin/minimap2"
+MINIMAP2 = "/path/to/anaconda3/envs/magicc2/bin/minimap2"
 ASSEMBLIES = ["pacbio", "minion", "illumina", "s5", "proton", "mgiseq_2000",
               "mgiseq_t7"]
 CIGAR_RE = re.compile(r"(\d+)([MIDNSHP=X])")

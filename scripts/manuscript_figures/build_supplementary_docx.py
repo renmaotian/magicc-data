@@ -31,7 +31,7 @@ its own image and each table legend directly follows its own table; confirm no
 raw markdown survives; confirm nothing is painted past the right margin; render
 to PDF and report the page count and page size.
 
-Run:  /path/to/conda/bin/python build_supplementary_docx.py
+Run:  /path/to/anaconda3/bin/python build_supplementary_docx.py
 """
 
 from __future__ import annotations

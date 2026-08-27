@@ -14,7 +14,7 @@
 set -u -o pipefail
 
 ROOT=/path/to/magicc
-PY=/path/to/conda/envs/magicc2/bin/python
+PY=/path/to/anaconda3/envs/magicc2/bin/python
 OUT="$ROOT/results/revision/metrics"
 SENT="$OUT/.stage_done"
 LOG="$ROOT/logs/revision"

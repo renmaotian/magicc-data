@@ -539,7 +539,7 @@ Per-normalisation TRAIN / VAL / TEST counts:
 | set_D | {g('set_D','samples_in_train_raw')} / {g('set_D','samples_in_val_raw')} / {g('set_D','samples_in_test_raw')} | {g('set_D','samples_in_train_strict')} / {g('set_D','samples_in_val_strict')} / {g('set_D','samples_in_test_strict')} | {g('set_D','samples_in_train_canonical')} / {g('set_D','samples_in_val_canonical')} / {g('set_D','samples_in_test_canonical')} |
 
 > **Correction to the internal record.** The figures previously logged in
-> `project_progress_and_results.md` — "Set C: 985/1,000 dominants in TRAIN" and
+> the internal project log — "Set C: 985/1,000 dominants in TRAIN" and
 > "Set D: only 36/1,000 in test" — were themselves incomplete audits. 985 is the number of
 > Set C dominants carrying a `GB_` prefix, not the number in TRAIN; the true count is
 > **{g('set_C','samples_in_train_canonical')}/1,000 in TRAIN and 0 in TEST**. For Set D the

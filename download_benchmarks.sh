@@ -12,6 +12,7 @@
 #   bash download_benchmarks.sh --dest /data/bench   # choose a destination
 #   bash download_benchmarks.sh --no-extract         # keep the tarballs
 #   bash download_benchmarks.sh --verify-only        # re-verify what is here
+#   bash download_benchmarks.sh --full-verify        # also check every assembly
 #
 # Every download is checked against SHA256SUMS (the assets as uploaded) and
 # SHA256SUMS.tar (the reassembled archives).  The script is resumable: curl -C -
@@ -27,6 +28,7 @@ ALL_SETS="set_A set_B set_C_clean set_D_clean set_E set_F set_G set_H"
 DEST="benchmarks"
 EXTRACT=1
 VERIFY_ONLY=0
+FULL_VERIFY=0
 SETS=""
 
 while [ $# -gt 0 ]; do
@@ -34,6 +36,7 @@ while [ $# -gt 0 ]; do
     --dest) DEST="$2"; shift 2 ;;
     --no-extract) EXTRACT=0; shift ;;
     --verify-only) VERIFY_ONLY=1; EXTRACT=0; shift ;;
+    --full-verify) FULL_VERIFY=1; shift ;;
     -h|--help) sed -n '2,20p' "$0"; exit 0 ;;
     -*) echo "unknown option: $1" >&2; exit 2 ;;
     *) SETS="$SETS $1"; shift ;;
@@ -45,6 +48,7 @@ for tool in curl sha256sum tar; do
   command -v "$tool" >/dev/null 2>&1 || { echo "required tool not found: $tool" >&2; exit 1; }
 done
 
+REPO_ROOT=$(cd "$(dirname "$0")" && pwd)
 mkdir -p "$DEST"
 cd "$DEST"
 
@@ -87,8 +91,16 @@ for s in $SETS; do
   if [ "$EXTRACT" -eq 1 ]; then
     echo "  untar ${s}/"
     tar -xzf "${s}.tar.gz"
-    if [ -f "../provenance/${s}_sha256_manifest.txt" ]; then
-      echo "  note  per-assembly checksums: provenance/${s}_sha256_manifest.txt"
+    if [ "$FULL_VERIFY" -eq 1 ]; then
+      man="$REPO_ROOT/provenance/assemblies/${s}_sha256.txt"
+      if [ -f "$man" ]; then
+        echo "  check every assembly of $s"
+        sha256sum -c "$man" --quiet || { echo "  FAIL: per-assembly checksum mismatch for $s" >&2; rc=1; }
+      else
+        echo "  note  per-assembly manifest not found at $man" >&2
+      fi
+    else
+      echo "  note  per-assembly checksums: provenance/assemblies/${s}_sha256.txt (--full-verify)"
     fi
   fi
   rm -f ".${s}.sums" ".${s}.tar.sums"
@@ -97,8 +109,9 @@ done
 if [ "$rc" -eq 0 ]; then
   echo
   echo "All requested sets downloaded and verified into $(pwd)"
-  echo "Per-assembly SHA256 manifests are in provenance/ of this repository:"
-  echo "  cd set_A && sha256sum -c ../../provenance/set_A_sha256_manifest.txt"
+  echo "Per-assembly SHA256 manifests (12,848 entries in total) are at"
+  echo "  provenance/assemblies/<set>_sha256.txt"
+  echo "Re-run with --full-verify to check every assembly file."
 else
   echo; echo "One or more sets failed verification. Re-run to resume." >&2
 fi

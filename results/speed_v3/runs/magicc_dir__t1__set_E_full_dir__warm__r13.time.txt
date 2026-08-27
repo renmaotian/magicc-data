@@ -1,4 +1,4 @@
-	Command being timed: "/path/to/conda/envs/magicc2/bin/magicc predict --input /path/to/magicc/data/benchmarks/set_E/fasta --extension .fasta --output /path/to/magicc/results/revision/speed_v3/scratch/magicc_dir__t1__set_E_full_dir__warm__r13/magicc_predictions.tsv --threads 1 --batch-size 64 --model /path/to/magicc/models/magicc_v5.onnx"
+	Command being timed: "/path/to/anaconda3/envs/magicc2/bin/magicc predict --input /path/to/magicc/data/benchmarks/set_E/fasta --extension .fasta --output /path/to/magicc/results/revision/speed_v3/scratch/magicc_dir__t1__set_E_full_dir__warm__r13/magicc_predictions.tsv --threads 1 --batch-size 64 --model /path/to/magicc/models/magicc_v5.onnx"
 	User time (seconds): 47.09
 	System time (seconds): 2.30
 	Percent of CPU this job got: 99%

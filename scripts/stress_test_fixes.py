@@ -11,7 +11,7 @@ import os
 import time
 import numpy as np
 
-sys.path.insert(0, '/path/to/home/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc')
 
 from magicc.fragmentation import simulate_fragmentation, _warm_numba_fragmentation
 from magicc.contamination import generate_contaminated_sample, generate_pure_sample

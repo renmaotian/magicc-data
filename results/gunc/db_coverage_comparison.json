@@ -1,5 +1,5 @@
 {
-  "gunc_data_dir": "/path/to/conda/envs/gunc_env/lib/python3.14/site-packages/gunc/data",
+  "gunc_data_dir": "/path/to/anaconda3/envs/gunc_env/lib/python3.14/site-packages/gunc/data",
   "cpr_synonyms": [
     "Patescibacteria",
     "Parcubacteria",

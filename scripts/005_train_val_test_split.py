@@ -20,8 +20,8 @@ import json
 np.random.seed(42)
 
 # Paths
-INPUT_FILE = "/path/to/home/projects/magicc2/data/gtdb/selected_100k_genomes.tsv"
-OUTPUT_DIR = "/path/to/home/projects/magicc2/data/splits"
+INPUT_FILE = "/path/to/magicc/data/gtdb/selected_100k_genomes.tsv"
+OUTPUT_DIR = "/path/to/magicc/data/splits"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def main():

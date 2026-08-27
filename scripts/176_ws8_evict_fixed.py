@@ -62,9 +62,9 @@ TOOL_ASSETS = {
         "/path/to/magicc/tools/checkm2_db/CheckM2_database",
     ],
     "cocopye": [
-        "/path/to/home/.local/share/cocopye/cocopye_db",
-        "/path/to/home/.local/share/cocopye/pfam_db",
-        "/path/to/home/.local/share/cocopye/model",
+        "/path/to/.local/share/cocopye/cocopye_db",
+        "/path/to/.local/share/cocopye/pfam_db",
+        "/path/to/.local/share/cocopye/model",
     ],
     "deepcheck": [
         "/path/to/magicc/tools/DeepCheck/models/best_model.pt",

@@ -11,9 +11,9 @@ import os
 import glob
 import pandas as pd
 
-GENOME_DIR = "/path/to/home/projects/magicc2/data/genomes"
-SELECTED_FILE = "/path/to/home/projects/magicc2/data/gtdb/selected_100k_genomes.tsv"
-SPLITS_DIR = "/path/to/home/projects/magicc2/data/splits"
+GENOME_DIR = "/path/to/magicc/data/genomes"
+SELECTED_FILE = "/path/to/magicc/data/gtdb/selected_100k_genomes.tsv"
+SPLITS_DIR = "/path/to/magicc/data/splits"
 
 def main():
     # Load selected genomes

@@ -1,4 +1,4 @@
-	Command being timed: "env OMP_NUM_THREADS=8 MKL_NUM_THREADS=8 /path/to/conda/envs/magicc2/bin/python /path/to/magicc/scripts/163_ws8_deepcheck_infer.py --features /path/to/magicc/results/revision/speed/deepcheck_features/set_E_100 --output /path/to/magicc/results/revision/speed/scratch/deepcheck__t8__set_E_100__warm__r1/deepcheck_predictions.tsv --threads 8"
+	Command being timed: "env OMP_NUM_THREADS=8 MKL_NUM_THREADS=8 /path/to/anaconda3/envs/magicc2/bin/python /path/to/magicc/scripts/163_ws8_deepcheck_infer.py --features /path/to/magicc/results/revision/speed/deepcheck_features/set_E_100 --output /path/to/magicc/results/revision/speed/scratch/deepcheck__t8__set_E_100__warm__r1/deepcheck_predictions.tsv --threads 8"
 	User time (seconds): 61.70
 	System time (seconds): 1.00
 	Percent of CPU this job got: 640%

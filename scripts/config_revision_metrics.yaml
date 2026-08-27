@@ -291,12 +291,12 @@ palette:
 
 # ---------------------------------------------------------------------------
 # Published values from the SUBMITTED manuscript / supplementary and from
-# project_progress_and_results.md, used by
+# the internal project log, used by
 #   python scripts/104_clustered_statistics.py --verify-only
 # to check every recomputed number against what is currently in print and to
 # emit an explicit discrepancy report. Values are transcribed verbatim.
 #   source: S1a/S1b/S1c = supplementary_v4.md Table S1; S2a/S2b/S2c = Table S2;
-#           S3 = Table S3; progress = project_progress_and_results.md
+#           S3 = Table S3; progress = the internal project log
 # ---------------------------------------------------------------------------
 published_reference_values:
   tolerance_pp: 0.05          # |recomputed - published| above this is flagged

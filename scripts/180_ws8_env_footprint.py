@@ -6,7 +6,7 @@ not the footprint of the analysis environment used to write the paper.
 WHAT WAS WRONG
 --------------
 tco.json charged MAGICC, CoCoPyE and DeepCheck the same 8.182 GB / 65-package
-figure. That number is `/path/to/conda/envs/magicc2`, a shared
+figure. That number is `/path/to/anaconda3/envs/magicc2`, a shared
 data-analysis environment that contains torch+cu121, lightgbm, xgboost, optuna,
 scikit-learn, pandas, matplotlib, seaborn -- and `cocopye 0.5.0`, a competitor
 tool. Three tools were being charged one shared environment, so the per-tool
@@ -44,7 +44,7 @@ from pathlib import Path
 
 PROJECT = Path("/path/to/magicc")
 SPEED = PROJECT / "results" / "revision" / "speed"
-CONDA = Path("/path/to/conda/bin/conda")
+CONDA = Path("/path/to/anaconda3/bin/conda")
 PROBE = Path("/path/to/magicc/.tmp_env_probe/magicc_minimal")
 
 
@@ -143,16 +143,16 @@ def main() -> None:
 
     envs = {}
     for name, path in [("magicc2 (shared analysis environment)",
-                        Path("/path/to/conda/envs/magicc2")),
+                        Path("/path/to/anaconda3/envs/magicc2")),
                        ("checkm2_py39 (dedicated CheckM2 environment)",
-                        Path("/path/to/conda/envs/checkm2_py39"))]:
+                        Path("/path/to/anaconda3/envs/checkm2_py39"))]:
         envs[name] = {
             "path": str(path),
             "bytes": du_bytes(path),
             "n_conda_packages": n_conda_pkgs(path),
             "n_pip_packages": n_pip_pkgs(path),
         }
-    shared = pip_list(Path("/path/to/conda/envs/magicc2"))
+    shared = pip_list(Path("/path/to/anaconda3/envs/magicc2"))
     envs["magicc2 (shared analysis environment)"]["contains_non_magicc_packages"] = [
         f"{p['name']}=={p['version']}" for p in shared
         if p["name"].lower() in {"cocopye", "torch", "lightgbm", "xgboost", "optuna",

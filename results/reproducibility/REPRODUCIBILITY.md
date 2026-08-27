@@ -136,7 +136,7 @@ clusters. Per-set numbers also match `ws5.5_table_S2_rebuilt.tsv` (e.g.
    not of the image.
 
 3. **The PyPI package is `magicc`, not `magicc-genome`.**
-   `project_progress_and_results.md` records the latter; `pypi.org/pypi/
+   the internal project log records the latter; `pypi.org/pypi/
    magicc-genome/json` returns **404** while `magicc` returns 200 and is the
    author's package (0.3.0, same repository URLs, sdist SHA256
    `0c744ed5d797f861ad2e90d41864d22301e6915f270a8e704f504bb9f9a80520`, byte-identical

@@ -17,7 +17,7 @@ import sys
 from collections import defaultdict
 
 # Paths
-BASE_DIR = "/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2"
+BASE_DIR = "/path/to/magicc-legacy"
 CASE_DIR = os.path.join(BASE_DIR, "data/pathogen_analysis/kraken2_case_study")
 GENOME_FNA = os.path.join(CASE_DIR, "genome.fna")
 KRAKEN2_OUTPUT = os.path.join(CASE_DIR, "kraken2_output.txt")

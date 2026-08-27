@@ -11,7 +11,7 @@ paragraph separation. Anything else is emitted as plain text.
 
 Run with the only interpreter that carries python-docx 1.2.0:
 
-    /path/to/conda/bin/python \
+    /path/to/anaconda3/bin/python \
         nature_communications/resubmission/scripts/build_cover_letter_docx.py
 """
 

@@ -36,7 +36,7 @@ import urllib.error
 # --- Collapse-safe: ignore SIGHUP ---
 signal.signal(signal.SIGHUP, signal.SIG_IGN)
 
-PROJECT_DIR = Path('/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc-legacy')
 sys.path.insert(0, str(PROJECT_DIR))
 
 import onnxruntime as ort
@@ -59,7 +59,7 @@ SELECTED_KMERS_PATH = str(DATA_DIR / 'kmer_selection' / 'selected_kmers.txt')
 NORMALIZATION_PATH = str(DATA_DIR / 'features' / 'normalization_params.json')
 ONNX_MODEL_PATH = str(PROJECT_DIR / 'models' / 'magicc_v5.onnx')
 
-CHECKM2_DB = '/path/to/home/projects/magicc2/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd'
+CHECKM2_DB = '/path/to/magicc/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd'
 CHECKM2_ENV = 'checkm2_py39'
 
 N_WORKERS = 43

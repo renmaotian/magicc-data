@@ -16,7 +16,7 @@
   "kraken2_db": "/path/to/magicc/tools/kraken2_db_standard",
   "kraken2_db_hash_bytes": 98600749380,
   "kraken2_db_hash_gb": 98.6,
-  "kraken2_binary": "/path/to/conda/envs/kraken2_env/bin/kraken2",
+  "kraken2_binary": "/path/to/anaconda3/envs/kraken2_env/bin/kraken2",
   "taxonomy_dir": "/path/to/magicc/tools/kraken2_db_standard",
   "kraken2_version": "Kraken version 2.17.1",
   "db_tag": "k2std",

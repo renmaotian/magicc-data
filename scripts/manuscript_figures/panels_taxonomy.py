@@ -7,9 +7,9 @@ CAMI II).  In this round they are split between main-text Figure 4 and
 supplementary Figure S16, so they live here and both builders call them.  The
 drawing code is the previous round's, with two changes only:
 
-  * the author-mandated palette of ``figstyle`` (BUILD_CONTRACT 4.1), with line
+  * the author-mandated palette of ``figstyle`` (the internal build contract 4.1), with line
     style added as a second redundant cue wherever series share an axis; and
-  * BUILD_CONTRACT 4.3 de-annotation -- every free-floating sentence,
+  * the internal build contract 4.3 de-annotation -- every free-floating sentence,
     statistical annotation block, "better tool" header row and per-point
     n/MAE/CI string is deleted.  Each painter returns a dict of the numbers it
     no longer draws, so the caller's caption can carry them.

@@ -8,6 +8,13 @@ These scripts generated the benchmark and motivating analysis datasets used in t
 > workspace layout, not this repository's layout; the corresponding metadata is
 > published here under `benchmark/`.
 
+> **Numbering.** This directory keeps the **working-tree** script numbers it has
+> been published under since February 2026, so existing links stay valid. The
+> complete analysis code is at [`../scripts/`](../scripts/), where the numbers
+> were made unique for the deposition — for example `145_generate_set_F.py` here
+> is `155_generate_set_F.py` there. [`../scripts/SCRIPT_MAPPING.tsv`](../scripts/SCRIPT_MAPPING.tsv)
+> maps every name. The file contents are identical.
+
 > **`25_benchmark_generate.py` produced the WITHDRAWN sets C and D.** Its module
 > docstring states that dominants come from "ALL ... from train+val+test" — that
 > is the leakage, in the source. It is kept here for exactly that reason. See

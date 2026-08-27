@@ -42,7 +42,7 @@ of this file.  Each probe names the result file that adjudicates it.
 
 Usage
 -----
-    /path/to/conda/bin/python \\
+    /path/to/anaconda3/bin/python \\
         nature_communications/resubmission3/scripts/consistency_audit.py
 
 Writes ``consistency_audit.tsv``, ``consistency_audit_records.tsv`` and

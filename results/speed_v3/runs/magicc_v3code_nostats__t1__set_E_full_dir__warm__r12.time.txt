@@ -1,4 +1,4 @@
-	Command being timed: "/path/to/conda/envs/magicc2/bin/python /path/to/magicc/scripts/190_ws11t_run_magicc_codebase.py --code-root /path/to/magicc/results/revision/speed_v3/v3_code_nostats -- predict --input /path/to/magicc/data/benchmarks/set_E/fasta --extension .fasta --output /path/to/magicc/results/revision/speed_v3/scratch/magicc_v3code_nostats__t1__set_E_full_dir__warm__r12/magicc_predictions.tsv --threads 1 --batch-size 64 --model /path/to/magicc/models/magicc_v3.onnx"
+	Command being timed: "/path/to/anaconda3/envs/magicc2/bin/python /path/to/magicc/scripts/190_ws11t_run_magicc_codebase.py --code-root /path/to/magicc/results/revision/speed_v3/v3_code_nostats -- predict --input /path/to/magicc/data/benchmarks/set_E/fasta --extension .fasta --output /path/to/magicc/results/revision/speed_v3/scratch/magicc_v3code_nostats__t1__set_E_full_dir__warm__r12/magicc_predictions.tsv --threads 1 --batch-size 64 --model /path/to/magicc/models/magicc_v3.onnx"
 	User time (seconds): 47.66
 	System time (seconds): 2.37
 	Percent of CPU this job got: 99%

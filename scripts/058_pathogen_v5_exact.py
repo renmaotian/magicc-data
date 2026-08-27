@@ -27,7 +27,7 @@ from typing import List, Tuple, Dict
 # Collapse-safe: ignore SIGHUP
 signal.signal(signal.SIGHUP, signal.SIG_IGN)
 
-sys.path.insert(0, '/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2')
+sys.path.insert(0, '/path/to/magicc-legacy')
 
 import onnxruntime as ort
 from magicc.kmer_counter import KmerCounter
@@ -37,7 +37,7 @@ from magicc.normalization import FeatureNormalizer
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = Path('/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc-legacy')
 DATA_DIR = PROJECT_DIR / 'data'
 
 SELECTED_KMERS_PATH = str(DATA_DIR / 'kmer_selection' / 'selected_kmers.txt')

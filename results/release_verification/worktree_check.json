@@ -4,7 +4,7 @@
   "environment": {
     "env": "conda env magicc2",
     "python": "3.11.0",
-    "console_script": "/path/to/conda/envs/magicc2/bin/magicc",
+    "console_script": "/path/to/anaconda3/envs/magicc2/bin/magicc",
     "package_resolved_to": "/path/to/magicc/magicc/__init__.py (editable install)",
     "reported_version": "0.3.1"
   },

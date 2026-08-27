@@ -11,7 +11,7 @@
 #   bash scripts/198_ws11t_jit_probe.sh
 set -uo pipefail
 PROJECT="/path/to/magicc"
-ENVS="/path/to/conda/envs"
+ENVS="/path/to/anaconda3/envs"
 SPEED_SRC="${PROJECT}/results/revision/speed"
 SPEED="${PROJECT}/results/revision/speed_v3"
 RUNS="${SPEED}/runs"

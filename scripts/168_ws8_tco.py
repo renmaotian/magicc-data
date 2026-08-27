@@ -18,7 +18,7 @@ from pathlib import Path
 
 PROJECT = Path("/path/to/magicc")
 OUT = PROJECT / "results" / "revision" / "speed"
-ENVS = Path("/path/to/conda/envs")
+ENVS = Path("/path/to/anaconda3/envs")
 
 
 def du_bytes(path: Path) -> int | None:
@@ -46,7 +46,7 @@ def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
 
     checkm2_db = PROJECT / "tools" / "checkm2_db" / "CheckM2_database"
-    cocopye_share = Path("/path/to/home/.local/share/cocopye")
+    cocopye_share = Path("/path/to/.local/share/cocopye")
     magicc_model = PROJECT / "models" / "magicc_v5.onnx"
     magicc_kmers = PROJECT / "magicc" / "data"
     deepcheck_dir = PROJECT / "tools" / "DeepCheck"

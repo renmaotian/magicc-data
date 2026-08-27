@@ -1,12 +1,212 @@
 [07/30/2026 10:29:29 PM] INFO: Running CheckM2 version 1.0.1
 [07/30/2026 10:29:29 PM] INFO: Running quality prediction workflow with 8 threads.
-/path/to/conda/envs/checkm2_py39/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator MinMaxScaler from version 0.23.2 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+/path/to/anaconda3/envs/checkm2_py39/lib/python3.9/site-packages/sklearn/base.py:329: UserWarning: Trying to unpickle estimator MinMaxScaler from version 0.23.2 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
 https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
   warnings.warn(
 [07/30/2026 10:29:31 PM] INFO: Calling genes in 100 bins with 8 threads:
-    Finished processing 1 of 100 (1.00%) bins.    Finished processing 2 of 100 (2.00%) bins.    Finished processing 3 of 100 (3.00%) bins.    Finished processing 4 of 100 (4.00%) bins.    Finished processing 5 of 100 (5.00%) bins.    Finished processing 6 of 100 (6.00%) bins.    Finished processing 7 of 100 (7.00%) bins.    Finished processing 8 of 100 (8.00%) bins.    Finished processing 9 of 100 (9.00%) bins.    Finished processing 10 of 100 (10.00%) bins.    Finished processing 11 of 100 (11.00%) bins.    Finished processing 12 of 100 (12.00%) bins.    Finished processing 13 of 100 (13.00%) bins.    Finished processing 14 of 100 (14.00%) bins.    Finished processing 15 of 100 (15.00%) bins.    Finished processing 16 of 100 (16.00%) bins.    Finished processing 17 of 100 (17.00%) bins.    Finished processing 18 of 100 (18.00%) bins.    Finished processing 19 of 100 (19.00%) bins.    Finished processing 20 of 100 (20.00%) bins.    Finished processing 21 of 100 (21.00%) bins.    Finished processing 22 of 100 (22.00%) bins.    Finished processing 23 of 100 (23.00%) bins.    Finished processing 24 of 100 (24.00%) bins.    Finished processing 25 of 100 (25.00%) bins.    Finished processing 26 of 100 (26.00%) bins.    Finished processing 27 of 100 (27.00%) bins.    Finished processing 28 of 100 (28.00%) bins.    Finished processing 29 of 100 (29.00%) bins.    Finished processing 30 of 100 (30.00%) bins.    Finished processing 31 of 100 (31.00%) bins.    Finished processing 32 of 100 (32.00%) bins.    Finished processing 33 of 100 (33.00%) bins.    Finished processing 34 of 100 (34.00%) bins.    Finished processing 35 of 100 (35.00%) bins.    Finished processing 36 of 100 (36.00%) bins.    Finished processing 37 of 100 (37.00%) bins.    Finished processing 38 of 100 (38.00%) bins.    Finished processing 39 of 100 (39.00%) bins.    Finished processing 40 of 100 (40.00%) bins.    Finished processing 41 of 100 (41.00%) bins.    Finished processing 42 of 100 (42.00%) bins.    Finished processing 43 of 100 (43.00%) bins.    Finished processing 44 of 100 (44.00%) bins.    Finished processing 45 of 100 (45.00%) bins.    Finished processing 46 of 100 (46.00%) bins.    Finished processing 47 of 100 (47.00%) bins.    Finished processing 48 of 100 (48.00%) bins.    Finished processing 49 of 100 (49.00%) bins.    Finished processing 50 of 100 (50.00%) bins.    Finished processing 51 of 100 (51.00%) bins.    Finished processing 52 of 100 (52.00%) bins.    Finished processing 53 of 100 (53.00%) bins.    Finished processing 54 of 100 (54.00%) bins.    Finished processing 55 of 100 (55.00%) bins.    Finished processing 56 of 100 (56.00%) bins.    Finished processing 57 of 100 (57.00%) bins.    Finished processing 58 of 100 (58.00%) bins.    Finished processing 59 of 100 (59.00%) bins.    Finished processing 60 of 100 (60.00%) bins.    Finished processing 61 of 100 (61.00%) bins.    Finished processing 62 of 100 (62.00%) bins.    Finished processing 63 of 100 (63.00%) bins.    Finished processing 64 of 100 (64.00%) bins.    Finished processing 65 of 100 (65.00%) bins.    Finished processing 66 of 100 (66.00%) bins.    Finished processing 67 of 100 (67.00%) bins.    Finished processing 68 of 100 (68.00%) bins.    Finished processing 69 of 100 (69.00%) bins.    Finished processing 70 of 100 (70.00%) bins.    Finished processing 71 of 100 (71.00%) bins.    Finished processing 72 of 100 (72.00%) bins.    Finished processing 73 of 100 (73.00%) bins.    Finished processing 74 of 100 (74.00%) bins.    Finished processing 75 of 100 (75.00%) bins.    Finished processing 76 of 100 (76.00%) bins.    Finished processing 77 of 100 (77.00%) bins.    Finished processing 78 of 100 (78.00%) bins.    Finished processing 79 of 100 (79.00%) bins.    Finished processing 80 of 100 (80.00%) bins.    Finished processing 81 of 100 (81.00%) bins.    Finished processing 82 of 100 (82.00%) bins.    Finished processing 83 of 100 (83.00%) bins.    Finished processing 84 of 100 (84.00%) bins.    Finished processing 85 of 100 (85.00%) bins.    Finished processing 86 of 100 (86.00%) bins.    Finished processing 87 of 100 (87.00%) bins.    Finished processing 88 of 100 (88.00%) bins.    Finished processing 89 of 100 (89.00%) bins.    Finished processing 90 of 100 (90.00%) bins.    Finished processing 91 of 100 (91.00%) bins.    Finished processing 92 of 100 (92.00%) bins.    Finished processing 93 of 100 (93.00%) bins.    Finished processing 94 of 100 (94.00%) bins.    Finished processing 95 of 100 (95.00%) bins.    Finished processing 96 of 100 (96.00%) bins.    Finished processing 97 of 100 (97.00%) bins.    Finished processing 98 of 100 (98.00%) bins.    Finished processing 99 of 100 (99.00%) bins.    Finished processing 100 of 100 (100.00%) bins.
+
+    Finished processing 1 of 100 (1.00%) bins.
+    Finished processing 2 of 100 (2.00%) bins.
+    Finished processing 3 of 100 (3.00%) bins.
+    Finished processing 4 of 100 (4.00%) bins.
+    Finished processing 5 of 100 (5.00%) bins.
+    Finished processing 6 of 100 (6.00%) bins.
+    Finished processing 7 of 100 (7.00%) bins.
+    Finished processing 8 of 100 (8.00%) bins.
+    Finished processing 9 of 100 (9.00%) bins.
+    Finished processing 10 of 100 (10.00%) bins.
+    Finished processing 11 of 100 (11.00%) bins.
+    Finished processing 12 of 100 (12.00%) bins.
+    Finished processing 13 of 100 (13.00%) bins.
+    Finished processing 14 of 100 (14.00%) bins.
+    Finished processing 15 of 100 (15.00%) bins.
+    Finished processing 16 of 100 (16.00%) bins.
+    Finished processing 17 of 100 (17.00%) bins.
+    Finished processing 18 of 100 (18.00%) bins.
+    Finished processing 19 of 100 (19.00%) bins.
+    Finished processing 20 of 100 (20.00%) bins.
+    Finished processing 21 of 100 (21.00%) bins.
+    Finished processing 22 of 100 (22.00%) bins.
+    Finished processing 23 of 100 (23.00%) bins.
+    Finished processing 24 of 100 (24.00%) bins.
+    Finished processing 25 of 100 (25.00%) bins.
+    Finished processing 26 of 100 (26.00%) bins.
+    Finished processing 27 of 100 (27.00%) bins.
+    Finished processing 28 of 100 (28.00%) bins.
+    Finished processing 29 of 100 (29.00%) bins.
+    Finished processing 30 of 100 (30.00%) bins.
+    Finished processing 31 of 100 (31.00%) bins.
+    Finished processing 32 of 100 (32.00%) bins.
+    Finished processing 33 of 100 (33.00%) bins.
+    Finished processing 34 of 100 (34.00%) bins.
+    Finished processing 35 of 100 (35.00%) bins.
+    Finished processing 36 of 100 (36.00%) bins.
+    Finished processing 37 of 100 (37.00%) bins.
+    Finished processing 38 of 100 (38.00%) bins.
+    Finished processing 39 of 100 (39.00%) bins.
+    Finished processing 40 of 100 (40.00%) bins.
+    Finished processing 41 of 100 (41.00%) bins.
+    Finished processing 42 of 100 (42.00%) bins.
+    Finished processing 43 of 100 (43.00%) bins.
+    Finished processing 44 of 100 (44.00%) bins.
+    Finished processing 45 of 100 (45.00%) bins.
+    Finished processing 46 of 100 (46.00%) bins.
+    Finished processing 47 of 100 (47.00%) bins.
+    Finished processing 48 of 100 (48.00%) bins.
+    Finished processing 49 of 100 (49.00%) bins.
+    Finished processing 50 of 100 (50.00%) bins.
+    Finished processing 51 of 100 (51.00%) bins.
+    Finished processing 52 of 100 (52.00%) bins.
+    Finished processing 53 of 100 (53.00%) bins.
+    Finished processing 54 of 100 (54.00%) bins.
+    Finished processing 55 of 100 (55.00%) bins.
+    Finished processing 56 of 100 (56.00%) bins.
+    Finished processing 57 of 100 (57.00%) bins.
+    Finished processing 58 of 100 (58.00%) bins.
+    Finished processing 59 of 100 (59.00%) bins.
+    Finished processing 60 of 100 (60.00%) bins.
+    Finished processing 61 of 100 (61.00%) bins.
+    Finished processing 62 of 100 (62.00%) bins.
+    Finished processing 63 of 100 (63.00%) bins.
+    Finished processing 64 of 100 (64.00%) bins.
+    Finished processing 65 of 100 (65.00%) bins.
+    Finished processing 66 of 100 (66.00%) bins.
+    Finished processing 67 of 100 (67.00%) bins.
+    Finished processing 68 of 100 (68.00%) bins.
+    Finished processing 69 of 100 (69.00%) bins.
+    Finished processing 70 of 100 (70.00%) bins.
+    Finished processing 71 of 100 (71.00%) bins.
+    Finished processing 72 of 100 (72.00%) bins.
+    Finished processing 73 of 100 (73.00%) bins.
+    Finished processing 74 of 100 (74.00%) bins.
+    Finished processing 75 of 100 (75.00%) bins.
+    Finished processing 76 of 100 (76.00%) bins.
+    Finished processing 77 of 100 (77.00%) bins.
+    Finished processing 78 of 100 (78.00%) bins.
+    Finished processing 79 of 100 (79.00%) bins.
+    Finished processing 80 of 100 (80.00%) bins.
+    Finished processing 81 of 100 (81.00%) bins.
+    Finished processing 82 of 100 (82.00%) bins.
+    Finished processing 83 of 100 (83.00%) bins.
+    Finished processing 84 of 100 (84.00%) bins.
+    Finished processing 85 of 100 (85.00%) bins.
+    Finished processing 86 of 100 (86.00%) bins.
+    Finished processing 87 of 100 (87.00%) bins.
+    Finished processing 88 of 100 (88.00%) bins.
+    Finished processing 89 of 100 (89.00%) bins.
+    Finished processing 90 of 100 (90.00%) bins.
+    Finished processing 91 of 100 (91.00%) bins.
+    Finished processing 92 of 100 (92.00%) bins.
+    Finished processing 93 of 100 (93.00%) bins.
+    Finished processing 94 of 100 (94.00%) bins.
+    Finished processing 95 of 100 (95.00%) bins.
+    Finished processing 96 of 100 (96.00%) bins.
+    Finished processing 97 of 100 (97.00%) bins.
+    Finished processing 98 of 100 (98.00%) bins.
+    Finished processing 99 of 100 (99.00%) bins.
+    Finished processing 100 of 100 (100.00%) bins.
 [07/30/2026 10:35:16 PM] INFO: Calculating metadata for 100 bins with 8 threads:
-    Finished processing 1 of 100 (1.00%) bin metadata.    Finished processing 2 of 100 (2.00%) bin metadata.    Finished processing 3 of 100 (3.00%) bin metadata.    Finished processing 4 of 100 (4.00%) bin metadata.    Finished processing 5 of 100 (5.00%) bin metadata.    Finished processing 6 of 100 (6.00%) bin metadata.    Finished processing 7 of 100 (7.00%) bin metadata.    Finished processing 8 of 100 (8.00%) bin metadata.    Finished processing 9 of 100 (9.00%) bin metadata.    Finished processing 10 of 100 (10.00%) bin metadata.    Finished processing 11 of 100 (11.00%) bin metadata.    Finished processing 12 of 100 (12.00%) bin metadata.    Finished processing 13 of 100 (13.00%) bin metadata.    Finished processing 14 of 100 (14.00%) bin metadata.    Finished processing 15 of 100 (15.00%) bin metadata.    Finished processing 16 of 100 (16.00%) bin metadata.    Finished processing 17 of 100 (17.00%) bin metadata.    Finished processing 18 of 100 (18.00%) bin metadata.    Finished processing 19 of 100 (19.00%) bin metadata.    Finished processing 20 of 100 (20.00%) bin metadata.    Finished processing 21 of 100 (21.00%) bin metadata.    Finished processing 22 of 100 (22.00%) bin metadata.    Finished processing 23 of 100 (23.00%) bin metadata.    Finished processing 24 of 100 (24.00%) bin metadata.    Finished processing 25 of 100 (25.00%) bin metadata.    Finished processing 26 of 100 (26.00%) bin metadata.    Finished processing 27 of 100 (27.00%) bin metadata.    Finished processing 28 of 100 (28.00%) bin metadata.    Finished processing 29 of 100 (29.00%) bin metadata.    Finished processing 30 of 100 (30.00%) bin metadata.    Finished processing 31 of 100 (31.00%) bin metadata.    Finished processing 32 of 100 (32.00%) bin metadata.    Finished processing 33 of 100 (33.00%) bin metadata.    Finished processing 34 of 100 (34.00%) bin metadata.    Finished processing 35 of 100 (35.00%) bin metadata.    Finished processing 36 of 100 (36.00%) bin metadata.    Finished processing 37 of 100 (37.00%) bin metadata.    Finished processing 38 of 100 (38.00%) bin metadata.    Finished processing 39 of 100 (39.00%) bin metadata.    Finished processing 40 of 100 (40.00%) bin metadata.    Finished processing 41 of 100 (41.00%) bin metadata.    Finished processing 42 of 100 (42.00%) bin metadata.    Finished processing 43 of 100 (43.00%) bin metadata.    Finished processing 44 of 100 (44.00%) bin metadata.    Finished processing 45 of 100 (45.00%) bin metadata.    Finished processing 46 of 100 (46.00%) bin metadata.    Finished processing 47 of 100 (47.00%) bin metadata.    Finished processing 48 of 100 (48.00%) bin metadata.    Finished processing 49 of 100 (49.00%) bin metadata.    Finished processing 50 of 100 (50.00%) bin metadata.    Finished processing 51 of 100 (51.00%) bin metadata.    Finished processing 52 of 100 (52.00%) bin metadata.    Finished processing 53 of 100 (53.00%) bin metadata.    Finished processing 54 of 100 (54.00%) bin metadata.    Finished processing 55 of 100 (55.00%) bin metadata.    Finished processing 56 of 100 (56.00%) bin metadata.    Finished processing 57 of 100 (57.00%) bin metadata.    Finished processing 58 of 100 (58.00%) bin metadata.    Finished processing 59 of 100 (59.00%) bin metadata.    Finished processing 60 of 100 (60.00%) bin metadata.    Finished processing 61 of 100 (61.00%) bin metadata.    Finished processing 62 of 100 (62.00%) bin metadata.    Finished processing 63 of 100 (63.00%) bin metadata.    Finished processing 64 of 100 (64.00%) bin metadata.    Finished processing 65 of 100 (65.00%) bin metadata.    Finished processing 66 of 100 (66.00%) bin metadata.    Finished processing 67 of 100 (67.00%) bin metadata.    Finished processing 68 of 100 (68.00%) bin metadata.    Finished processing 69 of 100 (69.00%) bin metadata.    Finished processing 70 of 100 (70.00%) bin metadata.    Finished processing 71 of 100 (71.00%) bin metadata.    Finished processing 72 of 100 (72.00%) bin metadata.    Finished processing 73 of 100 (73.00%) bin metadata.    Finished processing 74 of 100 (74.00%) bin metadata.    Finished processing 75 of 100 (75.00%) bin metadata.    Finished processing 76 of 100 (76.00%) bin metadata.    Finished processing 77 of 100 (77.00%) bin metadata.    Finished processing 78 of 100 (78.00%) bin metadata.    Finished processing 79 of 100 (79.00%) bin metadata.    Finished processing 80 of 100 (80.00%) bin metadata.    Finished processing 81 of 100 (81.00%) bin metadata.    Finished processing 82 of 100 (82.00%) bin metadata.    Finished processing 83 of 100 (83.00%) bin metadata.    Finished processing 84 of 100 (84.00%) bin metadata.    Finished processing 85 of 100 (85.00%) bin metadata.    Finished processing 86 of 100 (86.00%) bin metadata.    Finished processing 87 of 100 (87.00%) bin metadata.    Finished processing 88 of 100 (88.00%) bin metadata.    Finished processing 89 of 100 (89.00%) bin metadata.    Finished processing 90 of 100 (90.00%) bin metadata.    Finished processing 91 of 100 (91.00%) bin metadata.    Finished processing 92 of 100 (92.00%) bin metadata.    Finished processing 93 of 100 (93.00%) bin metadata.    Finished processing 94 of 100 (94.00%) bin metadata.    Finished processing 95 of 100 (95.00%) bin metadata.    Finished processing 96 of 100 (96.00%) bin metadata.    Finished processing 97 of 100 (97.00%) bin metadata.    Finished processing 98 of 100 (98.00%) bin metadata.    Finished processing 99 of 100 (99.00%) bin metadata.    Finished processing 100 of 100 (100.00%) bin metadata.
+
+    Finished processing 1 of 100 (1.00%) bin metadata.
+    Finished processing 2 of 100 (2.00%) bin metadata.
+    Finished processing 3 of 100 (3.00%) bin metadata.
+    Finished processing 4 of 100 (4.00%) bin metadata.
+    Finished processing 5 of 100 (5.00%) bin metadata.
+    Finished processing 6 of 100 (6.00%) bin metadata.
+    Finished processing 7 of 100 (7.00%) bin metadata.
+    Finished processing 8 of 100 (8.00%) bin metadata.
+    Finished processing 9 of 100 (9.00%) bin metadata.
+    Finished processing 10 of 100 (10.00%) bin metadata.
+    Finished processing 11 of 100 (11.00%) bin metadata.
+    Finished processing 12 of 100 (12.00%) bin metadata.
+    Finished processing 13 of 100 (13.00%) bin metadata.
+    Finished processing 14 of 100 (14.00%) bin metadata.
+    Finished processing 15 of 100 (15.00%) bin metadata.
+    Finished processing 16 of 100 (16.00%) bin metadata.
+    Finished processing 17 of 100 (17.00%) bin metadata.
+    Finished processing 18 of 100 (18.00%) bin metadata.
+    Finished processing 19 of 100 (19.00%) bin metadata.
+    Finished processing 20 of 100 (20.00%) bin metadata.
+    Finished processing 21 of 100 (21.00%) bin metadata.
+    Finished processing 22 of 100 (22.00%) bin metadata.
+    Finished processing 23 of 100 (23.00%) bin metadata.
+    Finished processing 24 of 100 (24.00%) bin metadata.
+    Finished processing 25 of 100 (25.00%) bin metadata.
+    Finished processing 26 of 100 (26.00%) bin metadata.
+    Finished processing 27 of 100 (27.00%) bin metadata.
+    Finished processing 28 of 100 (28.00%) bin metadata.
+    Finished processing 29 of 100 (29.00%) bin metadata.
+    Finished processing 30 of 100 (30.00%) bin metadata.
+    Finished processing 31 of 100 (31.00%) bin metadata.
+    Finished processing 32 of 100 (32.00%) bin metadata.
+    Finished processing 33 of 100 (33.00%) bin metadata.
+    Finished processing 34 of 100 (34.00%) bin metadata.
+    Finished processing 35 of 100 (35.00%) bin metadata.
+    Finished processing 36 of 100 (36.00%) bin metadata.
+    Finished processing 37 of 100 (37.00%) bin metadata.
+    Finished processing 38 of 100 (38.00%) bin metadata.
+    Finished processing 39 of 100 (39.00%) bin metadata.
+    Finished processing 40 of 100 (40.00%) bin metadata.
+    Finished processing 41 of 100 (41.00%) bin metadata.
+    Finished processing 42 of 100 (42.00%) bin metadata.
+    Finished processing 43 of 100 (43.00%) bin metadata.
+    Finished processing 44 of 100 (44.00%) bin metadata.
+    Finished processing 45 of 100 (45.00%) bin metadata.
+    Finished processing 46 of 100 (46.00%) bin metadata.
+    Finished processing 47 of 100 (47.00%) bin metadata.
+    Finished processing 48 of 100 (48.00%) bin metadata.
+    Finished processing 49 of 100 (49.00%) bin metadata.
+    Finished processing 50 of 100 (50.00%) bin metadata.
+    Finished processing 51 of 100 (51.00%) bin metadata.
+    Finished processing 52 of 100 (52.00%) bin metadata.
+    Finished processing 53 of 100 (53.00%) bin metadata.
+    Finished processing 54 of 100 (54.00%) bin metadata.
+    Finished processing 55 of 100 (55.00%) bin metadata.
+    Finished processing 56 of 100 (56.00%) bin metadata.
+    Finished processing 57 of 100 (57.00%) bin metadata.
+    Finished processing 58 of 100 (58.00%) bin metadata.
+    Finished processing 59 of 100 (59.00%) bin metadata.
+    Finished processing 60 of 100 (60.00%) bin metadata.
+    Finished processing 61 of 100 (61.00%) bin metadata.
+    Finished processing 62 of 100 (62.00%) bin metadata.
+    Finished processing 63 of 100 (63.00%) bin metadata.
+    Finished processing 64 of 100 (64.00%) bin metadata.
+    Finished processing 65 of 100 (65.00%) bin metadata.
+    Finished processing 66 of 100 (66.00%) bin metadata.
+    Finished processing 67 of 100 (67.00%) bin metadata.
+    Finished processing 68 of 100 (68.00%) bin metadata.
+    Finished processing 69 of 100 (69.00%) bin metadata.
+    Finished processing 70 of 100 (70.00%) bin metadata.
+    Finished processing 71 of 100 (71.00%) bin metadata.
+    Finished processing 72 of 100 (72.00%) bin metadata.
+    Finished processing 73 of 100 (73.00%) bin metadata.
+    Finished processing 74 of 100 (74.00%) bin metadata.
+    Finished processing 75 of 100 (75.00%) bin metadata.
+    Finished processing 76 of 100 (76.00%) bin metadata.
+    Finished processing 77 of 100 (77.00%) bin metadata.
+    Finished processing 78 of 100 (78.00%) bin metadata.
+    Finished processing 79 of 100 (79.00%) bin metadata.
+    Finished processing 80 of 100 (80.00%) bin metadata.
+    Finished processing 81 of 100 (81.00%) bin metadata.
+    Finished processing 82 of 100 (82.00%) bin metadata.
+    Finished processing 83 of 100 (83.00%) bin metadata.
+    Finished processing 84 of 100 (84.00%) bin metadata.
+    Finished processing 85 of 100 (85.00%) bin metadata.
+    Finished processing 86 of 100 (86.00%) bin metadata.
+    Finished processing 87 of 100 (87.00%) bin metadata.
+    Finished processing 88 of 100 (88.00%) bin metadata.
+    Finished processing 89 of 100 (89.00%) bin metadata.
+    Finished processing 90 of 100 (90.00%) bin metadata.
+    Finished processing 91 of 100 (91.00%) bin metadata.
+    Finished processing 92 of 100 (92.00%) bin metadata.
+    Finished processing 93 of 100 (93.00%) bin metadata.
+    Finished processing 94 of 100 (94.00%) bin metadata.
+    Finished processing 95 of 100 (95.00%) bin metadata.
+    Finished processing 96 of 100 (96.00%) bin metadata.
+    Finished processing 97 of 100 (97.00%) bin metadata.
+    Finished processing 98 of 100 (98.00%) bin metadata.
+    Finished processing 99 of 100 (99.00%) bin metadata.
+    Finished processing 100 of 100 (100.00%) bin metadata.
 [07/30/2026 10:35:17 PM] INFO: Annotating input genomes with DIAMOND using 8 threads
 [07/30/2026 10:49:10 PM] INFO: Processing DIAMOND output
 [07/30/2026 10:49:13 PM] INFO: Predicting completeness and contamination using ML models.

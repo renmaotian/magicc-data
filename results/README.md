@@ -1,7 +1,7 @@
 # Result files
 
 Every quantitative result reported in the manuscript, as the file that produced
-it. 1,169 files, ~113 MB.
+it. 1,142 files, 93 MB.
 
 ## Path convention
 

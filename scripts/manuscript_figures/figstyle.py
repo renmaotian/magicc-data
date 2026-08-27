@@ -3,7 +3,7 @@
 
 Palette
 -------
-BUILD_CONTRACT_V3.md section 9 item 4 reverts every tool comparison to the
+the internal build contract section 9 item 4 reverts every tool comparison to the
 palette of the ORIGINAL submission (`manuscript3/scripts/create_figures_v5.py`,
 `BENCH_COLORS`).  The hex codes below are copied from that script verbatim; they
 are fixed by the author and must not be changed to make a colour-vision check
@@ -105,7 +105,7 @@ SUPP_FIG_DIR = (os.environ.get("MAGICC_SUPP_FIG_DIR")
 ARTIST_LEDGER = os.environ.get("MAGICC_ARTIST_LEDGER") == "1"
 
 # ---------------------------------------------------------------------------
-# Author-mandated tool palette (BUILD_CONTRACT_V3.md section 9 item 4)
+# Author-mandated tool palette (the internal build contract section 9 item 4)
 # ---------------------------------------------------------------------------
 PALETTE = {
     "magicc": "#d62728",      # red
@@ -197,8 +197,8 @@ DIVERGING = ["#1f77b4", "#DCE3EC", "#F2F2F2", "#F6C6A8", "#d62728"]
 SEQUENTIAL_CMAP = "cividis"   # CVD-optimised
 
 # Figure 2 workflow schematic: one accent per phase, in phase order.  Figure 2
-# encodes no tool, so BUILD_CONTRACT_V3 section 9 item 4 (which reverts the
-# TOOL comparisons) does not reach it and BUILD_CONTRACT section 4.2 still
+# encodes no tool, so the internal build contract section 9 item 4 (which reverts the
+# TOOL comparisons) does not reach it and the internal build contract section 4.2 still
 # governs these five accents.  They are schematic furniture and never data.
 PHASE_ACCENT = ["#4E79A7", "#F28E2B", "#59A14F", "#4E79A7", "#E15759"]
 

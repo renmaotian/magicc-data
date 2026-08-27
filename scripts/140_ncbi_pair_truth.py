@@ -49,7 +49,7 @@ signal.signal(signal.SIGHUP, signal.SIG_IGN)
 ROOT = Path("/path/to/magicc")
 PAIRS = ROOT / "results" / "revision" / "real_data" / "ncbi_pairs"
 DEST = ROOT / "data" / "real_data" / "ncbi_pairs"
-MINIMAP2 = "/path/to/conda/envs/magicc2/bin/minimap2"
+MINIMAP2 = "/path/to/anaconda3/envs/magicc2/bin/minimap2"
 
 
 def merge_len(iv):

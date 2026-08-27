@@ -2,7 +2,7 @@
 """Main-text Figure 5 -- real data, error robustness and the genome-size boundary.
 
 Six panels, all lifted from the previous round's Figures 6 and 7
-(BUILD_CONTRACT.md section 3):
+(the internal build contract section 3):
 
     a  mock-community fragmentation gradient, completeness MAE vs contig N50
        (previous Fig. 6a)
@@ -21,13 +21,13 @@ The panels that left the main text are Figure S17.
 
 Every number is read from a file under ``results/revision/`` by
 ``panels_realdata`` and checked against the value recorded in
-``project_progress_and_results.md`` before this script exits.  Nothing is drawn
+`the internal project log` before this script exits.  Nothing is drawn
 on the canvas except axis labels, tick labels, panel letters, panel titles,
-legends and one short direct label in panel c (BUILD_CONTRACT 4.3); the numbers
+legends and one short direct label in panel c (the internal build contract 4.3); the numbers
 that used to be annotated are carried by
 ``figures/caption_parts/Figure_5.md``.
 
-    /path/to/conda/bin/python make_figure_5.py
+    /path/to/anaconda3/bin/python make_figure_5.py
 """
 
 from __future__ import annotations
@@ -98,7 +98,7 @@ def build():
 
 
 # ---------------------------------------------------------------------------
-# Caption -- carries every number removed from the canvas (BUILD_CONTRACT 4.3)
+# Caption -- carries every number removed from the canvas (the internal build contract 4.3)
 # ---------------------------------------------------------------------------
 def caption(D6, D7, d) -> str:
     a, c, dd, e, f = d["a"], d["c"], d["d"], d["e"], d["f"]

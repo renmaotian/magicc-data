@@ -55,7 +55,7 @@
  },
  "environments_on_this_host": {
   "magicc2 (shared analysis environment)": {
-   "path": "/path/to/conda/envs/magicc2",
+   "path": "/path/to/anaconda3/envs/magicc2",
    "bytes": 8182289570,
    "n_conda_packages": 65,
    "n_pip_packages": 133,
@@ -71,7 +71,7 @@
    ]
   },
   "checkm2_py39 (dedicated CheckM2 environment)": {
-   "path": "/path/to/conda/envs/checkm2_py39",
+   "path": "/path/to/anaconda3/envs/checkm2_py39",
    "bytes": 2769191551,
    "n_conda_packages": 29,
    "n_pip_packages": 58

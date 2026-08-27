@@ -27,7 +27,7 @@
 set -uo pipefail
 
 PROJECT="/path/to/magicc"
-ENVS="/path/to/conda/envs"
+ENVS="/path/to/anaconda3/envs"
 CHECKM2_DB="${PROJECT}/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd"
 SPEED_SRC="${PROJECT}/results/revision/speed"          # inputs only, READ-ONLY
 SPEED="${PROJECT}/results/revision/speed_v3"           # all new outputs

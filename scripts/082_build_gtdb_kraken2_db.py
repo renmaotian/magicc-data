@@ -253,7 +253,7 @@ def main() -> int:
                     help='write taxonomy/library/seqid2taxid.map, print the build '
                          'command, and stop')
     ap.add_argument('--kraken2-build',
-                    default='/path/to/conda/envs/kraken2_env/bin/kraken2-build')
+                    default='/path/to/anaconda3/envs/kraken2_env/bin/kraken2-build')
     args = ap.parse_args()
 
     db = Path(args.db_dir)

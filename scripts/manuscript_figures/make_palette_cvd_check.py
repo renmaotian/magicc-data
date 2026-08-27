@@ -3,7 +3,7 @@
 
 Writes ``figures/palette_cvd_check.tsv``.
 
-The palette is the ORIGINAL submission's, restored by BUILD_CONTRACT_V3.md
+The palette is the ORIGINAL submission's, restored by the internal build contract
 section 9 item 4 and applied to EVERY tool comparison in the package, the
 three-tool motivating panels of Figure 1 (b-e) included; v4's separate
 three-tool ``MOTIV_COLORS`` set is retired, so there is no longer a second
@@ -32,8 +32,8 @@ Four blocks of rows:
 
 ``fig2_pair``       the Figure 2 workflow fills (phase tints, phase header
                     bands and the solid prediction head).  Figure 2 encodes no
-                    tool, so BUILD_CONTRACT_V3 9.4 does not reach it and
-                    BUILD_CONTRACT 4.2 still governs those five accents.
+                    tool, so the internal build contract 9.4 does not reach it and
+                    the internal build contract 4.2 still governs those five accents.
                     Adjacent phases must stay distinguishable; every box also
                     carries a text label, so the threshold here is
                     informational.
@@ -49,7 +49,7 @@ The prose summary that the Methods and the supplement quote is
 
 Usage
 -----
-    /path/to/conda/bin/python make_palette_cvd_check.py
+    /path/to/anaconda3/bin/python make_palette_cvd_check.py
 """
 
 from __future__ import annotations
@@ -455,7 +455,7 @@ holdout model in no panel at all.
 
 Figure 2, the workflow schematic, encodes no tool, so the reversion of the tool
 palette does not reach it; it keeps the five phase accents fixed by
-BUILD_CONTRACT section 4.2 and their darkened companions for the two fills that
+the internal build contract section 4.2 and their darkened companions for the two fills that
 carry reversed-out white text. Those accents never encode data, every box in the
 schematic is labelled in text, and all {len(tc)} text-on-fill pairs clear the
 WCAG AA 4.5:1 target.

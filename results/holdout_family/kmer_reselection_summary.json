@@ -188,7 +188,7 @@
       "archaeal_prevalence_cutoff": 791,
       "bacterial_max_prevalence": 992,
       "archaeal_max_prevalence": 998,
-      "output_file": "/path/to/home/projects/magicc2/data/kmer_selection/selected_kmers.txt"
+      "output_file": "/path/to/magicc/data/kmer_selection/selected_kmers.txt"
     },
     "archaeal_only_share_pct": 2.69
   },

@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 
-os.chdir('/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2')
+os.chdir('/path/to/magicc-legacy')
 
 NCBI_DIR = Path('data/ncbi')
 RESULTS_DIR = Path('results/ncbi_comparison')

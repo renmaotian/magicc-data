@@ -13,7 +13,7 @@ set -u
 cd /path/to/magicc
 export MAGICC_HOLDOUT_LEVEL=family
 export PYTHONHASHSEED=0
-PY=/path/to/conda/envs/magicc2/bin/python
+PY=/path/to/anaconda3/envs/magicc2/bin/python
 LOG=logs/revision/ws1.9_pipeline.log
 WORKERS=24            # cap: a GUNC job (~8 threads) and other CPU agents share the box
 mkdir -p logs/revision

@@ -18,7 +18,7 @@ sorted by gtdb_accession, so the selection depends only on (candidate set, seed)
 on pandas/row-order behaviour.
 
 `fasta_path` in the split files points at a historical project root
-(/path/to/home/projects/magicc2/...). It is re-rooted to this checkout and the existence
+(/path/to/magicc/...). It is re-rooted to this checkout and the existence
 of every file is verified.
 
 Outputs:
@@ -44,8 +44,8 @@ SPLITS_DIR = DATA_DIR / 'splits'
 BENCHMARK_DIR = DATA_DIR / 'benchmarks'
 RESULTS_DIR = PROJECT_DIR / 'results' / 'revision'
 
-LEGACY_ROOTS = ['/path/to/home/projects/magicc2',
-                '/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2']
+LEGACY_ROOTS = ['/path/to/magicc',
+                '/path/to/magicc-legacy']
 
 N_PER_SET = 100
 SEEDS = {'C_clean': 7001, 'D_clean': 7002}

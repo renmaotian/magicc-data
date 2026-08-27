@@ -31,7 +31,7 @@ from pathlib import Path
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = Path('/path/to/home/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc')
 SET_E_DIR = PROJECT_DIR / 'data' / 'benchmarks' / 'set_E'
 FASTA_DIR = SET_E_DIR / 'fasta'
 METADATA_PATH = SET_E_DIR / 'metadata.tsv'

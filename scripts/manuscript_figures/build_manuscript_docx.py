@@ -52,9 +52,9 @@ What the script does, in order:
     paragraph below its display item, resolve every cross-reference, render both
     to PDF and sweep for anything painted past the right margin.
 
-Run:  /path/to/conda/bin/python build_manuscript_docx.py
-      /path/to/conda/bin/python build_manuscript_docx.py --clean-only
-      /path/to/conda/bin/python build_manuscript_docx.py --marked-only
+Run:  /path/to/anaconda3/bin/python build_manuscript_docx.py
+      /path/to/anaconda3/bin/python build_manuscript_docx.py --clean-only
+      /path/to/anaconda3/bin/python build_manuscript_docx.py --marked-only
 """
 
 from __future__ import annotations

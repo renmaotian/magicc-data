@@ -2,7 +2,7 @@
 
 **Established 2026-08-26 by direct inspection. Nothing was built, tagged, pushed or published.**
 
-The question: `containers/magicc_0.3.0.sif` exists on disk, `REPO_RELEASE_RECORD.md`
+The question: `containers/magicc_0.3.0.sif` exists on disk, the internal repository release record
 names `containers/magicc_0.3.1.sif`, and `supplementary_revised.md` refers to a Docker
 image `magicc:0.3.0`. What actually exists?
 
@@ -27,7 +27,7 @@ image `magicc:0.3.0`. What actually exists?
 carries the tag **0.3.0** in its own embedded metadata, so it cannot be renamed into a
 0.3.1 artefact without rebuilding — the label block would still say 0.3.0.
 
-### The `REPO_RELEASE_RECORD.md` row is wrong
+### The the internal repository release record row is wrong
 
 Its "deliberately NOT published" table contains:
 
@@ -60,7 +60,7 @@ sudo — re-confirmed today: `unshare -rn` fails with `Operation not permitted`)
 | `magicc:0.3.1` | `sha256:38804a236e32…` | 2026-08-25T11:56:57-05:00 | `0.3.1` | `b84346…b3096` | **`[]`** |
 
 Both carry the correct V5 model hash. The `magicc:0.3.1` image ID matches the one
-`REPO_RELEASE_RECORD.md` §4 records (`sha256:38804a236e32…`), so the 0.3.1 Docker image
+the internal repository release record §4 records (`sha256:38804a236e32…`), so the 0.3.1 Docker image
 **was** built on release day, contrary to what the SIF situation suggests.
 
 **Empty `RepoDigests` on both images means neither has ever been pushed to or pulled from
@@ -102,7 +102,7 @@ SIF exist only on this host.
    correct. It should not be silently rewritten to 0.3.1 — that would misdescribe which
    image was measured. (The 0.3.0 image lacks `--input-list`, so a 0.3.1 rerun would be a
    different, stronger probe — but it has not been run.)
-5. `REPO_RELEASE_RECORD.md`'s `containers/magicc_0.3.1.sif | 367 MB` row must be
+5. the internal repository release record's `containers/magicc_0.3.1.sif | 367 MB` row must be
    corrected: that file does not exist.
 
 **Nothing was built, retagged or published in producing this record.**

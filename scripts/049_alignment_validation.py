@@ -38,7 +38,7 @@ import glob as glob_module
 # ============================================================================
 # Configuration
 # ============================================================================
-PROJECT_DIR = Path("/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2")
+PROJECT_DIR = Path("/path/to/magicc-legacy")
 DATA_DIR = PROJECT_DIR / "data" / "pathogen_analysis"
 GTDB_FILE = PROJECT_DIR / "data" / "gtdb" / "bac120_metadata.tsv.gz"
 COMPARISON_FILE = DATA_DIR / "comparison_results.tsv"

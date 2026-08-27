@@ -4,7 +4,7 @@ resubmission (v2).
 
 S1-S15 keep their previous numbering and content and are only repaletted onto
 the author-mandated palette of ``figstyle`` -- the ORIGINAL submission's
-four-tool set restored by BUILD_CONTRACT_V3.md 9.4 (MAGICC #d62728 red,
+four-tool set restored by the internal build contract 9.4 (MAGICC #d62728 red,
 CheckM2 #1f77b4 blue, CoCoPyE #2ca02c green, DeepCheck #9467bd purple).  S16 and
 S17 are new composites carrying the panels that left main-text Figures 4 and 5;
 they are drawn by ``panels_taxonomy`` and ``panels_realdata``, the same modules
@@ -2285,7 +2285,7 @@ PANEL_LETTERS = set("abcdefgh")
 
 
 def _tidy_caption(text: str) -> str:
-    """BUILD_CONTRACT 2.1: bold only for the leading figure number and panel letters.
+    """the internal build contract 2.1: bold only for the leading figure number and panel letters.
 
     The registered captions open with ``**Supplementary Figure SN | Title.**``
     and mark panel letters with ``**a**``.  This rewrites the opening to

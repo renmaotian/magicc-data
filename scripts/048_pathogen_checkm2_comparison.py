@@ -31,7 +31,7 @@ from collections import defaultdict
 
 # ─── Configuration ───────────────────────────────────────────────────────────
 
-PROJECT_ROOT = Path("/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2")
+PROJECT_ROOT = Path("/path/to/magicc-legacy")
 GTDB_METADATA = PROJECT_ROOT / "data" / "gtdb" / "bac120_metadata.tsv.gz"
 OUTPUT_DIR = PROJECT_ROOT / "data" / "pathogen_analysis"
 MAGICC_MODEL = PROJECT_ROOT / "models" / "magicc_v3.onnx"

@@ -4,18 +4,18 @@
 Each figure builder writes its own legend to ``figures/caption_parts/Figure_N.md``
 as it renders, so the caption can never quote a number the figure did not read
 from ``results/revision/``.  This script concatenates the five parts, checks the
-BUILD_CONTRACT rules that apply to legends, and writes the single file the Word
+the internal build contract rules that apply to legends, and writes the single file the Word
 builder consumes.
 
 Checks enforced (a failure is fatal):
   * all five parts exist;
   * every caption ends with ``figstyle.DENOM_NOTE``;
   * the only bold spans are the leading ``**Figure N.**`` and single panel
-    letters ``**a**`` (BUILD_CONTRACT 2.1);
+    letters ``**a**`` (the internal build contract 2.1);
   * no caption cites `cold_vs_warm.tsv`, and none reports R2 0.656 for
     set_C_clean completeness (traps T3/T4).
 
-    /path/to/conda/bin/python make_captions_main.py
+    /path/to/anaconda3/bin/python make_captions_main.py
 """
 
 from __future__ import annotations
@@ -119,7 +119,7 @@ def check(fig: int, text: str) -> None:
     n = word_count(text)
     if n > MAX_LEGEND_WORDS:
         raise SystemExit(f"Figure {fig}: legend is {n} words, cap is "
-                         f"{MAX_LEGEND_WORDS} (BUILD_CONTRACT_V3 1)")
+                         f"{MAX_LEGEND_WORDS} (the internal build contract 1)")
     if not text.rstrip().endswith(DENOM_NOTE):
         raise SystemExit(f"Figure {fig}: caption does not end with figstyle.DENOM_NOTE")
     if not text.startswith(f"**Figure {fig}.**"):

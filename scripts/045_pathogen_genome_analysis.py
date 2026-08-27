@@ -28,7 +28,7 @@ import csv
 from pathlib import Path
 
 # Add project root to path so magicc modules can be imported
-PROJECT_DIR = "/mnt/5c77b453-f7e1-48c8-afa3-5641857a41c7/tianrm/projects/magicc2"
+PROJECT_DIR = "/path/to/magicc-legacy"
 sys.path.insert(0, PROJECT_DIR)
 
 from magicc.fragmentation import read_fasta

@@ -6,7 +6,7 @@
 #
 set -u
 cd /path/to/magicc
-PY=/path/to/conda/envs/magicc2/bin/python
+PY=/path/to/anaconda3/envs/magicc2/bin/python
 LOG=logs/revision/ws1.6_pipeline.log
 say() { echo "[$(date '+%F %T')] $*" | tee -a "$LOG"; }
 

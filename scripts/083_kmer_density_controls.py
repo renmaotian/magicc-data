@@ -38,7 +38,7 @@ Usage
 -----
     python scripts/83_kmer_density_controls.py \
         --kraken2-db tools/kraken2_db_standard \
-        --kraken2-bin /path/to/conda/envs/kraken2_env/bin/kraken2 \
+        --kraken2-bin /path/to/anaconda3/envs/kraken2_env/bin/kraken2 \
         --db-tag k2std --per-stratum 40 --threads 12
 
 Outputs (``results/revision/contamination_evidence/``)
@@ -151,7 +151,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument('--kraken2-db', required=True)
     ap.add_argument('--kraken2-bin',
-                    default='/path/to/conda/envs/kraken2_env/bin/kraken2')
+                    default='/path/to/anaconda3/envs/kraken2_env/bin/kraken2')
     ap.add_argument('--db-tag', required=True)
     ap.add_argument('--per-stratum', type=int, default=40)
     ap.add_argument('--threads', type=int, default=12)

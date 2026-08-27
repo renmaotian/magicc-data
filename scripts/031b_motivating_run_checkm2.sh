@@ -5,7 +5,7 @@
 
 set -euo pipefail
 
-PROJECT_DIR="/path/to/home/projects/magicc2"
+PROJECT_DIR="/path/to/magicc"
 CHECKM2_DB="${PROJECT_DIR}/tools/checkm2_db/CheckM2_database/uniref100.KO.1.dmnd"
 CONDA_ENV="checkm2_py39"
 THREADS=32

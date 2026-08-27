@@ -55,9 +55,9 @@ a human can confirm.  Image binaries are never marked.
 
 Run::
 
-    /path/to/conda/bin/python build_tracked_changes.py
-    /path/to/conda/bin/python build_tracked_changes.py --no-pdf
-    /path/to/conda/bin/python build_tracked_changes.py --supp-probe
+    /path/to/anaconda3/bin/python build_tracked_changes.py
+    /path/to/anaconda3/bin/python build_tracked_changes.py --no-pdf
+    /path/to/anaconda3/bin/python build_tracked_changes.py --supp-probe
 
 **The manuscript is still being edited.  Re-run this script after
 ``manuscript_revised.md`` is final and ``build_manuscript_docx.py`` has been
@@ -2012,9 +2012,9 @@ def write_report(report, supp, clean_current_diffs):
           "ships, run:\n"
           ">\n"
           "> ```\n"
-          "> /path/to/conda/bin/python "
+          "> /path/to/anaconda3/bin/python "
           "nature_communications/resubmission3/scripts/build_manuscript_docx.py\n"
-          "> /path/to/conda/bin/python "
+          "> /path/to/anaconda3/bin/python "
           "nature_communications/resubmission3/scripts/build_tracked_changes.py\n"
           "> ```\n"
           ">\n"
@@ -2308,7 +2308,7 @@ def write_report(report, supp, clean_current_diffs):
     A("**Verdict: a tracked-changes supplementary is not meaningful, and none "
       "is shipped.** The paragraph below is written to be pasted verbatim into "
       "the response letter (item E12) and into `README.md`, which "
-      "`BUILD_CONTRACT_V3.md` §7.1 requires when the supplementary is not "
+      "`the internal build contract` §7.1 requires when the supplementary is not "
       "supplied with track changes.\n")
     A("> " + supp_txt.replace("\n", "\n> ").rstrip("> \n") + "\n")
 

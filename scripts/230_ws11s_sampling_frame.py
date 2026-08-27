@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-WS11.S (resubmission3, BUILD_CONTRACT_V3 §5.3) -- catalogue-scale SPIRE sampling frame.
+WS11.S (resubmission3, the internal build contract §5.3) -- catalogue-scale SPIRE sampling frame.
 
 Reviewer 2 (R2-M3) asked for MAGICC to be applied to one or more large public MAG
 collections and for the proportion whose MIMAG-inspired classification changes.  The

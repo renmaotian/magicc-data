@@ -13,7 +13,7 @@ set -u
 cd /path/to/magicc
 export MAGICC_HOLDOUT_LEVEL=genus
 export PYTHONHASHSEED=0
-PY=/path/to/conda/bin/python
+PY=/path/to/anaconda3/bin/python
 LOG=logs/revision/ws11g_pipeline.log
 WORKERS=30            # cap: other heavy jobs share this 48-core box
 RES=results/revision/holdout_genus

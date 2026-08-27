@@ -13,7 +13,7 @@ extensively (cross-reference renumbering across five figures and one table, a ne
 opening note, three factual corrections, 865 decorative bold spans stripped, 14
 corrected Methods subsection titles), so re-running the old script would have
 silently destroyed all of it.  That was recorded as trap T12 in
-``project_progress_and_results.md`` §11.9.
+`the internal project log` §11.9.
 
 This version inverts the dependency.  ``response_to_reviewers.md`` is now the
 single source of truth and this script only *renders* it.  The hard-coded corpus
@@ -54,7 +54,7 @@ run against the set of bold spans the Markdown actually asks for; confirm nothin
 is painted past the right margin; render to PDF and report the page count and
 page size.
 
-Run:  /path/to/conda/bin/python build_response_docx.py
+Run:  /path/to/anaconda3/bin/python build_response_docx.py
 """
 
 from __future__ import annotations

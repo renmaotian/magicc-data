@@ -275,7 +275,7 @@ def main():
         'contamination=0% + 100,000 completeness=100%/contamination=0-10% '
         '= 1,000,000 train; 100,000 val; 100,000 test '
         '(see scripts/50_generate_v5_training_data.py and Phase 4 of '
-        'project_progress_and_results.md)'
+        'the internal project log)'
     )
     h5_block['reference_genomes'] = (
         'Synthesised from the 79,948-genome train split for train, the 10,010-genome '

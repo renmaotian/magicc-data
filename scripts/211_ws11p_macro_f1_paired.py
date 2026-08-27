@@ -3,7 +3,7 @@
 211_ws11p_macro_f1_paired.py  --  WS11.P
 ========================================
 PAIRED TESTS FOR THE MACRO-F1 CLAIM, AND THE POWER STATEMENT FOR THE NEGATIVE
-RESULTS (BUILD_CONTRACT_V3 section 6.2).
+RESULTS (the internal build contract section 6.2).
 
 PART 1 -- PAIRED MACRO F1
 -------------------------

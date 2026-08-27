@@ -2,10 +2,10 @@
 """Nature Communications Article limit and hygiene checker for resubmission3.
 
 Counts what the journal counts, then enforces the acceptance gates of
-``BUILD_CONTRACT_V3.md`` §1 and §13.  Prints one PASS/FAIL row per gate and
+``the internal build contract`` §1 and §13.  Prints one PASS/FAIL row per gate and
 exits non-zero if any gate fails.
 
-    /path/to/conda/bin/python \\
+    /path/to/anaconda3/bin/python \\
         nature_communications/resubmission3/scripts/check_limits.py [manuscript.md]
 
 Limit gates (main manuscript only)
@@ -56,12 +56,12 @@ PACKAGE_DOCS = [
 
 LIMITS = {
     "main_text": 5000,
-    "abstract": 150,          # BUILD_CONTRACT_V3 §1: was 200
+    "abstract": 150,          # the internal build contract §1: was 200
     "title": 15,
     "methods": 3000,
     "display_items": 10,
     "references": 70,
-    "legend": 350,            # BUILD_CONTRACT_V3 §1: per figure / table legend
+    "legend": 350,            # the internal build contract §1: per figure / table legend
 }
 
 #: A display-item block starts at a ``[[FIGURE:n]]`` / ``[[TABLE:n]]`` marker and runs
@@ -188,7 +188,7 @@ XREF_BOLD = re.compile(
 
 
 #: Verbatim reviewer/editor quotations are blockquotes and must stay
-#: byte-identical (BUILD_CONTRACT_V3 §11), so banned words inside them are
+#: byte-identical (the internal build contract §11), so banned words inside them are
 #: reported for information but never fail a gate.
 QUOTE = re.compile(r"^\s*>")
 

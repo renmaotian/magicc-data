@@ -16,11 +16,11 @@
     4
   ],
   "reference_output_sha256": "7a5d34003c420a3fd7f7a676c6e503618b97eb95a7cd44b950811b87bcaacee4",
-  "console_script": "/path/to/conda/envs/magicc2/bin/magicc",
+  "console_script": "/path/to/anaconda3/envs/magicc2/bin/magicc",
   "environment": {
     "python": "3.11.0",
     "platform": "linux",
-    "executable": "/path/to/conda/envs/magicc2/bin/python"
+    "executable": "/path/to/anaconda3/envs/magicc2/bin/python"
   },
   "checks": [
     {
@@ -96,6 +96,6 @@
   "training_reproducibility": {
     "seeded": false,
     "statement": "V5 training was never seeded (verified by code inspection of magicc/trainer.py and scripts/53_train_v5_run3.py), so the released weights cannot be re-derived bit-exactly from the training data. The released artefact is pinned by SHA256 instead. This report establishes determinism of INFERENCE only.",
-    "protocol_reference": "project_design_and_protocol.md section 4.4b"
+    "protocol_reference": "the internal design protocol section 4.4b"
   }
 }

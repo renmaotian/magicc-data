@@ -12,7 +12,7 @@ import sys
 import pandas as pd
 from pathlib import Path
 
-PROJECT_DIR = Path('/path/to/home/projects/magicc2')
+PROJECT_DIR = Path('/path/to/magicc')
 DATA_DIR = PROJECT_DIR / 'data'
 SPLITS_DIR = DATA_DIR / 'splits'
 
