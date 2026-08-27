@@ -6,7 +6,7 @@ requirements **E2, E5, E6**. Prepared 2026-07-26.
 
 > **Publication status (2026-08-27).** This was written on 2026-07-26, when nothing
 > had yet been published. Since then the software has been released
-> (github.com/renmaotian/magicc tag `v0.3.1`, PyPI `magicc` 0.3.1) and the data,
+> (github.com/renmaotian/magicc, current tag `v0.3.3`; the results here were produced with the code of `v0.3.1`, and `v0.3.2`/`v0.3.3` change only how the model is fetched and checksummed) and the data,
 > results and analysis code deposited in this repository. The Bioconda recipe is
 > shipped but **not** submitted to bioconda-recipes. Paths below of the form
 > `results/revision/...` are workspace paths; in this repository that material is
