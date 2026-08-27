@@ -1,0 +1,19 @@
+# scripts/holdout_lib/ provenance for WS1.9 (leave-FAMILY-out), 2026-07-27 16:31:50
+#
+# The EIGHT frozen copies of magicc/*.py (the V5 code path, commit 5b6a9a6) are
+# BYTE-IDENTICAL to the WS1.6 record in FROZEN_SHA256.txt and were NOT touched.
+# Only config.py changed, to add the phylum|family level switch (MAGICC_HOLDOUT_LEVEL)
+# so scripts 121-126 are a single code path shared by both experiments.
+# FROZEN_SHA256.txt is left untouched so the completed WS1.6 run keeps its own record.
+#
+e068ae0b5947c7e51c6a8eed0266da786c4176a5e5ea1abf09746da36a26f6f5  scripts/holdout_lib/assembly_stats.py
+3769b48556a45fa5d807dbf56b2937f8234829af139e95a0ab58ee727783d288  scripts/holdout_lib/config.py
+f108c65558b36341b7e62f22c7c0f60a1c30fa1b6eeba6f6718ad15f919cb23d  scripts/holdout_lib/contamination.py
+77e5e14b20f6fc9cba865831967f351f92aa74c5327a38e54103391959eabadf  scripts/holdout_lib/fragmentation.py
+d2f27de5d6a51d1cd0e4597d083ad9ea78da4daa186e62f13608895e7a4a0581  scripts/holdout_lib/__init__.py
+247441b4b1f69ff83e6e7f84c21a6c9d1d78f920d20e18eb00970d5b7f45a325  scripts/holdout_lib/kmer_counter.py
+93af9512d58013cfbe414a1a626bb12d9829d0b0c856bc03bea903e00d75bafe  scripts/holdout_lib/model.py
+8a353c165de8bf12d25fbf6b60e8ae9d6a4ef8df40aa67301033e9ea4d6adb68  scripts/holdout_lib/normalization.py
+2e53fb63c6ba8edea9b2c875215e72926d7edda4201eb2857faab420862dad52  scripts/holdout_lib/seeding.py
+89fdf78532d5086735ceb789413ef4ced44feeffbde189ee17b16252b7c09b7c  scripts/holdout_lib/storage.py
+a8c98b306787066a1a866c12fb51836b26133050e82f31ea9e8f23051046c676  scripts/holdout_lib/trainer.py

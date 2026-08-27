@@ -1,0 +1,413 @@
+# ---------------------------------------------------------------------------
+# Configuration for the MAGICC Nature Communications revision metrics
+# framework (WS5.1 - WS5.7).
+#
+# ADDING A NEW BENCHMARK SET
+#   Append an entry under `sets:`. Nothing else needs to change. Sets that are
+#   listed but not yet present on disk are skipped with a note; sets present on
+#   disk but not listed are auto-discovered (see `autodiscover`) and analysed
+#   with the default settings below.
+#
+# ADDING A NEW TOOL
+#   Append an entry under `tools:` giving the prediction filename. Tools with no
+#   prediction file for a given set are skipped for that set only.
+#
+# Every path is relative to the project root.
+# ---------------------------------------------------------------------------
+
+project_root: /path/to/magicc
+benchmark_root: data/benchmarks
+splits_dir: data/splits            # read-only; used for the dominant-genome provenance audit
+output_root: results/revision/metrics
+
+# --- compute limits (other agents + a GPU training job run concurrently:
+#     keep <= 6 workers) -------------------------------------------------------
+n_jobs: 6
+blas_threads: 1
+
+# --- reproducibility --------------------------------------------------------
+random_seed: 20260726
+
+bootstrap:
+  n_iter: 2000                     # bootstrap replicates for CIs
+  n_iter_slow: 1000                # replicates for O(n^2) statistics (Hodges-Lehmann)
+  ci_level: 0.95
+  method: percentile               # percentile bootstrap
+  cluster_default: dominant_accession   # column defining resampling clusters
+
+# --- MIMAG-inspired quality classification ---------------------------------
+# Bowers et al. 2017 thresholds on completeness / contamination ONLY.
+# rRNA / tRNA criteria of the full MIMAG standard cannot be evaluated from
+# completeness+contamination estimates and are therefore NOT applied; outputs
+# label this as "MIMAG-inspired (completeness/contamination only)".
+# Rule (hierarchical, evaluated in order):
+#   high   : completeness >= 90 AND contamination <  5
+#   medium : completeness >= 50 AND contamination < 10   (and not high)
+#   low    : everything else
+mimag:
+  high:   {completeness_min: 90.0, contamination_max: 5.0}
+  medium: {completeness_min: 50.0, contamination_max: 10.0}
+  completeness_inclusive: true     # >= completeness_min
+  contamination_inclusive: false   # <  contamination_max (strict, per Bowers et al.)
+  classes: [high, medium, low]
+
+# --- decision thresholds that matter in practice (Reviewer 2, major 2) -----
+thresholds:
+  contamination: [5.0, 10.0]       # pass  <=> contamination <  tau
+  completeness:  [50.0, 90.0]      # pass  <=> completeness  >= tau
+
+# --- stratification for signed-error analysis (WS5.3) ---------------------
+strata:
+  contamination_bins:
+    edges:  [0.0, 0.0001, 5.0, 10.0, 20.0, 40.0, 100.1]
+    labels: ["0 (uncontaminated)", "(0,5)", "[5,10)", "[10,20)", "[20,40)", "[40,100]"]
+  min_phylum_n: 30                 # phyla with fewer rows are pooled into "Other (n<30)"
+
+# --- tools -----------------------------------------------------------------
+# role: primary   -> the released model, focus of all headline comparisons
+#       secondary -> reported side by side for manuscript/version reconciliation
+#       competitor-> included in the BH-corrected test family
+#       superseded-> reported for transparency, EXCLUDED from the test family
+tools:
+  magicc_v5:
+    file: magicc_v5_predictions.tsv
+    label: MAGICC v5 (released, v0.3.0)
+    short: MAGICC v5
+    role: primary
+    note: 9,249 core-gene 9-mers + 7 k-mer summary features
+  magicc_v4:
+    file: magicc_v4_predictions.tsv
+    label: MAGICC v4 (numbers in submitted manuscript)
+    short: MAGICC v4
+    role: secondary
+    note: same feature set as v5, trained on the 800k dataset
+  magicc_v3:
+    file: magicc_predictions.tsv
+    label: MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)
+    short: MAGICC v3
+    role: superseded
+    note: >
+      Retained only for provenance. v3 consumed assembly statistics
+      (contig count, N50, ...) that directly encode the simulated
+      fragmentation, so its synthetic-benchmark accuracy is optimistic and it
+      generalised worse; assembly statistics were removed in v4.
+  checkm2:
+    file: checkm2_predictions.tsv
+    label: CheckM2 1.0.1
+    short: CheckM2
+    role: competitor
+  cocopye:
+    file: cocopye_predictions.tsv
+    label: CoCoPyE 0.5.0
+    short: CoCoPyE
+    role: competitor
+  deepcheck:
+    file: deepcheck_predictions.tsv
+    label: DeepCheck
+    short: DeepCheck
+    role: competitor
+
+# Tools that participate in the two-sided, cluster-bootstrapped, BH-corrected
+# comparison family of WS5.4 (reference tool vs each of these).
+statistics:
+  reference_tool: magicc_v5
+  comparison_tools: [magicc_v4, checkm2, cocopye, deepcheck]
+  metrics: [abs_err_completeness, abs_err_contamination]
+  bh_alpha: 0.05
+  # BH family: every (set x metric x comparison) test produced in one run.
+  bh_family: run
+
+# --- benchmark sets --------------------------------------------------------
+# status: current            -> use for headline numbers
+#         superseded_leaky   -> report, but label as withdrawn (training leakage)
+#         legacy_superseded  -> replaced by a v2 rebuild
+#         motivating         -> existing-tool-only sets in the manuscript (Table S1)
+# tier:   primary   (default for status=current)     -> headline; in main figures
+#                                                        and in the primary BH family
+#         reported  (default for status=superseded_leaky) -> in all tables and
+#                                                        figures, clearly labelled
+#                                                        SUPERSEDED; separate BH family
+#         secondary -> in the metric tables only; excluded from main figures and
+#                      from every BH family
+# relatedness: how contaminant genomes were drawn relative to the dominant.
+#         Resolved per row: rows with true contamination == 0 always become
+#         "none (uncontaminated)". Otherwise `relatedness_rule` is applied.
+#         "from_sample_type" parses the sample_type column for the substrings
+#         within_phylum / cross_phylum; "fixed:<value>" assigns a constant.
+sets:
+  - name: set_A_v2
+    dir: set_A_v2
+    label: "Set A (completeness gradient, 0% contamination)"
+    status: current
+    design: "1,000 NCBI finished test-split dominants; completeness 50-100%; no contaminants"
+    relatedness_rule: "fixed:none (uncontaminated)"
+  - name: set_B_v2
+    dir: set_B_v2
+    label: "Set B (contamination gradient, 100% completeness)"
+    status: current
+    design: "1,000 NCBI finished test-split dominants at 100% completeness; cross-phylum contamination 0-80%"
+    relatedness_rule: "fixed:cross_phylum"
+  - name: set_C
+    dir: set_C
+    label: "Set C (Patescibacteriota) - SUPERSEDED (training leakage)"
+    status: superseded_leaky
+    design: "1,000 Patescibacteriota dominants drawn from train+val+test; completeness 50-100%, cross-phylum contamination 0-100%"
+    relatedness_rule: "fixed:cross_phylum"
+    superseded_by: set_C_clean
+  - name: set_D
+    dir: set_D
+    label: "Set D (Archaea) - SUPERSEDED (training leakage)"
+    status: superseded_leaky
+    design: "1,000 archaeal dominants drawn from train+val+test; completeness 50-100%, cross-phylum contamination 0-100%"
+    relatedness_rule: "fixed:cross_phylum"
+    superseded_by: set_D_clean
+  - name: set_E
+    dir: set_E
+    label: "Set E (realistic mixture)"
+    status: current
+    design: "1,000 NCBI finished test-split dominants; 200 pure + 200 complete + 600 mixed (70% cross-/30% within-phylum)"
+    relatedness_rule: from_sample_type
+  # --- clean replacements, generated concurrently; skipped until present -----
+  - name: set_C_clean
+    dir: set_C_clean
+    label: "Set C-clean (Patescibacteriota, held-out test split)"
+    status: current
+    design: "100 test-split Patescibacteriota references x 10 simulations; completeness 50-100%, cross-phylum contamination 0-100% from test split only"
+    relatedness_rule: "fixed:cross_phylum"
+  - name: set_D_clean
+    dir: set_D_clean
+    label: "Set D-clean (Archaea, held-out test split)"
+    status: current
+    design: "100 test-split archaeal references x 10 simulations; cross-phylum contamination 0-100% from test split only"
+    relatedness_rule: "fixed:cross_phylum"
+  # --- superseded v1 sets and the existing-tool-only motivating sets --------
+  # Kept in every metric table for completeness (tier: secondary) but excluded
+  # from the main figures and from the BH-corrected test families.
+  - name: set_A
+    dir: set_A
+    label: "Set A v1 (superseded by Set A v2)"
+    status: legacy_superseded
+    tier: secondary
+    design: "600 genomes, completeness gradient; replaced by set_A_v2"
+    relatedness_rule: "fixed:none (uncontaminated)"
+    superseded_by: set_A_v2
+  - name: set_B
+    dir: set_B
+    label: "Set B v1 (superseded by Set B v2)"
+    status: legacy_superseded
+    tier: secondary
+    design: "600 genomes, contamination gradient; replaced by set_B_v2"
+    relatedness_rule: "fixed:cross_phylum"
+    superseded_by: set_B_v2
+  - name: motivating_v2_set_A
+    dir: motivating_v2/set_A
+    label: "Motivating Set A (Table S1a): completeness gradient"
+    status: motivating
+    tier: secondary
+    design: "1,000 finished test-split dominants, completeness gradient; existing tools only in the manuscript"
+    relatedness_rule: "fixed:none (uncontaminated)"
+  - name: motivating_v2_set_B
+    dir: motivating_v2/set_B
+    label: "Motivating Set B (Table S1b): contamination gradient"
+    status: motivating
+    tier: secondary
+    design: "1,000 finished test-split dominants at 100% completeness, cross-phylum contamination 0-80%"
+    relatedness_rule: "fixed:cross_phylum"
+  - name: motivating_v2_set_C
+    dir: motivating_v2/set_C
+    label: "Motivating Set C (Table S1c): realistic mixture"
+    status: motivating
+    tier: secondary
+    design: "1,000 finished test-split dominants, realistic mixture"
+    relatedness_rule: from_sample_type
+  - name: motivating_set_A
+    dir: motivating/set_A
+    label: "Motivating Set A v1 (superseded)"
+    status: legacy_superseded
+    tier: secondary
+    design: "600 genomes; replaced by motivating_v2/set_A"
+    relatedness_rule: "fixed:none (uncontaminated)"
+    superseded_by: motivating_v2_set_A
+  - name: motivating_set_B
+    dir: motivating/set_B
+    label: "Motivating Set B v1 (superseded)"
+    status: legacy_superseded
+    tier: secondary
+    design: "1,100 genomes; replaced by motivating_v2/set_B"
+    relatedness_rule: "fixed:cross_phylum"
+    superseded_by: motivating_v2_set_B
+
+# Auto-discovery: any directory under benchmark_root matching one of these glob
+# patterns that contains metadata.tsv and is not listed above is analysed with
+# default settings and flagged `autodiscovered` in the inventory.
+autodiscover:
+  enabled: true
+  patterns: ["set_*", "*/set_*"]
+  default_status: current
+  default_relatedness_rule: from_sample_type
+
+# --- denominator statement, required verbatim in every caption (WS5.7) -----
+denominators:
+  completeness: >-
+    completeness (%) = retained dominant-genome bp / full reference length of the
+    dominant genome x 100
+  contamination: >-
+    contamination (%) = total contaminant bp / full reference length of the
+    dominant genome x 100
+  note: >-
+    Both percentages use the same denominator (the full reference length of the
+    dominant genome) and are therefore independent measures; contamination is
+    not normalised to total assembly length or to retained dominant length.
+
+# --- colour-vision-deficiency-safe palette --------------------------------
+# Subset of Okabe-Ito chosen by exhaustive search over all 6-colour subsets to
+# maximise the minimum CIE76 Delta-E across normal, deuteranopic, protanopic and
+# tritanopic vision (script 101 --cvd-report verifies this; min Delta-E = 24.6).
+# No green is used anywhere, so no red/green discrimination is ever required.
+# Colour is always accompanied by a redundant cue (marker shape and/or position).
+palette:
+  name: Okabe-Ito (CVD-optimised 6-colour subset)
+  min_delta_e: 20.0
+  tools:
+    magicc_v5: "#0072B2"   # blue
+    magicc_v4: "#56B4E9"   # sky blue (deliberately related to v5)
+    magicc_v3: "#999999"   # grey (superseded)
+    checkm2:   "#D55E00"   # vermillion
+    cocopye:   "#F0E442"   # yellow (dark edge required)
+    deepcheck: "#000000"   # black
+  # ordered lightness ramp: inherently CVD-safe (min Delta-E = 32.5)
+  mimag:
+    high:   "#08306B"
+    medium: "#4292C6"
+    low:    "#BDD7E7"
+  sequential_cmap: cividis   # CVD-optimised
+  markers:
+    magicc_v5: "o"
+    magicc_v4: "s"
+    magicc_v3: "x"
+    checkm2:   "^"
+    cocopye:   "D"
+    deepcheck: "v"
+
+# ---------------------------------------------------------------------------
+# Published values from the SUBMITTED manuscript / supplementary and from
+# project_progress_and_results.md, used by
+#   python scripts/104_clustered_statistics.py --verify-only
+# to check every recomputed number against what is currently in print and to
+# emit an explicit discrepancy report. Values are transcribed verbatim.
+#   source: S1a/S1b/S1c = supplementary_v4.md Table S1; S2a/S2b/S2c = Table S2;
+#           S3 = Table S3; progress = project_progress_and_results.md
+# ---------------------------------------------------------------------------
+published_reference_values:
+  tolerance_pp: 0.05          # |recomputed - published| above this is flagged
+  tolerance_r2: 0.005
+  mae:
+    # source, set, tool, metric, published value (%)
+    - [S1a, motivating_v2_set_A, checkm2,   completeness, 2.54]
+    - [S1a, motivating_v2_set_A, cocopye,   completeness, 3.47]
+    - [S1a, motivating_v2_set_A, deepcheck, completeness, 4.15]
+    - [S1a, motivating_v2_set_A, checkm2,   contamination, 0.28]
+    - [S1a, motivating_v2_set_A, cocopye,   contamination, 0.73]
+    - [S1a, motivating_v2_set_A, deepcheck, contamination, 0.43]
+    - [S1b, motivating_v2_set_B, checkm2,   completeness, 0.42]
+    - [S1b, motivating_v2_set_B, cocopye,   completeness, 2.57]
+    - [S1b, motivating_v2_set_B, deepcheck, completeness, 6.74]
+    - [S1b, motivating_v2_set_B, checkm2,   contamination, 17.08]
+    - [S1b, motivating_v2_set_B, cocopye,   contamination, 19.14]
+    - [S1b, motivating_v2_set_B, deepcheck, contamination, 25.70]
+    - [S1c, motivating_v2_set_C, checkm2,   completeness, 9.13]
+    - [S1c, motivating_v2_set_C, cocopye,   completeness, 4.99]
+    - [S1c, motivating_v2_set_C, deepcheck, completeness, 11.96]
+    - [S1c, motivating_v2_set_C, checkm2,   contamination, 18.13]
+    - [S1c, motivating_v2_set_C, cocopye,   contamination, 20.32]
+    - [S1c, motivating_v2_set_C, deepcheck, contamination, 24.37]
+    # Table S2a: completeness MAE. The MAGICC column is v4 (verified below).
+    - [S2a, set_A_v2, magicc_v4, completeness, 2.59]
+    - [S2a, set_B_v2, magicc_v4, completeness, 3.12]
+    - [S2a, set_C,    magicc_v4, completeness, 3.36]
+    - [S2a, set_D,    magicc_v4, completeness, 5.20]
+    - [S2a, set_E,    magicc_v4, completeness, 5.71]
+    - [S2a, set_A_v2, checkm2,   completeness, 2.54]
+    - [S2a, set_B_v2, checkm2,   completeness, 0.45]
+    - [S2a, set_C,    checkm2,   completeness, 7.99]
+    - [S2a, set_D,    checkm2,   completeness, 9.89]
+    - [S2a, set_E,    checkm2,   completeness, 9.14]
+    - [S2a, set_A_v2, cocopye,   completeness, 3.63]
+    - [S2a, set_B_v2, cocopye,   completeness, 2.61]
+    - [S2a, set_C,    cocopye,   completeness, 15.73]
+    - [S2a, set_D,    cocopye,   completeness, 6.14]
+    - [S2a, set_E,    cocopye,   completeness, 5.02]
+    - [S2a, set_A_v2, deepcheck, completeness, 4.26]
+    - [S2a, set_B_v2, deepcheck, completeness, 6.61]
+    - [S2a, set_C,    deepcheck, completeness, 17.97]
+    - [S2a, set_D,    deepcheck, completeness, 9.97]
+    - [S2a, set_E,    deepcheck, completeness, 11.69]
+    # Table S2b: contamination MAE
+    - [S2b, set_A_v2, magicc_v4, contamination, 1.48]
+    - [S2b, set_B_v2, magicc_v4, contamination, 5.11]
+    - [S2b, set_C,    magicc_v4, contamination, 7.44]
+    - [S2b, set_D,    magicc_v4, contamination, 7.77]
+    - [S2b, set_E,    magicc_v4, contamination, 5.88]
+    - [S2b, set_A_v2, checkm2,   contamination, 0.27]
+    - [S2b, set_B_v2, checkm2,   contamination, 17.66]
+    - [S2b, set_C,    checkm2,   contamination, 42.37]
+    - [S2b, set_D,    checkm2,   contamination, 36.92]
+    - [S2b, set_E,    checkm2,   contamination, 18.47]
+    - [S2b, set_A_v2, cocopye,   contamination, 0.77]
+    - [S2b, set_B_v2, cocopye,   contamination, 19.14]
+    - [S2b, set_C,    cocopye,   contamination, 34.07]
+    - [S2b, set_D,    cocopye,   contamination, 25.73]
+    - [S2b, set_E,    cocopye,   contamination, 21.60]
+    - [S2b, set_A_v2, deepcheck, contamination, 0.40]
+    - [S2b, set_B_v2, deepcheck, contamination, 25.70]
+    - [S2b, set_C,    deepcheck, contamination, 44.56]
+    - [S2b, set_D,    deepcheck, contamination, 41.77]
+    - [S2b, set_E,    deepcheck, contamination, 25.43]
+    # Table S2c overall (5,000 genomes across Sets A,B,C,D,E)
+    - [S2c, POOLED_manuscript_5_sets, magicc_v4, completeness, 4.00]
+    - [S2c, POOLED_manuscript_5_sets, magicc_v4, contamination, 5.53]
+    - [S2c, POOLED_manuscript_5_sets, checkm2,   completeness, 6.00]
+    - [S2c, POOLED_manuscript_5_sets, checkm2,   contamination, 23.14]
+    - [S2c, POOLED_manuscript_5_sets, cocopye,   completeness, 6.62]
+    - [S2c, POOLED_manuscript_5_sets, cocopye,   contamination, 20.26]
+    - [S2c, POOLED_manuscript_5_sets, deepcheck, completeness, 10.10]
+    - [S2c, POOLED_manuscript_5_sets, deepcheck, contamination, 27.57]
+    # progress doc: V5 per-set MAE
+    - [progress_v5, set_A_v2, magicc_v5, completeness, 2.18]
+    - [progress_v5, set_A_v2, magicc_v5, contamination, 0.83]
+    - [progress_v5, set_B_v2, magicc_v5, completeness, 2.97]
+    - [progress_v5, set_B_v2, magicc_v5, contamination, 4.45]
+    - [progress_v5, set_C,    magicc_v5, completeness, 3.15]
+    - [progress_v5, set_C,    magicc_v5, contamination, 7.97]
+    - [progress_v5, set_D,    magicc_v5, completeness, 5.18]
+    - [progress_v5, set_D,    magicc_v5, contamination, 8.06]
+    - [progress_v5, set_E,    magicc_v5, completeness, 5.49]
+    - [progress_v5, set_E,    magicc_v5, contamination, 5.66]
+    - [progress_v5, POOLED_manuscript_5_sets, magicc_v5, completeness, 3.79]
+    - [progress_v5, POOLED_manuscript_5_sets, magicc_v5, contamination, 5.39]
+  r2:
+    # source, set, tool, metric, published R^2
+    - [S2a, set_A_v2, magicc_v4, completeness, 0.92]
+    - [S2a, set_C,    magicc_v4, completeness, 0.89]
+    - [S2a, set_D,    magicc_v4, completeness, 0.71]
+    - [S2a, set_E,    magicc_v4, completeness, 0.69]
+    - [S2b, set_B_v2, magicc_v4, contamination, 0.92]
+    - [S2b, set_C,    magicc_v4, contamination, 0.86]
+    - [S2b, set_D,    magicc_v4, contamination, 0.82]
+    - [S2b, set_E,    magicc_v4, contamination, 0.91]
+    - [S2c, POOLED_manuscript_5_sets, magicc_v4, completeness, 0.83]
+    - [S2c, POOLED_manuscript_5_sets, magicc_v4, contamination, 0.91]
+    - [S2c, POOLED_manuscript_5_sets, checkm2,   completeness, 0.67]
+    - [S2c, POOLED_manuscript_5_sets, checkm2,   contamination, 0.34]
+    - [S2c, POOLED_manuscript_5_sets, cocopye,   completeness, 0.65]
+    - [S2c, POOLED_manuscript_5_sets, cocopye,   contamination, 0.65]
+    - [S2c, POOLED_manuscript_5_sets, deepcheck, completeness, 0.48]
+    - [S2c, POOLED_manuscript_5_sets, deepcheck, contamination, 0.18]
+  mimag_macro_f1_ranges:
+    # Table S3 reports RANGES over Sets C and D (which Reviewer 1 objects to).
+    # Each entry: source, sets, tool, published low, published high, which macro
+    # F1 variant the published number corresponds to.
+    - [S3, [set_C, set_D], magicc_v4, 0.82, 0.87, macro_f1]
+    - [S3, [set_C, set_D], cocopye,   0.42, 0.71, macro_f1]
+    - [S3, [set_C, set_D], checkm2,   0.28, 0.37, macro_f1]
+    - [S3, [set_C, set_D], deepcheck, 0.21, 0.27, macro_f1]
