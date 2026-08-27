@@ -1,0 +1,15 @@
+group	model	n	mimag_agreement	true_HQ	pred_HQ	HQ_recall	HQ_precision	cont5_false_clean	cont5_false_dirty	cont10_false_clean	cont10_false_dirty	comp90_false_high	comp90_false_low
+Bacteroidota_Muribaculaceae_genera	holdout	1000	0.975	12	14	0.8333	0.7143	12	3	13	7	82	12
+Bacteroidota_Muribaculaceae_genera	V5	1000	0.975	12	14	0.8333	0.7143	12	3	13	7	82	12
+Bacteroidota_Flavobacteriaceae_genera	holdout	960	0.9583	13	22	0.9231	0.5455	18	6	17	15	111	23
+Bacteroidota_Flavobacteriaceae_genera	V5	960	0.9583	13	22	0.9231	0.5455	18	6	17	15	111	23
+Campylobacterota_Helicobacteraceae_genera	holdout	1020	0.9725	16	16	0.875	0.875	8	7	18	6	67	15
+Campylobacterota_Helicobacteraceae_genera	V5	1020	0.9725	16	16	0.875	0.875	8	7	18	6	67	15
+Campylobacterota_Arcobacteraceae_genera	holdout	990	0.9828	13	14	0.9231	0.8571	7	4	10	4	43	29
+Campylobacterota_Arcobacteraceae_genera	V5	990	0.9828	13	14	0.9231	0.8571	7	4	10	4	43	29
+Halobacteriota_halophilic_genera	holdout	1008	0.9732	6	3	0.3333	0.6667	3	11	14	8	63	41
+Halobacteriota_halophilic_genera	V5	1008	0.9732	6	3	0.3333	0.6667	3	11	14	8	63	41
+Patescibacteriota_genera	holdout	990	0.9384	18	29	0.7222	0.4483	19	17	19	28	46	73
+Patescibacteriota_genera	V5	990	0.9384	18	29	0.7222	0.4483	19	17	19	28	46	73
+in_distribution	holdout	1000	0.963	6	16	1.0	0.375	11	8	10	18	92	44
+in_distribution	V5	1000	0.963	6	16	1.0	0.375	11	8	10	18	92	44

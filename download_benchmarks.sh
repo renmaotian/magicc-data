@@ -3,9 +3,9 @@
 # download_benchmarks.sh -- fetch and verify the MAGICC benchmark assemblies.
 #
 # The assemblies are distributed as GitHub Release assets on this repository
-# (they are far too large for git).  Sets whose archive exceeds GitHub's 2 GB
-# per-asset limit are uploaded as fixed-size parts that this script
-# concatenates back into a single .tar.gz before verifying it.
+# (they are far too large for git).  Any archive over 1.8 GB is uploaded as
+# 1.5 GiB parts -- safely under GitHub's 2 GiB per-asset limit -- which this
+# script concatenates back into a single .tar.gz before verifying it.
 #
 #   bash download_benchmarks.sh                      # all eight sets
 #   bash download_benchmarks.sh set_C_clean set_E    # named sets only

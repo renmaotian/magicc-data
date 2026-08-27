@@ -1,0 +1,12 @@
+{
+  "design_replicate_slope_median": 21.22060614682908,
+  "design_replicate_slope_ci": [
+    7.812648224127473,
+    36.96635957869764
+  ],
+  "ws310_slope": 15.31,
+  "ws310_ci": [
+    12.31,
+    18.31
+  ]
+}

@@ -11,6 +11,7 @@ table are **not** here.
 | `panel_genus_detail.tsv` | one row per held-out genus |
 | `eda_genus_counts.tsv` | genus-level genome counts across the splits, the frame the panel was drawn from |
 | `level_switch_reproduction.json` | verification that the family and genus panels are re-derived by the same selection rule at a different taxonomic level |
+| `dryrun_v5_vs_v5/` | **complete.** The null control: the whole genus evaluation harness run with the production V5 model in *both* arms, so any effect it reports is measurement noise rather than lineage novelty. It fixes the evaluation cohort, the difference-in-differences machinery and the reporting layout that the real comparison will use |
 
 **Design constraint, verified rather than asserted:** every held-out genus's
 parent family *and* parent phylum remain in the training set, so the
@@ -18,8 +19,7 @@ evaluation measures genus-level novelty inside a known family — not the
 family- or phylum-level novelty already measured in `../holdout_family/` and
 `../holdout_phylum/`.
 
-These four files are a snapshot taken on 2026-08-27 while the workstream was
-running; `level_switch_reproduction.json` in particular is rewritten by the
+This is a snapshot taken on 2026-08-27 while the workstream was running; `level_switch_reproduction.json` in particular is rewritten by the
 pipeline as it progresses.
 
 The two completed taxonomic-holdout evaluations (phylum and family) are

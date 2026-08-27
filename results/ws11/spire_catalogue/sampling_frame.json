@@ -1,0 +1,140 @@
+{
+  "workstream": "WS11.S",
+  "catalogue": "SPIRE v1",
+  "catalogue_metadata_file": "data/real_data/spire/spire_v1_genome_metadata.tsv.gz",
+  "published_quality_tool": "CheckM2 (as published by SPIRE v1)",
+  "ground_truth": null,
+  "interpretation": "Catalogue MAGs carry NO ground truth. Every quantity here is a DISAGREEMENT between MAGICC V5 and SPIRE's published CheckM2, not an error measurement. The ground-truthed anchor is set_C_clean, where MAGICC is the tool in error (-8.68 pp completeness, +5.09 pp contamination vs truth; CheckM2 -0.70 / -1.16).",
+  "metadata_rows": 1158553,
+  "out_of_frame_no_published_checkm2": 85,
+  "frame": {
+    "N": 1158468,
+    "cells_stratum_sizebin_class": {
+      "S3_main|1-2Mb|HQ": 85324,
+      "S3_main|1-2Mb|MQ": 388858,
+      "S3_main|>5Mb|MQ": 13107,
+      "S3_main|3-5Mb|MQ": 85649,
+      "S2_rare_phylum|1-2Mb|HQ": 1329,
+      "S3_main|3-5Mb|HQ": 83447,
+      "S3_main|2-3Mb|MQ": 248303,
+      "S1_small|<1Mb|MQ": 49784,
+      "S2_rare_phylum|2-3Mb|MQ": 2940,
+      "S3_main|>5Mb|HQ": 12368,
+      "S1_small|<1Mb|HQ": 9509,
+      "S3_main|2-3Mb|HQ": 167435,
+      "S2_rare_phylum|3-5Mb|HQ": 1658,
+      "S2_rare_phylum|1-2Mb|MQ": 3432,
+      "S2_rare_phylum|2-3Mb|HQ": 2187,
+      "S3_main|1-2Mb|LQ": 20,
+      "S2_rare_phylum|3-5Mb|MQ": 1996,
+      "S2_rare_phylum|>5Mb|MQ": 659,
+      "S2_rare_phylum|>5Mb|HQ": 383,
+      "S1_small|<1Mb|LQ": 4,
+      "S3_main|2-3Mb|LQ": 35,
+      "S3_main|3-5Mb|LQ": 32,
+      "S2_rare_phylum|3-5Mb|LQ": 1,
+      "S3_main|>5Mb|LQ": 7,
+      "S2_rare_phylum|>5Mb|LQ": 1
+    },
+    "cells_stratum_sizebin": {
+      "S3_main|1-2Mb": 474202,
+      "S3_main|>5Mb": 25482,
+      "S3_main|3-5Mb": 169128,
+      "S2_rare_phylum|1-2Mb": 4761,
+      "S3_main|2-3Mb": 415773,
+      "S1_small|<1Mb": 59297,
+      "S2_rare_phylum|2-3Mb": 5127,
+      "S2_rare_phylum|3-5Mb": 3655,
+      "S2_rare_phylum|>5Mb": 1043
+    },
+    "by_stratum": {
+      "S1_small": 59297,
+      "S2_rare_phylum": 14586,
+      "S3_main": 1084585
+    },
+    "by_size_bin": {
+      "<1Mb": 59297,
+      "1-2Mb": 478963,
+      "2-3Mb": 420900,
+      "3-5Mb": 172783,
+      ">5Mb": 26525
+    },
+    "by_class": {
+      "HQ": 363640,
+      "MQ": 794728,
+      "LQ": 100
+    },
+    "by_domain": {
+      "Archaea": 21204,
+      "Bacteria": 1136155,
+      "unclassified": 1109
+    },
+    "n_phyla": 183,
+    "n_families": 3449,
+    "n_spire_clusters": 107008,
+    "total_bp": 2627576837085.0
+  },
+  "design_type": "stratified random sample; S1 and S2 complete censuses, S3 SRS without replacement",
+  "seed_string": "WS11.S/spire_catalogue/SRS",
+  "seed": 2248018003,
+  "rng": "numpy.random.default_rng (PCG64)",
+  "strata": {
+    "S1_small": {
+      "N": 59297,
+      "n": 59297,
+      "sampling_fraction": 1.0,
+      "design_weight": 1.0
+    },
+    "S2_rare_phylum": {
+      "N": 14586,
+      "n": 14586,
+      "sampling_fraction": 1.0,
+      "design_weight": 1.0
+    },
+    "S3_main": {
+      "N": 1084585,
+      "n": 200000,
+      "sampling_fraction": 0.1844023290014153,
+      "design_weight": 5.422925
+    }
+  },
+  "stratum_definitions": {
+    "S1_small": "genome_size < 1000000 bp",
+    "S2_rare_phylum": "not S1 and phylum has < 1000 frame MAGs",
+    "S3_main": "all remaining frame MAGs"
+  },
+  "sample": {
+    "n": 273883,
+    "fraction_of_frame": 0.23641826964577356,
+    "by_stratum": {
+      "S1_small": 59297,
+      "S2_rare_phylum": 14586,
+      "S3_main": 200000
+    },
+    "by_size_bin": {
+      "<1Mb": 59297,
+      "1-2Mb": 92262,
+      "2-3Mb": 81520,
+      "3-5Mb": 35011,
+      ">5Mb": 5793
+    },
+    "n_phyla": 183,
+    "n_families": 3004,
+    "n_spire_clusters": 51859
+  },
+  "mimag_inspired_thresholds": {
+    "HQ": "completeness >= 90 and contamination < 5",
+    "MQ": "completeness >= 50 and contamination < 10",
+    "LQ": "otherwise"
+  },
+  "bootstrap_clustering_unit_primary": "family (as in WS3.10)",
+  "bootstrap_clustering_unit_secondary": "spire_cluster (95 % ANI, species level)",
+  "second_cohort": {
+    "name": "reps",
+    "definition": "all SPIRE 95 % ANI cluster representatives that are MAGs and in the frame",
+    "n": 92063,
+    "is_census": true,
+    "population": "dereplicated SPIRE catalogue (species-level representatives)",
+    "warning": "a different population from the per-MAG catalogue; never quote as the per-MAG rate"
+  }
+}

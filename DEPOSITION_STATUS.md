@@ -11,9 +11,9 @@ Everything else the statements promise is here; the inventory is in
 
 | Item | Status | Where it will go |
 |---|---|---|
-| **Leave-genus-out holdout evaluation** | The retraining was still running when this deposition was made. Only the panel definition and its EDA are deposited. | `results/holdout_genus/`, in the file layout of `results/holdout_family/`. See [`results/holdout_genus/STATUS.md`](results/holdout_genus/STATUS.md). **Until it lands, the paper must say "the leave-phylum-out and leave-family-out holdout evaluations", not "the taxonomic-holdout evaluations".** |
-| **Catalogue-scale SPIRE analysis (WS11.S)** | Running at deposition time; no result file is deposited and no number from it is in the deposited tree. | `results/ws11/spire_catalogue/`. All seven scripts that produce it **are** deposited (`scripts/230_`–`236_`). |
-| **WS11.T v0.3.3 timing sub-campaign** | Its four scripts (`scripts/259_`–`262_`) are deposited; the runs they produce are not, because the campaign started after this snapshot. | alongside `results/speed_v3/`. |
+| **Leave-genus-out holdout evaluation** | The retraining was still running when this deposition was made. The panel definition, its EDA and the **complete** V5-versus-V5 null control are deposited; the retrained model's evaluation is not. | `results/holdout_genus/`, in the file layout of `results/holdout_family/`. See [`results/holdout_genus/STATUS.md`](results/holdout_genus/STATUS.md). **Until it lands, the paper must say "the leave-phylum-out and leave-family-out holdout evaluations", not "the taxonomic-holdout evaluations".** |
+| **WS11.S catalogue-scale SPIRE** | **Deposited** (`results/ws11/spire_catalogue/`, 19 files, 32 MB), as a snapshot taken while the workstream was still adding representative-genome scores. Its seven scripts (`scripts/230_`–`236_`) are deposited too. | — |
+| **WS11.T v0.3.3 re-measured timings** | `results/speed_v033/` holds the **run plan and the idle-wait log only**: at deposition the campaign was still waiting for a verified-idle host, so `runs/` is empty. Its four scripts (`scripts/259_`–`262_`) are deposited. | `results/speed_v033/runs/` and the aggregated tables beside them, in the layout of `results/speed_v3/`. **Nothing in the paper depends on it yet**; the replicated campaign it extends, `results/speed_v3/`, is deposited complete. |
 
 ## Deliberate, permanent non-deposition
 

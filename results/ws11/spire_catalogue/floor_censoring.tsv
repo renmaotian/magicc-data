@@ -1,0 +1,75 @@
+cohort	grouping	stratum	n_genomes	n_at_floor_le_50.5	n_at_floor_le_50.0	rate_le_50.5	ci95_lo	ci95_hi	min_magicc_completeness	note
+catalogue_weighted	overall	ALL	18647	1368	0	0.00585889	0.00288205	0.0105011	50.0018	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	size_bin	<1Mb	17201	1366	0	0.0809972	0.0550569	0.11712	50.0018	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	size_bin	1-2Mb	428	2	0	0.00416341	0	0.0147656	50.3102	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	size_bin	2-3Mb	418	0	0	0	0	0	52.3001	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	size_bin	3-5Mb	464	0	0	0	0	0	53.1826	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	size_bin	>5Mb	136	0	0	0	0	0	71.0204	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	phylum	Actinobacteriota	973	28	0	0.00084198	0.000194963	0.0021202	50.0280	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	phylum	Bacteroidota	363	24	0	0.000620943	0.000235337	0.00109754	50.0211	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	phylum	Firmicutes	1884	95	0	0.0504382	0.00376371	0.208187	50.0227	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	phylum	Firmicutes_A	2487	427	0	0.0206635	0.00340866	0.063173	50.0210	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	phylum	Firmicutes_C	412	77	0	0.0173739	0.000809714	0.0724218	50.0429	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	phylum	Nanoarchaeota	670	45	0	0.0192548	0.00696995	0.115683	50.0138	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	phylum	Patescibacteria	7343	240	0	0.0125532	0.00899539	0.0173971	50.0100	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	phylum	Proteobacteria	1621	107	0	0.00146575	0.000533421	0.00280524	50.0068	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	phylum	Thermoplasmatota	282	68	0	0.0131424	0.00256268	0.320859	50.0117	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	phylum	Thermoproteota	361	55	0	0.00410617	0.00236136	0.00785501	50.0018	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted	phylum	other (<200 in cohort)	2251	202	0	0.00195861	0.00121494	0.00286295	50.0037	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	overall	ALL	18647	1368	0	0.00513717	0.00283805	0.00848295	50.0018	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	size_bin	<1Mb	17201	1366	0	0.079414	0.0539641	0.115496	50.0018	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	size_bin	1-2Mb	428	2	0	0.00396347	0	0.0131123	50.3102	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	size_bin	2-3Mb	418	0	0	0	0	0	52.3001	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	size_bin	3-5Mb	464	0	0	0	0	0	53.1826	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	size_bin	>5Mb	136	0	0	0	0	0	71.0204	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	phylum	Actinobacteriota	973	28	0	0.00098569	0.000233896	0.00264661	50.0280	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	phylum	Bacteroidota	363	24	0	0.000509115	0.000182189	0.000992609	50.0211	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	phylum	Firmicutes	1884	95	0	0.0418395	0.00468304	0.132225	50.0227	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	phylum	Firmicutes_A	2487	427	0	0.0252556	0.00432258	0.0724084	50.0210	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	phylum	Firmicutes_C	412	77	0	0.0267921	0.0013848	0.0998937	50.0429	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	phylum	Nanoarchaeota	670	45	0	0.0260849	0.0106163	0.107705	50.0138	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	phylum	Patescibacteria	7343	240	0	0.0148738	0.0105254	0.0201333	50.0100	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	phylum	Proteobacteria	1621	107	0	0.00134847	0.000499243	0.00247004	50.0068	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	phylum	Thermoplasmatota	282	68	0	0.019725	0.00388869	0.32709	50.0117	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	phylum	Thermoproteota	361	55	0	0.00578612	0.00326203	0.0111351	50.0018	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+catalogue_weighted_no_nr_adjustment	phylum	other (<200 in cohort)	2251	202	0	0.00174035	0.00105784	0.00251047	50.0037	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S3_srs_unweighted	overall	ALL	892	1	0	0.00112108	0	0.00375963	50.3102	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S3_srs_unweighted	size_bin	1-2Mb	254	1	0	0.00393701	0	0.0138249	50.3102	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S3_srs_unweighted	size_bin	2-3Mb	241	0	0	0	0	0	52.3001	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S3_srs_unweighted	size_bin	3-5Mb	306	0	0	0	0	0	53.2814	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S3_srs_unweighted	size_bin	>5Mb	91	0	0	0	0	0	71.0204	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S3_srs_unweighted	phylum	Proteobacteria	221	0	0	0	0	0	50.7682	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S3_srs_unweighted	phylum	other (<200 in cohort)	671	1	0	0.00149031	0	0.00505093	50.3102	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	overall	ALL	17201	1366	0	0.079414	0.0536025	0.113837	50.0018	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	size_bin	<1Mb	17201	1366	0	0.079414	0.0546777	0.113487	50.0018	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	phylum	Actinobacteriota	895	28	0	0.0312849	0.00785289	0.0881722	50.0280	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	phylum	Bacteroidota	230	24	0	0.104348	0.0450407	0.179642	50.0211	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	phylum	Firmicutes	1859	94	0	0.0505648	0.0283585	0.07641	50.0227	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	phylum	Firmicutes_A	2446	427	0	0.174571	0.0406498	0.302905	50.0210	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	phylum	Firmicutes_C	405	77	0	0.190123	0.0411146	0.236462	50.0429	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	phylum	Nanoarchaeota	667	45	0	0.0674663	0.033199	0.181846	50.0138	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	phylum	Patescibacteria	7318	240	0	0.0327958	0.0251437	0.0421734	50.0100	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	phylum	Proteobacteria	1400	107	0	0.0764286	0.0258033	0.164976	50.0068	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	phylum	Thermoplasmatota	273	68	0	0.249084	0.0735152	0.363636	50.0117	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	phylum	Thermoproteota	335	55	0	0.164179	0.0776835	0.346502	50.0018	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S1_small_census	phylum	other (<200 in cohort)	1373	201	0	0.146395	0.0958033	0.200424	50.0037	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S2_rare_phylum_census	overall	ALL	554	1	0	0.00180505	0	0.00607318	50.4347	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S2_rare_phylum_census	size_bin	1-2Mb	174	1	0	0.00574713	0	0.0192339	50.4347	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S2_rare_phylum_census	size_bin	2-3Mb	177	0	0	0	0	0	52.9463	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S2_rare_phylum_census	size_bin	3-5Mb	158	0	0	0	0	0	53.1826	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S2_rare_phylum_census	size_bin	>5Mb	45	0	0	0	0	0	79.5857	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+S2_rare_phylum_census	phylum	other (<200 in cohort)	554	1	0	0.00180505	0	0.00613497	50.4347	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	overall	ALL	6566	60	0	0.00913798	0.00626044	0.0124679	50.0029	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	size_bin	<1Mb	1200	55	0	0.0458333	0.029752	0.0625934	50.0029	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	size_bin	1-2Mb	1485	5	0	0.003367	0.000691551	0.00666305	50.3102	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	size_bin	2-3Mb	1509	0	0	0	0	0	50.6951	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	size_bin	3-5Mb	1797	0	0	0	0	0	52.9674	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	size_bin	>5Mb	575	0	0	0	0	0	63.8905	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	phylum	Acidobacteriota	358	0	0	0	0	0	51.9161	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	phylum	Actinobacteriota	435	0	0	0	0	0	50.5428	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	phylum	Bacteroidota	631	2	0	0.00316957	0	0.00773047	50.0525	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	phylum	Chloroflexota	257	0	0	0	0	0	50.8287	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	phylum	Firmicutes_A	251	1	0	0.00398406	0	0.0138889	50.0394	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	phylum	Patescibacteria	1065	20	0	0.0187793	0.00949633	0.0282563	50.0338	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	phylum	Proteobacteria	1320	3	0	0.00227273	0	0.00533862	50.2035	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement
+reps_census	phylum	other (<200 in cohort)	2249	34	0	0.0151178	0.00933958	0.0214094	50.0029	MAGICC cannot express completeness <50, so deltas at the floor are a lower bound on the disagreement

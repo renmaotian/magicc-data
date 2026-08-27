@@ -320,7 +320,7 @@ scored-bin and all-truth-row versions side by side.
 ## Result files
 
 [`results/`](results/) holds every quantitative result reported in the paper —
-1,142 files, 93 MB. [`results/README.md`](results/README.md) is the inventory:
+1,177 files, 128 MB. [`results/README.md`](results/README.md) is the inventory:
 which directory answers which figure and table, the workspace-to-repository path
 convention, and **every exclusion with its reason**. Nothing excluded is a
 reported number; it is raw tool output that the deposited scripts regenerate.
@@ -379,9 +379,9 @@ statement names:
 | Meslier mock-community and ZymoBIOMICS assemblies | third-party; available from `https://forge.inrae.fr/metagenopolis/benchmark_mock` (ENA PRJEB52977) and ENA PRJEB29504. The accessions, derived truth and predictions are deposited |
 | SPIRE v1, GTDB r220 and UHGG v2.0.2 genomes | third-party catalogues; the genome identifiers analysed are deposited in [`results/real_data/reduced_genome/`](results/real_data/reduced_genome/) |
 | Reference genomes (GTDB / NCBI) | 345 GB; identified by accession in `splits/`, `curation/` and `provenance/`, and downloadable from NCBI |
-| Raw tool output trees (GUNC, CheckM2, CoCoPyE, DeepCheck working directories) | ~25 GB of intermediates; the parsed per-genome predictions and the consolidated tables are deposited. Itemised in [`results/README.md`](results/README.md) |
+| Raw tool output trees (GUNC, CheckM2, CoCoPyE, DeepCheck working directories) | about **53 GB** of intermediates; the parsed per-genome predictions and the consolidated tables *are* deposited. Itemised with sizes and reasons in [`results/README.md`](results/README.md) |
 | The two taxonomic-holdout ONNX models | 162 MB each; validation artefacts, not released models, and regenerable by the deposited training scripts from the deposited splits |
-| The leave-genus-out evaluation | still running at deposition; see [`results/holdout_genus/STATUS.md`](results/holdout_genus/STATUS.md) and [`DEPOSITION_STATUS.md`](DEPOSITION_STATUS.md) |
+| The leave-genus-out **evaluation** | still running at deposition. Its panel definition and its complete V5-versus-V5 null control *are* deposited; see [`results/holdout_genus/STATUS.md`](results/holdout_genus/STATUS.md) and [`DEPOSITION_STATUS.md`](DEPOSITION_STATUS.md) |
 
 ## Citation
 

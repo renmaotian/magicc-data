@@ -1,7 +1,7 @@
 # Result files
 
 Every quantitative result reported in the manuscript, as the file that produced
-it. 1,142 files, 93 MB.
+it. 1,177 files, 128 MB.
 
 ## Path convention
 
@@ -30,7 +30,7 @@ rewritten to the deposited names, so the code runs as it stands.
 | `benchmark/` | the revised benchmark table, the clean C/D metrics and the leakage-specificity control | **Table 1**; the withdrawn-versus-clean comparison behind the Sets C/D withdrawal |
 | `holdout_phylum/` | leave-phylum-out retraining and evaluation: per-sample predictions, per-reference errors, difference-in-differences, sub-phylum breakdown, MIMAG agreement, the k-mer re-selection control (both prevalence tables under the holdout selection) | **Fig. 4a**, **Fig. 4c** |
 | `holdout_family/` | leave-family-out retraining and evaluation, plus `dryrun_v5_vs_v5/` (the V5-versus-V5 null control) and the family-versus-phylum comparison | **Fig. 4b**, **Fig. S16a** |
-| `holdout_genus/` | leave-genus-out panel definition and EDA — **the retraining and evaluation were not complete at deposition; see `holdout_genus/STATUS.md`** | — |
+| `holdout_genus/` | leave-genus-out panel definition, EDA, and the **complete** V5-versus-V5 null control (`dryrun_v5_vs_v5/`) that fixes the evaluation harness. **The retraining itself was not complete at deposition; see `holdout_genus/STATUS.md`** | — |
 | `set_F/` | contamination type × donor taxonomic distance: per-genome long table, cell and marginal tables, paired comparisons, the RBH distance characterisation, marker-duplication validation | **Fig. 4d**, **Fig. S16b–c** |
 | `set_G/` | sequencing and assembly error robustness: degradation curves, paired degradation, MIMAG agreement, k-mer perturbation mechanism, crossover and boundary tables | **Fig. 5c**, **Fig. S17** |
 | `circularity/` | circularity safeguard on 4,000 assemblies from 400 NCBI references in 200 matched pairs: per-reference errors, paired arm tests, threshold false-fail, reference-incompleteness mechanism | the circularity safeguard answering reviewer comment R1-m13 |
@@ -39,8 +39,9 @@ rewritten to the deposited names, so the code runs as it stands.
 | `real_data/` | Track A real-data validation (Meslier mock communities, ZymoBIOMICS, NCBI strain-matched pairs, NCBI contaminated-flag cohort) and the reduced-genome workstream: cohorts and fetch manifests for SPIRE v1 / GTDB r220 / UHGG v2.0.2, the mechanism models, the ground-truthed `set_C_clean` cross-check, and `reduced_genome/mitigation/` (the size-channel intervention, size-conditioned recalibration, the generalisation ceiling and `BOUNDARY_STATEMENT.md`) | **Fig. 5a**, **Fig. 5b**, **Fig. 5d–f**, **Fig. S17** |
 | `contamination_evidence/` | the evidence behind the withdrawn real-MAG contamination claims: Kraken2 strict metric under three databases, informative-k-mer density controls, single-copy-gene duplication, matched-novelty cohorts, and the correlation table | the Discussion's withdrawal passage |
 | `speed/` | the matched-hardware timing campaign: the 92 per-run records of the campaign (wall clock, peak RSS, stdout and parsed timings, 379 files), thread-scaling summary, cold-versus-warm forensics, setup cost, environment footprint, total-cost table and the rewritten Table S4 | **Table 1**, **Table S4** (`table_S4_rewritten.tsv`) |
+| `speed_v033/` | the released version's re-measured timings. **Only the run plan and the idle-wait log are here: the campaign was still waiting for a verified-idle host at deposition, so no run record exists yet.** See `../DEPOSITION_STATUS.md` |
 | `speed_v3/` | the follow-up campaign separating code-version from model-version effects (V3 code versus V5 code), 30 per-run records, pooled cell summary, updated ratios and the attribution note. It also ships the four **exact code trees** the campaign ran (`v3_code/`, `v3_code_nostats/`, `magicc_v3code_coldjit_tree/`, `magicc_v5code_coldjit_tree/`, 2.7 MB each) — the V3 code is not in the released software repository, so the comparison is not otherwise reproducible | **Table S4d** |
-| `ws11/` | the taxonomic-novelty ladder (genome/species/genus/family/phylum novelty of the dominant, evaluation only) and the paired macro-F1 differences with the power statement | the taxonomic-novelty ladder and the macro-F1 power statement |
+| `ws11/` | `novelty_ladder/` — the taxonomic-novelty ladder (genome/species/genus/family/phylum novelty of the dominant, evaluation only); `macro_f1_paired/` — the paired macro-F1 differences with the power statement; `spire_catalogue/` — the **catalogue-scale SPIRE analysis**: sampling frame and design record, cohort definition, per-genome MAGICC predictions with fetch status and checksums, size dose-response, floor censoring, classification-change matrix, non-response accounting and the small-versus-large cohort comparison | the taxonomic-novelty ladder and the macro-F1 power statement |
 | `reproducibility/` | determinism record, and the executed one-command reproduction of the headline benchmark (per-set predictions, metrics and logs) | Methods, Code availability |
 | `release_verification/` | evidence that the PyPI and GitHub artefacts are the version the manuscript names, and the recorded `magicc-data` state before this deposition | Code availability |
 | top-level files | the frozen model card, the legacy-prediction audit that found the model-version defect, and the WS1.5 clean-C/D metrics | Methods, Table S1 |
@@ -62,8 +63,7 @@ from the deposited inputs, and none of it is a reported number.
 | `results/revision/set_F_pilot/`, `results/revision/gunc/_pilot/` | 4 MB | superseded pilots. The 20-genome GUNC pilot in particular is unrepresentative and only the n = 1,000 result may be cited |
 | `results/revision/speed/deepcheck_features/` | 17 MB | DeepCheck feature cache |
 | `models/magicc_holdout_{phylum,family}.onnx` | 162 MB each | the two holdout models are validation artefacts, not released models. They are regenerated by `scripts/122_train_holdout_phylum.py` and the family pipeline from the deposited split files and training data |
-| `results/revision/ws11/spire_catalogue/` | 11 MB | a workstream still running at deposition time; see `../DEPOSITION_STATUS.md` |
 
-The two holdout ONNX models and the `spire_catalogue` outputs are the only
-excluded items that cannot be regenerated in minutes; both are noted in
-`DEPOSITION_STATUS.md` at the repository root.
+The two holdout ONNX models are the only excluded items that cannot be
+regenerated in minutes, and they are noted in `DEPOSITION_STATUS.md` at the
+repository root along with everything else that is outstanding.
