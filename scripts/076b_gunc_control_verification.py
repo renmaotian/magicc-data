@@ -16,12 +16,12 @@ Positive controls
     (`results/ncbi_comparison/kraken2_contamination_analysis.tsv`).
     Expectation: GUNC fail = contamination flagged.
 
-Reads the normalized TSVs produced by ``scripts/76_run_gunc.py`` and emits a
+Reads the normalized TSVs produced by ``scripts/076_run_gunc.py`` and emits a
 joined verification table plus a pass/fail verdict per genome.
 
 Usage
 -----
-    python scripts/76b_gunc_control_verification.py \
+    python scripts/076b_gunc_control_verification.py \
         --negative-dir results/revision/gunc/controls/negative \
         --positive-dir results/revision/gunc/controls/positive \
         --out-dir     results/revision/gunc/controls
@@ -55,7 +55,7 @@ def fnum(value: str) -> Optional[float]:
 def load_normalized(run_dir: Path) -> Dict[str, Dict[str, str]]:
     tsv = run_dir / 'gunc_normalized.tsv'
     if not tsv.is_file():
-        raise SystemExit(f"ERROR: missing {tsv}; run scripts/76_run_gunc.py first")
+        raise SystemExit(f"ERROR: missing {tsv}; run scripts/076_run_gunc.py first")
     return {r['genome']: r for r in read_tsv(tsv)}
 
 

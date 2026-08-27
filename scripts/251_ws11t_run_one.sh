@@ -12,7 +12,7 @@
 #     averages, nproc, MemAvailable and `vmstat`;
 #   * five extra MAGICC arms exist for the V3-vs-V5 attribution (T3).
 #
-#   bash scripts/191_ws11t_run_one.sh <tool> <threads> <repeat> <inputset>
+#   bash scripts/251_ws11t_run_one.sh <tool> <threads> <repeat> <inputset>
 #
 #     tool : magicc | magicc_dir | magicc_v5code | magicc_v3code
 #            | magicc_v3code_nostats | checkm2 | cocopye | deepcheck
@@ -35,7 +35,7 @@ RUNS="${SPEED}/runs"
 SCRATCH="${SPEED}/scratch"
 V3CODE="${SPEED}/v3_code"
 V3CODE_NOSTATS="${SPEED}/v3_code_nostats"
-LAUNCHER="${PROJECT}/scripts/190_ws11t_run_magicc_codebase.py"
+LAUNCHER="${PROJECT}/scripts/250_ws11t_run_magicc_codebase.py"
 
 TOOL="${1:?tool}"; THREADS="${2:?threads}"; REP="${3:?repeat}"
 INPUTSET="${4:?inputset}"; CACHE="${5:-warm}"
@@ -201,7 +201,7 @@ LOAD_AFTER=$(cut -d' ' -f1-3 /proc/loadavg)
 MEM_AFTER=$(snap_mem)
 VM_AFTER=$(snap_vm)
 
-python3 "${PROJECT}/scripts/192_ws11t_parse_time.py" \
+python3 "${PROJECT}/scripts/252_ws11t_parse_time.py" \
     --time-file "${TIMEF}" \
     --json "${JSON}" \
     --tool "${TOOL}" --threads "${THREADS}" --repeat "${REP}" \

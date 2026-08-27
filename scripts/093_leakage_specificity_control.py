@@ -50,7 +50,7 @@ Outputs
 
 Usage
 -----
-    conda run -n magicc2 python scripts/93_leakage_specificity_control.py
+    conda run -n magicc2 python scripts/093_leakage_specificity_control.py
 """
 
 from __future__ import annotations
@@ -76,7 +76,7 @@ def _load(name: str, path: Path):
     return mod
 
 
-M92 = _load('m92', PROJECT_DIR / 'scripts' / '92_clean_cd_metrics.py')
+M92 = _load('m92', PROJECT_DIR / 'scripts' / '092_clean_cd_metrics.py')
 OUT_DIR = M92.OUT_DIR
 TOOLS = M92.TOOLS
 CLUSTER_COL = M92.CLUSTER_COL
@@ -230,7 +230,7 @@ def main() -> int:
     md: List[str] = []
     md.append('# Leakage-specificity control (WS1.5)\n')
     md.append(f'Generated {datetime.now(timezone.utc).isoformat()} by '
-              '`scripts/93_leakage_specificity_control.py`.\n')
+              '`scripts/093_leakage_specificity_control.py`.\n')
     md.append('MAGICC V5 was fitted on the superseded Sets C/D dominants; CheckM2, CoCoPyE '
               'and DeepCheck were not. A drop confined to MAGICC isolates the effect to '
               'training-set memorisation.\n')

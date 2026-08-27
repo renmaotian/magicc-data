@@ -13,7 +13,7 @@ Steps:
 4. Aggregate results and compare MAGICC vs CheckM2
 
 Usage:
-    conda run -n magicc2 python scripts/45_pathogen_checkm2_comparison.py
+    conda run -n magicc2 python scripts/048_pathogen_checkm2_comparison.py
 """
 
 import gzip

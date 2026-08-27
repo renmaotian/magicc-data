@@ -29,7 +29,7 @@ completeness >= 90 and contamination <= 5.
 
 Usage
 -----
-    python scripts/77_build_cohorts_and_stats.py --threads 16
+    python scripts/077_build_cohorts_and_stats.py --threads 16
 
 Outputs (``results/revision/contamination_evidence/``)
 ------------------------------------------------------

@@ -2,7 +2,7 @@
 # =============================================================================
 # WS3 Track A — run CheckM2 and CoCoPyE on a directory of real-data genomes.
 #
-# Invocations are reused verbatim from scripts/90_run_competitors_clean_cd.sh so
+# Invocations are reused verbatim from scripts/090_run_competitors_clean_cd.sh so
 # the real-data numbers are directly comparable with the synthetic benchmarks:
 #   CheckM2 1.0.1  (env checkm2_py39, CHECKM2DB, --dbg_vectors so that DeepCheck's
 #                   feature vectors are produced; DeepCheck itself is a pure tensor

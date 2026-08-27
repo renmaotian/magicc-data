@@ -7,11 +7,11 @@ WS6.3 + WS6.4 — Set G degradation curves and the usable-error-regime boundary.
 WHAT THIS SCRIPT DOES
 ---------------------
 1. Runs frozen MAGICC V5 on Set G by direct ONNX inference (pattern of
-   ``scripts/75_run_magicc_clean_cd.py``; the CLI is deliberately not used).
+   ``scripts/075_run_magicc_clean_cd.py``; the CLI is deliberately not used).
 2. Loads CheckM2 / CoCoPyE / DeepCheck predictions produced by
-   ``scripts/152_run_tools_set_G.sh`` -> ``scripts/91_parse_competitor_clean_cd.py``.
+   ``scripts/152_run_tools_set_G.sh`` -> ``scripts/091_parse_competitor_clean_cd.py``.
 3. Runs a provenance audit on Set G in the style of
-   ``scripts/74_provenance_audit.py`` (GCA<->GCF cross-mapped), emitting
+   ``scripts/074_provenance_audit.py`` (GCA<->GCF cross-mapped), emitting
    accession lists and a SHA256 manifest.  Disjointness is proven, not asserted.
 4. **Degradation curves** (WS6.3): MAE, signed bias, R^2 and MIMAG-inspired
    classification versus error rate, per error type and per tool, with 95 %

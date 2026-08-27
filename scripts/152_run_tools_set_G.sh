@@ -2,13 +2,13 @@
 # =============================================================================
 # WS6.3 -- run the competitor tools on Set G (sequencing / assembly error
 # robustness).  Protocol name: part of 109_error_robustness_analysis.py;
-# split out as a shell runner following scripts/146_run_tools_set_F.sh.
+# split out as a shell runner following scripts/156_run_tools_set_F.sh.
 #
 # Tools run here:
 #   CheckM2 1.0.1  (env checkm2_py39, --dbg_vectors so DeepCheck gets its
 #                   feature vectors)
 #   CoCoPyE 0.5.0  (env magicc2)
-# Then scripts/91_parse_competitor_clean_cd.py --sets set_G --tools
+# Then scripts/091_parse_competitor_clean_cd.py --sets set_G --tools
 #   checkm2,cocopye,deepcheck performs the DeepCheck tensor transform and the
 #   verified merges (DeepCheck is a pure transform of CheckM2's PKL vectors, so
 #   it is not a separate external run).
@@ -141,7 +141,7 @@ fi
 # ------------------------------- DeepCheck + verified merges (script 91) ----
 if has_tool parse; then
     echo "[parse] DeepCheck transform + verified merges via scripts/91 ..."
-    conda run -n magicc2 python "${PROJECT_DIR}/scripts/91_parse_competitor_clean_cd.py" \
+    conda run -n magicc2 python "${PROJECT_DIR}/scripts/091_parse_competitor_clean_cd.py" \
         --sets "${SET_NAME}" --tools checkm2,cocopye,deepcheck \
         --torch-threads 4 2>&1 | tail -30
 fi

@@ -1,5 +1,5 @@
 #!/bin/bash
-# 07_install_kmc_hmmer.sh - Verify KMC3, HMMER, and Prodigal installation in magicc2 env
+# 007_install_kmc_hmmer.sh - Verify KMC3, HMMER, and Prodigal installation in magicc2 env
 # All tools were already installed; this script verifies functionality
 
 set -euo pipefail

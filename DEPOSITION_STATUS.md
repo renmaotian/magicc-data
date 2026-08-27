@@ -12,6 +12,7 @@ Everything else the statements promise is here; the inventory is in
 | Item | Status | Where it will go |
 |---|---|---|
 | **Leave-genus-out holdout evaluation** | The retraining was still running when this deposition was made. Only the panel definition and its EDA are deposited. | `results/holdout_genus/`, in the file layout of `results/holdout_family/`. See [`results/holdout_genus/STATUS.md`](results/holdout_genus/STATUS.md). **Until it lands, the paper must say "the leave-phylum-out and leave-family-out holdout evaluations", not "the taxonomic-holdout evaluations".** |
+| **Leave-genus-out pipeline scripts** | `scripts/221_run_holdout_genus_pipeline.sh` calls two scripts that did not exist yet when this snapshot was taken (`223_genus_family_phylum_ladder.py`, `225_ws11g_report.py`). They belong with the genus results above. |
 | **Catalogue-scale SPIRE analysis (WS11.S)** | Running at deposition time; no result file is deposited and no number from it is in the deposited tree. | `results/ws11/spire_catalogue/`. The scripts that produce it are deposited (`scripts/230_*`, `scripts/231_*`, `scripts/232_ws11s_representatives.py`). |
 
 ## Deliberate, permanent non-deposition

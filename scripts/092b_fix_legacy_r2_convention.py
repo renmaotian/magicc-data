@@ -2,7 +2,7 @@
 """
 Correct the R² convention in ``results/revision/legacy_v5_metrics.tsv``.
 
-``scripts/71_audit_legacy_predictions.py`` wrote ``np.corrcoef(true, pred)[0,1]**2``
+``scripts/071_audit_legacy_predictions.py`` wrote ``np.corrcoef(true, pred)[0,1]**2``
 into columns named ``comp_r2`` / ``cont_r2``. That is the squared Pearson
 correlation, not R². Squared Pearson ignores bias and scale error and is always
 >= the coefficient of determination, so the two diverge exactly where a predictor
@@ -27,7 +27,7 @@ substituting different numbers. The original file is copied to
 
 Usage
 -----
-    conda run -n magicc2 python scripts/92b_fix_legacy_r2_convention.py
+    conda run -n magicc2 python scripts/092b_fix_legacy_r2_convention.py
 """
 
 from __future__ import annotations
@@ -55,7 +55,7 @@ def _load(name: str, path: Path):
     return mod
 
 
-M92 = _load('m92', PROJECT_DIR / 'scripts' / '92_clean_cd_metrics.py')
+M92 = _load('m92', PROJECT_DIR / 'scripts' / '092_clean_cd_metrics.py')
 
 
 def main() -> int:
@@ -128,7 +128,7 @@ def main() -> int:
     note = LEGACY.with_name('legacy_v5_metrics_R2_CONVENTION.txt')
     note.write_text(
         f'Rewritten {datetime.now(timezone.utc).isoformat()} by '
-        'scripts/92b_fix_legacy_r2_convention.py.\n\n'
+        'scripts/092b_fix_legacy_r2_convention.py.\n\n'
         'comp_r2 / cont_r2      = coefficient of determination, 1 - SS_res/SS_tot,\n'
         '                         identical to sklearn.metrics.r2_score. THIS is R2.\n'
         '                         It may be negative (worse than predicting the mean).\n'

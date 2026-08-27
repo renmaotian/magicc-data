@@ -14,8 +14,8 @@ Architecture: MAGICCModelV3 (SE attention + cross-attention fusion)
 Data: V5 expanded (1M train, 100K val, 100K test)
 
 Usage:
-    python scripts/52_train_v5_run2.py
-    python scripts/52_train_v5_run2.py --resume models/best_model_v5_run2.pt
+    python scripts/052_train_v5_run2.py
+    python scripts/052_train_v5_run2.py --resume models/best_model_v5_run2.pt
 """
 
 import sys

@@ -6,20 +6,20 @@ WHY
 ---
 The submitted Sets C and D are withdrawn: their dominant reference genomes were drawn
 from train+val+test (985/1000 of Set C dominants are TRAIN genomes; only 36/1000 of Set D
-dominants are TEST genomes). See scripts/25_benchmark_generate.py's own docstring
+dominants are TEST genomes). See scripts/025_benchmark_generate.py's own docstring
 ("ALL Patescibacteriota from train+val+test").
 
 WHAT CHANGED, AND ONLY THIS
 ---------------------------
 The per-genome generation logic is `generate_set_cd_genome` from
-scripts/25_benchmark_generate.py, reused verbatim (same fragmentation call, same
+scripts/025_benchmark_generate.py, reused verbatim (same fragmentation call, same
 contaminant selection, same caps, same label arithmetic, same FASTA writer). The ONLY
 substantive change is the dominant reference pool:
 
     superseded : 1,000 dominants cycled/sampled over ALL Patescibacteriota (C) or ALL
                  Archaea (D) from train+val+test, one simulation each
     clean      : 100 dominants from the held-out TEST split only
-                 (scripts/72_select_clean_cd_refs.py), 10 independent simulations each
+                 (scripts/072_select_clean_cd_refs.py), 10 independent simulations each
 
 so that leakage is the only variable that differs and the numbers stay comparable to the
 superseded sets. Three non-substantive additions were made, none of which alters the
@@ -61,9 +61,9 @@ OUTPUTS (per set, in data/benchmarks/set_{C,D}_clean/)
   generation_checkpoint.jsonl append-only record, makes the run resumable
 
 Usage:
-    python scripts/73_generate_clean_cd_benchmarks.py --test      # 2 refs x 2 sims, dry dir
-    python scripts/73_generate_clean_cd_benchmarks.py C D
-    python scripts/73_generate_clean_cd_benchmarks.py --validate-only C D
+    python scripts/073_generate_clean_cd_benchmarks.py --test      # 2 refs x 2 sims, dry dir
+    python scripts/073_generate_clean_cd_benchmarks.py C D
+    python scripts/073_generate_clean_cd_benchmarks.py --validate-only C D
 """
 
 import argparse
@@ -124,7 +124,7 @@ def resolve_path(p: str) -> str:
 
 
 def write_fasta(contigs, fasta_path, genome_id='genome'):
-    """Verbatim from scripts/25_benchmark_generate.py."""
+    """Verbatim from scripts/025_benchmark_generate.py."""
     os.makedirs(os.path.dirname(fasta_path), exist_ok=True)
     with open(fasta_path, 'w') as f:
         for i, contig in enumerate(contigs):
@@ -154,7 +154,7 @@ def _init_worker(test_df_path):
 
 
 def get_cross_phylum_contaminants(dominant_phylum, test_df, rng, n_contaminants=1):
-    """Verbatim from scripts/25_benchmark_generate.py, extended to also return the
+    """Verbatim from scripts/025_benchmark_generate.py, extended to also return the
     accession/phylum/length of every contaminant actually used (recording only)."""
     candidates = test_df[test_df['phylum'] != dominant_phylum]
     if len(candidates) == 0:
@@ -178,7 +178,7 @@ def get_cross_phylum_contaminants(dominant_phylum, test_df, rng, n_contaminants=
 # -------------------------------------------------------------------- generation
 def generate_clean_cd_genome(args):
     """Set C/D generation, logic inherited verbatim from
-    scripts/25_benchmark_generate.py::generate_set_cd_genome. Only the seeding,
+    scripts/025_benchmark_generate.py::generate_set_cd_genome. Only the seeding,
     provenance recording and the final constraint guard are new."""
     (idx, ref_index, replicate, row_dict, target_completeness, target_contamination,
      fasta_dir, set_name, seed) = args
@@ -420,7 +420,7 @@ def generate_set(set_name, n_refs, n_sims, out_dir):
 
     ref_path = BENCHMARK_DIR / f'set_{set_name}_clean' / 'reference_selection.tsv'
     if not ref_path.exists():
-        raise SystemExit(f'FATAL: {ref_path} missing — run 72_select_clean_cd_refs.py')
+        raise SystemExit(f'FATAL: {ref_path} missing — run 072_select_clean_cd_refs.py')
     refs = pd.read_csv(ref_path, sep='\t')
     if len(refs) < n_refs:
         raise SystemExit(f'FATAL: only {len(refs)} references in {ref_path}')

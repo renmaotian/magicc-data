@@ -452,7 +452,7 @@ SAMPLE_TYPES = {
 
 QUALITY_TIER_WEIGHTS = {'high': 0.15, 'medium': 0.35, 'low': 0.35, 'highly_fragmented': 0.15}
 
-# V4/V5 "reduced genome" phyla (verbatim from scripts/19_batch_synthesis_v2.py).
+# V4/V5 "reduced genome" phyla (verbatim from scripts/019b_batch_synthesis_v2.py).
 # NOTE: Patescibacteriota and all DPANN members are in the holdout panel, so the
 # surviving pool is tiny (Bdellovibrionota only). See ADAPTED_REDUCED_* below.
 V5_REDUCED_GENOME_PHYLA = {

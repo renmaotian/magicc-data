@@ -3,7 +3,7 @@
 WS3 Track A — collect MAGICC V5, CheckM2, CoCoPyE and DeepCheck predictions for a
 real-data cohort into one tidy table.
 
-Parsing conventions are taken verbatim from scripts/91_parse_competitor_clean_cd.py so
+Parsing conventions are taken verbatim from scripts/091_parse_competitor_clean_cd.py so
 that real-data and synthetic-benchmark numbers are directly comparable:
   * CheckM2  — quality_report.tsv, columns Completeness / Contamination
   * CoCoPyE  — cocopye_raw_output.csv, stage-3 (marker + neural network) with stage-2
@@ -32,7 +32,7 @@ signal.signal(signal.SIGHUP, signal.SIG_IGN)
 
 ROOT = Path("/path/to/magicc")
 DEEPCHECK_DIR = ROOT / "tools" / "DeepCheck"
-SCRIPT_38 = ROOT / "scripts" / "38_run_deepcheck_v2.py"
+SCRIPT_38 = ROOT / "scripts" / "038_run_deepcheck_v2.py"
 
 
 def load_module(path, name):

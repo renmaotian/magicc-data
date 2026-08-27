@@ -9,7 +9,7 @@ Uses MAGICCModelV3 with:
   weight_decay=5e-4, mask_rate=0.02
 
 Usage:
-    python scripts/23_train_model_v3.py [--lr 5e-4] [--resume CHECKPOINT_PATH]
+    python scripts/023_train_model_v3.py [--lr 5e-4] [--resume CHECKPOINT_PATH]
 """
 
 import sys

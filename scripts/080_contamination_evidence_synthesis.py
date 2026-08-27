@@ -41,7 +41,7 @@ Q3  Is V5's contamination corroborated by DATABASE-INDEPENDENT evidence
 
 Usage
 -----
-    python scripts/80_contamination_evidence_synthesis.py
+    python scripts/080_contamination_evidence_synthesis.py
 
 Outputs (``results/revision/contamination_evidence/``)
 ------------------------------------------------------
@@ -347,7 +347,7 @@ def main() -> int:
                  and any('orig_phylum_contam_pct' in r for r in clean))
     if not have_both:
         print("  SKIPPED: Kraken2 metrics not yet available for agree_clean.")
-        print("  Run: python scripts/78_kraken2_strict_metric.py --run-missing")
+        print("  Run: python scripts/078_kraken2_strict_metric.py --run-missing")
         summary['Q1'] = {'status': 'skipped -- agree_clean Kraken2 missing'}
         pairs = []
     else:

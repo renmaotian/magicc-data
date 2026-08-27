@@ -4,18 +4,18 @@ WS2.5 — Attribution analysis for Set F: does MAGICC's advantage come
 specifically from **non-redundant** contamination, or uniformly across types?
 
 (Protocol name: ``84_analyze_contamination_types.py``; renumbered to 147 - see
-the header of ``144_contamination_type_module.py``.)
+the header of ``154_contamination_type_module.py``.)
 
 WHAT THIS SCRIPT DOES
 ---------------------
 1. Runs frozen MAGICC V5 on Set F by direct ONNX inference (the pattern of
-   ``scripts/75_run_magicc_clean_cd.py``; the CLI is deliberately not used).
+   ``scripts/075_run_magicc_clean_cd.py``; the CLI is deliberately not used).
 2. Loads CheckM2 / CoCoPyE / DeepCheck predictions produced by
-   ``scripts/146_run_tools_set_F.sh`` -> ``scripts/91_parse_competitor_clean_cd.py``.
+   ``scripts/156_run_tools_set_F.sh`` -> ``scripts/091_parse_competitor_clean_cd.py``.
    GUNC is out of scope here (WS4.2 owns it) and is a detection comparator, not
    a quantitative estimator, so it would not belong in these tables anyway.
 3. Runs a provenance audit on Set F in the style of
-   ``scripts/74_provenance_audit.py`` (GCA<->GCF cross-mapped), emitting
+   ``scripts/074_provenance_audit.py`` (GCA<->GCF cross-mapped), emitting
    accession lists and a SHA256 manifest.  Disjointness is proven, not asserted.
 4. Produces the WS2 acceptance deliverable: a **type x distance heatmap of
    SIGNED contamination error per tool**, plus the matching tables.
@@ -36,8 +36,8 @@ CONVENTIONS (binding, protocol sections 4.4d / 5.4 / 9.13)
 
 USAGE
 -----
-    python scripts/147_analyze_contamination_types.py
-    python scripts/147_analyze_contamination_types.py --set set_F_pilot --quick
+    python scripts/157_analyze_contamination_types.py
+    python scripts/157_analyze_contamination_types.py --set set_F_pilot --quick
 """
 
 from __future__ import annotations

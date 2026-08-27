@@ -23,7 +23,7 @@ Tables generated (results/):
   motivating_summary_v2.tsv (updated with Set C)
 
 Usage:
-    conda run -n magicc2 python scripts/43_update_motivating_figures_with_set_c.py
+    conda run -n magicc2 python scripts/043_update_motivating_figures_with_set_c.py
 """
 
 import os

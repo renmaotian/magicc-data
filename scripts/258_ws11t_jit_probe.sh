@@ -8,7 +8,7 @@
 # end-to-end 1-thread run of the 1,000-genome set, so the one-off compile cost
 # is measured directly and can be compared with the 25 s gap.
 #
-#   bash scripts/198_ws11t_jit_probe.sh
+#   bash scripts/258_ws11t_jit_probe.sh
 set -uo pipefail
 PROJECT="/path/to/magicc"
 ENVS="/path/to/anaconda3/envs"
@@ -17,7 +17,7 @@ SPEED="${PROJECT}/results/revision/speed_v3"
 RUNS="${SPEED}/runs"
 INDIR="${PROJECT}/data/benchmarks/set_E/fasta"
 INLIST="${SPEED_SRC}/inputs/set_E_full.txt"
-LAUNCHER="${PROJECT}/scripts/190_ws11t_run_magicc_codebase.py"
+LAUNCHER="${PROJECT}/scripts/250_ws11t_run_magicc_codebase.py"
 mkdir -p "${RUNS}" "${SPEED}/scratch"
 
 run_probe () {
@@ -54,7 +54,7 @@ run_probe () {
     MEM_AFTER=$(awk '/^MemAvailable:/{print $2}' /proc/meminfo)
     VM_AFTER=$(vmstat 1 2 | tail -n 1 | sed 's/^[[:space:]]*//;s/[[:space:]]\+/ /g')
     NOUT=$(( $(wc -l < "${WORK}/magicc_predictions.tsv" 2>/dev/null || echo 1) - 1 ))
-    python3 "${PROJECT}/scripts/192_ws11t_parse_time.py" \
+    python3 "${PROJECT}/scripts/252_ws11t_parse_time.py" \
         --time-file "${RUNS}/${CELL}.time.txt" --json "${JSON}" \
         --tool "${NAME}" --threads 1 --repeat 1 \
         --input-set set_E_full_dir --cache warm \

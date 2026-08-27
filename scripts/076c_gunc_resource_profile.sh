@@ -28,7 +28,7 @@ run_one () {   # run_one <label> <input_dir> <threads>
   echo "--- $LABEL : threads=$T  input=$IN ($(ls "$IN" | wc -l) genomes) ---"
   date
   /usr/bin/time -v -o "$OUT/time_${LABEL}.txt" \
-    python "$PROJ/scripts/76_run_gunc.py" \
+    python "$PROJ/scripts/076_run_gunc.py" \
       --input-dir "$IN" --output-dir "$RUN" \
       --extension .fna --threads "$T" \
       > "$OUT/stdout_${LABEL}.log" 2>&1

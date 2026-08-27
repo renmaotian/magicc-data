@@ -11,12 +11,12 @@ For every set this script produces one prediction TSV per tool, each merged with
     <set>/deepcheck_predictions.tsv   DeepCheck       (CheckM2 --dbg_vectors PKLs -> ResNet)
     <set>/gunc_predictions.tsv        GUNC 1.1.1      (from results/revision/benchmark/gunc/<set>/)
 
-DeepCheck's "run" happens here rather than in ``90_run_competitors_clean_cd.sh``
+DeepCheck's "run" happens here rather than in ``090_run_competitors_clean_cd.sh``
 because it is a pure tensor transform of CheckM2's intermediate feature vectors
 (no external tool is invoked). The model definition, the manual MinMaxScaler
 transform, the 20,021 -> 20,164 zero-pad, the 142x142 reshape and the
 work-around for DeepCheck's upstream ``forward()`` bug (it returns only the
-completeness head) are imported *verbatim* from ``scripts/38_run_deepcheck_v2.py``
+completeness head) are imported *verbatim* from ``scripts/038_run_deepcheck_v2.py``
 so no behaviour is re-invented.
 
 Merge integrity is verified, not assumed. For every merge the script checks:
@@ -42,8 +42,8 @@ Outputs
 
 Usage
 -----
-    conda run -n magicc2 python scripts/91_parse_competitor_clean_cd.py
-    conda run -n magicc2 python scripts/91_parse_competitor_clean_cd.py --tools checkm2,deepcheck
+    conda run -n magicc2 python scripts/091_parse_competitor_clean_cd.py
+    conda run -n magicc2 python scripts/091_parse_competitor_clean_cd.py --tools checkm2,deepcheck
 """
 
 from __future__ import annotations
@@ -67,7 +67,7 @@ BENCHMARK_DIR = PROJECT_DIR / 'data' / 'benchmarks'
 GUNC_ROOT = PROJECT_DIR / 'results' / 'revision' / 'benchmark' / 'gunc'
 OUT_DIR = PROJECT_DIR / 'results' / 'revision' / 'benchmark'
 DEEPCHECK_DIR = PROJECT_DIR / 'tools' / 'DeepCheck'
-SCRIPT_38 = PROJECT_DIR / 'scripts' / '38_run_deepcheck_v2.py'
+SCRIPT_38 = PROJECT_DIR / 'scripts' / '038_run_deepcheck_v2.py'
 
 ACCURACY_NOTE = ('ACCURACY RUN, not the controlled speed benchmark (WS8.1). Executed on a '
                  'shared, concurrently loaded 48-core machine (other agents active), so '
@@ -371,7 +371,7 @@ def do_deepcheck(set_dir: Path, meta: pd.DataFrame, dc_ctx: Dict,
         f'threads={torch_threads}\n'
         f'finished={datetime.now(timezone.utc).isoformat()}\n'
         f'host={socket.gethostname()}\n'
-        'command=scripts/91_parse_competitor_clean_cd.py (ResNet inference over '
+        'command=scripts/091_parse_competitor_clean_cd.py (ResNet inference over '
         'CheckM2 --dbg_vectors feature vectors)\n'
         'note=INFERENCE ONLY. Excludes the CheckM2 feature-extraction time DeepCheck '
         'depends on (see checkm2_wallclock.txt for that set). ' + ACCURACY_NOTE + '\n')

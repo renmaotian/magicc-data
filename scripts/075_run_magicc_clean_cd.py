@@ -3,7 +3,7 @@
 WS1.5 (MAGICC part) — Run the frozen MAGICC V5 model on Sets C_clean / D_clean and
 quantify the leakage effect against the superseded Sets C / D.
 
-Inference is direct ONNX Runtime, following scripts/56_benchmark_v5.py exactly:
+Inference is direct ONNX Runtime, following scripts/056_benchmark_v5.py exactly:
     FASTA -> selected-9-mer counts -> 7 k-mer-summary features -> normalisation
           -> models/magicc_v5.onnx
 The `magicc` CLI is deliberately NOT used (it is being edited concurrently).
@@ -30,8 +30,8 @@ Outputs:
   results/revision/ws1_5_clean_cd_summary.json
 
 Usage:
-    python scripts/75_run_magicc_clean_cd.py
-    python scripts/75_run_magicc_clean_cd.py --force     # ignore existing predictions
+    python scripts/075_run_magicc_clean_cd.py
+    python scripts/075_run_magicc_clean_cd.py --force     # ignore existing predictions
 """
 
 import argparse

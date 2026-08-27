@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-09_identify_core_genes.py
+009_identify_core_genes.py
 Identify core genes in selected bacterial and archaeal genomes using Prodigal + HMMER.
 
 For each genome:

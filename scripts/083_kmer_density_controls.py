@@ -36,7 +36,7 @@ script is self-contained and DB-agnostic.
 
 Usage
 -----
-    python scripts/83_kmer_density_controls.py \
+    python scripts/083_kmer_density_controls.py \
         --kraken2-db tools/kraken2_db_standard \
         --kraken2-bin /path/to/anaconda3/envs/kraken2_env/bin/kraken2 \
         --db-tag k2std --per-stratum 40 --threads 12
@@ -170,7 +170,7 @@ def main() -> int:
     print(f"reference genomes: {len(rows):,}")
 
     # species representatives = first genome per lineage in file order,
-    # matching scripts/82_build_gtdb_kraken2_db.py --one-per-species
+    # matching scripts/082_build_gtdb_kraken2_db.py --one-per-species
     seen_lineage = set()
     is_rep: Dict[str, bool] = {}
     phylum_count: Dict[str, int] = defaultdict(int)

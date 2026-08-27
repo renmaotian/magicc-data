@@ -4,7 +4,7 @@
 #
 # Runs a queue of (benchmark set x GUNC database) jobs in priority order.
 # Each job is split into fixed-size batches; every batch is an independent
-# `scripts/76_run_gunc.py` invocation writing its own normalized TSV, so an
+# `scripts/076_run_gunc.py` invocation writing its own normalized TSV, so an
 # interruption costs at most one batch. Re-running the script skips every batch
 # that already produced a complete normalized TSV, then concatenates the
 # batches into runs/<set>/<db>/gunc_normalized.tsv.
@@ -14,9 +14,9 @@
 # --gene-calls, which skips gene calling entirely. Prodigal output is
 # deterministic, so this changes nothing except wall-clock.
 #
-#   bash scripts/139_run_ws42_gunc_batches.sh
-#   BATCH=250 THREADS=8 bash scripts/139_run_ws42_gunc_batches.sh
-#   JOBS="set_E:progenomes_2.1" bash scripts/139_run_ws42_gunc_batches.sh
+#   bash scripts/096_run_ws42_gunc_batches.sh
+#   BATCH=250 THREADS=8 bash scripts/096_run_ws42_gunc_batches.sh
+#   JOBS="set_E:progenomes_2.1" bash scripts/096_run_ws42_gunc_batches.sh
 # ---------------------------------------------------------------------------
 set -uo pipefail
 
@@ -173,7 +173,7 @@ PYEOF
     fi
     say "  batch $b: START ($want genomes, $db, ${THREADS}t)"
     t0=$(date +%s)
-    python "$PROJ/scripts/76_run_gunc.py" $GC_FLAG \
+    python "$PROJ/scripts/076_run_gunc.py" $GC_FLAG \
         --input-list "$lst" --output-dir "$bdir" \
         --db "$dbf" --threads "$THREADS" \
         --temp-dir "$TMPROOT" >> "$LOG" 2>&1

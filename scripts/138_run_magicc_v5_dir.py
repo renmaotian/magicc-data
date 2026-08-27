@@ -2,7 +2,7 @@
 """
 WS3 Track A — run the frozen MAGICC V5 model over an arbitrary directory of FASTA files.
 
-Inference is direct ONNX Runtime and follows scripts/75_run_magicc_clean_cd.py exactly:
+Inference is direct ONNX Runtime and follows scripts/075_run_magicc_clean_cd.py exactly:
     FASTA -> selected-9-mer counts -> 7 k-mer-summary features -> normalisation
           -> models/magicc_v5.onnx
 The `magicc` CLI is deliberately not used (it is edited concurrently by other agents).

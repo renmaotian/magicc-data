@@ -18,7 +18,7 @@ Methodology:
 7. Compare MAGICC and CheckM2 predictions to ground truth via MAE.
 
 Usage:
-    python scripts/46_alignment_validation.py
+    python scripts/049_alignment_validation.py
 """
 
 import os

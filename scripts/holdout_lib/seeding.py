@@ -1,7 +1,7 @@
 """Explicit, recorded seeding for the WS1.6 holdout retrain.
 
 Motivation: the released V5 model was trained with no seed set anywhere in
-magicc/trainer.py or scripts/53_train_v5_run3.py, so its weights are not
+magicc/trainer.py or scripts/053_train_v5_run3.py, so its weights are not
 bit-reproducible. Reviewer 1 explicitly asks for random seeds in the repository.
 The holdout retrain is the flagship new experiment of the revision, so it seeds
 every RNG that affects it and records exactly what remains nondeterministic.

@@ -531,11 +531,11 @@ def main():
         if p.is_file():
             md.append(f"{REL}/{p.name}")
     md.append("```")
-    md.append("\nScripts: `scripts/140_mitigation_mechanism.py`, "
-              "`scripts/141_size_channel_intervention.py`, "
-              "`scripts/142_size_conditioned_recalibration.py`, "
-              "`scripts/143_recalibration_generalization_ceiling.py`, "
-              "`scripts/144_mitigation_boundary_statement.py`.\n")
+    md.append("\nScripts: `scripts/212_mitigation_mechanism.py`, "
+              "`scripts/213_size_channel_intervention.py`, "
+              "`scripts/214_size_conditioned_recalibration.py`, "
+              "`scripts/215_recalibration_generalization_ceiling.py`, "
+              "`scripts/216_mitigation_boundary_statement.py`.\n")
 
     (OUT / "BOUNDARY_STATEMENT.md").write_text("\n".join(md))
     print(f"[144] wrote {OUT/'BOUNDARY_STATEMENT.md'}")

@@ -764,7 +764,7 @@ def main() -> int:
     write_tsv(OUTDIR / "set_C_clean_crosscheck.tsv", cross)
 
     summary = {
-        "script": "scripts/136_reduced_genome_mechanism_and_crosscheck.py",
+        "script": "scripts/206_reduced_genome_mechanism_and_crosscheck.py",
         "seed": SEED, "n_bootstrap": BOOT,
         "R2_convention": "coefficient of determination, 1 - SS_res/SS_tot (protocol 4.4d)",
         "sign_convention": "all real-data deltas are MAGICC minus CheckM2",

@@ -348,7 +348,7 @@ def main():
                                    "cont_MAE_raw", "cont_MAE_recal"]].to_string(index=False))
 
     summary = {
-        "script": "scripts/142_size_conditioned_recalibration.py",
+        "script": "scripts/214_size_conditioned_recalibration.py",
         "model_frozen": "models/magicc_v5.onnx unchanged; recalibration is post-hoc",
         "n_pooled": int(len(d)),
         "n_reference_clusters": int(d.dominant_accession.nunique()),

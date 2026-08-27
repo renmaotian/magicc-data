@@ -18,7 +18,7 @@ Sets:
 5. data/benchmarks/set_E/ -> deepcheck_predictions.tsv
 
 Usage:
-    conda run -n magicc2 python scripts/38_run_deepcheck_v2.py
+    conda run -n magicc2 python scripts/038_run_deepcheck_v2.py
 """
 
 import os

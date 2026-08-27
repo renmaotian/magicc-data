@@ -15,8 +15,8 @@ Optimizations:
 
 Usage:
     conda activate magicc2
-    python scripts/19_batch_synthesis_v2.py [--workers N] [--start-batch B] [--end-batch E]
-    python scripts/19_batch_synthesis_v2.py --test-batch 4   # test single batch
+    python scripts/019b_batch_synthesis_v2.py [--workers N] [--start-batch B] [--end-batch E]
+    python scripts/019b_batch_synthesis_v2.py --test-batch 4   # test single batch
 """
 
 import sys

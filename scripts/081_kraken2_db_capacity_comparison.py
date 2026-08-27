@@ -30,13 +30,13 @@ The dichotomy this establishes, either way, is a reportable finding:
 Inputs
 ------
 One ``kraken2_metrics{_tag}.tsv`` per database, produced by
-``scripts/78_kraken2_strict_metric.py`` with matching ``--db-tag``.  Run 78 once
+``scripts/078_kraken2_strict_metric.py`` with matching ``--db-tag``.  Run 78 once
 per database with the SAME ``--kraken2-bin`` so the comparison is not confounded
 by Kraken2 version.
 
 Usage
 -----
-    python scripts/81_kraken2_db_capacity_comparison.py \
+    python scripts/081_kraken2_db_capacity_comparison.py \
         --dbs "k2_standard_08gb(capped)=capped8gb" \
               "k2_standard_20250714(full)=k2std"
 
@@ -337,7 +337,7 @@ def main() -> int:
                  'uncultivated MAG-derived lineages, a low hit rate here shows only '
                  'that no RefSeq reference exists -- it does NOT license concluding '
                  'genuine taxonomic novelty. Build/test a GTDB-level database '
-                 '(scripts/82_build_gtdb_kraken2_db.sh) before concluding.')
+                 '(scripts/082_build_gtdb_kraken2_db.sh) before concluding.')
         verdict = {'code': code,
                    'fold_change_median_density': round(fold, 4),
                    'baseline_database': base['database'],

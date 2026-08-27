@@ -16,7 +16,7 @@ two arms share byte-identical harness overhead; a separate control run of the
 production console script quantifies the launcher's own cost.
 
 Usage:
-  python 190_ws11t_run_magicc_codebase.py --code-root <dir> -- <magicc argv...>
+  python 250_ws11t_run_magicc_codebase.py --code-root <dir> -- <magicc argv...>
 """
 from __future__ import annotations
 

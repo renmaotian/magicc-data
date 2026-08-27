@@ -207,8 +207,8 @@ def main() -> int:
     r = genval['report']
     w('## 3. Benchmark generation — only the reference selection changed\n')
     w(f'`set_H_ncbi` was produced by the generation logic of '
-      f'`scripts/73_generate_clean_cd_benchmarks.py` **verbatim** (itself '
-      f'`scripts/25_benchmark_generate.py` verbatim): same fragmentation call, same '
+      f'`scripts/073_generate_clean_cd_benchmarks.py` **verbatim** (itself '
+      f'`scripts/025_benchmark_generate.py` verbatim): same fragmentation call, same '
       f'cross-phylum contaminant draw from `data/splits/test_genomes.tsv`, same caps, '
       f'same label arithmetic, same constraint guard, same FASTA writer, 10 independent '
       f'simulations per reference, targets completeness ~ U[50, 100) % and '
@@ -256,7 +256,7 @@ def main() -> int:
     hf = ovl[ovl['set'].str.contains('H_fail')].iloc[0]
     w('## 4. Provenance and leakage — proven, not asserted\n')
     w(f'`scripts/188_ws1_11_provenance_audit.py` imports the normalisation and GCA↔GCF '
-      f'cross-map code of `scripts/74_provenance_audit.py` directly, so the two audits '
+      f'cross-map code of `scripts/074_provenance_audit.py` directly, so the two audits '
       f'cannot drift apart. Cross-map: '
       f'{prov["crossmap_stats"]["filtered_genomes_rows"]:,} rows → '
       f'{prov["crossmap_stats"]["distinct_accession_strings_mapped"]:,} accession '

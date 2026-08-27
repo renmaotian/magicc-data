@@ -12,7 +12,7 @@
 # Safe to run detached: it tolerates CoCoPyE failing (the analysis then simply
 # proceeds with the tools that did produce predictions).
 #
-# Usage: setsid nohup scripts/148_finish_ws2_set_F.sh > logs/revision/ws2_finish.log 2>&1 &
+# Usage: setsid nohup scripts/158_finish_ws2_set_F.sh > logs/revision/ws2_finish.log 2>&1 &
 # =============================================================================
 set -uo pipefail
 
@@ -50,14 +50,14 @@ fi
 echo
 echo "[parse] scripts/91 --sets ${SET_NAME} --tools ${TOOLS}"
 PYTHONHASHSEED=0 CUDA_VISIBLE_DEVICES="" OMP_NUM_THREADS=4 \
-  conda run -n magicc2 python "${PROJECT_DIR}/scripts/91_parse_competitor_clean_cd.py" \
+  conda run -n magicc2 python "${PROJECT_DIR}/scripts/091_parse_competitor_clean_cd.py" \
     --sets "${SET_NAME}" --tools "${TOOLS}" --torch-threads 4 2>&1 | tail -20
 
 # ------------------------------------------------------------- 3. analysis
 echo
 echo "[analyse] scripts/147 --set ${SET_NAME} --workers ${WORKERS}"
 PYTHONHASHSEED=0 CUDA_VISIBLE_DEVICES="" \
-  conda run -n magicc2 python "${PROJECT_DIR}/scripts/147_analyze_contamination_types.py" \
+  conda run -n magicc2 python "${PROJECT_DIR}/scripts/157_analyze_contamination_types.py" \
     --set "${SET_NAME}" --workers "${WORKERS}" 2>&1 \
   | tee "${LOG_DIR}/ws2_analysis_final.log" | tail -5
 

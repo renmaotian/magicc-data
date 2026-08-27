@@ -2,7 +2,7 @@
 """
 WS8.1 — DeepCheck inference, thread-parameterised.
 
-Model definition copied verbatim from scripts/44_memory_benchmark_deepcheck.py
+Model definition copied verbatim from scripts/044_memory_benchmark_deepcheck.py
 (which itself copies scripts/28c). The only changes are (a) the thread count and
 feature directory are arguments, and (b) the timer prints a phase breakdown.
 

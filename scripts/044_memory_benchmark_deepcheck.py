@@ -5,7 +5,7 @@ Memory benchmark: DeepCheck inference on Set E (1,000 genomes).
 Uses pre-computed CheckM2 feature vectors from Set E.
 Inference only, 1 thread (CPU).
 
-Run with: /usr/bin/time -v conda run -n magicc2 python scripts/44_memory_benchmark_deepcheck.py
+Run with: /usr/bin/time -v conda run -n magicc2 python scripts/044_memory_benchmark_deepcheck.py
 """
 
 import os

@@ -145,7 +145,7 @@ _SUFFIX = re.compile(r"_[A-Z]{1,3}$")
 
 
 # ---------------------------------------------------------------------------
-# Accession normalisation -- VERBATIM from scripts/74_provenance_audit.py
+# Accession normalisation -- VERBATIM from scripts/074_provenance_audit.py
 # ---------------------------------------------------------------------------
 
 
@@ -171,7 +171,7 @@ def assembly_number(acc) -> Optional[str]:
 def build_crossmap(fg: pd.DataFrame) -> Tuple[Dict[str, str], dict]:
     """strict-normalised accession string -> canonical assembly-pair key.
 
-    Identical construction to ``74_provenance_audit.build_crossmap``; the stats
+    Identical construction to ``074_provenance_audit.build_crossmap``; the stats
     dict is compared against results/revision/provenance/accession_crossmap_stats.json
     so that any drift is caught rather than silently absorbed.
     """
@@ -947,7 +947,7 @@ def write_report(out_dir: Path, MT, PT, TRD, bal_cluster, bal_genome, summary,
     A("| `phylum_novel` | phylum absent from training |")
     A("")
     A("Accession matching uses the GCA↔GCF cross-map of the WS1.4 provenance audit")
-    A("(`scripts/74_provenance_audit.py`), rebuilt here and verified byte-for-byte")
+    A("(`scripts/074_provenance_audit.py`), rebuilt here and verified byte-for-byte")
     A("against `results/revision/provenance/accession_crossmap_stats.json` "
       f"(match: {eda.get('crossmap_matches_ws1_4_audit')}).")
     A("GTDB polyphyly suffixes (`Bacteroidota_A`) are treated as distinct taxa, "

@@ -19,8 +19,8 @@ Configuration (identical to V4 training):
 - checkpoint_every=10
 
 Usage:
-    python scripts/53_train_v5_run3.py
-    python scripts/53_train_v5_run3.py --resume models/checkpoint_v5r3_epoch_050.pt
+    python scripts/053_train_v5_run3.py
+    python scripts/053_train_v5_run3.py --resume models/checkpoint_v5r3_epoch_050.pt
 """
 
 import sys
@@ -94,7 +94,7 @@ def main():
     print(f"  Assembly branch: {params['assembly_branch']:,}")
     print(f"  Fusion head: {params['fusion_head']:,}")
 
-    # Create trainer -- identical config to V4 (scripts/20_train_model.py)
+    # Create trainer -- identical config to V4 (scripts/020_train_model.py)
     trainer = MAGICCTrainer(
         model=model,
         h5_path=h5_path,

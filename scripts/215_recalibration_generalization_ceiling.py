@@ -313,7 +313,7 @@ def main():
     print(sel[show].to_string(index=False))
 
     (OUT / "recalibration_ceiling_summary.json").write_text(json.dumps({
-        "script": "scripts/143_recalibration_generalization_ceiling.py",
+        "script": "scripts/215_recalibration_generalization_ceiling.py",
         "models_unmodified": ["models/magicc_v5.onnx", "models/magicc_holdout_phylum.onnx"],
         "fit_corpora": meta_notes,
         "recalibrator_inputs": ["pred_completeness", "pred_contamination",

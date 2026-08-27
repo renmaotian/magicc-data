@@ -3,7 +3,7 @@
 WS1.6 step 4a - Generate leave-phylum-out evaluation sets.
 
 One evaluation set per panel group plus an in-distribution control. Generation
-logic follows scripts/25_benchmark_generate.py::generate_set_cd_genome:
+logic follows scripts/025_benchmark_generate.py::generate_set_cd_genome:
   uniform completeness U[50,100]%, uniform contamination U[0,100]%,
   1-5 contaminant genomes, contaminants fragmented and trimmed to the target bp,
   explicit re-trim when realized contamination overshoots target*1.2+5.

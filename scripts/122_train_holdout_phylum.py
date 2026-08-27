@@ -9,7 +9,7 @@ cannot collide with models/magicc_holdout_phylum.onnx.
 THE HOLDOUT MODELS ARE VALIDATION ARTIFACTS ONLY. The released model remains
 trained on all data.
 
-Configuration is byte-for-byte the V5 winning recipe (scripts/53_train_v5_run3.py):
+Configuration is byte-for-byte the V5 winning recipe (scripts/053_train_v5_run3.py):
   MAGICCModel (V2 architecture, NO attention - attention was shown to hurt on V5 data)
   9,249 k-mer + 7 k-mer-summary features, 42,400,946 parameters
   AdamW lr 1e-3, weight_decay 5e-4

@@ -13,7 +13,7 @@ Records, all verified by direct inspection (nothing hard-coded from documentatio
     41 GB file, so we record size + mtime + per-split shapes and a SHA256 of the first
     and last 64 MiB (a cheap but strong integrity fingerprint). Full SHA256 optional
     via --full-hash.
-  * Hyperparameters and best epoch, read from scripts/53_train_v5_run3.py's actual
+  * Hyperparameters and best epoch, read from scripts/053_train_v5_run3.py's actual
     trainer call defaults + the checkpoint + the training log
   * Normalization parameter file provenance
   * Feature definitions (9,249 k-mers + 7 k-mer-summary features)
@@ -22,7 +22,7 @@ Records, all verified by direct inspection (nothing hard-coded from documentatio
 Output: results/revision/model_card.json
 
 Usage:
-    python scripts/70_freeze_model_version.py [--full-hash]
+    python scripts/070_freeze_model_version.py [--full-hash]
 """
 
 import argparse
@@ -48,7 +48,7 @@ PT_PATH = MODEL_DIR / 'best_model_v5_run3.pt'
 H5_PATH = DATA_DIR / 'features' / 'magicc_v5_features.h5'
 NORM_PATH = DATA_DIR / 'features' / 'normalization_params.json'
 KMERS_PATH = DATA_DIR / 'kmer_selection' / 'selected_kmers.txt'
-TRAIN_SCRIPT = PROJECT_DIR / 'scripts' / '53_train_v5_run3.py'
+TRAIN_SCRIPT = PROJECT_DIR / 'scripts' / '053_train_v5_run3.py'
 TRAIN_LOG = MODEL_DIR / 'training_v5_run3_log.txt'
 HISTORY_PATH = MODEL_DIR / 'training_history_v5_run3.json'
 
@@ -274,7 +274,7 @@ def main():
         'V5 = 800,000 V4-style synthetic samples + 100,000 completeness=100%/'
         'contamination=0% + 100,000 completeness=100%/contamination=0-10% '
         '= 1,000,000 train; 100,000 val; 100,000 test '
-        '(see scripts/50_generate_v5_training_data.py and Phase 4 of '
+        '(see scripts/050_generate_v5_training_data.py and Phase 4 of '
         'the internal project log)'
     )
     h5_block['reference_genomes'] = (
@@ -323,7 +323,7 @@ def main():
         'random_seed': None,
         'random_seed_note': (
             'VERIFIED BY CODE INSPECTION: neither magicc/trainer.py nor '
-            'scripts/53_train_v5_run3.py sets a torch/numpy/python random seed, so the '
+            'scripts/053_train_v5_run3.py sets a torch/numpy/python random seed, so the '
             'released weights are not bit-reproducible from scratch. The released '
             'artefact is therefore frozen by SHA256 (above) rather than by seed. '
             'Inference IS deterministic: see determinism_probe.'
@@ -395,7 +395,7 @@ def main():
     card = {
         'schema': 'magicc-model-card/1.0',
         'generated_utc': datetime.now(timezone.utc).isoformat(),
-        'generated_by': 'scripts/70_freeze_model_version.py',
+        'generated_by': 'scripts/070_freeze_model_version.py',
         'git_commit': git_commit,
         'frozen_model': {
             'name': 'MAGICC',

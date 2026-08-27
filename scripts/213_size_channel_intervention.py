@@ -82,7 +82,7 @@ ONNX = ROOT / "models" / "magicc_v5.onnx"
 
 N_SAMPLE = 4000
 SCALES = [0.50, 0.71, 0.85, 1.00, 1.18, 1.41, 2.00]
-SEED = fw.stable_hash("141_size_channel_intervention") % (2 ** 31)
+SEED = fw.stable_hash("213_size_channel_intervention") % (2 ** 31)
 N_THREADS = 4
 N_BOOT = 2000
 
@@ -302,7 +302,7 @@ def main():
     print(pd.DataFrame(strat).to_string(index=False))
 
     summary = {
-        "script": "scripts/141_size_channel_intervention.py",
+        "script": "scripts/213_size_channel_intervention.py",
         "model": "models/magicc_v5.onnx (FROZEN, unmodified)",
         "substrate": "data/features/magicc_v5_features.h5 :: test split",
         "n": m, "n_reference_clusters": int(len(np.unique(acc))),

@@ -14,7 +14,7 @@ Stage 3 predictions preferred, Stage 2 fallback.
 0-1 fractions converted to 0-100%.
 
 Usage:
-    conda run -n magicc2 python scripts/37_run_cocopye_v2.py [--threads N] [--sets 1 2 3 4 5]
+    conda run -n magicc2 python scripts/037_run_cocopye_v2.py [--threads N] [--sets 1 2 3 4 5]
 """
 
 import sys

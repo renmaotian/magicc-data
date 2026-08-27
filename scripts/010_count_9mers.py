@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-10_count_9mers.py
+010_count_9mers.py
 Count 9-mers using KMC3 on extracted core gene DNA sequences.
 
 For each genome's core gene FASTA:

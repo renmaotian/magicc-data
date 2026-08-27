@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-08_select_representative_genomes.py
+008_select_representative_genomes.py
 Select 1,000 representative bacterial and 1,000 representative archaeal genomes
 (stratified by phylum) from the training set for k-mer feature selection.
 

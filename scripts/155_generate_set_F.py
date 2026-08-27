@@ -3,7 +3,7 @@
 WS2.2 + WS2.3 — Build **Set F**: contamination type x taxonomic distance.
 
 (Protocol name: ``82_generate_set_F.py``; renumbered to 145 because 82 was
-already taken — see the header of ``144_contamination_type_module.py``.)
+already taken — see the header of ``154_contamination_type_module.py``.)
 
 DESIGN
 ------
@@ -38,7 +38,7 @@ LEAKAGE
 Dominants **and** contaminants are drawn exclusively from
 ``data/splits/test_genomes.tsv`` (the held-out test split).  Proven, not
 asserted, by ``146``-adjacent provenance audit written here and by
-``scripts/74_provenance_audit.py``-style GCA<->GCF cross-mapping.
+``scripts/074_provenance_audit.py``-style GCA<->GCF cross-mapping.
 
 OUTPUTS
 -------
@@ -54,9 +54,9 @@ OUTPUTS
 
 USAGE
 -----
-    python scripts/145_generate_set_F.py --pilot            # 2x2x10 smoke test
-    python scripts/145_generate_set_F.py --workers 10
-    python scripts/145_generate_set_F.py --validate-only
+    python scripts/155_generate_set_F.py --pilot            # 2x2x10 smoke test
+    python scripts/155_generate_set_F.py --workers 10
+    python scripts/155_generate_set_F.py --validate-only
 """
 
 from __future__ import annotations
@@ -90,7 +90,7 @@ def _load_module(path: Path, name: str):
     return mod
 
 
-ctm = _load_module(PROJECT_DIR / "scripts" / "144_contamination_type_module.py",
+ctm = _load_module(PROJECT_DIR / "scripts" / "154_contamination_type_module.py",
                    "ws2_contamination_types")
 
 from magicc.fragmentation import read_fasta  # noqa: E402

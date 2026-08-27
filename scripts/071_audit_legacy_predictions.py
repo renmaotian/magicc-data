@@ -12,7 +12,7 @@ Every benchmark set under data/benchmarks/ that has a metadata.tsv is audited on
   * which non-MAGICC competitor predictions exist (reported, NEVER regenerated)
 
 Sets whose V5 predictions are missing / incomplete / stale are then (re)generated with
-exactly the pipeline of scripts/56_benchmark_v5.py:
+exactly the pipeline of scripts/056_benchmark_v5.py:
     FASTA -> selected-9-mer counts -> 7 k-mer-summary features -> normalisation
           -> models/magicc_v5.onnx  (direct ONNX Runtime inference; the CLI is NOT used)
 
@@ -24,8 +24,8 @@ Outputs:
   data/benchmarks/<set>/magicc_v5_predictions.tsv   (for sets that lacked them)
 
 Usage:
-    python scripts/71_audit_legacy_predictions.py            # audit + generate missing
-    python scripts/71_audit_legacy_predictions.py --audit-only
+    python scripts/071_audit_legacy_predictions.py            # audit + generate missing
+    python scripts/071_audit_legacy_predictions.py --audit-only
 """
 
 import argparse

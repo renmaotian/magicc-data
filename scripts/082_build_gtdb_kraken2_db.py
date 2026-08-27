@@ -102,7 +102,7 @@ Rationale:
   * The additional ~77,000 genomes buy strain-level resolution, which is not the
     quantity at issue. The question is whether these MAGs have *any*
     phylum-to-genus-level relative in GTDB; species representatives answer that.
-  * The positive controls (``scripts/83_kmer_density_controls.py``) neutralise
+  * The positive controls (``scripts/083_kmer_density_controls.py``) neutralise
     the bias entirely: judging the 141 MAGs' informative-k-mer density against
     density measured on genomes we *know* the database represents converts an
     absolute threshold into a relative one. That is the methodologically correct
@@ -114,10 +114,10 @@ Rationale:
 Usage
 -----
     # prepare only (fast; inspect before committing to the build)
-    python scripts/82_build_gtdb_kraken2_db.py --prepare-only
+    python scripts/082_build_gtdb_kraken2_db.py --prepare-only
 
     # prepare and build
-    python scripts/82_build_gtdb_kraken2_db.py --threads 16
+    python scripts/082_build_gtdb_kraken2_db.py --threads 16
 """
 
 from __future__ import annotations
@@ -346,7 +346,7 @@ def main() -> int:
             'one_per_species lowers informative k-mer density and therefore biases '
             'the capacity-vs-novelty analysis TOWARDS a novelty conclusion. This is '
             'neutralised by the internal positive controls in '
-            'scripts/83_kmer_density_controls.py, which convert the absolute density '
+            'scripts/083_kmer_density_controls.py, which convert the absolute density '
             'threshold into a relative comparison against genomes the database is '
             'known to represent.'
             if args.one_per_species else 'full reference set used; no subset bias'),

@@ -27,7 +27,7 @@ Outputs:
   results/revision/ws1_1_reference_selection_summary.json
 
 Usage:
-    python scripts/72_select_clean_cd_refs.py
+    python scripts/072_select_clean_cd_refs.py
 """
 
 import json
@@ -94,7 +94,7 @@ def main():
 
     summary = {
         'generated_utc': datetime.now(timezone.utc).isoformat(),
-        'generated_by': 'scripts/72_select_clean_cd_refs.py',
+        'generated_by': 'scripts/072_select_clean_cd_refs.py',
         'source': 'data/splits/test_genomes.tsv',
         'n_test_split_genomes': int(len(test)),
         'sampling': ('numpy.random.default_rng(seed).choice(n_candidates, size=100, '

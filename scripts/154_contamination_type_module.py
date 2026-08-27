@@ -7,13 +7,13 @@ NOTE ON SCRIPT NUMBERING
 ------------------------
 The v6 protocol names this module ``81_contamination_type_module.py``.  Numbers
 81-83 were already taken by the Kraken2 database-capacity work
-(``81_kraken2_db_capacity_comparison.py``, ``82_build_gtdb_kraken2_db.py``,
-``83_kmer_density_controls.py``) before WS2 started, so WS2 uses 144-147:
+(``081_kraken2_db_capacity_comparison.py``, ``082_build_gtdb_kraken2_db.py``,
+``083_kmer_density_controls.py``) before WS2 started, so WS2 uses 144-147:
 
-    144_contamination_type_module.py   <- protocol 81
-    145_generate_set_F.py              <- protocol 82
-    146_run_tools_set_F.sh             <- protocol 83
-    147_analyze_contamination_types.py <- protocol 84
+    154_contamination_type_module.py   <- protocol 81
+    155_generate_set_F.py              <- protocol 82
+    156_run_tools_set_F.sh             <- protocol 83
+    157_analyze_contamination_types.py <- protocol 84
 
 
 ==========================================================================
@@ -195,7 +195,7 @@ length model, so contig structure remains comparable across sets.  The ground
 truth (contaminant bp / dominant full reference bp) is the production
 convention, unchanged.
 
-The module is import-safe: ``145_generate_set_F.py`` imports it.  Running it
+The module is import-safe: ``155_generate_set_F.py`` imports it.  Running it
 directly executes a self-test on a small pair of real test-split genomes.
 """
 
@@ -938,7 +938,7 @@ def _self_test() -> int:
     import pandas as pd
 
     print("=" * 74)
-    print("144_contamination_type_module — self-test")
+    print("154_contamination_type_module — self-test")
     print("=" * 74)
     t = pd.read_csv(PROJECT_DIR / "data/splits/test_genomes.tsv", sep="\t")
     t["fasta_path"] = t["fasta_path"].str.replace(

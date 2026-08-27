@@ -5,7 +5,7 @@ Phase 5, Step 6: Export best PyTorch model to ONNX FP32 format.
 Verifies that ONNX model produces identical predictions to PyTorch model.
 
 Usage:
-    python scripts/22_export_onnx.py
+    python scripts/022_export_onnx.py
 """
 
 import sys

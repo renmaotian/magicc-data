@@ -2,8 +2,8 @@
 """
 WS3.8 (R1-M3) — run the frozen MAGICC V5 model on the CAMI II bin sets.
 
-Inference is direct ONNX Runtime, following scripts/75_run_magicc_clean_cd.py (which in
-turn follows scripts/56_benchmark_v5.py) exactly:
+Inference is direct ONNX Runtime, following scripts/075_run_magicc_clean_cd.py (which in
+turn follows scripts/056_benchmark_v5.py) exactly:
 
     FASTA -> selected-9-mer counts -> 7 k-mer-summary features -> normalisation
           -> models/magicc_v5.onnx

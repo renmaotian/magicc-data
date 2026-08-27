@@ -5,8 +5,8 @@ WS1.11 (R1-m13) -- generate benchmark Set H (``set_H_ncbi``).
 WHAT IS HELD CONSTANT
 ---------------------
 The per-genome generation logic is ``generate_clean_cd_genome`` from
-scripts/73_generate_clean_cd_benchmarks.py, reused verbatim (which is itself
-``generate_set_cd_genome`` from scripts/25_benchmark_generate.py verbatim): same
+scripts/073_generate_clean_cd_benchmarks.py, reused verbatim (which is itself
+``generate_set_cd_genome`` from scripts/025_benchmark_generate.py verbatim): same
 fragmentation call, same cross-phylum contaminant selection from
 ``data/splits/test_genomes.tsv``, same inherited cap, same label arithmetic, same
 constraint guard, same FASTA writer, same 10 simulations per reference, same target
@@ -113,7 +113,7 @@ def resolve_path(p: str) -> str:
 
 
 def write_fasta(contigs, fasta_path, genome_id='genome'):
-    """Verbatim from scripts/25_benchmark_generate.py."""
+    """Verbatim from scripts/025_benchmark_generate.py."""
     os.makedirs(os.path.dirname(fasta_path), exist_ok=True)
     with open(fasta_path, 'w') as f:
         for i, contig in enumerate(contigs):
@@ -156,7 +156,7 @@ def get_cross_phylum_contaminants(dominant_phylum, test_df, rng, n_contaminants=
 
 
 def generate_set_h_genome(args):
-    """Body inherited verbatim from scripts/73_generate_clean_cd_benchmarks.py::
+    """Body inherited verbatim from scripts/073_generate_clean_cd_benchmarks.py::
     generate_clean_cd_genome; only the recorded provenance fields differ."""
     (idx, ref_index, replicate, row_dict, target_completeness, target_contamination,
      fasta_dir, seed) = args
@@ -632,7 +632,7 @@ def main():
                    'seed_formula': 'SET_BASE + 1000 * ref_index + replicate',
                    'design_rng': 'np.random.default_rng(SET_BASE), targets drawn per '
                                  '(pair, replicate) and shared by both arms',
-                   'generator': 'scripts/73_generate_clean_cd_benchmarks.py logic, '
+                   'generator': 'scripts/073_generate_clean_cd_benchmarks.py logic, '
                                 'verbatim',
                    'report': rep}, f, indent=2)
     print(f'\nwrote {RESULTS_DIR / name}')

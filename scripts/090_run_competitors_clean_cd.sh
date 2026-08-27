@@ -7,15 +7,15 @@
 #
 # DeepCheck is NOT run here: it consumes CheckM2's intermediate feature vectors
 # (written by --dbg_vectors) and its "run" is a pure tensor transform, so it is
-# executed inside scripts/91_parse_competitor_clean_cd.py together with the
+# executed inside scripts/091_parse_competitor_clean_cd.py together with the
 # merging/verification step.
 #
 # Invocations are reused verbatim from the established scripts:
-#   CheckM2 1.0.1  -- scripts/36_run_checkm2_v2.sh   (env checkm2_py39, CHECKM2DB,
+#   CheckM2 1.0.1  -- scripts/036_run_checkm2_v2.sh   (env checkm2_py39, CHECKM2DB,
 #                     --dbg_vectors so DeepCheck features are produced)
-#   CoCoPyE 0.5.0  -- scripts/37_run_cocopye_v2.py   (env magicc2,
+#   CoCoPyE 0.5.0  -- scripts/037_run_cocopye_v2.py   (env magicc2,
 #                     cocopye run -i <dir> -o <csv> -t <n> -v full)
-#   GUNC 1.1.1     -- scripts/76_run_gunc.py         (env gunc_env, DB tools/gunc_db)
+#   GUNC 1.1.1     -- scripts/076_run_gunc.py         (env gunc_env, DB tools/gunc_db)
 #
 # THREADS ARE CAPPED AT 16 by default: other agents share this machine
 # (a GPU training job with ~24 CPU workers, plus a GUNC control run).
@@ -28,7 +28,7 @@
 # is already complete, so the script can be re-run any number of times.
 #
 # Usage:
-#   scripts/90_run_competitors_clean_cd.sh [--threads N]
+#   scripts/090_run_competitors_clean_cd.sh [--threads N]
 #                                          [--tools checkm2,cocopye,gunc]
 #                                          [--sets set_C_clean,set_D_clean]
 # =============================================================================
@@ -208,15 +208,15 @@ for SET_NAME in ${SETS//,/ }; do
         elif [[ ! -d "${GUNC_DB_DIR}" ]] || [[ -z "$(find "${GUNC_DB_DIR}" -maxdepth 1 -name '*.dmnd' 2>/dev/null)" ]]; then
             echo "[gunc/${SET_NAME}] SKIP -- no GUNC database in ${GUNC_DB_DIR}"
             STATUS_LINES+=("gunc ${SET_NAME} SKIPPED(no database)")
-        elif [[ ! -f "${PROJECT_DIR}/scripts/76_run_gunc.py" ]]; then
-            echo "[gunc/${SET_NAME}] SKIP -- scripts/76_run_gunc.py not present"
+        elif [[ ! -f "${PROJECT_DIR}/scripts/076_run_gunc.py" ]]; then
+            echo "[gunc/${SET_NAME}] SKIP -- scripts/076_run_gunc.py not present"
             STATUS_LINES+=("gunc ${SET_NAME} SKIPPED(no runner)")
         else
             echo "[gunc/${SET_NAME}] running ..."
             LOADAVG_AT_START=$(cut -d' ' -f1-3 /proc/loadavg | tr ' ' '/')
             STARTED=$(date -Is); T0=$(date +%s)
-            CMD="python ${PROJECT_DIR}/scripts/76_run_gunc.py --input-dir ${FASTA_DIR} --output-dir ${G_OUT} --extension .fasta --threads ${THREADS}"
-            conda run -n "${COCOPYE_ENV}" python "${PROJECT_DIR}/scripts/76_run_gunc.py" \
+            CMD="python ${PROJECT_DIR}/scripts/076_run_gunc.py --input-dir ${FASTA_DIR} --output-dir ${G_OUT} --extension .fasta --threads ${THREADS}"
+            conda run -n "${COCOPYE_ENV}" python "${PROJECT_DIR}/scripts/076_run_gunc.py" \
                 --input-dir "${FASTA_DIR}" \
                 --output-dir "${G_OUT}" \
                 --extension .fasta \

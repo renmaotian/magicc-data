@@ -25,7 +25,7 @@ separates the two competing explanations:
 This also answers Reviewer 2's request for "abnormal marker gene duplication
 patterns" directly.
 
-Method (follows the established pattern of scripts/09_identify_core_genes.py)
+Method (follows the established pattern of scripts/009_identify_core_genes.py)
 -----------------------------------------------------------------------------
 1. Prodigal (``-p single``) gene calls per genome.
 2. ``hmmsearch --cut_tc`` against BOTH profile sets shipped with this project:
@@ -41,8 +41,8 @@ Method (follows the established pattern of scripts/09_identify_core_genes.py)
 
 Usage
 -----
-    python scripts/79_scg_duplication.py --threads 16
-    python scripts/79_scg_duplication.py --cohorts disagreement_141 --threads 8
+    python scripts/079_scg_duplication.py --threads 16
+    python scripts/079_scg_duplication.py --cohorts disagreement_141 --threads 8
 
 Outputs (``results/revision/contamination_evidence/``)
 ------------------------------------------------------
@@ -422,7 +422,7 @@ def main() -> int:
 
     stats_tsv = out_dir / 'cohort_genome_stats.tsv'
     if not stats_tsv.is_file():
-        sys.exit(f"ERROR: {stats_tsv} missing; run scripts/77_build_cohorts_and_stats.py")
+        sys.exit(f"ERROR: {stats_tsv} missing; run scripts/077_build_cohorts_and_stats.py")
     with open(stats_tsv) as f:
         rows = list(csv.DictReader(f, delimiter='\t'))
     wanted = set(args.cohorts.split(','))

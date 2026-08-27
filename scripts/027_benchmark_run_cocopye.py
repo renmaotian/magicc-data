@@ -19,7 +19,7 @@ CoCoPyE output format:
   - We convert to 0-100% for consistency with MAGICC predictions
 
 Usage:
-    conda run -n magicc2 python scripts/27_benchmark_run_cocopye.py [--threads N] [--sets A B C D]
+    conda run -n magicc2 python scripts/027_benchmark_run_cocopye.py [--threads N] [--sets A B C D]
 """
 
 import sys

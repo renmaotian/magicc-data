@@ -3,11 +3,11 @@
 # WS2.3 verification -- resumability and determinism of the Set F generator.
 #
 # Deletes a handful of generated FASTAs (and their checkpoint lines), re-runs
-# scripts/145_generate_set_F.py, and asserts that the regenerated files are
+# scripts/155_generate_set_F.py, and asserts that the regenerated files are
 # BYTE-IDENTICAL to the originals and that metadata.tsv / generation_metadata.tsv
 # are unchanged.  Same protocol as the set_C_clean / set_D_clean check.
 #
-# Usage: bash scripts/145b_setF_determinism_check.sh [set_F] [n_samples]
+# Usage: bash scripts/155b_setF_determinism_check.sh [set_F] [n_samples]
 # =============================================================================
 set -uo pipefail
 PROJECT_DIR="/path/to/magicc"
@@ -61,7 +61,7 @@ PY
 echo "--- regenerating ---"
 EXTRA=""
 [[ "${SET_NAME}" == "set_F_pilot" ]] && EXTRA="--pilot"
-"${PY}" scripts/145_generate_set_F.py ${EXTRA} --workers 6 2>&1 | tail -6
+"${PY}" scripts/155_generate_set_F.py ${EXTRA} --workers 6 2>&1 | tail -6
 
 FAIL=0
 for g in "${GIDS[@]}"; do

@@ -177,7 +177,7 @@ def run_cocopye(threads: int) -> pd.DataFrame | None:
             print(f'    CoCoPyE FAILED — see {log}')
             return None
     # Stage-3 (marker + neural network), stage-2 fallback, 0-1 -> 0-100 %.
-    # Identical convention to scripts/91_parse_competitor_clean_cd.py::do_cocopye,
+    # Identical convention to scripts/091_parse_competitor_clean_cd.py::do_cocopye,
     # so these values are comparable with every other CoCoPyE number in the revision.
     c = pd.read_csv(raw)
     if '3_completeness' in c.columns:

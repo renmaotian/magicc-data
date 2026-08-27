@@ -17,8 +17,8 @@ Training config (based on V3 Run 3 best + V4):
 - Data augmentation: mask_rate=0.02, noise_std=0.01
 
 Usage:
-    python scripts/51_train_v5_model.py
-    python scripts/51_train_v5_model.py --resume models/best_model.pt
+    python scripts/051_train_v5_model.py
+    python scripts/051_train_v5_model.py --resume models/best_model.pt
 """
 
 import sys

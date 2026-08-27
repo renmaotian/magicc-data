@@ -14,7 +14,7 @@ one frozen model version (MAGICC V5):
 
 A_v2 / B_v2 / E reuse the existing V5 and competitor predictions unchanged
 (nothing is re-run for them); C_clean / D_clean come from
-``90_run_competitors_clean_cd.sh`` + ``91_parse_competitor_clean_cd.py``.
+``090_run_competitors_clean_cd.sh`` + ``091_parse_competitor_clean_cd.py``.
 
 Two caveats are made explicit in the output rather than left in a footnote:
 
@@ -56,7 +56,7 @@ Outputs
 
 Usage
 -----
-    conda run -n magicc2 python scripts/94_revised_benchmark_table.py
+    conda run -n magicc2 python scripts/094_revised_benchmark_table.py
 """
 
 from __future__ import annotations
@@ -82,7 +82,7 @@ def _load(name: str, path: Path):
     return mod
 
 
-M92 = _load('m92', PROJECT_DIR / 'scripts' / '92_clean_cd_metrics.py')
+M92 = _load('m92', PROJECT_DIR / 'scripts' / '092_clean_cd_metrics.py')
 OUT_DIR = M92.OUT_DIR
 TOOLS = M92.TOOLS
 CLUSTER_COL = M92.CLUSTER_COL
@@ -242,7 +242,7 @@ def main() -> int:
     md: List[str] = []
     md.append('# Revised five-set benchmark table (WS1.5)\n')
     md.append(f'Generated {datetime.now(timezone.utc).isoformat()} by '
-              '`scripts/94_revised_benchmark_table.py`.\n')
+              '`scripts/094_revised_benchmark_table.py`.\n')
     md.append('All numbers come from one frozen model version, **MAGICC V5** '
               '(`models/magicc_v5.onnx`, SHA256 b843466…). Sets C and D of the submitted '
               'manuscript are **withdrawn** and replaced by `C_clean` / `D_clean`, built '

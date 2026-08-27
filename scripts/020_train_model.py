@@ -3,7 +3,7 @@
 Phase 5, Step 3: Train the MAGICC multi-branch fusion neural network.
 
 Usage:
-    python scripts/20_train_model.py [--resume CHECKPOINT_PATH]
+    python scripts/020_train_model.py [--resume CHECKPOINT_PATH]
 """
 
 import sys

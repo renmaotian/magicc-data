@@ -51,7 +51,7 @@ Outputs
 
 Usage
 -----
-    conda run -n magicc2 python scripts/94b_gunc_detection_comparison.py
+    conda run -n magicc2 python scripts/094b_gunc_detection_comparison.py
 """
 
 from __future__ import annotations
@@ -77,7 +77,7 @@ def _load(name: str, path: Path):
     return mod
 
 
-M92 = _load('m92', PROJECT_DIR / 'scripts' / '92_clean_cd_metrics.py')
+M92 = _load('m92', PROJECT_DIR / 'scripts' / '092_clean_cd_metrics.py')
 OUT_DIR = M92.OUT_DIR
 TOOLS = M92.TOOLS
 CLUSTER_COL = M92.CLUSTER_COL
@@ -318,7 +318,7 @@ def main() -> int:
 
     md: List[str] = ['# GUNC as a contamination detector on the clean Sets C/D (WS1.5 / WS4.2)\n']
     md.append(f'Generated {datetime.now(timezone.utc).isoformat()} by '
-              '`scripts/94b_gunc_detection_comparison.py`.\n')
+              '`scripts/094b_gunc_detection_comparison.py`.\n')
     md.append('GUNC returns a clade separation score and a pass/fail flag, **not** a '
               'contamination percentage, so it is deliberately kept out of the MAE table '
               'and evaluated as a detector. The four quantitative tools are scored on the '

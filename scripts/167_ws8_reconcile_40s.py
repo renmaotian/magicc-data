@@ -12,8 +12,8 @@ Figures in the record:
    97.5 s   supplementary Table S4 "Wall-clock time (Set E)"
    1,451    supplementary Table S4 "Genomes/min/thread", also the abstract
      40 s   main text "Processing 1,000 genomes would only take 40 seconds"
-   74.4 s   scripts/40_test_cli_set_e.py, 1 thread
-    7.9 s   scripts/40_test_cli_set_e.py, 43 threads
+   74.4 s   scripts/040_test_cli_set_e.py, 1 thread
+    7.9 s   scripts/040_test_cli_set_e.py, 43 threads
 
 Writes results/revision/speed/reconciliation_40s_vs_97.5s.json
 """
@@ -34,7 +34,7 @@ SETS = ["A_v2", "B_v2", "C", "D", "E"]
 def per_set_internal_timers() -> pd.DataFrame:
     """The `wall_clock_s` column stored in each set's magicc_predictions.tsv.
 
-    scripts/26_benchmark_run_magicc.py:180 stores
+    scripts/026_benchmark_run_magicc.py:180 stores
         total_time = feat_time + infer_time
     i.e. feature extraction + ONNX inference ONLY. It therefore excludes
     interpreter start, imports, Numba JIT warm-up, ONNX model load,
@@ -160,13 +160,13 @@ def main() -> None:
 
         "figure_1451_genomes_per_min_per_thread": {
             "value": round(mean_of_rates, 1),
-            "how_it_was_computed": "scripts/30_benchmark_analysis.py:623 and :834 -- "
+            "how_it_was_computed": "scripts/030_benchmark_analysis.py:623 and :834 -- "
                                    "speed_per_thread = (n / wall_clock_s * 60) / n_threads, "
                                    "evaluated once per benchmark set and then arithmetically "
                                    "AVERAGED over the five sets.",
             "wall_clock_s_source": "the `wall_clock_s` column of each set's "
                                    "magicc_predictions.tsv, written by "
-                                   "scripts/26_benchmark_run_magicc.py:180 as "
+                                   "scripts/026_benchmark_run_magicc.py:180 as "
                                    "total_time = feat_time + infer_time",
             "what_that_timer_excludes": [
                 "interpreter start and imports (numpy, onnxruntime, numba)",
@@ -208,7 +208,7 @@ def main() -> None:
         },
 
         "figure_74_4_s_and_7_9_s": {
-            "source": "scripts/40_test_cli_set_e.py -> results/phase7_set_e_test/",
+            "source": "scripts/040_test_cli_set_e.py -> results/phase7_set_e_test/",
             "what_it_measured": "END-TO-END wall clock of `python -m magicc predict` as a "
                                 "subprocess (time.time() around subprocess.run), i.e. the "
                                 "same definition as the 97.5 s figure but WITHOUT the "

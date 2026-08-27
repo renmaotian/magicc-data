@@ -2,8 +2,8 @@
 """
 WS1.11 -- run the FROZEN MAGICC V5 model on ``set_H_ncbi``.
 
-Direct ONNX Runtime inference, following scripts/75_run_magicc_clean_cd.py (itself
-following scripts/56_benchmark_v5.py) exactly:
+Direct ONNX Runtime inference, following scripts/075_run_magicc_clean_cd.py (itself
+following scripts/056_benchmark_v5.py) exactly:
 
     FASTA -> selected-9-mer counts -> 7 k-mer-summary features -> normalisation
           -> models/magicc_v5.onnx

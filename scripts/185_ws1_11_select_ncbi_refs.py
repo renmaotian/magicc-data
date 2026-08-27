@@ -92,7 +92,7 @@ SEED_FAIL = 7011          # which would-have-failed references are drawn
 SEED_MATCH = 7012         # tie-breaking inside the matched control search
 
 # The project's ORIGINAL curation filter, reproduced verbatim from
-# scripts/02_filter_genomes.py / Phase 1 of the reference-curation protocol.
+# scripts/002_filter_genomes.py / Phase 1 of the reference-curation protocol.
 FILTER = dict(completeness_min=98.0, contamination_max=2.0,
               contig_count_max=100, n50_min=20_000, longest_contig_min=100_000)
 
@@ -314,7 +314,7 @@ def main() -> int:
     print(f'    train {len(train_ids):,} | val {len(val_ids):,} | test {len(test_ids):,}'
           f' | 277k pool {len(pool_ids):,} canonical ids')
 
-    # 9-mer feature-selection genomes: same two files scripts/74_provenance_audit.py uses
+    # 9-mer feature-selection genomes: same two files scripts/074_provenance_audit.py uses
     kmer_ids, n_kmer_rows = set(), 0
     for fn in ('selected_bacterial_1000.tsv', 'selected_archaeal_1000.tsv'):
         kp = ROOT / 'data' / 'kmer_selection' / fn

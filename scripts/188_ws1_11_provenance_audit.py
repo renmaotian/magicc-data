@@ -2,7 +2,7 @@
 """
 WS1.11 -- provenance / non-overlap audit for ``set_H_ncbi``.
 
-Written in the style of scripts/74_provenance_audit.py and importing that script's
+Written in the style of scripts/074_provenance_audit.py and importing that script's
 normalisation and cross-map code *directly*, so both audits agree by construction
 rather than by coincidence.  Failing to cross-map GCA<->GCF previously produced a
 serious leakage undercount on this project (WS1.4: the superseded Sets C and D turned
@@ -49,7 +49,7 @@ _HERE = ROOT / 'scripts'
 
 def _load_74():
     spec = importlib.util.spec_from_file_location(
-        'ws1_4_provenance', _HERE / '74_provenance_audit.py')
+        'ws1_4_provenance', _HERE / '074_provenance_audit.py')
     mod = importlib.util.module_from_spec(spec)
     sys.modules['ws1_4_provenance'] = mod
     spec.loader.exec_module(mod)
@@ -84,7 +84,7 @@ def main() -> int:
     print('WS1.11 — provenance / non-overlap audit for set_H_ncbi')
     print('=' * 88)
 
-    print('\n[1] GCA/GCF cross-map (from scripts/74_provenance_audit.py) ...')
+    print('\n[1] GCA/GCF cross-map (from scripts/074_provenance_audit.py) ...')
     cmap, cstats = build_crossmap()
     for k, v in cstats.items():
         print(f'    {k}: {v}')
@@ -300,7 +300,7 @@ def main() -> int:
 
 Generated {summary['generated_utc']} by `scripts/188_ws1_11_provenance_audit.py`,
 which imports the normalisation and GCA↔GCF cross-map code of
-`scripts/74_provenance_audit.py` directly, so the two audits cannot drift apart.
+`scripts/074_provenance_audit.py` directly, so the two audits cannot drift apart.
 
 ## Verdict: **{verdict}**
 

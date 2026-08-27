@@ -2,13 +2,13 @@
 # =============================================================================
 # WS1.11 (R1-m13) -- run CheckM2, CoCoPyE and DeepCheck on set_H_ncbi.
 #
-# Invocations are reused VERBATIM from scripts/90_run_competitors_clean_cd.sh so the
+# Invocations are reused VERBATIM from scripts/090_run_competitors_clean_cd.sh so the
 # competitor numbers on set_H_ncbi are directly comparable with those on
 # set_C_clean / set_D_clean / set_F / set_G:
 #   CheckM2 1.0.1 -- env checkm2_py39, CHECKM2DB, --dbg_vectors (DeepCheck consumes
 #                    those feature vectors)
 #   CoCoPyE 0.5.0 -- env magicc2, cocopye run -i <dir> -o <csv> -t <n> -v full
-#   DeepCheck     -- executed inside scripts/91_parse_competitor_clean_cd.py, which is
+#   DeepCheck     -- executed inside scripts/091_parse_competitor_clean_cd.py, which is
 #                    a pure tensor transform of CheckM2's --dbg_vectors PKLs
 #
 # GUNC is deliberately NOT run: it is a detection comparator (CSS + pass/fail, no
@@ -139,7 +139,7 @@ fi
 
 # ---------------------------------------- parse / merge / DeepCheck inference
 echo ""
-echo "[parse] scripts/91_parse_competitor_clean_cd.py --sets ${SET_NAME}"
+echo "[parse] scripts/091_parse_competitor_clean_cd.py --sets ${SET_NAME}"
 VERIF="${PROJECT_DIR}/results/revision/benchmark/clean_cd_merge_verification.json"
 BACKUP=""
 if [[ -f "${VERIF}" ]]; then
@@ -148,7 +148,7 @@ if [[ -f "${VERIF}" ]]; then
 fi
 PARSE_TOOLS=$(echo "${TOOLS}" | tr ',' '\n' | grep -v '^$' | paste -sd, -)
 conda run -n "${COCOPYE_ENV}" env PYTHONHASHSEED=0 python \
-    "${PROJECT_DIR}/scripts/91_parse_competitor_clean_cd.py" \
+    "${PROJECT_DIR}/scripts/091_parse_competitor_clean_cd.py" \
     --sets "${SET_NAME}" --tools "${PARSE_TOOLS}" \
     > "${LOG_DIR}/ws1.11_parse_${SET_NAME}.log" 2>&1
 RC=$?

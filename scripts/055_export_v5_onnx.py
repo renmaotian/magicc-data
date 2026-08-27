@@ -8,7 +8,7 @@ Model: MAGICCModel (V2, no attention), 42.4M params
   Contamination: Sigmoid*100 -> [0,100]
 
 Usage:
-    python scripts/55_export_v5_onnx.py
+    python scripts/055_export_v5_onnx.py
 """
 
 import sys

@@ -16,7 +16,11 @@ repository that material is at **`results/<x>`**, with three deliberate moves:
 | `results/revision/cami2/{truth,provenance}/` | `cami2/{truth,provenance}/` (top level, with the other CAMI II identifiers) |
 
 Scripts are at `scripts/`; the working-tree-to-deposited name mapping is
-`scripts/SCRIPT_MAPPING.tsv`.
+`scripts/SCRIPT_MAPPING.tsv`. **The reports in this tree name scripts by their
+working-tree numbers** (`145_generate_set_F.py`), because that is what was run
+and the record is left as written; the deposited file may carry a different
+number (`155_generate_set_F.py`). Cross-references *inside* `scripts/` were
+rewritten to the deposited names, so the code runs as it stands.
 
 ## Inventory
 

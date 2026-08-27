@@ -251,7 +251,7 @@ def main() -> int:
         training_reproducibility=dict(
             seeded=False,
             statement=("V5 training was never seeded (verified by code inspection of "
-                       "magicc/trainer.py and scripts/53_train_v5_run3.py), so the released "
+                       "magicc/trainer.py and scripts/053_train_v5_run3.py), so the released "
                        "weights cannot be re-derived bit-exactly from the training data. "
                        "The released artefact is pinned by SHA256 instead. This report "
                        "establishes determinism of INFERENCE only."),

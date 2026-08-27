@@ -25,7 +25,7 @@ Tables generated (results/):
   motivating_summary_v2.tsv
 
 Usage:
-    conda run -n magicc2 python scripts/39_update_all_figures.py
+    conda run -n magicc2 python scripts/039_update_all_figures.py
 """
 
 import os

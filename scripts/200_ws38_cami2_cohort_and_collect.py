@@ -132,14 +132,14 @@ _DC_CTX = None
 
 def deepcheck_ctx():
     """Load the DeepCheck ResNet exactly as scripts/91 does (which itself imports
-    scripts/38_run_deepcheck_v2.py verbatim)."""
+    scripts/038_run_deepcheck_v2.py verbatim)."""
     global _DC_CTX
     if _DC_CTX is not None:
         return _DC_CTX
     try:
         import torch
         dc_dir = PROJECT_DIR / 'tools' / 'DeepCheck'
-        m38 = _load(PROJECT_DIR / 'scripts' / '38_run_deepcheck_v2.py', 'dc38')
+        m38 = _load(PROJECT_DIR / 'scripts' / '038_run_deepcheck_v2.py', 'dc38')
         sp = np.load(dc_dir / 'scaler_params.npz')
         model = m38.ResNetDualOutput(m38.ResidualBlock, [2, 2, 2, 2])
         sd = torch.load(dc_dir / 'models' / 'best_model.pt', map_location='cpu',
@@ -201,7 +201,7 @@ def collect(ds, binset):
     raw = work / 'cocopye_raw_output.csv'
     if raw.exists():
         try:
-            # Same rule as scripts/91_parse_competitor_clean_cd.py::do_cocopye, so the
+            # Same rule as scripts/091_parse_competitor_clean_cd.py::do_cocopye, so the
             # CAMI II numbers are directly comparable with every other set in this
             # revision: stage-3 (markers + neural network) with a stage-2 fallback,
             # rescaled from CoCoPyE's 0-1 fractions to percentages.
@@ -231,7 +231,7 @@ def collect(ds, binset):
     # vectors, so it costs nothing extra once CheckM2 has run. The scaler transform,
     # the 20,021 -> 20,164 zero-pad, the 142x142 reshape and the work-around for
     # DeepCheck's upstream forward() bug are imported VERBATIM from
-    # scripts/38_run_deepcheck_v2.py via scripts/91, so no behaviour is re-invented.
+    # scripts/038_run_deepcheck_v2.py via scripts/91, so no behaviour is re-invented.
     dcp = deepcheck_from_pkls(work / 'checkm2_output')
     if dcp is not None:
         frames.append(dcp)

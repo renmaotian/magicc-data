@@ -12,13 +12,13 @@ so it can be invoked from any environment (e.g. ``magicc2``).
 
 Usage
 -----
-    python scripts/76_run_gunc.py \
+    python scripts/076_run_gunc.py \
         --input-dir data/ncbi/mags \
         --output-dir results/revision/gunc/ncbi_mags \
         --extension .fna --threads 8
 
     # genomes listed in a text file instead of a directory
-    python scripts/76_run_gunc.py --input-list paths.txt --output-dir out/
+    python scripts/076_run_gunc.py --input-list paths.txt --output-dir out/
 
 Outputs (inside ``--output-dir``)
 --------------------------------

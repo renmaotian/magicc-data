@@ -69,7 +69,7 @@ def main() -> None:
     print(g.round(2).to_string(index=False))
     print(f"\nwrote {SPEED/'magicc_phase_breakdown.tsv'}")
     print("\n'compute_phase_s' is feature extraction + ONNX inference, i.e. exactly what")
-    print("scripts/26_benchmark_run_magicc.py stored as `wall_clock_s` and what the")
+    print("scripts/026_benchmark_run_magicc.py stored as `wall_clock_s` and what the")
     print("published 1,451 genomes/min/thread figure was computed from.")
 
 

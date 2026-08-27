@@ -667,7 +667,7 @@ def main() -> int:
             'simulations_per_reference': 10,
             'arms': {'H_fail': 'would have FAILED the project CheckM2 curation filter',
                      'H_pass': 'matched controls that would have passed'},
-            'generator': 'scripts/73_generate_clean_cd_benchmarks.py logic verbatim',
+            'generator': 'scripts/073_generate_clean_cd_benchmarks.py logic verbatim',
         },
         'bootstrap': {'n_iter': NB, 'cluster_unit': 'reference genome (arm metrics) / '
                                                     'matched reference pair (paired '

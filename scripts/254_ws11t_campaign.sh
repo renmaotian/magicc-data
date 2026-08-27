@@ -17,7 +17,7 @@
 #   * no completed run is ever dropped.  Flagging and extra repeats are handled
 #     downstream by scripts/195.
 #
-#   setsid nohup bash scripts/194_ws11t_campaign.sh \
+#   setsid nohup bash scripts/254_ws11t_campaign.sh \
 #       > results/revision/speed_v3/logs/campaign.log 2>&1 &
 set -uo pipefail
 
@@ -100,7 +100,7 @@ while IFS=$'\t' read -r TIER ORDER TOOL THREADS REP INPUTSET CACHE NOTE; do
 
     echo "[run ] tier=${TIER} order=${ORDER} ${CELL} | ${NOTE}"
     echo "       loadavg=$(cut -d' ' -f1-3 /proc/loadavg) memavail=$(awk '/^MemAvailable:/{print $2}' /proc/meminfo)kB $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-    bash "${PROJECT}/scripts/191_ws11t_run_one.sh" "${TOOL}" "${THREADS}" "${REP}" "${INPUTSET}" "${CACHE}"
+    bash "${PROJECT}/scripts/251_ws11t_run_one.sh" "${TOOL}" "${THREADS}" "${REP}" "${INPUTSET}" "${CACHE}"
 done < <(tail -n +2 "${PLAN}")
 
 echo "=================================================================="

@@ -355,7 +355,7 @@ def main() -> int:
 
     n_spire_meta = len(spire_select())
     summary = {
-        "script": "scripts/137_catalogue_baseline_reconciliation.py",
+        "script": "scripts/207_catalogue_baseline_reconciliation.py",
         "question": "which catalogue is Reviewer 2 quoting?",
         "magicc_completeness_floor": MAGICC_FLOOR,
         "spire_coverage": {

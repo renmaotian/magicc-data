@@ -26,11 +26,11 @@ Disk space strategy:
 
 Usage:
     conda activate magicc2
-    python scripts/50_generate_v5_training_data.py [--workers N] [--phase PHASE]
-    python scripts/50_generate_v5_training_data.py --phase generate   # generate 200K
-    python scripts/50_generate_v5_training_data.py --phase merge      # merge into V5
-    python scripts/50_generate_v5_training_data.py --phase verify     # verify V5
-    python scripts/50_generate_v5_training_data.py --phase all        # all steps
+    python scripts/050_generate_v5_training_data.py [--workers N] [--phase PHASE]
+    python scripts/050_generate_v5_training_data.py --phase generate   # generate 200K
+    python scripts/050_generate_v5_training_data.py --phase merge      # merge into V5
+    python scripts/050_generate_v5_training_data.py --phase verify     # verify V5
+    python scripts/050_generate_v5_training_data.py --phase all        # all steps
 """
 
 import sys

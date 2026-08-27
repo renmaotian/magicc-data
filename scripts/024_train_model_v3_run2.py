@@ -9,7 +9,7 @@ Changes from Run 1:
 - Optionally initialize from Run 1 pretrained weights
 
 Usage:
-    python scripts/24_train_model_v3_run2.py [--pretrained models/best_model_v3_run1.pt]
+    python scripts/024_train_model_v3_run2.py [--pretrained models/best_model_v3_run1.pt]
 """
 
 import sys

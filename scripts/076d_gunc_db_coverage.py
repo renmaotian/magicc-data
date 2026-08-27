@@ -8,7 +8,7 @@ reference database (GUNC reports this itself as
 and forcibly zeroes the clade separation score when
 ``genes_retained_index <= 0.4``).
 
-The control verification (``76b_gunc_control_verification.py``) found that 7 of 8
+The control verification (``076b_gunc_control_verification.py``) found that 7 of 8
 Kraken2-confirmed contaminated MAGs had ``reference_representation_score < 0.5``
 against **proGenomes 2.1** (mean amino-acid hit identity ~0.5), i.e. GUNC had no
 close reference and could not adjudicate. This script quantifies *why*, by
@@ -18,7 +18,7 @@ C_clean / D_clean are built from (Patescibacteria/CPR and Archaea).
 
 Usage
 -----
-    python scripts/76d_gunc_db_coverage.py \
+    python scripts/076d_gunc_db_coverage.py \
         --out-dir results/revision/gunc
 
 Outputs

@@ -48,7 +48,7 @@ GUNC's own caution flag (RRS < 0.3) is reported as an additional column.
 
 Inputs
 ------
-    results/revision/gunc/runs/<set>/<db>/gunc_normalized.tsv   (see 76_run_gunc.py)
+    results/revision/gunc/runs/<set>/<db>/gunc_normalized.tsv   (see 076_run_gunc.py)
     data/benchmarks/<set>/metadata.tsv                          ground truth
     data/benchmarks/<set>/magicc_v5_predictions.tsv             comparator
     data/benchmarks/<set>/checkm2_predictions.tsv               comparator
@@ -66,8 +66,8 @@ Outputs (all under results/revision/gunc/)
 
 Usage
 -----
-    python scripts/138_ws42_gunc_comparator.py
-    python scripts/138_ws42_gunc_comparator.py --sets set_C_clean set_D_clean
+    python scripts/095_ws42_gunc_comparator.py
+    python scripts/095_ws42_gunc_comparator.py --sets set_C_clean set_D_clean
 """
 
 from __future__ import annotations
@@ -841,7 +841,7 @@ def write_report(df, power, strat, agree, corr, peff, dbsens, flips, ctrl, notes
     md: List[str] = []
     md.append('# WS4.2 — GUNC as a standard detection comparator, with database '
               'sensitivity and a statistical-power audit\n')
-    md.append(f'Generated {ts} by `scripts/138_ws42_gunc_comparator.py`. '
+    md.append(f'Generated {ts} by `scripts/095_ws42_gunc_comparator.py`. '
               'GUNC 1.1.1, DIAMOND 2.1.24, Prodigal V2.6.3.\n')
 
     md.append('## 0. How GUNC is (and is not) used here\n')
@@ -1282,7 +1282,7 @@ def main(argv=None) -> int:
 
     (out / 'ws4.2_gunc_summary.json').write_text(json.dumps({
         'generated_utc': datetime.now(timezone.utc).isoformat(),
-        'script': 'scripts/138_ws42_gunc_comparator.py',
+        'script': 'scripts/095_ws42_gunc_comparator.py',
         'gunc_internals': {
             'gri_zeroing_cutoff': GRI_ZEROING_CUTOFF,
             'css_chimeric_threshold': CSS_CHIMERIC_THRESHOLD,

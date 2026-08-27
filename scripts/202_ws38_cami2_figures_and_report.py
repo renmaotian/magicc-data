@@ -431,7 +431,7 @@ def build_report(head, acc, dist, cmpdf, mim, pt, censd, gold_dec, captions):
       'are explicitly not used for comparisons.\n')
     A('DeepCheck is obtained as a pure tensor transform of CheckM2\'s `--dbg_vectors` '
       'feature vectors, using the model, scaler and forward-pass work-around imported '
-      'verbatim from `scripts/38_run_deepcheck_v2.py`, so it costs no extra tool run.\n')
+      'verbatim from `scripts/038_run_deepcheck_v2.py`, so it costs no extra tool run.\n')
     A('**Scope decision, stated:** the rhizosphere (plant-associated, 21 samples, ~6.6 GB) '
       'and pathogen CAMI II datasets were NOT acquired. Marine and strain-madness already '
       'populate all six taxonomic-distance cells and cover both the broad-diversity and '

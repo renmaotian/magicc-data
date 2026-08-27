@@ -568,7 +568,7 @@ def main():
         m3 = pd.DataFrame()
 
     summary = {
-        "script": "scripts/140_mitigation_mechanism.py",
+        "script": "scripts/212_mitigation_mechanism.py",
         "n_samples": int(len(d)),
         "n_reference_clusters": int(d.dominant_accession.nunique()),
         "sets": SETS,

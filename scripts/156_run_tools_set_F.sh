@@ -2,19 +2,19 @@
 # =============================================================================
 # WS2.4 -- run the competitor tools on Set F (contamination type x taxonomic
 # distance).  Protocol name: 83_run_tools_set_F.sh; renumbered to 146 because
-# 83 was already taken (see header of 144_contamination_type_module.py).
+# 83 was already taken (see header of 154_contamination_type_module.py).
 #
 # Tools run here:
 #   CheckM2 1.0.1  (env checkm2_py39, --dbg_vectors so DeepCheck gets its
 #                   feature vectors)
 #   CoCoPyE 0.5.0  (env magicc2)
-# Then scripts/91_parse_competitor_clean_cd.py --sets set_F --tools
+# Then scripts/091_parse_competitor_clean_cd.py --sets set_F --tools
 #   checkm2,cocopye,deepcheck  performs the DeepCheck tensor transform and the
 #   verified merges (DeepCheck is a pure transform of CheckM2's PKL vectors, so
 #   it is not a separate external run).
 #
 # GUNC is deliberately NOT run here -- Set F GUNC is owned by the WS4.2 agent.
-# MAGICC V5 is run by scripts/147_analyze_contamination_types.py (direct ONNX).
+# MAGICC V5 is run by scripts/157_analyze_contamination_types.py (direct ONNX).
 #
 # THREADS ARE CAPPED (default 10): four other agents plus a GPU training job
 # share this 48-core machine.  These are ACCURACY runs, not the WS8.1 speed
@@ -24,7 +24,7 @@
 # Resumable: each tool is skipped when its output is already complete.
 #
 # Usage:
-#   scripts/146_run_tools_set_F.sh [--threads N] [--set set_F] [--tools ...]
+#   scripts/156_run_tools_set_F.sh [--threads N] [--set set_F] [--tools ...]
 # =============================================================================
 
 set -uo pipefail
@@ -139,7 +139,7 @@ fi
 # ------------------------------- DeepCheck + verified merges (script 91) ----
 if has_tool parse; then
     echo "[parse] DeepCheck transform + verified merges via scripts/91 ..."
-    conda run -n magicc2 python "${PROJECT_DIR}/scripts/91_parse_competitor_clean_cd.py" \
+    conda run -n magicc2 python "${PROJECT_DIR}/scripts/091_parse_competitor_clean_cd.py" \
         --sets "${SET_NAME}" --tools checkm2,cocopye,deepcheck \
         --torch-threads 4 2>&1 | tail -30
 fi

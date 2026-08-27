@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-11_select_kmers.py
+011_select_kmers.py
 Select the ~10,000 most prevalent canonical 9-mers from bacterial and archaeal core genes.
 
 - 9,000 most prevalent from bacterial core genes (by genome breadth)

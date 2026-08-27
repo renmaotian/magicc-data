@@ -59,7 +59,7 @@ from pathlib import Path
 SEED_PROVENANCE = [
     # set, status, generator script, base seed, per-sample RNG construction, notes
     dict(set_name="set_C_clean", status="retained (primary)",
-         generator="scripts/73_generate_clean_cd_benchmarks.py",
+         generator="scripts/073_generate_clean_cd_benchmarks.py",
          base_seed="7300000",
          design_rng="np.random.default_rng(7300000)  -> 1000 target completeness ~U[0.50,1.00), "
                     "1000 target contamination ~U[0,100)",
@@ -70,7 +70,7 @@ SEED_PROVENANCE = [
                "Reference draw: np.random.default_rng(7001).choice(n, 100, replace=False) "
                "over candidates sorted by gtdb_accession."),
     dict(set_name="set_D_clean", status="retained (primary)",
-         generator="scripts/73_generate_clean_cd_benchmarks.py",
+         generator="scripts/073_generate_clean_cd_benchmarks.py",
          base_seed="7400000",
          design_rng="np.random.default_rng(7400000)  -> 1000 target completeness ~U[0.50,1.00), "
                     "1000 target contamination ~U[0,100)",
@@ -81,7 +81,7 @@ SEED_PROVENANCE = [
                "Reference draw: np.random.default_rng(7002).choice(n, 100, replace=False) "
                "over candidates sorted by gtdb_accession."),
     dict(set_name="set_A_v2", status="retained (primary)",
-         generator="scripts/34_generate_finished_benchmarks.py::generate_completeness_set",
+         generator="scripts/034_generate_finished_benchmarks.py::generate_completeness_set",
          base_seed="300",
          design_rng="np.random.default_rng(300 + int(completeness*1000)) per completeness level",
          per_sample_rng="np.random.default_rng(300 + idx)",
@@ -90,7 +90,7 @@ SEED_PROVENANCE = [
          notes="Completeness gradient, 0 % contamination; dominants are finished "
                "(Complete Genome / Chromosome) test-split genomes."),
     dict(set_name="set_B_v2", status="retained (primary)",
-         generator="scripts/34_generate_finished_benchmarks.py::generate_contamination_set",
+         generator="scripts/034_generate_finished_benchmarks.py::generate_contamination_set",
          base_seed="400",
          design_rng="np.random.default_rng(400 + contamination + 5000) per contamination level",
          per_sample_rng="np.random.default_rng(400 + idx)",
@@ -98,7 +98,7 @@ SEED_PROVENANCE = [
          n_samples=1000,
          notes="Contamination gradient at 100 % completeness."),
     dict(set_name="set_E", status="retained (primary)",
-         generator="scripts/34_generate_finished_benchmarks.py::generate_set_e",
+         generator="scripts/034_generate_finished_benchmarks.py::generate_set_e",
          base_seed="500",
          design_rng="np.random.default_rng(500)",
          per_sample_rng="np.random.default_rng(500 + idx)",
@@ -109,21 +109,21 @@ SEED_PROVENANCE = [
                "so 132/1000 samples have contamination% > completeness% and lie outside the "
                "V5 training domain; see protocol section 4.4a."),
     dict(set_name="motivating_v2/set_A", status="retained (secondary)",
-         generator="scripts/34_generate_finished_benchmarks.py::generate_completeness_set",
+         generator="scripts/034_generate_finished_benchmarks.py::generate_completeness_set",
          base_seed="100",
          design_rng="np.random.default_rng(100 + int(completeness*1000))",
          per_sample_rng="np.random.default_rng(100 + idx)",
          per_sample_seed_recorded="DERIVABLE — 100 + row index of metadata.tsv",
          n_samples=1000, notes="Motivating completeness gradient."),
     dict(set_name="motivating_v2/set_B", status="retained (secondary)",
-         generator="scripts/34_generate_finished_benchmarks.py::generate_contamination_set",
+         generator="scripts/034_generate_finished_benchmarks.py::generate_contamination_set",
          base_seed="200",
          design_rng="np.random.default_rng(200 + contamination + 5000)",
          per_sample_rng="np.random.default_rng(200 + idx)",
          per_sample_seed_recorded="DERIVABLE — 200 + row index of metadata.tsv",
          n_samples=1000, notes="Motivating contamination gradient."),
     dict(set_name="motivating_v2/set_C", status="retained (secondary)",
-         generator="scripts/41_generate_motivating_set_c.py",
+         generator="scripts/041_generate_motivating_set_c.py",
          base_seed="300",
          design_rng="np.random.default_rng(300)",
          per_sample_rng="np.random.default_rng(300 + idx)",
@@ -132,35 +132,35 @@ SEED_PROVENANCE = [
          notes="Non-redundant contamination emphasis. Also predates the "
                "contamination cap (122/1000 out-of-domain samples)."),
     dict(set_name="motivating/set_A", status="retained (legacy, superseded by motivating_v2)",
-         generator="scripts/31_motivating_benchmark_generate.py",
+         generator="scripts/031_motivating_benchmark_generate.py",
          base_seed="12345",
          design_rng="np.random.default_rng(12345 + int(completeness*1000) + 7777)",
          per_sample_rng="np.random.default_rng(12345 + idx + 500000)",
          per_sample_seed_recorded="DERIVABLE — 12345 + row index + 500000",
          n_samples=600, notes="Superseded by motivating_v2/set_A (finished-genome dominants)."),
     dict(set_name="motivating/set_B", status="retained (legacy, superseded by motivating_v2)",
-         generator="scripts/31_motivating_benchmark_generate.py",
+         generator="scripts/031_motivating_benchmark_generate.py",
          base_seed="12345",
          design_rng="np.random.default_rng(12345 + contamination + 9999)",
          per_sample_rng="np.random.default_rng(12345 + idx + 600000)",
          per_sample_seed_recorded="DERIVABLE — 12345 + row index + 600000",
          n_samples=1100, notes="Superseded by motivating_v2/set_B."),
     dict(set_name="set_A", status="retained (legacy, superseded by set_A_v2)",
-         generator="scripts/25_benchmark_generate.py::generate_set_a",
+         generator="scripts/025_benchmark_generate.py::generate_set_a",
          base_seed="42",
          design_rng="np.random.default_rng(42 + int(completeness*1000))",
          per_sample_rng="np.random.default_rng(42 + idx + 100000)",
          per_sample_seed_recorded="DERIVABLE — 42 + row index + 100000",
          n_samples=600, notes="Superseded by set_A_v2."),
     dict(set_name="set_B", status="retained (legacy, superseded by set_B_v2)",
-         generator="scripts/25_benchmark_generate.py::generate_set_b",
+         generator="scripts/025_benchmark_generate.py::generate_set_b",
          base_seed="42",
          design_rng="np.random.default_rng(42 + contamination + 5000)",
          per_sample_rng="np.random.default_rng(42 + idx + 200000)",
          per_sample_seed_recorded="DERIVABLE — 42 + row index + 200000",
          n_samples=600, notes="Superseded by set_B_v2."),
     dict(set_name="set_C", status="WITHDRAWN — training-data leakage",
-         generator="scripts/25_benchmark_generate.py::generate_set_c",
+         generator="scripts/025_benchmark_generate.py::generate_set_c",
          base_seed="42",
          design_rng="np.random.default_rng(42 + 300000)",
          per_sample_rng="np.random.default_rng(42 + idx + 300000)",
@@ -169,7 +169,7 @@ SEED_PROVENANCE = [
          notes="WITHDRAWN. 1000/1000 dominants are TRAIN-split genomes. "
                "Replaced by set_C_clean. Released only so the leakage is auditable."),
     dict(set_name="set_D", status="WITHDRAWN — training-data leakage",
-         generator="scripts/25_benchmark_generate.py::generate_set_d",
+         generator="scripts/025_benchmark_generate.py::generate_set_d",
          base_seed="42",
          design_rng="np.random.default_rng(42 + 400000)",
          per_sample_rng="np.random.default_rng(42 + idx + 400000)",
@@ -294,14 +294,14 @@ invalidates the model.
    `results/revision/provenance/` (WS1.4).
 2. **Single-copy core genes** were identified per domain with Prodigal + HMMER
    against `85_bcg.hmm` (bacteria) and `uacg.hmm` (archaea)
-   (`scripts/09_identify_core_genes.py`). Feature selection is therefore
+   (`scripts/009_identify_core_genes.py`). Feature selection is therefore
    annotation-dependent; **inference is not** (see R1-m5).
 3. **Canonical 9-mer counting** over the core-gene nucleotide sequences
-   (`scripts/10_count_9mers.py`), giving 4^9/2 = 131,072 canonical 9-mers per
+   (`scripts/010_count_9mers.py`), giving 4^9/2 = 131,072 canonical 9-mers per
    domain.
 4. **Prevalence** = the number of the 1,000 domain reference genomes in which
    the k-mer occurs at least once (range 0–1000).
-5. **Selection** (`scripts/11_select_kmers.py`): the prevalence tables were sorted
+5. **Selection** (`scripts/011_select_kmers.py`): the prevalence tables were sorted
    descending and the top **{stats['n_bacterial_selected']:,} bacterial** and top
    **{stats['n_archaeal_selected']:,} archaeal** k-mers were taken (`head(N)`) and merged.
    **{stats['n_overlap']:,}** k-mers are in both lists, so the union is
@@ -576,10 +576,10 @@ overstate coverage.
 |---|---|
 | Fragmentation / dropout simulation | `magicc/fragmentation.py` |
 | Contamination event construction | `magicc/contamination.py` |
-| Clean Sets C/D driver (fully instrumented) | `scripts/73_generate_clean_cd_benchmarks.py` |
-| Finished-genome sets A_v2 / B_v2 / E driver | `scripts/34_generate_finished_benchmarks.py` |
-| Original Sets A–D driver | `scripts/25_benchmark_generate.py` |
-| Motivating sets driver | `scripts/31_motivating_benchmark_generate.py`, `scripts/41_generate_motivating_set_c.py` |
+| Clean Sets C/D driver (fully instrumented) | `scripts/073_generate_clean_cd_benchmarks.py` |
+| Finished-genome sets A_v2 / B_v2 / E driver | `scripts/034_generate_finished_benchmarks.py` |
+| Original Sets A–D driver | `scripts/025_benchmark_generate.py` |
+| Motivating sets driver | `scripts/031_motivating_benchmark_generate.py`, `scripts/041_generate_motivating_set_c.py` |
 
 ## Two tiers of seed provenance — stated plainly
 

@@ -19,7 +19,7 @@ Features: checkpoint-based resumability, multiprocessing (fork), memory-efficien
 
 Usage:
     conda activate magicc2
-    python scripts/19_batch_synthesis.py [--workers N] [--start-batch B] [--end-batch E]
+    python scripts/019_batch_synthesis.py [--workers N] [--start-batch B] [--end-batch E]
 """
 
 import sys

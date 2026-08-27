@@ -22,7 +22,7 @@ be worthless. The audit is run at THREE levels and all three are reported:
   L1  ASSEMBLY level. Every accession-shaped token found in the CAMI genome ids and in
       any CAMI metadata table is normalised and GCA<->GCF cross-mapped through
       data/gtdb/filtered_genomes.tsv (277,183 assemblies), exactly as
-      scripts/74_provenance_audit.py does, then intersected with
+      scripts/074_provenance_audit.py does, then intersected with
       data/splits/{train,val,test}_genomes.tsv and the 2,000-genome 9-mer selection set.
 
   L2  ORGANISM/STRAIN level. CAMI genome ids are matched against NCBI's
@@ -39,7 +39,7 @@ be worthless. The audit is run at THREE levels and all three are reported:
 
 The leakage-free subset (no L1 and no L2 hit in train or val or the 9-mer selection set)
 is the PRIMARY analysis cohort. Everything is emitted as accession lists plus a SHA256
-manifest, in the style of scripts/74_provenance_audit.py.
+manifest, in the style of scripts/074_provenance_audit.py.
 
 OUTPUTS
 -------

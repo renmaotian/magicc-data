@@ -35,8 +35,8 @@ R² is omitted (empty cell, with a printed reason) whenever the true value has z
 variance: Set A_v2 contamination is 0 % throughout and Set B_v2 completeness is
 100 % throughout, so R² is undefined there (WS5.5, Reviewer 1 minor 19).
 
-This module is also imported by ``93_leakage_specificity_control.py`` and
-``94_revised_benchmark_table.py`` so that all three use one implementation.
+This module is also imported by ``093_leakage_specificity_control.py`` and
+``094_revised_benchmark_table.py`` so that all three use one implementation.
 
 Outputs
 -------
@@ -46,7 +46,7 @@ Outputs
 
 Usage
 -----
-    conda run -n magicc2 python scripts/92_clean_cd_metrics.py
+    conda run -n magicc2 python scripts/092_clean_cd_metrics.py
 """
 
 from __future__ import annotations

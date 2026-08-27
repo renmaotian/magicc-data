@@ -17,7 +17,7 @@ Output: data/benchmarks/motivating_v2/set_C/
   - metadata.tsv (ground truth)
   - labels.npy
 
-Modeled after generate_set_e() in scripts/34_generate_finished_benchmarks.py
+Modeled after generate_set_e() in scripts/034_generate_finished_benchmarks.py
 """
 
 import sys
@@ -61,7 +61,7 @@ N_WORKERS = max(1, int(cpu_count() * 0.90))
 
 
 # ============================================================================
-# Helper functions (same as 34_generate_finished_benchmarks.py)
+# Helper functions (same as 034_generate_finished_benchmarks.py)
 # ============================================================================
 
 def write_fasta(contigs: List[str], fasta_path: str, genome_id: str = "genome"):

@@ -6,7 +6,7 @@ strict, confidence-aware alternative.
 Why
 ---
 The published claim (R2-M5) rests on ``phylum_contam_pct`` from
-``scripts/61_kraken2_contamination_check.py``:
+``scripts/061_kraken2_contamination_check.py``:
 
     phylum_contam_pct = (resolved bp not in the dominant phylum) / total bp x 100
 
@@ -55,13 +55,13 @@ well the genome is represented in the Kraken2 database and is independent of
 Usage
 -----
     # run Kraken2 for genomes that lack output, then score everything
-    python scripts/78_kraken2_strict_metric.py --run-missing --threads 16
+    python scripts/078_kraken2_strict_metric.py --run-missing --threads 16
 
     # score only, using existing per-sequence outputs
-    python scripts/78_kraken2_strict_metric.py
+    python scripts/078_kraken2_strict_metric.py
 
     # confirm that batched Kraken2 == per-genome Kraken2
-    python scripts/78_kraken2_strict_metric.py --verify-batching 5 --threads 8
+    python scripts/078_kraken2_strict_metric.py --verify-batching 5 --threads 8
 
 Outputs (``results/revision/contamination_evidence/``)
 ------------------------------------------------------
@@ -481,7 +481,7 @@ def main() -> int:
 
     stats_tsv = out_dir / 'cohort_genome_stats.tsv'
     if not stats_tsv.is_file():
-        sys.exit(f"ERROR: {stats_tsv} missing; run scripts/77_build_cohorts_and_stats.py")
+        sys.exit(f"ERROR: {stats_tsv} missing; run scripts/077_build_cohorts_and_stats.py")
     with open(stats_tsv) as f:
         cohort_rows = list(csv.DictReader(f, delimiter='\t'))
     cohort_of = {r['accession']: r['cohort'] for r in cohort_rows}

@@ -2,8 +2,8 @@
 # =============================================================================
 # WS3.8 (R1-M3) -- competitor tools on the CAMI II bin sets.
 #
-# Protocol names 92/93 were already taken (92_clean_cd_metrics.py,
-# 93_leakage_specificity_control.py), so WS3.8 uses 195-201.
+# Protocol names 92/93 were already taken (092_clean_cd_metrics.py,
+# 093_leakage_specificity_control.py), so WS3.8 uses 195-201.
 #
 # Tools:
 #   CheckM2 1.0.1  (env checkm2_py39, --dbg_vectors so DeepCheck can reuse the
