@@ -95,7 +95,11 @@ for s in $SETS; do
       man="$REPO_ROOT/provenance/assemblies/${s}_sha256.txt"
       if [ -f "$man" ]; then
         echo "  check every assembly of $s"
-        sha256sum -c "$man" --quiet || { echo "  FAIL: per-assembly checksum mismatch for $s" >&2; rc=1; }
+        if sha256sum -c "$man" --quiet; then
+          echo "  ok    every file of $s matches its recorded SHA256"
+        else
+          echo "  FAIL: per-assembly checksum mismatch for $s" >&2; rc=1
+        fi
       else
         echo "  note  per-assembly manifest not found at $man" >&2
       fi
