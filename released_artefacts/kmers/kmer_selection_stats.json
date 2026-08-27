@@ -1,0 +1,13 @@
+{
+  "n_bacterial_selected": 9000,
+  "n_archaeal_selected": 1000,
+  "n_overlap": 751,
+  "n_bact_only": 8249,
+  "n_arch_only": 249,
+  "n_final_merged": 9249,
+  "bacterial_prevalence_cutoff": 529,
+  "archaeal_prevalence_cutoff": 791,
+  "bacterial_max_prevalence": 992,
+  "archaeal_max_prevalence": 998,
+  "output_file": "/path/to/home/projects/magicc2/data/kmer_selection/selected_kmers.txt"
+}

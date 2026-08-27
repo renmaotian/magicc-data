@@ -1,0 +1,120 @@
+{
+  "schema": "magicc-release-bundle/1.0",
+  "generated_utc": "2026-07-26T22:27:25.965809+00:00",
+  "generated_by": "scripts/112_release_artifacts.py",
+  "workstream_items": [
+    "WS7.5",
+    "WS7.6",
+    "WS7.7"
+  ],
+  "reviewer_comments": [
+    "R1-M8",
+    "R1-m14",
+    "R1-m15",
+    "E5",
+    "E6"
+  ],
+  "model": {
+    "path": "models/magicc_v5.onnx",
+    "sha256": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+    "version": "V5",
+    "card": "results/revision/model_card.json"
+  },
+  "kmers": {
+    "n_kmers": 9249,
+    "n_bacterial": 9000,
+    "n_archaeal": 1000,
+    "n_shared": 751,
+    "bacterial_prevalence_range": [
+      529,
+      992
+    ],
+    "archaeal_prevalence_range": [
+      791,
+      998
+    ]
+  },
+  "splits": {
+    "train": {
+      "n_accessions_selected": 79978,
+      "n_genomes_available": 79948,
+      "n_download_failures": 30,
+      "accession_list": "splits/train_accessions.txt",
+      "full_table_in_repo": "data/splits/train_genomes.tsv",
+      "full_table_sha256": "41cf4ae7d99f3a189c2d44a2bcb53db2882f47286492cf3b1a371e27c190b8f5",
+      "n_genomes": 79948
+    },
+    "val": {
+      "n_accessions_selected": 10017,
+      "n_genomes_available": 10010,
+      "n_download_failures": 7,
+      "accession_list": "splits/val_accessions.txt",
+      "full_table_in_repo": "data/splits/val_genomes.tsv",
+      "full_table_sha256": "692563eed2b4a0470a15ce3a1f22b1461a9a088fcc5483930cfa1302745ed8e2",
+      "n_genomes": 10010
+    },
+    "test": {
+      "n_accessions_selected": 10005,
+      "n_genomes_available": 9999,
+      "n_download_failures": 6,
+      "accession_list": "splits/test_accessions.txt",
+      "full_table_in_repo": "data/splits/test_genomes.tsv",
+      "full_table_sha256": "15d4e62cf6b5ff111e841bf6ddb11e27f08fc940e0e9683f33bfad6e103f144e",
+      "n_genomes": 9999
+    },
+    "disjointness_verified": true,
+    "download_failures": {
+      "n": 43,
+      "file": "splits/missing_accessions.txt",
+      "note": "Accessions selected into a split whose genome download failed. They are absent from *_genomes.tsv and were never used for training, feature selection or benchmarking."
+    }
+  },
+  "normalization": {
+    "path_in_repo": "data/features/normalization_params.json",
+    "sha256": "b1e3f211a43560d8bed1dd8264921c7ec8ce0529c9bdbdbdc000894c9ce1d7d9",
+    "size_bytes": 2427524,
+    "top_level_keys": [
+      "assembly_log10_offset",
+      "assembly_minmax_min",
+      "assembly_minmax_range",
+      "assembly_robust_iqr",
+      "assembly_robust_median",
+      "assembly_stats",
+      "finalized",
+      "kmer_mean",
+      "kmer_stats",
+      "kmer_std",
+      "n_assembly_features",
+      "n_kmer_features"
+    ],
+    "packaged_copy": "magicc/data/normalization_params.json",
+    "packaged_copy_sha256": "b1e3f211a43560d8bed1dd8264921c7ec8ce0529c9bdbdbdc000894c9ce1d7d9",
+    "packaged_copy_identical": true
+  },
+  "benchmarks": {
+    "n_sets": 14,
+    "genomes_per_set": {
+      "set_C_clean": 1000,
+      "set_D_clean": 1000,
+      "set_A_v2": 1000,
+      "set_B_v2": 1000,
+      "set_E": 1000,
+      "motivating_v2/set_A": 1000,
+      "motivating_v2/set_B": 1000,
+      "motivating_v2/set_C": 1000,
+      "motivating/set_A": 600,
+      "motivating/set_B": 1100,
+      "set_A": 600,
+      "set_B": 600,
+      "set_C": 1000,
+      "set_D": 1000
+    },
+    "total_benchmark_genomes": 12900
+  },
+  "generator": {
+    "n_sets_documented": 14,
+    "n_sets_with_recorded_seeds": 2
+  },
+  "upstream_manifest": "results/revision/provenance/sha256_manifest.txt",
+  "n_files_in_bundle": 20
+}

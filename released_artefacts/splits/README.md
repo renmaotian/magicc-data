@@ -9,12 +9,12 @@
 The splits are stratified by phylum and **mutually disjoint** (verified here on
 both the selected-accession sets and the available-genome sets).
 
-`*_accessions.txt` lists NCBI GenBank accessions (`GCA_x.y`). The full per-genome tables
-(`*_genomes.tsv.gz`, in this directory) are keyed by GTDB accession (`GB_GCA_x.y` /
+`*_accessions.txt` lists NCBI GenBank accessions (`GCA_x.y`). The full tables
+`data/splits/*_genomes.tsv` are keyed by GTDB accession (`GB_GCA_x.y` /
 `RS_GCF_x.y`) and carry the NCBI accession in column `ncbi_accession`; that is
 the join key. Naive string matching between the two conventions undercounts
 overlap and is the exact mistake that hid the Set C/D leakage originally --
-see `../provenance/README.md`.
+see `results/revision/provenance/README.md`.
 
 43 selected accessions (43 across the three splits) failed to
 download and are listed in `missing_accessions.txt`. They have no row in

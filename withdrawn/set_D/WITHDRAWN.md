@@ -11,7 +11,7 @@ This set's Archaea dominant reference genomes were drawn from **train + val + te
 not from the held-out test split. Its generator says so explicitly
 (`data_generating_scripts/25_benchmark_generate.py` docstring). Verified counts over the
 1000 samples, using a GCA/GCF-aware canonical accession cross-map built
-from the GTDB filtered-genome table (figshare):
+from the GTDB filtered-genome table (`curation/gtdb_filtered_genomes.tsv.gz`):
 
 | dominants in TRAIN | in VAL | in TEST | in no split | in 9-mer feature selection |
 |---|---|---|---|---|

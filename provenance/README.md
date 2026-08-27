@@ -39,7 +39,7 @@ Three normalisations are computed for every accession and all three are reported
 * **strict** — drop the `GB_`/`RS_` prefix and the `.version` suffix
   (`GB_GCA_001822065.1 -> GCA_001822065`). Keeps `GCA` and `GCF` distinct.
 * **crossmap** (authoritative) — a canonical assembly-pair key. Every row of
-  the GTDB filtered-genome table (figshare) supplies a `(gtdb_accession, ncbi_accession,
+  the GTDB filtered-genome table (`curation/gtdb_filtered_genomes.tsv.gz`) supplies a `(gtdb_accession, ncbi_accession,
   gcf_accession)` triple that names one assembly, so all three strings are mapped to one
   key. Accessions absent from that table fall back to the 9-digit assembly number, which
   a GCA/GCF pair shares by NCBI construction.
@@ -114,7 +114,7 @@ model was ever trained on:
 | motivating_v2/set_C | 1000 | 122 | 46.385 pp |
 
 The clean sets have zero such samples (verified in
-the generation-validation record (figshare)). The leaked -> clean difference in
+the generation-validation record (`results/ws1_23_generation_validation.json`)). The leaked -> clean difference in
 Set C/D accuracy therefore mixes two effects; `provenance/withdrawn_vs_clean_cd_metrics.tsv`
 decomposes them by also reporting the superseded sets restricted to their
 constraint-satisfying subsets.
@@ -189,7 +189,7 @@ python scripts/75_run_magicc_clean_cd.py             # WS1.5  MAGICC V5 inferenc
 | `set_E_sha256_manifest.txt` | `set_E` | this repository's paths |
 
 Each manifest lists every generated assembly FASTA plus `metadata.tsv` and
-`labels.npy`. Verify a figshare download with, from the directory holding the
+`labels.npy`. Verify a release-asset download with, from the directory holding the
 `fasta/` tree:
 
 ```bash
