@@ -1,0 +1,25 @@
+2026-08-28 10:39:48 [INFO] Reading genome list: /path/to/magicc/results/revision/speed/inputs/set_E_100.txt
+2026-08-28 10:39:48 [INFO] Found 100 genome(s)
+2026-08-28 10:39:48 [INFO] Loading ONNX model: /path/to/.magicc/magicc_v5.onnx
+2026-08-28 10:39:49 [INFO] Loading normalization parameters: /path/to/anaconda3/envs/magicc_v033_rel/lib/python3.11/site-packages/magicc/data/normalization_params.json
+2026-08-28 10:39:49 [INFO] Extracting features for 100 genomes using 1 thread(s)...
+2026-08-28 10:39:54 [INFO]   Feature extraction: 100/100 (20.1 genomes/s, 49.8 ms/genome)
+2026-08-28 10:39:54 [INFO] Feature extraction complete: 100 genomes in 5.0s (49.8 ms/genome)
+2026-08-28 10:39:54 [INFO] Normalizing features...
+2026-08-28 10:39:54 [INFO] Normalization: 0.012s
+2026-08-28 10:39:54 [INFO] Running ONNX inference (batch_size=64)...
+2026-08-28 10:39:54 [INFO] Inference complete: 0.184s (1.84 ms/genome)
+2026-08-28 10:39:54 [INFO] Writing predictions to /path/to/magicc/results/revision/speed_v033/scratch/magicc_v033_xmodel__t1__set_E_100__warm__r2/magicc_predictions.tsv
+2026-08-28 10:39:54 [INFO] ============================================================
+2026-08-28 10:39:54 [INFO] MAGICC Prediction Summary
+2026-08-28 10:39:54 [INFO] ============================================================
+2026-08-28 10:39:54 [INFO]   Genomes processed: 100
+2026-08-28 10:39:54 [INFO]   Threads:           1
+2026-08-28 10:39:54 [INFO]   Feature extraction: 5.0s
+2026-08-28 10:39:54 [INFO]   Normalization:      0.012s
+2026-08-28 10:39:54 [INFO]   ONNX inference:     0.184s
+2026-08-28 10:39:54 [INFO]   Total time:         5.7s
+2026-08-28 10:39:54 [INFO]   Speed:              1048 genomes/min
+2026-08-28 10:39:54 [INFO]   Speed/thread:       1048 genomes/min/thread
+2026-08-28 10:39:54 [INFO]   Output:             /path/to/magicc/results/revision/speed_v033/scratch/magicc_v033_xmodel__t1__set_E_100__warm__r2/magicc_predictions.tsv
+2026-08-28 10:39:54 [INFO] ============================================================

@@ -1,0 +1,9 @@
+tool	tool_label	threads	wall_100_s	wall_1000_s	fixed_startup_s	marginal_s_per_genome	fixed_share_of_100genome_run_pct	fixed_share_of_1000genome_run_pct
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	1	6.64	49.91	1.8322	0.048078	27.6	3.7
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	8	2.73	10.69	1.8456	0.008844	67.6	17.3
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	16	2.47	7.29	1.9344	0.005356	78.3	26.5
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	32	2.5	6.26	2.0822	0.004178	83.3	33.3
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	1	6.19	49.3	1.4	0.0479	22.6	2.8
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	8	2.29	10.28	1.4022	0.008878	61.2	13.6
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	16	2.06	6.9	1.5222	0.005378	73.9	22.1
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	32	2.09	5.74	1.6844	0.004056	80.6	29.3

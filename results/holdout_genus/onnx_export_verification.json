@@ -1,0 +1,7 @@
+{
+  "onnx_path": "/path/to/magicc/models/magicc_holdout_genus.onnx",
+  "max_abs_diff_random": 3.814697265625e-05,
+  "max_abs_diff_real": 2.288818359375e-05,
+  "verified": true,
+  "size_mb": 169.7
+}

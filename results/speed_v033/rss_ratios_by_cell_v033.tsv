@@ -1,0 +1,13 @@
+cell	input_set	n_genomes	threads	magicc_arm	n_magicc	magicc_rss_gb_median	magicc_rss_gb_max	competitor	n_competitor	competitor_rss_gb_median	rss_ratio_median_over_median
+set_E_100 @ 32 threads	set_E_100	100	32	MAGICC v0.3.3 (released path, model SHA256 verified each run)	3	0.4175	0.418	CheckM2 1.0.1	5	10.6102	25.41
+set_E_100 @ 32 threads	set_E_100	100	32	MAGICC v0.3.3 (released path, model SHA256 verified each run)	3	0.4175	0.418	CoCoPyE 0.5.0	4	15.8878	38.05
+set_E_100 @ 32 threads	set_E_100	100	32	MAGICC v0.3.3 (released path, model SHA256 verified each run)	3	0.4175	0.418	DeepCheck (inference only)	4	0.6672	1.6
+set_E_100 @ 32 threads	set_E_100	100	32	MAGICC v0.3.3 (explicit --model, verification bypassed)	3	0.4153	0.4177	CheckM2 1.0.1	5	10.6102	25.55
+set_E_100 @ 32 threads	set_E_100	100	32	MAGICC v0.3.3 (explicit --model, verification bypassed)	3	0.4153	0.4177	CoCoPyE 0.5.0	4	15.8878	38.26
+set_E_100 @ 32 threads	set_E_100	100	32	MAGICC v0.3.3 (explicit --model, verification bypassed)	3	0.4153	0.4177	DeepCheck (inference only)	4	0.6672	1.61
+set_E_full @ 32 threads	set_E_full	1000	32	MAGICC v0.3.3 (released path, model SHA256 verified each run)	3	0.5152	0.5154	CheckM2 1.0.1	3	18.861	36.61
+set_E_full @ 32 threads	set_E_full	1000	32	MAGICC v0.3.3 (released path, model SHA256 verified each run)	3	0.5152	0.5154	CoCoPyE 0.5.0	3	15.9	30.86
+set_E_full @ 32 threads	set_E_full	1000	32	MAGICC v0.3.3 (released path, model SHA256 verified each run)	3	0.5152	0.5154	DeepCheck (inference only)	5	1.2739	2.47
+set_E_full @ 32 threads	set_E_full	1000	32	MAGICC v0.3.3 (explicit --model, verification bypassed)	3	0.5145	0.5149	CheckM2 1.0.1	3	18.861	36.66
+set_E_full @ 32 threads	set_E_full	1000	32	MAGICC v0.3.3 (explicit --model, verification bypassed)	3	0.5145	0.5149	CoCoPyE 0.5.0	3	15.9	30.9
+set_E_full @ 32 threads	set_E_full	1000	32	MAGICC v0.3.3 (explicit --model, verification bypassed)	3	0.5145	0.5149	DeepCheck (inference only)	5	1.2739	2.48

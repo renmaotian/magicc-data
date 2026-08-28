@@ -1,0 +1,9 @@
+input_set	n_genomes	threads	verified_median_s	n_verified	unverified_median_s	n_unverified	verification_cost_s	verification_share_of_run_pct	verified_min_s	verified_max_s	unverified_min_s	unverified_max_s
+set_E_100	100	1	6.64	3	6.19	3	0.45	6.78	6.55	6.65	6.16	6.21
+set_E_100	100	8	2.73	3	2.29	3	0.44	16.12	2.7	2.73	2.26	2.3
+set_E_100	100	16	2.47	3	2.06	3	0.41	16.6	2.46	2.51	2.03	2.09
+set_E_100	100	32	2.5	3	2.09	3	0.41	16.4	2.46	2.5	2.04	2.1
+set_E_full	1000	1	49.91	3	49.3	3	0.61	1.22	49.73	50.51	48.85	49.36
+set_E_full	1000	8	10.69	3	10.28	3	0.41	3.84	10.55	10.74	10.25	10.48
+set_E_full	1000	16	7.29	3	6.9	3	0.39	5.35	7.28	7.32	6.87	6.92
+set_E_full	1000	32	6.26	3	5.74	3	0.52	8.31	6.05	6.37	5.7	5.96

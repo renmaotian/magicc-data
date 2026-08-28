@@ -1,0 +1,25 @@
+2026-08-28 10:45:08 [INFO] Reading genome list: /path/to/magicc/results/revision/speed/inputs/set_E_100.txt
+2026-08-28 10:45:08 [INFO] Found 100 genome(s)
+2026-08-28 10:45:08 [INFO] Loading ONNX model: /path/to/.magicc/magicc_v5.onnx
+2026-08-28 10:45:08 [INFO] Loading normalization parameters: /path/to/anaconda3/envs/magicc_v033_rel/lib/python3.11/site-packages/magicc/data/normalization_params.json
+2026-08-28 10:45:08 [INFO] Extracting features for 100 genomes using 1 thread(s)...
+2026-08-28 10:45:13 [INFO]   Feature extraction: 100/100 (19.9 genomes/s, 50.3 ms/genome)
+2026-08-28 10:45:13 [INFO] Feature extraction complete: 100 genomes in 5.0s (50.3 ms/genome)
+2026-08-28 10:45:13 [INFO] Normalizing features...
+2026-08-28 10:45:13 [INFO] Normalization: 0.013s
+2026-08-28 10:45:13 [INFO] Running ONNX inference (batch_size=64)...
+2026-08-28 10:45:13 [INFO] Inference complete: 0.195s (1.95 ms/genome)
+2026-08-28 10:45:13 [INFO] Writing predictions to /path/to/magicc/results/revision/speed_v033/scratch/magicc_v033__t1__set_E_100__warm__r3/magicc_predictions.tsv
+2026-08-28 10:45:13 [INFO] ============================================================
+2026-08-28 10:45:13 [INFO] MAGICC Prediction Summary
+2026-08-28 10:45:13 [INFO] ============================================================
+2026-08-28 10:45:13 [INFO]   Genomes processed: 100
+2026-08-28 10:45:13 [INFO]   Threads:           1
+2026-08-28 10:45:13 [INFO]   Feature extraction: 5.0s
+2026-08-28 10:45:13 [INFO]   Normalization:      0.013s
+2026-08-28 10:45:13 [INFO]   ONNX inference:     0.195s
+2026-08-28 10:45:13 [INFO]   Total time:         6.2s
+2026-08-28 10:45:13 [INFO]   Speed:              971 genomes/min
+2026-08-28 10:45:13 [INFO]   Speed/thread:       971 genomes/min/thread
+2026-08-28 10:45:13 [INFO]   Output:             /path/to/magicc/results/revision/speed_v033/scratch/magicc_v033__t1__set_E_100__warm__r3/magicc_predictions.tsv
+2026-08-28 10:45:13 [INFO] ============================================================

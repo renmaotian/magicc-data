@@ -1,0 +1,225 @@
+{
+  "production_n_kmers": 9249,
+  "panel_level": "genus",
+  "panel_taxa": [
+    "Aequorivita",
+    "Aliarcobacter",
+    "C7867-001",
+    "CAG-1031",
+    "CAG-873",
+    "CAIKZD01",
+    "CAIYEO01",
+    "CG1-02-43-31",
+    "Flagellimonas",
+    "Flavobacterium",
+    "Halapricum",
+    "Haloarcula",
+    "Halobellus",
+    "Haloferax",
+    "Halomicrobium",
+    "Haloplanus",
+    "Halorhabdus",
+    "Halorientalis",
+    "Halorubrum",
+    "Helicobacter_B",
+    "Helicobacter_C",
+    "Helicobacter_D",
+    "Helicobacter_E",
+    "Helicobacter_F",
+    "Helicobacter_G",
+    "JABIEQ01",
+    "JAKLGL01",
+    "Lepagella",
+    "Limisoma",
+    "MWCR01",
+    "Nanosyncoccus",
+    "Nonlabens",
+    "Paramuribaculum",
+    "Peribacter",
+    "Polaribacter",
+    "Poseidonibacter",
+    "Tenacibaculum",
+    "UBA1547",
+    "UBA2170",
+    "UBA4124",
+    "UBA8515",
+    "UBA9973",
+    "XYD1-FULL-39-28",
+    "XYD2-FULL-39-9"
+  ],
+  "panel_phyla": [],
+  "domains": {
+    "bacterial": {
+      "spearman_rho_prevalence": 0.999504,
+      "prevalence_rate_lost": {
+        "all_reps": 0.5317,
+        "nonpanel_reps": 0.5266,
+        "panel_reps": 0.6906,
+        "panel_minus_nonpanel": 0.164
+      },
+      "prevalence_rate_retained": {
+        "all_reps": 0.6049,
+        "nonpanel_reps": 0.6057,
+        "panel_reps": 0.5805,
+        "panel_minus_nonpanel": -0.0251
+      },
+      "retention_by_production_rank": [
+        {
+          "rank_range": "1-1000",
+          "n": 1000,
+          "retained_frac": 1.0,
+          "prevalence_rate_all_reps": 0.7481
+        },
+        {
+          "rank_range": "1001-3000",
+          "n": 2000,
+          "retained_frac": 1.0,
+          "prevalence_rate_all_reps": 0.6455
+        },
+        {
+          "rank_range": "3001-6000",
+          "n": 3000,
+          "retained_frac": 1.0,
+          "prevalence_rate_all_reps": 0.5856
+        },
+        {
+          "rank_range": "6001-9000",
+          "n": 3000,
+          "retained_frac": 0.934,
+          "prevalence_rate_all_reps": 0.5445
+        }
+      ],
+      "n_representatives": 1000,
+      "n_panel_representatives": 31,
+      "pct_panel_representatives": 3.1,
+      "panel_by_phylum": {
+        "Paramuribaculum": 7,
+        "Nanosyncoccus": 4,
+        "Helicobacter_C": 3,
+        "C7867-001": 3,
+        "Flagellimonas": 2,
+        "CAG-873": 2,
+        "Aliarcobacter": 2,
+        "Aequorivita": 1,
+        "Polaribacter": 1,
+        "Helicobacter_D": 1,
+        "Helicobacter_E": 1,
+        "Helicobacter_F": 1,
+        "JAKLGL01": 1,
+        "UBA8515": 1,
+        "UBA9973": 1
+      },
+      "n_nonpanel_representatives": 969,
+      "validation_vs_stored": {
+        "n_compared": 131072,
+        "exact_match": 131072,
+        "pct_exact": 100.0,
+        "pearson_r": 1.0,
+        "max_abs_diff": 0
+      },
+      "top_n": 9000,
+      "prevalence_cutoff_all": 529,
+      "prevalence_cutoff_nonpanel": 514,
+      "within_domain_jaccard": 0.9569,
+      "within_domain_shared": 8802,
+      "lost": 198,
+      "gained": 198
+    },
+    "archaeal": {
+      "spearman_rho_prevalence": 0.960592,
+      "prevalence_rate_lost": {
+        "all_reps": 0.8036,
+        "nonpanel_reps": 0.7872,
+        "panel_reps": 0.9401,
+        "panel_minus_nonpanel": 0.1528
+      },
+      "prevalence_rate_retained": {
+        "all_reps": 0.8571,
+        "nonpanel_reps": 0.8641,
+        "panel_reps": 0.7984,
+        "panel_minus_nonpanel": -0.0657
+      },
+      "retention_by_production_rank": [
+        {
+          "rank_range": "1-1000",
+          "n": 1000,
+          "retained_frac": 0.801,
+          "prevalence_rate_all_reps": 0.8465
+        }
+      ],
+      "n_representatives": 1000,
+      "n_panel_representatives": 107,
+      "pct_panel_representatives": 10.7,
+      "panel_by_phylum": {
+        "Halorubrum": 41,
+        "Haloarcula": 20,
+        "Haloferax": 16,
+        "Halomicrobium": 9,
+        "Halobellus": 5,
+        "Halapricum": 5,
+        "Haloplanus": 4,
+        "Halorientalis": 4,
+        "Halorhabdus": 3
+      },
+      "n_nonpanel_representatives": 893,
+      "validation_vs_stored": {
+        "n_compared": 131072,
+        "exact_match": 131072,
+        "pct_exact": 100.0,
+        "pearson_r": 1.0,
+        "max_abs_diff": 0
+      },
+      "top_n": 1000,
+      "prevalence_cutoff_all": 791,
+      "prevalence_cutoff_nonpanel": 716,
+      "within_domain_jaccard": 0.6681,
+      "within_domain_shared": 801,
+      "lost": 199,
+      "gained": 199
+    }
+  },
+  "merged": {
+    "n_production": 9249,
+    "n_reproduced_all_reps": 9249,
+    "n_reselected_nonpanel": 9223,
+    "jaccard_production_vs_reselected": 0.9452,
+    "jaccard_production_vs_reproduced_control": 1.0,
+    "jaccard_reproduced_vs_reselected": 0.9452,
+    "shared": 8976,
+    "lost": 273,
+    "gained": 247,
+    "pct_production_retained": 97.05,
+    "lost_by_production_source_branch": {
+      "bacterial": 192,
+      "archaeal": 78,
+      "bacterial+archaeal": 3
+    },
+    "lost_production_prevalence": {
+      "bacterial_mean": 501.5,
+      "bacterial_max": 542,
+      "archaeal_mean": 601.9,
+      "archaeal_max": 822
+    },
+    "all_selected_production_prevalence": {
+      "bacterial_mean": 598.9,
+      "bacterial_max": 992,
+      "archaeal_mean": 607.5,
+      "archaeal_max": 998
+    },
+    "production_composition": {
+      "n_bacterial_selected": 9000,
+      "n_archaeal_selected": 1000,
+      "n_overlap": 751,
+      "n_bact_only": 8249,
+      "n_arch_only": 249,
+      "n_final_merged": 9249,
+      "bacterial_prevalence_cutoff": 529,
+      "archaeal_prevalence_cutoff": 791,
+      "bacterial_max_prevalence": 992,
+      "archaeal_max_prevalence": 998,
+      "output_file": "/path/to/magicc/data/kmer_selection/selected_kmers.txt"
+    },
+    "archaeal_only_share_pct": 2.69
+  },
+  "interpretation": "Jaccard alone is misleading here because the selection is a hard top-N cut on a continuous prevalence ranking, so k-mers sitting near the cutoff churn even under small perturbations of the representative set. The informative statistics are (a) the Spearman correlation of prevalence, (b) retention stratified by production prevalence rank, and (c) the production prevalence of the lost k-mers. Retention of 100% in the top bacterial ranks with churn confined to the low-prevalence tail means the feature set is stable where it carries signal. Direction of residual bias: because the production features were partly chosen using panel genomes, they are if anything slightly better suited to panel-phylum core genes than a panel-blind feature set would be, so any measured degradation on held-out phyla is a CONSERVATIVE (under)estimate. Feature-level leakage therefore cannot manufacture a false-negative result."
+}

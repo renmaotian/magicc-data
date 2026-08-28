@@ -1,0 +1,23 @@
+	Command being timed: "/path/to/anaconda3/envs/magicc_v033_rel/bin/magicc predict --input-list /path/to/magicc/results/revision/speed/inputs/set_E_full.txt --output /path/to/magicc/results/revision/speed_v033/scratch/magicc_v033__t16__set_E_full__warm__r2/magicc_predictions.tsv --threads 16"
+	User time (seconds): 58.61
+	System time (seconds): 5.06
+	Percent of CPU this job got: 869%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:07.32
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 540740
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1294029
+	Voluntary context switches: 2127
+	Involuntary context switches: 175
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 536
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

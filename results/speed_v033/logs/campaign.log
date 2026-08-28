@@ -1,0 +1,215 @@
+==================================================================
+WS11.T v0.3.3 campaign start 2026-08-28T15:28:26Z
+host=Alborz nproc=48 plan=/path/to/magicc/results/revision/speed_v033/run_plan_v033.tsv
+tiers 0..9  gate_general=4.0 gate_magicc1thr=1.5
+mem: 881 GiB total, 868 GiB available
+==================================================================
+[wait] magicc_v033__t1__set_E_full__warm__r1: load1=2.10 >= 1.5 (busy=103.4%), settling, waited 0s
+[run ] tier=1 order=1 magicc_v033__t1__set_E_full__warm__r1 | released default path, SHA256 verified
+       loadavg=1.40 2.65 1.32 memavail=910640956kB 2026-08-28T15:28:56Z
+[time] magicc_v033 t=1 r=1 set_E_full/warm: wall=50.51s rss=0.7171GB rc=0 load_before=1.4 fs_inputs=0
+[done] magicc_v033__t1__set_E_full__warm__r1 rc=0
+[run ] tier=1 order=2 magicc_v033_xmodel__t1__set_E_full__warm__r1 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.47 2.45 1.32 memavail=910676004kB 2026-08-28T15:29:49Z
+[time] magicc_v033_xmodel t=1 r=1 set_E_full/warm: wall=49.3s rss=0.7169GB rc=0 load_before=1.47 fs_inputs=0
+[done] magicc_v033_xmodel__t1__set_E_full__warm__r1 rc=0
+[run ] tier=1 order=3 magicc_v033__t8__set_E_full__warm__r1 | released default path, SHA256 verified
+       loadavg=1.52 2.31 1.34 memavail=910662368kB 2026-08-28T15:30:40Z
+[time] magicc_v033 t=8 r=1 set_E_full/warm: wall=10.74s rss=0.5165GB rc=0 load_before=1.52 fs_inputs=0
+[done] magicc_v033__t8__set_E_full__warm__r1 rc=0
+[run ] tier=1 order=4 magicc_v033_xmodel__t8__set_E_full__warm__r1 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=2.31 2.46 1.40 memavail=910448076kB 2026-08-28T15:30:53Z
+[time] magicc_v033_xmodel t=8 r=1 set_E_full/warm: wall=10.28s rss=0.5158GB rc=0 load_before=2.31 fs_inputs=0
+[done] magicc_v033_xmodel__t8__set_E_full__warm__r1 rc=0
+[run ] tier=1 order=5 magicc_v033__t16__set_E_full__warm__r1 | released default path, SHA256 verified
+       loadavg=2.63 2.52 1.43 memavail=910343212kB 2026-08-28T15:31:06Z
+[time] magicc_v033 t=16 r=1 set_E_full/warm: wall=7.29s rss=0.5155GB rc=0 load_before=2.63 fs_inputs=0
+[done] magicc_v033__t16__set_E_full__warm__r1 rc=0
+[run ] tier=1 order=6 magicc_v033_xmodel__t16__set_E_full__warm__r1 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=2.89 2.59 1.47 memavail=910022332kB 2026-08-28T15:31:15Z
+[time] magicc_v033_xmodel t=16 r=1 set_E_full/warm: wall=6.87s rss=0.5148GB rc=0 load_before=2.89 fs_inputs=0
+[done] magicc_v033_xmodel__t16__set_E_full__warm__r1 rc=0
+[run ] tier=1 order=7 magicc_v033__t32__set_E_full__warm__r1 | released default path, SHA256 verified
+       loadavg=3.79 2.80 1.55 memavail=909416644kB 2026-08-28T15:31:24Z
+[time] magicc_v033 t=32 r=1 set_E_full/warm: wall=6.37s rss=0.5143GB rc=0 load_before=3.79 fs_inputs=0
+[done] magicc_v033__t32__set_E_full__warm__r1 rc=0
+[wait] magicc_v033_xmodel__t32__set_E_full__warm__r1: load1=6.05 >= 4.0 (busy=3.4%), settling, waited 0s
+[run ] tier=1 order=8 magicc_v033_xmodel__t32__set_E_full__warm__r1 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=3.66 2.97 1.66 memavail=910399532kB 2026-08-28T15:32:03Z
+[time] magicc_v033_xmodel t=32 r=1 set_E_full/warm: wall=5.7s rss=0.5149GB rc=0 load_before=3.66 fs_inputs=0
+[done] magicc_v033_xmodel__t32__set_E_full__warm__r1 rc=0
+[wait] magicc_v033__t1__set_E_100__warm__r1: load1=3.18 >= 1.5 (busy=103.4%), settling, waited 0s
+[wait] magicc_v033__t1__set_E_100__warm__r1: load1=1.93 >= 1.5 (busy=103.4%), settling, waited 30s
+[run ] tier=1 order=9 magicc_v033__t1__set_E_100__warm__r1 | released default path, SHA256 verified
+       loadavg=1.17 2.36 1.54 memavail=910636412kB 2026-08-28T15:33:11Z
+[time] magicc_v033 t=1 r=1 set_E_100/warm: wall=6.64s rss=0.454GB rc=0 load_before=1.17 fs_inputs=0
+[done] magicc_v033__t1__set_E_100__warm__r1 rc=0
+[run ] tier=1 order=10 magicc_v033_xmodel__t1__set_E_100__warm__r1 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.21 2.33 1.54 memavail=910529172kB 2026-08-28T15:33:19Z
+[time] magicc_v033_xmodel t=1 r=1 set_E_100/warm: wall=6.16s rss=0.4543GB rc=0 load_before=1.21 fs_inputs=0
+[done] magicc_v033_xmodel__t1__set_E_100__warm__r1 rc=0
+[run ] tier=1 order=11 magicc_v033__t8__set_E_100__warm__r1 | released default path, SHA256 verified
+       loadavg=1.20 2.31 1.53 memavail=910394536kB 2026-08-28T15:33:28Z
+[time] magicc_v033 t=8 r=1 set_E_100/warm: wall=2.7s rss=0.42GB rc=0 load_before=1.2 fs_inputs=0
+[done] magicc_v033__t8__set_E_100__warm__r1 rc=0
+[run ] tier=1 order=12 magicc_v033_xmodel__t8__set_E_100__warm__r1 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.10 2.27 1.53 memavail=909700240kB 2026-08-28T15:33:33Z
+[time] magicc_v033_xmodel t=8 r=1 set_E_100/warm: wall=2.29s rss=0.4202GB rc=0 load_before=1.1 fs_inputs=0
+[done] magicc_v033_xmodel__t8__set_E_100__warm__r1 rc=0
+[run ] tier=1 order=13 magicc_v033__t16__set_E_100__warm__r1 | released default path, SHA256 verified
+       loadavg=1.01 2.23 1.52 memavail=909516992kB 2026-08-28T15:33:37Z
+[time] magicc_v033 t=16 r=1 set_E_100/warm: wall=2.47s rss=0.4177GB rc=0 load_before=1.01 fs_inputs=0
+[done] magicc_v033__t16__set_E_100__warm__r1 rc=0
+[run ] tier=1 order=14 magicc_v033_xmodel__t16__set_E_100__warm__r1 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=0.93 2.19 1.51 memavail=909042064kB 2026-08-28T15:33:42Z
+[time] magicc_v033_xmodel t=16 r=1 set_E_100/warm: wall=2.03s rss=0.4176GB rc=0 load_before=0.93 fs_inputs=0
+[done] magicc_v033_xmodel__t16__set_E_100__warm__r1 rc=0
+[run ] tier=1 order=15 magicc_v033__t32__set_E_100__warm__r1 | released default path, SHA256 verified
+       loadavg=0.94 2.17 1.51 memavail=908688992kB 2026-08-28T15:33:46Z
+[time] magicc_v033 t=32 r=1 set_E_100/warm: wall=2.46s rss=0.4175GB rc=0 load_before=0.94 fs_inputs=0
+[done] magicc_v033__t32__set_E_100__warm__r1 rc=0
+[run ] tier=1 order=16 magicc_v033_xmodel__t32__set_E_100__warm__r1 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.02 2.17 1.51 memavail=908039832kB 2026-08-28T15:33:50Z
+[time] magicc_v033_xmodel t=32 r=1 set_E_100/warm: wall=2.1s rss=0.4153GB rc=0 load_before=1.02 fs_inputs=0
+[done] magicc_v033_xmodel__t32__set_E_100__warm__r1 rc=0
+[wait] magicc_v033__t1__set_E_full__warm__r2: load1=3.50 >= 1.5 (busy=3.4%), settling, waited 0s
+[wait] magicc_v033__t1__set_E_full__warm__r2: load1=2.36 >= 1.5 (busy=3.4%), settling, waited 30s
+[run ] tier=1 order=17 magicc_v033__t1__set_E_full__warm__r2 | released default path, SHA256 verified
+       loadavg=1.43 2.22 1.58 memavail=910541560kB 2026-08-28T15:34:55Z
+[time] magicc_v033 t=1 r=2 set_E_full/warm: wall=49.91s rss=0.7178GB rc=0 load_before=1.43 fs_inputs=0
+[done] magicc_v033__t1__set_E_full__warm__r2 rc=0
+[run ] tier=1 order=18 magicc_v033_xmodel__t1__set_E_full__warm__r2 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.18 2.03 1.55 memavail=910613592kB 2026-08-28T15:35:47Z
+[time] magicc_v033_xmodel t=1 r=2 set_E_full/warm: wall=48.85s rss=0.7174GB rc=0 load_before=1.18 fs_inputs=0
+[done] magicc_v033_xmodel__t1__set_E_full__warm__r2 rc=0
+[run ] tier=1 order=19 magicc_v033__t8__set_E_full__warm__r2 | released default path, SHA256 verified
+       loadavg=1.12 1.89 1.52 memavail=910713960kB 2026-08-28T15:36:38Z
+[time] magicc_v033 t=8 r=2 set_E_full/warm: wall=10.55s rss=0.5163GB rc=0 load_before=1.12 fs_inputs=0
+[done] magicc_v033__t8__set_E_full__warm__r2 rc=0
+[run ] tier=1 order=20 magicc_v033_xmodel__t8__set_E_full__warm__r2 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.54 1.94 1.55 memavail=910482892kB 2026-08-28T15:36:51Z
+[time] magicc_v033_xmodel t=8 r=2 set_E_full/warm: wall=10.48s rss=0.5149GB rc=0 load_before=1.54 fs_inputs=0
+[done] magicc_v033_xmodel__t8__set_E_full__warm__r2 rc=0
+[run ] tier=1 order=21 magicc_v033__t16__set_E_full__warm__r2 | released default path, SHA256 verified
+       loadavg=2.33 2.10 1.61 memavail=910359256kB 2026-08-28T15:37:03Z
+[time] magicc_v033 t=16 r=2 set_E_full/warm: wall=7.32s rss=0.5157GB rc=0 load_before=2.33 fs_inputs=0
+[done] magicc_v033__t16__set_E_full__warm__r2 rc=0
+[run ] tier=1 order=22 magicc_v033_xmodel__t16__set_E_full__warm__r2 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=3.42 2.34 1.68 memavail=909757856kB 2026-08-28T15:37:13Z
+[time] magicc_v033_xmodel t=16 r=2 set_E_full/warm: wall=6.9s rss=0.5139GB rc=0 load_before=3.42 fs_inputs=0
+[done] magicc_v033_xmodel__t16__set_E_full__warm__r2 rc=0
+[wait] magicc_v033__t32__set_E_full__warm__r2: load1=4.10 >= 4.0 (busy=3.4%), settling, waited 0s
+[run ] tier=1 order=23 magicc_v033__t32__set_E_full__warm__r2 | released default path, SHA256 verified
+       loadavg=2.48 2.27 1.69 memavail=910341460kB 2026-08-28T15:37:52Z
+[time] magicc_v033 t=32 r=2 set_E_full/warm: wall=6.05s rss=0.5152GB rc=0 load_before=2.48 fs_inputs=0
+[done] magicc_v033__t32__set_E_full__warm__r2 rc=0
+[run ] tier=1 order=24 magicc_v033_xmodel__t32__set_E_full__warm__r2 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=2.25 2.22 1.68 memavail=909127244kB 2026-08-28T15:38:00Z
+[time] magicc_v033_xmodel t=32 r=2 set_E_full/warm: wall=5.96s rss=0.5138GB rc=0 load_before=2.25 fs_inputs=0
+[done] magicc_v033_xmodel__t32__set_E_full__warm__r2 rc=0
+[wait] magicc_v033__t1__set_E_100__warm__r2: load1=4.72 >= 1.5 (busy=202.6%), settling, waited 0s
+[wait] magicc_v033__t1__set_E_100__warm__r2: load1=3.30 >= 1.5 (busy=3.4%), settling, waited 30s
+[wait] magicc_v033__t1__set_E_100__warm__r2: load1=1.84 >= 1.5 (busy=3.4%), settling, waited 60s
+[run ] tier=1 order=25 magicc_v033__t1__set_E_100__warm__r2 | released default path, SHA256 verified
+       loadavg=1.11 2.08 1.70 memavail=910546332kB 2026-08-28T15:39:38Z
+[time] magicc_v033 t=1 r=2 set_E_100/warm: wall=6.55s rss=0.4529GB rc=0 load_before=1.11 fs_inputs=0
+[done] magicc_v033__t1__set_E_100__warm__r2 rc=0
+[run ] tier=1 order=26 magicc_v033_xmodel__t1__set_E_100__warm__r2 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.11 2.06 1.70 memavail=910373816kB 2026-08-28T15:39:47Z
+[time] magicc_v033_xmodel t=1 r=2 set_E_100/warm: wall=6.19s rss=0.4538GB rc=0 load_before=1.11 fs_inputs=0
+[done] magicc_v033_xmodel__t1__set_E_100__warm__r2 rc=0
+[run ] tier=1 order=27 magicc_v033__t8__set_E_100__warm__r2 | released default path, SHA256 verified
+       loadavg=1.16 2.04 1.70 memavail=910274916kB 2026-08-28T15:39:55Z
+[time] magicc_v033 t=8 r=2 set_E_100/warm: wall=2.73s rss=0.4206GB rc=0 load_before=1.16 fs_inputs=8
+[done] magicc_v033__t8__set_E_100__warm__r2 rc=0
+[run ] tier=1 order=28 magicc_v033_xmodel__t8__set_E_100__warm__r2 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.71 2.14 1.73 memavail=909972776kB 2026-08-28T15:40:00Z
+[time] magicc_v033_xmodel t=8 r=2 set_E_100/warm: wall=2.3s rss=0.4203GB rc=0 load_before=1.71 fs_inputs=0
+[done] magicc_v033_xmodel__t8__set_E_100__warm__r2 rc=0
+[run ] tier=1 order=29 magicc_v033__t16__set_E_100__warm__r2 | released default path, SHA256 verified
+       loadavg=1.65 2.12 1.72 memavail=909460452kB 2026-08-28T15:40:05Z
+[time] magicc_v033 t=16 r=2 set_E_100/warm: wall=2.51s rss=0.4175GB rc=0 load_before=1.65 fs_inputs=0
+[done] magicc_v033__t16__set_E_100__warm__r2 rc=0
+[run ] tier=1 order=30 magicc_v033_xmodel__t16__set_E_100__warm__r2 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.68 2.12 1.73 memavail=908893948kB 2026-08-28T15:40:09Z
+[time] magicc_v033_xmodel t=16 r=2 set_E_100/warm: wall=2.06s rss=0.4177GB rc=0 load_before=1.68 fs_inputs=0
+[done] magicc_v033_xmodel__t16__set_E_100__warm__r2 rc=0
+[run ] tier=1 order=31 magicc_v033__t32__set_E_100__warm__r2 | released default path, SHA256 verified
+       loadavg=1.55 2.08 1.72 memavail=908398180kB 2026-08-28T15:40:13Z
+[time] magicc_v033 t=32 r=2 set_E_100/warm: wall=2.5s rss=0.418GB rc=0 load_before=1.55 fs_inputs=0
+[done] magicc_v033__t32__set_E_100__warm__r2 rc=0
+[run ] tier=1 order=32 magicc_v033_xmodel__t32__set_E_100__warm__r2 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.55 2.08 1.72 memavail=907947132kB 2026-08-28T15:40:18Z
+[time] magicc_v033_xmodel t=32 r=2 set_E_100/warm: wall=2.09s rss=0.4152GB rc=0 load_before=1.55 fs_inputs=0
+[done] magicc_v033_xmodel__t32__set_E_100__warm__r2 rc=0
+[wait] magicc_v033__t1__set_E_full__warm__r3: load1=1.50 >= 1.5 (busy=3.4%), settling, waited 0s
+[run ] tier=1 order=33 magicc_v033__t1__set_E_full__warm__r3 | released default path, SHA256 verified
+       loadavg=1.07 1.90 1.67 memavail=910128520kB 2026-08-28T15:40:52Z
+[time] magicc_v033 t=1 r=3 set_E_full/warm: wall=49.73s rss=0.7178GB rc=0 load_before=1.07 fs_inputs=0
+[done] magicc_v033__t1__set_E_full__warm__r3 rc=0
+[run ] tier=1 order=34 magicc_v033_xmodel__t1__set_E_full__warm__r3 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.12 1.76 1.63 memavail=910459416kB 2026-08-28T15:41:44Z
+[time] magicc_v033_xmodel t=1 r=3 set_E_full/warm: wall=49.36s rss=0.7178GB rc=0 load_before=1.12 fs_inputs=0
+[done] magicc_v033_xmodel__t1__set_E_full__warm__r3 rc=0
+[run ] tier=1 order=35 magicc_v033__t8__set_E_full__warm__r3 | released default path, SHA256 verified
+       loadavg=1.09 1.66 1.61 memavail=910583388kB 2026-08-28T15:42:36Z
+[time] magicc_v033 t=8 r=3 set_E_full/warm: wall=10.69s rss=0.5147GB rc=0 load_before=1.09 fs_inputs=0
+[done] magicc_v033__t8__set_E_full__warm__r3 rc=0
+[run ] tier=1 order=36 magicc_v033_xmodel__t8__set_E_full__warm__r3 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.98 1.84 1.66 memavail=910421504kB 2026-08-28T15:42:49Z
+[time] magicc_v033_xmodel t=8 r=3 set_E_full/warm: wall=10.25s rss=0.5144GB rc=0 load_before=1.98 fs_inputs=0
+[done] magicc_v033_xmodel__t8__set_E_full__warm__r3 rc=0
+[run ] tier=1 order=37 magicc_v033__t16__set_E_full__warm__r3 | released default path, SHA256 verified
+       loadavg=2.35 1.92 1.70 memavail=910257740kB 2026-08-28T15:43:01Z
+[time] magicc_v033 t=16 r=3 set_E_full/warm: wall=7.28s rss=0.5154GB rc=0 load_before=2.35 fs_inputs=0
+[done] magicc_v033__t16__set_E_full__warm__r3 rc=0
+[run ] tier=1 order=38 magicc_v033_xmodel__t16__set_E_full__warm__r3 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=2.14 1.89 1.69 memavail=909771724kB 2026-08-28T15:43:10Z
+[time] magicc_v033_xmodel t=16 r=3 set_E_full/warm: wall=6.92s rss=0.5133GB rc=0 load_before=2.14 fs_inputs=0
+[done] magicc_v033_xmodel__t16__set_E_full__warm__r3 rc=0
+[run ] tier=1 order=39 magicc_v033__t32__set_E_full__warm__r3 | released default path, SHA256 verified
+       loadavg=3.07 2.11 1.76 memavail=909545248kB 2026-08-28T15:43:19Z
+[time] magicc_v033 t=32 r=3 set_E_full/warm: wall=6.26s rss=0.5154GB rc=0 load_before=3.07 fs_inputs=0
+[done] magicc_v033__t32__set_E_full__warm__r3 rc=0
+[wait] magicc_v033_xmodel__t32__set_E_full__warm__r3: load1=5.39 >= 4.0 (busy=103.4%), settling, waited 0s
+[run ] tier=1 order=40 magicc_v033_xmodel__t32__set_E_full__warm__r3 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=3.26 2.35 1.86 memavail=910311388kB 2026-08-28T15:43:58Z
+[time] magicc_v033_xmodel t=32 r=3 set_E_full/warm: wall=5.74s rss=0.5145GB rc=0 load_before=3.26 fs_inputs=0
+[done] magicc_v033_xmodel__t32__set_E_full__warm__r3 rc=0
+[wait] magicc_v033__t1__set_E_100__warm__r3: load1=2.84 >= 1.5 (busy=3.4%), settling, waited 0s
+[wait] magicc_v033__t1__set_E_100__warm__r3: load1=1.77 >= 1.5 (busy=3.4%), settling, waited 30s
+[run ] tier=1 order=41 magicc_v033__t1__set_E_100__warm__r3 | released default path, SHA256 verified
+       loadavg=1.07 1.89 1.73 memavail=910478260kB 2026-08-28T15:45:06Z
+[time] magicc_v033 t=1 r=3 set_E_100/warm: wall=6.65s rss=0.4543GB rc=0 load_before=1.07 fs_inputs=0
+[done] magicc_v033__t1__set_E_100__warm__r3 rc=0
+[run ] tier=1 order=42 magicc_v033_xmodel__t1__set_E_100__warm__r3 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.14 1.87 1.73 memavail=910234176kB 2026-08-28T15:45:15Z
+[time] magicc_v033_xmodel t=1 r=3 set_E_100/warm: wall=6.21s rss=0.4543GB rc=0 load_before=1.14 fs_inputs=0
+[done] magicc_v033_xmodel__t1__set_E_100__warm__r3 rc=0
+[run ] tier=1 order=43 magicc_v033__t8__set_E_100__warm__r3 | released default path, SHA256 verified
+       loadavg=1.13 1.86 1.72 memavail=910201288kB 2026-08-28T15:45:23Z
+[time] magicc_v033 t=8 r=3 set_E_100/warm: wall=2.73s rss=0.4202GB rc=0 load_before=1.13 fs_inputs=0
+[done] magicc_v033__t8__set_E_100__warm__r3 rc=0
+[run ] tier=1 order=44 magicc_v033_xmodel__t8__set_E_100__warm__r3 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=1.04 1.83 1.72 memavail=909715644kB 2026-08-28T15:45:28Z
+[time] magicc_v033_xmodel t=8 r=3 set_E_100/warm: wall=2.26s rss=0.42GB rc=0 load_before=1.04 fs_inputs=0
+[done] magicc_v033_xmodel__t8__set_E_100__warm__r3 rc=0
+[run ] tier=1 order=45 magicc_v033__t16__set_E_100__warm__r3 | released default path, SHA256 verified
+       loadavg=0.96 1.80 1.71 memavail=909288376kB 2026-08-28T15:45:32Z
+[time] magicc_v033 t=16 r=3 set_E_100/warm: wall=2.46s rss=0.4176GB rc=0 load_before=0.96 fs_inputs=0
+[done] magicc_v033__t16__set_E_100__warm__r3 rc=0
+[run ] tier=1 order=46 magicc_v033_xmodel__t16__set_E_100__warm__r3 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=0.88 1.77 1.70 memavail=908795428kB 2026-08-28T15:45:37Z
+[time] magicc_v033_xmodel t=16 r=3 set_E_100/warm: wall=2.09s rss=0.4173GB rc=0 load_before=0.88 fs_inputs=0
+[done] magicc_v033_xmodel__t16__set_E_100__warm__r3 rc=0
+[run ] tier=1 order=47 magicc_v033__t32__set_E_100__warm__r3 | released default path, SHA256 verified
+       loadavg=0.89 1.75 1.69 memavail=908606984kB 2026-08-28T15:45:41Z
+[time] magicc_v033 t=32 r=3 set_E_100/warm: wall=2.5s rss=0.4175GB rc=0 load_before=0.89 fs_inputs=0
+[done] magicc_v033__t32__set_E_100__warm__r3 rc=0
+[run ] tier=1 order=48 magicc_v033_xmodel__t32__set_E_100__warm__r3 | explicit --model, verification bypassed (= WS11.T invocation)
+       loadavg=0.90 1.74 1.69 memavail=908012956kB 2026-08-28T15:45:46Z
+[time] magicc_v033_xmodel t=32 r=3 set_E_100/warm: wall=2.04s rss=0.4177GB rc=0 load_before=0.9 fs_inputs=0
+[done] magicc_v033_xmodel__t32__set_E_100__warm__r3 rc=0
+==================================================================
+WS11.T v0.3.3 campaign end 2026-08-28T15:45:50Z
+==================================================================

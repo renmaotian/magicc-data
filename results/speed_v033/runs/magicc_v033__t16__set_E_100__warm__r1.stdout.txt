@@ -1,0 +1,25 @@
+2026-08-28 10:33:39 [INFO] Reading genome list: /path/to/magicc/results/revision/speed/inputs/set_E_100.txt
+2026-08-28 10:33:39 [INFO] Found 100 genome(s)
+2026-08-28 10:33:39 [INFO] Loading ONNX model: /path/to/.magicc/magicc_v5.onnx
+2026-08-28 10:33:39 [INFO] Loading normalization parameters: /path/to/anaconda3/envs/magicc_v033_rel/lib/python3.11/site-packages/magicc/data/normalization_params.json
+2026-08-28 10:33:39 [INFO] Extracting features for 100 genomes using 16 thread(s)...
+2026-08-28 10:33:40 [INFO]   Feature extraction: 100/100 (107.4 genomes/s, 9.3 ms/genome)
+2026-08-28 10:33:40 [INFO] Feature extraction complete: 100 genomes in 1.0s (9.6 ms/genome)
+2026-08-28 10:33:40 [INFO] Normalizing features...
+2026-08-28 10:33:40 [INFO] Normalization: 0.026s
+2026-08-28 10:33:40 [INFO] Running ONNX inference (batch_size=64)...
+2026-08-28 10:33:40 [INFO] Inference complete: 0.164s (1.64 ms/genome)
+2026-08-28 10:33:40 [INFO] Writing predictions to /path/to/magicc/results/revision/speed_v033/scratch/magicc_v033__t16__set_E_100__warm__r1/magicc_predictions.tsv
+2026-08-28 10:33:40 [INFO] ============================================================
+2026-08-28 10:33:40 [INFO] MAGICC Prediction Summary
+2026-08-28 10:33:40 [INFO] ============================================================
+2026-08-28 10:33:40 [INFO]   Genomes processed: 100
+2026-08-28 10:33:40 [INFO]   Threads:           16
+2026-08-28 10:33:40 [INFO]   Feature extraction: 1.0s
+2026-08-28 10:33:40 [INFO]   Normalization:      0.026s
+2026-08-28 10:33:40 [INFO]   ONNX inference:     0.164s
+2026-08-28 10:33:40 [INFO]   Total time:         2.1s
+2026-08-28 10:33:40 [INFO]   Speed:              2845 genomes/min
+2026-08-28 10:33:40 [INFO]   Speed/thread:       178 genomes/min/thread
+2026-08-28 10:33:40 [INFO]   Output:             /path/to/magicc/results/revision/speed_v033/scratch/magicc_v033__t16__set_E_100__warm__r1/magicc_predictions.tsv
+2026-08-28 10:33:40 [INFO] ============================================================
