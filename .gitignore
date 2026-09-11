@@ -1,5 +1,5 @@
 # Build and download artefacts, never part of the deposition
-benchmarks/
+/benchmarks/
 *.tar.gz.part[0-9][0-9]
 __pycache__/
 *.pyc

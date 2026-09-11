@@ -1,0 +1,15 @@
+group	model	n	mimag_agreement	true_HQ	pred_HQ	HQ_recall	HQ_precision	cont5_false_clean	cont5_false_dirty	cont10_false_clean	cont10_false_dirty	comp90_false_high	comp90_false_low
+Bacteroidota	holdout	1000	0.903	12	10	0.0833	0.1	23	26	23	62	176	102
+Bacteroidota	V5	1000	0.971	12	14	0.75	0.6429	9	5	9	15	76	24
+Bacteroidota_A	holdout	990	0.9212	10	13	0.2	0.1538	33	19	29	36	151	101
+Bacteroidota_A	V5	990	0.9586	10	20	0.8	0.4	22	14	14	18	91	53
+Campylobacterota	holdout	1000	0.91	23	44	0.8261	0.4318	75	0	74	0	84	82
+Campylobacterota	V5	1000	0.974	23	25	0.9565	0.88	7	4	14	8	33	24
+Patescibacteriota	holdout	1000	0.898	18	0	0.0		51	19	63	29	0	456
+Patescibacteriota	V5	1000	0.93	18	18	0.3889	0.3889	18	17	36	25	60	119
+Halobacteriota	holdout	1008	0.9206	13	5	0.1538	0.4	8	40	13	62	126	101
+Halobacteriota	V5	1008	0.9554	13	10	0.5385	0.7	11	11	18	20	59	64
+DPANN	holdout	996	0.8434	19	2	0.0	0.0	88	7	119	19	3	412
+DPANN	V5	996	0.9598	19	21	0.7895	0.7143	15	9	13	19	35	59
+in_distribution	holdout	1000	0.961	5	11	0.6	0.2727	17	7	21	11	88	47
+in_distribution	V5	1000	0.963	5	9	0.8	0.4444	16	8	20	13	82	52

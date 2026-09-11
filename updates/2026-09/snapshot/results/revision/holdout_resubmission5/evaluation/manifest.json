@@ -1,0 +1,102 @@
+{
+  "created": "2026-09-09 14:07:33",
+  "seed_base": 20260908,
+  "panel_level": "family",
+  "panel_taxa": [
+    "Streptococcaceae",
+    "Pseudomonadaceae",
+    "Bacteroidaceae",
+    "Helicobacteraceae",
+    "Bifidobacteriaceae",
+    "Leptospiraceae",
+    "Cyanobiaceae",
+    "Moraxellaceae",
+    "Lactobacillaceae",
+    "Flavobacteriaceae"
+  ],
+  "panel_phyla": [],
+  "contaminant_pool": {
+    "source": "panel-free TEST split",
+    "n": 7981,
+    "n_phyla": 75
+  },
+  "groups": {
+    "Streptococcaceae": {
+      "n_refs": 100,
+      "sims": 10,
+      "ref_source": "test",
+      "n_samples": 1000,
+      "n_refs_used": 100
+    },
+    "Pseudomonadaceae": {
+      "n_refs": 100,
+      "sims": 10,
+      "ref_source": "test",
+      "n_samples": 1000,
+      "n_refs_used": 100
+    },
+    "Bacteroidaceae": {
+      "n_refs": 100,
+      "sims": 10,
+      "ref_source": "test",
+      "n_samples": 1000,
+      "n_refs_used": 100
+    },
+    "Helicobacteraceae": {
+      "n_refs": 100,
+      "sims": 10,
+      "ref_source": "test",
+      "n_samples": 1000,
+      "n_refs_used": 100
+    },
+    "Bifidobacteriaceae": {
+      "n_refs": 100,
+      "sims": 10,
+      "ref_source": "test",
+      "n_samples": 1000,
+      "n_refs_used": 100
+    },
+    "Leptospiraceae": {
+      "n_refs": 37,
+      "sims": 10,
+      "ref_source": "test",
+      "n_samples": 370,
+      "n_refs_used": 37
+    },
+    "Cyanobiaceae": {
+      "n_refs": 35,
+      "sims": 10,
+      "ref_source": "test",
+      "n_samples": 350,
+      "n_refs_used": 35
+    },
+    "Moraxellaceae": {
+      "n_refs": 100,
+      "sims": 10,
+      "ref_source": "test",
+      "n_samples": 1000,
+      "n_refs_used": 100
+    },
+    "Lactobacillaceae": {
+      "n_refs": 100,
+      "sims": 10,
+      "ref_source": "test",
+      "n_samples": 1000,
+      "n_refs_used": 100
+    },
+    "Flavobacteriaceae": {
+      "n_refs": 100,
+      "sims": 10,
+      "ref_source": "test",
+      "n_samples": 1000,
+      "n_refs_used": 100
+    },
+    "in_distribution": {
+      "n_refs": 100,
+      "sims": 10,
+      "ref_source": "test",
+      "n_samples": 1000,
+      "n_refs_used": 100
+    }
+  }
+}

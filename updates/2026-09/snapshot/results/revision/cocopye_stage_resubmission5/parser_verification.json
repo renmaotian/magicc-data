@@ -1,0 +1,19 @@
+{
+  "status": "PARSER_VERIFIED",
+  "distribution_version": "0.5.0",
+  "official_source_path": "/home/tianrm/anaconda3/envs/magicc2/lib/python3.11/site-packages/cocopye/core.py",
+  "official_source_sha256": "3856ad939d4b228b71faeaf2c94606bf99c217149ce7346d0e2b193105f430cb",
+  "parser_script": "scripts/252_cocopye_stage_correction.py",
+  "parser_sha256": "57b8e62d835ace492f5eb6e9543744b0f5f5278807a49b8f15758774fb9e8455",
+  "official_api_checked_on_every_full_csv_row": true,
+  "official_paper": "https://academic.oup.com/gigascience/article/doi/10.1093/gigascience/giae079/7841111",
+  "numbering_note": "Paper estimation stages I/II correspond to API/CSV marker/neural stages2/3; CSV stage1 is prefilter rejection.",
+  "stage_rules": {
+    "1": "unscored; API sentinel\u22121 retained separately; quantitative columns NaN",
+    "2": "2_completeness/2_contamination \u00d7100",
+    "3": "3_completeness/3_contamination \u00d7100"
+  },
+  "clipping": "None",
+  "original_outputs_modified": false,
+  "inventory_only": false
+}

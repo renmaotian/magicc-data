@@ -1,0 +1,28 @@
+{
+  "status": "CONTROLLED_DOSE_SENSITIVITY_COMPLETE",
+  "historical_point_and_count_checks": 144,
+  "max_historical_point_difference": 1.7763568394002505e-15,
+  "interval_provenance": "Original point estimates recovered exactly; new CIs use an explicitly recorded reproducible seed because the historical ad-hoc generator was not retained.",
+  "input_manifest": [
+    {
+      "path": "results/revision/cami2/analysis/cami2_long_predictions.tsv",
+      "sha256": "d566f0cb84a8c3115dfdf17acf3feb1c51e35d244c1e917e9298081f2c0830fe"
+    },
+    {
+      "path": "results/revision/cami2/analysis/cami2_wellcontrolled_by_distance.tsv",
+      "sha256": "277a997ac5cc122c926a11721f45d3b4550c9ed910be4ec090ee009449c50b27"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_long_predictions.tsv",
+      "sha256": "8ab6aced61905404f45c4b0149ff8e3015ba09d73ef6ff4347e0882240b18b4c"
+    },
+    {
+      "path": "scripts/263_rebuild_cami_controlled_dose_sensitivity.py",
+      "sha256": "a545155bf02fa8bc42ce9e76874a2602e98ac03ae14a8d84dee04a25ad976d27"
+    }
+  ],
+  "output": {
+    "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_wellcontrolled_by_distance.tsv",
+    "sha256": "02d87e611ba116b1a7ba8c794cd5fcc87eaf9f2c8d62649ead87a7fc4e07d5da"
+  }
+}

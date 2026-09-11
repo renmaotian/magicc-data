@@ -1,0 +1,14 @@
+catalogue	published_tool	genus	n	assembly_size_median_Mbp	contigs_median	catalogue_completeness_median	catalogue_contamination_median	magicc_completeness_median	magicc_contamination_median	observed_delta_completeness_catalogue_minus_MAGICC	observed_delta_contamination_catalogue_minus_MAGICC	reviewer_delta_completeness	reviewer_delta_contamination	residual_completeness_pp	residual_contamination_pp	implied_MAGICC_comp_if_delta_is_catalogue_minus_MAGICC	implied_MAGICC_comp_if_delta_is_MAGICC_minus_catalogue	convention_A_feasible	convention_B_feasible
+GTDB r220	CheckM2	CAG-557	60	0.981	59	97.36	0.81	84.32	7.33	13.04	-6.52	37.1	-35.9	-24.06	29.38	60.26	134.46	True	False
+SPIRE v1	CheckM2	CAG-557	207	1.054	64	96.06	0.22	58.76	22.18	37.3	-21.96	37.1	-35.9	0.2	13.94	58.96	133.16	True	False
+UHGG v2.0.2	CheckM1	CAG-557	89	1.067	98	77.16	0.67	58.86	24.31	18.3	-23.64	37.1	-35.9	-18.8	12.26	40.06	114.26	False	False
+GTDB r220	CheckM2	UMGS1491	61	1.095	51	94.52	0.27	57.27	17.08	37.25	-16.81	27.1	-26.0	10.15	9.19	67.42	121.62	True	False
+SPIRE v1	CheckM2	UMGS1491	127	0.979	78	90.58	0.24	54.48	14.95	36.1	-14.71	27.1	-26.0	9.0	11.29	63.48	117.68	True	False
+UHGG v2.0.2	CheckM1	UMGS1491	30	0.961	135	67.52	0.67	57.3	11.98	10.22	-11.31	27.1	-26.0	-16.88	14.69	40.42	94.62	False	True
+GTDB r220	CheckM2	Caccenecus	101	1.287	87	92.41	0.82	71.15	16.61	21.26	-15.79	25.3	-24.6	-4.04	8.81	67.11	117.71	True	False
+SPIRE v1	CheckM2	Caccenecus	63	1.245	33	93.64	0.77	63.53	18.54	30.11	-17.77	25.3	-24.6	4.81	6.83	68.34	118.94	True	False
+GTDB r220	CheckM2	HGM10766	15	1.092	85	89.05	1.27	66.81	21.01	22.24	-19.74	24.9	-21.8	-2.66	2.06	64.15	113.95	True	False
+SPIRE v1	CheckM2	HGM10766	43	1.132	33	90.0	0.63	62.15	23.66	27.85	-23.03	24.9	-21.8	2.95	-1.23	65.1	114.9	True	False
+UHGG v2.0.2	CheckM1	HGM10766	7	1.13	52	91.01	0.28	62.94	24.85	28.07	-24.57	24.9	-21.8	3.17	-2.77	66.11	115.91	True	False
+GTDB r220	CheckM2	Faecimonas	61	1.411	70	92.84	2.54	97.92	11.71	-5.08	-9.17								
+SPIRE v1	CheckM2	Faecimonas	151	1.374	33	92.57	2.65	89.78	19.75	2.79	-17.1								

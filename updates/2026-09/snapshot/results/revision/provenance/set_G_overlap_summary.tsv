@@ -1,0 +1,3 @@
+group	n_accessions	n_canonical	n_unmapped	in_train	in_val	in_test	in_kmer_selection_set
+dominants	80	80	0	0	0	80	0
+contaminants	154	154	0	0	0	154	0

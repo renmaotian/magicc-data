@@ -1,0 +1,122 @@
+{
+  "cohort": "disagreement_141",
+  "novelty_controls": [
+    "informative_kmer_density",
+    "mean_contig_confidence_bpw"
+  ],
+  "databases": [
+    {
+      "database": "k2_standard_08gb_capped",
+      "tag": "capped8gb",
+      "n_genomes": 141,
+      "reference_contains": "RefSeq archaea, bacteria, viral, plasmid, human, UniVec_Core (the k2_standard content), MINIMIZER-DOWN-SAMPLED to an 8 GB hash via --max-db-size",
+      "reference_lacks": "MAG-derived / uncultivated lineages (RefSeq-derived), AND most of its own source minimizers because of the 8 GB cap",
+      "is_refseq_derived": true,
+      "is_gtdb_level": false,
+      "is_capped": true,
+      "hash_k2d_gb": 8.0,
+      "kraken2_version": "Kraken version 2.17.1",
+      "median_informative_kmer_density": 0.001426,
+      "mean_informative_kmer_density": 0.00592118,
+      "median_mean_contig_confidence": 0.000413,
+      "median_unclassified_pct": 5.907,
+      "median_orig_phylum_contam_pct": 12.309,
+      "n_strict_scoreable": 2,
+      "median_strict_phylum_contam_pct": 0.0,
+      "median_strict_qualifying_bp_frac": 0.0,
+      "n_orig_gt5pct": 89,
+      "n_strict_gt5pct": 0
+    },
+    {
+      "database": "k2_standard_20250714_full",
+      "tag": "k2std",
+      "n_genomes": 141,
+      "reference_contains": "full uncapped RefSeq archaea, bacteria, viral, plasmid, human, UniVec_Core",
+      "reference_lacks": "MAG-derived / uncultivated lineages -- RefSeq contains almost no MAGs, which is precisely the material this cohort is made of",
+      "is_refseq_derived": true,
+      "is_gtdb_level": false,
+      "is_capped": false,
+      "hash_k2d_gb": 98.6,
+      "kraken2_version": "Kraken version 2.17.1",
+      "median_informative_kmer_density": 0.015816,
+      "mean_informative_kmer_density": 0.06727066,
+      "median_mean_contig_confidence": 0.001261,
+      "median_unclassified_pct": 0.274,
+      "median_orig_phylum_contam_pct": 7.767,
+      "n_strict_scoreable": 31,
+      "median_strict_phylum_contam_pct": 0.0,
+      "median_strict_qualifying_bp_frac": 0.0,
+      "n_orig_gt5pct": 78,
+      "n_strict_gt5pct": 9
+    }
+  ],
+  "correlations": {
+    "k2_standard_08gb_capped": {
+      "metric_vs_density": {
+        "rho": -0.5939679689710026,
+        "p": 8.273333609457562e-15,
+        "n": 141
+      },
+      "v5_vs_metric": {
+        "rho": 0.2001932447144602,
+        "p": 0.017305626486115368,
+        "n": 141,
+        "partial_rho": 0.12441148503195429,
+        "partial_p": 0.14450458152975956
+      },
+      "checkm2_vs_metric": {
+        "rho": -0.04679464307600162,
+        "p": 0.5816258903540444,
+        "n": 141,
+        "partial_rho": 0.06437953784467833,
+        "partial_p": 0.45147937528792076
+      }
+    },
+    "k2_standard_20250714_full": {
+      "metric_vs_density": {
+        "rho": -0.6060583772650712,
+        "p": 1.6784539877627334e-15,
+        "n": 141
+      },
+      "v5_vs_metric": {
+        "rho": 0.2511613379604846,
+        "p": 0.0026633655033847107,
+        "n": 141,
+        "partial_rho": 0.1741107022501152,
+        "partial_p": 0.04037588588718883
+      },
+      "checkm2_vs_metric": {
+        "rho": 0.006318862498362462,
+        "p": 0.9407198265193021,
+        "n": 141,
+        "partial_rho": 0.16719822445134588,
+        "partial_p": 0.04914764751180523
+      }
+    }
+  },
+  "verdict": {
+    "code": "undecided_needs_gtdb_level_db",
+    "fold_change_median_density": 11.0912,
+    "baseline_database": "k2_standard_08gb_capped",
+    "largest_database": "k2_standard_20250714_full",
+    "strict_metric_evaluable_majority": false,
+    "gtdb_level_database_tested": false,
+    "databases_tested": {
+      "capped8gb": {
+        "contains": "RefSeq archaea, bacteria, viral, plasmid, human, UniVec_Core (the k2_standard content), MINIMIZER-DOWN-SAMPLED to an 8 GB hash via --max-db-size",
+        "lacks": "MAG-derived / uncultivated lineages (RefSeq-derived), AND most of its own source minimizers because of the 8 GB cap",
+        "is_refseq_derived": true,
+        "is_gtdb_level": false,
+        "is_capped": true
+      },
+      "k2std": {
+        "contains": "full uncapped RefSeq archaea, bacteria, viral, plasmid, human, UniVec_Core",
+        "lacks": "MAG-derived / uncultivated lineages -- RefSeq contains almost no MAGs, which is precisely the material this cohort is made of",
+        "is_refseq_derived": true,
+        "is_gtdb_level": false,
+        "is_capped": false
+      }
+    },
+    "conclusion": "UNDECIDED -- a GTDB-level database has NOT been tested. Density is 1.58e-02 (11.09x the capped database) against k2_standard_20250714_full, which is RefSeq-derived and contains almost no MAG-derived references. Because this cohort is dominated by uncultivated MAG-derived lineages, a low hit rate here shows only that no RefSeq reference exists -- it does NOT license concluding genuine taxonomic novelty. Build/test a GTDB-level database (scripts/82_build_gtdb_kraken2_db.sh) before concluding."
+  }
+}

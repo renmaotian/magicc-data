@@ -1,0 +1,431 @@
+{
+  "status": "PRIMARY_AND_COMPLETED_COHORT_DELTAS_READY",
+  "sources": [
+    {
+      "source": "all_rebuilt_accuracy_including_motivation",
+      "original_path": "results/revision/metrics/ws5.5_table_S2_rebuilt.tsv",
+      "original_sha256": "b6bf6a0ee562ffc534c0f3196cf9bff53b1c7a218320672aeb3be1ed12247dcf",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/ws5.5_table_S2_rebuilt.tsv",
+      "corrected_sha256": "2e6bc9f1f3766cacdfe51ca6b03eee83eb940ae1ca8a9fd88c268a3ed1651f65",
+      "key_columns": [
+        "set",
+        "tool",
+        "metric"
+      ],
+      "original_rows": 156,
+      "corrected_rows": 156
+    },
+    {
+      "source": "primary_accuracy",
+      "original_path": "results/revision/metrics/definitive_table_5set.tsv",
+      "original_sha256": "5a0ff00269e1bf575fd520b29f88073bb3106515bb7ac8d66864454c91270dc1",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/definitive_table_5set.tsv",
+      "corrected_sha256": "2a0c0774e7c60e51c09be464838e3efee5aeabd9f96d34349777b312f051406d",
+      "key_columns": [
+        "set",
+        "tool",
+        "metric"
+      ],
+      "original_rows": 72,
+      "corrected_rows": 72
+    },
+    {
+      "source": "primary_thresholds",
+      "original_path": "results/revision/metrics/definitive_thresholds.tsv",
+      "original_sha256": "abf4373528cfd7e40351b86ee08ab0e77eb8c3c03625cf017ccd60687b0737a0",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/definitive_thresholds.tsv",
+      "corrected_sha256": "7c81aa3b33f141de2d102aba9976f69b09384a0e49b0fba60ab6e79bed4e5948",
+      "key_columns": [
+        "set",
+        "tool",
+        "criterion",
+        "threshold"
+      ],
+      "original_rows": 80,
+      "corrected_rows": 80
+    },
+    {
+      "source": "primary_mimag",
+      "original_path": "results/revision/metrics/definitive_mimag.tsv",
+      "original_sha256": "2dfe2ef9abc0fa3f4a2cdc76d965497236567879690d12c209ca7c0d434214d0",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/definitive_mimag.tsv",
+      "corrected_sha256": "7fc2e4cbb5cc63f8378c052bcb76f041f6c5d24a3bd76b05bd33f2cb0d030af1",
+      "key_columns": [
+        "set",
+        "tool",
+        "mimag_class"
+      ],
+      "original_rows": 60,
+      "corrected_rows": 60
+    },
+    {
+      "source": "primary_paired_tests",
+      "original_path": "results/revision/metrics/ws5.4_clustered_tests.tsv",
+      "original_sha256": "7d13b5bb68823dc236c4343a6e20afaa780d85de65b909c3940e1ca931a18e9f",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/ws5.4_clustered_tests.tsv",
+      "corrected_sha256": "b397ab3ab44b77bbf682dcd4ae7f9aee59f920f93db595945028febbb64d158e",
+      "key_columns": [
+        "set",
+        "reference_tool",
+        "comparison_tool",
+        "metric"
+      ],
+      "original_rows": 94,
+      "corrected_rows": 94
+    },
+    {
+      "source": "primary_macro_f1_paired",
+      "original_path": "results/revision/ws11/macro_f1_paired/macro_f1_paired_differences.tsv",
+      "original_sha256": "86235d911ac7b6021005a0294ccdd8601ad2d129931238cdc1442e85a5a27d13",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/ws11/macro_f1_paired/macro_f1_paired_differences.tsv",
+      "corrected_sha256": "d3be03e90a0b1d523d2d06c866320eda9b8b214e6d40aab7f2935918edbd0eaf",
+      "key_columns": [
+        "set",
+        "reference_tool",
+        "comparison_tool",
+        "statistic"
+      ],
+      "original_rows": 30,
+      "corrected_rows": 30
+    },
+    {
+      "source": "novelty_metrics",
+      "original_path": "results/revision/ws11/novelty_ladder/novelty_ladder_metrics.tsv",
+      "original_sha256": "0ef50636f61e815e4f0cee6a1cb699b8a3049f9d993e65268ff744464dbd67b9",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/ws11/novelty_ladder/novelty_ladder_metrics.tsv",
+      "corrected_sha256": "692885c0c388fbce99f03d877136133eac54da3ca9913d92f28121dfb4329817",
+      "key_columns": [
+        "scope",
+        "novelty_class",
+        "tool"
+      ],
+      "original_rows": 156,
+      "corrected_rows": 156
+    },
+    {
+      "source": "novelty_paired",
+      "original_path": "results/revision/ws11/novelty_ladder/novelty_ladder_paired_tests.tsv",
+      "original_sha256": "c5474ce538a504f877b1d82debbab297a83b053442865a733926982f989e2fb9",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/ws11/novelty_ladder/novelty_ladder_paired_tests.tsv",
+      "corrected_sha256": "f9ce814b3b3b5b270dd99ab51f3a6a51cd20a1e8c92c1a334fcea4d260db0611",
+      "key_columns": [
+        "scope",
+        "novelty_class",
+        "reference_tool",
+        "comparison_tool",
+        "metric"
+      ],
+      "original_rows": 37,
+      "corrected_rows": 37
+    },
+    {
+      "source": "novelty_trend",
+      "original_path": "results/revision/ws11/novelty_ladder/novelty_ladder_trend.tsv",
+      "original_sha256": "7a08b71dc9bc1133b99f1f2adcb99fccda15b2d840b8498cf5c21565a76f2345",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/ws11/novelty_ladder/novelty_ladder_trend.tsv",
+      "corrected_sha256": "919fa75bd00406ac62d39f706cb0bf15d00710e10df6be445a5b85aa5d854926",
+      "key_columns": [
+        "tool",
+        "metric"
+      ],
+      "original_rows": 8,
+      "corrected_rows": 8
+    },
+    {
+      "source": "signed_error_summaries",
+      "original_path": "results/revision/metrics/ws5.3_signed_errors_overall.tsv",
+      "original_sha256": "06d61d113f1c98fa3eea402aeb523cab10d2c4e024d6a4c5456dc35dd2839b10",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/ws5.3_signed_errors_overall.tsv",
+      "corrected_sha256": "9844dacfa5a07b3a3c33ee237e5410225901adb15f6f174d2779297150bba0fc",
+      "key_columns": [
+        "set",
+        "tool",
+        "metric"
+      ],
+      "original_rows": 136,
+      "corrected_rows": 136
+    },
+    {
+      "source": "setG_curves",
+      "original_path": "results/revision/set_G/set_G_curves.tsv",
+      "original_sha256": "d8d46c2035f87d2516b254931ebc8e174493bc846b8f6e5d16012cf7e7b3929f",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/set_G/set_G_curves.tsv",
+      "corrected_sha256": "f1e8e60aacb0ed777d701a9a3642ed4cf93edfe49e4d6896a1c033f644cf560d",
+      "key_columns": [
+        "tool",
+        "error_type",
+        "error_rate"
+      ],
+      "original_rows": 112,
+      "corrected_rows": 112
+    },
+    {
+      "source": "setG_degradation",
+      "original_path": "results/revision/set_G/set_G_paired_degradation.tsv",
+      "original_sha256": "71a6ae511af9f89ef3542625f93bd163534ad658db55fc02be8949901e8e3f98",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/set_G/set_G_paired_degradation.tsv",
+      "corrected_sha256": "813ec055501d9581a09501051754b08a1b7f16a86dc97293c5599c9197632a7d",
+      "key_columns": [
+        "tool",
+        "error_type",
+        "error_rate",
+        "metric"
+      ],
+      "original_rows": 184,
+      "corrected_rows": 184
+    },
+    {
+      "source": "setF_cells",
+      "original_path": "results/revision/set_F/set_F_cells_type_x_distance.tsv",
+      "original_sha256": "5c14649ae113157590b3a5c15cb3e3c52e59b61dee4b04b1a30afb9c450945cb",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/set_F/set_F_cells_type_x_distance.tsv",
+      "corrected_sha256": "623a5f7df09558a09a6f07dafcb35350e9e3ed854a5b41717ad3380188476a02",
+      "key_columns": [
+        "tool",
+        "contamination_type",
+        "distance"
+      ],
+      "original_rows": 72,
+      "corrected_rows": 72
+    },
+    {
+      "source": "setF_marginals",
+      "original_path": "results/revision/set_F/set_F_marginals.tsv",
+      "original_sha256": "7c2443693b5563f58713f426ef3566c5680f910685f55edbc524682f33d757db",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/set_F/set_F_marginals.tsv",
+      "corrected_sha256": "0fd38b01345160635da111738349bef8f2563a8825487f56b3c641c294a7e06e",
+      "key_columns": [
+        "tool",
+        "margin",
+        "level"
+      ],
+      "original_rows": 100,
+      "corrected_rows": 100
+    },
+    {
+      "source": "setF_paired",
+      "original_path": "results/revision/set_F/set_F_paired_comparisons.tsv",
+      "original_sha256": "dad30aeb27294a238084c513f66877f5db8dde1be4475e4ab9ff36fc1b6d3a49",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/set_F/set_F_paired_comparisons.tsv",
+      "corrected_sha256": "8c5952716d71f77317df28fa3df3403b7a8ef3a0115150732bc67dcfccd237c5",
+      "key_columns": [
+        "stratum",
+        "level",
+        "tool_a",
+        "tool_b"
+      ],
+      "original_rows": 87,
+      "corrected_rows": 87
+    },
+    {
+      "source": "setF_attribution",
+      "original_path": "results/revision/set_F/set_F_attribution.tsv",
+      "original_sha256": "69c881621be4d5cf7fa9510a1d3549759ccb0a5015161f0ca1037b669bc36c27",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/set_F/set_F_attribution.tsv",
+      "corrected_sha256": "9402015f6e2946c2befa5d9bcfae53a571131e5dadec34d0fb9d0f49224ddc57",
+      "key_columns": [
+        "competitor",
+        "distance",
+        "arm"
+      ],
+      "original_rows": 63,
+      "corrected_rows": 63
+    },
+    {
+      "source": "setH_metrics",
+      "original_path": "results/revision/circularity/ws1_11_arm_metrics.tsv",
+      "original_sha256": "f29dc16987ef4383eb2a01eb5b0bf2cb1ee68b98d72539ef209016728a52b30f",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/circularity/ws1_11_arm_metrics.tsv",
+      "corrected_sha256": "a7f9e3b6a3e51c794d81e4efd4300be58a488b0803ce60fdeca5208905c5521d",
+      "key_columns": [
+        "tool",
+        "group"
+      ],
+      "original_rows": 32,
+      "corrected_rows": 32
+    },
+    {
+      "source": "setH_paired",
+      "original_path": "results/revision/circularity/ws1_11_paired_arm_tests.tsv",
+      "original_sha256": "d87e451e1f3e59cdd5dcda47d8861b52d224ceefa9e8213832a95f7d88a1ef62",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/circularity/ws1_11_paired_arm_tests.tsv",
+      "corrected_sha256": "29d170b8579656fb104bbfb02686644e872667df9327da8a25633cbcc611087f",
+      "key_columns": [
+        "tool",
+        "metric_name",
+        "statistic",
+        "subset"
+      ],
+      "original_rows": 56,
+      "corrected_rows": 56
+    },
+    {
+      "source": "setH_reference_scores",
+      "original_path": "results/revision/circularity/ws1_11_reference_level_scores.tsv",
+      "original_sha256": "b398c48b4504229976796d9852535daa09f95df1b17ff1b96c57a8877c41f243",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/circularity/ws1_11_reference_level_scores.tsv",
+      "corrected_sha256": "acc47acc53a9e0404328bf76ee5b82e5194cc1cfb45002da5a3b80d0440de22c",
+      "key_columns": [
+        "estimate"
+      ],
+      "original_rows": 8,
+      "corrected_rows": 8
+    },
+    {
+      "source": "setH_did",
+      "original_path": "results/revision/circularity/ws1_11_did_vs_competitors.tsv",
+      "original_sha256": "086eed249707e51f3400d2847ad3b4f99f7efc75ac0b966383f0e74360d56005",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/circularity/ws1_11_did_vs_competitors.tsv",
+      "corrected_sha256": "0cd585cf0adcf319ff84776065d09836e62be1856d7eaaba3e1ffad1e07ae5cb",
+      "key_columns": [
+        "tool_a",
+        "tool_b",
+        "metric_name",
+        "statistic"
+      ],
+      "original_rows": 12,
+      "corrected_rows": 12
+    },
+    {
+      "source": "meslier_metrics",
+      "original_path": "results/revision/real_data/meslier/metrics_by_cohort.tsv",
+      "original_sha256": "461714bc2df76554bdcf0fe132ce22a4c60591b6c425156e29650add6356c597",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/real_data/meslier/metrics_by_cohort.tsv",
+      "corrected_sha256": "0656748406c1607a9e08dde39cba683a1aeb1cd6d43dd88c4fdb08204a87c2dc",
+      "key_columns": [
+        "cohort",
+        "tool"
+      ],
+      "original_rows": 32,
+      "corrected_rows": 32
+    },
+    {
+      "source": "meslier_classification",
+      "original_path": "results/revision/real_data/meslier/mimag_by_cohort.tsv",
+      "original_sha256": "7b7c0eb967c4e78deee98c6f15b8c3e385d60c5706d6e81044ca827a3d2bdf4e",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/real_data/meslier/mimag_by_cohort.tsv",
+      "corrected_sha256": "8b111ef20e2ec76f753444ced42f5197b06e2c8b6ab7e509a19d3ce8bde9545f",
+      "key_columns": [
+        "cohort",
+        "tool"
+      ],
+      "original_rows": 32,
+      "corrected_rows": 32
+    },
+    {
+      "source": "meslier_fragmentation",
+      "original_path": "results/revision/real_data/meslier/fragmentation_gradient.tsv",
+      "original_sha256": "213aa1b5b50ff72d5754bc499552a3bb9032e7dd91bb653f3f77b8933ae0501a",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/real_data/meslier/fragmentation_gradient.tsv",
+      "corrected_sha256": "ad1a72701c041336c89f0e5316bd636fe7ba8d4a6d39d629beb4e0b91d970fc2",
+      "key_columns": [
+        "panel",
+        "assembly",
+        "tool"
+      ],
+      "original_rows": 84,
+      "corrected_rows": 84
+    },
+    {
+      "source": "meslier_slopes",
+      "original_path": "results/revision/real_data/meslier/fragmentation_slopes.tsv",
+      "original_sha256": "692667d3c5eaaea123dd67c8340173129d27121bcfead824ca04b6a0a63cbddd",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/real_data/meslier/fragmentation_slopes.tsv",
+      "corrected_sha256": "17d0ded5f765f53b134a82340dde3030b4494eea48c8c5215f81a269fc233acd",
+      "key_columns": [
+        "panel",
+        "tool",
+        "metric"
+      ],
+      "original_rows": 24,
+      "corrected_rows": 24
+    },
+    {
+      "source": "ncbi_metrics",
+      "original_path": "results/revision/real_data/ncbi_pairs/metrics_by_cohort.tsv",
+      "original_sha256": "de4b587d0d3d491ea6237e5ec80229e28540615766a96a5ff9105d5620fcbb41",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/real_data/ncbi_pairs/metrics_by_cohort.tsv",
+      "corrected_sha256": "22ffbcc37220a09c38d3794f74c894feb52110aad15749e8e36223bde1dcf549",
+      "key_columns": [
+        "cohort",
+        "tool"
+      ],
+      "original_rows": 4,
+      "corrected_rows": 12
+    },
+    {
+      "source": "cami_accuracy",
+      "original_path": "results/revision/cami2/analysis/cami2_accuracy_by_cohort.tsv",
+      "original_sha256": "ccf064a68e9afb9e39b668f5151cc1ba8aa0f8b25c15f5ba5d6d202f38f680bc",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_accuracy_by_cohort.tsv",
+      "corrected_sha256": "b902797c4b8ebea641287c993d7e6e175148a4beda578485f416f975a2b2bacc",
+      "key_columns": [
+        "dataset",
+        "binset",
+        "cohort",
+        "tool",
+        "metric"
+      ],
+      "original_rows": 104,
+      "corrected_rows": 104
+    },
+    {
+      "source": "cami_distance",
+      "original_path": "results/revision/cami2/analysis/cami2_mixed_by_distance.tsv",
+      "original_sha256": "84ae8c7d799f17ba667391c5e9ca3bb982e8efc8ea073943ae08edbb1c51b36e",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_mixed_by_distance.tsv",
+      "corrected_sha256": "a1129a9572274c7de216172166dfd9d95278f62fc00a65ff20c9b4d5eecfb2f5",
+      "key_columns": [
+        "dataset",
+        "tool",
+        "distance_rank"
+      ],
+      "original_rows": 48,
+      "corrected_rows": 48
+    },
+    {
+      "source": "cami_paired",
+      "original_path": "results/revision/cami2/analysis/cami2_paired_tests.tsv",
+      "original_sha256": "28aa01d8243ce06a0b18b862bfe9edb8c1599a31a9bad3f4c372b2b92e11f5a7",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_paired_tests.tsv",
+      "corrected_sha256": "a41be62b791bddb893d63c957efbc9bea5c58349471b9d71756e8dd67fac6aab",
+      "key_columns": [
+        "dataset",
+        "binset",
+        "tool_a",
+        "tool_b",
+        "metric"
+      ],
+      "original_rows": 36,
+      "corrected_rows": 36
+    },
+    {
+      "source": "cami_classification",
+      "original_path": "results/revision/cami2/analysis/cami2_mimag.tsv",
+      "original_sha256": "d7623518316b00de5205061c97d73b2b3fa3d78550731db67716b6024eff26d3",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_mimag.tsv",
+      "corrected_sha256": "4a3effca42372718c4687748c948ba63cc3192a2d3bacb7f768f5c1c6e26c96a",
+      "key_columns": [
+        "dataset",
+        "binset",
+        "tool"
+      ],
+      "original_rows": 16,
+      "corrected_rows": 16
+    },
+    {
+      "source": "cami_controlled_dose",
+      "original_path": "results/revision/cami2/analysis/cami2_wellcontrolled_by_distance.tsv",
+      "original_sha256": "277a997ac5cc122c926a11721f45d3b4550c9ed910be4ec090ee009449c50b27",
+      "corrected_path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_wellcontrolled_by_distance.tsv",
+      "corrected_sha256": "02d87e611ba116b1a7ba8c794cd5fcc87eaf9f2c8d62649ead87a7fc4e07d5da",
+      "key_columns": [
+        "dataset",
+        "tool",
+        "distance_rank"
+      ],
+      "original_rows": 48,
+      "corrected_rows": 48
+    }
+  ]
+}

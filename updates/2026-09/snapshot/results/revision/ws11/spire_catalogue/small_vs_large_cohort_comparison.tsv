@@ -1,0 +1,70 @@
+quantity	cohort	n	estimate	ci95_lo	ci95_hi	note
+size_slope_completeness_pp_per_log10Mbp	WS3.10 750-MAG GTDB size-stratified	750	15.31	12.31	18.31	family-clustered bootstrap; published in WS3.10
+size_slope_completeness_pp_per_log10Mbp	SPIRE catalogue, 150-per-size-bin design re-drawn (n=750 x 500 replicates)	750	11.9765	9.7125	14.0953	spread ACROSS replicate designs, i.e. the sampling distribution of the 750-genome design applied to SPIRE
+size_slope_completeness_pp_per_log10Mbp	SPIRE catalogue_weighted	265943	12.6958	10.4544	15.0902	design-weighted OLS, family-clustered bootstrap
+median_delta_completeness[<1Mb]	WS3.10 750-MAG GTDB size-stratified	150	-12.6	nan	nan	published in WS3.10
+median_delta_completeness[<1Mb]	SPIRE catalogue, 150-per-bin design re-drawn	150	-5.17097	-7.30749	-3.31088	across-replicate spread
+mean_delta_completeness[<1Mb]	SPIRE catalogue_weighted	57652	-7.20075	-8.29661	-6.07498	design+non-response weighted mean, family-clustered bootstrap
+HQ_downgrade_rate[<1Mb]	WS3.10 750-MAG GTDB size-stratified	150	0.2733	nan	nan	published in WS3.10
+HQ_downgrade_rate[<1Mb]	SPIRE catalogue, 150-per-bin design re-drawn	150	0.636364	0.437261	0.822332	across-replicate spread
+HQ_downgrade_rate[<1Mb]	SPIRE catalogue_weighted	57652	0.626848	0.532853	0.729794	denominator = genomes SPIRE publishes as HQ in this size bin
+median_delta_completeness[1-2Mb]	WS3.10 750-MAG GTDB size-stratified	150	-2.42	nan	nan	published in WS3.10
+median_delta_completeness[1-2Mb]	SPIRE catalogue, 150-per-bin design re-drawn	150	-0.309725	-1.44498	0.616714	across-replicate spread
+mean_delta_completeness[1-2Mb]	SPIRE catalogue_weighted	89416	-1.0439	-1.91088	-0.435556	design+non-response weighted mean, family-clustered bootstrap
+HQ_downgrade_rate[1-2Mb]	WS3.10 750-MAG GTDB size-stratified	150	0.1933	nan	nan	published in WS3.10
+HQ_downgrade_rate[1-2Mb]	SPIRE catalogue, 150-per-bin design re-drawn	150	0.433333	0.258148	0.615385	across-replicate spread
+HQ_downgrade_rate[1-2Mb]	SPIRE catalogue_weighted	89416	0.415125	0.350933	0.500866	denominator = genomes SPIRE publishes as HQ in this size bin
+median_delta_completeness[2-3Mb]	WS3.10 750-MAG GTDB size-stratified	150	0.28	nan	nan	published in WS3.10
+median_delta_completeness[2-3Mb]	SPIRE catalogue, 150-per-bin design re-drawn	150	1.41425	0.160194	2.73069	across-replicate spread
+mean_delta_completeness[2-3Mb]	SPIRE catalogue_weighted	78986	1.85254	0.946128	2.42748	design+non-response weighted mean, family-clustered bootstrap
+HQ_downgrade_rate[2-3Mb]	WS3.10 750-MAG GTDB size-stratified	150	0.1067	nan	nan	published in WS3.10
+HQ_downgrade_rate[2-3Mb]	SPIRE catalogue, 150-per-bin design re-drawn	150	0.209677	0.111111	0.333333	across-replicate spread
+HQ_downgrade_rate[2-3Mb]	SPIRE catalogue_weighted	78986	0.19223	0.153461	0.260788	denominator = genomes SPIRE publishes as HQ in this size bin
+median_delta_completeness[3-5Mb]	WS3.10 750-MAG GTDB size-stratified	150	0.65	nan	nan	published in WS3.10
+median_delta_completeness[3-5Mb]	SPIRE catalogue, 150-per-bin design re-drawn	150	2.06107	0.784694	3.48046	across-replicate spread
+mean_delta_completeness[3-5Mb]	SPIRE catalogue_weighted	34179	2.712	1.41898	3.67701	design+non-response weighted mean, family-clustered bootstrap
+HQ_downgrade_rate[3-5Mb]	WS3.10 750-MAG GTDB size-stratified	150	0.2067	nan	nan	published in WS3.10
+HQ_downgrade_rate[3-5Mb]	SPIRE catalogue, 150-per-bin design re-drawn	150	0.205882	0.120457	0.303244	across-replicate spread
+HQ_downgrade_rate[3-5Mb]	SPIRE catalogue_weighted	34179	0.179268	0.131035	0.271624	denominator = genomes SPIRE publishes as HQ in this size bin
+median_delta_completeness[>5Mb]	WS3.10 750-MAG GTDB size-stratified	150	0.64	nan	nan	published in WS3.10
+median_delta_completeness[>5Mb]	SPIRE catalogue, 150-per-bin design re-drawn	150	2.47257	1.09405	3.87594	across-replicate spread
+mean_delta_completeness[>5Mb]	SPIRE catalogue_weighted	5710	3.2827	2.3988	3.9202	design+non-response weighted mean, family-clustered bootstrap
+HQ_downgrade_rate[>5Mb]	WS3.10 750-MAG GTDB size-stratified	150	0.24	nan	nan	published in WS3.10
+HQ_downgrade_rate[>5Mb]	SPIRE catalogue, 150-per-bin design re-drawn	150	0.279412	0.181155	0.389306	across-replicate spread
+HQ_downgrade_rate[>5Mb]	SPIRE catalogue_weighted	5710	0.236269	0.161032	0.366837	denominator = genomes SPIRE publishes as HQ in this size bin
+p_class_change	SPIRE catalogue_weighted	265943	0.212207	0.19721	0.233879	
+p_class_change	SPIRE catalogue_weighted_no_nr_adjustment	265943	0.212188	0.19747	0.23406	
+p_class_change	SPIRE S3_srs_unweighted	193774	0.211969	0.1962	0.235568	
+p_class_change	SPIRE S1_small_census	57652	0.157341	0.130067	0.188124	
+p_class_change	SPIRE reps_census	92064	0.355742	0.340655	0.372251	
+HQ_downgrade_rate	SPIRE catalogue_weighted	265943	0.25522	0.211664	0.316241	
+HQ_downgrade_rate	SPIRE catalogue_weighted_no_nr_adjustment	265943	0.254906	0.208357	0.317551	
+HQ_downgrade_rate	SPIRE S3_srs_unweighted	193774	0.239979	0.197073	0.302733	
+HQ_downgrade_rate	SPIRE S1_small_census	57652	0.626848	0.543691	0.729165	
+HQ_downgrade_rate	SPIRE reps_census	92064	0.497413	0.478867	0.518146	
+MQ_to_HQ_rate	SPIRE catalogue_weighted	265943	0.169797	0.146539	0.189278	
+MQ_to_HQ_rate	SPIRE catalogue_weighted_no_nr_adjustment	265943	0.169959	0.146563	0.189897	
+MQ_to_HQ_rate	SPIRE S3_srs_unweighted	193774	0.179732	0.158248	0.199017	
+MQ_to_HQ_rate	SPIRE S1_small_census	57652	0.0186437	0.0108914	0.0280203	
+MQ_to_HQ_rate	SPIRE reps_census	92064	0.185484	0.175124	0.195423	
+MQ_to_LQ_rate	SPIRE catalogue_weighted	265943	0.0226772	0.0167768	0.0330552	
+MQ_to_LQ_rate	SPIRE catalogue_weighted_no_nr_adjustment	265943	0.0227537	0.0170141	0.0334284	
+MQ_to_LQ_rate	SPIRE S3_srs_unweighted	193774	0.0190114	0.0141281	0.0284002	
+MQ_to_LQ_rate	SPIRE S1_small_census	57652	0.0486968	0.0356865	0.0658722	
+MQ_to_LQ_rate	SPIRE reps_census	92064	0.0963676	0.0822313	0.114331	
+floor_rate	SPIRE catalogue_weighted	265943	0.00508448	0.00302042	0.00872504	
+floor_rate	SPIRE catalogue_weighted_no_nr_adjustment	265943	0.00508325	0.00298048	0.00857904	
+floor_rate	SPIRE S3_srs_unweighted	193774	0.00047478	0.000340314	0.000670541	
+floor_rate	SPIRE S1_small_census	57652	0.0904565	0.0584582	0.134268	
+floor_rate	SPIRE reps_census	92064	0.00740789	0.00592168	0.009355	
+mean_d_comp	SPIRE catalogue_weighted	265943	0.352537	-0.669212	1.04067	
+mean_d_comp	SPIRE catalogue_weighted_no_nr_adjustment	265943	0.360845	-0.705638	1.07534	
+mean_d_comp	SPIRE S3_srs_unweighted	193774	0.798599	-0.161105	1.39788	
+mean_d_comp	SPIRE S1_small_census	57652	-7.20283	-8.36639	-6.15509	
+mean_d_comp	SPIRE reps_census	92064	-1.29164	-1.89512	-0.76443	
+mean_d_cont	SPIRE catalogue_weighted	265943	-0.66218	-0.948364	-0.227896	
+mean_d_cont	SPIRE catalogue_weighted_no_nr_adjustment	265943	-0.661727	-0.93662	-0.237379	
+mean_d_cont	SPIRE S3_srs_unweighted	193774	-0.81413	-1.06609	-0.419064	
+mean_d_cont	SPIRE S1_small_census	57652	0.798768	0.431791	1.23586	
+mean_d_cont	SPIRE reps_census	92064	1.05814	0.58685	1.66573	
+floor_rate	WS3.10 SPIRE five reviewer genera	591	0.0321489	nan	nan	19/591; the previously published floor-censoring figure

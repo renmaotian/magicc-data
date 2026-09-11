@@ -1,0 +1,60 @@
+{
+  "status": "CAMI_MICROBIAL_SCOPE_COMPLETE",
+  "n_primary_metric_rows_identical": 32,
+  "primary_prediction_membership_and_values_identical": true,
+  "n_reference_units_excluded": "All200 native marine RNODE circular-element IDs;88 unknown-category IDs had entered legacy genome truth/cohorts.",
+  "pairwise_result": "On eligible microbial sources, four-tool common and MAGICC\u2013CheckM2 pairwise cohorts coincide: marine339gold/864mixed; strain-madness700gold/2250mixed. The apparent additional paired benefit came from out-of-scope circular elements and is not genomic validation.",
+  "diagnostic_record": "Unscoped354-bin pairwise-exclusive results retained as construction audit; every bin has realACGT sequence and was comparator-input selected, but its source unit is not a prokaryotic genome.",
+  "input_manifest": [
+    {
+      "path": "scripts/272_finalize_cami_microbial_scope.py",
+      "sha256": "3dc994bfa34b5b7b7f4226a65de4ba816024eec0332f98f10b693f126d2b20c9"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/analysis_status/201.json",
+      "sha256": "c79bceab6fb6573ca218ea94c7767d270400a15553a275291bffa1c36f29c4d3"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/preparation.json",
+      "sha256": "a23a06c0eb8f10678fb0c5a2870e26ad49bd30069f9bf15afa51bf4e4c85615a"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_long_predictions.tsv",
+      "sha256": "63708bebc9551b8d20f4f903dcb8a3249528762b45507254999d02a58f784b88"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_long_predictions.tsv",
+      "sha256": "8ab6aced61905404f45c4b0149ff8e3015ba09d73ef6ff4347e0882240b18b4c"
+    },
+    {
+      "path": "results/revision/holdout_resubmission5/cami_source_audit/audit_summary.json",
+      "sha256": "e82dc09de1f1b269d4523273c2fa26c2dd506803aaa37ffde47d29f26f0d913f"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_sequence_input_validation/summary.json",
+      "sha256": "d096ee167bc321c5f9a40d551da0e80ad564c9cfc3c471c6bfc22e3cf34d2b62"
+    }
+  ],
+  "output_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/source_and_truth_accounting.tsv",
+      "sha256": "4a0fba57609cc17db3bca1c374c98e2cab54024a30cb3f9300be66930aa27a38"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/primary_result_invariance.tsv",
+      "sha256": "85d60d704f84264d7bbf5366cd02ece5ebd4595f4f9ddffa6cde48d6dfc190bb"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_pairwise_coverage_microbial/summary.json",
+      "sha256": "e61e4e1fb27368b9c5fd3e0b00eab06bf503c7278f9f11c989c8a9bc37775fad"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_pairwise_coverage/summary.json",
+      "sha256": "a50909f71042daea09c346aad7050df942b71985572ba49995b23be25382b5e8"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_headline.json",
+      "sha256": "1bfb2eb26a022a6283188b3c5aa59fed309655d1de5085689b7883b5d9250613"
+    }
+  ]
+}

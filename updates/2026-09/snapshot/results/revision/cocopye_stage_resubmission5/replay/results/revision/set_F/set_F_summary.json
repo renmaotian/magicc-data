@@ -1,0 +1,293 @@
+{
+  "generated_utc": "2026-09-08T19:28:17.977568+00:00",
+  "set": "set_F",
+  "model": "/media/Data_1/tianrm/projects/magicc2/results/revision/cocopye_stage_resubmission5/replay/models/magicc_v5.onnx",
+  "n_samples": 1900,
+  "n_contaminated": 1800,
+  "n_references": 100,
+  "tools": [
+    "magicc_v5",
+    "checkm2",
+    "cocopye",
+    "deepcheck"
+  ],
+  "bootstrap": {
+    "n_iter": 2000,
+    "seed": 8200500,
+    "unit": "reference genome (ref_index)"
+  },
+  "r2_convention": "coefficient of determination (1 - SS_res/SS_tot)",
+  "denominators": "Denominators: completeness = retained dominant bp / dominant full reference bp x 100; contamination = total contaminant bp / dominant full reference bp x 100. Both are percentages of the SAME denominator (the dominant genome's full reference length), so they are independent and contamination can exceed 100% in principle.",
+  "provenance": "not run",
+  "by_type_by_tool": {
+    "magicc_v5": {
+      "redundant": {
+        "n": "600",
+        "cont_mae": 5.4013,
+        "cont_bias": -4.4415,
+        "cont_bias_ci_lo": -5.1931,
+        "cont_bias_ci_hi": -3.6683,
+        "cont_r2": -0.3947,
+        "detection_slope": 0.6236,
+        "detection_slope_ci_lo": 0.5109,
+        "detection_slope_ci_hi": 0.7504
+      },
+      "replaced": {
+        "n": "600",
+        "cont_mae": 5.4185,
+        "cont_bias": -4.6254,
+        "cont_bias_ci_lo": -5.2928,
+        "cont_bias_ci_hi": -3.9445,
+        "cont_r2": -0.4509,
+        "detection_slope": 0.5511,
+        "detection_slope_ci_lo": 0.4884,
+        "detection_slope_ci_hi": 0.61
+      },
+      "single": {
+        "n": "600",
+        "cont_mae": 5.2496,
+        "cont_bias": -4.8639,
+        "cont_bias_ci_lo": -5.5923,
+        "cont_bias_ci_hi": -4.0864,
+        "cont_r2": -0.3012,
+        "detection_slope": 0.5413,
+        "detection_slope_ci_lo": 0.4517,
+        "detection_slope_ci_hi": 0.6322
+      }
+    },
+    "checkm2": {
+      "redundant": {
+        "n": "600",
+        "cont_mae": 4.5355,
+        "cont_bias": 3.3646,
+        "cont_bias_ci_lo": 2.6896,
+        "cont_bias_ci_hi": 4.0881,
+        "cont_r2": -0.0937,
+        "detection_slope": 1.1318,
+        "detection_slope_ci_lo": 1.0136,
+        "detection_slope_ci_hi": 1.2605
+      },
+      "replaced": {
+        "n": "600",
+        "cont_mae": 8.4248,
+        "cont_bias": -8.2905,
+        "cont_bias_ci_lo": -9.5098,
+        "cont_bias_ci_hi": -7.0643,
+        "cont_r2": -1.6722,
+        "detection_slope": 0.0415,
+        "detection_slope_ci_lo": 0.0078,
+        "detection_slope_ci_hi": 0.0834
+      },
+      "single": {
+        "n": "600",
+        "cont_mae": 7.7032,
+        "cont_bias": -7.5896,
+        "cont_bias_ci_lo": -8.6796,
+        "cont_bias_ci_hi": -6.423,
+        "cont_r2": -1.3309,
+        "detection_slope": 0.0835,
+        "detection_slope_ci_lo": 0.0462,
+        "detection_slope_ci_hi": 0.1221
+      }
+    },
+    "cocopye": {
+      "redundant": {
+        "n": "600",
+        "cont_mae": 8.4758,
+        "cont_bias": 7.9154,
+        "cont_bias_ci_lo": 5.9666,
+        "cont_bias_ci_hi": 10.3262,
+        "cont_r2": -4.027,
+        "detection_slope": 1.4683,
+        "detection_slope_ci_lo": 1.1753,
+        "detection_slope_ci_hi": 1.7904
+      },
+      "replaced": {
+        "n": "600",
+        "cont_mae": 9.4738,
+        "cont_bias": -5.5459,
+        "cont_bias_ci_lo": -7.6245,
+        "cont_bias_ci_hi": -3.3195,
+        "cont_r2": -2.835,
+        "detection_slope": 0.0653,
+        "detection_slope_ci_lo": -0.1982,
+        "detection_slope_ci_hi": 0.3635
+      },
+      "single": {
+        "n": "600",
+        "cont_mae": 7.2644,
+        "cont_bias": -3.0215,
+        "cont_bias_ci_lo": -4.9289,
+        "cont_bias_ci_hi": -0.9137,
+        "cont_r2": -2.0964,
+        "detection_slope": 0.3692,
+        "detection_slope_ci_lo": 0.1037,
+        "detection_slope_ci_hi": 0.6739
+      }
+    },
+    "deepcheck": {
+      "redundant": {
+        "n": "600",
+        "cont_mae": 3.376,
+        "cont_bias": 1.7514,
+        "cont_bias_ci_lo": 1.0464,
+        "cont_bias_ci_hi": 2.5159,
+        "cont_r2": 0.2558,
+        "detection_slope": 1.0775,
+        "detection_slope_ci_lo": 0.9499,
+        "detection_slope_ci_hi": 1.2287
+      },
+      "replaced": {
+        "n": "600",
+        "cont_mae": 8.6961,
+        "cont_bias": -8.6132,
+        "cont_bias_ci_lo": -9.9136,
+        "cont_bias_ci_hi": -7.3224,
+        "cont_r2": -1.805,
+        "detection_slope": 0.0292,
+        "detection_slope_ci_lo": 0.0009,
+        "detection_slope_ci_hi": 0.0563
+      },
+      "single": {
+        "n": "600",
+        "cont_mae": 8.0682,
+        "cont_bias": -8.0215,
+        "cont_bias_ci_lo": -9.2373,
+        "cont_bias_ci_hi": -6.8527,
+        "cont_r2": -1.5391,
+        "detection_slope": 0.0505,
+        "detection_slope_ci_lo": 0.0239,
+        "detection_slope_ci_hi": 0.0809
+      }
+    }
+  },
+  "pooled_by_tool": {
+    "magicc_v5": {
+      "n": 1800,
+      "cont_mae": 5.3565,
+      "cont_mae_ci_lo": 4.6886,
+      "cont_mae_ci_hi": 6.0486,
+      "cont_bias": -4.6436,
+      "cont_bias_ci_lo": -5.3346,
+      "cont_bias_ci_hi": -3.9995,
+      "cont_r2": -0.3819,
+      "detection_slope": 0.5729,
+      "detection_slope_ci_lo": 0.4872,
+      "detection_slope_ci_hi": 0.6517,
+      "comp_mae": 5.2169,
+      "comp_bias": 4.0525,
+      "comp_r2": 0.3273
+    },
+    "checkm2": {
+      "n": 1800,
+      "cont_mae": 6.8878,
+      "cont_mae_ci_lo": 6.0249,
+      "cont_mae_ci_hi": 7.7867,
+      "cont_bias": -4.1718,
+      "cont_bias_ci_lo": -4.9556,
+      "cont_bias_ci_hi": -3.4343,
+      "cont_r2": -1.0299,
+      "detection_slope": 0.4292,
+      "detection_slope_ci_lo": 0.3703,
+      "detection_slope_ci_hi": 0.4924,
+      "comp_mae": 5.1578,
+      "comp_bias": 4.2239,
+      "comp_r2": 0.3412
+    },
+    "cocopye": {
+      "n": 1800,
+      "cont_mae": 8.4047,
+      "cont_mae_ci_lo": 6.9218,
+      "cont_mae_ci_hi": 10.1575,
+      "cont_bias": -0.2173,
+      "cont_bias_ci_lo": -1.863,
+      "cont_bias_ci_hi": 1.8449,
+      "cont_r2": -2.988,
+      "detection_slope": 0.6426,
+      "detection_slope_ci_lo": 0.361,
+      "detection_slope_ci_hi": 0.9321,
+      "comp_mae": 5.5347,
+      "comp_bias": 2.8143,
+      "comp_r2": 0.2218
+    },
+    "deepcheck": {
+      "n": 1800,
+      "cont_mae": 6.7134,
+      "cont_mae_ci_lo": 5.7471,
+      "cont_mae_ci_hi": 7.6032,
+      "cont_bias": -4.9611,
+      "cont_bias_ci_lo": -5.7787,
+      "cont_bias_ci_hi": -4.104,
+      "cont_r2": -1.0262,
+      "detection_slope": 0.3951,
+      "detection_slope_ci_lo": 0.3412,
+      "detection_slope_ci_hi": 0.4596,
+      "comp_mae": 6.2,
+      "comp_bias": 3.659,
+      "comp_r2": 0.1107
+    }
+  },
+  "uncontaminated_control_by_tool": {
+    "magicc_v5": {
+      "n": 100,
+      "cont_mae": 0.4423,
+      "cont_bias": 0.4423,
+      "comp_mae": 1.6341,
+      "comp_bias": 0.054
+    },
+    "checkm2": {
+      "n": 100,
+      "cont_mae": 0.6812,
+      "cont_bias": 0.6812,
+      "comp_mae": 2.1518,
+      "comp_bias": 0.0677
+    },
+    "cocopye": {
+      "n": 100,
+      "cont_mae": 3.2343,
+      "cont_bias": 3.2343,
+      "comp_mae": 2.8758,
+      "comp_bias": -0.9581
+    },
+    "deepcheck": {
+      "n": 100,
+      "cont_mae": 0.7269,
+      "cont_bias": 0.6041,
+      "comp_mae": 3.6606,
+      "comp_bias": -0.3042
+    }
+  },
+  "outputs": [
+    "results/revision/set_F/OPERATIONAL_DEFINITIONS.md",
+    "results/revision/set_F/figures/captions.md",
+    "results/revision/set_F/figures/fig_setF_bias_vs_distance.pdf",
+    "results/revision/set_F/figures/fig_setF_bias_vs_distance.png",
+    "results/revision/set_F/figures/fig_setF_contamination_mae_heatmap.pdf",
+    "results/revision/set_F/figures/fig_setF_contamination_mae_heatmap.png",
+    "results/revision/set_F/figures/fig_setF_signed_completeness_error_heatmap.pdf",
+    "results/revision/set_F/figures/fig_setF_signed_completeness_error_heatmap.png",
+    "results/revision/set_F/figures/fig_setF_signed_contamination_error_heatmap.pdf",
+    "results/revision/set_F/figures/fig_setF_signed_contamination_error_heatmap.png",
+    "results/revision/set_F/heatmap_ramp_cvd_check.tsv",
+    "results/revision/set_F/palette_cvd_check.tsv",
+    "results/revision/set_F/set_F_attribution.tsv",
+    "results/revision/set_F/set_F_cells_sensitivity_no_shortfall.tsv",
+    "results/revision/set_F/set_F_cells_type_x_distance.tsv",
+    "results/revision/set_F/set_F_distance_characterization.tsv",
+    "results/revision/set_F/set_F_distance_summary.tsv",
+    "results/revision/set_F/set_F_long_predictions.tsv",
+    "results/revision/set_F/set_F_marginals.tsv",
+    "results/revision/set_F/set_F_marker_duplication_validation.tsv",
+    "results/revision/set_F/set_F_merge_verification.json",
+    "results/revision/set_F/set_F_paired_comparisons.tsv",
+    "results/revision/set_F/set_F_summary.json"
+  ],
+  "distance_axis_pct_donor_genes_orthologous": {
+    "species": 88.81,
+    "genus": 66.57,
+    "family": 48.87,
+    "order": 29.34,
+    "class": 21.51,
+    "phylum": 15.42
+  }
+}

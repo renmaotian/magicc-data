@@ -1,0 +1,31 @@
+{
+  "stage": "201",
+  "status": "COMPLETE",
+  "inputs": {
+    "script_sha256": "27ea10c435ebfc31c6968bf79493fb0146667be5993e3fdfbf6db40090addfbc",
+    "config_sha256": "a2764d5e6ec2b367ee426697f723f42d85770b3d30d4f0ea1519dee13c12b412",
+    "corrected_predictions_manifest_sha256": "493fb306cb828cc228cf9bbc2a8caf80d0f0d783574ede31ac0ea46b9d1d9587"
+  },
+  "command": [
+    "/home/tianrm/anaconda3/envs/magicc2/bin/python",
+    "/media/Data_1/tianrm/projects/magicc2/results/revision/cocopye_stage_resubmission5/replay/scripts/201_ws38_cami2_analysis.py"
+  ],
+  "log": "results/revision/cocopye_stage_resubmission5/logs/201.log",
+  "started_epoch": 1788894249.8605154,
+  "return_code": 0,
+  "elapsed_seconds": 1891.3131980895996,
+  "outputs": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_accuracy_by_cohort.tsv",
+      "sha256": "e1ba3f29b1e783d411d99133b9708f1689ed7e94cdd2574a0f39634b93412cfb"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_tool_scoring_coverage.tsv",
+      "sha256": "3102a3ec31b411b09897b931dcb53a15788b34fdf78f12585f4a053c29f1d697"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_paired_tests.tsv",
+      "sha256": "a41be62b791bddb893d63c957efbc9bea5c58349471b9d71756e8dd67fac6aab"
+    }
+  ]
+}

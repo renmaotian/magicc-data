@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "n_samples": 5000,
+  "n_prediction_rows": 15000,
+  "baseline_classification_reproduces_published": true,
+  "all_raw_unit_transform_equivalence_checks_pass": true,
+  "max_raw_equivalence_difference": 1.4210854715202004e-14,
+  "classification_rules": "High: completeness >=90 and contamination <5; medium: completeness >=50 and contamination <10, excluding high; low: otherwise. Fixed three-label macro F1 with zero_division=0. 5% contamination balanced accuracy is undefined without both truth classes.",
+  "summary_feature_names": [
+    "log10_total_kmer_count",
+    "total_kmer_sum",
+    "unique_kmer_count",
+    "duplicate_kmer_count",
+    "kmer_entropy",
+    "unique_kmer_ratio",
+    "duplicate_kmer_ratio"
+  ],
+  "minmax_feature_indices": [
+    4,
+    5,
+    6
+  ],
+  "robust_feature_indices": [
+    2,
+    3
+  ],
+  "software_versions": {
+    "python": "3.11.0",
+    "numpy": "1.26.4",
+    "pandas": "3.0.0"
+  }
+}

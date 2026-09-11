@@ -1,0 +1,5 @@
+display_label	stable_data_id	release	asset	status
+Set C	set_C_clean	v1.0.0	set_C_clean.tar.gz	Current test-reference benchmark
+Set D	set_D_clean	v1.0.0	set_D_clean.tar.gz	Current test-reference benchmark
+Withdrawn historical C	withdrawn/set_C	v0.1.0	WITHDRAWN_benchmark_set_C.tar.gz	Training-overlapping historical data; not the current Set C
+Withdrawn historical D	withdrawn/set_D	v0.1.0	WITHDRAWN_benchmark_set_D.tar.gz	Training/validation-overlapping historical data; not the current Set D

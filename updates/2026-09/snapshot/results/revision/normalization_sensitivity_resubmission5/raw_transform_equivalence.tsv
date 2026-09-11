@@ -1,0 +1,11 @@
+dataset	arm	n	n_kmer_features	kmer_feature_max_abs_difference	summary_feature_max_abs_difference	numeric_precision
+set_A_v2	kmer_minmax_training_only	1000	9249	1.7763568394002505e-15	2.220446049250313e-16	float64 for algebra audit
+set_A_v2	all_summary_exact_training	1000	9249	1.7763568394002505e-15	1.4210854715202004e-14	float64 for algebra audit
+set_B_v2	kmer_minmax_training_only	1000	9249	1.7763568394002505e-15	2.220446049250313e-16	float64 for algebra audit
+set_B_v2	all_summary_exact_training	1000	9249	1.7763568394002505e-15	1.4210854715202004e-14	float64 for algebra audit
+set_C_clean	kmer_minmax_training_only	1000	9249	1.7763568394002505e-15	2.220446049250313e-16	float64 for algebra audit
+set_C_clean	all_summary_exact_training	1000	9249	1.7763568394002505e-15	7.105427357601002e-15	float64 for algebra audit
+set_D_clean	kmer_minmax_training_only	1000	9249	1.7763568394002505e-15	2.220446049250313e-16	float64 for algebra audit
+set_D_clean	all_summary_exact_training	1000	9249	1.7763568394002505e-15	7.105427357601002e-15	float64 for algebra audit
+set_E	kmer_minmax_training_only	1000	9249	1.7763568394002505e-15	2.220446049250313e-16	float64 for algebra audit
+set_E	all_summary_exact_training	1000	9249	1.7763568394002505e-15	7.105427357601002e-15	float64 for algebra audit

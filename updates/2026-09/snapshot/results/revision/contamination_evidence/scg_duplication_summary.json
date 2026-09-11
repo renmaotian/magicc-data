@@ -1,0 +1,77 @@
+{
+  "method": "Prodigal -p single; hmmsearch --cut_tc against 85_bcg.hmm (85 bacterial SCGs) and uacg.hmm (128 archaeal SCGs); domain assigned by larger recovered profile fraction; duplicated family = >=2 distinct proteins hitting one profile; copy divergence = global BLOSUM62 pairwise aa identity over the profile-aligned region",
+  "thresholds": {
+    "divergent_below": 0.9,
+    "strongly_divergent_below": 0.8,
+    "near_identical_at_or_above": 0.95,
+    "threshold_justification": "Core-gene aa identity is typically >97% within a species and ~90-95% within a genus, falling well below 90% between families and phyla; recent paralogs start near-identical. Two copies of a gene that is single-copy by construction with <90% identity are therefore beyond intra-species/recent-duplication expectation and indicate distinct organisms. <80% is reported as a conservative tier."
+  },
+  "split_gene_control": {
+    "min_hmm_reciprocal_overlap": 0.5,
+    "min_hmm_coverage_each_copy": 0.3,
+    "rationale": "A single gene split across contigs yields two partial hits to one profile covering DIFFERENT profile regions, which would be miscounted as a divergent duplicate. Genuine duplicates must cover substantially the same profile region in both copies.",
+    "n_pairs_rejected": 27,
+    "n_pairs_total": 296
+  },
+  "divergence_distribution_per_cohort": {
+    "agree_clean": {
+      "n_pairs": 187,
+      "p10": 0.35675999999999997,
+      "p25": 0.42164999999999997,
+      "median": 0.693,
+      "p75": 0.8667499999999999,
+      "p90": 0.95922,
+      "frac_lt_0.80": 0.6631016042780749,
+      "frac_lt_0.90": 0.7807486631016043,
+      "frac_ge_0.95": 0.12299465240641712
+    },
+    "disagreement_141": {
+      "n_pairs": 82,
+      "p10": 0.36861,
+      "p25": 0.424025,
+      "median": 0.6467499999999999,
+      "p75": 0.903625,
+      "p90": 0.96705,
+      "frac_lt_0.80": 0.6585365853658537,
+      "frac_lt_0.90": 0.7439024390243902,
+      "frac_ge_0.95": 0.15853658536585366
+    }
+  },
+  "database_independent": true,
+  "rationale": "Genes single-copy by construction: >=2 divergent copies implies >1 organism irrespective of database coverage, so this evidence is immune to the novelty confound that affects Kraken2 and GUNC.",
+  "limitations": [
+    "Absence of duplicated core genes does NOT prove absence of contamination: a contaminant contributing few or no single-copy core genes (low-completeness contaminant, or one whose core genes were lost during assembly/binning) is invisible to this assay. Negative results are therefore uninformative about such contamination.",
+    "Sensitivity scales with the number of profiles searched (85 bacterial / 128 archaeal), so a contaminant contributing a single core gene may produce at most one duplicated family.",
+    "Prodigal gene calling on fragmented assemblies can truncate genes; the HMM-span control removes split-gene pairs but a truncated copy that still covers the same profile region is retained.",
+    "Recent genuine gene duplication and redundant contigs remain possible explanations at high identity, which is why the full divergence distribution is reported rather than a bare duplicate count."
+  ],
+  "n_genomes": 457,
+  "n_failed": 0,
+  "per_cohort": {
+    "agree_clean": {
+      "n": 316,
+      "n_archaea": 0,
+      "median_frac_profiles_detected": 0.9765,
+      "median_n_families_multicopy": 0.0,
+      "median_divergent_dup_families_per_100_profiles": 0.0,
+      "median_dup_pair_identity": 0.5242,
+      "pct_dup_pairs_on_different_contigs": 84.69,
+      "total_dup_pairs": 209.0
+    },
+    "disagreement_141": {
+      "n": 141,
+      "n_archaea": 0,
+      "median_frac_profiles_detected": 0.9412,
+      "median_n_families_multicopy": 0.0,
+      "median_divergent_dup_families_per_100_profiles": 0.0,
+      "median_dup_pair_identity": 0.6053,
+      "pct_dup_pairs_on_different_contigs": 91.95,
+      "total_dup_pairs": 87.0
+    }
+  },
+  "outputs": {
+    "per_genome": "results/revision/contamination_evidence/scg_duplication.tsv",
+    "per_family": "results/revision/contamination_evidence/scg_duplication_families.tsv",
+    "per_pair": "results/revision/contamination_evidence/scg_duplication_pairs.tsv"
+  }
+}

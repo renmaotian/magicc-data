@@ -1,0 +1,5 @@
+source	n_rows	all_values_unchanged
+cami2_paired_tests.tsv	36	True
+cami2_mixed_by_distance.tsv	48	True
+cami2_mimag.tsv	16	True
+cami2_gold_by_completeness_decile.tsv	48	True

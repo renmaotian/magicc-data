@@ -1,0 +1,45 @@
+{
+  "status": "SETF_REFERENCE_TEST_CORRECTION_COMPLETE",
+  "n_comparisons": 87,
+  "n_references_per_comparison": 100,
+  "uncertainty": "Existing reference-cluster HL and Cliff intervals and all point estimates unchanged. Only Wilcoxon replication unit, corresponding87-family BH q-values and support interpretation corrected.",
+  "decision_rule": "Support requires q<0.05 from reference-mean Wilcoxon and concordant reference-cluster HL95% CI excluding0; no retrospectively prespecified claim.",
+  "sample_level_values": "Retained in explicitly historical columns and exact input snapshot.",
+  "n_support_decisions_changed": 2,
+  "n_historical_tie_labels_renamed_unresolved": 16,
+  "new_partition": {
+    "magicc_v5": 53,
+    "unresolved": 18,
+    "checkm2": 7,
+    "deepcheck": 6,
+    "cocopye": 3
+  },
+  "input_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/setF_reference_tests/historical_row_level_paired_comparisons.tsv",
+      "sha256": "1751a54929c28e33c4dd8d31c29b921a5290dd9a2de9aa70e4cd752ac17c1090"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/set_F/set_F_long_predictions.tsv",
+      "sha256": "0115ec60debea91e8ac1e952e88c79bea197799b77f20a5f87c31e11e5a5d06e"
+    },
+    {
+      "path": "scripts/268_setF_reference_paired_test_correction.py",
+      "sha256": "afe8edeab84f893edca68a1119acd5e16d7ae36473f9ad6178108315d00c47f1"
+    }
+  ],
+  "output_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/set_F/set_F_paired_comparisons.tsv",
+      "sha256": "8c5952716d71f77317df28fa3df3403b7a8ef3a0115150732bc67dcfccd237c5"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/setF_reference_tests/changed_support.tsv",
+      "sha256": "033f9ba6b30370441f197fd468948c8b19246446f9257b42c98c1a3aec9cd669"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/setF_reference_tests/distance_comparisons.tsv",
+      "sha256": "2c07a4a3203d65a3c89784cc9a7c8a6306b8802af7078a01aa171b4a9297cbe8"
+    }
+  ]
+}

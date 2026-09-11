@@ -1,0 +1,740 @@
+{
+  "variant": "matched_full",
+  "smoke": false,
+  "samples": {
+    "train": 1000000,
+    "val": 100000,
+    "test": 100000
+  },
+  "n_kmer_features": 9243,
+  "feature_sha256": "33db5f0442e4876861e5aa0758f84afa91a0834168430776b1379897b84291e5",
+  "normalization_sha256": "ca3a256100fc24ada3c0e34dc06a8f967eb30c9cb95c3e6db8fcb3a2dfc6734a",
+  "features_h5_sha256": "03553e12642aa21ba619a631f0de179752cb651462294b7958d67adb4274b0ef",
+  "wall_hours": 6.219910107188754,
+  "normalization": "training-only exact moments/summary quantiles; no validation or test rows",
+  "status": "DATA_COMPLETE",
+  "role_leakage": "All actual dominant/contaminant accessions audited against the arm-specific split pool; holdout excludes the panel, matched_full includes it.",
+  "raw_batches": [
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_000_train.npz",
+      "sha256": "9ab64d1a22d6d62ff4fc98143f4907bbf0f09863850adb576017e253631d33f6",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_000_train.jsonl.gz",
+      "actual_role_trace_sha256": "0d68cdef0eef489560fdce6a1c1483def690acc10066e0a7aa20b061792ff1da"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_001_train.npz",
+      "sha256": "93463df4dd3cd4fae92b4199bdedbcce4f3d821067a9a59b233a6ac804bae3fc",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_001_train.jsonl.gz",
+      "actual_role_trace_sha256": "eb449a3c5f32419adbb89d91f15f1632046d29625b55ee867a948578b30c8a8c"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_002_train.npz",
+      "sha256": "3dc314535533a9438a47497b473d84a56c5fc8607d09788f23e5ab0ad51bb9cf",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_002_train.jsonl.gz",
+      "actual_role_trace_sha256": "d2800c841e89a07f630bc050f05e236921fedfa06e18d351dea3cbccdc211d7b"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_003_train.npz",
+      "sha256": "ee47320dbc927d8cbcf78c25801b12dbdd9b9accaf8a135ae0a1ea82bf527c27",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_003_train.jsonl.gz",
+      "actual_role_trace_sha256": "a7663ef524e75ad5e1dbec1ee3a6661fe68bbb8ec28d3bd74cad26b38cacebc1"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_004_train.npz",
+      "sha256": "42087f591f005776ca8c8a3005daabcdccb86ef42000896de2547744e16e7390",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_004_train.jsonl.gz",
+      "actual_role_trace_sha256": "45901da1767a8cba6818f69d92ae1fd273c9932a7bd29c86a5fe8b46a71ae1d7"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_005_train.npz",
+      "sha256": "d8c64bec75b41c2d17a64631f93a952780f7e40008a495ae52ae4a8a3bc545fd",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_005_train.jsonl.gz",
+      "actual_role_trace_sha256": "0de8993fb4c30623dfbcf05437ab2efcd9657814e14bc5ea250573270cc0eef8"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_006_train.npz",
+      "sha256": "bef1350c60ecda6bd61230a6c27b1661a4c1420669ce09c01fc202a3c3452822",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_006_train.jsonl.gz",
+      "actual_role_trace_sha256": "14ebe06e54add7b582de26506d38d268e522eeb94cd56d17882a851cab0e3d96"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_007_train.npz",
+      "sha256": "66b3f62a9c2c17fc52dc3add8b16c039016197245b2624e89b4b377b2be9a52e",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_007_train.jsonl.gz",
+      "actual_role_trace_sha256": "7f4f4a6e63448d2af23d31b4cb188e94df98d67e044b8163339104797902279e"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_008_train.npz",
+      "sha256": "e0bc06535855591389e9082a220ada765d63ca761b1434425c85f3613b331722",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_008_train.jsonl.gz",
+      "actual_role_trace_sha256": "2884e16473871e13bacd0a7dc333346cbeb5b1cbfe7b0d34f6e0a8bc7a7694c6"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_009_train.npz",
+      "sha256": "985dc84c4cfd343c1501b2669cf23a3d845176828a696a39ebd54b0a467eba91",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_009_train.jsonl.gz",
+      "actual_role_trace_sha256": "ed10fec9cd23f1fc084e323d79a1884de0a6b018c62e8aa21e99ebdabd4cf093"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_010_train.npz",
+      "sha256": "58ee82e1cbea117be6d66a9b45a7f99cc636117570cec9ac7d083d779c54fcef",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_010_train.jsonl.gz",
+      "actual_role_trace_sha256": "648ea28c1969ada0a2f66df72d3c63fd2b86d3f5c2c8600f7661de2f26bd306b"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_011_train.npz",
+      "sha256": "d49aee7b82b6df93576a9938fcffb85d09be4aea0203bd00c0c3d9c1d973028a",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_011_train.jsonl.gz",
+      "actual_role_trace_sha256": "6b31b00cedf0968e07a624facc231b3ecf1c8d74f43a042c5dca8e8e61425272"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_012_train.npz",
+      "sha256": "59fcfa6783840418ef39e43170104d532272cf7456724ae3b726667814473b0d",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_012_train.jsonl.gz",
+      "actual_role_trace_sha256": "5562aaea183b110fad7d3987046c70bcf377e1756f6cc3eb7d7b15a18a0733a8"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_013_train.npz",
+      "sha256": "e4113c0f88c5c7bd403cb42deb83f8e23e70d4f44e030f2d180ab3993dd7024d",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_013_train.jsonl.gz",
+      "actual_role_trace_sha256": "4438971261b1716b57e958c95bb487b17e75d5d4e4bd6ae4dbbe5184a36bdb3c"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_014_train.npz",
+      "sha256": "37f3a9b1db26ae5c377bf700a53bdbb3b071fec523a33391eeb6af8cbbcbe907",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_014_train.jsonl.gz",
+      "actual_role_trace_sha256": "55826aa26d95d31702ddb5ca3c77f967edfd75470f4a8f19977852d6b3e1948a"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_015_train.npz",
+      "sha256": "b497dc3a34d75b80656e3146c51fcca5252559f0c4c893622ba0cbc6b751b3e6",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_015_train.jsonl.gz",
+      "actual_role_trace_sha256": "6dba82787b127a86ae09d6aef53f1e8e91f8c7a42e6c74602f5c660d1af79056"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_016_train.npz",
+      "sha256": "fd662b6655cdbf749d21233019b0a8b5c532ec0f6b6b757c9df1bcc3d6bec7b2",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_016_train.jsonl.gz",
+      "actual_role_trace_sha256": "9dfe8344e4e9cca064114820133b2ef1398865f02bddc5d833dd6ec73bc40a2f"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_017_train.npz",
+      "sha256": "5da7b4d3f7819d18261b241c31302f98c4b2b10345091a0f8dc8df8d4c412744",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_017_train.jsonl.gz",
+      "actual_role_trace_sha256": "5e633fc2e94503d24ddf44f94585bd67c9f4890790749e74174d1e53c2008b1b"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_018_train.npz",
+      "sha256": "8df5bb9540db78e18bd52a4fbbe1ec16ae11f80364c1a23ddf7e392ea3e0cad8",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_018_train.jsonl.gz",
+      "actual_role_trace_sha256": "1c8370c57921b25eb74d9736bc374c1333443436ecb7cce896a72d41cab3d710"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_019_train.npz",
+      "sha256": "f5af10a31217af035de57a55698997e6a30de5f8660c3609e795ac6bd3cf73eb",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_019_train.jsonl.gz",
+      "actual_role_trace_sha256": "34ec8007b04d069b776db779a995f77b4449c5ee6348e6548188f1ccb42a1200"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_020_train.npz",
+      "sha256": "7ef314ce1003e0f91286ec288a025ba5023ade7884ee0a8701fce28a15499cc3",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_020_train.jsonl.gz",
+      "actual_role_trace_sha256": "a001ee54ffee101729d18bfb2dda5c94ca5cb154a63bdc264fbab1a2b9bd9ac0"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_021_train.npz",
+      "sha256": "9c14ce7c9059cde83f0e9f8bb6d531e8e8bb9f233c09c37cd0ee8874db31c2ce",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_021_train.jsonl.gz",
+      "actual_role_trace_sha256": "dd22daa9675b7f2566b3771e4d506c446f254a9a2f62f3c9cc57727a2342ebf3"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_022_train.npz",
+      "sha256": "ac3e94f2ffef44f4e5a5535948d2b419e8840ced504903c0475536f403c98e34",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_022_train.jsonl.gz",
+      "actual_role_trace_sha256": "9f2b2cdee38a4201ee294f314fb1170743ca56da82e8784e4493945be2aaee52"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_023_train.npz",
+      "sha256": "bef063ba41ee9d314cec62a7f17007edfe1879494d26d99ab8f49ab63fcf5c02",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_023_train.jsonl.gz",
+      "actual_role_trace_sha256": "31ab843685d8d8ae3396c95c8d0a7cae692e07ffe8d44180c8c214b02585f8bb"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_024_train.npz",
+      "sha256": "c09ca861aa7f52994de648fb8aa4c92ba5bf58fcb60a39ba27d068003a6a2f42",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_024_train.jsonl.gz",
+      "actual_role_trace_sha256": "33f948e12b4a06b56ce1c8da7d55f04c34f3248df47c5c48fe42902a80481fb8"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_025_train.npz",
+      "sha256": "3512319dd5383749daa0fd886f496b3b327c2311e643f738857867d2c6ec8b8d",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_025_train.jsonl.gz",
+      "actual_role_trace_sha256": "872414f9fa04c3e0706b87ec2eb6933e917645e803f039ad8996e747a8543fec"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_026_train.npz",
+      "sha256": "d432f701d994dd469e42b2c3c15ab1956872053c809114030237fe41b296bea2",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_026_train.jsonl.gz",
+      "actual_role_trace_sha256": "c2d33049f7702e6185db284d06f0a7937ac3a802f85e4099a52dc3d7afb635b7"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_027_train.npz",
+      "sha256": "caf5fe9887c34a079985d5f03670bca97c8ca68610aa17e167c199b5724ee74d",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_027_train.jsonl.gz",
+      "actual_role_trace_sha256": "dc4e5849e3244f768a420757d854170d142a5e79e46fa038aadb514551aaf0bd"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_028_train.npz",
+      "sha256": "3a231833755543c9adda2a07d1f19c63e4cb7c65e4199db989b51b0e64a1d064",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_028_train.jsonl.gz",
+      "actual_role_trace_sha256": "3b372f8510a5152924f12bc80f1adc5c3b3b1de6b8c33b79cc69d18047743edb"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_029_train.npz",
+      "sha256": "345cbf9afc1f52ea416a8c13fc3f54e97b4694969e52bec23a258ba09a0a5fa2",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_029_train.jsonl.gz",
+      "actual_role_trace_sha256": "26cb61e540bea5c61caedbd772ff061f616975cb7ba99cfea29fc57b67facd4a"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_030_train.npz",
+      "sha256": "bb8451409a8f144eb74705b40ebfe0d1b380d4338ad6f154059358bf5f394433",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_030_train.jsonl.gz",
+      "actual_role_trace_sha256": "671ba8f5a6b023d3b1f797d61eddfc2eeba6888e5b3ad7ca62d2858a0f123bb6"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_031_train.npz",
+      "sha256": "a35021d16d3f537c62e8acd1402c7d8e53cd44c075557c115eab4ae6f335717e",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_031_train.jsonl.gz",
+      "actual_role_trace_sha256": "33664408483237958963a66abd39b1606be9e5bcece8262d1419a4f55d4faaa8"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_032_train.npz",
+      "sha256": "7934031397480595b438d010b2cb8e26ebb29d2388d78289113c0e611368ddec",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_032_train.jsonl.gz",
+      "actual_role_trace_sha256": "cf5acf565c8b873fbb2c05ed80e3be7cbebf0a72b6d5d16080c9f6951077a9cf"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_033_train.npz",
+      "sha256": "0df7ee0a0e436b0690e0e07cf6fd46efc9931b85e7dd51f8f95ee8ff6bdc2547",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_033_train.jsonl.gz",
+      "actual_role_trace_sha256": "4192ecff5b051fe2171b54662bcbd186ed670aee6c78a742348c0648f028f371"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_034_train.npz",
+      "sha256": "5b8935fd35e33952983c387ed5c8fbadb4e7216990b585b470c2c03c2adf657c",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_034_train.jsonl.gz",
+      "actual_role_trace_sha256": "51f8e66ae0bbd3987ab9a61b87763abfe705f5313ba8f62b7ca9a5d91c17d549"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_035_train.npz",
+      "sha256": "f78d8378e5094a0c985e24014abeb1c2be74387c3b64c2a9a233ff4bcdff81a4",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_035_train.jsonl.gz",
+      "actual_role_trace_sha256": "d3d574e45ce8cb4e507818024e6b65d5056eec3383f218d43fc05b3ec185a28e"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_036_train.npz",
+      "sha256": "0862c8026c6841bf8d82843bb8eab411826c2d8fd7d04ce258f4866cbdcc218b",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_036_train.jsonl.gz",
+      "actual_role_trace_sha256": "8705951c9afe3a5cc2f887b75676d280150edf8fee1fc91fc97e9ce898b73295"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_037_train.npz",
+      "sha256": "b9fe9bd2e875ef7a47c20a14d022bb4b5f76e566a6f077a275cc2b08ee1451ce",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_037_train.jsonl.gz",
+      "actual_role_trace_sha256": "8781046f3611b6e643a6a5aae8edc7836ab0e5c48a9c3ae6857a5340c316c44b"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_038_train.npz",
+      "sha256": "882780ed1f0c02d3d942ad656212f8ec9915a4a90501576d2aa06e83459c3914",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_038_train.jsonl.gz",
+      "actual_role_trace_sha256": "c616e9aee7b9fc02ada0538d354ef385bcb156b67d0882e49493b2718b8ea986"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_039_train.npz",
+      "sha256": "24f4b5f0b451945ba067fb1f2991187a30642baa15f5d894b21637f2e1e04093",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_039_train.jsonl.gz",
+      "actual_role_trace_sha256": "8bbe38341311e8908a124987e0d353fcbe3d4fe8993abd384927e633a5f969f1"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_040_train.npz",
+      "sha256": "c41c02fdbdefe593f0956678c4d1b800443d2e62d020c4271906d20b43e69859",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_040_train.jsonl.gz",
+      "actual_role_trace_sha256": "573cf68cbf0dfceda6f3733d273f0280a3776d40455085b083a1da66c3ca7685"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_041_train.npz",
+      "sha256": "529ba9058f1180b4d045cd6a5a0fccc9c2b689b4078cce8ed819963cfd12d001",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_041_train.jsonl.gz",
+      "actual_role_trace_sha256": "b5e0aed99020281420ca22a8293a7156870a84b702e60bf4d4a3fee69090dd00"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_042_train.npz",
+      "sha256": "d5ee0624c0e147156a2e5c7418f8d17a26ce09c696175cfe5784ab38753371de",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_042_train.jsonl.gz",
+      "actual_role_trace_sha256": "a90d88abb9d73e36ae4d421f0ebea5c5c080eea512b75356001376f670e7451e"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_043_train.npz",
+      "sha256": "c4aa53dc1c7a3a5308882b87eb32c21f04d0d2e1b483c6965b5d961fbc1b55e5",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_043_train.jsonl.gz",
+      "actual_role_trace_sha256": "c1f30e05882ea915fea741b2ebb5d45e95bf3d622fe2f65ea5afbf67892c55ce"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_044_train.npz",
+      "sha256": "fa97bb8da9e147cd218178fc8402c85da3bbbca473c50574f8791b8051920bfb",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_044_train.jsonl.gz",
+      "actual_role_trace_sha256": "171d924c34178bf299b6671b39d9790823008bfaeafde03d65d4661d31f13f25"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_045_train.npz",
+      "sha256": "a3e310d046483104df4976bce7b1aeff2bcccfad8aba46a7e50b317121bec9c9",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_045_train.jsonl.gz",
+      "actual_role_trace_sha256": "59c768d41292264cc59e310c468bf6a081a3a33d81954c470f769e441ec3ec87"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_046_train.npz",
+      "sha256": "47c20d2ec8af4612b2de87c4c3bc59be929cd7b000bf4e5c59396781e679e058",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_046_train.jsonl.gz",
+      "actual_role_trace_sha256": "0548ca939513dadb89c7c4e23e7d609a7e898f6c3bf2604959e0fe9143fa313d"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_047_train.npz",
+      "sha256": "f2b01a8e01c961fdc51d8e54bb89e5351b382b44e928d775831e5651794c2b67",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_047_train.jsonl.gz",
+      "actual_role_trace_sha256": "d6d70b4e17b63b840254fad5da4d68b2f2ef4a1272eb4a62f4b786da1a53a249"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_048_train.npz",
+      "sha256": "3f5c6d0cca2b033db769bd6f91893719065c8bea1000723404331f16a7d3a312",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_048_train.jsonl.gz",
+      "actual_role_trace_sha256": "d6a40c1de18d35a7c4b94dba3ddbbef5a1d98bca450ffc16b1a013331764fb03"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_049_train.npz",
+      "sha256": "3a58e1db2cc8fb010766aa5f5d37cbcceac071ee0d0d0c2ceb80b862f96a8d43",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_049_train.jsonl.gz",
+      "actual_role_trace_sha256": "53d2cd9b4ab669cdbc1288ba0d1daebba5cec3d14e0202f99f8b21944fa69ccf"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_050_train.npz",
+      "sha256": "ddd60864275e31501f4dc483a403da888aeb400ea71d2cfe38e5e7c0ecb5b3a4",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_050_train.jsonl.gz",
+      "actual_role_trace_sha256": "76f5289a2ca0f3ff334c971136601542aa177e25f594450a0cbbc0562b2b9b41"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_051_train.npz",
+      "sha256": "b45bf9bc66c0b3296b8c5b036663087b2aee81519878cc1362ea9f42d84dd7e9",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_051_train.jsonl.gz",
+      "actual_role_trace_sha256": "9bec5d80d5928dd32f208300428f9e345b5cde45fb5a7b444cd9d92df33c786f"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_052_train.npz",
+      "sha256": "a1e5601bf842b8f4658bbedef0be2591fa90caac9779aefea7da11e06fbf9046",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_052_train.jsonl.gz",
+      "actual_role_trace_sha256": "9d35ef2e0becca5f2e9bfa8252f08d5bfcc0a6e40a877a64d88f3ffa9abf4baf"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_053_train.npz",
+      "sha256": "137e4ef5603de9dcd8bfd73d852a6b0d0a91abea9c9171e09e586deb59d8eb03",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_053_train.jsonl.gz",
+      "actual_role_trace_sha256": "0d4deb5c850862a687c9c83946c580e5f2af5b9e6acd18fb96851e7571149483"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_054_train.npz",
+      "sha256": "ab2152dafaeaf4ebff95f16f15e7d2f933df666816ac67101015fd810e10e528",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_054_train.jsonl.gz",
+      "actual_role_trace_sha256": "004c08889bedbf7662f7401551dbaec64db7025f334208f3817ab30a532ba35b"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_055_train.npz",
+      "sha256": "c694bae89da96c5481e6fa377892bbd140d7159fcd410e584145c97d792cd253",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_055_train.jsonl.gz",
+      "actual_role_trace_sha256": "1282c1ff1561eb179951cebf33623c6a1fad744ed0c3ce6106c0d9a2558bb01c"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_056_train.npz",
+      "sha256": "584b3b775773e0bd6bf10435fe36dc4840c2d7ae88596d8061669653a080b9a6",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_056_train.jsonl.gz",
+      "actual_role_trace_sha256": "39f59e3ae806491f8bf0d6cd4648de66ff411485d617950119f04df5e7793ca5"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_057_train.npz",
+      "sha256": "5dbcbe3ec7230a07e1c44733891049329757061f18b65460e479645b2dbce521",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_057_train.jsonl.gz",
+      "actual_role_trace_sha256": "7ea86c43b1cfaa5986d5c56de28431b234f61c632e75f69b63b030d96b945e77"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_058_train.npz",
+      "sha256": "0943ebf0adaf718492af42775a2a788272e9eff2c9160f73d7949b672f94b309",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_058_train.jsonl.gz",
+      "actual_role_trace_sha256": "a0e1c3807edefdf59f2011268e3d0bc74d524650402b27af8bf560933885b7fb"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_059_train.npz",
+      "sha256": "f0bcd05b1f490a0977d223a03c5b16a4925dc9acf67413498986aa609a98d7af",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_059_train.jsonl.gz",
+      "actual_role_trace_sha256": "6693e54434eb2066cbc2763eeb83df2e67592c2a2860ba1e22a95713bed36c89"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_060_train.npz",
+      "sha256": "f5212f82700cbd3223b6132e8ae38465c70751810da0a28fbf537d997ed4922b",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_060_train.jsonl.gz",
+      "actual_role_trace_sha256": "d02abd5f4b6d57f83e5d7bb70f238a4bcd270c61e0e1650ee95ecb8688254af8"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_061_train.npz",
+      "sha256": "67f8ce850b9a9ae2230b2ec1cfb561c6fc8156949dc3d9a2d76598cb6b93a655",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_061_train.jsonl.gz",
+      "actual_role_trace_sha256": "d69d71e4761c5071eb61e475edfd9b27bfaca0c10a857d5d093016a9814c8c6d"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_062_train.npz",
+      "sha256": "44122005de8b35ac59651300419c5acf1259b82be011ae7ad31aa5f4a819d7eb",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_062_train.jsonl.gz",
+      "actual_role_trace_sha256": "b5d1a86aef25e251833aa6c19cabe72e387366036b2732643848ba0365190853"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_063_train.npz",
+      "sha256": "705fd418c346ad6d36adb443f07a1122cb532331c94a14b2b80e14ab4dbe4b7a",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_063_train.jsonl.gz",
+      "actual_role_trace_sha256": "1f63884540e7f8b0b71ee01cac8f58f9b3b4b1d810e4cd0f3463fe86c39d9d95"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_064_train.npz",
+      "sha256": "ec7fb9217680d55c97c1498bdeab0c4ffc542a5e17ec11c3670246b5ee007eb8",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_064_train.jsonl.gz",
+      "actual_role_trace_sha256": "5a6032f9554b61b8fe9716bc11bf9a1f62661f87ae4a9994380373522e77a311"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_065_train.npz",
+      "sha256": "2678014633147109b2e7bbc57c0758580a60f8acbb8f4a5c509e2b251ba961dd",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_065_train.jsonl.gz",
+      "actual_role_trace_sha256": "60173a706aaa88e62c203180d74eb7c77fda0ebe2bbb99349f8a566e9bb962cc"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_066_train.npz",
+      "sha256": "ce75daf5d00c201f1db50959d7e7f22005421a7dcd55ce5a12ba466a6d184703",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_066_train.jsonl.gz",
+      "actual_role_trace_sha256": "1dfac93ee6dd50ac121ffe0dc3b29ec782cfd55ce0113b1249c30c91e6e61ee2"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_067_train.npz",
+      "sha256": "801791799fec709e2453763a51b21f007f9f2f6398c131a714edfd040e7d9277",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_067_train.jsonl.gz",
+      "actual_role_trace_sha256": "33e73b72ee04edaf6e8c99a6c889ddf09d4113aa9f9ad8ebe694a049ad4cdd9e"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_068_train.npz",
+      "sha256": "344010b4685a972c8821255fc4694880e6002eac0e575290a23132430750641b",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_068_train.jsonl.gz",
+      "actual_role_trace_sha256": "709f10aa467891c1d48c1a2d763b908946739d4b589aaf7b3956e1de4cc0e6c5"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_069_train.npz",
+      "sha256": "30a2d8a6c69882fb51cd33b3671fb8fb12ba27d9baf0a45ceb1210b9de03ab25",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_069_train.jsonl.gz",
+      "actual_role_trace_sha256": "07697aa70a39822fde1c0dcd67796f9bd057f8e24ef88b2f6ed74b112cb32d1b"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_070_train.npz",
+      "sha256": "bc278c398c517f4e62eff621ddb87372029341e05629ac7274b79c424c31d08c",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_070_train.jsonl.gz",
+      "actual_role_trace_sha256": "1dea50efd860804a34638334105182a3220d0033e81891fdd37a99c9d72ed644"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_071_train.npz",
+      "sha256": "9ab2cdcbbe003b60fdbf89b87acd73f26ac7b1e0ea35b414d9c8929caa452c04",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_071_train.jsonl.gz",
+      "actual_role_trace_sha256": "8f5efb2a2b988ad2b9262abe083823aeef55ab9f54e16c0a4e3c8d3bbe4ad840"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_072_train.npz",
+      "sha256": "af70b7774038b19904056d51cb032a8d6fa0a25ac64403233380451585bc8064",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_072_train.jsonl.gz",
+      "actual_role_trace_sha256": "b507ba3c6806a789a6535c1a6f6331fec5c0064e2f5069b6f2a1b0a2a4737ead"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_073_train.npz",
+      "sha256": "f0aaee6ab08b8488f51527ae04262169b0d5f10118059906d8db652ce6413661",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_073_train.jsonl.gz",
+      "actual_role_trace_sha256": "55b2e73976391571c33fa773845bceadc1ec904eb26e4f4402bcfe8968dcce66"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_074_train.npz",
+      "sha256": "7a9b3df407e3a75e45174006a35d4d2ba8b727d7e9d9e96b910ac8bf2ccfab99",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_074_train.jsonl.gz",
+      "actual_role_trace_sha256": "8b09a3df688f7184ed192ae60f5eed5500c8017e7b67f6553e552c8fae5d3b4a"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_075_train.npz",
+      "sha256": "011fdba18cfad2f9739652aa01986a724e9dc41d876b37e314e165a12f636c14",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_075_train.jsonl.gz",
+      "actual_role_trace_sha256": "c9ed177de3627849e4e7933ea2128d8925494464bd8a17c0fd53c548cf3798bd"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_076_train.npz",
+      "sha256": "964ce3e962f74b6bc6254df9b9c11bf380d1bb176a658649cdd3522f3256761d",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_076_train.jsonl.gz",
+      "actual_role_trace_sha256": "6998f47d34b42b92fe3c67e84581c950493b4bb47a9c2797434618cb2e674b31"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_077_train.npz",
+      "sha256": "d395689407d8e4883b018660db7b38f513ccf66b176c2c722177fc8b79a76b33",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_077_train.jsonl.gz",
+      "actual_role_trace_sha256": "fba27811fb5bed78415e8547cb8826d9cee07d798377e1fd50b464d692fdc220"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_078_train.npz",
+      "sha256": "5ce0d0df5da7f2fc1dd96a9abab09d6df4cdd800f7370bae7477dfd7b0b570b9",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_078_train.jsonl.gz",
+      "actual_role_trace_sha256": "602535bf8bd89592cca94b53fc07ac98e782718fb9830d716402e2a15bc2e6ad"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_079_train.npz",
+      "sha256": "b7bc86c5f4e90d0b0ce10e9f0c7edb86ea2d669da9c3830670c93f249cd61468",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_079_train.jsonl.gz",
+      "actual_role_trace_sha256": "a35d98b93eb0d5e3a469e24ddd848dcafdcf337e2e3a0c76aa0b9c2977066727"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_080_val.npz",
+      "sha256": "6ca1ad50d1a01540b2a6fd741fe6192a85f5248451dba85ef156d2b81b6c03da",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_080_val.jsonl.gz",
+      "actual_role_trace_sha256": "2597333217370ab4b695eed63f9ac4f95a63c0be6d160dccaca39d790744154f"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_081_val.npz",
+      "sha256": "2bf56ffac4f370abf2280561ac45514432711de08b312ce8b38ebbc6955b723a",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_081_val.jsonl.gz",
+      "actual_role_trace_sha256": "b9c2208895e7c49965b095afe05f3291c3e9783807d7a35997727ab4879f928e"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_082_val.npz",
+      "sha256": "dccb9c3389dd833f1f951a30ba0dd7eaa2bfe788e24cd8c8205f28c1690469af",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_082_val.jsonl.gz",
+      "actual_role_trace_sha256": "db4f6873e08a1f640e1c32cb869e96a2f04293753c84207e3477d239b3995d94"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_083_val.npz",
+      "sha256": "20fdd4485efb2bbe4b242f4dbe8bbfd1f9750f15221e233c1c4e07d99e3b32fe",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_083_val.jsonl.gz",
+      "actual_role_trace_sha256": "75f47eeeffcf1c19bea09ae8943f6316814fb3944bcd65914d678578a46ed0bc"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_084_val.npz",
+      "sha256": "136be1c23cf9e576b980f65cd89a653400e6aff1bb5de4b4fde3d45d125da7b4",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_084_val.jsonl.gz",
+      "actual_role_trace_sha256": "eb2d70c3db063afb61f1e2e0b15a8f926898d00a47a3a53d57d4ff4e4ea820d6"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_085_val.npz",
+      "sha256": "a3c28a338f173b076a6579b50fcac5dffbab6816c0079e7445ed933e6496a7d1",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_085_val.jsonl.gz",
+      "actual_role_trace_sha256": "950142ecf510e95f5364516ae7cd12c124e68026e1c1b401be973dfb3133b5ac"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_086_val.npz",
+      "sha256": "8581c35fb97d95ea359c98eb9e43b009cb20566f159816f93016058ea0b8bee7",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_086_val.jsonl.gz",
+      "actual_role_trace_sha256": "f2d20efcb767bb92cfeb8bec3055ee5451a5fb923f5a783f0c856547c6006eb2"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_087_val.npz",
+      "sha256": "9e41099b59fda28b16905ff671d411f300f76d29a8ec5c08bd5388e0eb893fb4",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_087_val.jsonl.gz",
+      "actual_role_trace_sha256": "d0314429d2c326fa8c87e225433ed975fd12905f080640ffe03f5185808b466f"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_088_val.npz",
+      "sha256": "ef7a17ce803a7f961b67c42aad1fba335216fb849f2e2a06c5dea1d4bda920ee",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_088_val.jsonl.gz",
+      "actual_role_trace_sha256": "c1c27cfe32da5d07dcd4124b8b9be346669678c438d18b76d4d68c92abe8f5df"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_089_val.npz",
+      "sha256": "ecef661a2593082705b9a17d91df6df1b2515ad7ea8a322dc6963c2fdea0fbba",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_089_val.jsonl.gz",
+      "actual_role_trace_sha256": "0d07d49fc37e5f58cfcb7d81bb71f81b7167d3c713ab1a4f749ee1893556f59f"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_090_test.npz",
+      "sha256": "060ae582eadba89eb891e9b682fbd472e537c667a4e375013f75205a92773f52",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_090_test.jsonl.gz",
+      "actual_role_trace_sha256": "409cb59dc8a08845dee07c7cdecfa5f8088f10cca6d88a90128a876455b6ab61"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_091_test.npz",
+      "sha256": "583ce50769c53237479790aabf9b08cdf0693f075bb04bec12c924e4f05fc122",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_091_test.jsonl.gz",
+      "actual_role_trace_sha256": "753891e447cd5da17a3a2b3bbb88e73f1cd91cb1a04089d77f180b1030c157ed"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_092_test.npz",
+      "sha256": "57ddcbb531f228f5ee87a84a95096bfe596d56c27bfe91db0f61417d96f79948",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_092_test.jsonl.gz",
+      "actual_role_trace_sha256": "6a790d052a34ed1881998c6659fe2c8195f1273ebb9e34f2a983b140dcfa1f1f"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_093_test.npz",
+      "sha256": "34ffe5204f407671fc7d6577f4d87b9ce80667ac4fd12014cb7717898bc472b4",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_093_test.jsonl.gz",
+      "actual_role_trace_sha256": "50a5648949914561611b9028c2e6da544cf66559a6a9a6565df126223723edfd"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_094_test.npz",
+      "sha256": "b54fffaae8ee54e15fecf73bf1bce6f28622d90a26fd627f30298e50f264f21c",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_094_test.jsonl.gz",
+      "actual_role_trace_sha256": "abdff067af9086c2c4bb1a302a1bb11994a4979ebf5d3a0e27f7f5558bee6b34"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_095_test.npz",
+      "sha256": "2f8fd1e97b24e27a3dcea42bddafb74d08fdf36a66c14344da6c4ed3da5ace2d",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_095_test.jsonl.gz",
+      "actual_role_trace_sha256": "01e5be2f781725f3acbe3b7e65272ca6af006c11d57901cf449b2958ce018caf"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_096_test.npz",
+      "sha256": "c13221f2e8798267bf184d30d4e0ef92e862e1200be969b8aef27fde52eba5e6",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_096_test.jsonl.gz",
+      "actual_role_trace_sha256": "37557933654830cd38b8d3b629e362bd4c38f86b37c48fe2a1c9ac9e30585775"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_097_test.npz",
+      "sha256": "e822fec72f7c5554492d8433b4f3fac357efc7096d4e26282d9c428171454c7d",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_097_test.jsonl.gz",
+      "actual_role_trace_sha256": "bb565992d747930c084b8081d850bde04a0f95313fa1ec93ee741870a12a4fc1"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_098_test.npz",
+      "sha256": "10cddc0c2eabd7d4b6edae07b4c758e2fb9311fb79e378cadfb1e48ab09614a9",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_098_test.jsonl.gz",
+      "actual_role_trace_sha256": "b692da8401d04d8087a9674a1a84cea5d0933445cc426d1da89cbf95f7507f4c"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_099_test.npz",
+      "sha256": "6355202b152634b458610cec5cc4eeecba2fcd6931b542f375038c29abc48585",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/v4_099_test.jsonl.gz",
+      "actual_role_trace_sha256": "1d23943b23273ef8b8705ca13185e760f9841fabe90e9c812526d404a04fcd22"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_000_train.npz",
+      "sha256": "4ec892756d25d2cf4b0e03754fe9a8187eb4cfd83c4b5142b2a0c16f6a513a93",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_000_train.jsonl.gz",
+      "actual_role_trace_sha256": "04d0980162396d73947d13909b4f6f77134a946b54340ca20858eded23e142e4"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_001_train.npz",
+      "sha256": "16e19b681f06ee8a7aa4f39b24c2d9c9352dac7f5b7168352edb46079356d38c",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_001_train.jsonl.gz",
+      "actual_role_trace_sha256": "39b56d09f9dac0d0bbefc1d720f5055f73062f549d934f7348622abbd4493db8"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_002_train.npz",
+      "sha256": "24c7aab2d3f3fc4bcc291d32d902682b34c5f0ce557f2f68e5b205fc8d496c03",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_002_train.jsonl.gz",
+      "actual_role_trace_sha256": "e4b7f46d0da8b12afc3d906ba3dfe53c8371407c683f6ff1e026200068be770c"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_003_train.npz",
+      "sha256": "ad52af024247e8939bbf9f9234242bcb17682fb1488c38f694bedc289ae1af2f",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_003_train.jsonl.gz",
+      "actual_role_trace_sha256": "c2a300a9c5f032f066798e3db81fa73ec2cff50daaf86b857e7f7855fd56b4ba"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_004_train.npz",
+      "sha256": "363518bb93319dd891e983dd21dafe4892f27048b7cab97ad13a99c3f358bee3",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_004_train.jsonl.gz",
+      "actual_role_trace_sha256": "70e61b56821ac0a9ed8a6a23b600fa50cd32dd39af6ba8eb849b885bfcdb0d20"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_005_train.npz",
+      "sha256": "0d375e965e23bdd00e5721951f69ac6a4e335964fc0d0f8df3d414a9fc04dd6c",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_005_train.jsonl.gz",
+      "actual_role_trace_sha256": "f6fb28035d04fdc69a210806f266b1a56c803cf77f2627dab75197bd1e0e93b4"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_006_train.npz",
+      "sha256": "b04756b3ca1a2b5aec303816989312054e649e61ab4812c5ba8e76778bce9757",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_006_train.jsonl.gz",
+      "actual_role_trace_sha256": "53b9bc43f7f8f8fd4243fc08b17c08580bba45e420ddab800cf558438f003e1f"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_007_train.npz",
+      "sha256": "9deb82878bd20be7a37611a773a5c8401df1cc4d7b98ee67325f188cc92b3a60",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_007_train.jsonl.gz",
+      "actual_role_trace_sha256": "f47425aa863b7abbad3b003068b1561cd6f77c91f34598fa31e7cf4f11fb53ee"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_008_train.npz",
+      "sha256": "c8c3e6699db8acda0e849c6408dbeffeca0794f927256f164cb713dbf0f44bed",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_008_train.jsonl.gz",
+      "actual_role_trace_sha256": "d4de85fcf5aafe843741563032304ea21db81490b2fb1c0555e6612c77044173"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_009_train.npz",
+      "sha256": "cd4bbbebb1e0765b13cf837ff553694a4aa90162e39156e5f6336b5f345a7c2b",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/A_009_train.jsonl.gz",
+      "actual_role_trace_sha256": "fc2cdb7df44c842a7b3b8ca9827665314c46d2fd9782fa7a8a1dd695b27feadf"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_000_train.npz",
+      "sha256": "d54bc5616abe27d5bf4e0ddf96ddb126f4187b4fcd25324296027fdf5bcca41b",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_000_train.jsonl.gz",
+      "actual_role_trace_sha256": "caa2861493ac369242db58badca3e11a73725377002073e98a46f28d74225382"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_001_train.npz",
+      "sha256": "cefce2010f062b174bcc3b78297cb99fdaf6d5ee66a9fe61746b771b1a799351",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_001_train.jsonl.gz",
+      "actual_role_trace_sha256": "dca3dd56db153fe63c95eda39f519d5a0e6eb08b183d1090dab21b6f1ab3ed8f"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_002_train.npz",
+      "sha256": "23debdfaa971efe8b97984667998ee9856500844ab6f800fc31e0b2551633570",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_002_train.jsonl.gz",
+      "actual_role_trace_sha256": "3008dc4769531472944624b82c22b08a265b31b4e5ba2659752163d4285853f8"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_003_train.npz",
+      "sha256": "9959f7f8bcad44b6a60efaf94a3a1241ebe55bb7c803149cb099bb74c93a4086",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_003_train.jsonl.gz",
+      "actual_role_trace_sha256": "4a2d6fb36be86426aa091287eac4f1f2945126347aee5c0e4b9cbc909edf716b"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_004_train.npz",
+      "sha256": "cf2c47c8de6e17aaee6c36ccaaa5000604e8305817bbfb3719a78117c732129e",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_004_train.jsonl.gz",
+      "actual_role_trace_sha256": "6c831af0ab04fdb9466c2a36039d2c56fc88be67a7fed5cd043325c9a45cfb5f"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_005_train.npz",
+      "sha256": "7b2ac4108ca2b4458379199b094fa2dcdbd7d2ac4e917053f05137eccc440ce7",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_005_train.jsonl.gz",
+      "actual_role_trace_sha256": "83e24bd44e6d79f803f75f464fd3dbdbad172c91bde8b0c91ab4ba8eb83a79d1"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_006_train.npz",
+      "sha256": "d7cda12e1ccadbfa1dd0e54219f2f46895fc73940955b9a1e6a04e5dd590783b",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_006_train.jsonl.gz",
+      "actual_role_trace_sha256": "1f5b22988ba0fe18425ff5167e80a0863ae936b57b13652bb8d1eebabb278a0c"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_007_train.npz",
+      "sha256": "74b7e6823a86c2805fcbd381eccf3ea7df529e4bc1e78646c030883c7f95c515",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_007_train.jsonl.gz",
+      "actual_role_trace_sha256": "373bd6bdd4cd420e304106e28bb0351893f5e67c764cb4e49e4a93ab559e400c"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_008_train.npz",
+      "sha256": "15bba3f512fde07513d7d191ad64b2da60114bfdc6f1e16dbf9ca766ee499169",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_008_train.jsonl.gz",
+      "actual_role_trace_sha256": "0cf0f98e8649cbf397d56752d232367f6fc2cd0d38c354161206b24bd0926ee6"
+    },
+    {
+      "path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_009_train.npz",
+      "sha256": "364117b2ba4bd2cb94dcdb329fa7666ef3e61e650aa92bd1d7c8e0e5bcf5669b",
+      "actual_role_trace_path": "/media/Data_1/tianrm/projects/magicc2/results/revision/holdout_resubmission5/matched_full/data/raw_batches/B_009_train.jsonl.gz",
+      "actual_role_trace_sha256": "59e3d2d222b352e15c0023d1e8b1a5fc20cae0e66d8a85fd319ef36000176943"
+    }
+  ],
+  "audit_wording_clarification": "Only the common descriptive label was clarified; no data or numerical checksum changed."
+}

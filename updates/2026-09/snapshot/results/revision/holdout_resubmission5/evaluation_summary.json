@@ -1,0 +1,35 @@
+{
+  "status": "EVALUATION_COMPLETE",
+  "total_samples": 9720,
+  "primary_samples": 9720,
+  "outside_domain_samples": 0,
+  "primary_references": 972,
+  "n_panel_groups": 10,
+  "bootstrap_replicates": 2000,
+  "bootstrap_unit": "dominant reference genome",
+  "multiplicity": "BH over all 20 family\u00d7metric DiD contrasts",
+  "seed": 20260908,
+  "interpretation": "Joint family-panel exclusion effect relative to matched full-family training, adjusted for common-control model difference; training-pool interactions and one-seed model variability remain.",
+  "feature_selection": "Both newly retrained arms use the same panel-free reselected vocabulary of 9,243 canonical 9-mers. No target family enters feature selection.",
+  "frozen_production_role": "Descriptive deployed-model comparator; excluded from primary matched-arm DiD.",
+  "convergence": [
+    {
+      "arm": "holdout",
+      "epochs_completed": 49,
+      "best_epoch": 29,
+      "best_validation_loss": 151.39031105331588,
+      "early_stopped": true,
+      "hit_maximum_epochs": false,
+      "best_in_last_20_epochs": false
+    },
+    {
+      "arm": "matched_full",
+      "epochs_completed": 90,
+      "best_epoch": 70,
+      "best_validation_loss": 128.16071232193278,
+      "early_stopped": true,
+      "hit_maximum_epochs": false,
+      "best_in_last_20_epochs": false
+    }
+  ]
+}

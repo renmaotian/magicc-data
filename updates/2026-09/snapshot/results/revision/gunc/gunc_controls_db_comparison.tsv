@@ -1,0 +1,5 @@
+control_arm	db	db_label	n	n_powered	n_hard_unpowered_css_zeroed	n_gunc_fail	n_gunc_fail_within_powered	median_reference_representation_score	median_mean_hit_identity	median_css	max_css
+positive	progenomes_2.1	proGenomes 2.1	8	1	0	0	0	0.455	0.575	0.075	0.32
+positive	gtdb_95	GTDB r95	8	5	0	0	0	0.51	0.695	0.125	0.25
+negative	progenomes_2.1	proGenomes 2.1	6	6	0	0	0	0.975	0.985	0.0	0.0
+negative	gtdb_95	GTDB r95	6	6	0	0	0	0.97	0.98	0.0	0.0

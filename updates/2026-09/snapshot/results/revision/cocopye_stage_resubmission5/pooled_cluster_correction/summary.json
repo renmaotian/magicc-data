@@ -1,0 +1,47 @@
+{
+  "status": "POOLED_CI_CORRECTION_COMPLETE",
+  "n_samples": 5000,
+  "n_distinct_dominant_accessions": 1648,
+  "n_set_by_reference_blocks": 2586,
+  "n_bootstrap": 2000,
+  "seed": 20261503,
+  "method": "Multinomial resampling of shared dominant-accession blocks; normalize each set to weight 1/5 within every draw; 95% percentile intervals",
+  "point_estimates_unchanged": true,
+  "per_set_tests_unchanged": true,
+  "input_manifest": [
+    {
+      "path": "scripts/257_correct_pooled_reference_bootstrap.py",
+      "sha256": "64ea854165f0eb729585e48090025f6656038bff78a6cb46d0b9c43d23064b8d"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/scripts/config_revision_metrics.yaml",
+      "sha256": "a2764d5e6ec2b367ee426697f723f42d85770b3d30d4f0ea1519dee13c12b412"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/corrected_prediction_manifest.tsv",
+      "sha256": "493fb306cb828cc228cf9bbc2a8caf80d0f0d783574ede31ac0ea46b9d1d9587"
+    }
+  ],
+  "output_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/pooled_cluster_correction/corrected_pooled_metrics.tsv",
+      "sha256": "c315b68b5b69b19fd3ddd3d917c85a8a3acf1b8443f408aa244bb5bfe0a14e15"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/pooled_cluster_correction/direct_weight_equivalence.tsv",
+      "sha256": "ee08b8f155d9e34eff9862d7a04f512220f27e835de3f3f4e06e5e53ca103bb4"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/pooled_cluster_correction/historical_set_by_reference.tsv",
+      "sha256": "01d0fbc33037c963279714d10ddfc9ecc0eb7a95e10e08e4bec8d8607a70a944"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/pooled_cluster_correction/reference_membership.tsv",
+      "sha256": "dacfab9fb8fbe119857e4663ffa6675318b5849f13d2db3ab6fd3e676a3152b9"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/pooled_cluster_correction/ws5.5_before_pooled_ci_correction.tsv",
+      "sha256": "b396d2940fa1a7fe3f813ef0d155dab9e3cfb616fc0177caba5cba37fc2d0579"
+    }
+  ]
+}

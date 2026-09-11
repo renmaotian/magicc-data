@@ -1,0 +1,11 @@
+{
+  "genomic_files": 99957,
+  "genomic_file_bytes": 369151655339,
+  "core_gene_files": 2000,
+  "core_gene_file_bytes": 185471093,
+  "genomic_byte_hashes_calculated": true,
+  "script_dependencies": "Python 3 standard library only.",
+  "download_policy": "Exact archived FASTA filename and version; compressed MD5 from the same NCBI assembly directory; no substitution.",
+  "NCBI_reference": "https://www.ncbi.nlm.nih.gov/datasets/docs/v2/data-processing/policies-annotation/genomeftp/",
+  "genomic_sha256_manifest_sha256": "756ab719cb9c4acb41dbe5e1685b7014780d1f13d8b13c2c46ad45c7632b4edb"
+}

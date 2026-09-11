@@ -1,0 +1,402 @@
+{
+  "n_records": 1000,
+  "n_with_kraken2": 550,
+  "n_with_scg": 457,
+  "seed": 42,
+  "Q1": {
+    "n_matched_pairs": 111,
+    "caliper_sd": 1.0,
+    "covariates": [
+      "informative_kmer_density",
+      "log10_total_bp",
+      "log10_n_contigs",
+      "log10_n50",
+      "gc_pct"
+    ],
+    "balance": {
+      "informative_kmer_density": {
+        "treated_mean": 0.001326099099099099,
+        "control_mean": 0.001402873873873874,
+        "std_mean_diff": -0.022913694469671383
+      },
+      "log10_total_bp": {
+        "treated_mean": 6.416665765765765,
+        "control_mean": 6.419561261261262,
+        "std_mean_diff": -0.014552499072812619
+      },
+      "log10_n_contigs": {
+        "treated_mean": 1.9659753745233266,
+        "control_mean": 1.9729347161993922,
+        "std_mean_diff": -0.014009899954784395
+      },
+      "log10_n50": {
+        "treated_mean": 4.666678375487743,
+        "control_mean": 4.675980894452066,
+        "std_mean_diff": -0.018717080463467185
+      },
+      "gc_pct": {
+        "treated_mean": 49.95411711711712,
+        "control_mean": 49.874162162162165,
+        "std_mean_diff": 0.00699055299390312
+      }
+    },
+    "disagreement_median_pct": 22.344,
+    "matched_clean_median_pct": 19.621,
+    "hodges_lehmann_shift_pp": 0.7980000000000018,
+    "hodges_lehmann_ci95": [
+      -2.957425000000005,
+      5.2404249999999974
+    ],
+    "paired_median_diff_pp": 0.767,
+    "paired_median_diff_ci95": [
+      -2.012999999999998,
+      5.276000000000003
+    ],
+    "cliffs_delta": 0.034493953412872314,
+    "cliffs_delta_ci95": [
+      -0.1203656359061764,
+      0.1841591591591591
+    ],
+    "mannwhitney_p": 0.6576814943646362,
+    "wilcoxon_p": 0.4316352590855862,
+    "gt5pct_disagreement": 87,
+    "gt5pct_matched_clean": 80,
+    "n_per_arm": 111
+  },
+  "Q2": {
+    "disagreement_141": {
+      "n_original": 141,
+      "median_original_pct": 22.344,
+      "n_strict_scoreable": 0,
+      "median_strict_pct": null
+    },
+    "agree_clean": {
+      "n_original": 316,
+      "median_original_pct": 8.568,
+      "n_strict_scoreable": 0,
+      "median_strict_pct": null
+    }
+  },
+  "Q3": {
+    "scg_between_cohorts": {
+      "n_disagreement": 141,
+      "n_clean": 316,
+      "median_disagreement": 0.0,
+      "median_clean": 0.0,
+      "mean_disagreement": 0.47550354609929074,
+      "mean_clean": 0.5136772151898734,
+      "frac_any_divergent_disagreement": 0.24113475177304963,
+      "frac_any_divergent_clean": 0.26582278481012656,
+      "hodges_lehmann": 0.0,
+      "hodges_lehmann_ci95": [
+        0.0,
+        0.0
+      ],
+      "cliffs_delta": -0.02722416733997668,
+      "cliffs_delta_ci95": [
+        -0.11392405063291144,
+        0.05831425621689559
+      ],
+      "mannwhitney_p": 0.5434318745781165,
+      "fisher_any_divergent_p": 0.6438694336516295
+    },
+    "headline": {
+      "v5_vs_kraken2_original": {
+        "spearman_rho": 0.2009,
+        "spearman_p": 0.016901020295144793,
+        "n": 141,
+        "partial_rho": 0.1099,
+        "partial_p": 0.19938468926464362,
+        "partial_n": 141,
+        "controls": [
+          "informative_kmer_density",
+          "mean_contig_confidence_bpw",
+          "frac_profiles_detected"
+        ]
+      },
+      "checkm2_vs_kraken2_original": {
+        "spearman_rho": -0.0919,
+        "spearman_p": 0.27868074256305786,
+        "n": 141,
+        "partial_rho": 0.0341,
+        "partial_p": 0.6915535533034665,
+        "partial_n": 141,
+        "controls": [
+          "informative_kmer_density",
+          "mean_contig_confidence_bpw",
+          "frac_profiles_detected"
+        ]
+      },
+      "v5_vs_scg_divergent_dups": {
+        "spearman_rho": 0.0136,
+        "spearman_p": 0.8724789623506424,
+        "n": 141,
+        "partial_rho": 0.0759,
+        "partial_p": 0.3764958633030078,
+        "partial_n": 141,
+        "controls": [
+          "informative_kmer_density",
+          "mean_contig_confidence_bpw",
+          "frac_profiles_detected"
+        ]
+      },
+      "checkm2_vs_scg_divergent_dups": {
+        "spearman_rho": 0.4119,
+        "spearman_p": 3.8961028881374963e-07,
+        "n": 141,
+        "partial_rho": 0.3925,
+        "partial_p": 1.9230032510709755e-06,
+        "partial_n": 141,
+        "controls": [
+          "informative_kmer_density",
+          "mean_contig_confidence_bpw",
+          "frac_profiles_detected"
+        ]
+      }
+    },
+    "correlations": [
+      {
+        "cohort": "disagreement_141",
+        "target": "v5_contamination",
+        "evidence": "orig_phylum_contam_pct",
+        "spearman_rho": 0.2009,
+        "spearman_p": 0.016901020295144793,
+        "n": 141,
+        "partial_rho_novelty_controlled": 0.1099,
+        "partial_p": 0.19938468926464362,
+        "partial_n": 141,
+        "controls": "informative_kmer_density;mean_contig_confidence_bpw;frac_profiles_detected"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "v5_contamination",
+        "evidence": "divergent_dup_families_per_100_profiles",
+        "spearman_rho": 0.0136,
+        "spearman_p": 0.8724789623506424,
+        "n": 141,
+        "partial_rho_novelty_controlled": 0.0759,
+        "partial_p": 0.3764958633030078,
+        "partial_n": 141,
+        "controls": "informative_kmer_density;mean_contig_confidence_bpw;frac_profiles_detected"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "v5_contamination",
+        "evidence": "n_dup_pairs_diff_contig",
+        "spearman_rho": -0.024,
+        "spearman_p": 0.7777484000646794,
+        "n": 141,
+        "partial_rho_novelty_controlled": 0.0514,
+        "partial_p": 0.5491802491977559,
+        "partial_n": 141,
+        "controls": "informative_kmer_density;mean_contig_confidence_bpw;frac_profiles_detected"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "v5_contamination",
+        "evidence": "gunc_pg21_css",
+        "spearman_rho": -0.1557,
+        "spearman_p": 0.7127617079991629,
+        "n": 8,
+        "partial_rho_novelty_controlled": -0.7559,
+        "partial_p": 0.1393400625772478,
+        "partial_n": 8,
+        "controls": "informative_kmer_density;mean_contig_confidence_bpw;frac_profiles_detected"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "checkm2_contamination",
+        "evidence": "orig_phylum_contam_pct",
+        "spearman_rho": -0.0919,
+        "spearman_p": 0.27868074256305786,
+        "n": 141,
+        "partial_rho_novelty_controlled": 0.0341,
+        "partial_p": 0.6915535533034665,
+        "partial_n": 141,
+        "controls": "informative_kmer_density;mean_contig_confidence_bpw;frac_profiles_detected"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "checkm2_contamination",
+        "evidence": "divergent_dup_families_per_100_profiles",
+        "spearman_rho": 0.4119,
+        "spearman_p": 3.8961028881374963e-07,
+        "n": 141,
+        "partial_rho_novelty_controlled": 0.3925,
+        "partial_p": 1.9230032510709755e-06,
+        "partial_n": 141,
+        "controls": "informative_kmer_density;mean_contig_confidence_bpw;frac_profiles_detected"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "checkm2_contamination",
+        "evidence": "n_dup_pairs_diff_contig",
+        "spearman_rho": 0.4573,
+        "spearman_p": 1.193773023866023e-08,
+        "n": 141,
+        "partial_rho_novelty_controlled": 0.4297,
+        "partial_p": 1.4487183478583498e-07,
+        "partial_n": 141,
+        "controls": "informative_kmer_density;mean_contig_confidence_bpw;frac_profiles_detected"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "checkm2_contamination",
+        "evidence": "gunc_pg21_css",
+        "spearman_rho": 0.3713,
+        "spearman_p": 0.36520205801977806,
+        "n": 8,
+        "partial_rho_novelty_controlled": 0.4778,
+        "partial_p": 0.4157037509665969,
+        "partial_n": 8,
+        "controls": "informative_kmer_density;mean_contig_confidence_bpw;frac_profiles_detected"
+      }
+    ],
+    "novelty_association": [
+      {
+        "cohort": "disagreement_141",
+        "target": "v5_contamination",
+        "evidence": "informative_kmer_density",
+        "spearman_rho": -0.251,
+        "spearman_p": 0.002675996202404449,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "v5_contamination",
+        "evidence": "mean_contig_confidence_bpw",
+        "spearman_rho": -0.3705,
+        "spearman_p": 6.10704666421535e-06,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "v5_contamination",
+        "evidence": "frac_profiles_detected",
+        "spearman_rho": 0.1186,
+        "spearman_p": 0.16130684609133503,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "v5_contamination",
+        "evidence": "unclassified_pct",
+        "spearman_rho": -0.0144,
+        "spearman_p": 0.8658811867987664,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "checkm2_contamination",
+        "evidence": "informative_kmer_density",
+        "spearman_rho": 0.2326,
+        "spearman_p": 0.005515156220483914,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "checkm2_contamination",
+        "evidence": "mean_contig_confidence_bpw",
+        "spearman_rho": 0.3002,
+        "spearman_p": 0.00029839091620295833,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "checkm2_contamination",
+        "evidence": "frac_profiles_detected",
+        "spearman_rho": -0.0857,
+        "spearman_p": 0.3121903148358365,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "checkm2_contamination",
+        "evidence": "unclassified_pct",
+        "spearman_rho": 0.1463,
+        "spearman_p": 0.08350122731596557,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "orig_phylum_contam_pct",
+        "evidence": "informative_kmer_density",
+        "spearman_rho": -0.6046,
+        "spearman_p": 2.0432023077200055e-15,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "orig_phylum_contam_pct",
+        "evidence": "mean_contig_confidence_bpw",
+        "spearman_rho": -0.202,
+        "spearman_p": 0.016291537215121256,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "orig_phylum_contam_pct",
+        "evidence": "frac_profiles_detected",
+        "spearman_rho": -0.188,
+        "spearman_p": 0.025590078178048942,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      },
+      {
+        "cohort": "disagreement_141",
+        "target": "orig_phylum_contam_pct",
+        "evidence": "unclassified_pct",
+        "spearman_rho": 0.4921,
+        "spearman_p": 5.760703676624489e-10,
+        "n": 141,
+        "partial_rho_novelty_controlled": "",
+        "partial_p": "",
+        "partial_n": "",
+        "controls": "NONE (novelty association test)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+tool	tool_label	input_set	threads	n	wall_median_s	wall_min_s	wall_max_s	rss_median_gb	rss_max_gb	pct_cpu_median	load1_before_max	fs_inputs_max	rc_max	n_genomes	n_out_min
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	set_E_100	1	3	6.64	6.55	6.65	0.454	0.4543	97.0	1.17	0	0	100	100
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	set_E_100	1	3	6.19	6.16	6.21	0.4543	0.4543	96.0	1.21	0	0	100	100
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	set_E_100	8	3	2.73	2.7	2.73	0.4202	0.4206	371.0	1.2	8	0	100	100
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	set_E_100	8	3	2.29	2.26	2.3	0.4202	0.4203	421.0	1.71	0	0	100	100
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	set_E_100	16	3	2.47	2.46	2.51	0.4176	0.4177	590.0	1.65	0	0	100	100
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	set_E_100	16	3	2.06	2.03	2.09	0.4176	0.4177	684.0	1.68	0	0	100	100
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	set_E_100	32	3	2.5	2.46	2.5	0.4175	0.418	1095.0	1.55	0	0	100	100
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	set_E_100	32	3	2.09	2.04	2.1	0.4153	0.4177	1283.0	1.55	0	0	100	100
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	set_E_full	1	3	49.91	49.73	50.51	0.7178	0.7178	100.0	1.43	0	0	1000	1000
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	set_E_full	1	3	49.3	48.85	49.36	0.7174	0.7178	99.0	1.47	0	0	1000	1000
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	set_E_full	8	3	10.69	10.55	10.74	0.5163	0.5165	541.0	1.52	0	0	1000	1000
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	set_E_full	8	3	10.28	10.25	10.48	0.5149	0.5158	554.0	2.31	0	0	1000	1000
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	set_E_full	16	3	7.29	7.28	7.32	0.5155	0.5157	879.0	2.63	0	0	1000	1000
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	set_E_full	16	3	6.9	6.87	6.92	0.5139	0.5148	924.0	3.42	0	0	1000	1000
+magicc_v033	MAGICC v0.3.3 (released path, model SHA256 verified each run)	set_E_full	32	3	6.26	6.05	6.37	0.5152	0.5154	1500.0	3.79	0	0	1000	1000
+magicc_v033_xmodel	MAGICC v0.3.3 (explicit --model, verification bypassed)	set_E_full	32	3	5.74	5.7	5.96	0.5145	0.5149	1618.0	3.66	0	0	1000	1000

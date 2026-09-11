@@ -1,0 +1,8 @@
+{
+  "overlap_counts": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "canonicalization": "Remove RS_/GB_ and GCA_/GCF_ prefixes, include linked gcf_accession aliases, retain versions."
+}

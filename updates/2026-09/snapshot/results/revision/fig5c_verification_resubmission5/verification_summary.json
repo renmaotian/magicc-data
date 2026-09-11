@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "fasta_duplication_arms_checked": 320,
+  "fresh_magicc_inferences": 400,
+  "max_fresh_inference_difference_pp": 5.000000000165983e-05,
+  "raw_prediction_rows_checked": 7680,
+  "duplication_statistic_rows": 40,
+  "threshold_rows": 20,
+  "max_published_statistic_absolute_difference": 4.9921072673875244e-05,
+  "reference_count": 80,
+  "phylum_count": 35,
+  "true_completeness_range": [
+    58.00343955911279,
+    100.0
+  ],
+  "true_contamination_range": [
+    0.0,
+    20.0
+  ],
+  "interpretation": "Appended exact sequence redundancy; dose denominator is original assembly bp. No empirical occurrence frequency is measured."
+}

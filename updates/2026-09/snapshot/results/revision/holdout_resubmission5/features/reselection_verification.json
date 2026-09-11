@@ -1,0 +1,16 @@
+[
+  {
+    "domain": "bacterial",
+    "original_representatives": 1000,
+    "panel_free_representatives": 878,
+    "production_prevalence_max_difference": 0,
+    "number_selected": 9000
+  },
+  {
+    "domain": "archaeal",
+    "original_representatives": 1000,
+    "panel_free_representatives": 1000,
+    "production_prevalence_max_difference": 0,
+    "number_selected": 1000
+  }
+]

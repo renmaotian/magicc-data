@@ -1,0 +1,742 @@
+{
+  "causal": {
+    "phi_coherent_local": 0.6986,
+    "ci": "[0.687, 0.711]",
+    "phi_coherent_uncensored": 0.8054,
+    "implied_L_elasticity": 0.3014,
+    "phi_assembly_branch_only": 0.0565,
+    "phi_kmer_branch_only": 0.6442,
+    "n": 3996,
+    "n_clusters": 2604,
+    "source": "results/revision/real_data/reduced_genome/mitigation/intervention_phi_pooled.tsv",
+    "phi_by_size_range": [
+      0.6376,
+      0.719
+    ]
+  },
+  "matched_completeness": {
+    "regime": "true contamination <5% AND true completeness >=90%",
+    "MAGICC_beta_pp_per_SD_log10_reference": 1.1377,
+    "MAGICC_ci": "[0.508, 1.767]",
+    "MAGICC_partial_R2": 0.0364,
+    "CheckM2_beta_pp_per_SD_log10_reference": 0.2366,
+    "CheckM2_ci": "[0.131, 0.342]",
+    "CheckM2_partial_R2": 0.0107,
+    "n": 585,
+    "n_clusters": 510,
+    "unbiased_value": 0.0,
+    "source": "results/revision/real_data/reduced_genome/mitigation/mechanism_m1_matched_completeness.tsv"
+  },
+  "implied_reference_length": {
+    "subset": "true contamination <5%",
+    "rows": [
+      {
+        "reference_size_stratum": "<1 Mbp",
+        "n": 62,
+        "n_reference_clusters": 46,
+        "MAGICC_implied_over_true_mean": 1.0931,
+        "MAGICC_ci95": "[1.047, 1.144]",
+        "CheckM2_implied_over_true_mean": 0.9971,
+        "CheckM2_ci95": "[0.978, 1.017]"
+      },
+      {
+        "reference_size_stratum": "1-1.5 Mbp",
+        "n": 86,
+        "n_reference_clusters": 62,
+        "MAGICC_implied_over_true_mean": 1.0166,
+        "MAGICC_ci95": "[1.002, 1.032]",
+        "CheckM2_implied_over_true_mean": 1.0072,
+        "CheckM2_ci95": "[0.994, 1.019]"
+      },
+      {
+        "reference_size_stratum": "1.5-2 Mbp",
+        "n": 142,
+        "n_reference_clusters": 105,
+        "MAGICC_implied_over_true_mean": 1.0223,
+        "MAGICC_ci95": "[1.005, 1.045]",
+        "CheckM2_implied_over_true_mean": 0.9996,
+        "CheckM2_ci95": "[0.992, 1.008]"
+      },
+      {
+        "reference_size_stratum": "2-3 Mbp",
+        "n": 364,
+        "n_reference_clusters": 250,
+        "MAGICC_implied_over_true_mean": 0.9995,
+        "MAGICC_ci95": "[0.995, 1.005]",
+        "CheckM2_implied_over_true_mean": 0.9851,
+        "CheckM2_ci95": "[0.979, 0.991]"
+      },
+      {
+        "reference_size_stratum": "3-5 Mbp",
+        "n": 498,
+        "n_reference_clusters": 353,
+        "MAGICC_implied_over_true_mean": 1.0002,
+        "MAGICC_ci95": "[0.993, 1.008]",
+        "CheckM2_implied_over_true_mean": 0.9926,
+        "CheckM2_ci95": "[0.988, 0.997]"
+      },
+      {
+        "reference_size_stratum": ">5 Mbp",
+        "n": 414,
+        "n_reference_clusters": 296,
+        "MAGICC_implied_over_true_mean": 0.9913,
+        "MAGICC_ci95": "[0.986, 0.996]",
+        "CheckM2_implied_over_true_mean": 0.9685,
+        "CheckM2_ci95": "[0.964, 0.973]"
+      }
+    ],
+    "source": "results/revision/real_data/reduced_genome/mitigation/mechanism_m2_implied_length_by_stratum.tsv"
+  },
+  "size_vs_lineage": {
+    "joint_model_size_beta_pp_per_SD": 0.6798,
+    "joint_model_size_ci": "[0.145, 1.214]",
+    "joint_model_Patescibacteriota_beta_pp": -5.7691,
+    "joint_model_Patescibacteriota_ci": "[-11.006, -0.532]",
+    "R2_CoD": 0.1114,
+    "n": 543,
+    "n_clusters": 482,
+    "strata": [
+      {
+        "reference_size_stratum": "<1 Mbp",
+        "lineage": "Patescibacteriota",
+        "n": 23,
+        "n_reference_clusters": 20,
+        "MAGICC_comp_bias_pp": -11.004,
+        "comp_ci95": "[-17.37, -4.81]",
+        "MAGICC_cont_bias_pp": 5.625,
+        "cont_ci95": "[1.52, 9.90]"
+      },
+      {
+        "reference_size_stratum": "<1 Mbp",
+        "lineage": "other phyla",
+        "n": 12,
+        "n_reference_clusters": 9,
+        "MAGICC_comp_bias_pp": -3.179,
+        "comp_ci95": "[-9.30, -0.12]",
+        "MAGICC_cont_bias_pp": 0.95,
+        "cont_ci95": "[0.03, 1.88]"
+      },
+      {
+        "reference_size_stratum": "1-1.5 Mbp",
+        "lineage": "Patescibacteriota",
+        "n": 8,
+        "n_reference_clusters": 7,
+        "MAGICC_comp_bias_pp": -0.391,
+        "comp_ci95": "[-0.56, -0.22]",
+        "MAGICC_cont_bias_pp": 4.448,
+        "cont_ci95": "[2.18, 6.47]"
+      },
+      {
+        "reference_size_stratum": "1-1.5 Mbp",
+        "lineage": "other phyla",
+        "n": 45,
+        "n_reference_clusters": 36,
+        "MAGICC_comp_bias_pp": -0.879,
+        "comp_ci95": "[-1.79, -0.18]",
+        "MAGICC_cont_bias_pp": 0.844,
+        "cont_ci95": "[0.58, 1.16]"
+      },
+      {
+        "reference_size_stratum": "1.5-2 Mbp",
+        "lineage": "other phyla",
+        "n": 65,
+        "n_reference_clusters": 52,
+        "MAGICC_comp_bias_pp": -2.277,
+        "comp_ci95": "[-4.75, -0.50]",
+        "MAGICC_cont_bias_pp": 2.394,
+        "cont_ci95": "[0.69, 4.78]"
+      },
+      {
+        "reference_size_stratum": "2-3 Mbp",
+        "lineage": "other phyla",
+        "n": 133,
+        "n_reference_clusters": 121,
+        "MAGICC_comp_bias_pp": -1.15,
+        "comp_ci95": "[-1.86, -0.54]",
+        "MAGICC_cont_bias_pp": 0.868,
+        "cont_ci95": "[0.62, 1.17]"
+      },
+      {
+        "reference_size_stratum": "3-5 Mbp",
+        "lineage": "other phyla",
+        "n": 142,
+        "n_reference_clusters": 130,
+        "MAGICC_comp_bias_pp": -1.146,
+        "comp_ci95": "[-1.98, -0.47]",
+        "MAGICC_cont_bias_pp": 1.135,
+        "cont_ci95": "[0.64, 1.87]"
+      },
+      {
+        "reference_size_stratum": ">5 Mbp",
+        "lineage": "other phyla",
+        "n": 115,
+        "n_reference_clusters": 107,
+        "MAGICC_comp_bias_pp": -0.431,
+        "comp_ci95": "[-0.73, -0.21]",
+        "MAGICC_cont_bias_pp": 1.495,
+        "cont_ci95": "[0.80, 2.60]"
+      }
+    ],
+    "source": "results/revision/real_data/reduced_genome/mitigation/mechanism_m4_size_vs_lineage.tsv, results/revision/real_data/reduced_genome/mitigation/mechanism_m4_regression.tsv"
+  },
+  "comp_cont_coupling": {
+    "rows": [
+      {
+        "analysis": "M5_completeness_contamination_coupling",
+        "subset": "clean & near-complete, ref <2 Mbp",
+        "n": 153,
+        "n_reference_clusters": 124,
+        "spearman_rho_err_comp_vs_err_cont": -0.4918,
+        "rho_ci95": "[-0.647, -0.302]",
+        "mean_comp_error_pp": -3.15,
+        "mean_cont_error_pp": 2.418,
+        "cont_error_intercept_at_zero_comp_error_pp": 0.604,
+        "intercept_ci95": "[0.228, 0.981]",
+        "slope_cont_per_comp_error": -0.5758,
+        "R2_CoD": 0.6274
+      },
+      {
+        "analysis": "M5_completeness_contamination_coupling",
+        "subset": "clean & near-complete, ref >=2 Mbp",
+        "n": 390,
+        "n_reference_clusters": 358,
+        "spearman_rho_err_comp_vs_err_cont": -0.1879,
+        "rho_ci95": "[-0.305, -0.067]",
+        "mean_comp_error_pp": -0.936,
+        "mean_cont_error_pp": 1.15,
+        "cont_error_intercept_at_zero_comp_error_pp": 0.765,
+        "intercept_ci95": "[0.498, 1.032]",
+        "slope_cont_per_comp_error": -0.4113,
+        "R2_CoD": 0.1863
+      },
+      {
+        "analysis": "M5_completeness_contamination_coupling",
+        "subset": "clean & near-complete, ALL",
+        "n": 543,
+        "n_reference_clusters": 482,
+        "spearman_rho_err_comp_vs_err_cont": -0.2867,
+        "rho_ci95": "[-0.381, -0.188]",
+        "mean_comp_error_pp": -1.56,
+        "mean_cont_error_pp": 1.507,
+        "cont_error_intercept_at_zero_comp_error_pp": 0.686,
+        "intercept_ci95": "[0.464, 0.908]",
+        "slope_cont_per_comp_error": -0.5267,
+        "R2_CoD": 0.4372
+      }
+    ],
+    "source": "results/revision/real_data/reduced_genome/mitigation/mechanism_m5_comp_cont_coupling.tsv"
+  },
+  "summary_feature_size_correlation": {
+    "log10_total_kmer_count_r_vs_log10_assembly_bp": 0.9792,
+    "source": "results/revision/real_data/reduced_genome/mitigation/mechanism_m3_feature_size_channel.tsv"
+  },
+  "recalibration_known_lineage": {
+    "protocol": "CV-A reference-disjoint 5-fold GroupKFold, GBM, fit n=4000/fold",
+    "ALL": {
+      "n": 5000,
+      "comp_MAE_raw": 4.618,
+      "comp_MAE_recal": 4.468,
+      "comp_dMAE": -0.15,
+      "comp_dMAE_ci95": "[-0.262, -0.041]",
+      "comp_bias_raw": -0.867,
+      "comp_bias_recal": -0.087,
+      "cont_MAE_raw": 5.309,
+      "cont_MAE_recal": 4.947,
+      "cont_dMAE": -0.361,
+      "cont_dMAE_ci95": "[-0.483, -0.232]",
+      "cont_bias_raw": -1.963,
+      "cont_bias_recal": 0.071
+    },
+    "reduced_lt2Mbp": {
+      "n": 1911,
+      "comp_MAE_raw": 5.777,
+      "comp_MAE_recal": 5.649,
+      "comp_dMAE": -0.128,
+      "comp_dMAE_ci95": "[-0.386, 0.120]",
+      "comp_bias_raw": -1.955,
+      "comp_bias_recal": -0.524,
+      "cont_MAE_raw": 7.584,
+      "cont_MAE_recal": 6.949,
+      "cont_dMAE": -0.635,
+      "cont_bias_raw": -3.432,
+      "cont_bias_recal": -0.457
+    },
+    "normal_ge2Mbp": {
+      "n": 3089,
+      "comp_MAE_raw": 3.901,
+      "comp_MAE_recal": 3.737,
+      "comp_dMAE": -0.164,
+      "comp_dMAE_ci95": "[-0.257, -0.074]",
+      "comp_bias_raw": -0.194,
+      "comp_bias_recal": 0.183,
+      "cont_MAE_raw": 3.901,
+      "cont_MAE_recal": 3.709,
+      "cont_dMAE": -0.192
+    },
+    "ANCHOR_setC_clean_HQ": {
+      "n": 30,
+      "n_reference_clusters": 25,
+      "comp_MAE_raw": 9.382,
+      "comp_MAE_recal": 6.307,
+      "comp_dMAE": -3.074,
+      "comp_dMAE_ci95": "[-5.190, -1.077]",
+      "comp_bias_raw": -8.677,
+      "comp_bias_recal": -5.659,
+      "cont_bias_raw": 5.091,
+      "cont_bias_recal": 5.535,
+      "cont_dMAE": 0.281,
+      "cont_dMAE_ci95": "[-0.111, 0.673]"
+    },
+    "degraded_strata_CI_excludes_zero": [
+      {
+        "stratum": "ref 2-3 Mbp",
+        "n": 995,
+        "comp_MAE_raw": 3.534,
+        "comp_MAE_recal": 3.726,
+        "comp_dMAE": 0.191,
+        "comp_dMAE_ci95": "[0.070, 0.309]"
+      },
+      {
+        "stratum": "set:set_D_clean",
+        "n": 1000,
+        "comp_MAE_raw": 5.633,
+        "comp_MAE_recal": 5.9,
+        "comp_dMAE": 0.267,
+        "comp_dMAE_ci95": "[0.067, 0.459]"
+      },
+      {
+        "stratum": "phylum:Bacillota",
+        "n": 618,
+        "comp_MAE_raw": 2.494,
+        "comp_MAE_recal": 2.763,
+        "comp_dMAE": 0.269,
+        "comp_dMAE_ci95": "[0.131, 0.413]"
+      },
+      {
+        "stratum": "phylum:Campylobacterota",
+        "n": 160,
+        "comp_MAE_raw": 2.13,
+        "comp_MAE_recal": 2.355,
+        "comp_dMAE": 0.225,
+        "comp_dMAE_ci95": "[0.009, 0.441]"
+      },
+      {
+        "stratum": "phylum:Thermoplasmatota",
+        "n": 78,
+        "comp_MAE_raw": 3.483,
+        "comp_MAE_recal": 4.317,
+        "comp_dMAE": 0.834,
+        "comp_dMAE_ci95": "[0.280, 1.379]"
+      }
+    ],
+    "source": "results/revision/real_data/reduced_genome/mitigation/recalibration_cv_results.tsv"
+  },
+  "recalibration_phylum_disjoint": {
+    "ALL": {
+      "n": 4888,
+      "comp_MAE_raw": 4.544,
+      "comp_MAE_recal": 4.565,
+      "comp_dMAE": 0.021,
+      "comp_dMAE_ci95": "[-0.065, 0.110]",
+      "cont_dMAE": -0.299,
+      "cont_dMAE_ci95": "[-0.439, -0.154]"
+    },
+    "reduced_lt2Mbp": {
+      "n": 1898,
+      "comp_dMAE": 0.039,
+      "comp_dMAE_ci95": "[-0.137, 0.209]",
+      "comp_bias_raw": -1.909,
+      "comp_bias_recal": -1.236
+    }
+  },
+  "recalibration_set_disjoint": {
+    "ALL": {
+      "n": 5000,
+      "comp_dMAE": 0.442,
+      "comp_dMAE_ci95": "[0.334, 0.549]"
+    },
+    "normal_ge2Mbp": {
+      "n": 3089,
+      "comp_dMAE": 0.708,
+      "comp_dMAE_ci95": "[0.582, 0.839]"
+    }
+  },
+  "false_fail_5pct_setC_clean": [
+    {
+      "protocol": "CV-A reference-disjoint [linear]",
+      "set": "set_C_clean",
+      "false_fail_raw": 0.4423,
+      "false_fail_recal": 0.4423,
+      "n_truly_clean": 52
+    },
+    {
+      "protocol": "CV-C set-disjoint [linear]",
+      "set": "set_C_clean",
+      "false_fail_raw": 0.4423,
+      "false_fail_recal": 0.5192,
+      "n_truly_clean": 52
+    },
+    {
+      "protocol": "CV-A reference-disjoint [gbm]",
+      "set": "set_C_clean",
+      "false_fail_raw": 0.4423,
+      "false_fail_recal": 0.4423,
+      "n_truly_clean": 52
+    },
+    {
+      "protocol": "CV-C set-disjoint [gbm]",
+      "set": "set_C_clean",
+      "false_fail_raw": 0.4423,
+      "false_fail_recal": 0.4423,
+      "n_truly_clean": 52
+    }
+  ],
+  "false_fail_cvA_gbm": {
+    "protocol": "CV-A reference-disjoint [gbm]",
+    "set": "set_C_clean",
+    "false_fail_raw": 0.4423,
+    "false_fail_recal": 0.4423,
+    "n_truly_clean": 52
+  },
+  "ceiling_best_case_known_lineage": [
+    {
+      "stratum": "ALL",
+      "n": 5000,
+      "comp_MAE_raw": 4.618,
+      "comp_MAE_recal": 4.991,
+      "comp_dMAE": 0.373,
+      "comp_dMAE_ci95": "[0.279, 0.465]",
+      "comp_bias_raw": -0.867,
+      "comp_bias_recal": -0.849,
+      "cont_MAE_raw": 5.309,
+      "cont_MAE_recal": 5.44,
+      "cont_dMAE": 0.131
+    },
+    {
+      "stratum": "normal (>=2 Mbp)",
+      "n": 3089,
+      "comp_MAE_raw": 3.901,
+      "comp_MAE_recal": 4.323,
+      "comp_dMAE": 0.422,
+      "comp_dMAE_ci95": "[0.378, 0.467]",
+      "comp_bias_raw": -0.194,
+      "comp_bias_recal": -0.857,
+      "cont_MAE_raw": 3.901,
+      "cont_MAE_recal": 4.082,
+      "cont_dMAE": 0.181
+    },
+    {
+      "stratum": "reduced (<2 Mbp)",
+      "n": 1911,
+      "comp_MAE_raw": 5.777,
+      "comp_MAE_recal": 6.07,
+      "comp_dMAE": 0.293,
+      "comp_dMAE_ci95": "[0.056, 0.514]",
+      "comp_bias_raw": -1.955,
+      "comp_bias_recal": -0.838,
+      "cont_MAE_raw": 7.584,
+      "cont_MAE_recal": 7.635,
+      "cont_dMAE": 0.051
+    },
+    {
+      "stratum": "ANCHOR set_C_clean clean+HQ",
+      "n": 30,
+      "comp_MAE_raw": 9.382,
+      "comp_MAE_recal": 8.342,
+      "comp_dMAE": -1.04,
+      "comp_dMAE_ci95": "[-2.139, 0.105]",
+      "comp_bias_raw": -8.677,
+      "comp_bias_recal": -7.76,
+      "cont_MAE_raw": 5.954,
+      "cont_MAE_recal": 6.926,
+      "cont_dMAE": 0.971
+    }
+  ],
+  "ceiling_novel_transfer": [
+    {
+      "stratum": "group:Bacteroidota",
+      "n": 1000,
+      "comp_MAE_raw": 13.443,
+      "comp_MAE_recal": 12.975,
+      "comp_dMAE": -0.468,
+      "comp_dMAE_ci95": "[-0.634, -0.304]",
+      "comp_bias_raw": -0.559,
+      "comp_bias_recal": -0.946,
+      "cont_MAE_raw": 15.856,
+      "cont_MAE_recal": 16.079,
+      "cont_dMAE": 0.224
+    },
+    {
+      "stratum": "group:Bacteroidota_A",
+      "n": 990,
+      "comp_MAE_raw": 12.451,
+      "comp_MAE_recal": 12.447,
+      "comp_dMAE": -0.004,
+      "comp_dMAE_ci95": "[-0.168, 0.152]",
+      "comp_bias_raw": -1.132,
+      "comp_bias_recal": -1.819,
+      "cont_MAE_raw": 14.3,
+      "cont_MAE_recal": 14.613,
+      "cont_dMAE": 0.314
+    },
+    {
+      "stratum": "group:Campylobacterota",
+      "n": 1000,
+      "comp_MAE_raw": 6.582,
+      "comp_MAE_recal": 6.994,
+      "comp_dMAE": 0.412,
+      "comp_dMAE_ci95": "[0.303, 0.519]",
+      "comp_bias_raw": 0.741,
+      "comp_bias_recal": 1.317,
+      "cont_MAE_raw": 12.283,
+      "cont_MAE_recal": 10.654,
+      "cont_dMAE": -1.629
+    },
+    {
+      "stratum": "group:DPANN",
+      "n": 996,
+      "comp_MAE_raw": 23.947,
+      "comp_MAE_recal": 21.197,
+      "comp_dMAE": -2.75,
+      "comp_dMAE_ci95": "[-3.021, -2.479]",
+      "comp_bias_raw": -23.646,
+      "comp_bias_recal": -20.443,
+      "cont_MAE_raw": 18.407,
+      "cont_MAE_recal": 17.645,
+      "cont_dMAE": -0.761
+    },
+    {
+      "stratum": "group:Halobacteriota",
+      "n": 1008,
+      "comp_MAE_raw": 10.839,
+      "comp_MAE_recal": 10.636,
+      "comp_dMAE": -0.202,
+      "comp_dMAE_ci95": "[-0.397, -0.010]",
+      "comp_bias_raw": -0.735,
+      "comp_bias_recal": -0.937,
+      "cont_MAE_raw": 12.281,
+      "cont_MAE_recal": 12.778,
+      "cont_dMAE": 0.496
+    },
+    {
+      "stratum": "group:Patescibacteriota",
+      "n": 1000,
+      "comp_MAE_raw": 30.015,
+      "comp_MAE_recal": 25.939,
+      "comp_dMAE": -4.076,
+      "comp_dMAE_ci95": "[-4.303, -3.842]",
+      "comp_bias_raw": -30.0,
+      "comp_bias_recal": -25.504,
+      "cont_MAE_raw": 20.752,
+      "cont_MAE_recal": 20.129,
+      "cont_dMAE": -0.623
+    },
+    {
+      "stratum": "group:in_distribution",
+      "n": 1000,
+      "comp_MAE_raw": 6.196,
+      "comp_MAE_recal": 6.138,
+      "comp_dMAE": -0.057,
+      "comp_dMAE_ci95": "[-0.207, 0.092]",
+      "comp_bias_raw": 0.789,
+      "comp_bias_recal": 0.382,
+      "cont_MAE_raw": 6.973,
+      "cont_MAE_recal": 6.82,
+      "cont_dMAE": -0.154
+    }
+  ],
+  "ceiling_oracle_within_lineage": [
+    {
+      "stratum": "group:Bacteroidota",
+      "n": 1000,
+      "comp_MAE_raw": 13.443,
+      "comp_MAE_recal": 10.704,
+      "comp_dMAE": -2.739,
+      "comp_dMAE_ci95": "[-3.558, -1.901]",
+      "comp_bias_raw": -0.559,
+      "comp_bias_recal": -0.176,
+      "cont_MAE_raw": 15.856,
+      "cont_MAE_recal": 12.871,
+      "cont_dMAE": -2.985
+    },
+    {
+      "stratum": "group:Bacteroidota_A",
+      "n": 990,
+      "comp_MAE_raw": 12.451,
+      "comp_MAE_recal": 9.658,
+      "comp_dMAE": -2.793,
+      "comp_dMAE_ci95": "[-3.684, -1.900]",
+      "comp_bias_raw": -1.132,
+      "comp_bias_recal": -0.165,
+      "cont_MAE_raw": 14.3,
+      "cont_MAE_recal": 11.281,
+      "cont_dMAE": -3.019
+    },
+    {
+      "stratum": "group:Campylobacterota",
+      "n": 1000,
+      "comp_MAE_raw": 6.582,
+      "comp_MAE_recal": 5.931,
+      "comp_dMAE": -0.65,
+      "comp_dMAE_ci95": "[-0.986, -0.315]",
+      "comp_bias_raw": 0.741,
+      "comp_bias_recal": 0.01,
+      "cont_MAE_raw": 12.283,
+      "cont_MAE_recal": 6.662,
+      "cont_dMAE": -5.622
+    },
+    {
+      "stratum": "group:DPANN",
+      "n": 996,
+      "comp_MAE_raw": 23.947,
+      "comp_MAE_recal": 11.693,
+      "comp_dMAE": -12.254,
+      "comp_dMAE_ci95": "[-13.850, -10.522]",
+      "comp_bias_raw": -23.646,
+      "comp_bias_recal": -0.542,
+      "cont_MAE_raw": 18.407,
+      "cont_MAE_recal": 12.224,
+      "cont_dMAE": -6.182
+    },
+    {
+      "stratum": "group:Halobacteriota",
+      "n": 1008,
+      "comp_MAE_raw": 10.839,
+      "comp_MAE_recal": 9.94,
+      "comp_dMAE": -0.899,
+      "comp_dMAE_ci95": "[-1.521, -0.244]",
+      "comp_bias_raw": -0.735,
+      "comp_bias_recal": -0.122,
+      "cont_MAE_raw": 12.281,
+      "cont_MAE_recal": 10.511,
+      "cont_dMAE": -1.771
+    },
+    {
+      "stratum": "group:Patescibacteriota",
+      "n": 1000,
+      "comp_MAE_raw": 30.015,
+      "comp_MAE_recal": 11.671,
+      "comp_dMAE": -18.344,
+      "comp_dMAE_ci95": "[-19.582, -17.120]",
+      "comp_bias_raw": -30.0,
+      "comp_bias_recal": -0.268,
+      "cont_MAE_raw": 20.752,
+      "cont_MAE_recal": 14.226,
+      "cont_dMAE": -6.526
+    },
+    {
+      "stratum": "group:in_distribution",
+      "n": 1000,
+      "comp_MAE_raw": 6.196,
+      "comp_MAE_recal": 6.543,
+      "comp_dMAE": 0.348,
+      "comp_dMAE_ci95": "[0.099, 0.593]",
+      "comp_bias_raw": 0.789,
+      "comp_bias_recal": -0.085,
+      "cont_MAE_raw": 6.973,
+      "cont_MAE_recal": 7.185,
+      "cont_dMAE": 0.212
+    }
+  ],
+  "novel_lineage_bias_removed": [
+    {
+      "group": "group:Bacteroidota",
+      "n": 1000,
+      "raw_comp_bias_pp": -0.559,
+      "raw_comp_MAE": 13.443,
+      "transfer_comp_MAE": 12.975,
+      "oracle_comp_MAE": 10.704,
+      "transfer_removes_pp": -0.387,
+      "transfer_removes_pct": -69.2,
+      "oracle_removes_pp": 0.383,
+      "oracle_removes_pct": 68.5
+    },
+    {
+      "group": "group:Bacteroidota_A",
+      "n": 990,
+      "raw_comp_bias_pp": -1.132,
+      "raw_comp_MAE": 12.451,
+      "transfer_comp_MAE": 12.447,
+      "oracle_comp_MAE": 9.658,
+      "transfer_removes_pp": -0.687,
+      "transfer_removes_pct": -60.7,
+      "oracle_removes_pp": 0.967,
+      "oracle_removes_pct": 85.4
+    },
+    {
+      "group": "group:Campylobacterota",
+      "n": 1000,
+      "raw_comp_bias_pp": 0.741,
+      "raw_comp_MAE": 6.582,
+      "transfer_comp_MAE": 6.994,
+      "oracle_comp_MAE": 5.931,
+      "transfer_removes_pp": -0.576,
+      "transfer_removes_pct": -77.7,
+      "oracle_removes_pp": 0.731,
+      "oracle_removes_pct": 98.7
+    },
+    {
+      "group": "group:DPANN",
+      "n": 996,
+      "raw_comp_bias_pp": -23.646,
+      "raw_comp_MAE": 23.947,
+      "transfer_comp_MAE": 21.197,
+      "oracle_comp_MAE": 11.693,
+      "transfer_removes_pp": 3.203,
+      "transfer_removes_pct": 13.5,
+      "oracle_removes_pp": 23.104,
+      "oracle_removes_pct": 97.7
+    },
+    {
+      "group": "group:Halobacteriota",
+      "n": 1008,
+      "raw_comp_bias_pp": -0.735,
+      "raw_comp_MAE": 10.839,
+      "transfer_comp_MAE": 10.636,
+      "oracle_comp_MAE": 9.94,
+      "transfer_removes_pp": -0.202,
+      "transfer_removes_pct": -27.5,
+      "oracle_removes_pp": 0.613,
+      "oracle_removes_pct": 83.4
+    },
+    {
+      "group": "group:Patescibacteriota",
+      "n": 1000,
+      "raw_comp_bias_pp": -30.0,
+      "raw_comp_MAE": 30.015,
+      "transfer_comp_MAE": 25.939,
+      "oracle_comp_MAE": 11.671,
+      "transfer_removes_pp": 4.496,
+      "transfer_removes_pct": 15.0,
+      "oracle_removes_pp": 29.732,
+      "oracle_removes_pct": 99.1
+    },
+    {
+      "group": "group:in_distribution",
+      "n": 1000,
+      "raw_comp_bias_pp": 0.789,
+      "raw_comp_MAE": 6.196,
+      "transfer_comp_MAE": 6.138,
+      "oracle_comp_MAE": 6.543,
+      "transfer_removes_pp": 0.407,
+      "transfer_removes_pct": 51.6,
+      "oracle_removes_pp": 0.704,
+      "oracle_removes_pct": 89.2
+    }
+  ],
+  "ceiling_fit_corpora": {
+    "fitA": {
+      "n": 48784,
+      "refs": 9706,
+      "pct_ref_lt_1Mbp": 0.09816743194489996,
+      "pct_ref_lt_2Mbp": 0.38504427681206954
+    },
+    "fitB": {
+      "n": 47015,
+      "refs": 7901,
+      "pct_ref_lt_1Mbp": 0.032776773370201,
+      "pct_ref_lt_2Mbp": 0.3619057747527385,
+      "panel_phyla_present": 0
+    }
+  }
+}

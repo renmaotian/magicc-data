@@ -1,0 +1,79 @@
+set	power_stratum	n_paired	metric	unit	progenomes_2.1	gtdb_95	delta_gtdb95_minus_progenomes	delta_ci_lo	delta_ci_hi
+set_C_clean	all_paired	1000	fraction powered	proportion	0.681	0.88	0.199	0.156	0.248
+set_C_clean	all_paired	1000	fraction hard-unpowered (CSS forcibly zeroed)	proportion	0.001	0.0	-0.001	-0.003	0.0
+set_C_clean	all_paired	1000	median reference_representation_score	score	0.56	0.64	0.08	0.06	0.1001
+set_C_clean	all_paired	1000	median genes_retained_index	index	0.74	0.83	0.09	0.07	0.11
+set_C_clean	all_paired	1000	median mean AA hit identity	identity	0.77	0.8	0.03	0.02	0.05
+set_C_clean	all_paired	1000	median n_genes_mapped	genes	992.5	1021.5	29.0	15.5	37.5
+set_C_clean	all_paired	1000	overall GUNC fail rate	proportion	0.862	0.969	0.107	0.072	0.145
+set_C_clean	all_paired	1000	median CSS	score	0.8	1.0	0.2	0.14	0.25
+set_C_clean	all_paired	1000	Spearman CSS vs true contamination	rho	0.3209	0.2002	-0.1207	-0.2055	-0.0411
+set_C_clean	all_paired	1000	detection sensitivity at >=5 % contamination	proportion	0.8998	0.9989	0.0992	0.0667	0.1354
+set_C_clean	all_paired	1000	detection specificity at >=5 % contamination	proportion	0.8269	0.5769	-0.25	-0.3833	-0.1064
+set_C_clean	all_paired	1000	detection sensitivity at >=10 % contamination	proportion	0.9233	1.0	0.0767	0.0457	0.1099
+set_C_clean	all_paired	1000	detection specificity at >=10 % contamination	proportion	0.69	0.31	-0.38	-0.4952	-0.2735
+set_C_clean	powered_both_dbs	663	fraction powered	proportion	1.0	1.0	0.0	0.0	0.0
+set_C_clean	powered_both_dbs	663	fraction hard-unpowered (CSS forcibly zeroed)	proportion	0.0	0.0	0.0	0.0	0.0
+set_C_clean	powered_both_dbs	663	median reference_representation_score	score	0.62	0.69	0.07	0.05	0.09
+set_C_clean	powered_both_dbs	663	median genes_retained_index	index	0.79	0.86	0.07	0.06	0.1
+set_C_clean	powered_both_dbs	663	median mean AA hit identity	identity	0.81	0.83	0.02	0.01	0.03
+set_C_clean	powered_both_dbs	663	median n_genes_mapped	genes	1063.0	1079.0	16.0	10.0	34.0
+set_C_clean	powered_both_dbs	663	overall GUNC fail rate	proportion	0.9563	0.9864	0.0302	0.0138	0.0478
+set_C_clean	powered_both_dbs	663	median CSS	score	0.88	1.0	0.12	0.03	0.165
+set_C_clean	powered_both_dbs	663	Spearman CSS vs true contamination	rho	0.0554	-0.0086	-0.064	-0.1723	0.0288
+set_C_clean	powered_both_dbs	663	detection sensitivity at >=5 % contamination	proportion	0.9707	0.9985	0.0277	0.013	0.0462
+set_C_clean	powered_both_dbs	663	detection specificity at >=5 % contamination	proportion	0.7143	0.5714	-0.1429	-0.375	0.0
+set_C_clean	powered_both_dbs	663	detection sensitivity at >=10 % contamination	proportion	0.9763	1.0	0.0237	0.0096	0.0402
+set_C_clean	powered_both_dbs	663	detection specificity at >=10 % contamination	proportion	0.4516	0.2903	-0.1613	-0.3636	0.0294
+set_D_clean	all_paired	1000	fraction powered	proportion	0.945	0.974	0.029	0.01	0.054
+set_D_clean	all_paired	1000	fraction hard-unpowered (CSS forcibly zeroed)	proportion	0.0	0.001	0.001	0.0	0.003
+set_D_clean	all_paired	1000	median reference_representation_score	score	0.84	0.92	0.08	0.06	0.11
+set_D_clean	all_paired	1000	median genes_retained_index	index	0.94	0.97	0.03	0.02	0.03
+set_D_clean	all_paired	1000	median mean AA hit identity	identity	0.89	0.95	0.06	0.04	0.08
+set_D_clean	all_paired	1000	median n_genes_mapped	genes	2469.5	2515.5	46.0	19.0	63.5
+set_D_clean	all_paired	1000	overall GUNC fail rate	proportion	0.971	0.978	0.007	0.0	0.015
+set_D_clean	all_paired	1000	median CSS	score	1.0	1.0	0.0	0.0	0.0
+set_D_clean	all_paired	1000	Spearman CSS vs true contamination	rho	0.1028	0.199	0.0962	0.0322	0.1619
+set_D_clean	all_paired	1000	detection sensitivity at >=5 % contamination	proportion	0.9936	1.0	0.0064	0.0011	0.0138
+set_D_clean	all_paired	1000	detection specificity at >=5 % contamination	proportion	0.371	0.3548	-0.0161	-0.087	0.0536
+set_D_clean	all_paired	1000	detection sensitivity at >=10 % contamination	proportion	0.9966	1.0	0.0034	0.0	0.0079
+set_D_clean	all_paired	1000	detection specificity at >=10 % contamination	proportion	0.2301	0.1947	-0.0354	-0.0952	0.0172
+set_D_clean	powered_both_dbs	943	fraction powered	proportion	1.0	1.0	0.0	0.0	0.0
+set_D_clean	powered_both_dbs	943	fraction hard-unpowered (CSS forcibly zeroed)	proportion	0.0	0.0	0.0	0.0	0.0
+set_D_clean	powered_both_dbs	943	median reference_representation_score	score	0.85	0.92	0.07	0.05	0.1
+set_D_clean	powered_both_dbs	943	median genes_retained_index	index	0.95	0.97	0.02	0.02	0.03
+set_D_clean	powered_both_dbs	943	median mean AA hit identity	identity	0.9	0.95	0.05	0.03	0.08
+set_D_clean	powered_both_dbs	943	median n_genes_mapped	genes	2523.0	2566.0	43.0	17.0	64.0
+set_D_clean	powered_both_dbs	943	overall GUNC fail rate	proportion	0.982	0.9809	-0.0011	-0.0052	0.0021
+set_D_clean	powered_both_dbs	943	median CSS	score	1.0	1.0	0.0	0.0	0.0
+set_D_clean	powered_both_dbs	943	Spearman CSS vs true contamination	rho	0.0627	0.141	0.0782	-0.0009	0.1574
+set_D_clean	powered_both_dbs	943	detection sensitivity at >=5 % contamination	proportion	1.0	1.0	0.0	0.0	0.0
+set_D_clean	powered_both_dbs	943	detection specificity at >=5 % contamination	proportion	0.3036	0.3214	0.0179	-0.0392	0.0862
+set_D_clean	powered_both_dbs	943	detection sensitivity at >=10 % contamination	proportion	1.0	1.0	0.0	0.0	0.0
+set_D_clean	powered_both_dbs	943	detection specificity at >=10 % contamination	proportion	0.165	0.1748	0.0097	-0.0211	0.0455
+set_E	all_paired	1000	fraction powered	proportion	0.986	0.992	0.006	0.001	0.0119
+set_E	all_paired	1000	fraction hard-unpowered (CSS forcibly zeroed)	proportion	0.0	0.0	0.0	0.0	0.0
+set_E	all_paired	1000	median reference_representation_score	score	0.9	0.94	0.04	0.03	0.05
+set_E	all_paired	1000	median genes_retained_index	index	0.96	0.97	0.01	0.01	0.02
+set_E	all_paired	1000	median mean AA hit identity	identity	0.95	0.97	0.02	0.02	0.02
+set_E	all_paired	1000	median n_genes_mapped	genes	4011.5	4043.5	32.0	15.4875	76.0
+set_E	all_paired	1000	overall GUNC fail rate	proportion	0.761	0.772	0.011	0.002	0.0206
+set_E	all_paired	1000	median CSS	score	1.0	1.0	0.0	0.0	0.01
+set_E	all_paired	1000	Spearman CSS vs true contamination	rho	0.5591	0.6222	0.0631	0.0374	0.0902
+set_E	all_paired	1000	detection sensitivity at >=5 % contamination	proportion	0.9599	0.9733	0.0134	0.0057	0.0223
+set_E	all_paired	1000	detection specificity at >=5 % contamination	proportion	0.8294	0.8254	-0.004	-0.0321	0.0241
+set_E	all_paired	1000	detection sensitivity at >=10 % contamination	proportion	0.9597	0.9722	0.0125	0.0055	0.021
+set_E	all_paired	1000	detection specificity at >=10 % contamination	proportion	0.7473	0.7402	-0.0071	-0.0344	0.0175
+set_E	powered_both_dbs	986	fraction powered	proportion	1.0	1.0	0.0	0.0	0.0
+set_E	powered_both_dbs	986	fraction hard-unpowered (CSS forcibly zeroed)	proportion	0.0	0.0	0.0	0.0	0.0
+set_E	powered_both_dbs	986	median reference_representation_score	score	0.9	0.94	0.04	0.03	0.05
+set_E	powered_both_dbs	986	median genes_retained_index	index	0.96	0.97	0.01	0.01	0.02
+set_E	powered_both_dbs	986	median mean AA hit identity	identity	0.95	0.97	0.02	0.02	0.02
+set_E	powered_both_dbs	986	median n_genes_mapped	genes	4043.0	4091.0	48.0	13.0	72.0
+set_E	powered_both_dbs	986	overall GUNC fail rate	proportion	0.7667	0.7769	0.0101	0.001	0.0202
+set_E	powered_both_dbs	986	median CSS	score	1.0	1.0	0.0	0.0	0.0051
+set_E	powered_both_dbs	986	Spearman CSS vs true contamination	rho	0.5504	0.6154	0.0649	0.0371	0.0941
+set_E	powered_both_dbs	986	detection sensitivity at >=5 % contamination	proportion	0.9623	0.9744	0.0121	0.0043	0.0205
+set_E	powered_both_dbs	986	detection specificity at >=5 % contamination	proportion	0.8279	0.8238	-0.0041	-0.0333	0.0273
+set_E	powered_both_dbs	986	detection sensitivity at >=10 % contamination	proportion	0.9621	0.9734	0.0112	0.0042	0.0196
+set_E	powered_both_dbs	986	detection specificity at >=10 % contamination	proportion	0.7436	0.7363	-0.0073	-0.0349	0.0195

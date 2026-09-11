@@ -1,0 +1,10 @@
+cohort	tool	n_attempted	n_scored	n_unscored	n_species	n_cocopye_stage2
+primary_accession_overlap_screened	magicc	913	913	0	124	
+primary_accession_overlap_screened	checkm2	913	913	0	124	
+primary_accession_overlap_screened	cocopye	913	913	0	124	13.0
+all_valid_pairs_sensitivity	magicc	1096	1096	0	164	
+all_valid_pairs_sensitivity	checkm2	1096	1096	0	164	
+all_valid_pairs_sensitivity	cocopye	1096	1096	0	164	13.0
+species_absent_sensitivity	magicc	106	106	0	62	
+species_absent_sensitivity	checkm2	106	106	0	62	
+species_absent_sensitivity	cocopye	106	106	0	62	1.0

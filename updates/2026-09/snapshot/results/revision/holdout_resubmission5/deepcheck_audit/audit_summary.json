@@ -1,0 +1,27 @@
+{
+  "status": "BOUNDED_AUDIT_PASSED",
+  "upstream_commit": "8453a31c3aeb6282fae246cd67245225d2c9ee5e",
+  "n_benchmark_sets": 10,
+  "n_feature_pickle_files": 48,
+  "n_feature_rows_schema_checked": 11820,
+  "n_inference_probe_rows": 8,
+  "scaler_scale_and_min_exact_match": true,
+  "manual_scaling_exactly_equals_original_affine_transform": true,
+  "original_scaler_had_clip_attribute": false,
+  "upstream_and_project_heads_bitwise_equal": true,
+  "upstream_and_timing_wrapper_heads_bitwise_equal": true,
+  "head_assignment_evidence": {
+    "upstream_model": "model.py:110-112 names fc1 x_comp and fc2 x_cont; both have checkpoint tensors",
+    "upstream_training": "train.py:34-35 scales completeness/contamination labels by 100; 129-134 assigns first/second returned heads to corresponding losses",
+    "upstream_notebook": "evaluating macro genome assemblies!.ipynb expects outputs_comp, outputs_cont and multiplies each by 100",
+    "checkpoint_loaded_strictly": true,
+    "fc2_weight_sha256": "46371631010f43e4e12e5a9cd8e1a81bb2edf39d02e460f4daab9f5374bac5d8",
+    "fc2_bias_sha256": "66d95e46719b2de7688cb085b658cbde8af86f315d29b8a2f8b25d258e4d5aca",
+    "limit": "Source/checkpoint compatibility and numerical replay establish the intended published head; the original training execution history is not independently reconstructed."
+  },
+  "maximum_absolute_archive_replay_difference_pp": 6.103515625e-05,
+  "output_processing": "Unbounded linear fc1 completeness/fc2 contamination heads; multiply by 100, with no clipping or further inverse scaling.",
+  "compatibility_adaptations": "Expose already-computed fc2 return; retain all 21241 named CheckM2 features for scaler (official read_feature incorrectly drops two nonexistent label columns); use exact affine scaler parameters to avoid old sklearn pickle compatibility.",
+  "full_inference_rerun": false,
+  "benchmark_prediction_files_modified": false
+}

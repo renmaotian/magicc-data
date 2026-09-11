@@ -1,0 +1,17 @@
+dataset	binset	tool	n_reference_screened_in_domain_above_floor	n_prediction_rows	n_no_prediction_row	n_stage1_unscored	n_other_nonfinite	n_finite	n_pairwise	n_four_tool_common	n_pairwise_only	row_availability_scope
+marine	gold	MAGICC_V5	1571	1571	0	0	0	1571	339	339	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+marine	gold	CheckM2	1571	339	1232	0	0	339	339	339	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+marine	gold	CoCoPyE	1571	339	1232	0	0	339	339	339	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+marine	gold	DeepCheck	1571	339	1232	0	0	339	339	339	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+marine	mixed	MAGICC_V5	864	864	0	0	0	864	864	864	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+marine	mixed	CheckM2	864	864	0	0	0	864	864	864	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+marine	mixed	CoCoPyE	864	864	0	0	0	864	864	864	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+marine	mixed	DeepCheck	864	864	0	0	0	864	864	864	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+strain_madness	gold	MAGICC_V5	1107	1107	0	0	0	1107	700	700	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+strain_madness	gold	CheckM2	1107	700	407	0	0	700	700	700	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+strain_madness	gold	CoCoPyE	1107	700	407	0	0	700	700	700	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+strain_madness	gold	DeepCheck	1107	700	407	0	0	700	700	700	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+strain_madness	mixed	MAGICC_V5	2250	2250	0	0	0	2250	2250	2250	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+strain_madness	mixed	CheckM2	2250	2250	0	0	0	2250	2250	2250	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+strain_madness	mixed	CoCoPyE	2250	2250	0	0	0	2250	2250	2250	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.
+strain_madness	mixed	DeepCheck	2250	2250	0	0	0	2250	2250	2250	0	No prediction row combines bins not selected for that comparator with any missing outputs; execution attempts are not inferred.

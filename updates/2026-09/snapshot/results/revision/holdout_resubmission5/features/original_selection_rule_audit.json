@@ -1,0 +1,9 @@
+{
+  "reproduced_original_union_features": 9249,
+  "original_features": 9249,
+  "intersection": 9249,
+  "original_only": 0,
+  "recount_only": 0,
+  "original_selection_exactly_reproduced": true,
+  "method": "Reapply prevalence-descending/canonical-code-ascending tie break to independently verified original prevalence tables."
+}

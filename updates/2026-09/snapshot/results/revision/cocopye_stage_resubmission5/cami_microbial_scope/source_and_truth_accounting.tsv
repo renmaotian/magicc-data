@@ -1,0 +1,13 @@
+dataset	table	n_sources	n_overlap_sources	n_no_detected_overlap_sources	n_truth_rows	n_below50	fraction_below50
+marine	historical_source_audit	864.0	340.0	524.0			
+marine	microbial_source_audit	776.0	340.0	436.0			
+marine	gold_historical_all_truth				6359.0	2139.0	0.33637364365466266
+marine	gold_microbial_truth				4694.0	2062.0	0.4392841925862804
+marine	mixed_historical_all_truth				2201.0	0.0	0.0
+marine	mixed_microbial_truth				1995.0	0.0	0.0
+strain_madness	historical_source_audit	408.0	0.0	408.0			
+strain_madness	microbial_source_audit	408.0	0.0	408.0			
+strain_madness	gold_historical_all_truth				4064.0	2957.0	0.7276082677165354
+strain_madness	gold_microbial_truth				4064.0	2957.0	0.7276082677165354
+strain_madness	mixed_historical_all_truth				2250.0	0.0	0.0
+strain_madness	mixed_microbial_truth				2250.0	0.0	0.0

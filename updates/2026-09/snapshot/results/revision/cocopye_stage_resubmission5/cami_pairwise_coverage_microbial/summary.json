@@ -1,0 +1,40 @@
+{
+  "status": "CAMI_PAIRWISE_COVERAGE_COMPLETE",
+  "purpose": "Post-audit scoring-coverage sensitivity; does not replace the fixed four-tool primary cohort.",
+  "cohort": "Reference overlap screened, true completeness >=50%, true contamination <=true completeness; pairwise MAGICC/CheckM2 finite in both outputs. No CoCoPyE availability requirement in the pairwise cohort.",
+  "uncertainty": "2000 paired dominant-source-reference cluster resamples; same draws for both tools and outputs. Percentile95% intervals; sample-weighted MAE/bias within each dataset/binset. No new significance designation or multiplicity-selected claim.",
+  "prediction_verification": "All MAGICC/CheckM2 predictions and truth values exactly match historical rows; changes between common and pairwise cohorts arise only from membership.",
+  "normalization": "Reference overlap screening does not remove the disclosed historical unsupervised preprocessing overlap.",
+  "input_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_long_predictions.tsv",
+      "sha256": "8ab6aced61905404f45c4b0149ff8e3015ba09d73ef6ff4347e0882240b18b4c"
+    },
+    {
+      "path": "results/revision/cami2/analysis/cami2_long_predictions.tsv",
+      "sha256": "d566f0cb84a8c3115dfdf17acf3feb1c51e35d244c1e917e9298081f2c0830fe"
+    },
+    {
+      "path": "scripts/266_cami_pairwise_coverage_sensitivity.py",
+      "sha256": "d1b38c4d8405c51ae3656acba2df2e39dcf7a3e32722452f33f9954a2ce6ace1"
+    }
+  ],
+  "output_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_pairwise_coverage_microbial/coverage.tsv",
+      "sha256": "3fb9eee6146bf678103dfa1f9fbd7486cefafae14452f0973fbf57dc6cddc2fa"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_pairwise_coverage_microbial/membership.tsv",
+      "sha256": "d9fe5869af0089b18318dc8fb6cfab3281a67dd265280d45fbf812ae1cbabc23"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_pairwise_coverage_microbial/metrics.tsv",
+      "sha256": "2d5e2e46834f3a99c26928446947dd45ae8d29606d1be5d1e3c0c34715fe2d94"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_pairwise_coverage_microbial/paired_mae_differences.tsv",
+      "sha256": "65cdcf3d773e0c3d676e9f3fa54dd6bb9281245a37c0c7de73c366e5ad9af3fe"
+    }
+  ]
+}

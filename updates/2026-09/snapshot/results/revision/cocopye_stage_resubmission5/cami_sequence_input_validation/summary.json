@@ -1,0 +1,59 @@
+{
+  "status": "CAMI_SEQUENCE_INPUT_AUDIT_COMPLETE",
+  "n_exclusive_bins": 354,
+  "n_gold": 148,
+  "n_mixed": 206,
+  "all_selected_as_comparator_inputs": true,
+  "all_fasta_bp_match_raw_checkm2_genome_size": true,
+  "all_raw_checkm2_predictions_match_merged_rows": true,
+  "n_primary_rnode_dominants": 0,
+  "n_primary_rnode_donors": 0,
+  "minimum_bp": 7890,
+  "maximum_bp": 319168,
+  "total_ambiguous_bp": 0,
+  "interpretation": "Existing FASTAs contain real sequence and raw scores, but their source units are CAMI RNODE circular elements. Real sequence does not make their completeness denominator or catchall species taxid suitable for prokaryotic genome quality or within-species inference. CoCoPyE absent-row bins were input selected; without process-level evidence, the exact cause of absent rows is not assigned.",
+  "input_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_pairwise_coverage/membership.tsv",
+      "sha256": "31f02e53e2878a7c9363ba7baa1f590c78fb8407cf3fe594ff0072017d77a45a"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_long_predictions.tsv",
+      "sha256": "63708bebc9551b8d20f4f903dcb8a3249528762b45507254999d02a58f784b88"
+    },
+    {
+      "path": "scripts/269_cami_sequence_input_validation.py",
+      "sha256": "443ae2f28d051fc2e73eaf8c3676a6b08512b7256fea21e1ca721870d547e373"
+    },
+    {
+      "path": "results/revision/cami2/provenance/marine_gold_competitor_cohort.tsv",
+      "sha256": "45dc74e1004563d9c514b1b51bebb78eede68f001188b5988e05ff93088e3d8b"
+    },
+    {
+      "path": "results/revision/cami2/competitors/marine_gold/checkm2_output/quality_report.tsv",
+      "sha256": "f3157f59eae6ded13ae8f08e61fb9c6822ed43a23e45dfc3d8be7d6a3a471a5e"
+    },
+    {
+      "path": "results/revision/cami2/truth/marine_gold_truth.tsv",
+      "sha256": "8d95d05dc1f5c33f4d7c850d8afa8984c4eabf63011df1fd54414f47737eda17"
+    },
+    {
+      "path": "results/revision/cami2/provenance/marine_mixed_competitor_cohort.tsv",
+      "sha256": "44c447b136d5606c02f1053f5130fe93871c7edc0afe7aec3e58e93bb8ddcec7"
+    },
+    {
+      "path": "results/revision/cami2/competitors/marine_mixed/checkm2_output/quality_report.tsv",
+      "sha256": "12f5301a0f3dc8c115e964f5d68ab72a91a177b8b3e72bc07c96c1009aff0caa"
+    },
+    {
+      "path": "results/revision/cami2/truth/marine_mixed_truth.tsv",
+      "sha256": "d85000e94603d61766281090bad787ca4e504353b936f54d158b84012fda0558"
+    }
+  ],
+  "output_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_sequence_input_validation/sequence_and_raw_score_checks.tsv",
+      "sha256": "9f319733d0f37d5fd4621d04afeb52c6a425a12927fd291e961e135f84d6e403"
+    }
+  ]
+}

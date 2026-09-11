@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-09-08T17:29:29.060608+00:00",
+  "seed": 20260908,
+  "selection_inputs": {
+    "data/splits/train_genomes.tsv": "41cf4ae7d99f3a189c2d44a2bcb53db2882f47286492cf3b1a371e27c190b8f5",
+    "data/splits/val_genomes.tsv": "692563eed2b4a0470a15ce3a1f22b1461a9a088fcc5483930cfa1302745ed8e2",
+    "data/splits/test_genomes.tsv": "15d4e62cf6b5ff111e841bf6ddb11e27f08fc940e0e9683f33bfad6e103f144e"
+  },
+  "selection_script_sha256": "ab372a8bc0b1098f1aa7aeee12591c117f2705f21a94d918a1d246b3ea86b98b",
+  "rules": "Select ten established-name families using counts and taxonomy only.\n\nThe first stage intentionally reads no predictions or model metrics. Selection is\ndeterministic: >=50 training, >=5 validation and >=20 test genomes; established\nfamily-name syntax; exclude Patescibacteriota; retain each phylum's largest family;\nretain >=50% of each parent phylum. Select one eligible family per parent phylum\nfirst, then fill to ten by training abundance, at most two families per phylum.\n",
+  "rank": "family",
+  "families": [
+    "Streptococcaceae",
+    "Pseudomonadaceae",
+    "Bacteroidaceae",
+    "Helicobacteraceae",
+    "Bifidobacteriaceae",
+    "Leptospiraceae",
+    "Cyanobiaceae",
+    "Moraxellaceae",
+    "Lactobacillaceae",
+    "Flavobacteriaceae"
+  ],
+  "parent_phyla": [
+    "Actinomycetota",
+    "Bacillota",
+    "Bacteroidota",
+    "Campylobacterota",
+    "Cyanobacteriota",
+    "Pseudomonadota",
+    "Spirochaetota"
+  ],
+  "n_training_removed": 16185,
+  "n_training_total": 79948,
+  "pct_training_removed": 20.244408865762747,
+  "all_phyla_retained": true,
+  "n_panel_eval_references": 872,
+  "n_panel_eval_samples": 8720,
+  "control": {
+    "n_test_references": 100,
+    "simulations_per_reference": 10
+  },
+  "primary_scope": "Sample-available established-name bacterial families; no archaeal family satisfies all rules.",
+  "CPR": "Excluded from primary panel by user-requested scope; prior broad CPR analyses retained as sensitivity evidence.",
+  "status": "SELECTION_LOCKED_BEFORE_NEW_PREDICTIONS"
+}

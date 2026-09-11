@@ -1,0 +1,5 @@
+dataset	version	common_n	retained_wellcontrolled_n	retained_fraction	n_refs
+marine	historical	986	911	0.9239350912778904	243
+marine	corrected	864	833	0.9641203703703703	192
+strain_madness	historical	2250	2218	0.9857777777777778	335
+strain_madness	corrected	2250	2218	0.9857777777777778	335

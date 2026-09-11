@@ -1,0 +1,92 @@
+{
+  "generated_utc": "2026-07-26T14:24:52.894514+00:00",
+  "n_refs": 100,
+  "n_sims_per_ref": 10,
+  "n_workers": 20,
+  "set_base_seeds": {
+    "C": 7300000,
+    "D": 7400000
+  },
+  "seed_formula": "SET_BASE + 1000 * ref_index + replicate",
+  "design_rng": "np.random.default_rng(SET_BASE)",
+  "reports": {
+    "set_C_clean": {
+      "set": "set_C_clean",
+      "n_samples": 1000,
+      "metadata_matches_generation_metadata": true,
+      "labels_match_metadata": true,
+      "fasta_missing": 0,
+      "fasta_empty": 0,
+      "fasta_unparseable": 0,
+      "fasta_length_mismatch": 0,
+      "fasta_integrity_pass": true,
+      "violations_contaminant_bp_gt_dominant_bp": 0,
+      "violations_contamination_gt_completeness": 0,
+      "violations_contamination_gt_100": 0,
+      "violations_completeness_out_of_50_100": 0,
+      "constraint_guard_fired_n": 0,
+      "constraints_pass": true,
+      "completeness": {
+        "mean": 83.825,
+        "std": 16.22,
+        "min": 50.0,
+        "max": 100.0,
+        "hist_50_100_5bins": [
+          112,
+          126,
+          165,
+          152,
+          445
+        ],
+        "chi2_vs_uniform": 383.87
+      },
+      "contamination": {
+        "mean": 45.132,
+        "std": 25.704,
+        "min": 0.0,
+        "max": 99.484,
+        "hist_0_100_5bins": [
+          201,
+          244,
+          240,
+          213,
+          102
+        ],
+        "chi2_vs_uniform": 66.55
+      },
+      "ks_target_completeness_uniform": {
+        "stat": 0.0172,
+        "p": 0.9251
+      },
+      "ks_target_contamination_uniform": {
+        "stat": 0.0342,
+        "p": 0.1874
+      },
+      "pearson_target_vs_observed_completeness": 0.3223,
+      "pearson_target_vs_observed_contamination": 0.9384,
+      "n_unique_dominants": 100,
+      "sims_per_reference": [
+        10
+      ],
+      "dominant_phylum_counts": {
+        "Patescibacteriota": 1000
+      },
+      "contaminant_events_total": 2977,
+      "unique_contaminant_genomes": 2560,
+      "contaminant_same_phylum_as_dominant": 0,
+      "n_contaminants_distribution": {
+        "1": 205,
+        "2": 195,
+        "3": 197,
+        "4": 224,
+        "5": 179
+      },
+      "quality_tier_counts": {
+        "highly_fragmented": 272,
+        "low": 256,
+        "medium": 242,
+        "high": 230
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "status": "MOTIVATING_THRESHOLD_COMPLETE",
+  "cohort": "motivating M2, true contamination strictly >20%",
+  "n": 597,
+  "n_reference_clusters": 532,
+  "seed": 20260908,
+  "n_resamples": 2000,
+  "interval": "95% percentile reference-cluster bootstrap; all cluster observations retained, same draws for all tools",
+  "seed_provenance": "Newly explicit fixed seed. The historical ad-hoc threshold generator and its seed string were not persisted; this recomputation does not claim identical historical draws.",
+  "inputs": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/ws5.5_table_S2_rebuilt.tsv",
+      "sha256": "2e6bc9f1f3766cacdfe51ca6b03eee83eb940ae1ca8a9fd88c268a3ed1651f65"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/ws5.3_signed_errors_by_cont_bin.tsv",
+      "sha256": "6655cedc10bc6afee493788a64b8d90fcf4e16c8d9f97c96ed6b6b6bde6ba3ee"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/ws5.3_signed_errors_by_relatedness.tsv",
+      "sha256": "81ded001c8c9eb3bc15946f086261d609c5d6c2965305c9e93811674787a791a"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/data/benchmarks/motivating_v2/set_B/metadata.tsv",
+      "sha256": "df8113ca60b02c3983b4347fd9a2c090d62fb7452c74dda62650ca0062b701ce"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/data/benchmarks/motivating_v2/set_B/checkm2_predictions.tsv",
+      "sha256": "285173537049a7352aa0b29f66dcdedbe8aba26302f8cd707568caf4bce4c31a"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/data/benchmarks/motivating_v2/set_B/cocopye_predictions.tsv",
+      "sha256": "b81649e43df34bf89045a8b0381b3392214533f8e11f073e5ae38c87312cb9b7"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/data/benchmarks/motivating_v2/set_B/deepcheck_predictions.tsv",
+      "sha256": "818c3e50b65c5b73d7cc78c5a2ae515bf21b74379f9569580c6c30e6d85576bd"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/data/benchmarks/motivating_v2/set_B/magicc_v5_predictions.tsv",
+      "sha256": "6f04d97e4bc4375379f498f9c7b577bf27beec42fc502887bf423d4821e72b03"
+    }
+  ],
+  "script": "nature_communications/resubmission5/scripts/27_integrate_motivating_correction.py"
+}

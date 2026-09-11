@@ -1,3 +1,5 @@
+> September 2026: this is the historical directory inventory. Current corrections and new joint-family results are indexed in [the September scientific snapshot](../updates/2026-09/README.md). Existing files listed in its UPDATED_PUBLIC_PATHS.tsv have been corrected; other narrative reports retain their historical context.
+
 # Result files
 
 Every quantitative result reported in the manuscript, as the file that produced

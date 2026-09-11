@@ -1,0 +1,5 @@
+protocol	set	false_fail_raw	false_fail_recal	n_truly_clean
+CV-A reference-disjoint [linear]	set_C_clean	0.4423	0.4423	52
+CV-C set-disjoint [linear]	set_C_clean	0.4423	0.5192	52
+CV-A reference-disjoint [gbm]	set_C_clean	0.4423	0.4423	52
+CV-C set-disjoint [gbm]	set_C_clean	0.4423	0.4423	52

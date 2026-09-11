@@ -1,0 +1,11 @@
+{
+  "family_selection": "Deterministic taxonomy/count rule, no RNG.",
+  "evaluation_base_seed": 20260908,
+  "evaluation_reference_sampling": "base + CRC32(group) % 100000; then fixed pandas.sample random_state drawn from that generator",
+  "evaluation_assembly_seed": "base + sum(ord(c) for c in group) * 1000003 + sample_index",
+  "bootstrap_seed": "(base + CRC32(contrast_label)) % 2**32",
+  "training_model_seed": 42,
+  "training_planner_implementation": "scripts/121_build_holdout_training_data.py V4Planner / ExtraPlanner; preserved original V5 seed formulas",
+  "topup_selection": "Ordered planned task stream before first-success truncation; deterministic within software/source inputs",
+  "source_of_truth": "Each evaluation metadata.tsv and training raw_batches/*.jsonl.gz records the actual sample seed and identities."
+}

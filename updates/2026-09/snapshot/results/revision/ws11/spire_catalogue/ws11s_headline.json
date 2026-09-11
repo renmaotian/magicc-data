@@ -1,0 +1,681 @@
+{
+  "catalogue_weighted": {
+    "n_analysed": 265943,
+    "n_family_clusters": 3004,
+    "note": "post-stratified to frame counts on (stratum x size bin x published class); Hajek ratio",
+    "p_class_change": {
+      "estimate": 0.212207,
+      "ci95": [
+        0.19721,
+        0.233879
+      ]
+    },
+    "p_downgrade": {
+      "estimate": 0.0956708,
+      "ci95": [
+        0.0771577,
+        0.12549
+      ]
+    },
+    "p_upgrade": {
+      "estimate": 0.116536,
+      "ci95": [
+        0.0985583,
+        0.129538
+      ]
+    },
+    "p_HQ_checkm2": {
+      "estimate": 0.3139,
+      "ci95": [
+        0.283019,
+        0.350424
+      ]
+    },
+    "p_HQ_magicc": {
+      "estimate": 0.350289,
+      "ci95": [
+        0.315862,
+        0.380834
+      ]
+    },
+    "HQ_downgrade_rate": {
+      "estimate": 0.25522,
+      "ci95": [
+        0.211664,
+        0.316241
+      ]
+    },
+    "MQ_to_HQ_rate": {
+      "estimate": 0.169797,
+      "ci95": [
+        0.146539,
+        0.189278
+      ]
+    },
+    "MQ_to_LQ_rate": {
+      "estimate": 0.0226772,
+      "ci95": [
+        0.0167768,
+        0.0330552
+      ]
+    },
+    "floor_rate": {
+      "estimate": 0.00508448,
+      "ci95": [
+        0.00302042,
+        0.00872504
+      ]
+    },
+    "mean_d_comp": {
+      "estimate": 0.352537,
+      "ci95": [
+        -0.669212,
+        1.04067
+      ]
+    },
+    "mean_d_cont": {
+      "estimate": -0.66218,
+      "ci95": [
+        -0.948364,
+        -0.227896
+      ]
+    },
+    "slope_d_comp_per_log10Mbp": {
+      "estimate": 12.6958,
+      "ci95": [
+        10.4544,
+        15.0902
+      ]
+    },
+    "n_spire_clusters": 51793,
+    "p_class_change_cluster_bootstrap": {
+      "estimate": 0.212207,
+      "ci95": [
+        0.20505,
+        0.219863
+      ]
+    }
+  },
+  "catalogue_weighted_no_nr_adjustment": {
+    "n_analysed": 265943,
+    "n_family_clusters": 3004,
+    "note": "stratum-level weights only, no post-stratification -- sensitivity check",
+    "p_class_change": {
+      "estimate": 0.212188,
+      "ci95": [
+        0.19747,
+        0.23406
+      ]
+    },
+    "p_downgrade": {
+      "estimate": 0.0953189,
+      "ci95": [
+        0.0759816,
+        0.126114
+      ]
+    },
+    "p_upgrade": {
+      "estimate": 0.116869,
+      "ci95": [
+        0.0978036,
+        0.130515
+      ]
+    },
+    "p_HQ_checkm2": {
+      "estimate": 0.312583,
+      "ci95": [
+        0.282626,
+        0.347162
+      ]
+    },
+    "p_HQ_magicc": {
+      "estimate": 0.34974,
+      "ci95": [
+        0.317291,
+        0.380383
+      ]
+    },
+    "HQ_downgrade_rate": {
+      "estimate": 0.254906,
+      "ci95": [
+        0.208357,
+        0.317551
+      ]
+    },
+    "MQ_to_HQ_rate": {
+      "estimate": 0.169959,
+      "ci95": [
+        0.146563,
+        0.189897
+      ]
+    },
+    "MQ_to_LQ_rate": {
+      "estimate": 0.0227537,
+      "ci95": [
+        0.0170141,
+        0.0334284
+      ]
+    },
+    "floor_rate": {
+      "estimate": 0.00508325,
+      "ci95": [
+        0.00298048,
+        0.00857904
+      ]
+    },
+    "mean_d_comp": {
+      "estimate": 0.360845,
+      "ci95": [
+        -0.705638,
+        1.07534
+      ]
+    },
+    "mean_d_cont": {
+      "estimate": -0.661727,
+      "ci95": [
+        -0.93662,
+        -0.237379
+      ]
+    },
+    "slope_d_comp_per_log10Mbp": {
+      "estimate": 12.653,
+      "ci95": [
+        10.5289,
+        14.9938
+      ]
+    },
+    "n_spire_clusters": 51793,
+    "p_class_change_cluster_bootstrap": {
+      "estimate": 0.212188,
+      "ci95": [
+        0.204862,
+        0.219818
+      ]
+    }
+  },
+  "S3_srs_unweighted": {
+    "n_analysed": 193774,
+    "n_family_clusters": 1882,
+    "note": "unweighted SRS of S3",
+    "p_class_change": {
+      "estimate": 0.211969,
+      "ci95": [
+        0.1962,
+        0.235568
+      ]
+    },
+    "p_downgrade": {
+      "estimate": 0.0897076,
+      "ci95": [
+        0.0712269,
+        0.121741
+      ]
+    },
+    "p_upgrade": {
+      "estimate": 0.122261,
+      "ci95": [
+        0.105405,
+        0.135328
+      ]
+    },
+    "p_HQ_checkm2": {
+      "estimate": 0.319945,
+      "ci95": [
+        0.285065,
+        0.361763
+      ]
+    },
+    "p_HQ_magicc": {
+      "estimate": 0.365395,
+      "ci95": [
+        0.331109,
+        0.395746
+      ]
+    },
+    "HQ_downgrade_rate": {
+      "estimate": 0.239979,
+      "ci95": [
+        0.197073,
+        0.302733
+      ]
+    },
+    "MQ_to_HQ_rate": {
+      "estimate": 0.179732,
+      "ci95": [
+        0.158248,
+        0.199017
+      ]
+    },
+    "MQ_to_LQ_rate": {
+      "estimate": 0.0190114,
+      "ci95": [
+        0.0141281,
+        0.0284002
+      ]
+    },
+    "floor_rate": {
+      "estimate": 0.00047478,
+      "ci95": [
+        0.000340314,
+        0.000670541
+      ]
+    },
+    "mean_d_comp": {
+      "estimate": 0.798599,
+      "ci95": [
+        -0.161105,
+        1.39788
+      ]
+    },
+    "mean_d_cont": {
+      "estimate": -0.81413,
+      "ci95": [
+        -1.06609,
+        -0.419064
+      ]
+    },
+    "slope_d_comp_per_log10Mbp": {
+      "estimate": 10.7125,
+      "ci95": [
+        7.83624,
+        13.7315
+      ]
+    },
+    "n_spire_clusters": 32323,
+    "p_class_change_cluster_bootstrap": {
+      "estimate": 0.211969,
+      "ci95": [
+        0.20496,
+        0.219358
+      ]
+    }
+  },
+  "S1_small_census": {
+    "n_analysed": 57652,
+    "n_family_clusters": 1310,
+    "note": "census of frame MAGs <1 Mbp",
+    "p_class_change": {
+      "estimate": 0.157341,
+      "ci95": [
+        0.130067,
+        0.188124
+      ]
+    },
+    "p_downgrade": {
+      "estimate": 0.141626,
+      "ci95": [
+        0.117419,
+        0.171479
+      ]
+    },
+    "p_upgrade": {
+      "estimate": 0.015715,
+      "ci95": [
+        0.00952004,
+        0.0227084
+      ]
+    },
+    "p_HQ_checkm2": {
+      "estimate": 0.16074,
+      "ci95": [
+        0.124499,
+        0.198306
+      ]
+    },
+    "p_HQ_magicc": {
+      "estimate": 0.0756435,
+      "ci95": [
+        0.0454834,
+        0.107794
+      ]
+    },
+    "HQ_downgrade_rate": {
+      "estimate": 0.626848,
+      "ci95": [
+        0.543691,
+        0.729165
+      ]
+    },
+    "MQ_to_HQ_rate": {
+      "estimate": 0.0186437,
+      "ci95": [
+        0.0108914,
+        0.0280203
+      ]
+    },
+    "MQ_to_LQ_rate": {
+      "estimate": 0.0486968,
+      "ci95": [
+        0.0356865,
+        0.0658722
+      ]
+    },
+    "floor_rate": {
+      "estimate": 0.0904565,
+      "ci95": [
+        0.0584582,
+        0.134268
+      ]
+    },
+    "mean_d_comp": {
+      "estimate": -7.20283,
+      "ci95": [
+        -8.36639,
+        -6.15509
+      ]
+    },
+    "mean_d_cont": {
+      "estimate": 0.798768,
+      "ci95": [
+        0.431791,
+        1.23586
+      ]
+    },
+    "slope_d_comp_per_log10Mbp": {
+      "estimate": 14.3344,
+      "ci95": [
+        7.88019,
+        21.6343
+      ]
+    },
+    "n_spire_clusters": 17339,
+    "p_class_change_cluster_bootstrap": {
+      "estimate": 0.157341,
+      "ci95": [
+        0.142786,
+        0.172485
+      ]
+    }
+  },
+  "S2_rare_phylum_census": {
+    "n_analysed": 14517,
+    "n_family_clusters": 635,
+    "note": "census of frame MAGs in phyla with <1000 catalogue MAGs",
+    "p_class_change": {
+      "estimate": 0.451471,
+      "ci95": [
+        0.414951,
+        0.487262
+      ]
+    },
+    "p_downgrade": {
+      "estimate": 0.324309,
+      "ci95": [
+        0.286592,
+        0.360712
+      ]
+    },
+    "p_upgrade": {
+      "estimate": 0.127161,
+      "ci95": [
+        0.109444,
+        0.14635
+      ]
+    },
+    "p_HQ_checkm2": {
+      "estimate": 0.382448,
+      "ci95": [
+        0.342737,
+        0.422997
+      ]
+    },
+    "p_HQ_magicc": {
+      "estimate": 0.299993,
+      "ci95": [
+        0.274108,
+        0.328773
+      ]
+    },
+    "HQ_downgrade_rate": {
+      "estimate": 0.547911,
+      "ci95": [
+        0.501239,
+        0.593624
+      ]
+    },
+    "MQ_to_HQ_rate": {
+      "estimate": 0.205735,
+      "ci95": [
+        0.181719,
+        0.231093
+      ]
+    },
+    "MQ_to_LQ_rate": {
+      "estimate": 0.185875,
+      "ci95": [
+        0.145042,
+        0.227405
+      ]
+    },
+    "floor_rate": {
+      "estimate": 0.000688848,
+      "ci95": [
+        0.000181534,
+        0.00136852
+      ]
+    },
+    "mean_d_comp": {
+      "estimate": -1.44074,
+      "ci95": [
+        -2.61986,
+        -0.329399
+      ]
+    },
+    "mean_d_cont": {
+      "estimate": 4.7332,
+      "ci95": [
+        3.64499,
+        5.82257
+      ]
+    },
+    "slope_d_comp_per_log10Mbp": {
+      "estimate": 20.293,
+      "ci95": [
+        16.3699,
+        24.1769
+      ]
+    },
+    "n_spire_clusters": 5478,
+    "p_class_change_cluster_bootstrap": {
+      "estimate": 0.451471,
+      "ci95": [
+        0.424539,
+        0.475611
+      ]
+    }
+  },
+  "catalogue_weighted_excl_404_recovery": {
+    "n_analysed": 265440,
+    "n_family_clusters": 2995,
+    "note": "drops the genomes whose FASTA came from the representatives tarball after the per-genome endpoint 404'd -- those are cluster representatives and therefore quality-enriched; sensitivity check on that back-fill",
+    "p_class_change": {
+      "estimate": 0.212179,
+      "ci95": [
+        0.197177,
+        0.233379
+      ]
+    },
+    "p_downgrade": {
+      "estimate": 0.095619,
+      "ci95": [
+        0.07611,
+        0.127584
+      ]
+    },
+    "p_upgrade": {
+      "estimate": 0.11656,
+      "ci95": [
+        0.0977175,
+        0.129743
+      ]
+    },
+    "p_HQ_checkm2": {
+      "estimate": 0.314033,
+      "ci95": [
+        0.282821,
+        0.351724
+      ]
+    },
+    "p_HQ_magicc": {
+      "estimate": 0.350403,
+      "ci95": [
+        0.316898,
+        0.379591
+      ]
+    },
+    "HQ_downgrade_rate": {
+      "estimate": 0.255248,
+      "ci95": [
+        0.210017,
+        0.31708
+      ]
+    },
+    "MQ_to_HQ_rate": {
+      "estimate": 0.169864,
+      "ci95": [
+        0.146503,
+        0.188843
+      ]
+    },
+    "MQ_to_LQ_rate": {
+      "estimate": 0.0225442,
+      "ci95": [
+        0.0166891,
+        0.033627
+      ]
+    },
+    "floor_rate": {
+      "estimate": 0.00508124,
+      "ci95": [
+        0.00303529,
+        0.00827011
+      ]
+    },
+    "mean_d_comp": {
+      "estimate": 0.350741,
+      "ci95": [
+        -0.7143,
+        1.06684
+      ]
+    },
+    "mean_d_cont": {
+      "estimate": -0.664343,
+      "ci95": [
+        -0.938256,
+        -0.215358
+      ]
+    },
+    "slope_d_comp_per_log10Mbp": {
+      "estimate": 12.7209,
+      "ci95": [
+        10.4973,
+        14.9974
+      ]
+    },
+    "n_spire_clusters": 51356,
+    "p_class_change_cluster_bootstrap": {
+      "estimate": 0.212179,
+      "ci95": [
+        0.20482,
+        0.21952
+      ]
+    }
+  },
+  "reps_census": {
+    "n_analysed": 92064,
+    "n_family_clusters": 3311,
+    "note": "census of SPIRE 95 % ANI MAG representatives",
+    "p_class_change": {
+      "estimate": 0.355742,
+      "ci95": [
+        0.340655,
+        0.372251
+      ]
+    },
+    "p_downgrade": {
+      "estimate": 0.233566,
+      "ci95": [
+        0.216601,
+        0.2528
+      ]
+    },
+    "p_upgrade": {
+      "estimate": 0.122176,
+      "ci95": [
+        0.114539,
+        0.129599
+      ]
+    },
+    "p_HQ_checkm2": {
+      "estimate": 0.342164,
+      "ci95": [
+        0.326446,
+        0.358498
+      ]
+    },
+    "p_HQ_magicc": {
+      "estimate": 0.294002,
+      "ci95": [
+        0.281906,
+        0.305611
+      ]
+    },
+    "HQ_downgrade_rate": {
+      "estimate": 0.497413,
+      "ci95": [
+        0.478867,
+        0.518146
+      ]
+    },
+    "MQ_to_HQ_rate": {
+      "estimate": 0.185484,
+      "ci95": [
+        0.175124,
+        0.195423
+      ]
+    },
+    "MQ_to_LQ_rate": {
+      "estimate": 0.0963676,
+      "ci95": [
+        0.0822313,
+        0.114331
+      ]
+    },
+    "floor_rate": {
+      "estimate": 0.00740789,
+      "ci95": [
+        0.00592168,
+        0.009355
+      ]
+    },
+    "mean_d_comp": {
+      "estimate": -1.29164,
+      "ci95": [
+        -1.89512,
+        -0.76443
+      ]
+    },
+    "mean_d_cont": {
+      "estimate": 1.05814,
+      "ci95": [
+        0.58685,
+        1.66573
+      ]
+    },
+    "slope_d_comp_per_log10Mbp": {
+      "estimate": 13.4008,
+      "ci95": [
+        11.7251,
+        15.0829
+      ]
+    },
+    "n_spire_clusters": 92064,
+    "p_class_change_cluster_bootstrap": {
+      "estimate": 0.355742,
+      "ci95": [
+        0.352787,
+        0.358697
+      ]
+    }
+  }
+}

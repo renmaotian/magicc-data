@@ -1,0 +1,7 @@
+variant	phi_pooled_regression	ci95	n	n_reference_clusters	phi_if_composition_determines_L	phi_if_size_determines_L	phi_uncensored_subset	uncensored_ci95	n_uncensored	implied_L_elasticity_to_observed_size	note
+coherent	0.4756	[0.472, 0.479]	3996	2604	1.0	0.0					
+assembly_only	0.0536	[0.051, 0.056]	3996	2604	1.0	0.0					
+kmer_only	0.452	[0.448, 0.456]	3996	2604	1.0	0.0					
+coherent [LOCAL x0.85-x1.18]	0.6986	[0.687, 0.711]	3996	2604	1.0	0.0	0.8054	[0.792, 0.818]	2183.0	0.3014	coherent rescale: composition fixed, absolute size moved
+assembly_only [LOCAL x0.85-x1.18]	0.0565	[0.054, 0.059]	3996	2604	1.0	0.0	0.073	[0.070, 0.076]	3009.0		mediation decomposition only (inconsistent input pair); do not read as an elasticity
+kmer_only [LOCAL x0.85-x1.18]	0.6442	[0.633, 0.655]	3996	2604	1.0	0.0	0.7434	[0.731, 0.756]	2263.0		mediation decomposition only (inconsistent input pair); do not read as an elasticity

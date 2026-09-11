@@ -1,0 +1,4 @@
+level	group	comp_delta	comp_did	comp_did_ci95	comp_did_p	cont_delta	cont_did	cont_did_ci95	cont_did_p	comp_did_q_bh	cont_did_q_bh
+phylum	Patescibacteriota	22.765	22.8114	[21.3574, 24.3282]	0.0005	11.874	12.2283	[10.796, 13.6582]	0.0005	0.0005	0.0005
+family	Patescibacteriota_families	5.063	5.0338	[3.5637, 6.8204]	0.0005	3.424	3.5305	[2.2087, 5.135]	0.0005	0.00055	0.00055
+genus	Patescibacteriota_genera	4.72	4.6431	[2.993, 6.3457]	0.0005	2.664	2.8193	[1.926, 3.7706]	0.0005	0.00055	0.00055

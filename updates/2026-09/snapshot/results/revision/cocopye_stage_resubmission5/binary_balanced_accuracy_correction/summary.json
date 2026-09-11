@@ -1,0 +1,19 @@
+{
+  "status": "BINARY_BALANCED_ACCURACY_CORRECTION_COMPLETE",
+  "definition": "Mean of both truth-class recalls; undefined if either truth class has zero support",
+  "scope": "Binary contamination/completeness threshold criteria only; not multiclass MIMAG balanced accuracy",
+  "counts_and_other_rates_unchanged": true,
+  "n_rows_marked_undefined": 157,
+  "framework_path": "results/revision/cocopye_stage_resubmission5/replay/scripts/101_metrics_framework.py",
+  "framework_sha256": "93445c024024420105a161dee717663ec18e80ae80e4b8c9340b0786e535b065",
+  "outputs": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/ws5.2_threshold_analysis.tsv",
+      "sha256": "767bf4ebff676da419f96f46e3bcefacd8956f5283bb2318918b119001a3a747"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/definitive_thresholds.tsv",
+      "sha256": "7c81aa3b33f141de2d102aba9976f69b09384a0e49b0fba60ab6e79bed4e5948"
+    }
+  ]
+}

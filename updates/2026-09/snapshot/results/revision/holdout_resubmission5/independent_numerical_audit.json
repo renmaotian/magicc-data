@@ -1,0 +1,21 @@
+{
+  "status": "INDEPENDENT_NUMERICAL_AUDIT_PASSED",
+  "total_samples": 9720,
+  "dominant_references": 972,
+  "unique_group_sample_keys": 9720,
+  "reference_replicates": 10,
+  "prediction_readback": "Restored native ONNX float32 from shortest-roundtrip CSV values before subtraction from float64 truth. Direct float64 CSV import differs by less than 3e-7 pp in summary contrasts.",
+  "mae_recomputed_via_equal_reference_means_max_abs_difference": 7.105427357601002e-15,
+  "did_recomputed_from_independent_group_model_reference_mean_pivot_max_abs_difference": 7.105427357601002e-15,
+  "n_adjusted_family_metric_contrasts": 20,
+  "all_positive_adjusted_contrasts": true,
+  "all_95pct_CI_exclude_zero": true,
+  "minimum_attainable_bootstrap_p": 0.0004997501249375312,
+  "provenance": {
+    "per_sample_predictions.tsv.gz": "8106363151358c751dab61b9f9bcc6fbdebb1a589d4128f734475a900b0326b2",
+    "head_to_head_by_group.tsv": "3b1eacd7c36cbc9c97f89b7eec269719ab56a8871e87b8f7bdd1d1e9b73a4b7c",
+    "did.tsv": "8489bd2ffece57146de4852b608c4debb78dcf678fa7a7f0327b6a9775e3fe59",
+    "control_model_difference.tsv": "fdd35974f0ffa57164ce92eb80ec83c99a8b43276a6c7eeb3870020acbe76f99",
+    "evaluation_summary.json": "c9eb9ec46f8d37f4f70b7d97487d10969a45ac6e079c37b875e2713a9b640c17"
+  }
+}

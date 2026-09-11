@@ -1,0 +1,13 @@
+source	tool	metric	n	n_clusters	mean_signed_error	ci_lo	ci_hi
+this_run (scripts/211)	magicc_v5	completeness	30	25	-8.676579333333333	-14.169095013563046	-3.7448895956257986
+this_run (scripts/211)	magicc_v5	contamination	30	25	5.090823204666666	1.7996654323571433	8.686565808854837
+this_run (scripts/211)	checkm2	completeness	30	25	-0.7005658333333339	-1.436185778201971	0.03535815407753789
+this_run (scripts/211)	checkm2	contamination	30	25	-1.1623687666666667	-1.7544614674712646	-0.6067775552270019
+results/revision/metrics/ws5.3_signed_errors_by_mimag.tsv (DEFINITIVE, D1-fixed)	magicc_v5	completeness	30	25	-8.676579333333333	-14.169095013563046	-3.744889595625799
+results/revision/metrics/ws5.3_signed_errors_by_mimag.tsv (DEFINITIVE, D1-fixed)	magicc_v5	contamination	30	25	5.090823204666666	1.7996654323571433	8.686565808854837
+results/revision/metrics/ws5.3_signed_errors_by_mimag.tsv (DEFINITIVE, D1-fixed)	checkm2	completeness	30	25	-0.7005658333333339	-1.436185778201971	0.0353581540775378
+results/revision/metrics/ws5.3_signed_errors_by_mimag.tsv (DEFINITIVE, D1-fixed)	checkm2	contamination	30	25	-1.1623687666666669	-1.7544614674712646	-0.6067775552270019
+results/revision/metrics_pre_competitor_backup/ws5.3_signed_errors_by_mimag.tsv (SUPERSEDED, pre-D1)	magicc_v5	completeness	30	25	-8.676579333333333	-14.112540322379033	-3.4573487214285774
+results/revision/metrics_pre_competitor_backup/ws5.3_signed_errors_by_mimag.tsv (SUPERSEDED, pre-D1)	magicc_v5	contamination	30	25	5.090823204666666	1.8136835522656252	8.61567179969132
+results/revision/metrics_pre_competitor_backup/ws5.3_signed_errors_by_mimag.tsv (SUPERSEDED, pre-D1)	checkm2	completeness	30	25	-0.7005658333333339	-1.471331075716846	0.1011327761600359
+results/revision/metrics_pre_competitor_backup/ws5.3_signed_errors_by_mimag.tsv (SUPERSEDED, pre-D1)	checkm2	contamination	30	25	-1.1623687666666669	-1.7191906453125	-0.5707530100000002

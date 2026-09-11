@@ -1,0 +1,13 @@
+dataset	arm	genome_id	true_completeness	true_contamination	baseline_completeness	baseline_contamination	perturbed_completeness	perturbed_contamination	baseline_class	perturbed_class	baseline_contamination_pass	perturbed_contamination_pass
+set_D_clean	kmer_minmax_training_only	genome_417	51.991396	4.474336	54.35573	5.00136	54.4033	4.9991875	medium	medium	False	True
+set_D_clean	kmer_minmax_training_only	genome_686	54.795841	2.16928	58.637245	5.015129	58.69574	4.981384	medium	medium	False	True
+set_D_clean	all_summary_exact_training	genome_686	54.795841	2.16928	58.637245	5.015129	58.695724	4.982442	medium	medium	False	True
+set_E	kmer_minmax_training_only	genome_300	76.88385528191894	10.092684568302325	78.55047	5.0042987	78.672424	4.936248	medium	medium	False	True
+set_E	kmer_minmax_training_only	genome_507	85.40900612843059	0.0	89.666214	0.54275095	90.17146	0.5335152	medium	high	True	True
+set_E	kmer_minmax_training_only	genome_510	54.53161832228187	3.037742201686331	53.096832	5.02522	53.11027	4.9885244	medium	medium	False	True
+set_E	kmer_minmax_training_only	genome_868	100.0	0.0	89.98891	0.07002652	90.29904	0.06925166	medium	high	True	True
+set_E	kmer_minmax_training_only	genome_917	91.94067330207396	0.0	89.76816	0.19317865	90.48308	0.18367767	medium	high	True	True
+set_E	all_summary_exact_training	genome_300	76.88385528191894	10.092684568302325	78.55047	5.0042987	78.67202	4.936716	medium	medium	False	True
+set_E	all_summary_exact_training	genome_507	85.40900612843059	0.0	89.666214	0.54275095	90.173454	0.5334079	medium	high	True	True
+set_E	all_summary_exact_training	genome_868	100.0	0.0	89.98891	0.07002652	90.28999	0.069606304	medium	high	True	True
+set_E	all_summary_exact_training	genome_917	91.94067330207396	0.0	89.76816	0.19317865	90.48561	0.18359423	medium	high	True	True

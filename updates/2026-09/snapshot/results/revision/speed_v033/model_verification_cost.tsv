@@ -1,0 +1,5 @@
+measurement	n	median_s	min_s	max_s	throughput_MB_s	note
+_sha256_file over the model	7	0.3976	0.3967	0.3989	426.7	hashlib.sha256, 1 MiB chunks, warm page cache
+_verify_model (hash + compare)	7	0.3978	0.3966	0.3990	426.5	the exact call _ensure_model makes on every run
+# model=/home/tianrm/.magicc/magicc_v5.onnx size_bytes=169658949 sha256=b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096
+# magicc version=0.3.3 MODEL_URL=https://github.com/renmaotian/magicc/releases/download/v0.3.3/magicc_v5.onnx

@@ -1,0 +1,9 @@
+cell	input_set	n_genomes	threads	numerator	n_numerator	num_median_s	num_min_s	num_max_s	denominator	n_denominator	den_median_s	den_min_s	den_max_s	ratio_of_medians	ratio_min_envelope	ratio_max_envelope	ws11t_ratio	change_pct
+set_E_full @ 32 threads	set_E_full	1000	32	CheckM2 1.0.1	3	4286.0	4208.0	4288.0	MAGICC v0.3.3 (released path, model SHA256 verified each run)	3	6.26	6.05	6.37	684.7	660.6	708.8	716.7	-4.47
+set_E_full @ 32 threads	set_E_full	1000	32	CheckM2 1.0.1	3	4286.0	4208.0	4288.0	MAGICC v0.3.3 (explicit --model, verification bypassed)	3	5.74	5.7	5.96	746.7	706.0	752.3	716.7	4.18
+set_E_full @ 32 threads	set_E_full	1000	32	CoCoPyE 0.5.0	3	2971.68	2924.29	3177.54	MAGICC v0.3.3 (released path, model SHA256 verified each run)	3	6.26	6.05	6.37	474.7	459.1	525.2	496.9	-4.47
+set_E_full @ 32 threads	set_E_full	1000	32	CoCoPyE 0.5.0	3	2971.68	2924.29	3177.54	MAGICC v0.3.3 (explicit --model, verification bypassed)	3	5.74	5.7	5.96	517.7	490.7	557.5	496.9	4.19
+set_E_100 @ 32 threads	set_E_100	100	32	CheckM2 1.0.1	5	559.66	539.44	597.56	MAGICC v0.3.3 (released path, model SHA256 verified each run)	3	2.5	2.46	2.5	223.9	215.8	242.9	253.2	-11.59
+set_E_100 @ 32 threads	set_E_100	100	32	CheckM2 1.0.1	5	559.66	539.44	597.56	MAGICC v0.3.3 (explicit --model, verification bypassed)	3	2.09	2.04	2.1	267.8	256.9	292.9	253.2	5.76
+set_E_100 @ 32 threads	set_E_100	100	32	CoCoPyE 0.5.0	4	346.67	324.44	495.09	MAGICC v0.3.3 (released path, model SHA256 verified each run)	3	2.5	2.46	2.5	138.7	129.8	201.3	156.9	-11.62
+set_E_100 @ 32 threads	set_E_100	100	32	CoCoPyE 0.5.0	4	346.67	324.44	495.09	MAGICC v0.3.3 (explicit --model, verification bypassed)	3	2.09	2.04	2.1	165.9	154.5	242.7	156.9	5.72

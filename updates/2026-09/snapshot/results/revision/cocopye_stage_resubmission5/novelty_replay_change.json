@@ -1,0 +1,13 @@
+{
+  "status": "PREPARED",
+  "original_script": "scripts/210_ws11n_novelty_ladder.py",
+  "original_sha256": "5ad339319c18fdc266755bfb10af53413a63f62747e32e0d60a40127b1349521",
+  "replay_script": "results/revision/cocopye_stage_resubmission5/replay/scripts/210_ws11n_novelty_ladder.py",
+  "replay_sha256": "fc5a9099a4463e7da3bea4b0d808b9b9d02bc19b5d7f37fd4b993fa16fc7a848",
+  "changes": [
+    "Official stage-corrected prediction inputs from replay",
+    "Shared dominant accession resampling across sets, sample-weighted strata",
+    "Distinct accession cluster-mean paired and trend analyses",
+    "Explicit preprocessing scope; no new predictions or changed novelty classification"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETE",
+  "n_samples": 5000,
+  "arms": [
+    "released_baseline",
+    "kmer_minmax_training_only",
+    "all_summary_exact_training"
+  ],
+  "model_sha256": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",
+  "normalizer_sha256": "b1e3f211a43560d8bed1dd8264921c7ec8ce0529c9bdbdbdc000894c9ce1d7d9",
+  "max_baseline_difference_saved_pp": 3.813476567415819e-06,
+  "inference_only": true,
+  "changes_training_weights": false,
+  "affine_parameters_sha256": "63bf61918830b65752f516453ac9a2c348e1ceeff0133b50ead6b35863d778e5",
+  "parameter_provenance_mode": "recorded_parameters_without_original_hdf_check",
+  "limitation": "Inference-only scaler perturbation cannot remove historical preprocessing dependence during training. Exact robust quantiles also replace historical unseeded reservoir estimation.",
+  "methods_script": "scripts/249_normalization_sensitivity.py"
+}

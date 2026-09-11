@@ -1,0 +1,41 @@
+{
+  "status": "CONSTRUCTION_ONLY_DIAGNOSTIC_SUPERSEDED_BY_MICROBIAL_SCOPE",
+  "purpose": "Post-audit scoring-coverage sensitivity; does not replace the fixed four-tool primary cohort.",
+  "cohort": "Reference overlap screened, true completeness >=50%, true contamination <=true completeness; pairwise MAGICC/CheckM2 finite in both outputs. No CoCoPyE availability requirement in the pairwise cohort.",
+  "uncertainty": "2000 paired dominant-source-reference cluster resamples; same draws for both tools and outputs. Percentile95% intervals; sample-weighted MAE/bias within each dataset/binset. No new significance designation or multiplicity-selected claim.",
+  "prediction_verification": "All MAGICC/CheckM2 predictions and truth values exactly match historical rows; changes between common and pairwise cohorts arise only from membership.",
+  "normalization": "Reference overlap screening does not remove the disclosed historical unsupervised preprocessing overlap.",
+  "input_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_long_predictions.tsv",
+      "sha256": "63708bebc9551b8d20f4f903dcb8a3249528762b45507254999d02a58f784b88"
+    },
+    {
+      "path": "results/revision/cami2/analysis/cami2_long_predictions.tsv",
+      "sha256": "d566f0cb84a8c3115dfdf17acf3feb1c51e35d244c1e917e9298081f2c0830fe"
+    },
+    {
+      "path": "scripts/266_cami_pairwise_coverage_sensitivity.py",
+      "sha256": "d1b38c4d8405c51ae3656acba2df2e39dcf7a3e32722452f33f9954a2ce6ace1"
+    }
+  ],
+  "output_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_pairwise_coverage/coverage.tsv",
+      "sha256": "d7747ce061100d1d9a7e9cf69eb84fdeba501ec17640301a2f15e344db607380"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_pairwise_coverage/membership.tsv",
+      "sha256": "31f02e53e2878a7c9363ba7baa1f590c78fb8407cf3fe594ff0072017d77a45a"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_pairwise_coverage/metrics.tsv",
+      "sha256": "6502917e67b723333c5776b6e0ce216cfb94a1fe16340c21fc030f42ce9a4bd9"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_pairwise_coverage/paired_mae_differences.tsv",
+      "sha256": "6187316394922dd27c1ff1a6eac9c57b59102fee4645e7017a2fb4d3e34faba6"
+    }
+  ],
+  "scope_warning": "The pairwise-exclusive marine reference units are RNODE circular elements. These results cannot support prokaryotic genome-quality validation."
+}

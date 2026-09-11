@@ -1,0 +1,52 @@
+{
+  "status": "SECONDARY_COMPLETE",
+  "prespecified_before_comparative_outcomes": true,
+  "truth_filter": "50 <= true completeness <=100 and true contamination <=35",
+  "cohort_rule": "Both finite estimates from every one of the four tools",
+  "pooled_weighting": "Each eligible sample has equal weight; sets have their observed sample proportions",
+  "pooled_cluster_unit": "Dominant accession shared across sets",
+  "pooled_n": 2651,
+  "pooled_n_refs": 1385,
+  "bootstrap_replicates": 2000,
+  "hl_bootstrap_replicates": 1000,
+  "bh_family_n": 36,
+  "interpretation": "Secondary CheckM2 published training-dose-range comparison; does not change primary benchmark or correct historical normalization overlap",
+  "input_manifest": [
+    {
+      "path": "scripts/256_cocopye_in_range_sensitivity.py",
+      "sha256": "1ead6a7c5b49a179e47a9e64b6b925fc0fd037e0cd6b6ed541f041bedf5cf4aa"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/scripts/config_revision_metrics.yaml",
+      "sha256": "a2764d5e6ec2b367ee426697f723f42d85770b3d30d4f0ea1519dee13c12b412"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/scripts/104_clustered_statistics.py",
+      "sha256": "0d40540e22d90908c370333e16c1393b85e786085ef8d35ad160a03a4db7c4be"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/corrected_prediction_manifest.tsv",
+      "sha256": "493fb306cb828cc228cf9bbc2a8caf80d0f0d783574ede31ac0ea46b9d1d9587"
+    }
+  ],
+  "output_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/in_range_sensitivity/accuracy.tsv",
+      "sha256": "d71c9800325e76779155d89d4573939c70202e998ace89d40141b50eb4f99b67"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/in_range_sensitivity/eligible_predictions.tsv.gz",
+      "sha256": "8ed52ab60cc1a6fc2e26656d0907e7e43300a89d240ff2e6965a7f7fc58321a2"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/in_range_sensitivity/paired_comparisons.tsv",
+      "sha256": "2c4cd3748c83607d14bd97eed98da0db017b3589470f48a09e00a26f8723ec78"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/in_range_sensitivity/scoring_coverage.tsv",
+      "sha256": "b3afe09c457e1d4a3dd04a4dc889ef9a19928f2f9f29ad21885973a8a31ccfba"
+    }
+  ],
+  "significance_support_rule": "Agreement of all three BH-adjusted tests; rank-test flags also retained as explicitly named components.",
+  "finalization": "Adds the same conservative agreement flag used for the primary panel from already computed p-values; no bootstrap values or point estimates change."
+}

@@ -1,0 +1,11 @@
+family	parent_orders	parent_order_training_remaining	whole_order_removed	parent_classes	parent_class_training_remaining
+Streptococcaceae	Lactobacillales	2869	False	Bacilli	10632
+Pseudomonadaceae	Pseudomonadales	395	False	Gammaproteobacteria	18317
+Bacteroidaceae	Bacteroidales	3689	False	Bacteroidia	5522
+Helicobacteraceae	Campylobacterales	3331	False	Campylobacteria	3341
+Bifidobacteriaceae	Actinomycetales	1828	False	Actinomycetes	7680
+Leptospiraceae	Leptospirales	0	True	Leptospiria	4
+Cyanobiaceae	PCC-6307	0	True	Cyanobacteriia	509
+Moraxellaceae	Pseudomonadales	395	False	Gammaproteobacteria	18317
+Lactobacillaceae	Lactobacillales	2869	False	Bacilli	10632
+Flavobacteriaceae	Flavobacteriales	743	False	Bacteroidia	5522

@@ -1,0 +1,11 @@
+family	train	val	test	phylum	domain	parent_train	largest_family_in_parent	eligible	selected	selection_order	parent_remaining_train	parent_remaining_fraction	eval_references	simulations_per_reference	eval_samples
+Streptococcaceae	4296	528	478	Bacillota	Bacteria	20301.0	False	True	True	1	14453.0	0.7119353726417418	100	10	1000
+Pseudomonadaceae	2348	305	332	Pseudomonadota	Bacteria	25960.0	False	True	True	2	21825.0	0.8407164869029276	100	10	1000
+Bacteroidaceae	1657	208	229	Bacteroidota	Bacteria	8279.0	False	True	True	3	5522.0	0.6669887667592704	100	10	1000
+Helicobacteraceae	1627	210	205	Campylobacterota	Bacteria	4973.0	False	True	True	4	3346.0	0.6728332998190227	100	10	1000
+Bifidobacteriaceae	1209	137	133	Actinomycetota	Bacteria	9581.0	False	True	True	5	8372.0	0.8738127544097694	100	10	1000
+Leptospiraceae	305	38	37	Spirochaetota	Bacteria	890.0	False	True	True	6	585.0	0.6573033707865169	37	10	370
+Cyanobiaceae	304	43	35	Cyanobacteriota	Bacteria	1317.0	False	True	True	7	1013.0	0.7691723614274867	35	10	350
+Moraxellaceae	1787	205	202	Pseudomonadota	Bacteria	25960.0	False	True	True	8	21825.0	0.8407164869029276	100	10	1000
+Lactobacillaceae	1552	199	212	Bacillota	Bacteria	20301.0	False	True	True	9	14453.0	0.7119353726417418	100	10	1000
+Flavobacteriaceae	1100	153	155	Bacteroidota	Bacteria	8279.0	False	True	True	10	5522.0	0.6669887667592704	100	10	1000

@@ -1,0 +1,74 @@
+{
+  "status": "DECISION_RULE_AUDITED",
+  "historical_protocol": "project_design_and_protocol.md WS5.4 requires two-sided paired clustered tests, BH correction and effects but does not define a winner-count rule.",
+  "historical_script": "scripts/104_clustered_statistics.py labels BH cluster-mean Wilcoxon primary and emits a separate significant_all_three_bh conjunction.",
+  "shipped_methods": "nature_communications/resubmission4/manuscript_revised.md Statistics states that a difference is supported only when all three tests agree.",
+  "final_support_rule": "All three BH-adjusted tests must reject at q<0.05: genome-level paired Wilcoxon, reference-cluster-mean paired Wilcoxon, and reference-cluster bootstrap of the paired mean absolute-error difference. Direction is the paired mean-MAE difference. Failure to meet this conjunction is unresolved, not equivalence.",
+  "rank_test_only_rule": "BH-adjusted reference-cluster-mean Wilcoxon alone; retained as an explicitly named component result, not substituted for supported mean-MAE differences.",
+  "partition": [
+    {
+      "criterion": "significant_bh_primary",
+      "comparator": "all_three_comparators",
+      "n": 30,
+      "magicc_advantage": 24,
+      "magicc_disadvantage": 4,
+      "unresolved": 2
+    },
+    {
+      "criterion": "significant_bh_primary",
+      "comparator": "checkm2",
+      "n": 10,
+      "magicc_advantage": 8,
+      "magicc_disadvantage": 2,
+      "unresolved": 0
+    },
+    {
+      "criterion": "significant_bh_primary",
+      "comparator": "cocopye",
+      "n": 10,
+      "magicc_advantage": 7,
+      "magicc_disadvantage": 1,
+      "unresolved": 2
+    },
+    {
+      "criterion": "significant_bh_primary",
+      "comparator": "deepcheck",
+      "n": 10,
+      "magicc_advantage": 9,
+      "magicc_disadvantage": 1,
+      "unresolved": 0
+    },
+    {
+      "criterion": "significant_all_three_bh",
+      "comparator": "all_three_comparators",
+      "n": 30,
+      "magicc_advantage": 22,
+      "magicc_disadvantage": 4,
+      "unresolved": 4
+    },
+    {
+      "criterion": "significant_all_three_bh",
+      "comparator": "checkm2",
+      "n": 10,
+      "magicc_advantage": 7,
+      "magicc_disadvantage": 2,
+      "unresolved": 1
+    },
+    {
+      "criterion": "significant_all_three_bh",
+      "comparator": "cocopye",
+      "n": 10,
+      "magicc_advantage": 6,
+      "magicc_disadvantage": 1,
+      "unresolved": 3
+    },
+    {
+      "criterion": "significant_all_three_bh",
+      "comparator": "deepcheck",
+      "n": 10,
+      "magicc_advantage": 9,
+      "magicc_disadvantage": 1,
+      "unresolved": 0
+    }
+  ]
+}

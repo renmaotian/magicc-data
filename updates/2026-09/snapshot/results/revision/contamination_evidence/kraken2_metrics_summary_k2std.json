@@ -1,0 +1,102 @@
+{
+  "original_metric_reproduction_check": {
+    "n_compared": 141,
+    "max_abs_diff_contam_pct": 42.261,
+    "mean_abs_diff_contam_pct": 10.094624,
+    "max_abs_diff_n_phyla": 9,
+    "verdict": "MISMATCH -- investigate"
+  },
+  "thresholds": {
+    "min_confidence": 0.1,
+    "min_informative_kmers": 50,
+    "min_contig_bp": 1000
+  },
+  "original_metric": "non-dominant-phylum resolved bp / total bp; every classified contig contributes its full length regardless of k-mer support (reproduces scripts/61)",
+  "strict_metric": "non-dominant-phylum qualifying bp / qualifying bp; a contig qualifies only with confidence >= min_confidence, informative_kmers >= min_informative_kmers and length >= min_contig_bp; unclassified and low-confidence bp are excluded from the denominator",
+  "kraken2_db": "/media/Data_1/tianrm/projects/magicc2/tools/kraken2_db_standard",
+  "kraken2_db_hash_bytes": 98600749380,
+  "kraken2_db_hash_gb": 98.6,
+  "kraken2_binary": "/home/tianrm/anaconda3/envs/kraken2_env/bin/kraken2",
+  "taxonomy_dir": "/media/Data_1/tianrm/projects/magicc2/tools/kraken2_db_standard",
+  "kraken2_version": "Kraken version 2.17.1",
+  "db_tag": "k2std",
+  "n_genomes_scored": 141,
+  "per_cohort": {
+    "disagreement_141": {
+      "n": 141,
+      "median_orig_phylum_contam_pct": 7.767,
+      "median_strict_phylum_contam_pct": 0.0,
+      "median_strict_qualifying_bp_frac": 0.0,
+      "median_informative_kmer_density": 0.015816,
+      "median_mean_contig_confidence": 0.001261
+    }
+  },
+  "disagreement_141_flags_gt5pct": {
+    "original": {
+      "n_flagged": 78,
+      "n_total": 141
+    },
+    "strict": {
+      "n_flagged": 9,
+      "n_scoreable": 31,
+      "n_unscoreable": 110
+    },
+    "manuscript_claim": "109/141 (77.3%)"
+  },
+  "batching_validation": null,
+  "threshold_sweep_disagreement_141": [
+    {
+      "min_confidence": 0.0,
+      "min_informative_kmers": 0,
+      "n_scoreable": 141,
+      "n_total": 141,
+      "median_strict_contam_pct": 7.947,
+      "median_qualifying_bp_frac": 0.9774
+    },
+    {
+      "min_confidence": 0.001,
+      "min_informative_kmers": 1,
+      "n_scoreable": 134,
+      "n_total": 141,
+      "median_strict_contam_pct": 9.619,
+      "median_qualifying_bp_frac": 0.2081
+    },
+    {
+      "min_confidence": 0.005,
+      "min_informative_kmers": 2,
+      "n_scoreable": 112,
+      "n_total": 141,
+      "median_strict_contam_pct": 0.0,
+      "median_qualifying_bp_frac": 0.0181
+    },
+    {
+      "min_confidence": 0.01,
+      "min_informative_kmers": 5,
+      "n_scoreable": 84,
+      "n_total": 141,
+      "median_strict_contam_pct": 0.0,
+      "median_qualifying_bp_frac": 0.0019
+    },
+    {
+      "min_confidence": 0.05,
+      "min_informative_kmers": 10,
+      "n_scoreable": 43,
+      "n_total": 141,
+      "median_strict_contam_pct": 0.0,
+      "median_qualifying_bp_frac": 0.0
+    },
+    {
+      "min_confidence": 0.1,
+      "min_informative_kmers": 50,
+      "n_scoreable": 31,
+      "n_total": 141,
+      "median_strict_contam_pct": 0.0,
+      "median_qualifying_bp_frac": 0.0
+    }
+  ],
+  "kraken2_db_note": "tools/kraken2_db hash.k2d is exactly 8,000,000,032 bytes, i.e. the capped k2_standard_08gb build. Minimizer down-sampling means only a small fraction of a query genome k-mers can match, which is why informative_kmer_density is ~5e-4 for these MAGs.",
+  "outputs": {
+    "metrics": "/media/Data_1/tianrm/projects/magicc2/results/revision/contamination_evidence/kraken2_metrics_k2std.tsv",
+    "contig_detail": "/media/Data_1/tianrm/projects/magicc2/results/revision/contamination_evidence/kraken2_contig_detail_k2std.tsv.gz"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "status": "CAMI_MICROBIAL_SCOPE_PREPARED",
+  "scientific_scope": "Otu microbial source IDs from native CAMI setup metadata; both dominant and donor eligible. RNODE circular elements remain construction-audit records only.",
+  "primary_expectation": "Corrected four-tool primary membership unchanged, verified after replay.",
+  "input_manifest": [
+    {
+      "path": "scripts/270_prepare_cami_microbial_scope_replay.py",
+      "sha256": "70eeb80ad001b341f11298c8b2487496087c4996a57e497c7e7cdc13b1215bd6"
+    },
+    {
+      "path": "scripts/267_audit_cami_marine_source_scope.py",
+      "sha256": "ddc4a13526bbc4fd448bff406d39bb6f6ba5d739286e4d0ae5b56f22e2560992"
+    },
+    {
+      "path": "results/revision/holdout_resubmission5/cami_source_audit/audit_summary.json",
+      "sha256": "e82dc09de1f1b269d4523273c2fa26c2dd506803aaa37ffde47d29f26f0d913f"
+    },
+    {
+      "path": "data/real_data/cami2/marine/setup/simulation_short_read/metadata.tsv",
+      "sha256": "ba13c2e83b21225cd791fbd5addb651c48520ce2dde0244623169ec0259844fa"
+    },
+    {
+      "path": "results/revision/cami2/provenance/marine_source_genome_audit.tsv",
+      "sha256": "d9c0032e1c7f7c0fe3f7cf1b2ddf0b0c513e2afc46e960a05ea0d9f5707836dd"
+    },
+    {
+      "path": "results/revision/cami2/truth/marine_gold_truth.tsv",
+      "sha256": "8d95d05dc1f5c33f4d7c850d8afa8984c4eabf63011df1fd54414f47737eda17"
+    },
+    {
+      "path": "results/revision/cami2/truth/marine_mixed_truth.tsv",
+      "sha256": "d85000e94603d61766281090bad787ca4e504353b936f54d158b84012fda0558"
+    },
+    {
+      "path": "data/real_data/cami2/strain_madness/setup/short_read/metadata.tsv",
+      "sha256": "a6337b76e2ba87e6be0a176b05a7a8ad2b7f1262cb36175d1b6a2213dcb7c6fb"
+    },
+    {
+      "path": "results/revision/cami2/provenance/strain_madness_source_genome_audit.tsv",
+      "sha256": "dc8a1697a7feb5e47b9993b4f388ba56afdcd8a764cd3824217ccd9b2bf4fc38"
+    },
+    {
+      "path": "results/revision/cami2/truth/strain_madness_gold_truth.tsv",
+      "sha256": "90ecb6f4516b871882b5a12f13ffdc86c3f04b5b8ceb79aa0adc5b5222d43105"
+    },
+    {
+      "path": "results/revision/cami2/truth/strain_madness_mixed_truth.tsv",
+      "sha256": "a2d7c93758775cd8218a6b465fd25462d14e3edd087970bf834e626db9e1658e"
+    }
+  ],
+  "modified_script": {
+    "path": "results/revision/cocopye_stage_resubmission5/replay/scripts/201_ws38_cami2_analysis.py",
+    "sha256": "3f8bea831b5e12f91927a52a09bb8cc211bb277c0bbf21cb758a29ca8741fd43"
+  },
+  "historical_outputs": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/201_script_before_scope.py",
+      "sha256": "27ea10c435ebfc31c6968bf79493fb0146667be5993e3fdfbf6db40090addfbc"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_accuracy_by_cohort.tsv",
+      "sha256": "e1ba3f29b1e783d411d99133b9708f1689ed7e94cdd2574a0f39634b93412cfb"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_censoring.tsv",
+      "sha256": "caa9b4f7a0ec5c1ef30db8e3d9de8deb38e6a5581e56960dcc5f97689363491d"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_detection_slopes.tsv",
+      "sha256": "cd8fa7cc18b8550b7802d80f52cbee0011654963ef04024894ae59539c5277e6"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_domain_restriction.tsv",
+      "sha256": "3b2b85b0ab9d1d3d10c82a7d6310214b1e64d94f715bd99751a61a30e5d2a2bd"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_gold_by_completeness_decile.tsv",
+      "sha256": "e115b738eda40c14f20faae32c11cd3ab9e36851b4e6a74e580bcbb46619c400"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_headline.json",
+      "sha256": "50724cfe9f84fa58ddb5da232614664551f7b1360a123bdb401e3831ea77ec8e"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_long_predictions.tsv",
+      "sha256": "63708bebc9551b8d20f4f903dcb8a3249528762b45507254999d02a58f784b88"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_mimag.tsv",
+      "sha256": "4a3effca42372718c4687748c948ba63cc3192a2d3bacb7f768f5c1c6e26c96a"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_mixed_by_distance.tsv",
+      "sha256": "a1129a9572274c7de216172166dfd9d95278f62fc00a65ff20c9b4d5eecfb2f5"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_paired_tests.tsv",
+      "sha256": "a41be62b791bddb893d63c957efbc9bea5c58349471b9d71756e8dd67fac6aab"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_palette_cvd_check.tsv",
+      "sha256": "d7fe8fedfaf92fceb5ffb4609b76475a238607c120e6568f952525e8b9409715"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_sensitivity_subsampling.tsv",
+      "sha256": "1632ad7283d4be6592e5e9f1b8d99b4007247127486cc36547ce15664abc5202"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_setF_comparison.tsv",
+      "sha256": "27f3c70d3b4730c7414b8b84e3dc4ba47ebb459965d41fa1094ea132946fed4a"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_tool_scoring_coverage.tsv",
+      "sha256": "3102a3ec31b411b09897b931dcb53a15788b34fdf78f12585f4a053c29f1d697"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_wellcontrolled_by_distance.tsv",
+      "sha256": "02d87e611ba116b1a7ba8c794cd5fcc87eaf9f2c8d62649ead87a7fc4e07d5da"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/cami_microbial_scope/before_scope/cami2_ws39_rows.tsv",
+      "sha256": "b9c9200d5376c7793f1eec7c701606045067bbb8bb815d45b92dacaef27c5f5e"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "status": "REPLAY_PREPARED",
+  "workspace": "results/revision/cocopye_stage_resubmission5/replay",
+  "originals_modified": false,
+  "autodiscovery": "Disabled; all original explicitly configured benchmark sets retained; F/G and external analyses run separately.",
+  "script_paths_redirected": 248,
+  "prediction_tables_updated": 25
+}

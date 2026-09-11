@@ -1,0 +1,48 @@
+{
+  "kraken2_db": "tools/kraken2_db",
+  "kraken2_db_hash_bytes": 8000000032,
+  "control_design": "non-representative reference genomes (species present in a --one-per-species database, genome itself absent), stratified by phylum representation",
+  "always_sparse_lineages": [
+    "Patescibacteriota",
+    "Nanoarchaeota",
+    "Micrarchaeota",
+    "Altarchaeota",
+    "Aenigmatarchaeota",
+    "Huberarchaeota"
+  ],
+  "per_stratum_requested": 30,
+  "strata": {
+    "control_well_represented": {
+      "n": 30,
+      "p10": 0.0012507750000000002,
+      "p25": 0.0018257475,
+      "median": 0.007778915,
+      "p75": 0.08340075,
+      "p90": 0.085889295,
+      "min": 0.00069998,
+      "max": 0.08761417
+    },
+    "control_rare_phylum": {
+      "n": 3,
+      "p10": 0.000441484,
+      "p25": 0.00045958,
+      "median": 0.00048974,
+      "p75": 0.000579455,
+      "p90": 0.000633284,
+      "min": 0.00042942,
+      "max": 0.00066917
+    },
+    "control_cpr_dpann": {
+      "n": 30,
+      "p10": 0.0003855,
+      "p25": 0.0004559975,
+      "median": 0.000598365,
+      "p75": 0.0007052325,
+      "p90": 0.000758862,
+      "min": 0.00032372,
+      "max": 0.00141072
+    }
+  },
+  "verdict": null,
+  "controls_tsv": "results/revision/contamination_evidence/density_controls_capped8gb.tsv"
+}

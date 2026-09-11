@@ -1,0 +1,47 @@
+{
+  "status": "SOURCE_SCOPE_AUDIT_COMPLETE",
+  "audited_at_utc": "2026-09-08T20:04:00.129201+00:00",
+  "official_generation_commit": "501b543f65d62e5c1d6c3813be0badcac5e079ca",
+  "metadata_sources": 977,
+  "microbial_genome_sources": 777,
+  "circular_element_sources": 200,
+  "circular_categories": {
+    "plasmid": 108,
+    "unknown": 88,
+    "virus": 4
+  },
+  "legacy_source_audit_rows": 864,
+  "legacy_retained_unknown_circular_elements": 88,
+  "pairwise_counts": [
+    {
+      "binset": "gold",
+      "four_tool_common": false,
+      "any_circular_element": true,
+      "n_bins": 148
+    },
+    {
+      "binset": "gold",
+      "four_tool_common": true,
+      "any_circular_element": false,
+      "n_bins": 339
+    },
+    {
+      "binset": "mixed",
+      "four_tool_common": false,
+      "any_circular_element": true,
+      "n_bins": 206
+    },
+    {
+      "binset": "mixed",
+      "four_tool_common": true,
+      "any_circular_element": false,
+      "n_bins": 864
+    }
+  ],
+  "exclusive_mixed_distance_counts": {
+    "species": 206
+  },
+  "conclusion": "All pairwise-exclusive marine bins have circular-element dominant references. The former plasmid/virus-only filter missed 88 unknown circular elements; catchall taxid 32644 is not biological evidence of species relatedness.",
+  "scope_rule": "CAMI source identity and official generation provenance, independent of sequence length, prediction values or comparator success.",
+  "inputs_or_predictions_modified": false
+}

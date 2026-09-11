@@ -1,0 +1,9 @@
+{
+  "n_features": 9243,
+  "sha256": "33db5f0442e4876861e5aa0758f84afa91a0834168430776b1379897b84291e5",
+  "selection_scope": "Only nonpanel representatives from original training split; top 9000 bacterial +1000 archaeal canonical k-mers, merged.",
+  "model_inputs": "Both holdout and matched_full models use this exact reselected vocabulary.",
+  "production_v5": "Frozen production model retained as a separate descriptive comparator with its original vocabulary.",
+  "normalization": "Each new model fits its own normalization on all and only its training samples.",
+  "split_leakage_checks": "Every representative accession confirmed in original training split; no primary-panel family survives feature selection."
+}

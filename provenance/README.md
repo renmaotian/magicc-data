@@ -1,3 +1,5 @@
+> September 2026 clarification: the historical overlap audit establishes dominant-reference and feature-selection membership, not fully independent preprocessing. Production V5 inherited normalization fitted on unlabelled V4 training, validation and test features. The new matched retrains use training-only normalizers; see [the current deposit](../updates/2026-09/README.md).
+
 # MAGICC revision — benchmark provenance audit (WS1.4)
 
 Generated 2026-07-26T14:26:25.065636+00:00 by `data_generating_scripts/74_provenance_audit.py`.

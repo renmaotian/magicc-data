@@ -1,0 +1,49 @@
+{
+  "status": "NCBI_THREE_TOOL_COMPLETE",
+  "primary_n": 913,
+  "primary_n_species": 124,
+  "tools": [
+    "MAGICC V5",
+    "CheckM2 1.0.1",
+    "CoCoPyE 0.5.0"
+  ],
+  "deepcheck": "No existing predictions; omitted",
+  "predeclared_scope": "Primary913/124; all1096 and species-absent106 sensitivity; completeness primary and contamination-upper-proxy secondary, regardless comparative outcome",
+  "normalization_scope": "Accession overlap screened; this does not establish independent historical unsupervised preprocessing for MAGICC.",
+  "input_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/real_data/ncbi_pairs/metrics_by_cohort.tsv",
+      "sha256": "22ffbcc37220a09c38d3794f74c894feb52110aad15749e8e36223bde1dcf549"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/real_data/ncbi_pairs/paired_tests.tsv",
+      "sha256": "c637db4b0e0116101f5c3774d8fcff4c0031df5d905c6812cf553f4d580c92b7"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/real_data/ncbi_pairs/per_pair_results.tsv",
+      "sha256": "5d915a38b6fb1144ea5aebd639fb6c5b2adbd33d40902a5c84f40160c24285d7"
+    },
+    {
+      "path": "results/revision/ncbi_pairs_resubmission5/existing_prediction_inventory.json",
+      "sha256": "3790107c153f06184f9fc4a6aeaf50e65793fbbd8b6c4e9256718aa99fd14279"
+    },
+    {
+      "path": "scripts/264_curate_ncbi_three_tool_comparison.py",
+      "sha256": "f92b5c6d21085701ff363139eec7ae8f1fdf8649a907cb2fa7d129e68cc147a5"
+    }
+  ],
+  "output_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/ncbi_three_tool/metrics.tsv",
+      "sha256": "d1849c0cb6c4477e6ba59e176573634ea4161c7f14ba25f86ca166ee164da723"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/ncbi_three_tool/paired_mae_differences.tsv",
+      "sha256": "beab793d7826049f5dc701c0e912be4e154eb8d835d0036ad1c259db9889b343"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/ncbi_three_tool/scoring_coverage.tsv",
+      "sha256": "cb3c7ad1cd786430a41011c0a1d13215ae54879d4f3b429d1c6bbd6f9c9c263d"
+    }
+  ]
+}

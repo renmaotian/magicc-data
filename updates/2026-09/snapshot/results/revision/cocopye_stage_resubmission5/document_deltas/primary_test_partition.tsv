@@ -1,0 +1,9 @@
+criterion	comparator	n	magicc_advantage	magicc_disadvantage	unresolved
+significant_bh_primary	all_three_comparators	30	24	4	2
+significant_bh_primary	checkm2	10	8	2	0
+significant_bh_primary	cocopye	10	7	1	2
+significant_bh_primary	deepcheck	10	9	1	0
+significant_all_three_bh	all_three_comparators	30	22	4	4
+significant_all_three_bh	checkm2	10	7	2	1
+significant_all_three_bh	cocopye	10	6	1	3
+significant_all_three_bh	deepcheck	10	9	1	0

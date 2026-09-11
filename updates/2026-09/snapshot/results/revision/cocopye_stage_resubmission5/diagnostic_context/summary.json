@@ -1,0 +1,48 @@
+{
+  "status": "DIAGNOSTIC_COMPARATOR_CONTEXT_RECONCILED",
+  "balanced_accuracy_point_leaders": {
+    "set_B_v2": "cocopye",
+    "set_C_clean": "magicc_v5",
+    "set_D_clean": "magicc_v5",
+    "set_E": "magicc_v5"
+  },
+  "absence_of_true_contaminated_class": "SetA: binary balanced accuracy undefined",
+  "normalization_scope": "The normalization sensitivity is a fixed-weight MAGICC-only inference perturbation. Its baseline and perturbed predictions, confusion matrices and C-clean23/52 and19/948 threshold counts do not depend on CoCoPyE parsing. Scripts249/250 read historical comparison tables only to verify the unchanged MAGICC baseline rows; they do not compute comparator rankings. Any comparative context in the submission uses selected-stage CoCoPyE results in independent_figures/independent_figure3f_thresholds.tsv and the corrected macro-F1 tables. Small inference-perturbation effects do not quantify or eliminate training-time unsupervised preprocessing overlap.",
+  "historical_verification": "Preserved historical reproduction text and explicitly appended final selected-stage comparison linkage.",
+  "input_manifest": [
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/independent_figures/independent_figure3f_thresholds.tsv",
+      "sha256": "f863fe02c4290e48edf249c840664a995575f1beef91096c43a0d1f9a17fcd3d"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/independent_figures/independent_duplication_statistics.tsv",
+      "sha256": "53bfbf1035a90dce7e614f9116bd12fbd165c1c79861e4c6dae4a22c798edb56"
+    },
+    {
+      "path": "results/revision/normalization_sensitivity_resubmission5/classification_sensitivity.tsv",
+      "sha256": "3d9d0142d9f8d3d37475ba59485833fc49cab33c92b3372491cf8d7913c69a0c"
+    },
+    {
+      "path": "scripts/249_normalization_sensitivity.py",
+      "sha256": "dfb19882c6422cda5941605107d9da5216886ffa577198804b855c373e28c912"
+    },
+    {
+      "path": "scripts/250_audit_normalization_sensitivity.py",
+      "sha256": "0422093f968edf40e38c550a438cbbde4be38bb27f48c7f3f7bbd053b029240b"
+    },
+    {
+      "path": "scripts/271_reconcile_diagnostic_comparator_context.py",
+      "sha256": "9d780bcbbbb1f848529915dfadcbde46c070ff6e954e88a5cf04108b8d31a2c3"
+    }
+  ],
+  "output_manifest": [
+    {
+      "path": "results/revision/fig5c_verification_resubmission5/VERIFICATION_REPORT.md",
+      "sha256": "7e5a2f0d5074db856035180abb314429ac9632e6b6df46a21cf8f8efed0343f5"
+    },
+    {
+      "path": "results/revision/cocopye_stage_resubmission5/diagnostic_context/normalization_context.md",
+      "sha256": "963be3e2e81499b63042b04ae2d5b4c75d5d399070d6eb1ba249a7bc33d39d5a"
+    }
+  ]
+}

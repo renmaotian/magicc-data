@@ -1,0 +1,39 @@
+{
+  "ena_gorg_assemblies": 12715,
+  "gorg_matching_gtdb_records": 3160,
+  "matched_unique_ena_accessions": 3160,
+  "join_scope": "ENA manifest contains unversioned assembly accessions; each matched assembly is counted once, including linked RefSeq aliases.",
+  "fraction_of_ena_present_in_gtdb": 0.24852536374360992,
+  "matched_checkm2_completeness_ge50": 3160,
+  "matched_checkm2_completeness_median": 75.41499999999999,
+  "matched_checkm2_completeness_min": 50.02,
+  "matched_checkm2_completeness_ge90": 285,
+  "matched_checkm2_contamination_median": 0.05,
+  "matched_checkm2_contamination_max": 3.11,
+  "gorg_not_present_in_gtdb": 9555,
+  "historical_literal_bioproject_count": 3151,
+  "historical_literal_bioproject_comp_median": 75.39,
+  "historical_literal_bioproject_comp_ge90": 278,
+  "additional_linked_refseq_records": 9,
+  "whole_cohort_below50_count": null,
+  "whole_cohort_completeness_median": null,
+  "absence_reason": "Cannot infer completeness below50% from absence in GTDB; inclusion has multiple criteria.",
+  "all_gtdb_explicit_single_cell_count": 1596,
+  "all_gtdb_explicit_single_cell_checkm2_ge50": 1595,
+  "all_gtdb_explicit_single_cell_comp_median": 75.07499999999999,
+  "new_SAG_accuracy_evaluation_performed": false,
+  "inputs": [
+    {
+      "path": "data/real_data/gorg_tropics/ena_PRJEB33281_assemblies.tsv",
+      "sha256": "1d39c018173aeb6b3bce634f2a4d9be2c13eac74da2f3c8eb996fa87913f0aee"
+    },
+    {
+      "path": "data/gtdb/bac120_metadata.tsv.gz",
+      "sha256": "45f1614aff80c19752860880b47b3cdeb66def8ff66dc106909b28bb2bd9bcbf"
+    },
+    {
+      "path": "data/gtdb/ar53_metadata.tsv.gz",
+      "sha256": "f12310f223e6dd27dc942379de1cfbeec5ebd2b917786cf2ce28695555eab6e5"
+    }
+  ]
+}
