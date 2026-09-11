@@ -62,8 +62,9 @@ it at `models/magicc_v5.onnx` after checking SHA256
 Read the restored `results/revision/holdout_resubmission5/reconstruction/README.md`
 and source/metadata manifests. Script 250 fetches exact source accessions and
 checks their bytes. The core-gene archive is required for byte-matched feature
-reselection; its pending publication is explicit in `RELEASE_ASSETS.json`.
-Once those inputs are restored, the full recipe is:
+reselection. That archive is prepared with the submission materials outside this
+repository and has no public download here, as recorded in `RELEASE_ASSETS.json`.
+With those separately obtained inputs restored, the full recipe is:
 
 ```bash
 python scripts/240_select_resubmission5_holdout.py
@@ -73,9 +74,11 @@ bash scripts/247_run_resubmission5_holdout.sh
 
 This trains two full models with one million training samples each. It is not a
 smoke demonstration. Changing hardware/dependencies may change seeded training
-trajectories. The research ONNX assets reproduce the recorded weights once
-uploaded; pair each with its own normalizer and shared 9,243-feature vocabulary,
-not the production 9,249-feature input definition. Reference bootstrap intervals
+trajectories. The research ONNX files prepared with the submission materials
+contain the recorded weights, but are not publicly downloadable from this
+repository. If those files are available to you, pair each with its own
+normalizer and shared 9,243-feature vocabulary, not the production 9,249-feature
+input definition. Reference bootstrap intervals
 do not capture seed-to-seed training variability.
 
 ### Comparator/statistical corrections
@@ -88,9 +91,11 @@ analysis's listed third-party/raw inputs; this reduced deposit does not promise
 one-command regeneration of every large intermediate or editorial display.
 Submission-only gates and private-comment/rendering sources are excluded.
 
-## Pending assets
+## Artifact scope
 
-`RELEASE_ASSETS.json` records exact prepared names/sizes/hashes. Research models,
-the core-gene archive and convenience scientific ZIP have not yet been uploaded
-as v1.1.0. Tables/scripts in this directory are committed independently of those
-assets. The root `DEPOSITION_STATUS.md` is the publication-status authority.
+`RELEASE_ASSETS.json` records exact prepared names, sizes and hashes. Research
+models and the core-gene input archive are prepared with submission materials
+outside this repository; no public download or future upload is promised.
+Scientific tables and scripts are already public in this directory. Their
+separate convenience ZIP is optional and is not publicly downloadable here.
+The root `DEPOSITION_STATUS.md` records the publication scope.

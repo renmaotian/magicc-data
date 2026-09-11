@@ -1,34 +1,38 @@
 {
-  "planned_release": "v1.1.0",
-  "status": "assets_not_uploaded",
+  "status": "scientific_tables_and_scripts_public",
   "assets": [
     {
       "name": "magicc_research_matched_full.onnx",
       "bytes": 169560645,
       "sha256": "c1e466354f84b6805e38be4f49552e5d0992a0fcb5cdbef56d89396ed08f688d",
       "role": "Research retrain; 90 epochs, selected 70",
-      "publication_status": "prepared_not_uploaded"
+      "publication_status": "submission_material_outside_repository",
+      "availability": "Prepared outside the repository; no public download here and no upload requirement."
     },
     {
       "name": "magicc_research_family_holdout.onnx",
       "bytes": 169560645,
       "sha256": "b8ccdcbe2ee0c2ee3451556a11e40066e60aa8362b3a0d2012d4f6ad9bc91b26",
       "role": "Research retrain; 49 epochs, selected 29",
-      "publication_status": "prepared_not_uploaded"
+      "publication_status": "submission_material_outside_repository",
+      "availability": "Prepared outside the repository; no public download here and no upload requirement."
     },
     {
       "name": "magicc_feature_selection_inputs.zip",
       "bytes": 55236128,
       "sha256": "e39415cb81af63d68caf335ad06420ff346e132c87018534edb56d045acf7d89",
       "role": "Core-gene FASTAs and per-file manifest for actual feature reselection",
-      "publication_status": "prepared_not_uploaded"
+      "publication_status": "submission_material_outside_repository",
+      "availability": "Prepared outside the repository; no public download here and no upload requirement."
     },
     {
       "name": "magicc_2026_09_scientific_snapshot.zip",
       "bytes": 58683954,
       "sha256": "a08674b1b5334ea60a5df056d4b1ce6c8765a568dbbce96c2ab6f0b56a06e5bc",
       "role": "Scientific inputs, outputs and recorded code; excludes editorial and private review material",
-      "publication_status": "prepared_not_uploaded"
+      "publication_status": "optional_convenience_archive_not_publicly_downloadable",
+      "availability": "The same scientific tables and scripts are public as committed repository files."
     }
-  ]
+  ],
+  "scope": "Research ONNX models and feature-selection inputs are prepared with submission materials outside this repository. They have no public download here, and this update does not require their upload. No new release is promised."
 }

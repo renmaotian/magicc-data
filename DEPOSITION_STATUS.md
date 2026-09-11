@@ -1,7 +1,7 @@
 # Deposition status
 
 Updated September 2026. This inventory distinguishes committed results,
-downloadable assets and remaining asset publication.
+downloadable assets and materials prepared outside the repository.
 
 ## Committed scientific material
 
@@ -22,22 +22,23 @@ Current C/D retain `set_C_clean`/`set_D_clean` IDs and asset names. Release
 `v0.1.0` preserves withdrawn original C/D and historical motivating assemblies.
 Production V5 remains on the software repository's `v0.3.3` release.
 
-## Prepared assets not yet uploaded
+## Materials prepared outside the repository
 
-Planned release `v1.1.0` has not been created. The exact sizes and SHA256s are in
-`updates/2026-09/RELEASE_ASSETS.json`:
+The following research artifacts are prepared with the submission materials.
+They are intentionally outside this repository and have no public download here;
+no model or feature-input upload is required by this scientific update. Exact
+names, sizes and SHA256s are recorded in `updates/2026-09/RELEASE_ASSETS.json`:
 
 * `magicc_research_matched_full.onnx` — 90-epoch fit, selected epoch 70;
 * `magicc_research_family_holdout.onnx` — 49-epoch fit, selected epoch 29;
-* `magicc_feature_selection_inputs.zip` — core-gene FASTAs and manifest;
-* `magicc_2026_09_scientific_snapshot.zip` — convenience archive of committed data/code.
+* `magicc_feature_selection_inputs.zip` — core-gene FASTAs and manifest.
 
-Research weights and the core-gene archive are not ordinary Git files and are
-not publicly downloadable until this inventory is updated. The scientific
-snapshot is available from Git independently of its convenience ZIP. Older
-phylum/family/genus weights remain outside the previous deposit; their historical
-evaluation tables remain available, with the limitations described in the new
-holdout documentation.
+The optional `magicc_2026_09_scientific_snapshot.zip` is a prepared convenience
+copy of the committed data and code. It has no public download here; the same
+scientific content is already available from Git. No new release is promised.
+Older phylum/family/genus weights also remain outside the public deposit; their
+historical evaluation tables remain available, with the limitations described in
+the new holdout documentation.
 
 ## External inputs and limits
 

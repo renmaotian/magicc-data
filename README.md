@@ -33,12 +33,14 @@ at commit `c051b3d8383b560f34942e24ea4cbfe154f079c4`. The versioned snapshot is
 the authority for new results. Historical reports may describe earlier extraction
 or statistics; consult the corrected tables rather than combining versions.
 
-The scientific snapshot is committed. The separately prepared research ONNX
-models and core-gene input archive are **not yet uploaded as release assets**.
-[DEPOSITION_STATUS.md](DEPOSITION_STATUS.md) and
-[RELEASE_ASSETS.json](updates/2026-09/RELEASE_ASSETS.json) distinguish committed
-data from pending assets. No production weights or inference code were retrained
-or replaced by this update.
+The scientific tables and scripts are public in the committed snapshot. Research
+ONNX models and the core-gene input archive are prepared with the submission
+materials outside this repository; **no public download is provided here** and
+this update does not require their upload. [DEPOSITION_STATUS.md](DEPOSITION_STATUS.md)
+and [RELEASE_ASSETS.json](updates/2026-09/RELEASE_ASSETS.json) record this scope and
+the prepared artifact identities. A separate scientific ZIP is optional because
+its tables and code are already committed. No production weights or inference
+code were retrained or replaced by this update.
 
 ## Benchmark identity and downloads
 
