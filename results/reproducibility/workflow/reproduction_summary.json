@@ -5,11 +5,6 @@
     "WS7.4",
     "WS7.11"
   ],
-  "reviewer_comments": [
-    "R1-M6",
-    "R1-M8",
-    "R1-m18"
-  ],
   "overall": "PASS",
   "subsampled": false,
   "subsample_n_per_set": 0,
@@ -121,7 +116,7 @@
         "bias": 0.8285281999999999,
         "true_variance": 0.0,
         "r2": null,
-        "r2_omitted_reason": "true value has zero variance (R1-m19)",
+        "r2_omitted_reason": "true value has zero variance",
         "r_pearson_sq": null,
         "n_clusters": 798,
         "n_iterations": 2000,
@@ -148,7 +143,7 @@
         "bias": -2.9724279,
         "true_variance": 0.0,
         "r2": null,
-        "r2_omitted_reason": "true value has zero variance (R1-m19)",
+        "r2_omitted_reason": "true value has zero variance",
         "r_pearson_sq": null,
         "n_clusters": 803,
         "n_iterations": 2000,

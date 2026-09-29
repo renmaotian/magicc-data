@@ -40,7 +40,7 @@ more accurate on genome i. Three complementary tests are reported:
 
 **Which test is the primary one.** Test 2 (cluster-mean Wilcoxon) is the primary
 decision rule: it is rank-based, two-sided, and treats the reference genome as
-the sampling unit, which is precisely what Reviewer 1 asks for. Test 3 on the
+the sampling unit, Test 3 on the
 mean paired difference is the confirmatory test, because the difference in MAE is
 the quantity the manuscript's accuracy claims are about. Test 1 is reported for
 comparability only. A comparison is called robust only when all three survive BH
@@ -217,7 +217,7 @@ Family size m = 42 tests; BH applied within this family.
 
 ## Sensitivity analysis: clusters defined by dominant phylum
 
-The most conservative grouping the data support (clusters = phyla, so only a handful of independent units per set). Reported because Reviewer 1 asks for clustering by reference genome **or taxonomic group**.
+The most conservative grouping the data support (clusters = phyla, so only a handful of independent units per set). This sensitivity clusters by dominant phylum.
 
 ### abs_err_completeness
 

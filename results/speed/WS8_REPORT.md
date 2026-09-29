@@ -1,4 +1,4 @@
-# WS8 — matched-hardware speed and memory (R1-M7, R1-m11, R1-m12, R1-m20)
+# WS8 — matched-hardware speed and memory
 
 Generated from `results/revision/speed/`. 92 timed runs; every run has its own JSON under `runs/`.
 
@@ -57,7 +57,7 @@ set_E_100 is a seeded random subsample of Set E (CRC-32 seed 3017395416 from the
 | DeepCheck (inference only) | 16 | **43.5 s** [42.7 s–43.8 s] | 3 | 1.28 |
 | DeepCheck (inference only) | 32 | **29.5 s** [29.2 s–39.8 s] | 3 | 1.28 |
 
-## 8.3 Reconciliation of 40 s vs 97.5 s (R1-m11)
+## 8.3 Reconciliation of 40 s vs 97.5 s
 
 The two numbers were never measurements of the same thing, and they were never even measurements of the same experiment. 97.5 s is a real end-to-end wall-clock measurement of one process. 40 s is not a measurement at all: it is 1,000 divided by the 1,451 genomes/min/thread figure printed in the same table, and 1,451 is the arithmetic mean of five per-benchmark-set throughput rates computed from MAGICC's own internal compute-phase timer. Table S4 therefore places, in a single row, a wall-clock column and a throughput column that disagree with each other by 2.36x.
 
@@ -90,7 +90,7 @@ The two numbers were never measurements of the same thing, and they were never e
 
 **No.** The wrapper costs 1.8 s (4 %), not 23 s. The historical 74.4 s vs 97.5 s gap therefore cannot be attributed to `conda run`, and neither archived run recorded load average or page-cache state, so it cannot be attributed from the archive at all. Both are superseded by the V5 re-measurement, which records both.
 
-## 8.2 Total cost of ownership (R1-m12)
+## 8.2 Total cost of ownership
 
 | Tool | Reference data on disk | First-run download | Notes |
 |---|---:|---:|---|

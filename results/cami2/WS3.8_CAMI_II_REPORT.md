@@ -1,4 +1,4 @@
-# WS3.8 — CAMI II external benchmark (Reviewer 1, major comment 3)
+# WS3.8 — CAMI II external benchmark
 
 _Generated 2026-08-02T21:25:34.173538+00:00_
 
@@ -18,7 +18,7 @@ contamination(B) = 100 x (bp in B whose source is not d)  / R(d)
 R(d) = FULL reference length of d = total bp of source_genomes/<d>.fasta
 ```
 
-This is MAGICC's own convention verbatim (`magicc/contamination.py`: `completeness = dominant_actual_bp / dominant_genome_full_length`, `contamination = contaminant_total_bp / dominant_genome_full_length`), so truth and every tool share one denominator (R1-M5).
+This is MAGICC's own convention verbatim (`magicc/contamination.py`: `completeness = dominant_actual_bp / dominant_genome_full_length`, `contamination = contaminant_total_bp / dominant_genome_full_length`), so truth and every tool share one denominator.
 
 Retained bp was computed two ways and both are stored: `span_bp` (sum of contig spans) and `union_bp` (bp of the *union* of source intervals, which cannot double-count overlapping contigs). **They agree exactly** — the maximum difference across all gold bins is 0.00 pp, and no gold bin exceeds 100% completeness — so the primary number is not inflated by overlapping contigs.
 
@@ -191,13 +191,13 @@ Contaminant material is added as whole unmodified CAMI contigs. Marine contigs a
 | dataset        | binset | tool      | metric        | n    | n_clusters | mae    | mae_lo | mae_hi | bias     | bias_lo | bias_hi | r2       | r2_omitted_reason                            |
 |----------------|--------|-----------|---------------|------|------------|--------|--------|--------|----------|---------|---------|----------|----------------------------------------------|
 | marine         | gold   | MAGICC_V5 | completeness  | 409  | 231        | 9.733  | 7.711  | 11.88  | -6.856   | -9.274  | -4.644  | -0.05957 |                                              |
-| marine         | gold   | MAGICC_V5 | contamination | 409  | 231        | 1.049  | 0.6024 | 1.628  | 1.049    | 0.6024  | 1.628   |          | true value has (near-)zero variance (R1-m19) |
+| marine         | gold   | MAGICC_V5 | contamination | 409  | 231        | 1.049  | 0.6024 | 1.628  | 1.049    | 0.6024  | 1.628   |          | true value has (near-)zero variance |
 | marine         | gold   | CheckM2   | completeness  | 409  | 231        | 25.28  | 21.13  | 29.69  | -25.17   | -29.6   | -21.01  | -3.924   |                                              |
-| marine         | gold   | CheckM2   | contamination | 409  | 231        | 2.143  | 1.894  | 2.405  | 2.143    | 1.894   | 2.405   |          | true value has (near-)zero variance (R1-m19) |
+| marine         | gold   | CheckM2   | contamination | 409  | 231        | 2.143  | 1.894  | 2.405  | 2.143    | 1.894   | 2.405   |          | true value has (near-)zero variance |
 | marine         | gold   | CoCoPyE   | completeness  | 409  | 231        | 12.76  | 11.36  | 14.36  | 3.282    | 0.9071  | 5.549   | 0.06287  |                                              |
-| marine         | gold   | CoCoPyE   | contamination | 409  | 231        | 14.74  | 13.21  | 16.18  | 14.74    | 13.21   | 16.18   |          | true value has (near-)zero variance (R1-m19) |
+| marine         | gold   | CoCoPyE   | contamination | 409  | 231        | 14.74  | 13.21  | 16.18  | 14.74    | 13.21   | 16.18   |          | true value has (near-)zero variance |
 | marine         | gold   | DeepCheck | completeness  | 409  | 231        | 26.32  | 22.99  | 29.7   | -26.32   | -29.7   | -22.99  | -3.116   |                                              |
-| marine         | gold   | DeepCheck | contamination | 409  | 231        | 2.946  | 2.735  | 3.179  | 2.913    | 2.694   | 3.155   |          | true value has (near-)zero variance (R1-m19) |
+| marine         | gold   | DeepCheck | contamination | 409  | 231        | 2.946  | 2.735  | 3.179  | 2.913    | 2.694   | 3.155   |          | true value has (near-)zero variance |
 | marine         | mixed  | MAGICC_V5 | completeness  | 986  | 253        | 10.17  | 9.073  | 11.3   | -0.1832  | -1.966  | 1.429   | -0.1482  |                                              |
 | marine         | mixed  | MAGICC_V5 | contamination | 986  | 253        | 7.613  | 7.011  | 8.238  | -5.632   | -6.537  | -4.742  | -0.1524  |                                              |
 | marine         | mixed  | CheckM2   | completeness  | 986  | 253        | 15.74  | 12.99  | 18.99  | -12.59   | -16.17  | -9.607  | -3.311   |                                              |
@@ -207,13 +207,13 @@ Contaminant material is added as whole unmodified CAMI contigs. Marine contigs a
 | marine         | mixed  | DeepCheck | completeness  | 986  | 253        | 15.64  | 13.4   | 18.34  | -13.03   | -16     | -10.59  | -2.309   |                                              |
 | marine         | mixed  | DeepCheck | contamination | 986  | 253        | 7.126  | 6.683  | 7.615  | -6.452   | -7.008  | -5.961  | 0.003    |                                              |
 | strain_madness | gold   | MAGICC_V5 | completeness  | 700  | 330        | 1.295  | 1.162  | 1.463  | -0.05194 | -0.2022 | 0.1102  | 0.9847   |                                              |
-| strain_madness | gold   | MAGICC_V5 | contamination | 700  | 330        | 0.5028 | 0.4013 | 0.6606 | 0.5028   | 0.4013  | 0.6606  |          | true value has (near-)zero variance (R1-m19) |
+| strain_madness | gold   | MAGICC_V5 | contamination | 700  | 330        | 0.5028 | 0.4013 | 0.6606 | 0.5028   | 0.4013  | 0.6606  |          | true value has (near-)zero variance |
 | strain_madness | gold   | CheckM2   | completeness  | 700  | 330        | 13.96  | 13.19  | 14.69  | -13.85   | -14.59  | -13.06  | -0.08566 |                                              |
-| strain_madness | gold   | CheckM2   | contamination | 700  | 330        | 3.015  | 2.852  | 3.184  | 3.015    | 2.852   | 3.184   |          | true value has (near-)zero variance (R1-m19) |
+| strain_madness | gold   | CheckM2   | contamination | 700  | 330        | 3.015  | 2.852  | 3.184  | 3.015    | 2.852   | 3.184   |          | true value has (near-)zero variance |
 | strain_madness | gold   | CoCoPyE   | completeness  | 700  | 330        | 8.942  | 8.429  | 9.43   | 8.928    | 8.416   | 9.415   | 0.5498   |                                              |
-| strain_madness | gold   | CoCoPyE   | contamination | 700  | 330        | 20.06  | 19.27  | 20.94  | 20.06    | 19.27   | 20.94   |          | true value has (near-)zero variance (R1-m19) |
+| strain_madness | gold   | CoCoPyE   | contamination | 700  | 330        | 20.06  | 19.27  | 20.94  | 20.06    | 19.27   | 20.94   |          | true value has (near-)zero variance |
 | strain_madness | gold   | DeepCheck | completeness  | 700  | 330        | 17.47  | 16.68  | 18.25  | -17.47   | -18.25  | -16.68  | -0.547   |                                              |
-| strain_madness | gold   | DeepCheck | contamination | 700  | 330        | 3.179  | 3.036  | 3.317  | 3.15     | 3.005   | 3.289   |          | true value has (near-)zero variance (R1-m19) |
+| strain_madness | gold   | DeepCheck | contamination | 700  | 330        | 3.179  | 3.036  | 3.317  | 3.15     | 3.005   | 3.289   |          | true value has (near-)zero variance |
 | strain_madness | mixed  | MAGICC_V5 | completeness  | 2250 | 335        | 4.218  | 4.003  | 4.447  | 2.7      | 2.407   | 2.99    | 0.7402   |                                              |
 | strain_madness | mixed  | MAGICC_V5 | contamination | 2250 | 335        | 4.441  | 4.236  | 4.667  | -3.654   | -3.942  | -3.373  | 0.02231  |                                              |
 | strain_madness | mixed  | CheckM2   | completeness  | 2250 | 335        | 7.156  | 6.749  | 7.577  | -4.178   | -4.775  | -3.609  | 0.4067   |                                              |
@@ -223,7 +223,7 @@ Contaminant material is added as whole unmodified CAMI contigs. Marine contigs a
 | strain_madness | mixed  | DeepCheck | completeness  | 2250 | 335        | 8.501  | 8.001  | 9.031  | -6.544   | -7.228  | -5.921  | 0.1647   |                                              |
 | strain_madness | mixed  | DeepCheck | contamination | 2250 | 335        | 6.294  | 6.079  | 6.499  | -5.79    | -6.028  | -5.539  | -0.4202  |                                              |
 
-R2 is the **coefficient of determination** (1 - SS_res/SS_tot), never squared Pearson (protocol 4.4d). It is **omitted** wherever the true value has (near-)zero variance — which is every contamination row on the pure gold-standard bins, where truth is exactly 0 (R1-m19). A large negative R2 there would be an artefact of a zero denominator, not a finding.
+R2 is the **coefficient of determination** (1 - SS_res/SS_tot), never squared Pearson (protocol 4.4d). It is **omitted** wherever the true value has (near-)zero variance — which is every contamination row on the pure gold-standard bins, where truth is exactly 0. A large negative R2 there would be an artefact of a zero denominator, not a finding.
 
 
 ## MIMAG-inspired thresholds
@@ -365,7 +365,7 @@ Predicted versus true contamination on the CAMI II constructed mixed bins, one c
 
 ### fig_ws3.8_gold_completeness
 
-CAMI II gold-standard bins: contigs grouped by their true source genome, so every bin is pure (0% contamination) and the completeness gradient is whatever CAMI's own read simulation and gold-standard assembly produced. Left: predicted versus true completeness, dotted line y = x. Right: completeness MAE by true-completeness band. Contamination R2 is deliberately NOT reported for these bins: the true value is exactly 0 for every bin, so SS_tot = 0 and R2 is undefined (R1-m19). Denominator: completeness = retained dominant bp / FULL reference length of the dominant CAMI II source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention). Truth is exact, from CAMI II's own gsa_mapping.tsv contig-to-source-genome assignment; only the grouping of contigs into bins is ours.
+CAMI II gold-standard bins: contigs grouped by their true source genome, so every bin is pure (0% contamination) and the completeness gradient is whatever CAMI's own read simulation and gold-standard assembly produced. Left: predicted versus true completeness, dotted line y = x. Right: completeness MAE by true-completeness band. Contamination R2 is deliberately NOT reported for these bins: the true value is exactly 0 for every bin, so SS_tot = 0 and R2 is undefined. Denominator: completeness = retained dominant bp / FULL reference length of the dominant CAMI II source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention). Truth is exact, from CAMI II's own gsa_mapping.tsv contig-to-source-genome assignment; only the grouping of contigs into bins is ours.
 
 ### fig_ws3.8_mimag
 
@@ -373,17 +373,17 @@ MIMAG-inspired outcomes on the CAMI II mixed bins. Thresholds: high quality >=90
 
 ### fig_ws3.8_palette_cvd_check
 
-Verification that every colour used in the WS3.8 figures remains distinguishable under deuteranopia, protanopia and tritanopia, and that no figure requires a red/green discrimination (editorial requirement E4). The minimum pairwise CIE76 Delta-E across all four vision types is printed in the title; the accompanying table is cami2_palette_cvd_check.tsv.
+Verification that every colour used in the WS3.8 figures remains distinguishable under deuteranopia, protanopia and tritanopia, and that no figure requires a red/green discrimination. The minimum pairwise CIE76 Delta-E across all four vision types is printed in the title; the accompanying table is cami2_palette_cvd_check.tsv.
 
 
 
 ## Conventions honoured
 
-- R2 = coefficient of determination throughout; omitted where the truth has (near-)zero variance, with the reason recorded in the table (R1-m19, 4.4d).
+- R2 = coefficient of determination throughout; omitted where the truth has (near-)zero variance, with the reason recorded in the table.
 - MIMAG-inspired thresholds, always labelled as such.
 - MAGICC's 50% completeness floor handled explicitly; censored counts reported; a bounded below-floor probe cohort is reported separately and never pooled in.
 - Primary analysis in-domain (contamination% <= completeness%, 4.4a); out-of-domain reported separately.
 - All bootstrap seeds derive from `fw.stable_hash()` (CRC-32) with `PYTHONHASHSEED=0`; Python's salted `hash()` is never used.
 - Two-sided paired tests, BH correction, Hodges-Lehmann and Cliff's delta with cluster-bootstrap CIs clustered by dominant source genome.
 - CVD-safe palette, verified and plotted; no red/green discrimination (E4).
-- Denominator stated in every table and figure caption (R1-M5).
+- Denominator stated in every table and figure caption.

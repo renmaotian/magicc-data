@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "n_samples": 5770,
+  "n_references": 577,
+  "max_independent_did_difference_pp": 1.7763568394002505e-15,
+  "max_independent_ci_difference_pp": 3.552713678800501e-15,
+  "secondary_sensitivity_independent_audit": {
+    "contrasts": 60,
+    "max_did_difference_pp": 8.881784197001252e-16,
+    "max_ci_difference_pp": 1.7763568394002505e-15
+  },
+  "method": "Independent reference-resampling multiplicity weights and cluster sufficient statistics, allowing unequal retained samples/reference; native float32 predictions restored from serialized TSV.",
+  "scope": "FULL_EXPERIMENT",
+  "actual_source_inputs": {
+    "status": "ALL_ORIGINAL_SOURCE_BYTES_VERIFIED",
+    "genomic_fastas": 99957,
+    "core_gene_fastas": 2000,
+    "bytes_read": 369337126432,
+    "mismatches": 0,
+    "all_fastas_utf8_readable_with_ascii_sequence_and_at_least500bp": true,
+    "minimum_sequence_bp": 35514,
+    "every_actual_file_read_and_sha256_checked_this_run": true,
+    "readability_validation": {
+      "method": "Reused readability/length facts only after freshly rereading and matching every file byte to the same exact manifests.",
+      "certificate_path": "results/revision/holdout_resubmission7/data_only_audit/actual_input_hash_verification.json",
+      "certificate_sha256": "b2709a65b7697f7678a5a3ab36e893b6f53a6a4e4c1edaf842fb481fa581e75e"
+    },
+    "donor_trace_scope": "Accepted simulation plans bound possible donors; readability at audit time does not prove every planned donor emitted bp or rule out transient earlier read failures.",
+    "manifest_sha256": {
+      "results/revision/holdout_resubmission5/reconstruction/genomic_source_manifest.tsv": "756ab719cb9c4acb41dbe5e1685b7014780d1f13d8b13c2c46ad45c7632b4edb",
+      "results/revision/holdout_resubmission5/reconstruction/core_gene_input_manifest.tsv": "4e307a500079797e51eded905415ad798f14b05de1274b8dbbb38c931ebcd4db"
+    }
+  }
+}

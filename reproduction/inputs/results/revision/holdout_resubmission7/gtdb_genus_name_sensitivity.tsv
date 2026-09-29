@@ -1,0 +1,11 @@
+target_genus	retained_same_basename_suffixed_gtdb_genera	retained_training_genomes	interpretation
+Salmonella		0	Distinct GTDB genera by declared rank. Shared Latin name alone does not establish phylogenetic proximity; exclusion does not collapse historical/NCBI genus synonyms.
+Corynebacterium		0	Distinct GTDB genera by declared rank. Shared Latin name alone does not establish phylogenetic proximity; exclusion does not collapse historical/NCBI genus synonyms.
+Prevotella		0	Distinct GTDB genera by declared rank. Shared Latin name alone does not establish phylogenetic proximity; exclusion does not collapse historical/NCBI genus synonyms.
+Muribaculum		0	Distinct GTDB genera by declared rank. Shared Latin name alone does not establish phylogenetic proximity; exclusion does not collapse historical/NCBI genus synonyms.
+Lactiplantibacillus		0	Distinct GTDB genera by declared rank. Shared Latin name alone does not establish phylogenetic proximity; exclusion does not collapse historical/NCBI genus synonyms.
+Rhizobium	Rhizobium_E	1	Distinct GTDB genera by declared rank. Shared Latin name alone does not establish phylogenetic proximity; exclusion does not collapse historical/NCBI genus synonyms.
+Bordetella	Bordetella_A;Bordetella_B;Bordetella_C	10	Distinct GTDB genera by declared rank. Shared Latin name alone does not establish phylogenetic proximity; exclusion does not collapse historical/NCBI genus synonyms.
+Stenotrophomonas		0	Distinct GTDB genera by declared rank. Shared Latin name alone does not establish phylogenetic proximity; exclusion does not collapse historical/NCBI genus synonyms.
+Sarcina		0	Distinct GTDB genera by declared rank. Shared Latin name alone does not establish phylogenetic proximity; exclusion does not collapse historical/NCBI genus synonyms.
+Phocaeicola	Phocaeicola_A	4	Distinct GTDB genera by declared rank. Shared Latin name alone does not establish phylogenetic proximity; exclusion does not collapse historical/NCBI genus synonyms.

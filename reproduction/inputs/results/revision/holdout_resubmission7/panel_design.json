@@ -1,0 +1,54 @@
+{
+  "seed": 20260928,
+  "rank": "genus",
+  "genera": [
+    "Salmonella",
+    "Corynebacterium",
+    "Prevotella",
+    "Muribaculum",
+    "Lactiplantibacillus",
+    "Rhizobium",
+    "Bordetella",
+    "Stenotrophomonas",
+    "Sarcina",
+    "Phocaeicola"
+  ],
+  "selection_inputs": {
+    "data/splits/train_genomes.tsv": "41cf4ae7d99f3a189c2d44a2bcb53db2882f47286492cf3b1a371e27c190b8f5",
+    "data/splits/val_genomes.tsv": "692563eed2b4a0470a15ce3a1f22b1461a9a088fcc5483930cfa1302745ed8e2",
+    "data/splits/test_genomes.tsv": "15d4e62cf6b5ff111e841bf6ddb11e27f08fc940e0e9683f33bfad6e103f144e"
+  },
+  "selection_script_sha256": "04f3a42f58458785e704e8ce5f0f8025fcfde30ce41bbd2b2f272019f395177c",
+  "rules": "Lock ten named genera using counts/taxonomy before any new model outcomes.\n\nEligibility: >=50 training, >=5 validation and >=20 test genomes; an unsuffixed\nestablished-name genus ([A-Z][a-z]+); Patescibacteriota excluded from this primary\npanel. Keep each parent family's largest genus and >=50% of family training\ngenomes. Choose one eligible genus per parent family first (training abundance,\nthen lexical name); fill by abundance, <=2 genera/family and <=4 genera/phylum.\nHistorical family and broad CPR experiments remain sensitivity evidence.\n",
+  "parent_families": [
+    "Bacteroidaceae",
+    "Burkholderiaceae",
+    "Clostridiaceae",
+    "Enterobacteriaceae",
+    "Lactobacillaceae",
+    "Muribaculaceae",
+    "Mycobacteriaceae",
+    "Rhizobiaceae",
+    "Xanthomonadaceae"
+  ],
+  "parent_phyla": [
+    "Actinomycetota",
+    "Bacillota",
+    "Bacteroidota",
+    "Pseudomonadota"
+  ],
+  "n_training_removed": 5602,
+  "n_training_total": 79948,
+  "pct_training_removed": 7.007054585480562,
+  "all_families_retained": true,
+  "all_phyla_retained": true,
+  "n_panel_eval_references": 477,
+  "n_panel_eval_samples": 4770,
+  "control": {
+    "n_test_references": 100,
+    "simulations_per_reference": 10
+  },
+  "primary_scope": "Availability-defined named bacterial genera; no archaeal genus satisfies all eligibility rules.",
+  "historical_scope": "Previous family and broad CPR/DPANN findings retained; this new panel is not a paired rank comparison.",
+  "status": "SELECTION_LOCKED_BEFORE_NEW_PREDICTIONS"
+}

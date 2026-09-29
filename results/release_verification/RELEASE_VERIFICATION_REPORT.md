@@ -1,8 +1,7 @@
 # Release verification — end-to-end acceptance test of the published MAGICC artefacts
 
 **Date:** 2026-08-26
-**Contract:** the internal build contract §8.1
-**Scope:** an acceptance test *from clean environments*, of what a reviewer actually
+**Scope:** an acceptance test *from clean environments*, of what a user
 receives from PyPI and from GitHub — not a test of the working tree.
 **Nothing was published, pushed, re-tagged or built. No file outside this directory was modified.**
 
@@ -24,7 +23,7 @@ receives from PyPI and from GitHub — not a test of the working tree.
 24 independent runs across three sources, three input modes, two `--extension` settings,
 two thread counts and two CPython minor versions produced one and only one output digest.
 But the PyPI distribution **does not contain the model**; it fetches it over the network
-from a **mutable branch ref, without verifying the checksum**. A reviewer on an offline
+from a **mutable branch ref, without verifying the checksum**. A user on an offline
 cluster cannot run `pip install magicc` at all.
 
 ---
@@ -71,9 +70,8 @@ environment, so an editable install could not mask a packaging defect.
 | 0.3.0 upload time | **2026-03-19T18:49:25.900981Z** |
 | Dependencies pulled | flatbuffers 25.12.19, h5py 3.16.0, llvmlite 0.49.0, numba 0.67.0, numpy 2.5.2, onnxruntime 1.29.0, packaging 26.3, protobuf 7.36.0, scipy 1.18.1 |
 
-The publication chronology the coordinator supplied is **confirmed from the third-party
-index**: 0.3.0 on 2026-03-19, 0.3.1 on 2026-08-25 — i.e. 0.3.1 postdates the 2026-07-20
-reviewer comments, 0.3.0 predates them. Full per-file record in `logs/pypi_magicc_json_api.json`.
+The third-party index records releases 0.3.0 on 2026-03-19 and 0.3.1 on 2026-08-25.
+The per-file record is in `logs/pypi_magicc_json_api.json`.
 
 ### ❌ Defect 1 — the PyPI distribution contains no model
 
@@ -114,7 +112,7 @@ Three properties of this, each independently a reproducibility problem:
    silently changes what every past `pip install magicc==0.3.1` downloads.
 2. **The download is never checksummed.** The only validation is `size > 1 MB`. The
    model card hash is not consulted, so a wrong or truncated model would be used silently.
-3. **The install is not self-contained.** A reviewer on an air-gapped or
+3. **The install is not self-contained.** A user on an air-gapped or
    firewalled HPC node cannot run the pip package at all.
 
 ### How the no-network assertion was proved
@@ -184,7 +182,7 @@ git clone --depth 1 --branch v0.3.1 https://github.com/renmaotian/magicc.git
 | First bytes | ONNX/protobuf payload (`\b\b\022\a pytorch \032 2.5.1`), **not** `version https://git-lfs…` |
 | **SHA256** | **`b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096`** ✅ **matches the paper** |
 
-**The GitHub artefact fully satisfies Code availability.** A reviewer who clones the tag
+**The GitHub artifact contains the model.** A user who clones the tag
 gets the model the paper names, with the hash the paper names.
 
 ### But installing from the clone reproduces Defect 1
@@ -245,8 +243,8 @@ Full record in **`container_tag_facts.md`**. In brief:
   pushed or pulled); Docker Hub `renmaotian/magicc` → **404**; GHCR anonymous tags list →
   **403**; GitHub Packages containers for the user → **`[]`**; quay.io → 401; the GitHub
   release carries **0 uploaded assets**.
-- Therefore: **the manuscript may claim a Dockerfile and an Apptainer definition are
-  provided; it may not imply an image can be pulled.** Table S8d's `magicc:0.3.0` string
+- **A Dockerfile and an Apptainer definition are provided; no pullable image
+  was verified.** Table S8d's `magicc:0.3.0` string
   is *correct as history* — that image is the one the cross-environment probe actually
   ran on — and should keep its historical framing rather than be rewritten to 0.3.1.
 
@@ -291,67 +289,7 @@ Assets on `v0.1.0`:
 
 ---
 
-## What would have to change, and what re-publication it would cost
+## Scope of this historical audit
 
-**Not fixed here — recorded for the author's decision, as the contract requires.**
-
-| # | Defect | Correct state | Cost |
-|---|---|---|---|
-| 1 | PyPI package ships no model, so "v0.3.1 … containing model V5 (SHA256 b84346…)" does not describe the PyPI artefact | Either bundle the model, or state plainly that the pip package fetches it on first run | Bundling a 162 MB model exceeds PyPI's default per-file limit and would need an exemption — **the realistic fix is documentation plus item 2** |
-| 2 | `MODEL_URL` points at the **mutable `main`** branch and the download is **never checksummed** | Pin to `.../raw/v0.3.1/models/magicc_v5.onnx` (or the tag's LFS media URL) **and** verify SHA256 against `b84346…b3096` after download, failing loudly on mismatch | A code change ⇒ **a new release (0.3.2) on PyPI and GitHub**. Code availability's version string would move to 0.3.2 |
-| 3 | Code availability / Installation do not warn that `pip install magicc` needs network on first run | One sentence: the model is downloaded from the repository on first use; offline users should clone the tag or pre-place the file at `$HOME/.magicc/magicc_v5.onnx` | Text only — **no re-release** |
-| 4 | the internal repository release record lists `containers/magicc_0.3.1.sif` (367 MB), which does not exist | Name `containers/magicc_0.3.0.sif` (366 MiB), or actually build the 0.3.1 SIF | Text only, or one build |
-| 5 | `magicc-data` release `v0.1.0` still serves withdrawn Sets C and D | Delete or clearly re-label those two assets when the new data release is cut | Data-deposition agent's call |
-
-**Item 3 alone makes the manuscript truthful without any re-release.** Items 1-2 are the
-substantive engineering fix; if the author wants Code availability to promise a
-reproducible install, 0.3.2 is required. **The author decides.**
-
-Nothing above affects a single number in the paper: the software's *output* is verified
-byte-identical across all three sources.
-
----
-
-## Evidence index (all under `results/revision/release_verification/`)
-
-| File | Contents |
-|---|---|
-| `test_set_manifest.tsv` | the 25 genomes: name, bytes, SHA256 of source / plain copy / gzip copy |
-| `pypi_check.json` | version resolution, artefact hashes, packaging, D7 tests, determinism |
-| `github_check.json` | clone, tag, LFS verification, install, determinism, cross-source identity |
-| `worktree_check.json` | conda-env run, model provenance, cross-source identity |
-| `output_digests.tsv` | all 24 runs: source × mode × threads × extension → output SHA256 |
-| `predictions_25genomes_canonical.tsv` | the single output every one of the 24 runs produced |
-| `container_tag_facts.md` | task E |
-| `magicc_data_before_state.json` | task F |
-| `logs/` | every command's raw output: pip installs, PyPI JSON API, strace traces, all 24 run logs, clone log, installed file lists |
-
-Virtualenvs, the clone and the copied genomes lived in a scratch directory and were
-removed after the evidence was recorded. No GitHub token appears in any file here.
-
----
-
-## Resource footprint (host was running a timing campaign)
-
-Recorded honestly rather than glossed. All work ran off one to four cores in short bursts;
-the 4-thread runs are required by §8.1 and each lasted seconds on 25 genomes.
-
-| Item | Size |
-|---|---|
-| Test set copied out of `set_E/fasta/` | 119 MB (91 MiB plain + 28 MiB gzip) |
-| Two fresh virtualenvs (numba, scipy, onnxruntime ×2) | 517 MB each |
-| Shallow clone of `v0.3.1` incl. the 162 MB LFS model | 334 MB |
-| Model downloaded by the PyPI package during the D7 test | 162 MB |
-| **Peak scratch** | **~1.6 GB**, all under `/tmp` on `/dev/sda4` (ext4, 1 TB free), **not** on `/path/to/data` |
-| After cleanup | 0 — venvs, clone, test set and downloaded models removed |
-
-This exceeded the "well under 1 GB" guidance. The floor is set by the dependency tree:
-`onnxruntime` + `numba` + `llvmlite` + `scipy` is ~500 MB per environment and §8.1
-requires **two** independent clean environments, plus a 162 MB LFS model and a 162 MB
-run-time download that is itself the object of the D7 test. Nothing was written to
-`/path/to/data` except this evidence directory (~100 KB).
-
-Page cache over `data/benchmarks/set_E/` was not evicted: the host has 881 GB of RAM with
-~682 GB free, and the 25 genomes read were copied *from* that directory, warming it
-rather than displacing it. One misjudged `find /` was launched and killed within seconds;
-no other filesystem-wide scan was run.
+These observations describe the releases inspected on the recorded audit date.
+Current deployment instructions are maintained in the production MAGICC repository.

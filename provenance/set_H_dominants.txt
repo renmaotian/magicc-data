@@ -1,5 +1,5 @@
 # set_H_ncbi — 400 unique dominant reference genomes, 10 independent simulations each.
-# Selected by NCBI assembly_level == "Complete Genome" with NO CheckM2 filter (R1-m13 circularity safeguard).
+# Selected by NCBI assembly_level == "Complete Genome" with NO CheckM2 filter (reference-selection sensitivity).
 # in_curation_pool_277k = the genome WOULD have entered the project's CheckM2-filtered reference pool.
 dominant_accession	dominant_phylum	dominant_taxonomy	dominant_reference_bp	ref_index	arm	pair_id	match_level	would_pass_original_filter	checkm2_severity	ref_checkm2_completeness	ref_checkm2_contamination	ref_contig_count	ref_n50_contigs	ref_ncbi_assembly_level	canonical_key	in_train	in_val	in_test	in_kmer_selection	in_curation_pool_277k
 GB_GCA_000272795.2	Pseudomonadota	d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Enterobacteriaceae;g__Salmonella;s__Salmonella enterica	4726694	0	H_fail	pair_0000	species	False	moderate	91.89	1.61	1	4726694	Complete Genome	000272795	False	False	False	False	False

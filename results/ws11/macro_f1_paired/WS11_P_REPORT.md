@@ -4,7 +4,7 @@ Generated 2026-08-26T17:13:32.772734+00:00 · `scripts/211_ws11p_macro_f1_paired
 
 ## 1. What was wrong with the old form of the claim
 
-Macro F1 was reported as two point estimates with **separate** confidence intervals. Overlapping marginal intervals do not mean the difference is indistinguishable from zero, and non-overlapping ones are not the test either. The object a reviewer will ask for is the **paired** difference: resample the same reference-genome clusters, recompute both tools' macro F1 on that resample, and take the difference inside the replicate. That is what this analysis does, with the same seed script 102 used, so these differences come from exactly the replicates behind the published marginal intervals.
+Macro F1 was reported as two point estimates with **separate** confidence intervals. Overlapping marginal intervals do not mean the difference is indistinguishable from zero, and non-overlapping ones are not the test either. The relevant quantity is the **paired** difference: resample the same reference-genome clusters, recompute both tools' macro F1 on that resample, and take the difference inside the replicate. That is what this analysis does, with the same seed script 102 used, so these differences come from exactly the replicates behind the published marginal intervals.
 
 Point-estimate check: every recomputed macro F1 reproduces `results/revision/metrics/definitive_mimag.tsv` (max |diff| = 8.33e-17).
 

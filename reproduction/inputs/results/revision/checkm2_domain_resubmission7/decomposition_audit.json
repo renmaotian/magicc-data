@@ -1,0 +1,131 @@
+{
+  "status": "VERIFIED",
+  "input": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/ws5.3_signed_errors_per_genome.tsv.gz",
+  "input_sha256": "be8516ede92206d851e10f001c3bd12f5d07ae9f9019ac7d203d653c77a2c7c7",
+  "n_samples_per_tool": 5000,
+  "full_panel_weighting": "Each set weight 1/5; each has exactly 1000 rows, so equivalent to uniform sample weighting.",
+  "within_band_weighting": "Conditional distribution induced by the full panel; sample-weighted within band. Not equal-weight reweighting of retained set subsets.",
+  "interpretation": "Descriptive decomposition, not causal attribution to dose or training construction.",
+  "checks": [
+    {
+      "cohort": "pooled_equal_set",
+      "tool": "checkm2",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "pooled_equal_set",
+      "tool": "cocopye",
+      "sum_contribution_error_pp": 1.7763568394002505e-15
+    },
+    {
+      "cohort": "pooled_equal_set",
+      "tool": "deepcheck",
+      "sum_contribution_error_pp": 3.552713678800501e-15
+    },
+    {
+      "cohort": "pooled_equal_set",
+      "tool": "magicc_v5",
+      "sum_contribution_error_pp": 8.881784197001252e-16
+    },
+    {
+      "cohort": "set_A_v2",
+      "tool": "checkm2",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_A_v2",
+      "tool": "cocopye",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_A_v2",
+      "tool": "deepcheck",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_A_v2",
+      "tool": "magicc_v5",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_B_v2",
+      "tool": "checkm2",
+      "sum_contribution_error_pp": 7.105427357601002e-15
+    },
+    {
+      "cohort": "set_B_v2",
+      "tool": "cocopye",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_B_v2",
+      "tool": "deepcheck",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_B_v2",
+      "tool": "magicc_v5",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_C_clean",
+      "tool": "checkm2",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_C_clean",
+      "tool": "cocopye",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_C_clean",
+      "tool": "deepcheck",
+      "sum_contribution_error_pp": 7.105427357601002e-15
+    },
+    {
+      "cohort": "set_C_clean",
+      "tool": "magicc_v5",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_D_clean",
+      "tool": "checkm2",
+      "sum_contribution_error_pp": 7.105427357601002e-15
+    },
+    {
+      "cohort": "set_D_clean",
+      "tool": "cocopye",
+      "sum_contribution_error_pp": 3.552713678800501e-15
+    },
+    {
+      "cohort": "set_D_clean",
+      "tool": "deepcheck",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_D_clean",
+      "tool": "magicc_v5",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_E",
+      "tool": "checkm2",
+      "sum_contribution_error_pp": 3.552713678800501e-15
+    },
+    {
+      "cohort": "set_E",
+      "tool": "cocopye",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_E",
+      "tool": "deepcheck",
+      "sum_contribution_error_pp": 0.0
+    },
+    {
+      "cohort": "set_E",
+      "tool": "magicc_v5",
+      "sum_contribution_error_pp": 8.881784197001252e-16
+    }
+  ]
+}

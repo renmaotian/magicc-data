@@ -75,7 +75,7 @@ The MAGICC 32-thread range is wide (5.83 s – 39.06 s over 3 repeats) for the r
 
 On the 100-genome subsample MAGICC's efficiency at 32 threads is only 8%, and CoCoPyE is **slower** at 32 threads (353.9 s) than at 16 (216.1 s). Both are consequences of a short run: the fixed cost cannot be parallelised, and for CoCoPyE oversubscription actively hurts. This is reported because it bounds how far any of these tools, MAGICC included, benefits from more cores.
 
-## Table S4d — derived ratios, fully qualified (R1-m20)
+## Table S4d — derived ratios, fully qualified
 
 A speed ratio is meaningless without the conditions under which it was obtained, so each ratio below carries them explicitly. **Ratios are quoted only between cells measured at the same thread count, on the same input set, on the same hardware, under the same wall-clock definition, in the same file I/O mode.** No "per-thread" ratio is quoted, because per-thread throughput is not a property of a tool: it falls as thread count rises (see the MAGICC rows of Table S4a). The last column gives the number of repeats behind each side of the ratio; the two full-Set-E competitor rows rest on a single competitor run each, because one repeat of CheckM2 on 1,000 genomes costs 70 minutes even at 32 threads.
 
@@ -100,7 +100,7 @@ A speed ratio is meaningless without the conditions under which it was obtained,
 | CoCoPyE 0.5.0 ÷ MAGICC | **41.2×** |
 | DeepCheck (inference only) ÷ MAGICC | **1.8×** |
 
-## Table S4e — cold versus warm page cache (R1-m12)
+## Table S4e — cold versus warm page cache
 
 **A correction, stated first.** The campaign included a designed cold-cache arm using an unprivileged, file-scoped eviction (`posix_fadvise(POSIX_FADV_DONTNEED)` on every input FASTA and on the tool's model/database files, since `/proc/sys/vm/drop_caches` needs root and passwordless sudo is not configured on this host). **That arm did not work.** The evictor (`scripts/162_ws8_drop_file_cache.py`) raised `TypeError: underlying buffer is not writable` on the first file it inspected — it built a read-only mmap and then asked `ctypes` for a writable pointer into it — and because only `OSError` was caught, the process exited before a single `posix_fadvise` call was made. All 11 `*.evict.txt` logs contain that identical traceback, and every run labelled `cache=cold` recorded `File system inputs = 0`, i.e. it read nothing from disk. **The cells labelled "cold" were warm runs**, which is exactly why they agree with the warm cells to within 3% (MAGICC, Set E, 1 thread: 49.07 s "cold" vs 49.02 s warm). They are reported here as what they are — additional warm repeats — and are not presented as cold-cache results. The fixed evictor is `scripts/176_ws8_evict_fixed.py`, verified to evict 100% of 5.04 GB of resident pages, with a re-runner (`scripts/177_ws8_cold_verified.sh`). That re-run has **not** been executed: an unrelated single-core job appeared on the host, and running it under contention would have broken the campaign's own idleness rule. It is not needed for the numbers below, which come from a stricter cold condition.
 
@@ -116,7 +116,7 @@ A speed ratio is meaningless without the conditions under which it was obtained,
 
 **Reading of this table.** A cold cache costs MAGICC +33 s on 1,000 genomes at 32 threads — it is the tool whose warm run is short enough for I/O to dominate, so *proportionally* it is hit hardest (6.7×). Stated precisely rather than favourably: MAGICC's worst measured cold start on 1,000 genomes at 32 threads (39.1 s) is still 81× faster than CoCoPyE's **warm** run (3,177.5 s) and 108× faster than CheckM2's **warm** run (4,208.0 s) on the same input — but it is **slower than DeepCheck's warm inference-only run** (29.5 s). That DeepCheck figure excludes the mandatory CheckM2 run (4,208.0 s at the same thread count) that produces its input, so DeepCheck's true end-to-end cost is still the larger; the comparison is stated this way because the inference-only row on its own does beat a cold MAGICC. In the other direction, CoCoPyE pays +141 s on only 100 genomes purely to page in its 17.0 GB database. A cold cache is a once-per-boot cost for every tool here; in production all of them run warm after the first invocation.
 
-## Table S4f — total cost of ownership (R1-m12)
+## Table S4f — total cost of ownership
 
 Two different quantities are reported here and are never added together silently: the **reference data** a user must download before the tool can run at all, and the **install footprint** of the software itself. Sizes are apparent bytes (`du -sb`) measured on the benchmark host on 2026-08-01T00:59:45Z.
 
@@ -146,7 +146,7 @@ Two different quantities are reported here and are never added together silently
 
 MAGICC's reference data is **0.172 GB** — 99× smaller than CoCoPyE's and 18× smaller than CheckM2's — and it is a single ONNX model plus a k-mer list, not a sequence database. Its install footprint (0.75 GB, of which 0.24 GB is the Python interpreter itself) is smaller than CheckM2's dedicated environment (2.77 GB), but the two are not a like-for-like comparison of packaging quality: CheckM2's environment is a conda environment with 29 conda packages including its own Python, and MAGICC's was built by pip into a bare interpreter. CoCoPyE's and DeepCheck's software footprints are simply not known on this host and no number is invented for them.
 
-## Table S4g — reconciliation of the previously published timings (R1-m11)
+## Table S4g — reconciliation of the previously published timings
 
 | Figure | Where it appeared | What it actually measured | Status |
 |---|---|---|---|
@@ -155,5 +155,5 @@ MAGICC's reference data is **0.172 GB** — 99× smaller than CoCoPyE's and 18×
 | **97.5 s** for 1,000 genomes | Table S4 | A genuine **end-to-end** wall clock (`/usr/bin/time -v`), 1 thread, Set E, magicc_v3.onnx, invoked through `conda run`. | **Correct as a V3 measurement**; superseded by the V5 re-measurement above |
 | **74.4 s / 7.9 s** | `results/phase7_set_e_test/` | End-to-end wall clock of `python -m magicc predict` at 1 and 43 threads, Set E, magicc_v3.onnx, **without** the `conda run` wrapper. The 23 s difference from the 97.5 s figure cannot be attributed from the archive: neither run recorded load average or page-cache state. | **Correct as V3 measurements**; superseded |
 
-**The internal inconsistency the reviewer detected is real and is in the table itself.** The submitted Table S4 row reads *MAGICC | 1 thread | 0.66 GB | 97.5 s | 1,451 genomes/min/thread*, but 1,000 genomes in 97.5 s is 615 genomes min⁻¹ thread⁻¹, not 1,451 — a factor of 2.36. The wall-clock column and the throughput column came from two different experiments with two different timers. The same defect affects the competitor rows: CheckM2's row states 32 threads and 86 min 37 s, which is 0.36 genomes min⁻¹ thread⁻¹, while the table prints 0.82. **The published 1,700× and 2,100× ratios therefore divide one tool's mean-of-rates by another tool's mean-of-rates, and neither is the wall clock printed beside it. They are withdrawn and replaced by Table S4d.**
+**The historical table contained inconsistent runtime and throughput values.** The submitted Table S4 row reads *MAGICC | 1 thread | 0.66 GB | 97.5 s | 1,451 genomes/min/thread*, but 1,000 genomes in 97.5 s is 615 genomes min⁻¹ thread⁻¹, not 1,451 — a factor of 2.36. The wall-clock column and the throughput column came from two different experiments with two different timers. The same defect affects the competitor rows: CheckM2's row states 32 threads and 86 min 37 s, which is 0.36 genomes min⁻¹ thread⁻¹, while the table prints 0.82. **The published 1,700× and 2,100× ratios therefore divide one tool's mean-of-rates by another tool's mean-of-rates, and neither is the wall clock printed beside it. They are withdrawn and replaced by Table S4d.**
 

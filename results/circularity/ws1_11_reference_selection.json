@@ -1,7 +1,7 @@
 {
   "generated_utc": "2026-08-01T18:35:29.282093+00:00",
   "generated_by": "scripts/185_ws1_11_select_ncbi_refs.py",
-  "objection": "R1-m13 circularity: references were previously chosen with a CheckM2-based filter, so the benchmark cannot reveal CheckM2 failure modes on genomes that filter removed.",
+  "objection": "Reference-selection rationale: references were previously chosen with a CheckM2-based filter, so the benchmark cannot reveal CheckM2 failure modes on genomes that filter removed.",
   "selector": "NCBI assembly_summary_{genbank,refseq}.txt assembly_level == \"Complete Genome\" AND version_status == latest",
   "checkm2_used_for_selection": false,
   "original_curation_filter": {

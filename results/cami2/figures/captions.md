@@ -12,7 +12,7 @@ Predicted versus true contamination on the CAMI II constructed mixed bins, one c
 
 ### fig_ws3.8_gold_completeness
 
-CAMI II gold-standard bins: contigs grouped by their true source genome, so every bin is pure (0% contamination) and the completeness gradient is whatever CAMI's own read simulation and gold-standard assembly produced. Left: predicted versus true completeness, dotted line y = x. Right: completeness MAE by true-completeness band. Contamination R2 is deliberately NOT reported for these bins: the true value is exactly 0 for every bin, so SS_tot = 0 and R2 is undefined (R1-m19). Denominator: completeness = retained dominant bp / FULL reference length of the dominant CAMI II source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention). Truth is exact, from CAMI II's own gsa_mapping.tsv contig-to-source-genome assignment; only the grouping of contigs into bins is ours.
+CAMI II gold-standard bins: contigs grouped by their true source genome, so every bin is pure (0% contamination) and the completeness gradient is whatever CAMI's own read simulation and gold-standard assembly produced. Left: predicted versus true completeness, dotted line y = x. Right: completeness MAE by true-completeness band. Contamination R2 is deliberately NOT reported for these bins: the true value is exactly 0 for every bin, so SS_tot = 0 and R2 is undefined. Denominator: completeness = retained dominant bp / FULL reference length of the dominant CAMI II source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention). Truth is exact, from CAMI II's own gsa_mapping.tsv contig-to-source-genome assignment; only the grouping of contigs into bins is ours.
 
 ### fig_ws3.8_mimag
 
@@ -20,4 +20,4 @@ MIMAG-inspired outcomes on the CAMI II mixed bins. Thresholds: high quality >=90
 
 ### fig_ws3.8_palette_cvd_check
 
-Verification that every colour used in the WS3.8 figures remains distinguishable under deuteranopia, protanopia and tritanopia, and that no figure requires a red/green discrimination (editorial requirement E4). The minimum pairwise CIE76 Delta-E across all four vision types is printed in the title; the accompanying table is cami2_palette_cvd_check.tsv.
+Verification that every colour used in the WS3.8 figures remains distinguishable under deuteranopia, protanopia and tritanopia, and that no figure requires a red/green discrimination. The minimum pairwise CIE76 Delta-E across all four vision types is printed in the title; the accompanying table is cami2_palette_cvd_check.tsv.

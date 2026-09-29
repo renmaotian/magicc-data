@@ -1,6 +1,6 @@
 # WS5.2 - Threshold-focused QC decision analysis
 
-Reviewer 2 (major comment 2) asks for the analysis to be reorganised around the decision thresholds that matter in practice. For each criterion a genome either **passes** or **fails**:
+This analysis uses the decision thresholds applied in genome quality control. For each criterion a genome either **passes** or **fails**:
 
 * contamination criterion at tau: pass <=> contamination < tau (tau = 5% and 10%)
 * completeness criterion at tau: pass <=> completeness >= tau (tau = 50% and 90%)

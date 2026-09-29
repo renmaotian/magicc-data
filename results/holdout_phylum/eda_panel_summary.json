@@ -32,7 +32,7 @@
       "phyla": [
         "Patescibacteriota"
       ],
-      "rationale": "Reduced genomes (median 0.88 Mbp), the hardest case and the lineage both reviewers singled out; directly comparable to Set C_clean",
+      "rationale": "Reduced genomes (median 0.88 Mbp), with a direct comparison in Set C_clean",
       "train": 1286,
       "val": 161,
       "test": 161

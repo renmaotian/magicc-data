@@ -23,7 +23,7 @@
       "sha256": "e39415cb81af63d68caf335ad06420ff346e132c87018534edb56d045acf7d89",
       "role": "Core-gene FASTAs and per-file manifest for actual feature reselection",
       "publication_status": "submission_material_outside_repository",
-      "availability": "Prepared outside the repository; no public download here and no upload requirement."
+      "availability": "Historical ZIP container identity. The same 2,003 members are now public through reproduction/ARCHIVES.json with preserved member bytes and different ZIP container metadata."
     },
     {
       "name": "magicc_2026_09_scientific_snapshot.zip",
@@ -34,5 +34,5 @@
       "availability": "The same scientific tables and scripts are public as committed repository files."
     }
   ],
-  "scope": "Research ONNX models and feature-selection inputs are prepared with submission materials outside this repository. They have no public download here, and this update does not require their upload. No new release is promised."
+  "scope": "Historical prepared artifact identities. Research ONNX files remain outside the public repository. The same core-gene members are now publicly committed in a separately hash-bound multipart archive documented by reproduction/ARCHIVES.json. No new release is promised."
 }

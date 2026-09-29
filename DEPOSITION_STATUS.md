@@ -1,53 +1,33 @@
-# Deposition status
+# Public scientific deposit
 
-Updated September 2026. This inventory distinguishes committed results,
-downloadable assets and materials prepared outside the repository.
+The current repository contains benchmark metadata, per-sample predictions,
+scientific tables, source manifests and the minimal numerical/plotting/genus
+training code identified in `reproduction/DEPENDENCIES.tsv`. The ordered
+commands and tested scope are in `reproduction/README.md`.
 
-## Committed scientific material
+The representative core-gene input archive is committed in two chunks under
+`reproduction/inputs/core_gene_archive/`. `reproduction/ARCHIVES.json` binds the
+combined 55,236,128-byte archive and all 2,003 member identities. It supplies the
+actual 2,000 core-gene FASTAs used for feature reselection. The archive's container
+metadata differ from an earlier prepared ZIP; member identities are preserved.
 
-`updates/2026-09/snapshot/` contains corrected CoCoPyE selected-stage predictions,
-recomputed statistics, CAMI microbial-source restriction, the new joint
-ten-family results, training histories/completion records, feature vocabulary,
-arm-specific normalizers, reconstruction manifests and recorded scientific code.
-Its explicit SHA256 manifest identifies every supplied file.
-`UPDATED_PUBLIC_PATHS.tsv` identifies corrected existing public files.
+The 99,957 original genomic FASTAs are retrieved separately from NCBI using their
+exact archived accession versions, compressed-file MD5 and original-file
+SHA256. The committed source manifest covers 369,151,655,339 uncompressed bytes.
+A bounded real download verifies the retrieval mechanism; it does not imply
+that every historical accession will remain available indefinitely.
 
-Production V5 was not retrained or replaced. Research holdout models are a
-separate experiment and do not change the deployed predictor.
+Unchanged benchmark assemblies remain on release `v1.0.0`; production MAGICC
+and its frozen model remain on the software repository's `v0.3.3` release.
+Research ONNX models are supplied separately with the submission materials and
+are not uploaded to this data repository. Their full training and evaluation
+recipe is public; no new GitHub release or research-model download is promised.
 
-## Already downloadable assets
+CAMI, Meslier/Zymo and catalogue raw sequences and comparator databases are
+obtained from their original providers. Deposited predictions permit numerical
+replay without these downloads. Full neural retraining needs the documented
+large reference inputs and many CPU-hours; it is a separate workflow.
 
-Release `v1.0.0` contains the eight benchmark assembly sets and checksums.
-Current C/D retain `set_C_clean`/`set_D_clean` IDs and asset names. Release
-`v0.1.0` preserves withdrawn original C/D and historical motivating assemblies.
-Production V5 remains on the software repository's `v0.3.3` release.
-
-## Materials prepared outside the repository
-
-The following research artifacts are prepared with the submission materials.
-They are intentionally outside this repository and have no public download here;
-no model or feature-input upload is required by this scientific update. Exact
-names, sizes and SHA256s are recorded in `updates/2026-09/RELEASE_ASSETS.json`:
-
-* `magicc_research_matched_full.onnx` — 90-epoch fit, selected epoch 70;
-* `magicc_research_family_holdout.onnx` — 49-epoch fit, selected epoch 29;
-* `magicc_feature_selection_inputs.zip` — core-gene FASTAs and manifest.
-
-The optional `magicc_2026_09_scientific_snapshot.zip` is a prepared convenience
-copy of the committed data and code. It has no public download here; the same
-scientific content is already available from Git. No new release is promised.
-Older phylum/family/genus weights also remain outside the public deposit; their
-historical evaluation tables remain available, with the limitations described in
-the new holdout documentation.
-
-## External inputs and limits
-
-NCBI/GTDB assemblies are identified by accession and exact input hashes and are
-downloaded from their providers. CAMI, Meslier/Zymo and catalogue sequences and
-tool databases are not republished here. ATCC Genome Portal data were not used.
-Saved parsed results permit inspection without those downloads; sequence
-regeneration requires the listed inputs.
-
-This deposit does not claim every historical intermediate or editorial rendering
-dependency is public. Private review material, forms, correspondence and
-submission-only integrity checks are excluded.
+Manuscripts, reviewer correspondence, journal forms, author attestations and
+private submission controls are excluded. Journal document rendering is not
+part of this public scientific reproduction scope.

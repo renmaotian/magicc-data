@@ -10,9 +10,8 @@
     }
   ],
   "notes": [
-    "Only reads use these overrides; writes are never redirected.",
-    "Historical raw inputs and outputs remain available unchanged.",
-    "This gate does not imply final figure/workbook/document reconciliation is complete."
+    "Only reads use these explicit source mappings; writes are never redirected.",
+    "Numerical inputs are retained; editorial prose and identifiers are removed from the public snapshot. See reproduction/PUBLIC_TRANSFORMATIONS.tsv."
   ],
   "overrides": {
     "data/benchmarks/motivating/set_A/cocopye_predictions.tsv": {
@@ -108,7 +107,7 @@
     "results/revision/cami2/analysis/cami2_accuracy_by_cohort.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_accuracy_by_cohort.tsv",
       "reason": "Recomputed corrected predictions/statistics, or explicit cohort/definition correction",
-      "sha256": "b902797c4b8ebea641287c993d7e6e175148a4beda578485f416f975a2b2bacc"
+      "sha256": "3a20d4c9b9f7b70cfc6077bc4ba78c9b9f3591331614e24f86ff38ecc92baf41"
     },
     "results/revision/cami2/analysis/cami2_censoring.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_censoring.tsv",
@@ -128,12 +127,12 @@
     "results/revision/cami2/analysis/cami2_gold_by_completeness_decile.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_gold_by_completeness_decile.tsv",
       "reason": "Recomputed corrected predictions/statistics, or explicit cohort/definition correction",
-      "sha256": "e115b738eda40c14f20faae32c11cd3ab9e36851b4e6a74e580bcbb46619c400"
+      "sha256": "0793acf2848ce446a771205e827feba2c11feba5c5acbf20537d28bead161d0d"
     },
     "results/revision/cami2/analysis/cami2_headline.json": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_headline.json",
       "reason": "Recomputed corrected predictions/statistics, or explicit cohort/definition correction",
-      "sha256": "1bfb2eb26a022a6283188b3c5aa59fed309655d1de5085689b7883b5d9250613"
+      "sha256": "04f66d267f25a3d61969b7be66cfccc455bbb98042335b381ddc3905ea72b2fa"
     },
     "results/revision/cami2/analysis/cami2_long_predictions.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_long_predictions.tsv",
@@ -178,7 +177,7 @@
     "results/revision/cami2/analysis/cami2_ws39_rows.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/analysis/cami2_ws39_rows.tsv",
       "reason": "Recomputed corrected predictions/statistics, or explicit cohort/definition correction",
-      "sha256": "720407c12a1e9fe62fcba8b50cae62ff2e4848bbdd52a6ec5755fc4882bfb271"
+      "sha256": "4e9f16b83bea2c9f5a78721848d81acfd246e78816dacd03d1eac61e890b846b"
     },
     "results/revision/cami2/predictions/marine_gold_all_tools.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/cami2/predictions/marine_gold_all_tools.tsv",
@@ -308,7 +307,7 @@
     "results/revision/metrics/verification_vs_published.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/verification_vs_published.tsv",
       "reason": "Recomputed corrected predictions/statistics, or explicit cohort/definition correction",
-      "sha256": "ab4d4760d7d9b01f36ebdf9d8fa37242caaa48b715b32c5954df7e8169db249b"
+      "sha256": "58ed9160a7b4f6163840690cc4862a600b444f2250b9df9168f8508af3f740c7"
     },
     "results/revision/metrics/ws5.10_pooled_cluster_definition_sensitivity.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/metrics/ws5.10_pooled_cluster_definition_sensitivity.tsv",
@@ -518,7 +517,7 @@
     "results/revision/real_data/synthesis_table_with_cami2.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/real_data/synthesis_table_with_cami2.tsv",
       "reason": "Rebuilt external-cohort synthesis",
-      "sha256": "6418dddf9265135bcf8628e58417eaec6b4cf28d465975e64fa62a736447c7ec"
+      "sha256": "f81ec3bc2c31347c911746a1a4ecfdab2ceb17ea934bd2654f210c088fc1f4a1"
     },
     "results/revision/real_data/zymo/per_pair_results.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/real_data/zymo/per_pair_results.tsv",
@@ -648,7 +647,7 @@
     "results/revision/ws11/novelty_ladder/novelty_ladder_metrics.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/ws11/novelty_ladder/novelty_ladder_metrics.tsv",
       "reason": "Recomputed corrected predictions/statistics, or explicit cohort/definition correction",
-      "sha256": "692885c0c388fbce99f03d877136133eac54da3ca9913d92f28121dfb4329817"
+      "sha256": "283831d50f164cfea5fe762ce1420222d98626073108745c5209bbffea587f29"
     },
     "results/revision/ws11/novelty_ladder/novelty_ladder_paired_tests.tsv": {
       "path": "results/revision/cocopye_stage_resubmission5/replay/results/revision/ws11/novelty_ladder/novelty_ladder_paired_tests.tsv",

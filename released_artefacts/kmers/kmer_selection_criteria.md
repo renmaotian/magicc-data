@@ -1,4 +1,4 @@
-# Selected 9-mer feature set — selection criteria and provenance  (WS7.5, R1-m14)
+# Selected 9-mer feature set — selection criteria and provenance  (WS7.5)
 
 MAGICC's k-mer branch consumes a fixed vector of **9,249 canonical 9-mers**.
 `selected_9mers.tsv` in this directory is the authoritative release of that list.
@@ -22,7 +22,7 @@ invalidates the model.
 2. **Single-copy core genes** were identified per domain with Prodigal + HMMER
    against `85_bcg.hmm` (bacteria) and `uacg.hmm` (archaea)
    (`scripts/09_identify_core_genes.py`). Feature selection is therefore
-   annotation-dependent; **inference is not** (see R1-m5).
+   annotation-dependent; **inference is not**.
 3. **Canonical 9-mer counting** over the core-gene nucleotide sequences
    (`scripts/10_count_9mers.py`), giving 4^9/2 = 131,072 canonical 9-mers per
    domain.

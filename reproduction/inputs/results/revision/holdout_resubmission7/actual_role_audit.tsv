@@ -1,0 +1,7 @@
+arm	split	samples	distinct_dominants	distinct_donors	all_roles_in_arm_specific_split	trace_scope
+holdout	train	1000000	74346	74328	True	Accepted simulation-plan donor identities; a superset of possible contributing donors, not per-donor emitted-bp attribution.
+holdout	val	100000	9288	9286	True	Accepted simulation-plan donor identities; a superset of possible contributing donors, not per-donor emitted-bp attribution.
+holdout	test	100000	9283	9279	True	Accepted simulation-plan donor identities; a superset of possible contributing donors, not per-donor emitted-bp attribution.
+matched_full	train	1000000	79947	79915	True	Accepted simulation-plan donor identities; a superset of possible contributing donors, not per-donor emitted-bp attribution.
+matched_full	val	100000	10006	9994	True	Accepted simulation-plan donor identities; a superset of possible contributing donors, not per-donor emitted-bp attribution.
+matched_full	test	100000	9999	9989	True	Accepted simulation-plan donor identities; a superset of possible contributing donors, not per-donor emitted-bp attribution.

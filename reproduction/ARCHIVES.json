@@ -1,0 +1,23 @@
+[
+  {
+    "name": "representative_core_genes",
+    "format": "zip",
+    "archive_bytes": 55236128,
+    "archive_sha256": "a778685d7e25497eac460cf614527229dc696442bbfb8e39a7ef27c61e53a9db",
+    "parts": [
+      {
+        "path": "reproduction/inputs/core_gene_archive/representative_core_genes.zip.part00",
+        "bytes": 29360128,
+        "sha256": "0d4dfe47d1f34cca4bdd24dfa51265e52c55044a42f20caa9c009e003094c13d"
+      },
+      {
+        "path": "reproduction/inputs/core_gene_archive/representative_core_genes.zip.part01",
+        "bytes": 25876000,
+        "sha256": "2716ea86ab97f624b92e5d199d8b6c54db5d4c50987c712cf68587f9b80517e4"
+      }
+    ],
+    "member_manifest": "reproduction/inputs/core_gene_archive/MEMBERS.json",
+    "member_manifest_sha256": "d995d297105d27374685a681bb976a25e60f3c4ff56fcb0427437224390ae46b",
+    "members": 2003
+  }
+]

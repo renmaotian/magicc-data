@@ -1,8 +1,6 @@
 # MAGICC — reproducibility and software distribution (WS7)
 
-Single index for everything WS7 produced. Addresses reviewer comments
-**R1-M6, R1-M8, R1-m14, R1-m15, R1-m17, R1-m18, R2-o5** and editorial
-requirements **E2, E5, E6**. Prepared 2026-07-26.
+Historical index of determinism, environment and workflow checks. Prepared 2026-07-26.
 
 > **Publication status (2026-08-27).** This was written on 2026-07-26, when nothing
 > had yet been published. Since then the software has been released
@@ -144,7 +142,7 @@ clusters. Per-set numbers also match `ws5.5_table_S2_rebuilt.tsv` (e.g.
    `pip install magicc`.**
 
 4. **The conda/PyPI package does not contain the model.** It is 169.7 MB and is
-   downloaded to `~/.magicc` on first prediction. Reviewers wanting a hermetic,
+   downloaded to `~/.magicc` on first prediction. Users wanting a hermetic,
    offline install should use a container, where the model is baked in and
    checksummed.
 

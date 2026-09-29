@@ -1,8 +1,8 @@
 {
-  "workstream": "WS3.8 CAMI II external benchmark (R1-M3)",
+  "workstream": "WS3.8 CAMI II external benchmark",
   "generated_utc": "2026-09-08T19:35:40.782148+00:00",
   "denominator": "completeness = retained dominant bp / FULL reference length of the dominant source genome x 100; contamination = total contaminant bp / the SAME denominator x 100 (MAGICC convention, magicc/contamination.py). Truth from CAMI II's own gsa_mapping.tsv contig->source-genome assignment.",
-  "r2_convention": "coefficient of determination (1 - SS_res/SS_tot); omitted where the true value has (near-)zero variance (R1-m19)",
+  "r2_convention": "coefficient of determination (1 - SS_res/SS_tot); omitted where the true value has (near-)zero variance",
   "mimag_note": "MIMAG-inspired thresholds throughout",
   "bootstrap": {
     "n_iter": 2000,

@@ -2,15 +2,15 @@
 
 _Generated 2026-07-26T23:11:42.540534+00:00_
 
-Protocol §4.4e withdrew the 141-MAG real-MAG contamination claims, so these three cohorts are the only real-data validation routes with genuine ground truth. Reviewer 2 named mock communities and isolate draft/complete pairs specifically (R2-M3).
+Protocol §4.4e withdrew the 141-MAG real-MAG contamination claims, so these three cohorts are the only real-data validation routes with genuine ground truth. The three cohorts are mock communities and matched draft/complete isolate pairs.
 
 **Conventions.** R² is the coefficient of determination (1 − SS_res/SS_tot) everywhere; squared Pearson is emitted separately as `*_r2_pearson` and is never called R². MIMAG-inspired thresholds use completeness/contamination only (HQ ≥90 % and <5 %; MQ ≥50 % and <10 %); the rRNA/tRNA criteria of the full standard are not evaluable here. All CIs are 95 % percentile cluster bootstraps (2,000 replicates) resampling reference organisms / species, because the same reference recurs across assemblies. Tests are two-sided Wilcoxon signed-rank on paired absolute errors.
 
-**Denominator (identical for the ground truth and for every tool):** completeness = retained dominant-organism bp / dominant reference FULL length × 100; contamination = contaminant bp / dominant reference FULL length × 100. This is MAGICC's own convention, so no denominator re-definition is needed (R1-M4, R1-M5).
+**Denominator (identical for the ground truth and for every tool):** completeness = retained dominant-organism bp / dominant reference FULL length × 100; contamination = contaminant bp / dominant reference FULL length × 100. This is MAGICC's own convention, so no denominator re-definition is needed.
 
 ## A1 — Meslier et al. 2022 MOCK1 (headline: fragmentation gradient on real data)
 
-Source: Meslier V. *et al.* *Benchmarking second and third-generation sequencing platforms for microbial metagenomics.* Sci Data 9, 694 (2022), doi:10.1038/s41597-022-01762-z. Reference genomes and the seven pre-computed MOCK1 assemblies come from the authors' public GitLab (`https://forge.inrae.fr/metagenopolis/benchmark_mock`); **no assembly compute was performed and no reads were downloaded**. 22 of the 91 reference strains carry ATCC designations with public GenBank accessions (ATCC MSA-1002 is a component of the mocks), which is how this work covers Reviewer 2's request for ATCC standards without the ATCC Genome Portal Data Use Agreement.
+Source: Meslier V. *et al.* *Benchmarking second and third-generation sequencing platforms for microbial metagenomics.* Sci Data 9, 694 (2022), doi:10.1038/s41597-022-01762-z. Reference genomes and the seven pre-computed MOCK1 assemblies come from the authors' public GitLab (`https://forge.inrae.fr/metagenopolis/benchmark_mock`); **no assembly compute was performed and no reads were downloaded**. 22 of the 91 reference strains carry ATCC designations with public GenBank accessions (ATCC MSA-1002 is a component of the mocks), these are public reference accessions and no ATCC Genome Portal data were used.
 
 > **Erratum to report if the raw runs are cited.** Meslier Table 4 prints the Illumina runs as ERR9765446-ERR9765449. Those accessions do not exist; the correct Illumina HiSeq 3000 runs, verified against the ENA portal API, are **ERR9765746 (MOCK_001), ERR9765747 (MOCK_002), ERR9765748 + ERR9765749 (MOCK_003)**. Table 4's ONT/Ion/PacBio accessions do resolve.
 

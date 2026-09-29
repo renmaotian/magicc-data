@@ -10,8 +10,8 @@ Generated 2026-08-26T17:33:48.019101+00:00 · `scripts/210_ws11n_novelty_ladder.
 > Nothing here may be described as "held out at species/genus level". The
 > retrained validation artefacts (WS1.6 phylum, WS1.9 family, WS11.G genus)
 > remain the only holdout evidence. What this analysis *does* deliver is the
-> genome → species → genus ladder measured on exactly the panel Reviewer 1
-> was reading, on identical genomes for all four tools.
+> genome → species → genus ladder measured on the same benchmark panel
+> with identical genomes for all four tools.
 
 ## 0. Headline findings
 

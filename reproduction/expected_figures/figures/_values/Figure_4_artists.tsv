@@ -1,0 +1,287 @@
+key	value
+Figure_4|ax00|xlim	-0.499618958,10.4919981
+Figure_4|ax00|ylim	9.6,-0.6
+Figure_4|ax00|xscale	linear
+Figure_4|ax00|yscale	linear
+Figure_4|ax00|xlabel	Adjusted difference in MAE (pp)
+Figure_4|ax00|ylabel	
+Figure_4|ax00|title	Completeness: genus exclusion
+Figure_4|ax00|xticks	-2,0,2,4,6,8,10,12
+Figure_4|ax00|yticks	0,1,2,3,4,5,6,7,8,9
+Figure_4|ax00|xticklabels	−2␟0␟2␟4␟6␟8␟10␟12
+Figure_4|ax00|yticklabels	Salmonella␟Corynebacterium␟Prevotella␟Muribaculum␟Lactiplantibacillus␟Rhizobium␟Bordetella␟Stenotrophomonas␟Sarcina␟Phocaeicola
+Figure_4|ax00|line000|xy	0,0,0,1
+Figure_4|ax00|line000|marker	None
+Figure_4|ax00|line000|ls	--
+Figure_4|ax00|line001|xy	2.99946233,0,3.00331009,1,3.62264795,2,1.52943199,3,9.22692188,4,6.0456609,5,4.54864126,6,2.95504759,7,2.11056959,8,2.36018891,9
+Figure_4|ax00|line001|marker	s
+Figure_4|ax00|line001|ls	None
+Figure_4|ax00|line002|xy	2.54409062,0,2.49694002,1,2.83320516,2,1.01279411,3,8.45110137,4,5.10616446,5,3.38092316,6,2.35890696,7,1.48562484,8,1.31892102,9
+Figure_4|ax00|line002|marker	|
+Figure_4|ax00|line002|ls	None
+Figure_4|ax00|line003|xy	3.47525494,0,3.53018667,1,4.46798427,2,2.02417706,3,9.99237917,4,6.975335,5,5.64617104,6,3.57735914,7,2.75626117,8,3.45581125,9
+Figure_4|ax00|line003|marker	|
+Figure_4|ax00|line003|ls	None
+Figure_4|ax00|coll000|offsets	0,0
+Figure_4|ax00|coll000|verts	2.54409062,0,3.47525494,0,2.49694002,1,3.53018667,1,2.83320516,2,4.46798427,2,1.01279411,3,2.02417706,3,8.45110137,4,9.99237917,4,5.10616446,5,6.975335,5,3.38092316,6,5.64617104,6,2.35890696,7,3.57735914,7,1.48562484,8,2.75626117,8,1.31892102,9,3.45581125,9
+Figure_4|ax00|text000	-0.42,1.12␟a
+Figure_4|ax01|xlim	-0.490351431,10.29738
+Figure_4|ax01|ylim	9.6,-0.6
+Figure_4|ax01|xscale	linear
+Figure_4|ax01|yscale	linear
+Figure_4|ax01|xlabel	Adjusted difference in MAE (pp)
+Figure_4|ax01|ylabel	
+Figure_4|ax01|title	Contamination: genus exclusion
+Figure_4|ax01|xticks	-2,0,2,4,6,8,10,12
+Figure_4|ax01|yticks	0,1,2,3,4,5,6,7,8,9
+Figure_4|ax01|xticklabels	−2␟0␟2␟4␟6␟8␟10␟12
+Figure_4|ax01|yticklabels	␟␟␟␟␟␟␟␟␟
+Figure_4|ax01|line000|xy	0,0,0,1
+Figure_4|ax01|line000|marker	None
+Figure_4|ax01|line000|ls	--
+Figure_4|ax01|line001|xy	4.20373987,0,5.649312,1,5.43531722,2,1.23686257,3,4.66027499,4,1.51780114,5,8.11525962,6,1.47974451,7,0.72434075,8,4.41629926,9
+Figure_4|ax01|line001|marker	s
+Figure_4|ax01|line001|ls	None
+Figure_4|ax01|line002|xy	3.62594352,0,4.54673641,1,4.1062004,2,0.544044007,3,3.35785352,4,0.554635279,5,6.13608465,6,0.991851801,7,0.231151013,8,3.32691963,9
+Figure_4|ax01|line002|marker	|
+Figure_4|ax01|line002|ls	None
+Figure_4|ax01|line003|xy	4.78891882,0,6.86399092,1,6.83499003,2,1.99759228,3,5.93849642,4,2.44368057,5,9.80702861,6,2.00092822,7,1.21743229,8,5.49514633,9
+Figure_4|ax01|line003|marker	|
+Figure_4|ax01|line003|ls	None
+Figure_4|ax01|coll000|offsets	0,0
+Figure_4|ax01|coll000|verts	3.62594352,0,4.78891882,0,4.54673641,1,6.86399092,1,4.1062004,2,6.83499003,2,0.544044007,3,1.99759228,3,3.35785352,4,5.93849642,4,0.554635279,5,2.44368057,5,6.13608465,6,9.80702861,6,0.991851801,7,2.00092822,7,0.231151013,8,1.21743229,8,3.32691963,9,5.49514633,9
+Figure_4|ax01|text000	-0.18,1.12␟b
+Figure_4|ax02|xlim	-0.55,1.55
+Figure_4|ax02|ylim	0,23.7005977
+Figure_4|ax02|xscale	linear
+Figure_4|ax02|yscale	linear
+Figure_4|ax02|xlabel	
+Figure_4|ax02|ylabel	Per-reference mean absolute error (pp)
+Figure_4|ax02|title	Pooled target references
+Figure_4|ax02|xticks	0,1
+Figure_4|ax02|yticks	0,5,10,15,20,25
+Figure_4|ax02|xticklabels	Completeness␟Contamination
+Figure_4|ax02|yticklabels	0␟5␟10␟15␟20␟25
+Figure_4|ax02|line000|xy	-0.24,4.07635721,-0.24,2.71187603
+Figure_4|ax02|line000|marker	
+Figure_4|ax02|line000|ls	-
+Figure_4|ax02|line001|xy	-0.24,6.7900666,-0.24,9.7720487
+Figure_4|ax02|line001|marker	
+Figure_4|ax02|line001|ls	-
+Figure_4|ax02|line002|xy	-0.2875,2.71187603,-0.1925,2.71187603
+Figure_4|ax02|line002|marker	
+Figure_4|ax02|line002|ls	-
+Figure_4|ax02|line003|xy	-0.2875,9.7720487,-0.1925,9.7720487
+Figure_4|ax02|line003|marker	
+Figure_4|ax02|line003|ls	-
+Figure_4|ax02|line004|xy	-0.335,5.26761779,-0.145,5.26761779
+Figure_4|ax02|line004|marker	
+Figure_4|ax02|line004|ls	-
+Figure_4|ax02|line005|xy	0.76,4.03797679,0.76,2.77353413
+Figure_4|ax02|line005|marker	
+Figure_4|ax02|line005|ls	-
+Figure_4|ax02|line006|xy	0.76,6.70751844,0.76,9.65226455
+Figure_4|ax02|line006|marker	
+Figure_4|ax02|line006|ls	-
+Figure_4|ax02|line007|xy	0.7125,2.77353413,0.8075,2.77353413
+Figure_4|ax02|line007|marker	
+Figure_4|ax02|line007|ls	-
+Figure_4|ax02|line008|xy	0.7125,9.65226455,0.8075,9.65226455
+Figure_4|ax02|line008|marker	
+Figure_4|ax02|line008|ls	-
+Figure_4|ax02|line009|xy	0.665,5.13707535,0.855,5.13707535
+Figure_4|ax02|line009|marker	
+Figure_4|ax02|line009|ls	-
+Figure_4|ax02|line010|xy	0,6.5995685,0,4.44681116
+Figure_4|ax02|line010|marker	
+Figure_4|ax02|line010|ls	-
+Figure_4|ax02|line011|xy	0,11.0111341,0,15.9340227
+Figure_4|ax02|line011|marker	
+Figure_4|ax02|line011|ls	-
+Figure_4|ax02|line012|xy	-0.0475,4.44681116,0.0475,4.44681116
+Figure_4|ax02|line012|marker	
+Figure_4|ax02|line012|ls	-
+Figure_4|ax02|line013|xy	-0.0475,15.9340227,0.0475,15.9340227
+Figure_4|ax02|line013|marker	
+Figure_4|ax02|line013|ls	-
+Figure_4|ax02|line014|xy	-0.095,8.33502531,0.095,8.33502531
+Figure_4|ax02|line014|marker	
+Figure_4|ax02|line014|ls	-
+Figure_4|ax02|line015|xy	1,6.33186255,1,4.28894993
+Figure_4|ax02|line015|marker	
+Figure_4|ax02|line015|ls	-
+Figure_4|ax02|line016|xy	1,12.0612918,1,18.1459053
+Figure_4|ax02|line016|marker	
+Figure_4|ax02|line016|ls	-
+Figure_4|ax02|line017|xy	0.9525,4.28894993,1.0475,4.28894993
+Figure_4|ax02|line017|marker	
+Figure_4|ax02|line017|ls	-
+Figure_4|ax02|line018|xy	0.9525,18.1459053,1.0475,18.1459053
+Figure_4|ax02|line018|marker	
+Figure_4|ax02|line018|ls	-
+Figure_4|ax02|line019|xy	0.905,9.10964826,1.095,9.10964826
+Figure_4|ax02|line019|marker	
+Figure_4|ax02|line019|ls	-
+Figure_4|ax02|line020|xy	0.24,3.20405491,0.24,2.19794822
+Figure_4|ax02|line020|marker	
+Figure_4|ax02|line020|ls	-
+Figure_4|ax02|line021|xy	0.24,5.63689223,0.24,8.58015212
+Figure_4|ax02|line021|marker	
+Figure_4|ax02|line021|ls	-
+Figure_4|ax02|line022|xy	0.1925,2.19794822,0.2875,2.19794822
+Figure_4|ax02|line022|marker	
+Figure_4|ax02|line022|ls	-
+Figure_4|ax02|line023|xy	0.1925,8.58015212,0.2875,8.58015212
+Figure_4|ax02|line023|marker	
+Figure_4|ax02|line023|ls	-
+Figure_4|ax02|line024|xy	0.145,4.19714628,0.335,4.19714628
+Figure_4|ax02|line024|marker	
+Figure_4|ax02|line024|ls	-
+Figure_4|ax02|line025|xy	1.24,3.73453508,1.24,2.56941288
+Figure_4|ax02|line025|marker	
+Figure_4|ax02|line025|ls	-
+Figure_4|ax02|line026|xy	1.24,6.21614383,1.24,8.69243574
+Figure_4|ax02|line026|marker	
+Figure_4|ax02|line026|ls	-
+Figure_4|ax02|line027|xy	1.1925,2.56941288,1.2875,2.56941288
+Figure_4|ax02|line027|marker	
+Figure_4|ax02|line027|ls	-
+Figure_4|ax02|line028|xy	1.1925,8.69243574,1.2875,8.69243574
+Figure_4|ax02|line028|marker	
+Figure_4|ax02|line028|ls	-
+Figure_4|ax02|line029|xy	1.145,4.82943508,1.335,4.82943508
+Figure_4|ax02|line029|marker	
+Figure_4|ax02|line029|ls	-
+Figure_4|ax02|coll000|offsets	-0.24,5.68274296,0.76,5.53870822
+Figure_4|ax02|coll000|verts	-5.55111512e-17,-0.707106781,0.707106781,0,5.55111512e-17,0.707106781,-0.707106781,1.11022302e-16,-5.55111512e-17,-0.707106781
+Figure_4|ax02|coll001|offsets	0,9.06825842,1,9.81706907
+Figure_4|ax02|coll001|verts	-0.5,-0.5,0.5,-0.5,0.5,0.5,-0.5,0.5,-0.5,-0.5
+Figure_4|ax02|coll002|offsets	0.24,4.66937029,1.24,5.12722501
+Figure_4|ax02|coll002|verts	0,-0.5,0.13260155,-0.5,0.259789935,-0.447316846,0.353553391,-0.353553391,0.447316846,-0.259789935,0.5,-0.13260155,0.5,0,0.5,0.13260155,0.447316846,0.259789935,0.353553391,0.353553391,0.259789935,0.447316846,0.13260155,0.5,0,0.5,-0.13260155,0.5,-0.259789935,0.447316846,-0.353553391,0.353553391,-0.447316846,0.259789935,-0.5,0.13260155,-0.5,0,-0.5,-0.13260155,-0.447316846,-0.259789935,-0.353553391,-0.353553391,-0.259789935,-0.447316846,-0.13260155,-0.5,0,-0.5,0,-0.5
+Figure_4|ax02|patch000|verts	-0.335,4.07635721,-0.145,4.07635721,-0.145,6.7900666,-0.335,6.7900666,-0.335,4.07635721,-0.335,4.07635721
+Figure_4|ax02|patch001|verts	0.665,4.03797679,0.855,4.03797679,0.855,6.70751844,0.665,6.70751844,0.665,4.03797679,0.665,4.03797679
+Figure_4|ax02|patch002|verts	-0.095,6.5995685,0.095,6.5995685,0.095,11.0111341,-0.095,11.0111341,-0.095,6.5995685,-0.095,6.5995685
+Figure_4|ax02|patch003|verts	0.905,6.33186255,1.095,6.33186255,1.095,12.0612918,0.905,12.0612918,0.905,6.33186255,0.905,6.33186255
+Figure_4|ax02|patch004|verts	0.145,3.20405491,0.335,3.20405491,0.335,5.63689223,0.145,5.63689223,0.145,3.20405491,0.145,3.20405491
+Figure_4|ax02|patch005|verts	1.145,3.73453508,1.335,3.73453508,1.335,6.21614383,1.145,6.21614383,1.145,3.73453508,1.145,3.73453508
+Figure_4|ax02|text000	-0.42,1.12␟c
+Figure_4|ax02|legend	Matched full␟Genus holdout␟Production MAGICC
+Figure_4|ax03|xlim	-0.45,5.6
+Figure_4|ax03|ylim	-10.3,4
+Figure_4|ax03|xscale	linear
+Figure_4|ax03|yscale	linear
+Figure_4|ax03|xlabel	taxonomic distance of the contaminant
+(tick: mean % of donor genes with an orthologue)
+Figure_4|ax03|ylabel	signed contamination error (pp)
+Figure_4|ax03|title	
+Figure_4|ax03|xticks	0,1,2,3,4,5
+Figure_4|ax03|yticks	-12,-10,-8,-6,-4,-2,0,2,4
+Figure_4|ax03|xticklabels	species
+88 %␟genus
+67 %␟family
+45 %␟order
+30 %␟class
+21 %␟phylum
+16 %
+Figure_4|ax03|yticklabels	−12␟−10␟−8␟−6␟−4␟−2␟0␟2␟4
+Figure_4|ax03|line000|xy	-0.0825,-7.7579,0.9175,-7.7329,1.9175,-5.9771,2.9175,-3.6005,3.9175,-1.8942,4.9175,-0.8989
+Figure_4|ax03|line000|marker	o
+Figure_4|ax03|line000|ls	-
+Figure_4|ax03|line001|xy	-0.0825,-8.9081,0.9175,-8.7839,1.9175,-7.0403,2.9175,-4.527,3.9175,-2.6563,4.9175,-1.552
+Figure_4|ax03|line001|marker	_
+Figure_4|ax03|line001|ls	None
+Figure_4|ax03|line002|xy	-0.0825,-6.6174,0.9175,-6.6483,1.9175,-4.9888,2.9175,-2.7142,3.9175,-1.2362,4.9175,-0.2895
+Figure_4|ax03|line002|marker	_
+Figure_4|ax03|line002|ls	None
+Figure_4|ax03|line003|xy	-0.0275,-5.0604,0.9725,-5.1293,1.9725,-4.3153,2.9725,-3.8177,3.9725,-4.0321,4.9725,-2.6763
+Figure_4|ax03|line003|marker	^
+Figure_4|ax03|line003|ls	--
+Figure_4|ax03|line004|xy	-0.0275,-5.8619,0.9725,-6.0402,1.9725,-5.1392,2.9725,-4.5885,3.9725,-4.9014,4.9725,-3.6441
+Figure_4|ax03|line004|marker	_
+Figure_4|ax03|line004|ls	None
+Figure_4|ax03|line005|xy	-0.0275,-4.263,0.9725,-4.2943,1.9725,-3.5631,2.9725,-3.1179,3.9725,-3.181,4.9725,-1.6868
+Figure_4|ax03|line005|marker	_
+Figure_4|ax03|line005|ls	None
+Figure_4|ax03|line006|xy	0.0275,-2.1868,1.0275,-1.7536,2.0275,-0.2029,3.0275,0.5371,4.0275,0.49,5.0275,1.8122
+Figure_4|ax03|line006|marker	D
+Figure_4|ax03|line006|ls	--
+Figure_4|ax03|line007|xy	0.0275,-4.1046,1.0275,-3.67,2.0275,-2.1452,3.0275,-1.3424,4.0275,-1.1851,5.0275,0.2402
+Figure_4|ax03|line007|marker	_
+Figure_4|ax03|line007|ls	None
+Figure_4|ax03|line008|xy	0.0275,0.0994,1.0275,0.4993,2.0275,2.1206,3.0275,2.8421,4.0275,2.5772,5.0275,3.5585
+Figure_4|ax03|line008|marker	_
+Figure_4|ax03|line008|ls	None
+Figure_4|ax03|line009|xy	0.0825,-5.4474,1.0825,-5.5403,2.0825,-4.9083,3.0825,-4.7661,4.0825,-4.912,5.0825,-4.1925
+Figure_4|ax03|line009|marker	v
+Figure_4|ax03|line009|ls	--
+Figure_4|ax03|line010|xy	0.0825,-6.2581,1.0825,-6.4349,2.0825,-5.7138,3.0825,-5.5179,4.0825,-5.8169,5.0825,-5.2068
+Figure_4|ax03|line010|marker	_
+Figure_4|ax03|line010|ls	None
+Figure_4|ax03|line011|xy	0.0825,-4.5985,1.0825,-4.7319,2.0825,-4.0882,3.0825,-4.0313,4.0825,-3.9899,5.0825,-3.2271
+Figure_4|ax03|line011|marker	_
+Figure_4|ax03|line011|ls	None
+Figure_4|ax03|line012|xy	0,0,1,0
+Figure_4|ax03|line012|marker	None
+Figure_4|ax03|line012|ls	--
+Figure_4|ax03|coll000|offsets	0,0
+Figure_4|ax03|coll000|verts	-0.0825,-8.9081,-0.0825,-6.6174,0.9175,-8.7839,0.9175,-6.6483,1.9175,-7.0403,1.9175,-4.9888,2.9175,-4.527,2.9175,-2.7142,3.9175,-2.6563,3.9175,-1.2362,4.9175,-1.552,4.9175,-0.2895
+Figure_4|ax03|coll001|offsets	0,0
+Figure_4|ax03|coll001|verts	-0.0275,-5.8619,-0.0275,-4.263,0.9725,-6.0402,0.9725,-4.2943,1.9725,-5.1392,1.9725,-3.5631,2.9725,-4.5885,2.9725,-3.1179,3.9725,-4.9014,3.9725,-3.181,4.9725,-3.6441,4.9725,-1.6868
+Figure_4|ax03|coll002|offsets	0,0
+Figure_4|ax03|coll002|verts	0.0275,-4.1046,0.0275,0.0994,1.0275,-3.67,1.0275,0.4993,2.0275,-2.1452,2.0275,2.1206,3.0275,-1.3424,3.0275,2.8421,4.0275,-1.1851,4.0275,2.5772,5.0275,0.2402,5.0275,3.5585
+Figure_4|ax03|coll003|offsets	0,0
+Figure_4|ax03|coll003|verts	0.0825,-6.2581,0.0825,-4.5985,1.0825,-6.4349,1.0825,-4.7319,2.0825,-5.7138,2.0825,-4.0882,3.0825,-5.5179,3.0825,-4.0313,4.0825,-5.8169,4.0825,-3.9899,5.0825,-5.2068,5.0825,-3.2271
+Figure_4|ax03|text000	-0.24,1.12␟d
+Figure_4|ax03|legend	MAGICC␟CheckM2␟CoCoPyE␟DeepCheck
+Figure_4|ax04|xlim	-7.4,5.4
+Figure_4|ax04|ylim	-0.85,4.55
+Figure_4|ax04|xscale	linear
+Figure_4|ax04|yscale	linear
+Figure_4|ax04|xlabel	Hodges–Lehmann difference in |contamination error|,
+MAGICC − CheckM2 (pp), paired on identical bins
+← favours MAGICC                    favours CheckM2 →
+Figure_4|ax04|ylabel	
+Figure_4|ax04|title	
+Figure_4|ax04|xticks	-8,-6,-4,-2,0,2,4,6
+Figure_4|ax04|yticks	0,1,2.4,3.4
+Figure_4|ax04|xticklabels	−8␟−6␟−4␟−2␟0␟2␟4␟6
+Figure_4|ax04|yticklabels	distant
+(order + class + phylum)␟close
+(species + genus)␟distant
+(order + class + phylum)␟close
+(species + genus)
+Figure_4|ax04|line000|xy	-4.87675683,0,-4.10550531,0
+Figure_4|ax04|line000|marker	None
+Figure_4|ax04|line000|ls	-
+Figure_4|ax04|line001|xy	-4.4906893,0
+Figure_4|ax04|line001|marker	o
+Figure_4|ax04|line001|ls	-
+Figure_4|ax04|line002|xy	2.83183699,1,3.43202072,1
+Figure_4|ax04|line002|marker	None
+Figure_4|ax04|line002|ls	-
+Figure_4|ax04|line003|xy	3.13589175,1
+Figure_4|ax04|line003|marker	^
+Figure_4|ax04|line003|ls	-
+Figure_4|ax04|line004|xy	-1.31144592,2.4,-0.0810139819,2.4
+Figure_4|ax04|line004|marker	None
+Figure_4|ax04|line004|ls	-
+Figure_4|ax04|line005|xy	-0.677619495,2.4
+Figure_4|ax04|line005|marker	o
+Figure_4|ax04|line005|ls	-
+Figure_4|ax04|line006|xy	3.02973762,3.4,4.29548703,3.4
+Figure_4|ax04|line006|marker	None
+Figure_4|ax04|line006|ls	-
+Figure_4|ax04|line007|xy	3.63519088,3.4
+Figure_4|ax04|line007|marker	^
+Figure_4|ax04|line007|ls	-
+Figure_4|ax04|line008|xy	0,0,0,1
+Figure_4|ax04|line008|marker	None
+Figure_4|ax04|line008|ls	--
+Figure_4|ax04|line009|xy	0,2.2,1,2.2
+Figure_4|ax04|line009|marker	None
+Figure_4|ax04|line009|ls	:
+Figure_4|ax04|patch000|verts	0,0,5.4,0,5.4,1,0,1,0,0
+Figure_4|ax04|patch001|verts	-7.4,0,0,0,0,1,-7.4,1,-7.4,0
+Figure_4|ax04|text000	-7.28,3.95␟CAMI II marine
+Figure_4|ax04|text001	-7.28,1.55␟CAMI II strain-madness
+Figure_4|ax04|text002	-0.14,1.12␟e

@@ -1,0 +1,11 @@
+genus	train	val	test	family	phylum	domain	parent_train	largest_genus_in_parent	eligible	selected	selection_order	parent_remaining_train	parent_remaining_fraction	eval_references	simulations_per_reference	eval_samples
+Salmonella	2852	352	339	Enterobacteriaceae	Pseudomonadota	Bacteria	12006.0	False	True	True	1	9154.0	0.7624521072796935	100	10	1000
+Corynebacterium	733	95	100	Mycobacteriaceae	Actinomycetota	Bacteria	3834.0	False	True	True	2	3101.0	0.8088158581116328	100	10	1000
+Prevotella	447	63	64	Bacteroidaceae	Bacteroidota	Bacteria	1657.0	False	True	True	3	959.0	0.5787567893783947	64	10	640
+Muribaculum	321	49	37	Muribaculaceae	Bacteroidota	Bacteria	1810.0	False	True	True	4	1489.0	0.8226519337016575	37	10	370
+Lactiplantibacillus	227	33	31	Lactobacillaceae	Bacillota	Bacteria	1552.0	False	True	True	5	1325.0	0.8537371134020618	31	10	310
+Rhizobium	227	28	39	Rhizobiaceae	Pseudomonadota	Bacteria	1200.0	False	True	True	6	973.0	0.8108333333333333	39	10	390
+Bordetella	213	15	22	Burkholderiaceae	Pseudomonadota	Bacteria	1603.0	False	True	True	7	1390.0	0.8671241422333126	22	10	220
+Stenotrophomonas	194	26	27	Xanthomonadaceae	Pseudomonadota	Bacteria	689.0	False	True	True	8	495.0	0.7184325108853411	27	10	270
+Sarcina	137	18	21	Clostridiaceae	Bacillota	Bacteria	465.0	False	True	True	9	328.0	0.7053763440860215	21	10	210
+Phocaeicola	251	42	36	Bacteroidaceae	Bacteroidota	Bacteria	1657.0	False	True	True	10	959.0	0.5787567893783947	36	10	360

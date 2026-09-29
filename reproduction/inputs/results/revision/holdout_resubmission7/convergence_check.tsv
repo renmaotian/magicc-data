@@ -1,0 +1,3 @@
+arm	epochs_completed	best_epoch	best_validation_loss	early_stopped	hit_maximum_epochs	best_in_last_20_epochs
+holdout	48	28	148.30910047221374	True	False	False
+matched_full	49	29	144.32660459572548	True	False	False

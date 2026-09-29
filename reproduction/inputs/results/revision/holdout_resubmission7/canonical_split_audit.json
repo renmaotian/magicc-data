@@ -1,0 +1,18 @@
+{
+  "status": "PREFLIGHT_PASS",
+  "canonical_accession_split_overlaps": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "version_insensitive_source_split_overlaps": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "canonicalization": "Strip RS_/GB_ and GCA_/GCF_ prefixes, include linked gcf_accession, retain version.",
+  "target_genus_and_species_overlap_in_holdout_training_validation_features": 0,
+  "all_training_families_orders_classes_phyla_retained": true,
+  "scope": "Original genome splits are accession-independent, not globally species-independent; entire target genera/species are excluded only in the holdout arm.",
+  "production_model_sha256": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096"
+}

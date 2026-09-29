@@ -91,6 +91,6 @@
   "protocol_corrections": [
     "WS3.7 mis-describes Meslier et al. 2022 as a SAG dataset; it is a mock-community/sequencing-platform benchmark. Move to WS3.6.",
     "Meslier Table 4 Illumina run accessions ERR9765446-49 do not exist; correct accessions are ERR9765746-49.",
-    "UHGG ships CheckM v1 values, not CheckM2; the reviewer's comparison requires either our own CheckM2 run or GTDB's published CheckM2 values."
+    "UHGG ships CheckM v1 values, not CheckM2; a comparison with CheckM2 requires either our own CheckM2 run or GTDB's published CheckM2 values."
   ]
 }

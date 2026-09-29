@@ -84,25 +84,8 @@ SIF exist only on this host.
 
 ---
 
-## 4. Plain statement for the manuscript and supplementary
+## 4. Deployment scope
 
-1. **No container is published.** Any sentence implying a reader can pull a MAGICC image
-   is false. What ships is a **Dockerfile and an Apptainer definition**, from which a
-   reader builds the image themselves. `manuscript_revised.md` line 308 already words it
-   correctly ("a Docker image … an Apptainer/Singularity definition built from it … are
-   provided"), but "provided" should be unambiguously readable as *the recipe is
-   provided*, not *the image is hosted*.
-2. **The Docker image tag that shipping definitions produce is `magicc:0.3.1`**, and that
-   image has been built locally and verified.
-3. **The only Apptainer artefact ever built is `magicc_0.3.0.sif`**, whose own embedded
-   labels say `0.3.0`. Either rebuild it at 0.3.1, or state 0.3.0 with explicit
-   historical framing.
-4. **Table S8d's cross-environment determinism probe genuinely ran on `magicc:0.3.0`**,
-   which is why the audit's decision to keep that string with historical framing is
-   correct. It should not be silently rewritten to 0.3.1 — that would misdescribe which
-   image was measured. (The 0.3.0 image lacks `--input-list`, so a 0.3.1 rerun would be a
-   different, stronger probe — but it has not been run.)
-5. the internal repository release record's `containers/magicc_0.3.1.sif | 367 MB` row must be
-   corrected: that file does not exist.
-
-**Nothing was built, retagged or published in producing this record.**
+The inspected release supplied Docker and Apptainer build definitions. A publicly
+pullable container image was not verified. Recorded cross-environment timings
+describe the locally built image used for those measurements.

@@ -1,6 +1,6 @@
 # MAGICC determinism and reproducibility statement (WS7.12)
 
-Addresses **R1-M6, R1-M8, R1-m17** and editorial requirements **E2/E5/E6**.
+Records repeated predictions and environment controls.
 Generated 2026-07-26. Machine-readable companion:
 `results/revision/reproducibility/determinism_report.json`.
 
@@ -49,7 +49,7 @@ one frozen artefact above.
 ## 2. What *is* guaranteed: inference determinism
 
 All checks below were run through the **installed `magicc` console script** — what
-a reviewer actually invokes — not through an internal Python API.
+a user invokes — not through an internal Python API.
 
 `python scripts/115_determinism_check.py --n-genomes 24 --max-threads 4`
 → **7/7 PASS**, 24 real genomes from Set E.
@@ -77,7 +77,7 @@ float32, `CPUExecutionProvider`, 1 intra-/inter-op thread; probe input SHA256
 MAGICC inference is **CPU-only by design**: the CLI creates the onnxruntime
 session with `CPUExecutionProvider`, and the shipped model is a small MLP whose
 inference cost is negligible against feature extraction. There is no GPU code
-path to compare, so the CPU/GPU axis of R1-m17 does not arise. The GPU is used
+path to compare, so the CPU/GPU comparison does not apply. The GPU is used
 only for *training*, which is separately addressed in §1.
 
 ---

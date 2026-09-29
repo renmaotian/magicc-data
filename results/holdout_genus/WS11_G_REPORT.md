@@ -6,7 +6,11 @@ Generated 2026-08-28T10:27:29.453279
 
 ## Why this experiment exists
 
-Reviewer 2 asked for taxonomic holdout at genus, family or phylum level and Reviewer 1 asked for held-out evaluation by genome, species, genus and phylum. Phylum (WS1.6) and family (WS1.9) were run; genus was declined with the argument that a genus-level holdout inside a represented family would be expected to fall below the family-level cost. That argument assumes degradation is monotone across ranks, and WS1.9's own Helicobacteraceae cell contradicts it (family-level novelty cost as much as phylum-level novelty: attenuation -0.39 pp, p = 0.228). This experiment measures the genus level instead of arguing about it. **Monotonicity across ranks is not assumed anywhere in this report.**
+This historical experiment measures genus exclusion within represented
+families and phyla. Its earlier Helicobacteraceae family comparison showed an
+attenuation of −0.39 pp (p=0.228), so monotonicity of degradation across taxonomic
+ranks is not assumed. The current primary paired genus experiment is documented
+in reproduction/GENUS_RETRAINING.md.
 
 ## The panel
 

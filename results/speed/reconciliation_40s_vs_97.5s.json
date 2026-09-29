@@ -1,5 +1,5 @@
 {
-  "question": "R1-m11: reconcile '1,000 genomes in 40 seconds' (main text) with '97.5 s for 1,000 genomes' (Table S4).",
+  "question": "Reconcile the historical 40-second and 97.5-second runtime summaries for 1,000 genomes.",
   "verdict_summary": "The two numbers were never measurements of the same thing, and they were never even measurements of the same experiment. 97.5 s is a real end-to-end wall-clock measurement of one process. 40 s is not a measurement at all: it is 1,000 divided by the 1,451 genomes/min/thread figure printed in the same table, and 1,451 is the arithmetic mean of five per-benchmark-set throughput rates computed from MAGICC's own internal compute-phase timer. Table S4 therefore places, in a single row, a wall-clock column and a throughput column that disagree with each other by 2.36x.",
   "figure_97_5_s": {
     "value_s": 97.52000000000001,
@@ -101,7 +101,7 @@
     "model": "magicc_v3.onnx",
     "input": "Set E, 1,000 genomes, directory input, .fasta, batch size 64",
     "status": "SURVIVES as an end-to-end measurement, but it is a V3 measurement and it disagrees with the 97.5 s figure by 23 s for nominally the same configuration on the same day. The two differ in wrapper (`conda run` vs direct) and in unrecorded machine state; neither run recorded load average or page-cache state, so the 23 s cannot be attributed from the archive. Both are superseded by the WS8.1 re-measurement, which records load average and repeats 3 times.",
-    "note_43_threads": "7.9 s at 43 threads corresponds to 176 genomes/min/thread, not 1,451 -- per-thread throughput FALLS with thread count because the fixed startup cost is amortised over a shorter run. Any per-thread ratio must therefore carry its thread count, which is exactly R1-m20's complaint."
+    "note_43_threads": "7.9 s at 43 threads corresponds to 176 genomes/min/thread, not 1,451 -- per-thread throughput FALLS with thread count because the fixed startup cost is amortised over a shorter run. Any per-thread ratio must therefore carry its thread count."
   },
   "table_S4_internal_inconsistency": {
     "row": "MAGICC | 1 thread | 0.66 GB | 97.5 s | 1,451 genomes/min/thread",

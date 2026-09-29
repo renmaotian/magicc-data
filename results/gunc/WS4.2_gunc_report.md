@@ -635,4 +635,4 @@ Swapping to GTDB r95 raises the powered count on the putative positives from **1
 
 ## 7. Notes and caveats
 
-* set_A_v2/proGenomes 2.1: rank/AUROC statistics omitted — true contamination is uniformly 0 % by construction, so Spearman ρ and AUROC are undefined (R1-m19 zero-true-variance convention). Pass/fail and the power audit are still reported: this set is a pure false-positive (specificity) test.
+* set_A_v2/proGenomes 2.1: rank/AUROC statistics omitted — true contamination is uniformly 0 % by construction, so Spearman ρ and AUROC are undefined (zero-true-variance convention). Pass/fail and the power audit are still reported: this set is a pure false-positive (specificity) test.

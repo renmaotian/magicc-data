@@ -1,0 +1,28 @@
+{
+  "status": "ANALYSIS_LOCKED_BEFORE_FULL_TRAINING_OR_TEST_OUTCOMES",
+  "selection": "panel_design.json",
+  "primary": "Validation-selected checkpoints, full domain completeness50\u2013100 and contamination0\u2013completeness; per-genus paired MAE difference adjusted by independent common-control reference difference.",
+  "seed": 20260928,
+  "model_seed": 42,
+  "bootstrap_replicates": 2000,
+  "cluster": "dominant reference genome",
+  "multiplicity": "BH across 20 genus-by-outcome primary contrasts",
+  "sensitivities": [
+    {
+      "name": "contamination_le35",
+      "maximum_true_contamination": 35,
+      "note": "Use same paired models/control and reference bootstrap within stratum."
+    },
+    {
+      "name": "contamination_le10",
+      "maximum_true_contamination": 10,
+      "note": "Use same paired models/control and reference bootstrap within stratum."
+    },
+    {
+      "name": "fixed_epoch20",
+      "epoch": 20,
+      "note": "Preserve epoch20 independently of validation/test quality in both arms; evaluate secondary equal-epoch contrast. Do not replace primary or stop either run at20."
+    }
+  ],
+  "limits": "One model seed per arm; intervals quantify reference sampling, not model-training uncertainty; joint pool/normalizer/training intervention, not pure causal taxonomy effect. Historical families and broad CPR retained."
+}

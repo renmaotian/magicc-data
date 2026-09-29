@@ -8,7 +8,7 @@ Predicted vs true completeness and contamination for Meslier MOCK1 reference-anc
 
 ### fig_ws3_signed_errors
 
-Signed error distributions (predicted - true) for the primary leakage-free cohort of each real-data dataset. Boxes show median and IQR, whiskers 1.5x IQR; individual points are overlaid where n<=60 (editorial policy E9). Denominators (identical for ground truth and for every tool): completeness = retained dominant-organism bp / dominant reference FULL length x 100; contamination = contaminant bp / dominant reference FULL length x 100. MIMAG-inspired thresholds (completeness/contamination only): high quality >=90 % completeness AND <5 % contamination; medium quality >=50 % AND <10 %. R2 is the coefficient of determination (1 - SS_res/SS_tot), never squared Pearson.
+Signed error distributions (predicted - true) for the primary leakage-free cohort of each real-data dataset. Boxes show median and IQR, whiskers 1.5x IQR; individual points are overlaid where n<=60. Denominators (identical for ground truth and for every tool): completeness = retained dominant-organism bp / dominant reference FULL length x 100; contamination = contaminant bp / dominant reference FULL length x 100. MIMAG-inspired thresholds (completeness/contamination only): high quality >=90 % completeness AND <5 % contamination; medium quality >=50 % AND <10 %. R2 is the coefficient of determination (1 - SS_res/SS_tot), never squared Pearson.
 
 ### fig_ws3_realdata_synthesis
 

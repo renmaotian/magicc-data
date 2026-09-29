@@ -1,0 +1,14 @@
+{
+  "status": "ALL_ORIGINAL_SOURCE_BYTES_VERIFIED",
+  "genomic_fastas": 99957,
+  "core_gene_fastas": 2000,
+  "bytes_read": 369337126432,
+  "mismatches": 0,
+  "all_fastas_utf8_readable_with_ascii_sequence_and_at_least500bp": true,
+  "minimum_sequence_bp": 35514,
+  "donor_trace_scope": "Accepted simulation plans bound possible donors; readability at audit time does not prove every planned donor emitted bp or rule out transient earlier read failures.",
+  "manifest_sha256": {
+    "results/revision/holdout_resubmission5/reconstruction/genomic_source_manifest.tsv": "756ab719cb9c4acb41dbe5e1685b7014780d1f13d8b13c2c46ad45c7632b4edb",
+    "results/revision/holdout_resubmission5/reconstruction/core_gene_input_manifest.tsv": "4e307a500079797e51eded905415ad798f14b05de1274b8dbbb38c931ebcd4db"
+  }
+}

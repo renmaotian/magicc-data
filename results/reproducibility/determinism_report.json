@@ -3,11 +3,6 @@
   "generated_utc": "2026-07-26T22:08:13.164548+00:00",
   "generated_by": "scripts/115_determinism_check.py",
   "workstream_item": "WS7.12",
-  "reviewer_comments": [
-    "R1-M8",
-    "R1-m17",
-    "E2"
-  ],
   "n_genomes": 24,
   "source_set": "set_E",
   "thread_counts_tested": [

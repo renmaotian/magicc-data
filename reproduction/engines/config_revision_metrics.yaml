@@ -1,0 +1,749 @@
+project_root: __WORKSPACE__
+benchmark_root: data/benchmarks
+splits_dir: data/splits
+output_root: results/revision/metrics
+n_jobs: 4
+blas_threads: 1
+random_seed: 20260726
+bootstrap:
+  n_iter: 2000
+  n_iter_slow: 1000
+  ci_level: 0.95
+  method: percentile
+  cluster_default: dominant_accession
+mimag:
+  high:
+    completeness_min: 90.0
+    contamination_max: 5.0
+  medium:
+    completeness_min: 50.0
+    contamination_max: 10.0
+  completeness_inclusive: true
+  contamination_inclusive: false
+  classes:
+  - high
+  - medium
+  - low
+thresholds:
+  contamination:
+  - 5.0
+  - 10.0
+  completeness:
+  - 50.0
+  - 90.0
+strata:
+  contamination_bins:
+    edges:
+    - 0.0
+    - 0.0001
+    - 5.0
+    - 10.0
+    - 20.0
+    - 40.0
+    - 100.1
+    labels:
+    - 0 (uncontaminated)
+    - (0,5)
+    - '[5,10)'
+    - '[10,20)'
+    - '[20,40)'
+    - '[40,100]'
+  min_phylum_n: 30
+tools:
+  magicc_v5:
+    file: magicc_v5_predictions.tsv
+    label: MAGICC v5 (released, v0.3.0)
+    short: MAGICC v5
+    role: primary
+    note: 9,249 core-gene 9-mers + 7 k-mer summary features
+  magicc_v4:
+    file: magicc_v4_predictions.tsv
+    label: MAGICC v4 (numbers in submitted manuscript)
+    short: MAGICC v4
+    role: secondary
+    note: same feature set as v5, trained on the 800k dataset
+  magicc_v3:
+    file: magicc_predictions.tsv
+    label: MAGICC v3 (SUPERSEDED - uses 20 assembly statistics)
+    short: MAGICC v3
+    role: superseded
+    note: 'Retained only for provenance. v3 consumed assembly statistics (contig count,
+      N50, ...) that directly encode the simulated fragmentation, so its synthetic-benchmark
+      accuracy is optimistic and it generalised worse; assembly statistics were removed
+      in v4.
+
+      '
+  checkm2:
+    file: checkm2_predictions.tsv
+    label: CheckM2 1.0.1
+    short: CheckM2
+    role: competitor
+  cocopye:
+    file: cocopye_predictions.tsv
+    label: CoCoPyE 0.5.0
+    short: CoCoPyE
+    role: competitor
+  deepcheck:
+    file: deepcheck_predictions.tsv
+    label: DeepCheck
+    short: DeepCheck
+    role: competitor
+statistics:
+  reference_tool: magicc_v5
+  comparison_tools:
+  - magicc_v4
+  - checkm2
+  - cocopye
+  - deepcheck
+  metrics:
+  - abs_err_completeness
+  - abs_err_contamination
+  bh_alpha: 0.05
+  bh_family: run
+sets:
+- name: set_A_v2
+  dir: set_A_v2
+  label: Set A (completeness gradient, 0% contamination)
+  status: current
+  design: 1,000 NCBI finished test-split dominants; completeness 50-100%; no contaminants
+  relatedness_rule: fixed:none (uncontaminated)
+- name: set_B_v2
+  dir: set_B_v2
+  label: Set B (contamination gradient, 100% completeness)
+  status: current
+  design: 1,000 NCBI finished test-split dominants at 100% completeness; cross-phylum
+    contamination 0-80%
+  relatedness_rule: fixed:cross_phylum
+- name: set_C
+  dir: set_C
+  label: Set C (Patescibacteriota) - SUPERSEDED (training leakage)
+  status: superseded_leaky
+  design: 1,000 Patescibacteriota dominants drawn from train+val+test; completeness
+    50-100%, cross-phylum contamination 0-100%
+  relatedness_rule: fixed:cross_phylum
+  superseded_by: set_C_clean
+- name: set_D
+  dir: set_D
+  label: Set D (Archaea) - SUPERSEDED (training leakage)
+  status: superseded_leaky
+  design: 1,000 archaeal dominants drawn from train+val+test; completeness 50-100%,
+    cross-phylum contamination 0-100%
+  relatedness_rule: fixed:cross_phylum
+  superseded_by: set_D_clean
+- name: set_E
+  dir: set_E
+  label: Set E (realistic mixture)
+  status: current
+  design: 1,000 NCBI finished test-split dominants; 200 pure + 200 complete + 600
+    mixed (70% cross-/30% within-phylum)
+  relatedness_rule: from_sample_type
+- name: set_C_clean
+  dir: set_C_clean
+  label: Set C-clean (Patescibacteriota, held-out test split)
+  status: current
+  design: 100 test-split Patescibacteriota references x 10 simulations; completeness
+    50-100%, cross-phylum contamination 0-100% from test split only
+  relatedness_rule: fixed:cross_phylum
+- name: set_D_clean
+  dir: set_D_clean
+  label: Set D-clean (Archaea, held-out test split)
+  status: current
+  design: 100 test-split archaeal references x 10 simulations; cross-phylum contamination
+    0-100% from test split only
+  relatedness_rule: fixed:cross_phylum
+- name: set_A
+  dir: set_A
+  label: Set A v1 (superseded by Set A v2)
+  status: legacy_superseded
+  tier: secondary
+  design: 600 genomes, completeness gradient; replaced by set_A_v2
+  relatedness_rule: fixed:none (uncontaminated)
+  superseded_by: set_A_v2
+- name: set_B
+  dir: set_B
+  label: Set B v1 (superseded by Set B v2)
+  status: legacy_superseded
+  tier: secondary
+  design: 600 genomes, contamination gradient; replaced by set_B_v2
+  relatedness_rule: fixed:cross_phylum
+  superseded_by: set_B_v2
+- name: motivating_v2_set_A
+  dir: motivating_v2/set_A
+  label: 'Motivating Set A (Table S1a): completeness gradient'
+  status: motivating
+  tier: secondary
+  design: 1,000 finished test-split dominants, completeness gradient; existing tools
+    only in the manuscript
+  relatedness_rule: fixed:none (uncontaminated)
+- name: motivating_v2_set_B
+  dir: motivating_v2/set_B
+  label: 'Motivating Set B (Table S1b): contamination gradient'
+  status: motivating
+  tier: secondary
+  design: 1,000 finished test-split dominants at 100% completeness, cross-phylum contamination
+    0-80%
+  relatedness_rule: fixed:cross_phylum
+- name: motivating_v2_set_C
+  dir: motivating_v2/set_C
+  label: 'Motivating Set C (Table S1c): realistic mixture'
+  status: motivating
+  tier: secondary
+  design: 1,000 finished test-split dominants, realistic mixture
+  relatedness_rule: from_sample_type
+- name: motivating_set_A
+  dir: motivating/set_A
+  label: Motivating Set A v1 (superseded)
+  status: legacy_superseded
+  tier: secondary
+  design: 600 genomes; replaced by motivating_v2/set_A
+  relatedness_rule: fixed:none (uncontaminated)
+  superseded_by: motivating_v2_set_A
+- name: motivating_set_B
+  dir: motivating/set_B
+  label: Motivating Set B v1 (superseded)
+  status: legacy_superseded
+  tier: secondary
+  design: 1,100 genomes; replaced by motivating_v2/set_B
+  relatedness_rule: fixed:cross_phylum
+  superseded_by: motivating_v2_set_B
+autodiscover:
+  enabled: false
+  patterns:
+  - set_*
+  - '*/set_*'
+  default_status: current
+  default_relatedness_rule: from_sample_type
+denominators:
+  completeness: completeness (%) = retained dominant-genome bp / full reference length
+    of the dominant genome x 100
+  contamination: contamination (%) = total contaminant bp / full reference length
+    of the dominant genome x 100
+  note: Both percentages use the same denominator (the full reference length of the
+    dominant genome) and are therefore independent measures; contamination is not
+    normalised to total assembly length or to retained dominant length.
+palette:
+  name: Okabe-Ito (CVD-optimised 6-colour subset)
+  min_delta_e: 20.0
+  tools:
+    magicc_v5: '#0072B2'
+    magicc_v4: '#56B4E9'
+    magicc_v3: '#999999'
+    checkm2: '#D55E00'
+    cocopye: '#F0E442'
+    deepcheck: '#000000'
+  mimag:
+    high: '#08306B'
+    medium: '#4292C6'
+    low: '#BDD7E7'
+  sequential_cmap: cividis
+  markers:
+    magicc_v5: o
+    magicc_v4: s
+    magicc_v3: x
+    checkm2: ^
+    cocopye: D
+    deepcheck: v
+published_reference_values:
+  tolerance_pp: 0.05
+  tolerance_r2: 0.005
+  mae:
+  - - S1a
+    - motivating_v2_set_A
+    - checkm2
+    - completeness
+    - 2.54
+  - - S1a
+    - motivating_v2_set_A
+    - cocopye
+    - completeness
+    - 3.47
+  - - S1a
+    - motivating_v2_set_A
+    - deepcheck
+    - completeness
+    - 4.15
+  - - S1a
+    - motivating_v2_set_A
+    - checkm2
+    - contamination
+    - 0.28
+  - - S1a
+    - motivating_v2_set_A
+    - cocopye
+    - contamination
+    - 0.73
+  - - S1a
+    - motivating_v2_set_A
+    - deepcheck
+    - contamination
+    - 0.43
+  - - S1b
+    - motivating_v2_set_B
+    - checkm2
+    - completeness
+    - 0.42
+  - - S1b
+    - motivating_v2_set_B
+    - cocopye
+    - completeness
+    - 2.57
+  - - S1b
+    - motivating_v2_set_B
+    - deepcheck
+    - completeness
+    - 6.74
+  - - S1b
+    - motivating_v2_set_B
+    - checkm2
+    - contamination
+    - 17.08
+  - - S1b
+    - motivating_v2_set_B
+    - cocopye
+    - contamination
+    - 19.14
+  - - S1b
+    - motivating_v2_set_B
+    - deepcheck
+    - contamination
+    - 25.7
+  - - S1c
+    - motivating_v2_set_C
+    - checkm2
+    - completeness
+    - 9.13
+  - - S1c
+    - motivating_v2_set_C
+    - cocopye
+    - completeness
+    - 4.99
+  - - S1c
+    - motivating_v2_set_C
+    - deepcheck
+    - completeness
+    - 11.96
+  - - S1c
+    - motivating_v2_set_C
+    - checkm2
+    - contamination
+    - 18.13
+  - - S1c
+    - motivating_v2_set_C
+    - cocopye
+    - contamination
+    - 20.32
+  - - S1c
+    - motivating_v2_set_C
+    - deepcheck
+    - contamination
+    - 24.37
+  - - S2a
+    - set_A_v2
+    - magicc_v4
+    - completeness
+    - 2.59
+  - - S2a
+    - set_B_v2
+    - magicc_v4
+    - completeness
+    - 3.12
+  - - S2a
+    - set_C
+    - magicc_v4
+    - completeness
+    - 3.36
+  - - S2a
+    - set_D
+    - magicc_v4
+    - completeness
+    - 5.2
+  - - S2a
+    - set_E
+    - magicc_v4
+    - completeness
+    - 5.71
+  - - S2a
+    - set_A_v2
+    - checkm2
+    - completeness
+    - 2.54
+  - - S2a
+    - set_B_v2
+    - checkm2
+    - completeness
+    - 0.45
+  - - S2a
+    - set_C
+    - checkm2
+    - completeness
+    - 7.99
+  - - S2a
+    - set_D
+    - checkm2
+    - completeness
+    - 9.89
+  - - S2a
+    - set_E
+    - checkm2
+    - completeness
+    - 9.14
+  - - S2a
+    - set_A_v2
+    - cocopye
+    - completeness
+    - 3.63
+  - - S2a
+    - set_B_v2
+    - cocopye
+    - completeness
+    - 2.61
+  - - S2a
+    - set_C
+    - cocopye
+    - completeness
+    - 15.73
+  - - S2a
+    - set_D
+    - cocopye
+    - completeness
+    - 6.14
+  - - S2a
+    - set_E
+    - cocopye
+    - completeness
+    - 5.02
+  - - S2a
+    - set_A_v2
+    - deepcheck
+    - completeness
+    - 4.26
+  - - S2a
+    - set_B_v2
+    - deepcheck
+    - completeness
+    - 6.61
+  - - S2a
+    - set_C
+    - deepcheck
+    - completeness
+    - 17.97
+  - - S2a
+    - set_D
+    - deepcheck
+    - completeness
+    - 9.97
+  - - S2a
+    - set_E
+    - deepcheck
+    - completeness
+    - 11.69
+  - - S2b
+    - set_A_v2
+    - magicc_v4
+    - contamination
+    - 1.48
+  - - S2b
+    - set_B_v2
+    - magicc_v4
+    - contamination
+    - 5.11
+  - - S2b
+    - set_C
+    - magicc_v4
+    - contamination
+    - 7.44
+  - - S2b
+    - set_D
+    - magicc_v4
+    - contamination
+    - 7.77
+  - - S2b
+    - set_E
+    - magicc_v4
+    - contamination
+    - 5.88
+  - - S2b
+    - set_A_v2
+    - checkm2
+    - contamination
+    - 0.27
+  - - S2b
+    - set_B_v2
+    - checkm2
+    - contamination
+    - 17.66
+  - - S2b
+    - set_C
+    - checkm2
+    - contamination
+    - 42.37
+  - - S2b
+    - set_D
+    - checkm2
+    - contamination
+    - 36.92
+  - - S2b
+    - set_E
+    - checkm2
+    - contamination
+    - 18.47
+  - - S2b
+    - set_A_v2
+    - cocopye
+    - contamination
+    - 0.77
+  - - S2b
+    - set_B_v2
+    - cocopye
+    - contamination
+    - 19.14
+  - - S2b
+    - set_C
+    - cocopye
+    - contamination
+    - 34.07
+  - - S2b
+    - set_D
+    - cocopye
+    - contamination
+    - 25.73
+  - - S2b
+    - set_E
+    - cocopye
+    - contamination
+    - 21.6
+  - - S2b
+    - set_A_v2
+    - deepcheck
+    - contamination
+    - 0.4
+  - - S2b
+    - set_B_v2
+    - deepcheck
+    - contamination
+    - 25.7
+  - - S2b
+    - set_C
+    - deepcheck
+    - contamination
+    - 44.56
+  - - S2b
+    - set_D
+    - deepcheck
+    - contamination
+    - 41.77
+  - - S2b
+    - set_E
+    - deepcheck
+    - contamination
+    - 25.43
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - magicc_v4
+    - completeness
+    - 4.0
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - magicc_v4
+    - contamination
+    - 5.53
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - checkm2
+    - completeness
+    - 6.0
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - checkm2
+    - contamination
+    - 23.14
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - cocopye
+    - completeness
+    - 6.62
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - cocopye
+    - contamination
+    - 20.26
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - deepcheck
+    - completeness
+    - 10.1
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - deepcheck
+    - contamination
+    - 27.57
+  - - progress_v5
+    - set_A_v2
+    - magicc_v5
+    - completeness
+    - 2.18
+  - - progress_v5
+    - set_A_v2
+    - magicc_v5
+    - contamination
+    - 0.83
+  - - progress_v5
+    - set_B_v2
+    - magicc_v5
+    - completeness
+    - 2.97
+  - - progress_v5
+    - set_B_v2
+    - magicc_v5
+    - contamination
+    - 4.45
+  - - progress_v5
+    - set_C
+    - magicc_v5
+    - completeness
+    - 3.15
+  - - progress_v5
+    - set_C
+    - magicc_v5
+    - contamination
+    - 7.97
+  - - progress_v5
+    - set_D
+    - magicc_v5
+    - completeness
+    - 5.18
+  - - progress_v5
+    - set_D
+    - magicc_v5
+    - contamination
+    - 8.06
+  - - progress_v5
+    - set_E
+    - magicc_v5
+    - completeness
+    - 5.49
+  - - progress_v5
+    - set_E
+    - magicc_v5
+    - contamination
+    - 5.66
+  - - progress_v5
+    - POOLED_manuscript_5_sets
+    - magicc_v5
+    - completeness
+    - 3.79
+  - - progress_v5
+    - POOLED_manuscript_5_sets
+    - magicc_v5
+    - contamination
+    - 5.39
+  r2:
+  - - S2a
+    - set_A_v2
+    - magicc_v4
+    - completeness
+    - 0.92
+  - - S2a
+    - set_C
+    - magicc_v4
+    - completeness
+    - 0.89
+  - - S2a
+    - set_D
+    - magicc_v4
+    - completeness
+    - 0.71
+  - - S2a
+    - set_E
+    - magicc_v4
+    - completeness
+    - 0.69
+  - - S2b
+    - set_B_v2
+    - magicc_v4
+    - contamination
+    - 0.92
+  - - S2b
+    - set_C
+    - magicc_v4
+    - contamination
+    - 0.86
+  - - S2b
+    - set_D
+    - magicc_v4
+    - contamination
+    - 0.82
+  - - S2b
+    - set_E
+    - magicc_v4
+    - contamination
+    - 0.91
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - magicc_v4
+    - completeness
+    - 0.83
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - magicc_v4
+    - contamination
+    - 0.91
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - checkm2
+    - completeness
+    - 0.67
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - checkm2
+    - contamination
+    - 0.34
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - cocopye
+    - completeness
+    - 0.65
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - cocopye
+    - contamination
+    - 0.65
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - deepcheck
+    - completeness
+    - 0.48
+  - - S2c
+    - POOLED_manuscript_5_sets
+    - deepcheck
+    - contamination
+    - 0.18
+  mimag_macro_f1_ranges:
+  - - S3
+    - - set_C
+      - set_D
+    - magicc_v4
+    - 0.82
+    - 0.87
+    - macro_f1
+  - - S3
+    - - set_C
+      - set_D
+    - cocopye
+    - 0.42
+    - 0.71
+    - macro_f1
+  - - S3
+    - - set_C
+      - set_D
+    - checkm2
+    - 0.28
+    - 0.37
+    - macro_f1
+  - - S3
+    - - set_C
+      - set_D
+    - deepcheck
+    - 0.21
+    - 0.27
+    - macro_f1

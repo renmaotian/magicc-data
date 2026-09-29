@@ -1,0 +1,9 @@
+{
+  "v4_samples": 1000000,
+  "v4_donors_planned": 2146656,
+  "v4_donors_loaded": 2146656,
+  "v4_count_mismatch_samples": 0,
+  "B_samples": 100000,
+  "B_donors_planned": 200157,
+  "B_count_fields_are_planned": true
+}

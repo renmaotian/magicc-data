@@ -1,4 +1,4 @@
-# WS1.11 (R1-m13) — provenance audit for `set_H_ncbi`
+# WS1.11 — provenance audit for `set_H_ncbi`
 
 Generated 2026-08-01T18:46:14.131627+00:00 by `scripts/188_ws1_11_provenance_audit.py`,
 which imports the normalisation and GCA↔GCF cross-map code of

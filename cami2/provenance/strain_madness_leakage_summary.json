@@ -1,5 +1,5 @@
 {
-  "workstream": "WS3.8 CAMI II leakage audit (R1-M3)",
+  "workstream": "WS3.8 CAMI II leakage audit",
   "dataset": "strain_madness",
   "generated_utc": "2026-08-02T16:32:53.053516+00:00",
   "n_source_genomes": 408,

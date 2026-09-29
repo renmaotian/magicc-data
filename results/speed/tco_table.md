@@ -1,4 +1,4 @@
-# Table S4e — total cost of ownership (R1-m12)
+# Table S4e — total cost of ownership
 
 Two different quantities are reported here and are never added together silently: the **reference data** a user must download before the tool can run at all, and the **install footprint** of the software itself. Sizes are apparent bytes (`du -sb`) measured on the benchmark host on 2026-08-01T00:59:45Z.
 

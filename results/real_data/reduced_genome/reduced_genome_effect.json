@@ -1,6 +1,6 @@
 {
   "script": "scripts/134_analyze_reduced_genome_effect.py",
-  "hypothesis": "MAGICC over-calls contamination and under-calls completeness on reduced genomes; this explains the reviewer's disagreements",
+  "hypothesis": "MAGICC over-calls contamination and under-calls completeness on reduced genomes",
   "comparator": "GTDB published CheckM2",
   "n_genomes_scored": 1368,
   "sign_convention": "all deltas are MAGICC minus CheckM2 (positive = MAGICC higher)",

@@ -1,6 +1,6 @@
 # WS6 — Sequencing and assembly error robustness (Set G)
 
-Generated 2026-07-28T03:36:49.943959+00:00 · model `models/magicc_v5.onnx` (frozen) · addresses **R2-o3**.
+Generated 2026-07-28T03:36:49.943959+00:00 · model `models/magicc_v5.onnx` (frozen).
 
 ## Set G composition
 
@@ -270,4 +270,4 @@ deepcheck    chimera            40.0 contig_stratum base_contigs>=20 38         
 
 ## Conventions honoured
 
-R^2 = coefficient of determination (1 - SS_res/SS_tot) throughout, blank where the truth has near-zero variance (R1-m19). `fw.stable_hash()` (CRC-32) for every bootstrap seed with `PYTHONHASHSEED=0`. Two-sided paired Wilcoxon tests, cluster bootstrap over reference genomes (2,000 iterations), BH correction, Hodges-Lehmann and Cliff's delta with CIs. MIMAG-inspired thresholds (completeness/contamination only). Palette CVD-verified in-script; no red/green discrimination. Denominator stated in every caption (`figures/captions.md`).
+R^2 = coefficient of determination (1 - SS_res/SS_tot) throughout, blank where the truth has near-zero variance. `fw.stable_hash()` (CRC-32) for every bootstrap seed with `PYTHONHASHSEED=0`. Two-sided paired Wilcoxon tests, cluster bootstrap over reference genomes (2,000 iterations), BH correction, Hodges-Lehmann and Cliff's delta with CIs. MIMAG-inspired thresholds (completeness/contamination only). Palette CVD-verified in-script; no red/green discrimination. Denominator stated in every caption (`figures/captions.md`).

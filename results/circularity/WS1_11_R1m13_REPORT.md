@@ -1,4 +1,4 @@
-# WS1.11 — Circularity safeguard (Reviewer 1, minor comment 13)
+# WS1.11 — Circularity safeguard
 
 _Generated 2026-08-02T15:34:03.490532+00:00 by `scripts/193_ws1_11_report.py` from the result files in `results/revision/circularity/`. Evaluation only: no model was retrained and `models/magicc_v5.onnx` (SHA256 `b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096`) is unchanged._
 
@@ -44,7 +44,7 @@ References were selected by NCBI's **`assembly_level == "Complete Genome"`** ann
 - FASTA integrity: 0 missing, 0 empty, 0 unparseable, 0 with a contig count or bp total disagreeing with the metadata.
 - Constraint violations: 0 (contaminant bp > dominant bp), 0 (contamination % > completeness %), 0 (contamination > 100 %), 0 (completeness outside 50–100 %). **Out-of-domain samples (protocol §4.4a): 0** — the design is entirely in-domain.
 - Target uniformity: KS p = 0.4999 (completeness), 0.0511 (contamination). Paired targets identical across arms: True.
-- `generation_metadata.tsv` has 53 columns including per-sample seed, both targets, both observed values, every contaminant accession, the fragmentation tier and all six dropout parameters (WS7.7 / R1-m15).
+- `generation_metadata.tsv` has 53 columns including per-sample seed, both targets, both observed values, every contaminant accession, the fragmentation tier and all six dropout parameters (WS7.7).
 - Determinism: 5 FASTAs deleted with their checkpoint lines removed and regenerated — byte-identical: **True**; `generation_metadata.tsv` unchanged: True.
 - All 400/400 reference assemblies downloaded from NCBI and accepted; total bp deviates from the GTDB-recorded genome size by at most 0.0000 %, i.e. the assemblies scored here are exactly the assemblies GTDB scored.
 
@@ -64,7 +64,7 @@ References were selected by NCBI's **`assembly_level == "Complete Genome"`** ann
 
 The last row is the point of the experiment: the H_fail arm has **0 of 2000** samples inside the CheckM2-filtered pool, i.e. none of those 200 references was ever available to any MAGICC model or any previous MAGICC benchmark. 12,075 contamination events over 6,853 unique genomes all come from the held-out test split (0 from train, 0 from val), and 0 share the dominant's phylum — identical to `set_C_clean`/`set_D_clean`, because the contaminant pool is deliberately unchanged. A SHA256 manifest covers 4,413 files.
 
-## 5. The comparison that answers R1-m13
+## 5. Matched reference-selection comparison
 
 ### 5.1 Error on CheckM2-filtered vs NCBI-selected references
 

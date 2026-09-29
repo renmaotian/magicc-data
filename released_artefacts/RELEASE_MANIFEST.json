@@ -7,13 +7,6 @@
     "WS7.6",
     "WS7.7"
   ],
-  "reviewer_comments": [
-    "R1-M8",
-    "R1-m14",
-    "R1-m15",
-    "E5",
-    "E6"
-  ],
   "model": {
     "path": "models/magicc_v5.onnx",
     "sha256": "b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096",

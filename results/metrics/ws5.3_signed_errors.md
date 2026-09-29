@@ -1,6 +1,6 @@
 # WS5.3 - Signed error distributions (predicted - true)
 
-Reviewer 2 (other comment 2): MAE quantifies the magnitude of the deviation but not its direction. Positive signed error = the tool OVERESTIMATES; negative = the tool UNDERESTIMATES. All values are in percentage points (pp).
+MAE quantifies the magnitude of the deviation but not its direction. Positive signed error = the tool OVERESTIMATES; negative = the tool UNDERESTIMATES. All values are in percentage points (pp).
 
 Denominators: completeness (%) = retained dominant-genome bp / full reference length of the dominant genome x 100; contamination (%) = total contaminant bp / full reference length of the dominant genome x 100. Both percentages use the same denominator (the full reference length of the dominant genome) and are therefore independent measures; contamination is not normalised to total assembly length or to retained dominant length.
 

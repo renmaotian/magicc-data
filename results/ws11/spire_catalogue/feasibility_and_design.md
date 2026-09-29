@@ -83,12 +83,9 @@ MAGs and in frame — a **complete census of the dereplicated catalogue**, 86.85
 no sampling error and no 404 loss. Representatives are the best genome of their cluster,
 so this is a *different population*; its rate is never quoted as the per-MAG rate.
 
-**Score representatives or all genomes? Both, and label them.** The reviewer's question
-("what proportion of catalogue MAGs change class") has the individual MAG as its unit, so
-the headline must come from the probability sample of MAGs. The dereplicated census
-answers the question a downstream user of the catalogue actually faces, and being a census
-it carries no sampling caveat at all. Reporting only one of the two would repeat the
-ambiguity the 750-genome cohort left behind.
+The probability sample estimates classification disagreement per MAG. The
+dereplicated census describes the catalogue representatives. These populations
+are reported separately; the complete census has no sampling uncertainty.
 
 ## 5. Binding interpretation
 

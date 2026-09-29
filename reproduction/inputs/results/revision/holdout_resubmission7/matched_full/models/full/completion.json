@@ -1,0 +1,68 @@
+{
+  "status": "TRAINING_COMPLETE",
+  "best_epoch": 29,
+  "best_validation_loss": 144.32660459572548,
+  "epochs_completed": 49,
+  "wall_hours_this_invocation": 9.44225702987777,
+  "onnx_sha256": "66bacf6ca1f442aba9c2f98e326959fc5d21d8266b7fe92244676dd4cc54666f",
+  "pytorch_onnx_max_difference": 2.288818359375e-05,
+  "best_model_sha256": "b66b8425cf9a66073c6159c301bc3597666cd963d919c214d901e343f0d0e31b",
+  "training_config": {
+    "variant": "matched_full",
+    "n_parameters": 42359986,
+    "n_features": 9239,
+    "seed": 42,
+    "precision": "CPU FP32",
+    "threads": 12,
+    "batch_size": 512,
+    "max_epochs": 150,
+    "patience": 20,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0005,
+    "loss_weights": [
+      2.0,
+      1.0
+    ],
+    "mask_rate": 0.02,
+    "noise_std": 0.01,
+    "scheduler": "CosineAnnealingWarmRestarts T_0=10 T_mult=2",
+    "gradient_clip_norm": 1.0,
+    "training_samples": 1000000,
+    "validation_samples": 100000,
+    "data_sha256": "fbae66d8fc93ab352cf5bb9f120b0dcdff3e3173cdfb1ee1e0903134ea49541c",
+    "feature_sha256": "0bf64c6a38f1549eabe6143adceda509098f6f2bdac800609aff70b16dc93338",
+    "normalization_sha256": "359efd77f2e1fcacc304e87522b868dc20a2783c0373b6186e5be56b85b1e850",
+    "data_integrity_check": "Full HDF5 SHA256 verified against the completed build manifest at trainer entry.",
+    "cpu_affinity": [
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "affinity_note": "Per-arm socket affinity applied before data/model allocation after paired runtime benchmark.",
+    "training_script_sha256": "8fa0a98c55b356e84b31c0e6f0a0b2e612603dba3bf57abd8ee4cbccf0449edd",
+    "implementation_hashes": {
+      "scripts/285_train_resubmission7_holdout.py": "8fa0a98c55b356e84b31c0e6f0a0b2e612603dba3bf57abd8ee4cbccf0449edd",
+      "scripts/resubmission7_holdout_config.py": "cd6f7cf455427f34b8f09e77bfcfc32a083396583705faab582b19a5c408d807",
+      "scripts/holdout_lib/model.py": "93af9512d58013cfbe414a1a626bb12d9829d0b0c856bc03bea903e00d75bafe"
+    },
+    "fixed_epoch_sensitivity": 20,
+    "implementation_notes": "Same hidden layers and output bounds as V5; 9239 inputs from actual genus-panel-free reselection. Gradient checkpointing disabled as CPU memory ample; no effect on architecture.",
+    "augmentation_notes": "Seeded vectorized Torch RNG with original independent masking/noise distributions; all RNG states checkpointed."
+  },
+  "fixed_epoch20_sensitivity": {
+    "epoch": 20,
+    "onnx_sha256": "44f08a4486a6aa5e9e4502b8a54940d8f5436b620d1a4cb83edb0807fedb1552",
+    "pytorch_onnx_max_difference": 1.71661376953125e-05,
+    "checkpoint_sha256": "fc028f50279b0682c15696a0fd2bda194514e5028a9ddfa37f6f062da869849c",
+    "role": "Prespecified secondary comparison at an equal optimization epoch; primary remains validation-selected."
+  }
+}

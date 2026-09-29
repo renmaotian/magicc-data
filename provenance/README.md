@@ -6,10 +6,9 @@ Generated 2026-07-26T14:26:25.065636+00:00 by `data_generating_scripts/74_proven
 
 ## Why this audit exists
 
-Both reviewers observed that benchmark Sets C (Patescibacteria) and D (Archaea) in the
-submitted manuscript were not independent of the training data. They were right. This
-directory contains the evidence, the exact leakage numbers, and the proof that the
-replacement sets are clean.
+Historical benchmark Sets C (Patescibacteria) and D (Archaea) were not independent
+of the training data. This directory contains the overlap measurements and
+checks showing that the replacement sets exclude the training genomes.
 
 ## Method
 
@@ -97,7 +96,7 @@ unused genomes of these lineages to fall back on.
 
 Contaminant provenance cannot be audited for the superseded sets: their generator did not
 record contaminant accessions. That gap is one of the reasons the new generator writes a
-complete `generation_metadata.tsv` (reviewer comment R1-m15).
+complete `generation_metadata.tsv`.
 
 ### A second, independent defect of the old sets: out-of-constraint labels
 

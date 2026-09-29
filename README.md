@@ -4,43 +4,51 @@ Benchmark metadata, predictions, statistics and analysis code for
 [MAGICC](https://github.com/renmaotian/magicc). Production V5 is unchanged, with
 ONNX SHA256 `b84346650ce21a66acd488e9f2eab1ca72333ba4dd50fed79070ec182b2b3096`.
 
-## Current scientific deposit: September 2026
+## Current results and reproduction
 
-The [September update](updates/2026-09/README.md) supplies completed scientific
-results and an explicit [file/SHA256 manifest](updates/2026-09/SCIENTIFIC_FILE_MANIFEST.tsv):
+Use the [ordered reproduction workflow](reproduction/README.md). It verifies
+inputs, rebuilds numerical results, renders scientific figures and supplies the
+full genus-exclusion training recipe. [DEPENDENCIES.tsv](reproduction/DEPENDENCIES.tsv)
+states why each retained script/module is needed; obsolete exploratory,
+duplicate and editorial scripts remain in Git history.
 
-* CoCoPyE predictions follow its selected API/CSV stage: marker estimates at
-  stage 2, neural estimates at stage 3, and quantitatively unscored at stage 1.
-  Unscored inputs remain counted. No valid estimate is clipped.
-* Pooled intervals cluster the 1,648 physical reference accessions shared across
-  the five sets, retaining equal set weights. Set F tests use reference-level
-  paired units. Threshold and comparison rules accompany component statistics.
-* CAMI marine genome-quality truth excludes all 200 circular source elements
-  from dominant and donor roles, including 88 previously missed unknown-category
-  elements. They are not treated as prokaryotic genome truth.
-* One new jointly excluded ten-family model is compared with one matched-full
-  retrain. Both use actual feature reselection and separate training-only
-  normalizers. Full trainings finished at 49 epochs/selected 29 and 90/selected
-  70. Evaluation covers 8,720 family assemblies from 872 references plus 1,000
-  controls from 100 references. Reference-bootstrap intervals do not cover
-  model-seed uncertainty; this intervention does not isolate novelty alone.
-* Sequence-level duplication verification, fixed-weight normalization
-  sensitivities and the corresponding scientific source audits are supplied.
+The primary taxonomic experiment jointly excludes ten named bacterial genera
+while preserving their parent families and phyla. Both arms share vocabulary
+selection from panel-free training representatives and fit their own
+training-only normalizers. A matched-full model
+provides the control; the earlier family/phylum results remain sensitivity
+records. This panel does not represent all archaeal or reduced-genome lineages.
 
-[UPDATED_PUBLIC_PATHS.tsv](updates/2026-09/UPDATED_PUBLIC_PATHS.tsv) identifies
-existing files replaced by verified corrections. Their previous versions remain
-at commit `c051b3d8383b560f34942e24ea4cbfe154f079c4`. The versioned snapshot is
-the authority for new results. Historical reports may describe earlier extraction
-or statistics; consult the corrected tables rather than combining versions.
+The completed experiment evaluates 5,770 assemblies from 577 references.
+Control-adjusted holdout–matched-full MAE differences span 1.53–9.23 percentage
+points for completeness and 0.72–8.12 for contamination; all 20 primary contrasts
+have positive 95% intervals and BH-adjusted q < 0.005. These are joint training-
+pool, normalization and validation-selection effects from one seed per arm.
+Different genus and historical family panels do not establish a paired rank trend.
+See the [primary contrasts](reproduction/inputs/results/revision/holdout_resubmission7/did.tsv),
+[three prespecified sensitivities](reproduction/inputs/results/revision/holdout_resubmission7/sensitivity_did.tsv)
+and [independent audit](reproduction/inputs/results/revision/holdout_resubmission7/independent_numerical_audit.json).
 
-The scientific tables and scripts are public in the committed snapshot. Research
-ONNX models and the core-gene input archive are prepared with the submission
-materials outside this repository; **no public download is provided here** and
-this update does not require their upload. [DEPOSITION_STATUS.md](DEPOSITION_STATUS.md)
-and [RELEASE_ASSETS.json](updates/2026-09/RELEASE_ASSETS.json) record this scope and
-the prepared artifact identities. A separate scientific ZIP is optional because
-its tables and code are already committed. No production weights or inference
-code were retrained or replaced by this update.
+The CheckM2 dose analysis separates contamination at or below 35% from above 35%.
+The five-set CheckM2 contamination MAE is 22.14 percentage points: 5.69 within the
+lower band and 40.72 above 35%. The higher band contains 46.98% of samples and
+86.38% of total CheckM2 absolute contamination error. MAGICC's corresponding
+MAEs are 5.31 overall, 2.54 within the lower band and 8.43 above 35%. This is descriptive
+accounting; dose and contamination construction were not independently varied.
+See the [recomputed table](reproduction/inputs/results/revision/checkm2_domain_resubmission7/dose_decomposition.tsv).
+
+Corrected comparator inputs preserve CoCoPyE's official stage selection,
+reference-cluster uncertainty and microbial-only CAMI source eligibility.
+[September scientific records](updates/2026-09/README.md) retain the full
+provenance. Three historical model-prediction tables are required solely for the
+original primary multiple-test family and are identified as statistical context.
+
+The 2,000 representative core-gene FASTAs are now available as one checksum-bound
+archive in two Git-sized chunks. Restoration verifies all 2,003 members and
+reassembles them automatically. Research ONNX models remain outside this data
+repository; the full training recipe regenerates them. Production weights and
+inference code remain unchanged. [DEPOSITION_STATUS.md](DEPOSITION_STATUS.md)
+states the exact scope.
 
 ## Benchmark identity and downloads
 
@@ -93,7 +101,7 @@ features, so it is not fully independent at preprocessing level. The new matched
 holdout fits normalization exclusively on each arm's training data. Fixed-weight
 normalization sensitivities do not correct training-time preprocessing overlap.
 
-See the [restoration instructions](updates/2026-09/README.md), `splits/`,
+See the [restoration instructions](reproduction/README.md), `splits/`,
 `provenance/` and release manifests. Sets A/B/E lack complete saved per-sample
 seed/fragmentation records; their generation rules do not promise byte-identical
 replay. The new holdout saves seeds and source identities. Third-party genomes,

@@ -42,7 +42,7 @@
       "bias": 0.8285281999999999,
       "true_variance": 0.0,
       "r2": null,
-      "r2_omitted_reason": "true value has zero variance (R1-m19)",
+      "r2_omitted_reason": "true value has zero variance",
       "r_pearson_sq": null,
       "n_clusters": 798,
       "n_iterations": 2000,

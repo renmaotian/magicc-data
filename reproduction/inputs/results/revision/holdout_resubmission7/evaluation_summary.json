@@ -1,0 +1,41 @@
+{
+  "status": "EVALUATION_COMPLETE",
+  "total_samples": 5770,
+  "primary_samples": 5770,
+  "outside_domain_samples": 0,
+  "primary_references": 577,
+  "n_panel_groups": 10,
+  "bootstrap_replicates": 2000,
+  "bootstrap_unit": "dominant reference genome",
+  "multiplicity": "BH over all 20 genus\u00d7metric DiD contrasts",
+  "seed": 20260928,
+  "interpretation": "Joint genus-panel exclusion effect relative to matched full-genus training, adjusted for common-control model difference; training-pool interactions and one-seed model variability remain.",
+  "feature_selection": "Both newly retrained arms use the same panel-free reselected vocabulary of 9,239 canonical 9-mers. No target genus enters feature selection.",
+  "frozen_production_role": "Descriptive deployed-model comparator; excluded from primary matched-arm DiD.",
+  "secondary_sensitivity": {
+    "file": "sensitivity_did.tsv",
+    "n_contrasts": 60,
+    "multiplicity": "BH separately within20 genus-by-outcome contrasts for each of3 prespecified secondary comparisons",
+    "fixed_epoch": "20 in both arms; independent of validation/test performance; primary uses each arm best validation checkpoint"
+  },
+  "convergence": [
+    {
+      "arm": "holdout",
+      "epochs_completed": 48,
+      "best_epoch": 28,
+      "best_validation_loss": 148.30910047221374,
+      "early_stopped": true,
+      "hit_maximum_epochs": false,
+      "best_in_last_20_epochs": false
+    },
+    {
+      "arm": "matched_full",
+      "epochs_completed": 49,
+      "best_epoch": 29,
+      "best_validation_loss": 144.32660459572548,
+      "early_stopped": true,
+      "hit_maximum_epochs": false,
+      "best_in_last_20_epochs": false
+    }
+  ]
+}

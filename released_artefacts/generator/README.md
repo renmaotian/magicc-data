@@ -1,10 +1,9 @@
-# Synthetic benchmark generator — seeds and per-sample metadata  (WS7.7, R1-m15)
+# Synthetic benchmark generator — seeds and per-sample metadata  (WS7.7)
 
-Reviewer 1 asked for the generator to be released "with all random seeds and
-per-sample metadata (dominant ID, contaminant IDs, target/observed completeness
-and contamination, fragmentation and dropout parameters)". This directory states
-exactly what exists, for which set, and how complete it is. It does not
-overstate coverage.
+This record describes the available random-seed, reference-identity,
+fragmentation/dropout and target/observed-quality metadata for each benchmark.
+Its historical generator paths are retained in Git history; current numerical
+replay starts from the frozen assemblies and verified per-sample inputs.
 
 ## Generator source
 

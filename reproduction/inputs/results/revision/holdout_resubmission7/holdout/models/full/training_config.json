@@ -1,0 +1,51 @@
+{
+  "variant": "holdout",
+  "n_parameters": 42359986,
+  "n_features": 9239,
+  "seed": 42,
+  "precision": "CPU FP32",
+  "threads": 12,
+  "batch_size": 512,
+  "max_epochs": 150,
+  "patience": 20,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0005,
+  "loss_weights": [
+    2.0,
+    1.0
+  ],
+  "mask_rate": 0.02,
+  "noise_std": 0.01,
+  "scheduler": "CosineAnnealingWarmRestarts T_0=10 T_mult=2",
+  "gradient_clip_norm": 1.0,
+  "training_samples": 1000000,
+  "validation_samples": 100000,
+  "data_sha256": "1ab82cfef645dd792a8d9e0cb432fccef776400312fa55cfdf9b8fc2408f33ed",
+  "feature_sha256": "0bf64c6a38f1549eabe6143adceda509098f6f2bdac800609aff70b16dc93338",
+  "normalization_sha256": "132aa7b75e95ac838b120d3331bbff16fa32d98a2b094e34cf8be499de1370e3",
+  "data_integrity_check": "Full HDF5 SHA256 verified against the completed build manifest at trainer entry.",
+  "cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "affinity_note": "Per-arm socket affinity applied before data/model allocation after paired runtime benchmark.",
+  "training_script_sha256": "8fa0a98c55b356e84b31c0e6f0a0b2e612603dba3bf57abd8ee4cbccf0449edd",
+  "implementation_hashes": {
+    "scripts/285_train_resubmission7_holdout.py": "8fa0a98c55b356e84b31c0e6f0a0b2e612603dba3bf57abd8ee4cbccf0449edd",
+    "scripts/resubmission7_holdout_config.py": "cd6f7cf455427f34b8f09e77bfcfc32a083396583705faab582b19a5c408d807",
+    "scripts/holdout_lib/model.py": "93af9512d58013cfbe414a1a626bb12d9829d0b0c856bc03bea903e00d75bafe"
+  },
+  "fixed_epoch_sensitivity": 20,
+  "implementation_notes": "Same hidden layers and output bounds as V5; 9239 inputs from actual genus-panel-free reselection. Gradient checkpointing disabled as CPU memory ample; no effect on architecture.",
+  "augmentation_notes": "Seeded vectorized Torch RNG with original independent masking/noise distributions; all RNG states checkpointed."
+}

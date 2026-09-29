@@ -1,8 +1,8 @@
 # WS3.9 — cross-dataset real-data synthesis, including CAMI II (WS3.8)
 
-**Denominator (identical for truth and every tool, R1-M5):** completeness = retained dominant bp / FULL reference length of the dominant genome x 100; contamination = total contaminant bp / the SAME denominator x 100.
+**Denominator (identical for truth and every tool):** completeness = retained dominant bp / FULL reference length of the dominant genome x 100; contamination = total contaminant bp / the SAME denominator x 100.
 
-**R2 = coefficient of determination** (1 - SS_res/SS_tot), omitted where the true value has (near-)zero variance (R1-m19). MIMAG thresholds are MIMAG-inspired throughout.
+**R2 = coefficient of determination** (1 - SS_res/SS_tot), omitted where the true value has (near-)zero variance. MIMAG thresholds are MIMAG-inspired throughout.
 
 **CAMI II is the only cohort here with full procedural independence**: genome selection, read simulation, assembly and gold standard were all produced by a third party.
 
